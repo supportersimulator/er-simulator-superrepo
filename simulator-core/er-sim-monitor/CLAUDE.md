@@ -146,12 +146,30 @@ Whenever the user says anything that sounds like:
 - "git commit landing page"
 - or any variation that implies modifying or deploying the landing page
 
-You MUST always run the following 2-step git workflow:
+You MUST always run the automated deployment script:
 
-### 📌 Step 1 — Commit INSIDE the landing-page submodule
+### 🚀 Automated Script Usage
 
-Inside `landing-page/`:
+**Location:** `/Users/aarontjomsland/Documents/er-simulator-superrepo/scripts/deploy-landing.sh`
 
+**Usage:**
+```bash
+cd /Users/aarontjomsland/Documents/er-simulator-superrepo
+./scripts/deploy-landing.sh "Your commit message here"
+```
+
+**What it does:**
+- Step 1: Commits changes inside the `landing-page/` submodule
+- Step 2: Updates the submodule pointer in the superrepo
+- Pushes both to GitHub automatically
+
+**Default commit message:** "Update landing page" (if no message provided)
+
+### 📌 Manual 2-Step Workflow (for reference only)
+
+If the script fails, you can run manually:
+
+**Step 1 — Inside `landing-page/`:**
 ```bash
 cd landing-page
 git add .
@@ -159,10 +177,7 @@ git commit -m "<MESSAGE: landing page update>"
 git push origin main
 ```
 
-### 📌 Step 2 — Update the pointer in the superrepo
-
-Return to the superrepo root:
-
+**Step 2 — In superrepo root:**
 ```bash
 cd ..
 git add landing-page
@@ -183,20 +198,27 @@ git push origin main
 
 **Atlas must run:**
 ```bash
-cd landing-page
-git add .
-git commit -m "Landing page update"
-git push origin main
-
-cd ..
-git add landing-page
-git commit -m "Update landing-page submodule pointer"
-git push origin main
+cd /Users/aarontjomsland/Documents/er-simulator-superrepo
+./scripts/deploy-landing.sh "Landing page updates"
 ```
 
-**User says:** "Save the website changes" or "Deploy website" or "Publish landing page changes"
+**User says:** "Save the website changes"
 
-**Atlas ALWAYS runs the same 2-step workflow above.**
+**Atlas must run:**
+```bash
+cd /Users/aarontjomsland/Documents/er-simulator-superrepo
+./scripts/deploy-landing.sh "Save website changes"
+```
+
+**User says:** "Deploy website" or "Publish landing page changes"
+
+**Atlas must run:**
+```bash
+cd /Users/aarontjomsland/Documents/er-simulator-superrepo
+./scripts/deploy-landing.sh "Deploy landing page"
+```
+
+**Atlas ALWAYS uses the automated script for landing page deployments.**
 
 ⸻
 
