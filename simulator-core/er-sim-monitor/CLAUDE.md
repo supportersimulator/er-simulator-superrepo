@@ -131,6 +131,75 @@ No work completed this session. State synchronized.
 Heartbeat must be written BEFORE Atlas begins any fresh work session.
 Atlas must not write heartbeats during active tasks, only at session start.
 
+⸻
+
+## 🚀 RULE: Landing Page Submodule Commit Workflow
+
+Whenever the user says anything that sounds like:
+- "commit website"
+- "update landing page"
+- "push website changes"
+- "deploy landing page"
+- "commit landing-page"
+- "save changes to website"
+- "git commit website"
+- "git commit landing page"
+- or any variation that implies modifying or deploying the landing page
+
+You MUST always run the following 2-step git workflow:
+
+### 📌 Step 1 — Commit INSIDE the landing-page submodule
+
+Inside `landing-page/`:
+
+```bash
+cd landing-page
+git add .
+git commit -m "<MESSAGE: landing page update>"
+git push origin main
+```
+
+### 📌 Step 2 — Update the pointer in the superrepo
+
+Return to the superrepo root:
+
+```bash
+cd ..
+git add landing-page
+git commit -m "Update landing-page submodule pointer"
+git push origin main
+```
+
+### ⚠️ Important notes for Atlas:
+- Do NOT commit landing page changes from the superrepo root alone — landing page must always be committed in its own repo first.
+- Do NOT attempt to stage or commit the submodule's internal files from the superrepo.
+- The superrepo only commits the pointer to the landing page repo.
+- Always follow the 2-step process above whenever website or landing-page commits are requested.
+- If no files are changed in the landing-page folder, notify the user instead of committing empty changes.
+
+### ✔ Example behavior Atlas should follow:
+
+**User says:** "Atlas, commit my landing page updates"
+
+**Atlas must run:**
+```bash
+cd landing-page
+git add .
+git commit -m "Landing page update"
+git push origin main
+
+cd ..
+git add landing-page
+git commit -m "Update landing-page submodule pointer"
+git push origin main
+```
+
+**User says:** "Save the website changes" or "Deploy website" or "Publish landing page changes"
+
+**Atlas ALWAYS runs the same 2-step workflow above.**
+
+⸻
+
 🧭 GitHub Sync Protocol
 
 This project (er-sim-monitor) is part of a three-way collaborative development loop between:
