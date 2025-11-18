@@ -2,3 +2,5 @@ scenario-csv-raw/
 scenario-csv-clean/
 sheets-exports/
 *.csv
+backend/.env*
+.env*
