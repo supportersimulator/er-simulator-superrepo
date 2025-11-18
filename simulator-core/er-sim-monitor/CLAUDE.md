@@ -222,6 +222,61 @@ cd /Users/aarontjomsland/Documents/er-simulator-superrepo
 
 ⸻
 
+## 🔄 COMMAND: "git commit all" — Full Repository Commit Workflow
+
+When the user says:
+- "git commit all"
+- "commit everything"
+- "commit all changes"
+- "push everything"
+
+Atlas MUST run the following 3-step workflow to ensure ALL changes are committed, including the landing-page submodule:
+
+### Step 1 — Commit ALL submodule (landing-page) changes
+
+**Inside `landing-page/`:**
+```bash
+cd /Users/aarontjomsland/Documents/er-simulator-superrepo/landing-page
+git add .
+git commit -m "Update landing page" || echo "No landing-page changes to commit"
+git push origin main || echo "No landing-page changes to push"
+```
+
+### Step 2 — Update the submodule pointer in the superrepo
+
+**At repo root:**
+```bash
+cd /Users/aarontjomsland/Documents/er-simulator-superrepo
+git add landing-page
+```
+
+### Step 3 — Commit all normal repo changes (backend, mobile, core, scripts, docs, etc.)
+
+**At repo root:**
+```bash
+git add .
+git commit -m "Full commit including landing-page and all superrepo changes
+
+Co-Authored-By: Claude <noreply@anthropic.com>"
+git push origin main
+```
+
+### ✅ This guarantees:
+- ✔ Landing page updates are captured
+- ✔ Pointer to submodule is updated
+- ✔ Backend/mobile/core/scripts/docs are committed
+- ✔ Zero chance of submodule getting "stuck"
+- ✔ One simple command handles everything
+
+### ⚠️ Important Notes:
+- This is the PRIMARY commit workflow for the entire superrepo
+- Always run from superrepo root: `/Users/aarontjomsland/Documents/er-simulator-superrepo`
+- If landing-page has no changes, Step 1 gracefully skips (|| echo fallback)
+- All other repo changes are ALWAYS committed in Step 3
+- This command supersedes the old "git commit" behavior
+
+⸻
+
 🧭 GitHub Sync Protocol
 
 This project (er-sim-monitor) is part of a three-way collaborative development loop between:
