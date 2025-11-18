@@ -1,0 +1,49 @@
+{
+  "timestamp": "2025-11-04T18:29:36.068Z",
+  "source": "Code_ULTIMATE_ATSR.gs",
+  "sourceSize": 136718,
+  "totalFunctions": 78,
+  "modulesCreated": 8,
+  "modules": [
+    {
+      "category": "UIMenu",
+      "fileName": "UIMenu.gs",
+      "functionCount": 1
+    },
+    {
+      "category": "InputValidation",
+      "fileName": "InputValidation.gs",
+      "functionCount": 1
+    },
+    {
+      "category": "TitleGeneration",
+      "fileName": "TitleGeneration.gs",
+      "functionCount": 5
+    },
+    {
+      "category": "Utilities",
+      "fileName": "Utilities.gs",
+      "functionCount": 67
+    },
+    {
+      "category": "Configuration",
+      "fileName": "Configuration.gs",
+      "functionCount": 1
+    },
+    {
+      "category": "ClinicalDefaults",
+      "fileName": "ClinicalDefaults.gs",
+      "functionCount": 1
+    },
+    {
+      "category": "BatchProcessing",
+      "fileName": "BatchProcessing.gs",
+      "functionCount": 1
+    },
+    {
+      "category": "QualityScoring",
+      "fileName": "QualityScoring.gs",
+      "functionCount": 1
+    }
+  ]
+}

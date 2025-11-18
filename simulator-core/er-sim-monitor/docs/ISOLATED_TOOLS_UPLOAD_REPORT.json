@@ -1,0 +1,104 @@
+{
+  "timestamp": "2025-11-04T18:31:32.597Z",
+  "targetFolder": "Current Code",
+  "targetFolderId": "1hI4TvB6JxBNrLCH56nCiiBIFKM2AB5eF",
+  "coreModulesUploaded": 8,
+  "refinedModulesUploaded": 7,
+  "totalFiles": 15,
+  "details": {
+    "coreModules": [
+      {
+        "fileName": "BatchProcessing.gs",
+        "status": "created",
+        "sizeKB": "15.6",
+        "fileId": "1mJunJoCwbDc1BZBppcuUThlfsomupJVt"
+      },
+      {
+        "fileName": "ClinicalDefaults.gs",
+        "status": "created",
+        "sizeKB": "4.4",
+        "fileId": "1uq6h5VraZRvHvphlSEWJupPLpy3Es6V3"
+      },
+      {
+        "fileName": "Configuration.gs",
+        "status": "created",
+        "sizeKB": "0.4",
+        "fileId": "1Kj5nD2iNA5mjtw-JQVENf6_Oc8D-CHKo"
+      },
+      {
+        "fileName": "InputValidation.gs",
+        "status": "created",
+        "sizeKB": "1.4",
+        "fileId": "14oEYKn25NqMnRw0XrhRIA8aIFrQkpy46"
+      },
+      {
+        "fileName": "QualityScoring.gs",
+        "status": "created",
+        "sizeKB": "1.7",
+        "fileId": "1jtnh-2xUYtzhVt_NXMGnjOTldN-xWhPK"
+      },
+      {
+        "fileName": "TitleGeneration.gs",
+        "status": "created",
+        "sizeKB": "28.2",
+        "fileId": "1sG9kLVO3hSL1kSRWuZkGKMHEosdJTWzc"
+      },
+      {
+        "fileName": "UIMenu.gs",
+        "status": "created",
+        "sizeKB": "0.5",
+        "fileId": "1XBrZOt0O8eYttAkxt06ZsXBeTItPslLb"
+      },
+      {
+        "fileName": "Utilities.gs",
+        "status": "created",
+        "sizeKB": "51.0",
+        "fileId": "1zOwG3olQCEstkc1CHCB2bTWChtuLSSYF"
+      }
+    ],
+    "refinedModules": [
+      {
+        "fileName": "API_Management.gs",
+        "status": "created",
+        "sizeKB": "2.1",
+        "fileId": "1a6xPe5pe8Qmln7GKg5NjxSFlI9Gcfrdk"
+      },
+      {
+        "fileName": "General_Utilities.gs",
+        "status": "created",
+        "sizeKB": "31.6",
+        "fileId": "1gxlV1rvAc3ny4s9Wv7x4eQ2Yh27BN5H1"
+      },
+      {
+        "fileName": "Header_Caching.gs",
+        "status": "created",
+        "sizeKB": "1.1",
+        "fileId": "1eYrGQXAwdD4zfKwco5VuOsGFfUaFe01l"
+      },
+      {
+        "fileName": "Logging_Utilities.gs",
+        "status": "created",
+        "sizeKB": "5.1",
+        "fileId": "13NrUFY-O_9i-obLJhwmjnIrCiT-E56Ye"
+      },
+      {
+        "fileName": "Sheet_Operations.gs",
+        "status": "created",
+        "sizeKB": "0.5",
+        "fileId": "1pu6CmrnuuH3PHmh7sOLY-J2oYrXvDHht"
+      },
+      {
+        "fileName": "Sidebar_Backend.gs",
+        "status": "created",
+        "sizeKB": "18.0",
+        "fileId": "1kRYmil4TGd72PpmeXPUrvMkvCHoXpaez"
+      },
+      {
+        "fileName": "Value_Extraction.gs",
+        "status": "created",
+        "sizeKB": "1.4",
+        "fileId": "1ZMxOy_BC2-8NazG4AJw14nzJP9jxM4u0"
+      }
+    ]
+  }
+}

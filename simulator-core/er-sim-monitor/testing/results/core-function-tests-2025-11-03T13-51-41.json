@@ -1,0 +1,102 @@
+{
+  "metadata": {
+    "timestamp": "2025-11-03T13:51:41.685Z",
+    "totalFunctions": 5,
+    "testType": "core-processing-functions"
+  },
+  "results": [
+    {
+      "function": "checkApiStatus",
+      "description": "Check OpenAI API Status",
+      "priority": "critical",
+      "targetScore": 95,
+      "actualScore": 10,
+      "grade": "❌ FAILING",
+      "passed": false,
+      "executionTime": 1096,
+      "error": "Requested entity was not found.",
+      "scoring": {
+        "functionality": 0,
+        "quality": 0,
+        "performance": 10,
+        "userExperience": 0
+      }
+    },
+    {
+      "function": "runQualityAudit_AllOrRows",
+      "description": "Run Quality Audit",
+      "priority": "high",
+      "targetScore": 85,
+      "actualScore": 10,
+      "grade": "❌ FAILING",
+      "passed": false,
+      "executionTime": 663,
+      "error": "Requested entity was not found.",
+      "scoring": {
+        "functionality": 0,
+        "quality": 0,
+        "performance": 10,
+        "userExperience": 0
+      }
+    },
+    {
+      "function": "refreshHeaders",
+      "description": "Refresh Header Cache",
+      "priority": "high",
+      "targetScore": 85,
+      "actualScore": 10,
+      "grade": "❌ FAILING",
+      "passed": false,
+      "executionTime": 735,
+      "error": "Requested entity was not found.",
+      "scoring": {
+        "functionality": 0,
+        "quality": 0,
+        "performance": 10,
+        "userExperience": 0
+      }
+    },
+    {
+      "function": "cleanUpLowValueRows",
+      "description": "Clean Up Low-Value Rows",
+      "priority": "medium",
+      "targetScore": 75,
+      "actualScore": 10,
+      "grade": "❌ FAILING",
+      "passed": false,
+      "executionTime": 477,
+      "error": "Requested entity was not found.",
+      "scoring": {
+        "functionality": 0,
+        "quality": 0,
+        "performance": 10,
+        "userExperience": 0
+      }
+    },
+    {
+      "function": "retrainPromptStructure",
+      "description": "Retrain Prompt Structure",
+      "priority": "medium",
+      "targetScore": 75,
+      "actualScore": 10,
+      "grade": "❌ FAILING",
+      "passed": false,
+      "executionTime": 545,
+      "error": "Requested entity was not found.",
+      "scoring": {
+        "functionality": 0,
+        "quality": 0,
+        "performance": 10,
+        "userExperience": 0
+      }
+    }
+  ],
+  "summary": {
+    "passed": 0,
+    "failed": 5,
+    "averageScore": "10.00",
+    "criticalScore": "10.00",
+    "highPriorityScore": "10.00",
+    "mediumPriorityScore": "10.00"
+  }
+}

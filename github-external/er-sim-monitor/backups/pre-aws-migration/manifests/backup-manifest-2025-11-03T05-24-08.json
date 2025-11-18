@@ -1,0 +1,29 @@
+{
+  "created": "2025-11-03T05-24-08",
+  "purpose": "Pre-AWS Migration Safety Backup",
+  "source": {
+    "sheetId": "1EVSC6j7zUeNw_D7dOV3dx7eRyMd3T6PVrVVazKYIkaM",
+    "sheetUrl": "https://docs.google.com/spreadsheets/d/1EVSC6j7zUeNw_D7dOV3dx7eRyMd3T6PVrVVazKYIkaM/edit",
+    "sheetName": "Master Scenario Convert"
+  },
+  "backups": {
+    "fullData": "/Users/aarontjomsland/er-sim-monitor/backups/full-backup-2025-11-03T05-24-08.json",
+    "vitalsOnly": "/Users/aarontjomsland/er-sim-monitor/backups/vitals-only-2025-11-03T05-24-08.json",
+    "appsScripts": [
+      "/Users/aarontjomsland/er-sim-monitor/backups/Code_ULTIMATE_ATSR.gs-2025-11-03T05-24-08",
+      "/Users/aarontjomsland/er-sim-monitor/backups/Code_WITH_CATEGORIES_LIGHT.gs-2025-11-03T05-24-08"
+    ]
+  },
+  "stats": {
+    "totalRows": 191,
+    "vitalsRecords": 189,
+    "headersCount": 596,
+    "backupSizeKB": 1898
+  },
+  "dataQuality": {
+    "allVitalsValid": true,
+    "expectedRecords": 189,
+    "actualRecords": 189,
+    "status": "100% IDEAL STATE"
+  }
+}

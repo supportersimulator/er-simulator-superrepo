@@ -1,0 +1,3180 @@
+[
+  {
+    "rowNum": 3,
+    "caseId": "GAST0001",
+    "vitals": {
+      "hr": 122,
+      "bp": {
+        "sys": 95,
+        "dia": 60
+      },
+      "rr": 28,
+      "temp": 39.2,
+      "spo2": 94,
+      "waveform": "sinus_ecg",
+      "etco2": 31,
+      "lastupdated": "2025-11-03T05:01:35.883Z"
+    }
+  },
+  {
+    "rowNum": 4,
+    "caseId": "RESP0031",
+    "vitals": {
+      "hr": 112,
+      "bp": {
+        "sys": 110,
+        "dia": 70
+      },
+      "rr": 22,
+      "temp": 37.8,
+      "spo2": 92,
+      "waveform": "sinus_ecg",
+      "etco2": 32,
+      "lastupdated": "2025-11-03T05:01:35.885Z"
+    }
+  },
+  {
+    "rowNum": 5,
+    "caseId": "IMMU0003",
+    "vitals": {
+      "hr": 130,
+      "bp": {
+        "sys": 100,
+        "dia": 65
+      },
+      "rr": 30,
+      "spo2": 89,
+      "waveform": "sinus_ecg",
+      "temp": 39.1,
+      "etco2": 33,
+      "lastupdated": "2025-11-03T05:01:35.885Z"
+    }
+  },
+  {
+    "rowNum": 6,
+    "caseId": "RESP0010",
+    "vitals": {
+      "hr": 130,
+      "bp": {
+        "sys": 100,
+        "dia": 70
+      },
+      "rr": 28,
+      "temp": 37.5,
+      "spo2": 89,
+      "waveform": "sinus_ecg",
+      "etco2": 33,
+      "lastupdated": "2025-11-03T05:01:35.885Z"
+    }
+  },
+  {
+    "rowNum": 7,
+    "caseId": "CARD0001",
+    "vitals": {
+      "hr": 130,
+      "bp": {
+        "sys": 100,
+        "dia": 70
+      },
+      "rr": 24,
+      "temp": 37.5,
+      "spo2": 92,
+      "waveform": "sinus_ecg",
+      "etco2": 30,
+      "lastupdated": "2025-11-03T05:01:35.885Z"
+    }
+  },
+  {
+    "rowNum": 8,
+    "caseId": "CARD0002",
+    "vitals": {
+      "hr": 130,
+      "bp": {
+        "sys": 150,
+        "dia": 90
+      },
+      "rr": 24,
+      "temp": 37.5,
+      "spo2": 95,
+      "waveform": "sinus_ecg",
+      "etco2": 31,
+      "lastupdated": "2025-11-03T05:01:35.885Z"
+    }
+  },
+  {
+    "rowNum": 9,
+    "caseId": "ENDO0001",
+    "vitals": {
+      "hr": 130,
+      "bp": {
+        "sys": 100,
+        "dia": 70
+      },
+      "rr": 20,
+      "temp": 37.5,
+      "spo2": 95,
+      "waveform": "sinus_ecg",
+      "etco2": 37,
+      "lastupdated": "2025-11-03T05:01:35.885Z"
+    }
+  },
+  {
+    "rowNum": 10,
+    "caseId": "CARD0003",
+    "vitals": {
+      "hr": 128,
+      "bp": {
+        "sys": 102,
+        "dia": 68
+      },
+      "rr": 26,
+      "temp": 37,
+      "spo2": 95,
+      "waveform": "sinus_ecg",
+      "etco2": 33,
+      "lastupdated": "2025-11-03T05:01:35.885Z"
+    }
+  },
+  {
+    "rowNum": 11,
+    "caseId": "NEUR0033",
+    "vitals": {
+      "hr": 125,
+      "bp": {
+        "sys": 128,
+        "dia": 82
+      },
+      "rr": 22,
+      "temp": 36.8,
+      "spo2": 96,
+      "waveform": "sinus_ecg",
+      "etco2": 32,
+      "lastupdated": "2025-11-03T05:01:35.885Z"
+    }
+  },
+  {
+    "rowNum": 12,
+    "caseId": "PEDMU12",
+    "vitals": {
+      "hr": 130,
+      "bp": {
+        "sys": 100,
+        "dia": 65
+      },
+      "rr": 22,
+      "temp": 39.5,
+      "spo2": 98,
+      "waveform": "sinus_ecg",
+      "lastupdated": "2025-11-03T05:01:35.885Z"
+    }
+  },
+  {
+    "rowNum": 13,
+    "caseId": "NEUR0034",
+    "vitals": {
+      "hr": 125,
+      "bp": {
+        "sys": 130,
+        "dia": 85
+      },
+      "rr": 22,
+      "temp": 37.5,
+      "spo2": 97,
+      "waveform": "sinus_ecg",
+      "lastupdated": "2025-11-03T05:01:35.886Z"
+    }
+  },
+  {
+    "rowNum": 14,
+    "caseId": "RESP0001",
+    "vitals": {
+      "hr": 130,
+      "bp": {
+        "sys": 100,
+        "dia": 70
+      },
+      "rr": 28,
+      "temp": 37,
+      "spo2": 90,
+      "waveform": "sinus_ecg",
+      "etco2": 30,
+      "lastupdated": "2025-11-03T05:01:35.886Z"
+    }
+  },
+  {
+    "rowNum": 15,
+    "caseId": "PEDMU13",
+    "vitals": {
+      "hr": 125,
+      "bp": {
+        "sys": 98,
+        "dia": 62
+      },
+      "rr": 22,
+      "temp": 39,
+      "spo2": 96,
+      "waveform": "sinus_ecg",
+      "lastupdated": "2025-11-03T05:01:35.886Z"
+    }
+  },
+  {
+    "rowNum": 16,
+    "caseId": "PEDRE32",
+    "vitals": {
+      "hr": 128,
+      "bp": {
+        "sys": 100,
+        "dia": 60
+      },
+      "rr": 32,
+      "temp": 37.5,
+      "spo2": 88,
+      "waveform": "sinus_ecg",
+      "etco2": 35,
+      "lastupdated": "2025-11-03T05:01:35.886Z"
+    }
+  },
+  {
+    "rowNum": 17,
+    "caseId": "PEDMU03",
+    "vitals": {
+      "hr": 150,
+      "bp": {
+        "sys": 90,
+        "dia": 60
+      },
+      "rr": 30,
+      "temp": 39.5,
+      "spo2": 97,
+      "waveform": "sinus_ecg",
+      "lastupdated": "2025-11-03T05:01:35.886Z"
+    }
+  },
+  {
+    "rowNum": 18,
+    "caseId": "CARD0004",
+    "vitals": {
+      "hr": 140,
+      "bp": {
+        "sys": 90,
+        "dia": 60
+      },
+      "rr": 30,
+      "temp": 37.5,
+      "spo2": 92,
+      "waveform": "sinus_ecg",
+      "etco2": 32,
+      "lastupdated": "2025-11-03T05:01:35.886Z"
+    }
+  },
+  {
+    "rowNum": 19,
+    "caseId": "PEDMU04",
+    "vitals": {
+      "hr": 130,
+      "bp": {
+        "sys": 100,
+        "dia": 60
+      },
+      "rr": 24,
+      "temp": 39.5,
+      "spo2": 97,
+      "waveform": "sinus_ecg",
+      "etco2": 35,
+      "lastupdated": "2025-11-03T05:01:35.886Z"
+    }
+  },
+  {
+    "rowNum": 20,
+    "caseId": "NEUR0006",
+    "vitals": {
+      "hr": 110,
+      "bp": {
+        "sys": 130,
+        "dia": 80
+      },
+      "rr": 20,
+      "temp": 36.8,
+      "spo2": 97,
+      "waveform": "sinus_ecg",
+      "etco2": 35,
+      "lastupdated": "2025-11-03T05:01:35.886Z"
+    }
+  },
+  {
+    "rowNum": 21,
+    "caseId": "PEDNE32",
+    "vitals": {
+      "hr": 180,
+      "bp": {
+        "sys": 90,
+        "dia": 55
+      },
+      "rr": 32,
+      "temp": 39.5,
+      "spo2": 95,
+      "waveform": "sinus_ecg",
+      "etco2": 40,
+      "lastupdated": "2025-11-03T05:01:35.886Z"
+    }
+  },
+  {
+    "rowNum": 22,
+    "caseId": "NEUR0024",
+    "vitals": {
+      "hr": 130,
+      "bp": {
+        "sys": 110,
+        "dia": 70
+      },
+      "rr": 20,
+      "temp": 37.5,
+      "spo2": 98,
+      "waveform": "sinus_ecg",
+      "etco2": 35,
+      "lastupdated": "2025-11-03T05:01:35.886Z"
+    }
+  },
+  {
+    "rowNum": 23,
+    "caseId": "TRAU0006",
+    "vitals": {
+      "hr": 130,
+      "bp": {
+        "sys": 90,
+        "dia": 60
+      },
+      "rr": 30,
+      "temp": 37.5,
+      "spo2": 92,
+      "waveform": "sinus_ecg",
+      "etco2": 32,
+      "lastupdated": "2025-11-03T05:01:35.886Z"
+    }
+  },
+  {
+    "rowNum": 24,
+    "caseId": "TRAU0001",
+    "vitals": {
+      "hr": 95,
+      "bp": {
+        "sys": 110,
+        "dia": 70
+      },
+      "rr": 20,
+      "temp": 36.8,
+      "spo2": 98,
+      "waveform": "sinus_ecg",
+      "etco2": 35,
+      "lastupdated": "2025-11-03T05:01:35.886Z"
+    }
+  },
+  {
+    "rowNum": 25,
+    "caseId": "OBST0001",
+    "vitals": {
+      "hr": 95,
+      "bp": {
+        "sys": 122,
+        "dia": 82
+      },
+      "rr": 18,
+      "temp": 37,
+      "spo2": 97,
+      "waveform": "sinus_ecg",
+      "lastupdated": "2025-11-03T05:01:35.886Z"
+    }
+  },
+  {
+    "rowNum": 26,
+    "caseId": "PEDIM01",
+    "vitals": {
+      "hr": 125,
+      "bp": {
+        "sys": 105,
+        "dia": 75
+      },
+      "rr": 28,
+      "temp": 37.1,
+      "spo2": 90,
+      "waveform": "sinus_ecg",
+      "etco2": 32,
+      "lastupdated": "2025-11-03T05:01:35.886Z"
+    }
+  },
+  {
+    "rowNum": 27,
+    "caseId": "RESP0011",
+    "vitals": {
+      "hr": 130,
+      "bp": {
+        "sys": 105,
+        "dia": 65
+      },
+      "rr": 30,
+      "temp": 37.9,
+      "spo2": 88,
+      "waveform": "sinus_ecg",
+      "etco2": 32,
+      "lastupdated": "2025-11-03T05:01:35.886Z"
+    }
+  },
+  {
+    "rowNum": 28,
+    "caseId": "CARD0005",
+    "vitals": {
+      "hr": 130,
+      "bp": {
+        "sys": 90,
+        "dia": 60
+      },
+      "rr": 30,
+      "temp": 37.5,
+      "spo2": 92,
+      "waveform": "sinus_ecg",
+      "etco2": 35,
+      "lastupdated": "2025-11-03T05:01:35.886Z"
+    }
+  },
+  {
+    "rowNum": 29,
+    "caseId": "TRAU0002",
+    "vitals": {
+      "hr": 150,
+      "bp": {
+        "sys": 80,
+        "dia": 50
+      },
+      "rr": 30,
+      "temp": 37,
+      "spo2": 92,
+      "waveform": "sinus_ecg",
+      "etco2": 36,
+      "lastupdated": "2025-11-03T05:01:35.886Z"
+    }
+  },
+  {
+    "rowNum": 30,
+    "caseId": "CARD0006",
+    "vitals": {
+      "hr": 130,
+      "bp": {
+        "sys": 90,
+        "dia": 60
+      },
+      "rr": 22,
+      "temp": 36.8,
+      "spo2": 89,
+      "waveform": "sinus_ecg",
+      "etco2": 32,
+      "lastupdated": "2025-11-03T05:01:35.886Z"
+    }
+  },
+  {
+    "rowNum": 31,
+    "caseId": "RESP0023",
+    "vitals": {
+      "hr": 115,
+      "bp": {
+        "sys": 120,
+        "dia": 80
+      },
+      "rr": 24,
+      "temp": 37.5,
+      "spo2": 89,
+      "waveform": "sinus_ecg",
+      "etco2": 33,
+      "lastupdated": "2025-11-03T05:01:35.886Z"
+    }
+  },
+  {
+    "rowNum": 32,
+    "caseId": "NEUR0007",
+    "vitals": {
+      "hr": 130,
+      "bp": {
+        "sys": 140,
+        "dia": 85
+      },
+      "rr": 20,
+      "temp": 36.8,
+      "spo2": 95,
+      "waveform": "sinus_ecg",
+      "etco2": 35,
+      "lastupdated": "2025-11-03T05:01:35.886Z"
+    }
+  },
+  {
+    "rowNum": 33,
+    "caseId": "CARD0007",
+    "vitals": {
+      "hr": 128,
+      "bp": {
+        "sys": 98,
+        "dia": 58
+      },
+      "rr": 26,
+      "temp": 37.5,
+      "spo2": 96,
+      "waveform": "sinus_ecg",
+      "etco2": 33,
+      "lastupdated": "2025-11-03T05:01:35.886Z"
+    }
+  },
+  {
+    "rowNum": 34,
+    "caseId": "RESP0029",
+    "vitals": {
+      "hr": 130,
+      "bp": {
+        "sys": 90,
+        "dia": 60
+      },
+      "rr": 30,
+      "temp": 37.5,
+      "spo2": 85,
+      "waveform": "sinus_ecg",
+      "etco2": 28,
+      "lastupdated": "2025-11-03T05:01:35.886Z"
+    }
+  },
+  {
+    "rowNum": 35,
+    "caseId": "MULT0001",
+    "vitals": {
+      "hr": 135,
+      "bp": {
+        "sys": 80,
+        "dia": 50
+      },
+      "rr": 30,
+      "temp": 36.5,
+      "spo2": 85,
+      "waveform": "sinus_ecg",
+      "etco2": 28,
+      "lastupdated": "2025-11-03T05:01:35.886Z"
+    }
+  },
+  {
+    "rowNum": 36,
+    "caseId": "PEDRE33",
+    "vitals": {
+      "hr": 130,
+      "bp": {
+        "sys": 100,
+        "dia": 60
+      },
+      "rr": 30,
+      "temp": 37.5,
+      "spo2": 88,
+      "etco2": 32,
+      "waveform": "sinus_ecg",
+      "lastupdated": "2025-11-03T05:01:35.886Z"
+    }
+  },
+  {
+    "rowNum": 37,
+    "caseId": "RESP0012",
+    "vitals": {
+      "hr": 130,
+      "bp": {
+        "sys": 110,
+        "dia": 70
+      },
+      "rr": 30,
+      "temp": 36.8,
+      "spo2": 92,
+      "waveform": "sinus_ecg",
+      "etco2": 27,
+      "lastupdated": "2025-11-03T05:01:35.886Z"
+    }
+  },
+  {
+    "rowNum": 38,
+    "caseId": "PEDNE26",
+    "vitals": {
+      "hr": 130,
+      "bp": {
+        "sys": 100,
+        "dia": 60
+      },
+      "rr": 30,
+      "temp": 39.5,
+      "spo2": 95,
+      "waveform": "sinus_ecg",
+      "etco2": 35,
+      "lastupdated": "2025-11-03T05:01:35.886Z"
+    }
+  },
+  {
+    "rowNum": 39,
+    "caseId": "PEDRE34",
+    "vitals": {
+      "hr": 140,
+      "bp": {
+        "sys": 105,
+        "dia": 70
+      },
+      "rr": 30,
+      "temp": 37.5,
+      "spo2": 88,
+      "waveform": "sinus_ecg",
+      "etco2": 34,
+      "lastupdated": "2025-11-03T05:01:35.886Z"
+    }
+  },
+  {
+    "rowNum": 40,
+    "caseId": "NEUR0008",
+    "vitals": {
+      "hr": 98,
+      "bp": {
+        "sys": 135,
+        "dia": 85
+      },
+      "rr": 16,
+      "temp": 37,
+      "spo2": 95,
+      "waveform": "sinus_ecg",
+      "lastupdated": "2025-11-03T05:01:35.886Z"
+    }
+  },
+  {
+    "rowNum": 41,
+    "caseId": "PEDRE35",
+    "vitals": {
+      "hr": 130,
+      "bp": {
+        "sys": 102,
+        "dia": 68
+      },
+      "rr": 30,
+      "temp": 38,
+      "spo2": 88,
+      "waveform": "sinus_ecg",
+      "etco2": 32,
+      "lastupdated": "2025-11-03T05:01:35.887Z"
+    }
+  },
+  {
+    "rowNum": 42,
+    "caseId": "PEDMU14",
+    "vitals": {
+      "hr": 135,
+      "bp": {
+        "sys": 72,
+        "dia": 45
+      },
+      "rr": 28,
+      "temp": 37,
+      "spo2": 85,
+      "waveform": "sinus_ecg",
+      "etco2": 30,
+      "lastupdated": "2025-11-03T05:01:35.887Z"
+    }
+  },
+  {
+    "rowNum": 43,
+    "caseId": "NEUR0025",
+    "vitals": {
+      "hr": 126,
+      "bp": {
+        "sys": 100,
+        "dia": 70
+      },
+      "rr": 20,
+      "temp": 37,
+      "spo2": 98,
+      "waveform": "sinus_ecg",
+      "etco2": 33,
+      "lastupdated": "2025-11-03T05:01:35.887Z"
+    }
+  },
+  {
+    "rowNum": 44,
+    "caseId": "PEDRE36",
+    "vitals": {
+      "hr": 130,
+      "bp": {
+        "sys": 90,
+        "dia": 60
+      },
+      "rr": 28,
+      "temp": 38,
+      "spo2": 92,
+      "waveform": "sinus_ecg",
+      "etco2": 34,
+      "lastupdated": "2025-11-03T05:01:35.887Z"
+    }
+  },
+  {
+    "rowNum": 45,
+    "caseId": "PEDEN03",
+    "vitals": {
+      "hr": 140,
+      "bp": {
+        "sys": 100,
+        "dia": 60
+      },
+      "rr": 30,
+      "temp": 37,
+      "spo2": 96,
+      "waveform": "sinus_ecg",
+      "lastupdated": "2025-11-03T05:01:35.887Z"
+    }
+  },
+  {
+    "rowNum": 46,
+    "caseId": "CARD0008",
+    "vitals": {
+      "hr": 115,
+      "bp": {
+        "sys": 130,
+        "dia": 85
+      },
+      "rr": 20,
+      "temp": 37.5,
+      "spo2": 96,
+      "waveform": "sinus_ecg",
+      "lastupdated": "2025-11-03T05:01:35.887Z"
+    }
+  },
+  {
+    "rowNum": 47,
+    "caseId": "CARD0009",
+    "vitals": {
+      "hr": 150,
+      "bp": {
+        "sys": 85,
+        "dia": 55
+      },
+      "rr": 32,
+      "temp": 37.2,
+      "spo2": 90,
+      "waveform": "sinus_ecg",
+      "etco2": 34,
+      "lastupdated": "2025-11-03T05:01:35.887Z"
+    }
+  },
+  {
+    "rowNum": 48,
+    "caseId": "CARD0046",
+    "vitals": {
+      "hr": 130,
+      "bp": {
+        "sys": 100,
+        "dia": 70
+      },
+      "rr": 24,
+      "temp": 37.5,
+      "spo2": 95,
+      "waveform": "sinus_ecg",
+      "etco2": 28,
+      "lastupdated": "2025-11-03T05:01:35.887Z"
+    }
+  },
+  {
+    "rowNum": 49,
+    "caseId": "RESP0002",
+    "vitals": {
+      "hr": 130,
+      "bp": {
+        "sys": 110,
+        "dia": 70
+      },
+      "rr": 26,
+      "temp": 37.5,
+      "spo2": 90,
+      "waveform": "sinus_ecg",
+      "lastupdated": "2025-11-03T05:01:35.887Z"
+    }
+  },
+  {
+    "rowNum": 50,
+    "caseId": "RESP0003",
+    "vitals": {
+      "hr": 130,
+      "bp": {
+        "sys": 110,
+        "dia": 70
+      },
+      "rr": 30,
+      "temp": 36.5,
+      "spo2": 90,
+      "waveform": "sinus_ecg",
+      "etco2": 35,
+      "lastupdated": "2025-11-03T05:01:35.887Z"
+    }
+  },
+  {
+    "rowNum": 51,
+    "caseId": "NEUR0009",
+    "vitals": {
+      "hr": 98,
+      "bp": {
+        "sys": 150,
+        "dia": 90
+      },
+      "rr": 18,
+      "temp": 36.7,
+      "spo2": 96,
+      "waveform": "sinus_ecg",
+      "lastupdated": "2025-11-03T05:01:35.887Z"
+    }
+  },
+  {
+    "rowNum": 52,
+    "caseId": "PEDMU10",
+    "vitals": {
+      "hr": 130,
+      "bp": {
+        "sys": 100,
+        "dia": 60
+      },
+      "rr": 36,
+      "temp": 38,
+      "spo2": 92,
+      "waveform": "sinus_ecg",
+      "etco2": 32,
+      "lastupdated": "2025-11-03T05:01:35.887Z"
+    }
+  },
+  {
+    "rowNum": 53,
+    "caseId": "CARD0047",
+    "vitals": {
+      "hr": 0,
+      "bp": {
+        "sys": null,
+        "dia": null
+      },
+      "rr": 0,
+      "temp": 36.8,
+      "spo2": null,
+      "waveform": "asystole_ecg",
+      "lastupdated": "2025-11-03T05:02:29.237Z"
+    }
+  },
+  {
+    "rowNum": 54,
+    "caseId": "RESP0013",
+    "vitals": {
+      "hr": 130,
+      "bp": {
+        "sys": 100,
+        "dia": 60
+      },
+      "rr": 30,
+      "temp": 37.9,
+      "spo2": 88,
+      "waveform": "sinus_ecg",
+      "etco2": 28,
+      "lastupdated": "2025-11-03T05:01:35.887Z"
+    }
+  },
+  {
+    "rowNum": 55,
+    "caseId": "MULT0002",
+    "vitals": {
+      "hr": 85,
+      "bp": {
+        "sys": 120,
+        "dia": 80
+      },
+      "rr": 16,
+      "temp": 37,
+      "spo2": 98,
+      "waveform": "sinus_ecg",
+      "lastupdated": "2025-11-03T05:01:35.887Z"
+    }
+  },
+  {
+    "rowNum": 56,
+    "caseId": "TRAU0011",
+    "vitals": {
+      "hr": 140,
+      "bp": {
+        "sys": 80,
+        "dia": 50
+      },
+      "rr": 30,
+      "temp": 37,
+      "spo2": 90,
+      "waveform": "sinus_ecg",
+      "etco2": 28,
+      "lastupdated": "2025-11-03T05:01:35.887Z"
+    }
+  },
+  {
+    "rowNum": 57,
+    "caseId": "PEDMU05",
+    "vitals": {
+      "hr": 130,
+      "bp": {
+        "sys": 90,
+        "dia": 55
+      },
+      "rr": 26,
+      "temp": 39.5,
+      "spo2": 96,
+      "waveform": "sinus_ecg",
+      "etco2": 34,
+      "lastupdated": "2025-11-03T05:01:35.887Z"
+    }
+  },
+  {
+    "rowNum": 58,
+    "caseId": "NEUR0010",
+    "vitals": {
+      "hr": 100,
+      "bp": {
+        "sys": 140,
+        "dia": 90
+      },
+      "rr": 20,
+      "temp": 37,
+      "spo2": 96,
+      "waveform": "sinus_ecg",
+      "etco2": 36,
+      "lastupdated": "2025-11-03T05:01:35.887Z"
+    }
+  },
+  {
+    "rowNum": 59,
+    "caseId": "RESP0014",
+    "vitals": {
+      "hr": 130,
+      "bp": {
+        "sys": 85,
+        "dia": 50
+      },
+      "rr": 30,
+      "temp": 36.8,
+      "spo2": 88,
+      "waveform": "sinus_ecg",
+      "lastupdated": "2025-11-03T05:01:35.887Z"
+    }
+  },
+  {
+    "rowNum": 60,
+    "caseId": "CARD0010",
+    "vitals": {
+      "hr": 130,
+      "bp": {
+        "sys": 90,
+        "dia": 60
+      },
+      "rr": 24,
+      "temp": 37.5,
+      "spo2": 92,
+      "waveform": "sinus_ecg",
+      "etco2": 30,
+      "lastupdated": "2025-11-03T05:01:35.887Z"
+    }
+  },
+  {
+    "rowNum": 61,
+    "caseId": "RESP0045",
+    "vitals": {
+      "hr": 115,
+      "bp": {
+        "sys": 100,
+        "dia": 65
+      },
+      "rr": 24,
+      "temp": 38.5,
+      "spo2": 91,
+      "waveform": "sinus_ecg",
+      "etco2": 32,
+      "lastupdated": "2025-11-03T05:01:35.887Z"
+    }
+  },
+  {
+    "rowNum": 62,
+    "caseId": "TRAU0007",
+    "vitals": {
+      "hr": 85,
+      "bp": {
+        "sys": 100,
+        "dia": 60
+      },
+      "rr": 12,
+      "temp": 37,
+      "spo2": 96,
+      "waveform": "sinus_ecg",
+      "etco2": 34,
+      "lastupdated": "2025-11-03T05:01:35.887Z"
+    }
+  },
+  {
+    "rowNum": 63,
+    "caseId": "CARD0011",
+    "vitals": {
+      "hr": 130,
+      "bp": {
+        "sys": 110,
+        "dia": 70
+      },
+      "rr": 24,
+      "temp": 36.8,
+      "spo2": 90,
+      "waveform": "sinus_ecg",
+      "etco2": 33,
+      "lastupdated": "2025-11-03T05:01:35.887Z"
+    }
+  },
+  {
+    "rowNum": 64,
+    "caseId": "TRAU0008",
+    "vitals": {
+      "hr": 130,
+      "bp": {
+        "sys": 95,
+        "dia": 60
+      },
+      "rr": 28,
+      "temp": 36.9,
+      "spo2": 93,
+      "waveform": "sinus_ecg",
+      "etco2": 32,
+      "lastupdated": "2025-11-03T05:01:35.887Z"
+    }
+  },
+  {
+    "rowNum": 65,
+    "caseId": "PEDMU16",
+    "vitals": {
+      "hr": 130,
+      "bp": {
+        "sys": 100,
+        "dia": 60
+      },
+      "rr": 28,
+      "temp": 39,
+      "spo2": 95,
+      "waveform": "sinus_ecg",
+      "lastupdated": "2025-11-03T05:01:35.887Z"
+    }
+  },
+  {
+    "rowNum": 66,
+    "caseId": "PEDRE24",
+    "vitals": {
+      "hr": 130,
+      "bp": {
+        "sys": 95,
+        "dia": 65
+      },
+      "rr": 28,
+      "temp": 39.1,
+      "spo2": 90,
+      "waveform": "sinus_ecg",
+      "etco2": 30,
+      "lastupdated": "2025-11-03T05:01:35.887Z"
+    }
+  },
+  {
+    "rowNum": 67,
+    "caseId": "PEDMU06",
+    "vitals": {
+      "hr": 125,
+      "bp": {
+        "sys": 102,
+        "dia": 65
+      },
+      "rr": 22,
+      "temp": 39.3,
+      "spo2": 96,
+      "waveform": "sinus_ecg",
+      "lastupdated": "2025-11-03T05:01:35.887Z"
+    }
+  },
+  {
+    "rowNum": 68,
+    "caseId": "RESP0015",
+    "vitals": {
+      "hr": 115,
+      "bp": {
+        "sys": 110,
+        "dia": 70
+      },
+      "rr": 26,
+      "temp": 38.5,
+      "spo2": 90,
+      "waveform": "sinus_ecg",
+      "etco2": 30,
+      "lastupdated": "2025-11-03T05:01:35.887Z"
+    }
+  },
+  {
+    "rowNum": 69,
+    "caseId": "PEDMU07",
+    "vitals": {
+      "hr": 130,
+      "bp": {
+        "sys": 100,
+        "dia": 60
+      },
+      "rr": 28,
+      "temp": 39.2,
+      "spo2": 94,
+      "waveform": "sinus_ecg",
+      "etco2": 34,
+      "lastupdated": "2025-11-03T05:01:35.888Z"
+    }
+  },
+  {
+    "rowNum": 70,
+    "caseId": "PEDRE37",
+    "vitals": {
+      "hr": 130,
+      "bp": {
+        "sys": 100,
+        "dia": 65
+      },
+      "rr": 30,
+      "temp": 37.5,
+      "spo2": 88,
+      "waveform": "sinus_ecg",
+      "etco2": 36,
+      "lastupdated": "2025-11-03T05:01:35.888Z"
+    }
+  },
+  {
+    "rowNum": 71,
+    "caseId": "CARD0012",
+    "vitals": {
+      "hr": 150,
+      "bp": {
+        "sys": 90,
+        "dia": 60
+      },
+      "rr": 30,
+      "temp": 37.5,
+      "spo2": 92,
+      "waveform": "sinus_ecg",
+      "etco2": 28,
+      "lastupdated": "2025-11-03T05:01:35.888Z"
+    }
+  },
+  {
+    "rowNum": 72,
+    "caseId": "CARD0048",
+    "vitals": {
+      "hr": 130,
+      "bp": {
+        "sys": 90,
+        "dia": 60
+      },
+      "rr": 30,
+      "temp": 36.9,
+      "spo2": 92,
+      "waveform": "sinus_ecg",
+      "etco2": 40,
+      "lastupdated": "2025-11-03T05:01:35.888Z"
+    }
+  },
+  {
+    "rowNum": 73,
+    "caseId": "NEUR0035",
+    "vitals": {
+      "hr": 130,
+      "bp": {
+        "sys": 110,
+        "dia": 70
+      },
+      "rr": 24,
+      "temp": 37.5,
+      "spo2": 98,
+      "waveform": "sinus_ecg",
+      "lastupdated": "2025-11-03T05:01:35.888Z"
+    }
+  },
+  {
+    "rowNum": 74,
+    "caseId": "PEDRE38",
+    "vitals": {
+      "hr": 125,
+      "bp": {
+        "sys": 102,
+        "dia": 65
+      },
+      "rr": 28,
+      "temp": 38.2,
+      "spo2": 91,
+      "waveform": "sinus_ecg",
+      "etco2": 34,
+      "lastupdated": "2025-11-03T05:01:35.888Z"
+    }
+  },
+  {
+    "rowNum": 75,
+    "caseId": "PEDMU17",
+    "vitals": {
+      "hr": 130,
+      "bp": {
+        "sys": 100,
+        "dia": 70
+      },
+      "rr": 25,
+      "temp": 38.5,
+      "spo2": 92,
+      "waveform": "sinus_ecg",
+      "etco2": 34,
+      "lastupdated": "2025-11-03T05:01:35.888Z"
+    }
+  },
+  {
+    "rowNum": 76,
+    "caseId": "RESP0019",
+    "vitals": {
+      "hr": 130,
+      "bp": {
+        "sys": 100,
+        "dia": 70
+      },
+      "rr": 30,
+      "temp": 37.5,
+      "spo2": 88,
+      "waveform": "sinus_ecg",
+      "etco2": 33,
+      "lastupdated": "2025-11-03T05:01:35.888Z"
+    }
+  },
+  {
+    "rowNum": 77,
+    "caseId": "PEDMU15",
+    "vitals": {
+      "hr": 128,
+      "bp": {
+        "sys": 100,
+        "dia": 70
+      },
+      "rr": 28,
+      "temp": 39.6,
+      "spo2": 95,
+      "waveform": "sinus_ecg",
+      "lastupdated": "2025-11-03T05:01:35.888Z"
+    }
+  },
+  {
+    "rowNum": 78,
+    "caseId": "TRAU0009",
+    "vitals": {
+      "hr": 130,
+      "bp": {
+        "sys": 110,
+        "dia": 70
+      },
+      "rr": 24,
+      "temp": 36.9,
+      "spo2": 92,
+      "etco2": 38,
+      "waveform": "sinus_ecg",
+      "lastupdated": "2025-11-03T05:01:35.888Z"
+    }
+  },
+  {
+    "rowNum": 79,
+    "caseId": "CARD0049",
+    "vitals": {
+      "hr": 130,
+      "bp": {
+        "sys": 95,
+        "dia": 60
+      },
+      "rr": 24,
+      "temp": 37.5,
+      "spo2": 92,
+      "waveform": "sinus_ecg",
+      "etco2": 34,
+      "lastupdated": "2025-11-03T05:01:35.888Z"
+    }
+  },
+  {
+    "rowNum": 80,
+    "caseId": "NEUR0001",
+    "vitals": {
+      "hr": 130,
+      "bp": {
+        "sys": 110,
+        "dia": 70
+      },
+      "rr": 20,
+      "temp": 36.9,
+      "spo2": 97,
+      "waveform": "sinus_ecg",
+      "lastupdated": "2025-11-03T05:01:35.888Z"
+    }
+  },
+  {
+    "rowNum": 81,
+    "caseId": "CARD0013",
+    "vitals": {
+      "hr": 130,
+      "bp": {
+        "sys": 150,
+        "dia": 90
+      },
+      "rr": 24,
+      "temp": 37,
+      "spo2": 96,
+      "waveform": "sinus_ecg",
+      "etco2": 34,
+      "lastupdated": "2025-11-03T05:01:35.888Z"
+    }
+  },
+  {
+    "rowNum": 82,
+    "caseId": "RESP0030",
+    "vitals": {
+      "hr": 150,
+      "bp": {
+        "sys": null,
+        "dia": null
+      },
+      "rr": 58,
+      "temp": 36.5,
+      "spo2": 92,
+      "waveform": "sinus_ecg",
+      "lastupdated": "2025-11-03T05:01:35.888Z"
+    }
+  },
+  {
+    "rowNum": 83,
+    "caseId": "CARD0014",
+    "vitals": {
+      "hr": 130,
+      "bp": {
+        "sys": 90,
+        "dia": 60
+      },
+      "rr": 30,
+      "temp": 37.5,
+      "spo2": 92,
+      "waveform": "sinus_ecg",
+      "etco2": 32,
+      "lastupdated": "2025-11-03T05:01:35.888Z"
+    }
+  },
+  {
+    "rowNum": 84,
+    "caseId": "CARD0015",
+    "vitals": {
+      "hr": 130,
+      "bp": {
+        "sys": 100,
+        "dia": 60
+      },
+      "rr": 26,
+      "temp": 37.5,
+      "spo2": 95,
+      "waveform": "sinus_ecg",
+      "etco2": 32,
+      "lastupdated": "2025-11-03T05:01:35.888Z"
+    }
+  },
+  {
+    "rowNum": 85,
+    "caseId": "CARD0016",
+    "vitals": {
+      "hr": 125,
+      "bp": {
+        "sys": 148,
+        "dia": 88
+      },
+      "rr": 20,
+      "temp": 37.3,
+      "spo2": 96,
+      "waveform": "sinus_ecg",
+      "etco2": 32,
+      "lastupdated": "2025-11-03T05:01:35.888Z"
+    }
+  },
+  {
+    "rowNum": 86,
+    "caseId": "TRAU0012",
+    "vitals": {
+      "hr": 140,
+      "bp": {
+        "sys": 85,
+        "dia": 50
+      },
+      "rr": 30,
+      "temp": 37.5,
+      "spo2": 90,
+      "waveform": "asystole_ecg",
+      "etco2": 29,
+      "lastupdated": "2025-11-03T05:01:35.888Z"
+    }
+  },
+  {
+    "rowNum": 87,
+    "caseId": "PEDMU11",
+    "vitals": {
+      "hr": 148,
+      "bp": {
+        "sys": 92,
+        "dia": 58
+      },
+      "rr": 38,
+      "temp": 38.5,
+      "spo2": 92,
+      "waveform": "sinus_ecg",
+      "etco2": 34,
+      "lastupdated": "2025-11-03T05:01:35.888Z"
+    }
+  },
+  {
+    "rowNum": 88,
+    "caseId": "NEUR0002",
+    "vitals": {
+      "hr": 135,
+      "bp": {
+        "sys": 80,
+        "dia": 50
+      },
+      "rr": 32,
+      "temp": 37,
+      "spo2": 90,
+      "waveform": "sinus_ecg",
+      "etco2": 28,
+      "lastupdated": "2025-11-03T05:01:35.888Z"
+    }
+  },
+  {
+    "rowNum": 89,
+    "caseId": "NEUR0011",
+    "vitals": {
+      "hr": 118,
+      "bp": {
+        "sys": 150,
+        "dia": 90
+      },
+      "rr": 20,
+      "temp": 36.8,
+      "spo2": 95,
+      "waveform": "sinus_ecg",
+      "etco2": 34,
+      "lastupdated": "2025-11-03T05:01:35.888Z"
+    }
+  },
+  {
+    "rowNum": 90,
+    "caseId": "CARD0017",
+    "vitals": {
+      "hr": 130,
+      "bp": {
+        "sys": 90,
+        "dia": 60
+      },
+      "rr": 26,
+      "temp": 37.5,
+      "spo2": 91,
+      "waveform": "sinus_ecg",
+      "etco2": 30,
+      "lastupdated": "2025-11-03T05:01:35.888Z"
+    }
+  },
+  {
+    "rowNum": 91,
+    "caseId": "CARD0018",
+    "vitals": {
+      "hr": 140,
+      "bp": {
+        "sys": 90,
+        "dia": 60
+      },
+      "rr": 30,
+      "temp": 37.5,
+      "spo2": 91,
+      "waveform": "sinus_ecg",
+      "etco2": 32,
+      "lastupdated": "2025-11-03T05:01:35.888Z"
+    }
+  },
+  {
+    "rowNum": 92,
+    "caseId": "PEDRE39",
+    "vitals": {
+      "hr": 135,
+      "bp": {
+        "sys": 110,
+        "dia": 70
+      },
+      "rr": 30,
+      "temp": 37.5,
+      "spo2": 88,
+      "waveform": "sinus_ecg",
+      "etco2": 35,
+      "lastupdated": "2025-11-03T05:01:35.888Z"
+    }
+  },
+  {
+    "rowNum": 93,
+    "caseId": "NEUR0027",
+    "vitals": {
+      "hr": 105,
+      "bp": {
+        "sys": 120,
+        "dia": 80
+      },
+      "rr": 18,
+      "temp": 36.8,
+      "spo2": 97,
+      "waveform": "sinus_ecg",
+      "etco2": 35,
+      "lastupdated": "2025-11-03T05:01:35.888Z"
+    }
+  },
+  {
+    "rowNum": 94,
+    "caseId": "TRAU0003",
+    "vitals": {
+      "hr": 130,
+      "bp": {
+        "sys": 80,
+        "dia": 50
+      },
+      "rr": 30,
+      "temp": 37.5,
+      "spo2": 92,
+      "waveform": "sinus_ecg",
+      "etco2": 36,
+      "lastupdated": "2025-11-03T05:01:35.888Z"
+    }
+  },
+  {
+    "rowNum": 95,
+    "caseId": "NEUR0012",
+    "vitals": {
+      "hr": 98,
+      "bp": {
+        "sys": 128,
+        "dia": 82
+      },
+      "rr": 19,
+      "temp": 36.8,
+      "spo2": 95,
+      "waveform": "nsr_ecg",
+      "etco2": 34,
+      "lastupdated": "2025-11-03T05:01:35.888Z"
+    }
+  },
+  {
+    "rowNum": 96,
+    "caseId": "RESP0004",
+    "vitals": {
+      "hr": 130,
+      "bp": {
+        "sys": 110,
+        "dia": 70
+      },
+      "rr": 24,
+      "temp": 37.5,
+      "spo2": 88,
+      "waveform": "sinus_ecg",
+      "etco2": 32,
+      "lastupdated": "2025-11-03T05:01:35.888Z"
+    }
+  },
+  {
+    "rowNum": 97,
+    "caseId": "CARD0019",
+    "vitals": {
+      "hr": 130,
+      "bp": {
+        "sys": 90,
+        "dia": 60
+      },
+      "rr": 30,
+      "temp": 37.5,
+      "spo2": 85,
+      "waveform": "sinus_ecg",
+      "etco2": 28,
+      "lastupdated": "2025-11-03T05:01:35.888Z"
+    }
+  },
+  {
+    "rowNum": 98,
+    "caseId": "NEUR0013",
+    "vitals": {
+      "hr": 98,
+      "bp": {
+        "sys": 130,
+        "dia": 80
+      },
+      "rr": 20,
+      "temp": 37.2,
+      "spo2": 96,
+      "waveform": "sinus_ecg",
+      "etco2": 35,
+      "lastupdated": "2025-11-03T05:01:35.888Z"
+    }
+  },
+  {
+    "rowNum": 99,
+    "caseId": "NEUR0014",
+    "vitals": {
+      "hr": 98,
+      "bp": {
+        "sys": 145,
+        "dia": 90
+      },
+      "rr": 20,
+      "temp": 37,
+      "spo2": 97,
+      "waveform": "sinus_ecg",
+      "etco2": 33,
+      "lastupdated": "2025-11-03T05:01:35.888Z"
+    }
+  },
+  {
+    "rowNum": 100,
+    "caseId": "PEDRE40",
+    "vitals": {
+      "hr": 130,
+      "bp": {
+        "sys": 100,
+        "dia": 60
+      },
+      "rr": 30,
+      "temp": 37.5,
+      "spo2": 88,
+      "waveform": "sinus_ecg",
+      "etco2": 34,
+      "lastupdated": "2025-11-03T05:01:35.888Z"
+    }
+  },
+  {
+    "rowNum": 101,
+    "caseId": "PEDIM02",
+    "vitals": {
+      "hr": 130,
+      "bp": {
+        "sys": 90,
+        "dia": 55
+      },
+      "rr": 30,
+      "temp": 36.7,
+      "spo2": 88,
+      "waveform": "sinus_ecg",
+      "etco2": 32,
+      "lastupdated": "2025-11-03T05:01:35.888Z"
+    }
+  },
+  {
+    "rowNum": 102,
+    "caseId": "TRAU0004",
+    "vitals": {
+      "hr": 130,
+      "bp": {
+        "sys": 90,
+        "dia": 50
+      },
+      "rr": 30,
+      "temp": 36.8,
+      "spo2": 92,
+      "waveform": "sinus_ecg",
+      "etco2": 28,
+      "lastupdated": "2025-11-03T05:01:35.888Z"
+    }
+  },
+  {
+    "rowNum": 103,
+    "caseId": "CARD0050",
+    "vitals": {
+      "hr": 135,
+      "bp": {
+        "sys": 110,
+        "dia": 70
+      },
+      "rr": 30,
+      "temp": 37.5,
+      "spo2": 93,
+      "waveform": "sinus_ecg",
+      "etco2": 36,
+      "lastupdated": "2025-11-03T05:01:35.889Z"
+    }
+  },
+  {
+    "rowNum": 104,
+    "caseId": "CARD0020",
+    "vitals": {
+      "hr": 135,
+      "bp": {
+        "sys": 150,
+        "dia": 90
+      },
+      "rr": 28,
+      "temp": 37,
+      "spo2": 92,
+      "waveform": "sinus_ecg",
+      "etco2": 35,
+      "lastupdated": "2025-11-03T05:01:35.889Z"
+    }
+  },
+  {
+    "rowNum": 105,
+    "caseId": "GAST0002",
+    "vitals": {
+      "hr": 125,
+      "bp": {
+        "sys": 90,
+        "dia": 55
+      },
+      "rr": 30,
+      "temp": 38.9,
+      "spo2": 90,
+      "waveform": "sinus_ecg",
+      "etco2": 28,
+      "lastupdated": "2025-11-03T05:01:35.889Z"
+    }
+  },
+  {
+    "rowNum": 106,
+    "caseId": "CARD0021",
+    "vitals": {
+      "hr": 130,
+      "bp": {
+        "sys": 90,
+        "dia": 60
+      },
+      "rr": 30,
+      "temp": 37.5,
+      "spo2": 91,
+      "waveform": "sinus_ecg",
+      "etco2": 35,
+      "lastupdated": "2025-11-03T05:01:35.889Z"
+    }
+  },
+  {
+    "rowNum": 107,
+    "caseId": "RESP0016",
+    "vitals": {
+      "hr": 130,
+      "bp": {
+        "sys": 100,
+        "dia": 70
+      },
+      "rr": 30,
+      "temp": 37.5,
+      "spo2": 88,
+      "waveform": "sinus_ecg",
+      "etco2": 35,
+      "lastupdated": "2025-11-03T05:01:35.889Z"
+    }
+  },
+  {
+    "rowNum": 108,
+    "caseId": "CARD0022",
+    "vitals": {
+      "hr": 130,
+      "bp": {
+        "sys": 90,
+        "dia": 60
+      },
+      "rr": 28,
+      "temp": 37.5,
+      "spo2": 92,
+      "waveform": "sinus_ecg",
+      "etco2": 30,
+      "lastupdated": "2025-11-03T05:01:35.889Z"
+    }
+  },
+  {
+    "rowNum": 109,
+    "caseId": "PEDMU08",
+    "vitals": {
+      "hr": 130,
+      "bp": {
+        "sys": 90,
+        "dia": 60
+      },
+      "rr": 24,
+      "temp": 39.5,
+      "spo2": 95,
+      "waveform": "sinus_ecg",
+      "lastupdated": "2025-11-03T05:01:35.889Z"
+    }
+  },
+  {
+    "rowNum": 110,
+    "caseId": "RESP0025",
+    "vitals": {
+      "hr": 135,
+      "bp": {
+        "sys": 90,
+        "dia": 60
+      },
+      "rr": 30,
+      "temp": 37.5,
+      "spo2": 88,
+      "waveform": "sinus_ecg",
+      "etco2": 32,
+      "lastupdated": "2025-11-03T05:01:35.889Z"
+    }
+  },
+  {
+    "rowNum": 111,
+    "caseId": "CARD0023",
+    "vitals": {
+      "hr": 140,
+      "bp": {
+        "sys": 85,
+        "dia": 55
+      },
+      "rr": 26,
+      "temp": 37.2,
+      "spo2": 91,
+      "waveform": "sinus_ecg",
+      "etco2": 29,
+      "lastupdated": "2025-11-03T05:01:35.889Z"
+    }
+  },
+  {
+    "rowNum": 112,
+    "caseId": "CARD0024",
+    "vitals": {
+      "hr": 130,
+      "bp": {
+        "sys": 150,
+        "dia": 90
+      },
+      "rr": 22,
+      "temp": 37.5,
+      "spo2": 95,
+      "waveform": "sinus_ecg",
+      "etco2": 33,
+      "lastupdated": "2025-11-03T05:01:35.889Z"
+    }
+  },
+  {
+    "rowNum": 113,
+    "caseId": "CARD0051",
+    "vitals": {
+      "hr": 130,
+      "bp": {
+        "sys": 70,
+        "dia": 40
+      },
+      "rr": 30,
+      "temp": 36.9,
+      "spo2": 85,
+      "waveform": "vtach_ecg",
+      "etco2": 28,
+      "lastupdated": "2025-11-03T05:01:35.889Z"
+    }
+  },
+  {
+    "rowNum": 114,
+    "caseId": "RESP0005",
+    "vitals": {
+      "hr": 115,
+      "bp": {
+        "sys": 98,
+        "dia": 65
+      },
+      "rr": 24,
+      "temp": 36.8,
+      "spo2": 91,
+      "waveform": "sinus_ecg",
+      "etco2": 32,
+      "lastupdated": "2025-11-03T05:01:35.889Z"
+    }
+  },
+  {
+    "rowNum": 115,
+    "caseId": "NEUR0036",
+    "vitals": {
+      "hr": 110,
+      "bp": {
+        "sys": 125,
+        "dia": 80
+      },
+      "rr": 18,
+      "temp": 36.8,
+      "spo2": 97,
+      "waveform": "sinus_ecg",
+      "etco2": 34,
+      "lastupdated": "2025-11-03T05:01:35.889Z"
+    }
+  },
+  {
+    "rowNum": 116,
+    "caseId": "CARD0025",
+    "vitals": {
+      "hr": 140,
+      "bp": {
+        "sys": 90,
+        "dia": 60
+      },
+      "rr": 30,
+      "temp": 37.9,
+      "spo2": 90,
+      "waveform": "sinus_ecg",
+      "lastupdated": "2025-11-03T05:01:35.889Z"
+    }
+  },
+  {
+    "rowNum": 117,
+    "caseId": "NEUR0015",
+    "vitals": {
+      "hr": 100,
+      "bp": {
+        "sys": 130,
+        "dia": 80
+      },
+      "rr": 20,
+      "temp": 36.7,
+      "spo2": 96,
+      "waveform": "sinus_ecg",
+      "etco2": 35,
+      "lastupdated": "2025-11-03T05:01:35.889Z"
+    }
+  },
+  {
+    "rowNum": 118,
+    "caseId": "CARD0026",
+    "vitals": {
+      "hr": 130,
+      "bp": {
+        "sys": 110,
+        "dia": 70
+      },
+      "rr": 24,
+      "temp": 37.6,
+      "spo2": 94,
+      "waveform": "sinus_ecg",
+      "etco2": 32,
+      "lastupdated": "2025-11-03T05:01:35.889Z"
+    }
+  },
+  {
+    "rowNum": 119,
+    "caseId": "RESP0017",
+    "vitals": {
+      "hr": 108,
+      "bp": {
+        "sys": 115,
+        "dia": 75
+      },
+      "rr": 24,
+      "temp": 37,
+      "spo2": 92,
+      "waveform": "sinus_ecg",
+      "etco2": 35,
+      "lastupdated": "2025-11-03T05:01:35.889Z"
+    }
+  },
+  {
+    "rowNum": 120,
+    "caseId": "CARD0027",
+    "vitals": {
+      "hr": 130,
+      "bp": {
+        "sys": 100,
+        "dia": 60
+      },
+      "rr": 24,
+      "temp": 37.9,
+      "spo2": 93,
+      "waveform": "sinus_ecg",
+      "etco2": 34,
+      "lastupdated": "2025-11-03T05:01:35.889Z"
+    }
+  },
+  {
+    "rowNum": 121,
+    "caseId": "CARD0028",
+    "vitals": {
+      "hr": 130,
+      "bp": {
+        "sys": 100,
+        "dia": 70
+      },
+      "rr": 24,
+      "temp": 37.5,
+      "spo2": 92,
+      "waveform": "sinus_ecg",
+      "etco2": 34,
+      "lastupdated": "2025-11-03T05:01:35.889Z"
+    }
+  },
+  {
+    "rowNum": 122,
+    "caseId": "CARD0029",
+    "vitals": {
+      "hr": 130,
+      "bp": {
+        "sys": 100,
+        "dia": 70
+      },
+      "rr": 24,
+      "temp": 37.8,
+      "spo2": 93,
+      "waveform": "sinus_ecg",
+      "lastupdated": "2025-11-03T05:01:35.889Z"
+    }
+  },
+  {
+    "rowNum": 123,
+    "caseId": "CARD0030",
+    "vitals": {
+      "hr": 130,
+      "bp": {
+        "sys": 140,
+        "dia": 90
+      },
+      "rr": 26,
+      "temp": 37,
+      "spo2": 92,
+      "waveform": "sinus_ecg",
+      "etco2": 36,
+      "lastupdated": "2025-11-03T05:01:35.889Z"
+    }
+  },
+  {
+    "rowNum": 124,
+    "caseId": "NEUR0037",
+    "vitals": {
+      "hr": 130,
+      "bp": {
+        "sys": 120,
+        "dia": 80
+      },
+      "rr": 25,
+      "temp": 36.8,
+      "spo2": 96,
+      "waveform": "sinus_ecg",
+      "etco2": 35,
+      "lastupdated": "2025-11-03T05:01:35.889Z"
+    }
+  },
+  {
+    "rowNum": 125,
+    "caseId": "NEUR0038",
+    "vitals": {
+      "hr": 130,
+      "bp": {
+        "sys": 120,
+        "dia": 80
+      },
+      "rr": 22,
+      "temp": 36.8,
+      "spo2": 98,
+      "etco2": 38,
+      "waveform": "sinus_ecg",
+      "lastupdated": "2025-11-03T05:01:35.889Z"
+    }
+  },
+  {
+    "rowNum": 126,
+    "caseId": "CARD0031",
+    "vitals": {
+      "hr": 125,
+      "bp": {
+        "sys": 100,
+        "dia": 70
+      },
+      "rr": 24,
+      "temp": 37,
+      "spo2": 90,
+      "waveform": "sinus_ecg",
+      "etco2": 32,
+      "lastupdated": "2025-11-03T05:01:35.889Z"
+    }
+  },
+  {
+    "rowNum": 127,
+    "caseId": "CARD0032",
+    "vitals": {
+      "hr": 130,
+      "bp": {
+        "sys": 110,
+        "dia": 70
+      },
+      "rr": 26,
+      "temp": 36.8,
+      "spo2": 95,
+      "waveform": "sinus_ecg",
+      "etco2": 32,
+      "lastupdated": "2025-11-03T05:01:35.889Z"
+    }
+  },
+  {
+    "rowNum": 128,
+    "caseId": "NEUR0003",
+    "vitals": {
+      "hr": 95,
+      "bp": {
+        "sys": 150,
+        "dia": 90
+      },
+      "rr": 20,
+      "temp": 37,
+      "spo2": 98,
+      "waveform": "sinus_ecg",
+      "lastupdated": "2025-11-03T05:01:35.890Z"
+    }
+  },
+  {
+    "rowNum": 129,
+    "caseId": "CARD0052",
+    "vitals": {
+      "hr": 130,
+      "bp": {
+        "sys": 90,
+        "dia": 60
+      },
+      "rr": 30,
+      "temp": 37,
+      "spo2": 88,
+      "waveform": "sinus_ecg",
+      "etco2": 28,
+      "lastupdated": "2025-11-03T05:01:35.890Z"
+    }
+  },
+  {
+    "rowNum": 130,
+    "caseId": "RESP0020",
+    "vitals": {
+      "hr": 125,
+      "bp": {
+        "sys": 105,
+        "dia": 65
+      },
+      "rr": 28,
+      "temp": 37.2,
+      "spo2": 90,
+      "waveform": "sinus_ecg",
+      "etco2": 32,
+      "lastupdated": "2025-11-03T05:01:35.890Z"
+    }
+  },
+  {
+    "rowNum": 131,
+    "caseId": "CARD0033",
+    "vitals": {
+      "hr": 130,
+      "bp": {
+        "sys": 100,
+        "dia": 65
+      },
+      "rr": 26,
+      "temp": 37.5,
+      "spo2": 95,
+      "waveform": "sinus_ecg",
+      "etco2": 32,
+      "lastupdated": "2025-11-03T05:01:35.890Z"
+    }
+  },
+  {
+    "rowNum": 132,
+    "caseId": "NEUR0016",
+    "vitals": {
+      "hr": 100,
+      "bp": {
+        "sys": 150,
+        "dia": 85
+      },
+      "rr": 20,
+      "temp": 37,
+      "spo2": 95,
+      "waveform": "sinus_ecg",
+      "etco2": 30,
+      "lastupdated": "2025-11-03T05:01:35.890Z"
+    }
+  },
+  {
+    "rowNum": 133,
+    "caseId": "NEUR0039",
+    "vitals": {
+      "hr": 98,
+      "bp": {
+        "sys": 128,
+        "dia": 78
+      },
+      "rr": 19,
+      "temp": 37.2,
+      "spo2": 97,
+      "waveform": "sinus_ecg",
+      "etco2": 30,
+      "lastupdated": "2025-11-03T05:01:35.890Z"
+    }
+  },
+  {
+    "rowNum": 134,
+    "caseId": "MULT0018",
+    "vitals": {
+      "hr": 130,
+      "bp": {
+        "sys": 100,
+        "dia": 60
+      },
+      "rr": 22,
+      "temp": 39.5,
+      "spo2": 92,
+      "waveform": "sinus_ecg",
+      "lastupdated": "2025-11-03T05:01:35.890Z"
+    }
+  },
+  {
+    "rowNum": 135,
+    "caseId": "NEUR0040",
+    "vitals": {
+      "hr": 130,
+      "bp": {
+        "sys": 140,
+        "dia": 90
+      },
+      "rr": 22,
+      "temp": 37.2,
+      "spo2": 96,
+      "waveform": "sinus_ecg",
+      "etco2": 35,
+      "lastupdated": "2025-11-03T05:01:35.890Z"
+    }
+  },
+  {
+    "rowNum": 136,
+    "caseId": "NEUR0028",
+    "vitals": {
+      "hr": 130,
+      "bp": {
+        "sys": 80,
+        "dia": 50
+      },
+      "rr": 30,
+      "temp": 37.2,
+      "spo2": 90,
+      "waveform": "sinus_ecg",
+      "etco2": 32,
+      "lastupdated": "2025-11-03T05:01:35.890Z"
+    }
+  },
+  {
+    "rowNum": 137,
+    "caseId": "CARD0053",
+    "vitals": {
+      "hr": 0,
+      "bp": {
+        "sys": null,
+        "dia": null
+      },
+      "rr": 0,
+      "temp": null,
+      "spo2": null,
+      "waveform": "asystole_ecg",
+      "etco2": 0,
+      "lastupdated": "2025-11-03T05:02:29.238Z"
+    }
+  },
+  {
+    "rowNum": 138,
+    "caseId": "CARD0034",
+    "vitals": {
+      "hr": 130,
+      "bp": {
+        "sys": 150,
+        "dia": 90
+      },
+      "rr": 24,
+      "temp": 36.8,
+      "spo2": 95,
+      "waveform": "sinus_ecg",
+      "etco2": 35,
+      "lastupdated": "2025-11-03T05:01:35.890Z"
+    }
+  },
+  {
+    "rowNum": 139,
+    "caseId": "TRAU0010",
+    "vitals": {
+      "hr": 135,
+      "bp": {
+        "sys": 70,
+        "dia": 40
+      },
+      "rr": 30,
+      "temp": 35.5,
+      "spo2": 88,
+      "waveform": "sinus_ecg",
+      "etco2": 28,
+      "lastupdated": "2025-11-03T05:01:35.890Z"
+    }
+  },
+  {
+    "rowNum": 140,
+    "caseId": "RESP0006",
+    "vitals": {
+      "hr": 130,
+      "bp": {
+        "sys": 98,
+        "dia": 62
+      },
+      "rr": 26,
+      "temp": 37.5,
+      "spo2": 92,
+      "waveform": "sinus_ecg",
+      "etco2": 34,
+      "lastupdated": "2025-11-03T05:01:35.890Z"
+    }
+  },
+  {
+    "rowNum": 141,
+    "caseId": "CARD0035",
+    "vitals": {
+      "hr": 130,
+      "bp": {
+        "sys": 98,
+        "dia": 64
+      },
+      "rr": 24,
+      "temp": 37.5,
+      "spo2": 92,
+      "waveform": "sinus_ecg",
+      "etco2": 36,
+      "lastupdated": "2025-11-03T05:01:35.890Z"
+    }
+  },
+  {
+    "rowNum": 142,
+    "caseId": "RESP0007",
+    "vitals": {
+      "hr": 130,
+      "bp": {
+        "sys": 100,
+        "dia": 65
+      },
+      "rr": 24,
+      "temp": 37,
+      "spo2": 88,
+      "waveform": "sinus_ecg",
+      "etco2": 32,
+      "lastupdated": "2025-11-03T05:01:35.890Z"
+    }
+  },
+  {
+    "rowNum": 143,
+    "caseId": "CARD0054",
+    "vitals": {
+      "hr": 130,
+      "bp": {
+        "sys": 98,
+        "dia": 65
+      },
+      "rr": 25,
+      "temp": 37.1,
+      "spo2": 92,
+      "waveform": "sinus_ecg",
+      "etco2": 32,
+      "lastupdated": "2025-11-03T05:01:35.890Z"
+    }
+  },
+  {
+    "rowNum": 144,
+    "caseId": "PEDRE26",
+    "vitals": {
+      "hr": 130,
+      "bp": {
+        "sys": 100,
+        "dia": 60
+      },
+      "rr": 30,
+      "temp": 37,
+      "spo2": 88,
+      "waveform": "sinus_ecg",
+      "etco2": 35,
+      "lastupdated": "2025-11-03T05:01:35.890Z"
+    }
+  },
+  {
+    "rowNum": 145,
+    "caseId": "PEDMU19",
+    "vitals": {
+      "hr": 135,
+      "bp": {
+        "sys": 98,
+        "dia": 58
+      },
+      "rr": 32,
+      "temp": 37.6,
+      "spo2": 92,
+      "waveform": "sinus_ecg",
+      "etco2": 34,
+      "lastupdated": "2025-11-03T05:01:35.891Z"
+    }
+  },
+  {
+    "rowNum": 146,
+    "caseId": "PEDID01",
+    "vitals": {
+      "hr": 130,
+      "bp": {
+        "sys": 100,
+        "dia": 60
+      },
+      "rr": 24,
+      "temp": 39.5,
+      "spo2": 97,
+      "waveform": "sinus_ecg",
+      "lastupdated": "2025-11-03T05:01:35.891Z"
+    }
+  },
+  {
+    "rowNum": 147,
+    "caseId": "CARD0055",
+    "vitals": {
+      "hr": 145,
+      "bp": {
+        "sys": 100,
+        "dia": 70
+      },
+      "rr": 30,
+      "temp": 37.9,
+      "spo2": 92,
+      "waveform": "sinus_ecg",
+      "etco2": 36,
+      "lastupdated": "2025-11-03T05:01:35.891Z"
+    }
+  },
+  {
+    "rowNum": 148,
+    "caseId": "CARD0036",
+    "vitals": {
+      "hr": 125,
+      "bp": {
+        "sys": 105,
+        "dia": 75
+      },
+      "rr": 22,
+      "temp": 36.7,
+      "spo2": 94,
+      "waveform": "sinus_ecg",
+      "etco2": 33,
+      "lastupdated": "2025-11-03T05:01:35.891Z"
+    }
+  },
+  {
+    "rowNum": 149,
+    "caseId": "RESP0021",
+    "vitals": {
+      "hr": 100,
+      "bp": {
+        "sys": 110,
+        "dia": 70
+      },
+      "rr": 24,
+      "temp": 37.5,
+      "spo2": 92,
+      "waveform": "sinus_ecg",
+      "etco2": 35,
+      "lastupdated": "2025-11-03T05:01:35.891Z"
+    }
+  },
+  {
+    "rowNum": 150,
+    "caseId": "RESP0008",
+    "vitals": {
+      "hr": 130,
+      "bp": {
+        "sys": 105,
+        "dia": 65
+      },
+      "rr": 30,
+      "temp": 38.5,
+      "spo2": 88,
+      "waveform": "sinus_ecg",
+      "etco2": 36,
+      "lastupdated": "2025-11-03T05:01:35.891Z"
+    }
+  },
+  {
+    "rowNum": 151,
+    "caseId": "PSYC0001",
+    "vitals": {
+      "hr": 110,
+      "bp": {
+        "sys": 130,
+        "dia": 85
+      },
+      "rr": 20,
+      "temp": 37,
+      "spo2": 98,
+      "waveform": "sinus_ecg",
+      "lastupdated": "2025-11-03T05:01:35.891Z"
+    }
+  },
+  {
+    "rowNum": 152,
+    "caseId": "CARD0037",
+    "vitals": {
+      "hr": 110,
+      "bp": {
+        "sys": 95,
+        "dia": 60
+      },
+      "rr": 24,
+      "temp": 37.5,
+      "spo2": 88,
+      "waveform": "sinus_ecg",
+      "etco2": 30,
+      "lastupdated": "2025-11-03T05:01:35.891Z"
+    }
+  },
+  {
+    "rowNum": 153,
+    "caseId": "PEDRE41",
+    "vitals": {
+      "hr": 125,
+      "bp": {
+        "sys": 110,
+        "dia": 60
+      },
+      "rr": 28,
+      "temp": 36.8,
+      "spo2": 90,
+      "waveform": "sinus_ecg",
+      "etco2": 32,
+      "lastupdated": "2025-11-03T05:01:35.891Z"
+    }
+  },
+  {
+    "rowNum": 154,
+    "caseId": "NEUR0017",
+    "vitals": {
+      "hr": 90,
+      "bp": {
+        "sys": 140,
+        "dia": 80
+      },
+      "rr": 18,
+      "temp": 37,
+      "spo2": 96,
+      "waveform": "nsr_ecg",
+      "lastupdated": "2025-11-03T05:01:35.891Z"
+    }
+  },
+  {
+    "rowNum": 155,
+    "caseId": "NEUR0020",
+    "vitals": {
+      "hr": 100,
+      "bp": {
+        "sys": 130,
+        "dia": 80
+      },
+      "rr": 20,
+      "temp": 37,
+      "spo2": 96,
+      "waveform": "sinus_ecg",
+      "etco2": 35,
+      "lastupdated": "2025-11-03T05:01:35.891Z"
+    }
+  },
+  {
+    "rowNum": 156,
+    "caseId": "CARD0038",
+    "vitals": {
+      "hr": 130,
+      "bp": {
+        "sys": 150,
+        "dia": 90
+      },
+      "rr": 24,
+      "temp": 37.5,
+      "spo2": 95,
+      "waveform": "sinus_ecg",
+      "etco2": 35,
+      "lastupdated": "2025-11-03T05:01:35.891Z"
+    }
+  },
+  {
+    "rowNum": 157,
+    "caseId": "ENDO0002",
+    "vitals": {
+      "hr": 98,
+      "bp": {
+        "sys": 130,
+        "dia": 80
+      },
+      "rr": 20,
+      "temp": 36.5,
+      "spo2": 98,
+      "waveform": "sinus_ecg",
+      "lastupdated": "2025-11-03T05:01:35.891Z"
+    }
+  },
+  {
+    "rowNum": 158,
+    "caseId": "RESP0018",
+    "vitals": {
+      "hr": 115,
+      "bp": {
+        "sys": 100,
+        "dia": 70
+      },
+      "rr": 24,
+      "temp": 36.8,
+      "spo2": 92,
+      "waveform": "sinus_ecg",
+      "etco2": 35,
+      "lastupdated": "2025-11-03T05:01:35.891Z"
+    }
+  },
+  {
+    "rowNum": 159,
+    "caseId": "PEDRE42",
+    "vitals": {
+      "hr": 130,
+      "bp": {
+        "sys": 100,
+        "dia": 65
+      },
+      "rr": 35,
+      "temp": 37,
+      "spo2": 88,
+      "waveform": "sinus_ecg",
+      "etco2": 30,
+      "lastupdated": "2025-11-03T05:01:35.891Z"
+    }
+  },
+  {
+    "rowNum": 160,
+    "caseId": "NEUR0004",
+    "vitals": {
+      "hr": 125,
+      "bp": {
+        "sys": 145,
+        "dia": 85
+      },
+      "rr": 19,
+      "temp": 36.5,
+      "spo2": 94,
+      "waveform": "sinus_ecg",
+      "etco2": 34,
+      "lastupdated": "2025-11-03T05:01:35.891Z"
+    }
+  },
+  {
+    "rowNum": 161,
+    "caseId": "RESP0009",
+    "vitals": {
+      "hr": 130,
+      "bp": {
+        "sys": 100,
+        "dia": 70
+      },
+      "rr": 30,
+      "temp": 37.2,
+      "spo2": 88,
+      "waveform": "sinus_ecg",
+      "etco2": 28,
+      "lastupdated": "2025-11-03T05:01:35.891Z"
+    }
+  },
+  {
+    "rowNum": 162,
+    "caseId": "NEUR0029",
+    "vitals": {
+      "hr": 110,
+      "bp": {
+        "sys": 130,
+        "dia": 80
+      },
+      "rr": 20,
+      "temp": 37,
+      "spo2": 95,
+      "waveform": "sinus_ecg",
+      "etco2": 35,
+      "lastupdated": "2025-11-03T05:01:35.891Z"
+    }
+  },
+  {
+    "rowNum": 163,
+    "caseId": "PEDRE43",
+    "vitals": {
+      "hr": 135,
+      "bp": {
+        "sys": 100,
+        "dia": 60
+      },
+      "rr": 36,
+      "temp": 37.5,
+      "spo2": 88,
+      "waveform": "sinus_ecg",
+      "etco2": 30,
+      "lastupdated": "2025-11-03T05:01:35.892Z"
+    }
+  },
+  {
+    "rowNum": 164,
+    "caseId": "CARD0039",
+    "vitals": {
+      "hr": 130,
+      "bp": {
+        "sys": 88,
+        "dia": 54
+      },
+      "rr": 30,
+      "temp": 37.7,
+      "spo2": 90,
+      "waveform": "sinus_ecg",
+      "etco2": 28,
+      "lastupdated": "2025-11-03T05:01:35.892Z"
+    }
+  },
+  {
+    "rowNum": 165,
+    "caseId": "NEUR0018",
+    "vitals": {
+      "hr": 95,
+      "bp": {
+        "sys": 150,
+        "dia": 90
+      },
+      "rr": 20,
+      "temp": 37.5,
+      "spo2": 93,
+      "waveform": "sinus_ecg",
+      "lastupdated": "2025-11-03T05:01:35.892Z"
+    }
+  },
+  {
+    "rowNum": 166,
+    "caseId": "CARD0040",
+    "vitals": {
+      "hr": 130,
+      "bp": {
+        "sys": 90,
+        "dia": 60
+      },
+      "rr": 30,
+      "temp": 37.5,
+      "spo2": 92,
+      "waveform": "sinus_ecg",
+      "etco2": 34,
+      "lastupdated": "2025-11-03T05:01:35.892Z"
+    }
+  },
+  {
+    "rowNum": 167,
+    "caseId": "NEUR0005",
+    "vitals": {
+      "hr": 110,
+      "bp": {
+        "sys": 120,
+        "dia": 80
+      },
+      "rr": 20,
+      "temp": 36.8,
+      "spo2": 95,
+      "waveform": "sinus_ecg",
+      "lastupdated": "2025-11-03T05:01:35.892Z"
+    }
+  },
+  {
+    "rowNum": 168,
+    "caseId": "MUSC0001",
+    "vitals": {
+      "hr": 130,
+      "bp": {
+        "sys": 110,
+        "dia": 70
+      },
+      "rr": 20,
+      "temp": 37.9,
+      "spo2": 95,
+      "waveform": "sinus_ecg",
+      "etco2": 36,
+      "lastupdated": "2025-11-03T05:01:35.892Z"
+    }
+  },
+  {
+    "rowNum": 169,
+    "caseId": "CARD0041",
+    "vitals": {
+      "hr": 130,
+      "bp": {
+        "sys": 140,
+        "dia": 90
+      },
+      "rr": 22,
+      "temp": 37,
+      "spo2": 95,
+      "waveform": "sinus_ecg",
+      "etco2": 35,
+      "lastupdated": "2025-11-03T05:01:35.892Z"
+    }
+  },
+  {
+    "rowNum": 170,
+    "caseId": "RESP0022",
+    "vitals": {
+      "hr": 130,
+      "bp": {
+        "sys": 105,
+        "dia": 65
+      },
+      "rr": 30,
+      "temp": 37.5,
+      "spo2": 88,
+      "waveform": "sinus_ecg",
+      "etco2": 40,
+      "lastupdated": "2025-11-03T05:01:35.892Z"
+    }
+  },
+  {
+    "rowNum": 171,
+    "caseId": "NEUR0041",
+    "vitals": {
+      "hr": 130,
+      "bp": {
+        "sys": 120,
+        "dia": 80
+      },
+      "rr": 22,
+      "temp": 37.5,
+      "spo2": 98,
+      "waveform": "sinus_ecg",
+      "etco2": 35,
+      "lastupdated": "2025-11-03T05:01:35.892Z"
+    }
+  },
+  {
+    "rowNum": 172,
+    "caseId": "NEUR0030",
+    "vitals": {
+      "hr": 112,
+      "bp": {
+        "sys": 110,
+        "dia": 70
+      },
+      "rr": 20,
+      "temp": 37.2,
+      "spo2": 98,
+      "waveform": "sinus_ecg",
+      "etco2": 35,
+      "lastupdated": "2025-11-03T05:01:35.892Z"
+    }
+  },
+  {
+    "rowNum": 173,
+    "caseId": "NEUR0042",
+    "vitals": {
+      "hr": 100,
+      "bp": {
+        "sys": 120,
+        "dia": 80
+      },
+      "rr": 20,
+      "temp": 37,
+      "spo2": 98,
+      "waveform": "sinus_ecg",
+      "etco2": 35,
+      "lastupdated": "2025-11-03T05:01:35.892Z"
+    }
+  },
+  {
+    "rowNum": 174,
+    "caseId": "RESP0027",
+    "vitals": {
+      "hr": 130,
+      "bp": {
+        "sys": 88,
+        "dia": 58
+      },
+      "rr": 30,
+      "temp": 36.8,
+      "spo2": 85,
+      "waveform": "sinus_ecg",
+      "etco2": 29,
+      "lastupdated": "2025-11-03T05:01:35.892Z"
+    }
+  },
+  {
+    "rowNum": 175,
+    "caseId": "CARD0056",
+    "vitals": {
+      "hr": 140,
+      "bp": {
+        "sys": 90,
+        "dia": 60
+      },
+      "rr": 30,
+      "temp": 37.5,
+      "spo2": 88,
+      "waveform": "sinus_ecg",
+      "etco2": 28,
+      "lastupdated": "2025-11-03T05:01:35.892Z"
+    }
+  },
+  {
+    "rowNum": 176,
+    "caseId": "RESP0028",
+    "vitals": {
+      "hr": 160,
+      "bp": {
+        "sys": null,
+        "dia": null
+      },
+      "rr": 60,
+      "temp": 36.8,
+      "spo2": 88,
+      "waveform": "sinus_ecg",
+      "etco2": 35,
+      "lastupdated": "2025-11-03T05:01:35.892Z"
+    }
+  },
+  {
+    "rowNum": 177,
+    "caseId": "CARD0042",
+    "vitals": {
+      "hr": 125,
+      "bp": {
+        "sys": 115,
+        "dia": 75
+      },
+      "rr": 22,
+      "temp": 37.5,
+      "spo2": 94,
+      "waveform": "sinus_ecg",
+      "etco2": 32,
+      "lastupdated": "2025-11-03T05:01:35.892Z"
+    }
+  },
+  {
+    "rowNum": 178,
+    "caseId": "CARD0057",
+    "vitals": {
+      "hr": 130,
+      "bp": {
+        "sys": 85,
+        "dia": 55
+      },
+      "rr": 30,
+      "temp": 36.8,
+      "spo2": 90,
+      "waveform": "sinus_ecg",
+      "etco2": 29,
+      "lastupdated": "2025-11-03T05:01:35.892Z"
+    }
+  },
+  {
+    "rowNum": 179,
+    "caseId": "NEUR0021",
+    "vitals": {
+      "hr": 130,
+      "bp": {
+        "sys": 140,
+        "dia": 90
+      },
+      "rr": 22,
+      "temp": 37.5,
+      "spo2": 92,
+      "waveform": "sinus_ecg",
+      "etco2": 35,
+      "lastupdated": "2025-11-03T05:01:35.893Z"
+    }
+  },
+  {
+    "rowNum": 180,
+    "caseId": "NEUR0019",
+    "vitals": {
+      "hr": 90,
+      "bp": {
+        "sys": 130,
+        "dia": 80
+      },
+      "rr": 18,
+      "temp": 36.7,
+      "spo2": 95,
+      "waveform": "sinus_ecg",
+      "lastupdated": "2025-11-03T05:01:35.893Z"
+    }
+  },
+  {
+    "rowNum": 181,
+    "caseId": "NEUR0031",
+    "vitals": {
+      "hr": 130,
+      "bp": {
+        "sys": 90,
+        "dia": 60
+      },
+      "rr": 30,
+      "temp": 37.5,
+      "spo2": 88,
+      "waveform": "sinus_ecg",
+      "etco2": 28,
+      "lastupdated": "2025-11-03T05:01:35.893Z"
+    }
+  },
+  {
+    "rowNum": 182,
+    "caseId": "CARD0043",
+    "vitals": {
+      "hr": 130,
+      "bp": {
+        "sys": 100,
+        "dia": 60
+      },
+      "rr": 24,
+      "temp": 37.5,
+      "spo2": 92,
+      "waveform": "sinus_ecg",
+      "lastupdated": "2025-11-03T05:01:35.893Z"
+    }
+  },
+  {
+    "rowNum": 183,
+    "caseId": "NEUR0022",
+    "vitals": {
+      "hr": 130,
+      "bp": {
+        "sys": 150,
+        "dia": 90
+      },
+      "rr": 20,
+      "temp": 36.8,
+      "spo2": 95,
+      "waveform": "sinus_ecg",
+      "etco2": 32,
+      "lastupdated": "2025-11-03T05:01:35.893Z"
+    }
+  },
+  {
+    "rowNum": 184,
+    "caseId": "CARD0044",
+    "vitals": {
+      "hr": 138,
+      "bp": {
+        "sys": 150,
+        "dia": 90
+      },
+      "rr": 22,
+      "temp": 37.8,
+      "spo2": 96,
+      "waveform": "sinus_ecg",
+      "etco2": 35,
+      "lastupdated": "2025-11-03T05:01:35.893Z"
+    }
+  },
+  {
+    "rowNum": 185,
+    "caseId": "NEUR0023",
+    "vitals": {
+      "hr": 130,
+      "bp": {
+        "sys": 110,
+        "dia": 70
+      },
+      "rr": 20,
+      "temp": 37.2,
+      "spo2": 96,
+      "waveform": "sinus_ecg",
+      "lastupdated": "2025-11-03T05:01:35.893Z"
+    }
+  },
+  {
+    "rowNum": 186,
+    "caseId": "CARD0045",
+    "vitals": {
+      "hr": 130,
+      "bp": {
+        "sys": 110,
+        "dia": 70
+      },
+      "rr": 22,
+      "temp": 37.5,
+      "spo2": 92,
+      "waveform": "sinus_ecg",
+      "etco2": 30,
+      "lastupdated": "2025-11-03T05:01:35.893Z"
+    }
+  },
+  {
+    "rowNum": 187,
+    "caseId": "NEUR0043",
+    "vitals": {
+      "hr": 128,
+      "bp": {
+        "sys": 112,
+        "dia": 68
+      },
+      "rr": 19,
+      "temp": 36.7,
+      "spo2": 96,
+      "waveform": "sinus_ecg",
+      "etco2": 34,
+      "lastupdated": "2025-11-03T05:01:35.893Z"
+    }
+  },
+  {
+    "rowNum": 188,
+    "caseId": "PEDRE44",
+    "vitals": {
+      "hr": 130,
+      "bp": {
+        "sys": 100,
+        "dia": 65
+      },
+      "rr": 32,
+      "temp": 37.5,
+      "spo2": 87,
+      "waveform": "sinus_ecg",
+      "etco2": 34,
+      "lastupdated": "2025-11-03T05:01:35.893Z"
+    }
+  },
+  {
+    "rowNum": 189,
+    "caseId": "PEDMU09",
+    "vitals": {
+      "hr": 130,
+      "bp": {
+        "sys": 90,
+        "dia": 55
+      },
+      "rr": 24,
+      "temp": 39.5,
+      "spo2": 97,
+      "waveform": "sinus_ecg",
+      "etco2": 32,
+      "lastupdated": "2025-11-03T05:01:35.893Z"
+    }
+  },
+  {
+    "rowNum": 190,
+    "caseId": "PEDNE44",
+    "vitals": {
+      "hr": 130,
+      "bp": {
+        "sys": 100,
+        "dia": 60
+      },
+      "rr": 24,
+      "temp": 39.5,
+      "spo2": 98,
+      "waveform": "sinus_ecg",
+      "lastupdated": "2025-11-03T05:01:35.893Z"
+    }
+  },
+  {
+    "rowNum": 191,
+    "caseId": "TRAU0005",
+    "vitals": {
+      "hr": 95,
+      "bp": {
+        "sys": 110,
+        "dia": 70
+      },
+      "rr": 16,
+      "temp": 36.8,
+      "spo2": 98,
+      "waveform": "sinus_ecg",
+      "lastupdated": "2025-11-03T05:01:35.893Z"
+    }
+  }
+]

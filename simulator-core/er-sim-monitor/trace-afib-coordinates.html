@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Trace AFib Coordinates</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 20px;
+      background: #111;
+      font-family: monospace;
+      color: #0f0;
+    }
+    .container {
+      max-width: 1400px;
+      margin: 0 auto;
+    }
+    canvas {
+      background: #000;
+      display: block;
+      margin: 20px auto;
+      border: 2px solid #0f0;
+      cursor: crosshair;
+    }
+    .info {
+      text-align: center;
+      margin: 10px 0;
+    }
+    .coordinates {
+      background: #1a1a1a;
+      padding: 15px;
+      border-radius: 8px;
+      margin-top: 20px;
+      max-height: 400px;
+      overflow-y: auto;
+    }
+    button {
+      background: #0f0;
+      color: #000;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      border-radius: 5px;
+      margin: 5px;
+    }
+    button:hover {
+      background: #0c0;
+    }
+    .controls {
+      text-align: center;
+      margin: 20px 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1 style="text-align: center;">AFib Waveform Coordinate Tracer</h1>
+    <div class="info">
+      Click on the canvas to trace the AFib waveform. Start from the left and trace one complete cycle.
+    </div>
+    <div class="info" style="color: #ff0;">
+      Current position: <span id="mousePos">-</span>
+    </div>
+
+    <canvas id="canvas" width="1200" height="200"></canvas>
+
+    <div class="controls">
+      <button onclick="clearPoints()">Clear All Points</button>
+      <button onclick="undoLast()">Undo Last</button>
+      <button onclick="exportCoordinates()">Export Coordinates</button>
+      <button onclick="drawInterpolated()">Preview Interpolated</button>
+    </div>
+
+    <div class="coordinates">
+      <h3>Traced Coordinates (normalized 0-1):</h3>
+      <pre id="output">Click on the waveform to start tracing...</pre>
+    </div>
+  </div>
+
+  <script>
+    const canvas = document.getElementById('canvas');
+    const ctx = canvas.getContext('2d');
+    const width = canvas.width;
+    const height = canvas.height;
+    const centerY = height / 2;
+
+    let points = [];
+
+    // Draw grid
+    function drawGrid() {
+      ctx.strokeStyle = '#222';
+      ctx.lineWidth = 1;
+
+      // Vertical lines every 20px
+      for (let x = 0; x < width; x += 20) {
+        ctx.beginPath();
+        ctx.moveTo(x, 0);
+        ctx.lineTo(x, height);
+        ctx.stroke();
+      }
+
+      // Horizontal lines every 20px
+      for (let y = 0; y < height; y += 20) {
+        ctx.beginPath();
+        ctx.moveTo(0, y);
+        ctx.lineTo(width, y);
+        ctx.stroke();
+      }
+
+      // Center line (baseline)
+      ctx.strokeStyle = '#444';
+      ctx.lineWidth = 2;
+      ctx.beginPath();
+      ctx.moveTo(0, centerY);
+      ctx.lineTo(width, centerY);
+      ctx.stroke();
+    }
+
+    // Draw traced points
+    function redraw() {
+      ctx.clearRect(0, 0, width, height);
+      drawGrid();
+
+      if (points.length === 0) return;
+
+      // Draw line through points
+      ctx.strokeStyle = '#0f0';
+      ctx.lineWidth = 2;
+      ctx.beginPath();
+      ctx.moveTo(points[0].x, points[0].y);
+      for (let i = 1; i < points.length; i++) {
+        ctx.lineTo(points[i].x, points[i].y);
+      }
+      ctx.stroke();
+
+      // Draw points
+      ctx.fillStyle = '#ff0';
+      for (let pt of points) {
+        ctx.beginPath();
+        ctx.arc(pt.x, pt.y, 3, 0, Math.PI * 2);
+        ctx.fill();
+      }
+    }
+
+    // Click to add point
+    canvas.addEventListener('click', (e) => {
+      const rect = canvas.getBoundingClientRect();
+      const x = e.clientX - rect.left;
+      const y = e.clientY - rect.top;
+
+      points.push({ x, y });
+      redraw();
+      updateOutput();
+    });
+
+    // Show mouse position
+    canvas.addEventListener('mousemove', (e) => {
+      const rect = canvas.getBoundingClientRect();
+      const x = e.clientX - rect.left;
+      const y = e.clientY - rect.top;
+      const normX = (x / width).toFixed(4);
+      const normY = ((centerY - y) / (height / 2)).toFixed(4);
+      document.getElementById('mousePos').textContent = `x: ${x.toFixed(0)}px (${normX}), y: ${y.toFixed(0)}px (amp: ${normY})`;
+    });
+
+    function clearPoints() {
+      points = [];
+      redraw();
+      updateOutput();
+    }
+
+    function undoLast() {
+      points.pop();
+      redraw();
+      updateOutput();
+    }
+
+    function updateOutput() {
+      if (points.length === 0) {
+        document.getElementById('output').textContent = 'Click on the waveform to start tracing...';
+        return;
+      }
+
+      // Normalize coordinates
+      const normalized = points.map(pt => ({
+        x: (pt.x / width).toFixed(4),
+        y: ((centerY - pt.y) / (height / 2)).toFixed(4) // Flip Y and normalize to amplitude
+      }));
+
+      let output = `// ${points.length} traced points\nconst afibTrace = [\n`;
+      for (let i = 0; i < normalized.length; i++) {
+        output += `  { x: ${normalized[i].x}, y: ${normalized[i].y} }`;
+        if (i < normalized.length - 1) output += ',';
+        output += '\n';
+      }
+      output += '];\n\n';
+      output += `// Usage: Interpolate between these points based on current x position`;
+
+      document.getElementById('output').textContent = output;
+    }
+
+    function exportCoordinates() {
+      updateOutput();
+      const text = document.getElementById('output').textContent;
+      navigator.clipboard.writeText(text);
+      alert('Coordinates copied to clipboard!');
+    }
+
+    function drawInterpolated() {
+      if (points.length < 2) {
+        alert('Need at least 2 points to interpolate!');
+        return;
+      }
+
+      ctx.clearRect(0, 0, width, height);
+      drawGrid();
+
+      // Draw interpolated curve
+      ctx.strokeStyle = '#0ff';
+      ctx.lineWidth = 2;
+      ctx.beginPath();
+
+      for (let x = 0; x < width; x++) {
+        const y = interpolateY(x);
+        if (x === 0) ctx.moveTo(x, y);
+        else ctx.lineTo(x, y);
+      }
+      ctx.stroke();
+
+      // Draw original points on top
+      ctx.fillStyle = '#f0f';
+      for (let pt of points) {
+        ctx.beginPath();
+        ctx.arc(pt.x, pt.y, 4, 0, Math.PI * 2);
+        ctx.fill();
+      }
+    }
+
+    function interpolateY(x) {
+      // Find the two points to interpolate between
+      let i = 0;
+      while (i < points.length - 1 && points[i + 1].x < x) {
+        i++;
+      }
+
+      if (i >= points.length - 1) return points[points.length - 1].y;
+
+      const p1 = points[i];
+      const p2 = points[i + 1];
+      const t = (x - p1.x) / (p2.x - p1.x);
+
+      return p1.y + (p2.y - p1.y) * t;
+    }
+
+    // Initial draw
+    drawGrid();
+  </script>
+</body>
+</html>

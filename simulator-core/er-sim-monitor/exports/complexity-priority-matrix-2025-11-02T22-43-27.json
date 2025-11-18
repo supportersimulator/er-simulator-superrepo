@@ -1,0 +1,1703 @@
+[
+  {
+    "caseId": "GAST0001",
+    "complexity": 1,
+    "priority": 10,
+    "isFoundational": "TRUE",
+    "pathway": "Acute Abdomen Mastery",
+    "category": "GAST",
+    "quadrant": "High Priority Low Complexity"
+  },
+  {
+    "caseId": "GAST0002",
+    "complexity": 3,
+    "priority": 9,
+    "isFoundational": "TRUE",
+    "pathway": "Acute Abdomen Mastery",
+    "category": "GAST",
+    "quadrant": "High Priority Low Complexity"
+  },
+  {
+    "caseId": "RESP0001",
+    "complexity": 1,
+    "priority": 10,
+    "isFoundational": "TRUE",
+    "pathway": "Airway & Breathing Mastery",
+    "category": "RESP",
+    "quadrant": "High Priority Low Complexity"
+  },
+  {
+    "caseId": "RESP0002",
+    "complexity": 1,
+    "priority": 10,
+    "isFoundational": "TRUE",
+    "pathway": "Airway & Breathing Mastery",
+    "category": "RESP",
+    "quadrant": "High Priority Low Complexity"
+  },
+  {
+    "caseId": "RESP0003",
+    "complexity": 1,
+    "priority": 10,
+    "isFoundational": "TRUE",
+    "pathway": "Airway & Breathing Mastery",
+    "category": "RESP",
+    "quadrant": "High Priority Low Complexity"
+  },
+  {
+    "caseId": "RESP0004",
+    "complexity": 1,
+    "priority": 10,
+    "isFoundational": "TRUE",
+    "pathway": "Airway & Breathing Mastery",
+    "category": "RESP",
+    "quadrant": "High Priority Low Complexity"
+  },
+  {
+    "caseId": "RESP0005",
+    "complexity": 1,
+    "priority": 10,
+    "isFoundational": "TRUE",
+    "pathway": "Airway & Breathing Mastery",
+    "category": "RESP",
+    "quadrant": "High Priority Low Complexity"
+  },
+  {
+    "caseId": "RESP0006",
+    "complexity": 1,
+    "priority": 10,
+    "isFoundational": "TRUE",
+    "pathway": "Airway & Breathing Mastery",
+    "category": "RESP",
+    "quadrant": "High Priority Low Complexity"
+  },
+  {
+    "caseId": "RESP0007",
+    "complexity": 1,
+    "priority": 10,
+    "isFoundational": "TRUE",
+    "pathway": "Airway & Breathing Mastery",
+    "category": "RESP",
+    "quadrant": "High Priority Low Complexity"
+  },
+  {
+    "caseId": "RESP0008",
+    "complexity": 1,
+    "priority": 10,
+    "isFoundational": "TRUE",
+    "pathway": "Airway & Breathing Mastery",
+    "category": "RESP",
+    "quadrant": "High Priority Low Complexity"
+  },
+  {
+    "caseId": "RESP0009",
+    "complexity": 1,
+    "priority": 10,
+    "isFoundational": "TRUE",
+    "pathway": "Airway & Breathing Mastery",
+    "category": "RESP",
+    "quadrant": "High Priority Low Complexity"
+  },
+  {
+    "caseId": "RESP0010",
+    "complexity": 2,
+    "priority": 10,
+    "isFoundational": "TRUE",
+    "pathway": "Airway & Breathing Mastery",
+    "category": "RESP",
+    "quadrant": "High Priority Low Complexity"
+  },
+  {
+    "caseId": "RESP0011",
+    "complexity": 2,
+    "priority": 10,
+    "isFoundational": "TRUE",
+    "pathway": "Airway & Breathing Mastery",
+    "category": "RESP",
+    "quadrant": "High Priority Low Complexity"
+  },
+  {
+    "caseId": "RESP0012",
+    "complexity": 2,
+    "priority": 10,
+    "isFoundational": "TRUE",
+    "pathway": "Airway & Breathing Mastery",
+    "category": "RESP",
+    "quadrant": "High Priority Low Complexity"
+  },
+  {
+    "caseId": "RESP0013",
+    "complexity": 2,
+    "priority": 10,
+    "isFoundational": "TRUE",
+    "pathway": "Airway & Breathing Mastery",
+    "category": "RESP",
+    "quadrant": "High Priority Low Complexity"
+  },
+  {
+    "caseId": "RESP0014",
+    "complexity": 2,
+    "priority": 10,
+    "isFoundational": "TRUE",
+    "pathway": "Airway & Breathing Mastery",
+    "category": "RESP",
+    "quadrant": "High Priority Low Complexity"
+  },
+  {
+    "caseId": "RESP0015",
+    "complexity": 2,
+    "priority": 10,
+    "isFoundational": "TRUE",
+    "pathway": "Airway & Breathing Mastery",
+    "category": "RESP",
+    "quadrant": "High Priority Low Complexity"
+  },
+  {
+    "caseId": "RESP0016",
+    "complexity": 2,
+    "priority": 10,
+    "isFoundational": "TRUE",
+    "pathway": "Airway & Breathing Mastery",
+    "category": "RESP",
+    "quadrant": "High Priority Low Complexity"
+  },
+  {
+    "caseId": "RESP0017",
+    "complexity": 2,
+    "priority": 10,
+    "isFoundational": "TRUE",
+    "pathway": "Airway & Breathing Mastery",
+    "category": "RESP",
+    "quadrant": "High Priority Low Complexity"
+  },
+  {
+    "caseId": "RESP0018",
+    "complexity": 2,
+    "priority": 10,
+    "isFoundational": "TRUE",
+    "pathway": "Airway & Breathing Mastery",
+    "category": "RESP",
+    "quadrant": "High Priority Low Complexity"
+  },
+  {
+    "caseId": "RESP0019",
+    "complexity": 3,
+    "priority": 10,
+    "isFoundational": "TRUE",
+    "pathway": "Airway & Breathing Mastery",
+    "category": "RESP",
+    "quadrant": "High Priority Low Complexity"
+  },
+  {
+    "caseId": "RESP0020",
+    "complexity": 3,
+    "priority": 10,
+    "isFoundational": "TRUE",
+    "pathway": "Airway & Breathing Mastery",
+    "category": "RESP",
+    "quadrant": "High Priority Low Complexity"
+  },
+  {
+    "caseId": "RESP0021",
+    "complexity": 3,
+    "priority": 10,
+    "isFoundational": "TRUE",
+    "pathway": "Airway & Breathing Mastery",
+    "category": "RESP",
+    "quadrant": "High Priority Low Complexity"
+  },
+  {
+    "caseId": "RESP0022",
+    "complexity": 3,
+    "priority": 10,
+    "isFoundational": "TRUE",
+    "pathway": "Airway & Breathing Mastery",
+    "category": "RESP",
+    "quadrant": "High Priority Low Complexity"
+  },
+  {
+    "caseId": "PEDRE24",
+    "complexity": 1,
+    "priority": 9,
+    "isFoundational": "TRUE",
+    "pathway": "Airway & Breathing Mastery",
+    "category": "RESP",
+    "quadrant": "High Priority Low Complexity"
+  },
+  {
+    "caseId": "RESP0025",
+    "complexity": 1,
+    "priority": 9,
+    "isFoundational": "TRUE",
+    "pathway": "Airway & Breathing Mastery",
+    "category": "RESP",
+    "quadrant": "High Priority Low Complexity"
+  },
+  {
+    "caseId": "PEDRE26",
+    "complexity": 1,
+    "priority": 9,
+    "isFoundational": "TRUE",
+    "pathway": "Airway & Breathing Mastery",
+    "category": "RESP",
+    "quadrant": "High Priority Low Complexity"
+  },
+  {
+    "caseId": "RESP0027",
+    "complexity": 1,
+    "priority": 9,
+    "isFoundational": "TRUE",
+    "pathway": "Airway & Breathing Mastery",
+    "category": "RESP",
+    "quadrant": "High Priority Low Complexity"
+  },
+  {
+    "caseId": "RESP0028",
+    "complexity": 1,
+    "priority": 9,
+    "isFoundational": "TRUE",
+    "pathway": "Airway & Breathing Mastery",
+    "category": "RESP",
+    "quadrant": "High Priority Low Complexity"
+  },
+  {
+    "caseId": "RESP0029",
+    "complexity": 2,
+    "priority": 9,
+    "isFoundational": "TRUE",
+    "pathway": "Airway & Breathing Mastery",
+    "category": "RESP",
+    "quadrant": "High Priority Low Complexity"
+  },
+  {
+    "caseId": "RESP0030",
+    "complexity": 2,
+    "priority": 9,
+    "isFoundational": "TRUE",
+    "pathway": "Airway & Breathing Mastery",
+    "category": "RESP",
+    "quadrant": "High Priority Low Complexity"
+  },
+  {
+    "caseId": "RESP0031",
+    "complexity": 3,
+    "priority": 9,
+    "isFoundational": "TRUE",
+    "pathway": "Airway & Breathing Mastery",
+    "category": "RESP",
+    "quadrant": "High Priority Low Complexity"
+  },
+  {
+    "caseId": "PEDRE32",
+    "complexity": 3,
+    "priority": 9,
+    "isFoundational": "TRUE",
+    "pathway": "Airway & Breathing Mastery",
+    "category": "RESP",
+    "quadrant": "High Priority Low Complexity"
+  },
+  {
+    "caseId": "PEDRE33",
+    "complexity": 3,
+    "priority": 9,
+    "isFoundational": "TRUE",
+    "pathway": "Airway & Breathing Mastery",
+    "category": "RESP",
+    "quadrant": "High Priority Low Complexity"
+  },
+  {
+    "caseId": "PEDRE34",
+    "complexity": 3,
+    "priority": 9,
+    "isFoundational": "TRUE",
+    "pathway": "Airway & Breathing Mastery",
+    "category": "RESP",
+    "quadrant": "High Priority Low Complexity"
+  },
+  {
+    "caseId": "PEDRE35",
+    "complexity": 3,
+    "priority": 9,
+    "isFoundational": "TRUE",
+    "pathway": "Airway & Breathing Mastery",
+    "category": "RESP",
+    "quadrant": "High Priority Low Complexity"
+  },
+  {
+    "caseId": "PEDRE36",
+    "complexity": 3,
+    "priority": 9,
+    "isFoundational": "TRUE",
+    "pathway": "Airway & Breathing Mastery",
+    "category": "RESP",
+    "quadrant": "High Priority Low Complexity"
+  },
+  {
+    "caseId": "PEDRE37",
+    "complexity": 3,
+    "priority": 9,
+    "isFoundational": "TRUE",
+    "pathway": "Airway & Breathing Mastery",
+    "category": "RESP",
+    "quadrant": "High Priority Low Complexity"
+  },
+  {
+    "caseId": "PEDRE38",
+    "complexity": 3,
+    "priority": 9,
+    "isFoundational": "TRUE",
+    "pathway": "Airway & Breathing Mastery",
+    "category": "RESP",
+    "quadrant": "High Priority Low Complexity"
+  },
+  {
+    "caseId": "PEDRE39",
+    "complexity": 3,
+    "priority": 9,
+    "isFoundational": "TRUE",
+    "pathway": "Airway & Breathing Mastery",
+    "category": "RESP",
+    "quadrant": "High Priority Low Complexity"
+  },
+  {
+    "caseId": "PEDRE40",
+    "complexity": 3,
+    "priority": 9,
+    "isFoundational": "TRUE",
+    "pathway": "Airway & Breathing Mastery",
+    "category": "RESP",
+    "quadrant": "High Priority Low Complexity"
+  },
+  {
+    "caseId": "PEDRE41",
+    "complexity": 3,
+    "priority": 9,
+    "isFoundational": "TRUE",
+    "pathway": "Airway & Breathing Mastery",
+    "category": "RESP",
+    "quadrant": "High Priority Low Complexity"
+  },
+  {
+    "caseId": "PEDRE42",
+    "complexity": 3,
+    "priority": 9,
+    "isFoundational": "TRUE",
+    "pathway": "Airway & Breathing Mastery",
+    "category": "RESP",
+    "quadrant": "High Priority Low Complexity"
+  },
+  {
+    "caseId": "PEDRE43",
+    "complexity": 3,
+    "priority": 9,
+    "isFoundational": "TRUE",
+    "pathway": "Airway & Breathing Mastery",
+    "category": "RESP",
+    "quadrant": "High Priority Low Complexity"
+  },
+  {
+    "caseId": "PEDRE44",
+    "complexity": 3,
+    "priority": 9,
+    "isFoundational": "TRUE",
+    "pathway": "Airway & Breathing Mastery",
+    "category": "RESP",
+    "quadrant": "High Priority Low Complexity"
+  },
+  {
+    "caseId": "PEDIM01",
+    "complexity": 3,
+    "priority": 10,
+    "isFoundational": "TRUE",
+    "pathway": "Allergic Emergency Mastery",
+    "category": "IMMU",
+    "quadrant": "High Priority Low Complexity"
+  },
+  {
+    "caseId": "PEDIM02",
+    "complexity": 3,
+    "priority": 10,
+    "isFoundational": "TRUE",
+    "pathway": "Allergic Emergency Mastery",
+    "category": "IMMU",
+    "quadrant": "High Priority Low Complexity"
+  },
+  {
+    "caseId": "CARD0001",
+    "complexity": 2,
+    "priority": 10,
+    "isFoundational": "TRUE",
+    "pathway": "Cardiac Mastery Foundations",
+    "category": "CARD",
+    "quadrant": "High Priority Low Complexity"
+  },
+  {
+    "caseId": "CARD0002",
+    "complexity": 2,
+    "priority": 10,
+    "isFoundational": "TRUE",
+    "pathway": "Cardiac Mastery Foundations",
+    "category": "CARD",
+    "quadrant": "High Priority Low Complexity"
+  },
+  {
+    "caseId": "CARD0003",
+    "complexity": 2,
+    "priority": 10,
+    "isFoundational": "TRUE",
+    "pathway": "Cardiac Mastery Foundations",
+    "category": "CARD",
+    "quadrant": "High Priority Low Complexity"
+  },
+  {
+    "caseId": "CARD0004",
+    "complexity": 2,
+    "priority": 10,
+    "isFoundational": "TRUE",
+    "pathway": "Cardiac Mastery Foundations",
+    "category": "CARD",
+    "quadrant": "High Priority Low Complexity"
+  },
+  {
+    "caseId": "CARD0005",
+    "complexity": 2,
+    "priority": 10,
+    "isFoundational": "TRUE",
+    "pathway": "Cardiac Mastery Foundations",
+    "category": "CARD",
+    "quadrant": "High Priority Low Complexity"
+  },
+  {
+    "caseId": "CARD0006",
+    "complexity": 2,
+    "priority": 10,
+    "isFoundational": "TRUE",
+    "pathway": "Cardiac Mastery Foundations",
+    "category": "CARD",
+    "quadrant": "High Priority Low Complexity"
+  },
+  {
+    "caseId": "CARD0007",
+    "complexity": 2,
+    "priority": 10,
+    "isFoundational": "TRUE",
+    "pathway": "Cardiac Mastery Foundations",
+    "category": "CARD",
+    "quadrant": "High Priority Low Complexity"
+  },
+  {
+    "caseId": "CARD0008",
+    "complexity": 2,
+    "priority": 10,
+    "isFoundational": "TRUE",
+    "pathway": "Cardiac Mastery Foundations",
+    "category": "CARD",
+    "quadrant": "High Priority Low Complexity"
+  },
+  {
+    "caseId": "CARD0009",
+    "complexity": 2,
+    "priority": 10,
+    "isFoundational": "TRUE",
+    "pathway": "Cardiac Mastery Foundations",
+    "category": "CARD",
+    "quadrant": "High Priority Low Complexity"
+  },
+  {
+    "caseId": "CARD0010",
+    "complexity": 2,
+    "priority": 10,
+    "isFoundational": "TRUE",
+    "pathway": "Cardiac Mastery Foundations",
+    "category": "CARD",
+    "quadrant": "High Priority Low Complexity"
+  },
+  {
+    "caseId": "CARD0011",
+    "complexity": 2,
+    "priority": 10,
+    "isFoundational": "TRUE",
+    "pathway": "Cardiac Mastery Foundations",
+    "category": "CARD",
+    "quadrant": "High Priority Low Complexity"
+  },
+  {
+    "caseId": "CARD0012",
+    "complexity": 2,
+    "priority": 10,
+    "isFoundational": "TRUE",
+    "pathway": "Cardiac Mastery Foundations",
+    "category": "CARD",
+    "quadrant": "High Priority Low Complexity"
+  },
+  {
+    "caseId": "CARD0013",
+    "complexity": 2,
+    "priority": 10,
+    "isFoundational": "TRUE",
+    "pathway": "Cardiac Mastery Foundations",
+    "category": "CARD",
+    "quadrant": "High Priority Low Complexity"
+  },
+  {
+    "caseId": "CARD0014",
+    "complexity": 2,
+    "priority": 10,
+    "isFoundational": "TRUE",
+    "pathway": "Cardiac Mastery Foundations",
+    "category": "CARD",
+    "quadrant": "High Priority Low Complexity"
+  },
+  {
+    "caseId": "CARD0015",
+    "complexity": 2,
+    "priority": 10,
+    "isFoundational": "TRUE",
+    "pathway": "Cardiac Mastery Foundations",
+    "category": "CARD",
+    "quadrant": "High Priority Low Complexity"
+  },
+  {
+    "caseId": "CARD0016",
+    "complexity": 2,
+    "priority": 10,
+    "isFoundational": "TRUE",
+    "pathway": "Cardiac Mastery Foundations",
+    "category": "CARD",
+    "quadrant": "High Priority Low Complexity"
+  },
+  {
+    "caseId": "CARD0017",
+    "complexity": 2,
+    "priority": 10,
+    "isFoundational": "TRUE",
+    "pathway": "Cardiac Mastery Foundations",
+    "category": "CARD",
+    "quadrant": "High Priority Low Complexity"
+  },
+  {
+    "caseId": "CARD0018",
+    "complexity": 2,
+    "priority": 10,
+    "isFoundational": "TRUE",
+    "pathway": "Cardiac Mastery Foundations",
+    "category": "CARD",
+    "quadrant": "High Priority Low Complexity"
+  },
+  {
+    "caseId": "CARD0019",
+    "complexity": 2,
+    "priority": 10,
+    "isFoundational": "TRUE",
+    "pathway": "Cardiac Mastery Foundations",
+    "category": "CARD",
+    "quadrant": "High Priority Low Complexity"
+  },
+  {
+    "caseId": "CARD0020",
+    "complexity": 2,
+    "priority": 10,
+    "isFoundational": "TRUE",
+    "pathway": "Cardiac Mastery Foundations",
+    "category": "CARD",
+    "quadrant": "High Priority Low Complexity"
+  },
+  {
+    "caseId": "CARD0021",
+    "complexity": 2,
+    "priority": 10,
+    "isFoundational": "TRUE",
+    "pathway": "Cardiac Mastery Foundations",
+    "category": "CARD",
+    "quadrant": "High Priority Low Complexity"
+  },
+  {
+    "caseId": "CARD0022",
+    "complexity": 2,
+    "priority": 10,
+    "isFoundational": "TRUE",
+    "pathway": "Cardiac Mastery Foundations",
+    "category": "CARD",
+    "quadrant": "High Priority Low Complexity"
+  },
+  {
+    "caseId": "CARD0023",
+    "complexity": 2,
+    "priority": 10,
+    "isFoundational": "TRUE",
+    "pathway": "Cardiac Mastery Foundations",
+    "category": "CARD",
+    "quadrant": "High Priority Low Complexity"
+  },
+  {
+    "caseId": "CARD0024",
+    "complexity": 2,
+    "priority": 10,
+    "isFoundational": "TRUE",
+    "pathway": "Cardiac Mastery Foundations",
+    "category": "CARD",
+    "quadrant": "High Priority Low Complexity"
+  },
+  {
+    "caseId": "CARD0025",
+    "complexity": 2,
+    "priority": 10,
+    "isFoundational": "TRUE",
+    "pathway": "Cardiac Mastery Foundations",
+    "category": "CARD",
+    "quadrant": "High Priority Low Complexity"
+  },
+  {
+    "caseId": "CARD0026",
+    "complexity": 2,
+    "priority": 10,
+    "isFoundational": "TRUE",
+    "pathway": "Cardiac Mastery Foundations",
+    "category": "CARD",
+    "quadrant": "High Priority Low Complexity"
+  },
+  {
+    "caseId": "CARD0027",
+    "complexity": 2,
+    "priority": 10,
+    "isFoundational": "TRUE",
+    "pathway": "Cardiac Mastery Foundations",
+    "category": "CARD",
+    "quadrant": "High Priority Low Complexity"
+  },
+  {
+    "caseId": "CARD0028",
+    "complexity": 2,
+    "priority": 10,
+    "isFoundational": "TRUE",
+    "pathway": "Cardiac Mastery Foundations",
+    "category": "CARD",
+    "quadrant": "High Priority Low Complexity"
+  },
+  {
+    "caseId": "CARD0029",
+    "complexity": 2,
+    "priority": 10,
+    "isFoundational": "TRUE",
+    "pathway": "Cardiac Mastery Foundations",
+    "category": "CARD",
+    "quadrant": "High Priority Low Complexity"
+  },
+  {
+    "caseId": "CARD0030",
+    "complexity": 2,
+    "priority": 10,
+    "isFoundational": "TRUE",
+    "pathway": "Cardiac Mastery Foundations",
+    "category": "CARD",
+    "quadrant": "High Priority Low Complexity"
+  },
+  {
+    "caseId": "CARD0031",
+    "complexity": 2,
+    "priority": 10,
+    "isFoundational": "TRUE",
+    "pathway": "Cardiac Mastery Foundations",
+    "category": "CARD",
+    "quadrant": "High Priority Low Complexity"
+  },
+  {
+    "caseId": "CARD0032",
+    "complexity": 2,
+    "priority": 10,
+    "isFoundational": "TRUE",
+    "pathway": "Cardiac Mastery Foundations",
+    "category": "CARD",
+    "quadrant": "High Priority Low Complexity"
+  },
+  {
+    "caseId": "CARD0033",
+    "complexity": 2,
+    "priority": 10,
+    "isFoundational": "TRUE",
+    "pathway": "Cardiac Mastery Foundations",
+    "category": "CARD",
+    "quadrant": "High Priority Low Complexity"
+  },
+  {
+    "caseId": "CARD0034",
+    "complexity": 2,
+    "priority": 10,
+    "isFoundational": "TRUE",
+    "pathway": "Cardiac Mastery Foundations",
+    "category": "CARD",
+    "quadrant": "High Priority Low Complexity"
+  },
+  {
+    "caseId": "CARD0035",
+    "complexity": 2,
+    "priority": 10,
+    "isFoundational": "TRUE",
+    "pathway": "Cardiac Mastery Foundations",
+    "category": "CARD",
+    "quadrant": "High Priority Low Complexity"
+  },
+  {
+    "caseId": "CARD0036",
+    "complexity": 2,
+    "priority": 10,
+    "isFoundational": "TRUE",
+    "pathway": "Cardiac Mastery Foundations",
+    "category": "CARD",
+    "quadrant": "High Priority Low Complexity"
+  },
+  {
+    "caseId": "CARD0037",
+    "complexity": 2,
+    "priority": 10,
+    "isFoundational": "TRUE",
+    "pathway": "Cardiac Mastery Foundations",
+    "category": "CARD",
+    "quadrant": "High Priority Low Complexity"
+  },
+  {
+    "caseId": "CARD0038",
+    "complexity": 2,
+    "priority": 10,
+    "isFoundational": "TRUE",
+    "pathway": "Cardiac Mastery Foundations",
+    "category": "CARD",
+    "quadrant": "High Priority Low Complexity"
+  },
+  {
+    "caseId": "CARD0039",
+    "complexity": 2,
+    "priority": 10,
+    "isFoundational": "TRUE",
+    "pathway": "Cardiac Mastery Foundations",
+    "category": "CARD",
+    "quadrant": "High Priority Low Complexity"
+  },
+  {
+    "caseId": "CARD0040",
+    "complexity": 2,
+    "priority": 10,
+    "isFoundational": "TRUE",
+    "pathway": "Cardiac Mastery Foundations",
+    "category": "CARD",
+    "quadrant": "High Priority Low Complexity"
+  },
+  {
+    "caseId": "CARD0041",
+    "complexity": 2,
+    "priority": 10,
+    "isFoundational": "TRUE",
+    "pathway": "Cardiac Mastery Foundations",
+    "category": "CARD",
+    "quadrant": "High Priority Low Complexity"
+  },
+  {
+    "caseId": "CARD0042",
+    "complexity": 2,
+    "priority": 10,
+    "isFoundational": "TRUE",
+    "pathway": "Cardiac Mastery Foundations",
+    "category": "CARD",
+    "quadrant": "High Priority Low Complexity"
+  },
+  {
+    "caseId": "CARD0043",
+    "complexity": 2,
+    "priority": 10,
+    "isFoundational": "TRUE",
+    "pathway": "Cardiac Mastery Foundations",
+    "category": "CARD",
+    "quadrant": "High Priority Low Complexity"
+  },
+  {
+    "caseId": "CARD0044",
+    "complexity": 2,
+    "priority": 10,
+    "isFoundational": "TRUE",
+    "pathway": "Cardiac Mastery Foundations",
+    "category": "CARD",
+    "quadrant": "High Priority Low Complexity"
+  },
+  {
+    "caseId": "CARD0045",
+    "complexity": 2,
+    "priority": 10,
+    "isFoundational": "TRUE",
+    "pathway": "Cardiac Mastery Foundations",
+    "category": "CARD",
+    "quadrant": "High Priority Low Complexity"
+  },
+  {
+    "caseId": "CARD0046",
+    "complexity": 3,
+    "priority": 10,
+    "isFoundational": "TRUE",
+    "pathway": "Cardiac Mastery Foundations",
+    "category": "CARD",
+    "quadrant": "High Priority Low Complexity"
+  },
+  {
+    "caseId": "CARD0047",
+    "complexity": 3,
+    "priority": 10,
+    "isFoundational": "TRUE",
+    "pathway": "Cardiac Mastery Foundations",
+    "category": "CARD",
+    "quadrant": "High Priority Low Complexity"
+  },
+  {
+    "caseId": "CARD0048",
+    "complexity": 3,
+    "priority": 10,
+    "isFoundational": "TRUE",
+    "pathway": "Cardiac Mastery Foundations",
+    "category": "CARD",
+    "quadrant": "High Priority Low Complexity"
+  },
+  {
+    "caseId": "CARD0049",
+    "complexity": 3,
+    "priority": 10,
+    "isFoundational": "TRUE",
+    "pathway": "Cardiac Mastery Foundations",
+    "category": "CARD",
+    "quadrant": "High Priority Low Complexity"
+  },
+  {
+    "caseId": "CARD0050",
+    "complexity": 3,
+    "priority": 10,
+    "isFoundational": "TRUE",
+    "pathway": "Cardiac Mastery Foundations",
+    "category": "CARD",
+    "quadrant": "High Priority Low Complexity"
+  },
+  {
+    "caseId": "CARD0051",
+    "complexity": 3,
+    "priority": 10,
+    "isFoundational": "TRUE",
+    "pathway": "Cardiac Mastery Foundations",
+    "category": "CARD",
+    "quadrant": "High Priority Low Complexity"
+  },
+  {
+    "caseId": "CARD0052",
+    "complexity": 3,
+    "priority": 10,
+    "isFoundational": "TRUE",
+    "pathway": "Cardiac Mastery Foundations",
+    "category": "CARD",
+    "quadrant": "High Priority Low Complexity"
+  },
+  {
+    "caseId": "CARD0053",
+    "complexity": 3,
+    "priority": 10,
+    "isFoundational": "TRUE",
+    "pathway": "Cardiac Mastery Foundations",
+    "category": "CARD",
+    "quadrant": "High Priority Low Complexity"
+  },
+  {
+    "caseId": "CARD0054",
+    "complexity": 3,
+    "priority": 10,
+    "isFoundational": "TRUE",
+    "pathway": "Cardiac Mastery Foundations",
+    "category": "CARD",
+    "quadrant": "High Priority Low Complexity"
+  },
+  {
+    "caseId": "CARD0055",
+    "complexity": 3,
+    "priority": 10,
+    "isFoundational": "TRUE",
+    "pathway": "Cardiac Mastery Foundations",
+    "category": "CARD",
+    "quadrant": "High Priority Low Complexity"
+  },
+  {
+    "caseId": "CARD0056",
+    "complexity": 3,
+    "priority": 10,
+    "isFoundational": "TRUE",
+    "pathway": "Cardiac Mastery Foundations",
+    "category": "CARD",
+    "quadrant": "High Priority Low Complexity"
+  },
+  {
+    "caseId": "CARD0057",
+    "complexity": 3,
+    "priority": 10,
+    "isFoundational": "TRUE",
+    "pathway": "Cardiac Mastery Foundations",
+    "category": "CARD",
+    "quadrant": "High Priority Low Complexity"
+  },
+  {
+    "caseId": "ENDO0001",
+    "complexity": 2,
+    "priority": 10,
+    "isFoundational": "TRUE",
+    "pathway": "Endocrine Emergency Mastery",
+    "category": "ENDO",
+    "quadrant": "High Priority Low Complexity"
+  },
+  {
+    "caseId": "ENDO0002",
+    "complexity": 2,
+    "priority": 10,
+    "isFoundational": "TRUE",
+    "pathway": "Endocrine Emergency Mastery",
+    "category": "ENDO",
+    "quadrant": "High Priority Low Complexity"
+  },
+  {
+    "caseId": "PEDEN03",
+    "complexity": 3,
+    "priority": 10,
+    "isFoundational": "TRUE",
+    "pathway": "Endocrine Emergency Mastery",
+    "category": "ENDO",
+    "quadrant": "High Priority Low Complexity"
+  },
+  {
+    "caseId": "NEUR0001",
+    "complexity": 1,
+    "priority": 10,
+    "isFoundational": "TRUE",
+    "pathway": "Stroke & Neuro Foundations",
+    "category": "NEUR",
+    "quadrant": "High Priority Low Complexity"
+  },
+  {
+    "caseId": "NEUR0002",
+    "complexity": 1,
+    "priority": 10,
+    "isFoundational": "TRUE",
+    "pathway": "Stroke & Neuro Foundations",
+    "category": "NEUR",
+    "quadrant": "High Priority Low Complexity"
+  },
+  {
+    "caseId": "NEUR0003",
+    "complexity": 1,
+    "priority": 10,
+    "isFoundational": "TRUE",
+    "pathway": "Stroke & Neuro Foundations",
+    "category": "NEUR",
+    "quadrant": "High Priority Low Complexity"
+  },
+  {
+    "caseId": "NEUR0004",
+    "complexity": 1,
+    "priority": 10,
+    "isFoundational": "TRUE",
+    "pathway": "Stroke & Neuro Foundations",
+    "category": "NEUR",
+    "quadrant": "High Priority Low Complexity"
+  },
+  {
+    "caseId": "NEUR0005",
+    "complexity": 1,
+    "priority": 10,
+    "isFoundational": "TRUE",
+    "pathway": "Stroke & Neuro Foundations",
+    "category": "NEUR",
+    "quadrant": "High Priority Low Complexity"
+  },
+  {
+    "caseId": "NEUR0006",
+    "complexity": 2,
+    "priority": 10,
+    "isFoundational": "TRUE",
+    "pathway": "Stroke & Neuro Foundations",
+    "category": "NEUR",
+    "quadrant": "High Priority Low Complexity"
+  },
+  {
+    "caseId": "NEUR0007",
+    "complexity": 2,
+    "priority": 10,
+    "isFoundational": "TRUE",
+    "pathway": "Stroke & Neuro Foundations",
+    "category": "NEUR",
+    "quadrant": "High Priority Low Complexity"
+  },
+  {
+    "caseId": "NEUR0008",
+    "complexity": 2,
+    "priority": 10,
+    "isFoundational": "TRUE",
+    "pathway": "Stroke & Neuro Foundations",
+    "category": "NEUR",
+    "quadrant": "High Priority Low Complexity"
+  },
+  {
+    "caseId": "NEUR0009",
+    "complexity": 2,
+    "priority": 10,
+    "isFoundational": "TRUE",
+    "pathway": "Stroke & Neuro Foundations",
+    "category": "NEUR",
+    "quadrant": "High Priority Low Complexity"
+  },
+  {
+    "caseId": "NEUR0010",
+    "complexity": 2,
+    "priority": 10,
+    "isFoundational": "TRUE",
+    "pathway": "Stroke & Neuro Foundations",
+    "category": "NEUR",
+    "quadrant": "High Priority Low Complexity"
+  },
+  {
+    "caseId": "NEUR0011",
+    "complexity": 2,
+    "priority": 10,
+    "isFoundational": "TRUE",
+    "pathway": "Stroke & Neuro Foundations",
+    "category": "NEUR",
+    "quadrant": "High Priority Low Complexity"
+  },
+  {
+    "caseId": "NEUR0012",
+    "complexity": 2,
+    "priority": 10,
+    "isFoundational": "TRUE",
+    "pathway": "Stroke & Neuro Foundations",
+    "category": "NEUR",
+    "quadrant": "High Priority Low Complexity"
+  },
+  {
+    "caseId": "NEUR0013",
+    "complexity": 2,
+    "priority": 10,
+    "isFoundational": "TRUE",
+    "pathway": "Stroke & Neuro Foundations",
+    "category": "NEUR",
+    "quadrant": "High Priority Low Complexity"
+  },
+  {
+    "caseId": "NEUR0014",
+    "complexity": 2,
+    "priority": 10,
+    "isFoundational": "TRUE",
+    "pathway": "Stroke & Neuro Foundations",
+    "category": "NEUR",
+    "quadrant": "High Priority Low Complexity"
+  },
+  {
+    "caseId": "NEUR0015",
+    "complexity": 2,
+    "priority": 10,
+    "isFoundational": "TRUE",
+    "pathway": "Stroke & Neuro Foundations",
+    "category": "NEUR",
+    "quadrant": "High Priority Low Complexity"
+  },
+  {
+    "caseId": "NEUR0016",
+    "complexity": 2,
+    "priority": 10,
+    "isFoundational": "TRUE",
+    "pathway": "Stroke & Neuro Foundations",
+    "category": "NEUR",
+    "quadrant": "High Priority Low Complexity"
+  },
+  {
+    "caseId": "NEUR0017",
+    "complexity": 2,
+    "priority": 10,
+    "isFoundational": "TRUE",
+    "pathway": "Stroke & Neuro Foundations",
+    "category": "NEUR",
+    "quadrant": "High Priority Low Complexity"
+  },
+  {
+    "caseId": "NEUR0018",
+    "complexity": 2,
+    "priority": 10,
+    "isFoundational": "TRUE",
+    "pathway": "Stroke & Neuro Foundations",
+    "category": "NEUR",
+    "quadrant": "High Priority Low Complexity"
+  },
+  {
+    "caseId": "NEUR0019",
+    "complexity": 2,
+    "priority": 10,
+    "isFoundational": "TRUE",
+    "pathway": "Stroke & Neuro Foundations",
+    "category": "NEUR",
+    "quadrant": "High Priority Low Complexity"
+  },
+  {
+    "caseId": "NEUR0020",
+    "complexity": 3,
+    "priority": 10,
+    "isFoundational": "TRUE",
+    "pathway": "Stroke & Neuro Foundations",
+    "category": "NEUR",
+    "quadrant": "High Priority Low Complexity"
+  },
+  {
+    "caseId": "NEUR0021",
+    "complexity": 3,
+    "priority": 10,
+    "isFoundational": "TRUE",
+    "pathway": "Stroke & Neuro Foundations",
+    "category": "NEUR",
+    "quadrant": "High Priority Low Complexity"
+  },
+  {
+    "caseId": "NEUR0022",
+    "complexity": 3,
+    "priority": 10,
+    "isFoundational": "TRUE",
+    "pathway": "Stroke & Neuro Foundations",
+    "category": "NEUR",
+    "quadrant": "High Priority Low Complexity"
+  },
+  {
+    "caseId": "NEUR0023",
+    "complexity": 3,
+    "priority": 10,
+    "isFoundational": "TRUE",
+    "pathway": "Stroke & Neuro Foundations",
+    "category": "NEUR",
+    "quadrant": "High Priority Low Complexity"
+  },
+  {
+    "caseId": "PEDNE26",
+    "complexity": 2,
+    "priority": 9,
+    "isFoundational": "TRUE",
+    "pathway": "Stroke & Neuro Foundations",
+    "category": "NEUR",
+    "quadrant": "High Priority Low Complexity"
+  },
+  {
+    "caseId": "NEUR0027",
+    "complexity": 3,
+    "priority": 9,
+    "isFoundational": "TRUE",
+    "pathway": "Stroke & Neuro Foundations",
+    "category": "NEUR",
+    "quadrant": "High Priority Low Complexity"
+  },
+  {
+    "caseId": "NEUR0028",
+    "complexity": 3,
+    "priority": 9,
+    "isFoundational": "TRUE",
+    "pathway": "Stroke & Neuro Foundations",
+    "category": "NEUR",
+    "quadrant": "High Priority Low Complexity"
+  },
+  {
+    "caseId": "NEUR0029",
+    "complexity": 3,
+    "priority": 9,
+    "isFoundational": "TRUE",
+    "pathway": "Stroke & Neuro Foundations",
+    "category": "NEUR",
+    "quadrant": "High Priority Low Complexity"
+  },
+  {
+    "caseId": "NEUR0030",
+    "complexity": 3,
+    "priority": 9,
+    "isFoundational": "TRUE",
+    "pathway": "Stroke & Neuro Foundations",
+    "category": "NEUR",
+    "quadrant": "High Priority Low Complexity"
+  },
+  {
+    "caseId": "NEUR0031",
+    "complexity": 3,
+    "priority": 9,
+    "isFoundational": "TRUE",
+    "pathway": "Stroke & Neuro Foundations",
+    "category": "NEUR",
+    "quadrant": "High Priority Low Complexity"
+  },
+  {
+    "caseId": "MULT0001",
+    "complexity": 3,
+    "priority": 10,
+    "isFoundational": "TRUE",
+    "pathway": "Multi-System Foundations",
+    "category": "MULT",
+    "quadrant": "High Priority Low Complexity"
+  },
+  {
+    "caseId": "MULT0002",
+    "complexity": 3,
+    "priority": 10,
+    "isFoundational": "TRUE",
+    "pathway": "Multi-System Foundations",
+    "category": "MULT",
+    "quadrant": "High Priority Low Complexity"
+  },
+  {
+    "caseId": "PEDMU03",
+    "complexity": 1,
+    "priority": 9,
+    "isFoundational": "TRUE",
+    "pathway": "Multi-System Foundations",
+    "category": "MULT",
+    "quadrant": "High Priority Low Complexity"
+  },
+  {
+    "caseId": "PEDMU04",
+    "complexity": 1,
+    "priority": 9,
+    "isFoundational": "TRUE",
+    "pathway": "Multi-System Foundations",
+    "category": "MULT",
+    "quadrant": "High Priority Low Complexity"
+  },
+  {
+    "caseId": "PEDMU05",
+    "complexity": 1,
+    "priority": 9,
+    "isFoundational": "TRUE",
+    "pathway": "Multi-System Foundations",
+    "category": "MULT",
+    "quadrant": "High Priority Low Complexity"
+  },
+  {
+    "caseId": "PEDMU06",
+    "complexity": 1,
+    "priority": 9,
+    "isFoundational": "TRUE",
+    "pathway": "Multi-System Foundations",
+    "category": "MULT",
+    "quadrant": "High Priority Low Complexity"
+  },
+  {
+    "caseId": "PEDMU07",
+    "complexity": 1,
+    "priority": 9,
+    "isFoundational": "TRUE",
+    "pathway": "Multi-System Foundations",
+    "category": "MULT",
+    "quadrant": "High Priority Low Complexity"
+  },
+  {
+    "caseId": "PEDMU08",
+    "complexity": 1,
+    "priority": 9,
+    "isFoundational": "TRUE",
+    "pathway": "Multi-System Foundations",
+    "category": "MULT",
+    "quadrant": "High Priority Low Complexity"
+  },
+  {
+    "caseId": "PEDMU09",
+    "complexity": 1,
+    "priority": 9,
+    "isFoundational": "TRUE",
+    "pathway": "Multi-System Foundations",
+    "category": "MULT",
+    "quadrant": "High Priority Low Complexity"
+  },
+  {
+    "caseId": "PEDMU10",
+    "complexity": 2,
+    "priority": 9,
+    "isFoundational": "TRUE",
+    "pathway": "Multi-System Foundations",
+    "category": "MULT",
+    "quadrant": "High Priority Low Complexity"
+  },
+  {
+    "caseId": "PEDMU11",
+    "complexity": 2,
+    "priority": 9,
+    "isFoundational": "TRUE",
+    "pathway": "Multi-System Foundations",
+    "category": "MULT",
+    "quadrant": "High Priority Low Complexity"
+  },
+  {
+    "caseId": "PEDMU12",
+    "complexity": 3,
+    "priority": 9,
+    "isFoundational": "TRUE",
+    "pathway": "Multi-System Foundations",
+    "category": "MULT",
+    "quadrant": "High Priority Low Complexity"
+  },
+  {
+    "caseId": "PEDMU13",
+    "complexity": 3,
+    "priority": 9,
+    "isFoundational": "TRUE",
+    "pathway": "Multi-System Foundations",
+    "category": "MULT",
+    "quadrant": "High Priority Low Complexity"
+  },
+  {
+    "caseId": "PEDMU14",
+    "complexity": 3,
+    "priority": 9,
+    "isFoundational": "TRUE",
+    "pathway": "Multi-System Foundations",
+    "category": "MULT",
+    "quadrant": "High Priority Low Complexity"
+  },
+  {
+    "caseId": "PEDMU15",
+    "complexity": 3,
+    "priority": 9,
+    "isFoundational": "TRUE",
+    "pathway": "Multi-System Foundations",
+    "category": "MULT",
+    "quadrant": "High Priority Low Complexity"
+  },
+  {
+    "caseId": "TRAU0001",
+    "complexity": 3,
+    "priority": 10,
+    "isFoundational": "TRUE",
+    "pathway": "ATLS Mastery",
+    "category": "TRAU",
+    "quadrant": "High Priority Low Complexity"
+  },
+  {
+    "caseId": "TRAU0002",
+    "complexity": 3,
+    "priority": 10,
+    "isFoundational": "TRUE",
+    "pathway": "ATLS Mastery",
+    "category": "TRAU",
+    "quadrant": "High Priority Low Complexity"
+  },
+  {
+    "caseId": "TRAU0003",
+    "complexity": 3,
+    "priority": 10,
+    "isFoundational": "TRUE",
+    "pathway": "ATLS Mastery",
+    "category": "TRAU",
+    "quadrant": "High Priority Low Complexity"
+  },
+  {
+    "caseId": "TRAU0004",
+    "complexity": 3,
+    "priority": 10,
+    "isFoundational": "TRUE",
+    "pathway": "ATLS Mastery",
+    "category": "TRAU",
+    "quadrant": "High Priority Low Complexity"
+  },
+  {
+    "caseId": "TRAU0005",
+    "complexity": 3,
+    "priority": 10,
+    "isFoundational": "TRUE",
+    "pathway": "ATLS Mastery",
+    "category": "TRAU",
+    "quadrant": "High Priority Low Complexity"
+  },
+  {
+    "caseId": "TRAU0006",
+    "complexity": 3,
+    "priority": 9,
+    "isFoundational": "TRUE",
+    "pathway": "ATLS Mastery",
+    "category": "TRAU",
+    "quadrant": "High Priority Low Complexity"
+  },
+  {
+    "caseId": "TRAU0007",
+    "complexity": 3,
+    "priority": 9,
+    "isFoundational": "TRUE",
+    "pathway": "ATLS Mastery",
+    "category": "TRAU",
+    "quadrant": "High Priority Low Complexity"
+  },
+  {
+    "caseId": "TRAU0008",
+    "complexity": 3,
+    "priority": 9,
+    "isFoundational": "TRUE",
+    "pathway": "ATLS Mastery",
+    "category": "TRAU",
+    "quadrant": "High Priority Low Complexity"
+  },
+  {
+    "caseId": "TRAU0009",
+    "complexity": 3,
+    "priority": 9,
+    "isFoundational": "TRUE",
+    "pathway": "ATLS Mastery",
+    "category": "TRAU",
+    "quadrant": "High Priority Low Complexity"
+  },
+  {
+    "caseId": "TRAU0010",
+    "complexity": 3,
+    "priority": 9,
+    "isFoundational": "TRUE",
+    "pathway": "ATLS Mastery",
+    "category": "TRAU",
+    "quadrant": "High Priority Low Complexity"
+  },
+  {
+    "caseId": "PSYC0001",
+    "complexity": 2,
+    "priority": 8,
+    "isFoundational": "TRUE",
+    "pathway": "Behavioral Health Excellence",
+    "category": "PSYC",
+    "quadrant": "High Priority Low Complexity"
+  },
+  {
+    "caseId": "MUSC0001",
+    "complexity": 3,
+    "priority": 9,
+    "isFoundational": "TRUE",
+    "pathway": "MSK Emergency Foundations",
+    "category": "MUSC",
+    "quadrant": "High Priority Low Complexity"
+  },
+  {
+    "caseId": "RESP0023",
+    "complexity": 4,
+    "priority": 10,
+    "isFoundational": "FALSE",
+    "pathway": "Airway & Breathing Mastery",
+    "category": "RESP",
+    "quadrant": "High Priority High Complexity"
+  },
+  {
+    "caseId": "IMMU0003",
+    "complexity": 5,
+    "priority": 10,
+    "isFoundational": "FALSE",
+    "pathway": "Allergic Emergency Mastery",
+    "category": "IMMU",
+    "quadrant": "High Priority High Complexity"
+  },
+  {
+    "caseId": "NEUR0024",
+    "complexity": 5,
+    "priority": 10,
+    "isFoundational": "FALSE",
+    "pathway": "Stroke & Neuro Foundations",
+    "category": "NEUR",
+    "quadrant": "High Priority High Complexity"
+  },
+  {
+    "caseId": "NEUR0025",
+    "complexity": 5,
+    "priority": 10,
+    "isFoundational": "FALSE",
+    "pathway": "Stroke & Neuro Foundations",
+    "category": "NEUR",
+    "quadrant": "High Priority High Complexity"
+  },
+  {
+    "caseId": "PEDNE32",
+    "complexity": 4,
+    "priority": 9,
+    "isFoundational": "FALSE",
+    "pathway": "Stroke & Neuro Foundations",
+    "category": "NEUR",
+    "quadrant": "High Priority High Complexity"
+  },
+  {
+    "caseId": "NEUR0033",
+    "complexity": 5,
+    "priority": 9,
+    "isFoundational": "FALSE",
+    "pathway": "Stroke & Neuro Foundations",
+    "category": "NEUR",
+    "quadrant": "High Priority High Complexity"
+  },
+  {
+    "caseId": "NEUR0034",
+    "complexity": 5,
+    "priority": 9,
+    "isFoundational": "FALSE",
+    "pathway": "Stroke & Neuro Foundations",
+    "category": "NEUR",
+    "quadrant": "High Priority High Complexity"
+  },
+  {
+    "caseId": "NEUR0035",
+    "complexity": 5,
+    "priority": 9,
+    "isFoundational": "FALSE",
+    "pathway": "Stroke & Neuro Foundations",
+    "category": "NEUR",
+    "quadrant": "High Priority High Complexity"
+  },
+  {
+    "caseId": "NEUR0036",
+    "complexity": 5,
+    "priority": 9,
+    "isFoundational": "FALSE",
+    "pathway": "Stroke & Neuro Foundations",
+    "category": "NEUR",
+    "quadrant": "High Priority High Complexity"
+  },
+  {
+    "caseId": "NEUR0037",
+    "complexity": 5,
+    "priority": 9,
+    "isFoundational": "FALSE",
+    "pathway": "Stroke & Neuro Foundations",
+    "category": "NEUR",
+    "quadrant": "High Priority High Complexity"
+  },
+  {
+    "caseId": "NEUR0038",
+    "complexity": 5,
+    "priority": 9,
+    "isFoundational": "FALSE",
+    "pathway": "Stroke & Neuro Foundations",
+    "category": "NEUR",
+    "quadrant": "High Priority High Complexity"
+  },
+  {
+    "caseId": "NEUR0039",
+    "complexity": 5,
+    "priority": 9,
+    "isFoundational": "FALSE",
+    "pathway": "Stroke & Neuro Foundations",
+    "category": "NEUR",
+    "quadrant": "High Priority High Complexity"
+  },
+  {
+    "caseId": "NEUR0040",
+    "complexity": 5,
+    "priority": 9,
+    "isFoundational": "FALSE",
+    "pathway": "Stroke & Neuro Foundations",
+    "category": "NEUR",
+    "quadrant": "High Priority High Complexity"
+  },
+  {
+    "caseId": "NEUR0041",
+    "complexity": 5,
+    "priority": 9,
+    "isFoundational": "FALSE",
+    "pathway": "Stroke & Neuro Foundations",
+    "category": "NEUR",
+    "quadrant": "High Priority High Complexity"
+  },
+  {
+    "caseId": "NEUR0042",
+    "complexity": 5,
+    "priority": 9,
+    "isFoundational": "FALSE",
+    "pathway": "Stroke & Neuro Foundations",
+    "category": "NEUR",
+    "quadrant": "High Priority High Complexity"
+  },
+  {
+    "caseId": "NEUR0043",
+    "complexity": 5,
+    "priority": 9,
+    "isFoundational": "FALSE",
+    "pathway": "Stroke & Neuro Foundations",
+    "category": "NEUR",
+    "quadrant": "High Priority High Complexity"
+  },
+  {
+    "caseId": "OBST0001",
+    "complexity": 5,
+    "priority": 9,
+    "isFoundational": "FALSE",
+    "pathway": "OB Emergency Foundations",
+    "category": "OBST",
+    "quadrant": "High Priority High Complexity"
+  },
+  {
+    "caseId": "RESP0045",
+    "complexity": 1,
+    "priority": 5,
+    "isFoundational": "FALSE",
+    "pathway": "Respiratory Excellence",
+    "category": "RESP",
+    "quadrant": "Low Priority Low Complexity"
+  },
+  {
+    "caseId": "PEDNE44",
+    "complexity": 1,
+    "priority": 5,
+    "isFoundational": "FALSE",
+    "pathway": "Neurological Excellence",
+    "category": "NEUR",
+    "quadrant": "Low Priority Low Complexity"
+  },
+  {
+    "caseId": "PEDMU16",
+    "complexity": 1,
+    "priority": 5,
+    "isFoundational": "FALSE",
+    "pathway": "Comprehensive Emergency Excellence",
+    "category": "MULT",
+    "quadrant": "Low Priority Low Complexity"
+  },
+  {
+    "caseId": "PEDMU17",
+    "complexity": 1,
+    "priority": 5,
+    "isFoundational": "FALSE",
+    "pathway": "Comprehensive Emergency Excellence",
+    "category": "MULT",
+    "quadrant": "Low Priority Low Complexity"
+  },
+  {
+    "caseId": "MULT0018",
+    "complexity": 1,
+    "priority": 5,
+    "isFoundational": "FALSE",
+    "pathway": "Comprehensive Emergency Excellence",
+    "category": "MULT",
+    "quadrant": "Low Priority Low Complexity"
+  },
+  {
+    "caseId": "PEDMU19",
+    "complexity": 1,
+    "priority": 5,
+    "isFoundational": "FALSE",
+    "pathway": "Comprehensive Emergency Excellence",
+    "category": "MULT",
+    "quadrant": "Low Priority Low Complexity"
+  },
+  {
+    "caseId": "TRAU0011",
+    "complexity": 3,
+    "priority": 5,
+    "isFoundational": "FALSE",
+    "pathway": "Trauma Excellence",
+    "category": "TRAU",
+    "quadrant": "Low Priority Low Complexity"
+  },
+  {
+    "caseId": "TRAU0012",
+    "complexity": 3,
+    "priority": 5,
+    "isFoundational": "FALSE",
+    "pathway": "Trauma Excellence",
+    "category": "TRAU",
+    "quadrant": "Low Priority Low Complexity"
+  },
+  {
+    "caseId": "PEDID01",
+    "complexity": 1,
+    "priority": 5,
+    "isFoundational": "FALSE",
+    "pathway": "Sepsis Excellence",
+    "category": "INFD",
+    "quadrant": "Low Priority Low Complexity"
+  }
+]

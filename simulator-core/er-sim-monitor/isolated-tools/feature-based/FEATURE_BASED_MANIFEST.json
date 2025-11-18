@@ -1,0 +1,41 @@
+{
+  "timestamp": "2025-11-04T18:37:10.320Z",
+  "approach": "feature-based",
+  "principle": "Group by common utility goal (user workflow feature)",
+  "source": "Code_ULTIMATE_ATSR.gs",
+  "modulesCreated": 4,
+  "categories": {
+    "features": 1,
+    "engines": 3
+  },
+  "modules": [
+    {
+      "name": "Batch_Sidebar_Feature.gs",
+      "category": "features",
+      "sizeKB": 18,
+      "functionCount": 15,
+      "path": "/Users/aarontjomsland/er-sim-monitor/isolated-tools/feature-based/features/Batch_Sidebar_Feature.gs"
+    },
+    {
+      "name": "Core_Batch_Engine.gs",
+      "category": "engines",
+      "sizeKB": 16.3,
+      "functionCount": 5,
+      "path": "/Users/aarontjomsland/er-sim-monitor/isolated-tools/feature-based/engines/Core_Batch_Engine.gs"
+    },
+    {
+      "name": "Title_Generation_Engine.gs",
+      "category": "engines",
+      "sizeKB": 16,
+      "functionCount": 1,
+      "path": "/Users/aarontjomsland/er-sim-monitor/isolated-tools/feature-based/engines/Title_Generation_Engine.gs"
+    },
+    {
+      "name": "Quality_Scoring_Engine.gs",
+      "category": "engines",
+      "sizeKB": 3.6,
+      "functionCount": 1,
+      "path": "/Users/aarontjomsland/er-sim-monitor/isolated-tools/feature-based/engines/Quality_Scoring_Engine.gs"
+    }
+  ]
+}

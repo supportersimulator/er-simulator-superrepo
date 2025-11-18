@@ -1,0 +1,89 @@
+{
+  "overall_sequence_philosophy": "The sequence is designed to expose learners to common cognitive biases and diagnostic traps, starting with cases that closely mimic classic presentations and gradually introducing more complexity and ambiguity. This method enhances pattern recognition and critical thinking skills in differentiating between similar presenting symptoms, preparing learners for real-world diagnostic challenges.",
+  "case_rationales": [
+    {
+      "position": 1,
+      "case_id": "CP101",
+      "case_title": "58M Chest Pain",
+      "position_rationale": "This case introduces a classic chest pain presentation easily mistaken for MI, setting the foundation by highlighting the importance of considering life-threatening alternatives like aortic dissection.",
+      "prerequisites": "None - this is the foundation",
+      "progression_logic": "Introduces the concept of differential diagnosis in chest pain and the need for broad initial thinking.",
+      "prepares_for": "Sets up the expectation of 'classic' presentations being misleading, preparing for the introduction of other conditions with similar presentations in Case 2."
+    },
+    {
+      "position": 2,
+      "case_id": "CP102",
+      "case_title": "45F Chest Pain",
+      "position_rationale": "This case builds on the initial concept by introducing pulmonary embolism, another critical condition that can mimic MI, adding complexity.",
+      "prerequisites": "Builds on Case 1's foundation of considering severe, life-threatening conditions in chest pain.",
+      "progression_logic": "Escalates complexity by introducing the simultaneous presentation of chest pain and mild shortness of breath, requiring multifactorial assessment.",
+      "prepares_for": "Establishes a pattern of atypical presentations leading into Case 3's further complexity."
+    },
+    {
+      "position": 3,
+      "case_id": "CP103",
+      "case_title": "62M Chest Pain",
+      "position_rationale": "Positioned here to challenge the learner's diagnostic skills by presenting a case that initially appears as classic MI but is actually pneumonia with pleurisy.",
+      "prerequisites": "Builds on the pattern recognition skills from Cases 1 and 2 in distinguishing cardiac from non-cardiac causes.",
+      "progression_logic": "Introduces a non-cardiac cause of chest pain, requiring integration of respiratory assessment into the differential diagnosis.",
+      "prepares_for": "Prepares learners for Case 4 by continuing to challenge biases toward cardiac causes."
+    },
+    {
+      "position": 4,
+      "case_id": "CP104",
+      "case_title": "35F Chest Pain",
+      "position_rationale": "Introduces the concept of psychogenic causes of chest pain, which can often be overlooked in favor of more serious conditions.",
+      "prerequisites": "Builds on previous cases by reinforcing the need for a broad differential diagnosis.",
+      "progression_logic": "Challenges learners to consider psychological factors in chest pain presentations, expanding their diagnostic framework.",
+      "prepares_for": "Sets the stage for considering less acute but common conditions like GERD in Case 5."
+    },
+    {
+      "position": 5,
+      "case_id": "CP105",
+      "case_title": "51M Chest Pain",
+      "position_rationale": "Introduces a chronic, non-life-threatening cause of chest pain like GERD, requiring long-term management considerations.",
+      "prerequisites": "Builds on the understanding of chronic vs. acute presentations from previous cases.",
+      "progression_logic": "Focuses on chronic management and differentiating from acute conditions.",
+      "prepares_for": "Prepares learners for Case 6 by contrasting chronic conditions with acute emergencies."
+    },
+    {
+      "position": 6,
+      "case_id": "CP106",
+      "case_title": "67M Chest Pain",
+      "position_rationale": "Finally presents an actual MI, anchoring the learner's understanding by contrasting true cardiac emergencies with previous cases.",
+      "prerequisites": "Draws on previous cases' emphasis on differential diagnosis to highlight the importance of confirming true MI.",
+      "progression_logic": "Reinforces the importance of confirming diagnosis with objective data.",
+      "prepares_for": "Transitions the focus from chest pain to shortness of breath in Case 7."
+    },
+    {
+      "position": 7,
+      "case_id": "SOB201",
+      "case_title": "55M Shortness of Breath",
+      "position_rationale": "Introduces a new primary symptom (shortness of breath) with a common trap of mistaking it for CHF when it's actually PE.",
+      "prerequisites": "Builds on the differential diagnosis skills honed in chest pain cases.",
+      "progression_logic": "Introduces new symptom evaluations and the challenge of differentiating between respiratory and cardiac causes.",
+      "prepares_for": "Sets up the transition to Case 8 by reinforcing the need to distinguish between cardiac and non-cardiac origins."
+    },
+    {
+      "position": 8,
+      "case_id": "SOB202",
+      "case_title": "72F Shortness of Breath",
+      "position_rationale": "Concludes the sequence with a case that appears complex but confirms a cardiac origin, solidifying diagnostic skills.",
+      "prerequisites": "Uses skills from previous cases to confirm cardiac causes through pattern recognition.",
+      "progression_logic": "Concludes the pathway by bringing learners full circle with a confirmed cardiac diagnosis.",
+      "prepares_for": "Solidifies the learner's ability to diagnose both acute and chronic presentations effectively."
+    }
+  ],
+  "key_transitions": [
+    {
+      "from_case": "CP101",
+      "to_case": "CP102",
+      "transition_rationale": "Moving from Case 1 to Case 2 solidifies the learner's understanding of the importance of considering non-cardiac life-threatening causes in chest pain, encouraging them to challenge their initial diagnostic impressions."
+    },
+    {
+      "from_case": "CP106",
+      "to_case": "SOB201",
+      "transition_rationale": "The transition from chest pain cases to shortness of breath cases broadens the diagnostic scope, requiring learners to apply their acquired differential diagnosis skills to a new primary symptom."
+    }
+  ]
+}

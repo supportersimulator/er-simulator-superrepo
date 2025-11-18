@@ -1,0 +1,141 @@
+═══════════════════════════════════════════════════════════════
+📦 APPS SCRIPT PROJECTS INVENTORY (CORRECTED ORDER)
+Backup Date: 11/6/2025, 10:10:42 AM
+═══════════════════════════════════════════════════════════════
+
+🔗 BACKUP FOLDER LINK:
+https://drive.google.com/drive/folders/13WO4iP-iaNFZH8n1pJlCsRPjfjjqSt-I
+
+═══════════════════════════════════════════════════════════════
+
+⚠️  EXACT ORDER AS SHOWN IN SCREENSHOT:
+
+1. GPT Formatter
+   └─ Script ID: 1orJ__UUViG-gdSOHXt2VSGzo--ASib9XdVLVCApccKujWnqTuxq7wHIw
+   └─ URL: https://script.google.com/u/0/home/projects/1orJ__UUViG-gdSOHXt2VSGzo--ASib9XdVLVCApccKujWnqTuxq7wHIw/edit
+
+2. TEST Menu Script (Bound) [FIRST ONE]
+   └─ Script ID: 1HIw4Ok4G88YzHsECb5e_GvJH9XYefEY59pHXalFstiddLciyHXC06zNf
+   └─ URL: https://script.google.com/u/0/home/projects/1HIw4Ok4G88YzHsECb5e_GvJH9XYefEY59pHXalFstiddLciyHXC06zNf/edit
+
+3. TEST Menu Script (Bound) [SECOND ONE - DUPLICATE]
+   └─ Script ID: 1bwLs70zTwQsJxtAqA_yNJfyANjAW5x39YEY0VJhFPMamgDwb100qtqJD
+   └─ URL: https://script.google.com/u/0/home/projects/1bwLs70zTwQsJxtAqA_yNJfyANjAW5x39YEY0VJhFPMamgDwb100qtqJD/edit
+
+4. TEST_Feature_Based_Code [FIRST ONE]
+   └─ Script ID: 1kkPZU3GsCCuu5IhTEOufmDT1Cb2rSQVB3Y3u1DPf87yoSV4WVtoNvd6i
+   └─ URL: https://script.google.com/u/0/home/projects/1kkPZU3GsCCuu5IhTEOufmDT1Cb2rSQVB3Y3u1DPf87yoSV4WVtoNvd6i/edit
+
+5. TEST_Feature_Based_Code [SECOND ONE]
+   └─ Script ID: 1KBkujOTXGDmmhWOFm-ifxoMjXM5pRwwM5FpFBtPWK8eoE99fr4lla1OE
+   └─ URL: https://script.google.com/u/0/home/projects/1KBkujOTXGDmmhWOFm-ifxoMjXM5pRwwM5FpFBtPWK8eoE99fr4lla1OE/edit
+
+6. TEST_Feature_Based_Code [THIRD ONE]
+   └─ Script ID: 1INZy2-kQNEfEWEipSQ_WCvrvEhGgAeW4G4TM61W2ajNp_63G39KLPm4Y
+   └─ URL: https://script.google.com/u/0/home/projects/1INZy2-kQNEfEWEipSQ_WCvrvEhGgAeW4G4TM61W2ajNp_63G39KLPm4Y/edit
+
+═══════════════════════════════════════════════════════════════
+
+📊 DETAILED ANALYSIS (EXACT ORDER FROM SCREENSHOT):
+
+1. GPT FORMATTER
+──────────────────────────────────────────────────────────────────────
+⚠️  MAIN PROJECT - Original production project (DON'T TOUCH!)
+Script ID: 1orJ__UUViG-gdSOHXt2VSGzo--ASib9XdVLVCApccKujWnqTuxq7wHIw
+Title: GPT Formatter
+Created: 11/4/2025, 11:44:07 AM
+Updated: 11/4/2025, 11:44:11 AM
+Bound To: TEST_Convert_Master_Sim_CSV_Template_with_Input (1t3qN8e537ghl38GTsXbVG8ML8OZtK2XyUpDiMQjnGAI)
+Files: 1 .gs files (133 KB total)
+File Names: Code
+Features: Menu (onOpen)
+RECOMMENDATION: ✅ KEEP - Original main project
+
+2. TEST MENU SCRIPT (BOUND) [FIRST ONE]
+──────────────────────────────────────────────────────────────────────
+✅ ACTIVE WORKING PROJECT - Updated today!
+Script ID: 1HIw4Ok4G88YzHsECb5e_GvJH9XYefEY59pHXalFstiddLciyHXC06zNf
+Title: TEST Menu Script (Bound)
+Created: 11/5/2025, 2:32:11 AM
+Updated: 11/6/2025, 9:43:30 AM ← UPDATED TODAY (this morning)
+Bound To: TEST_Convert_Master_Sim_CSV_Template_with_Input (1t3qN8e537ghl38GTsXbVG8ML8OZtK2XyUpDiMQjnGAI)
+Files: 3 .gs files (134 KB total)
+File Names: Code, Categories_Pathways_Feature_Phase2, ATSR_Title_Generator_Feature
+Features: Menu (onOpen), TEST Tools menu, Cache system, Pathway builder, Field selector, AI recommendations
+RECOMMENDATION: ✅ KEEP - This is your active test environment with all features
+
+3. TEST MENU SCRIPT (BOUND) [SECOND ONE - DUPLICATE]
+──────────────────────────────────────────────────────────────────────
+❌ EMPTY DUPLICATE - No code inside!
+Script ID: 1bwLs70zTwQsJxtAqA_yNJfyANjAW5x39YEY0VJhFPMamgDwb100qtqJD
+Title: TEST Menu Script (Bound)
+Created: 11/5/2025, 2:31:49 AM
+Updated: 11/5/2025, 2:31:49 AM
+Bound To: TEST_Convert_Master_Sim_CSV_Template_with_Input (1t3qN8e537ghl38GTsXbVG8ML8OZtK2XyUpDiMQjnGAI)
+Files: 0 .gs files (0 KB total) ← COMPLETELY EMPTY!
+File Names: (none)
+RECOMMENDATION: ❌ DELETE - Empty shell, serves no purpose
+
+4. TEST_FEATURE_BASED_CODE [FIRST ONE]
+──────────────────────────────────────────────────────────────────────
+⚠️  Old feature-split experiment
+Script ID: 1kkPZU3GsCCuu5IhTEOufmDT1Cb2rSQVB3Y3u1DPf87yoSV4WVtoNvd6i
+Title: TEST_Feature_Based_Code
+Created: 11/4/2025, 1:32:11 PM
+Updated: 11/5/2025, 1:56:45 AM
+Bound To: TEST_Convert_Master_Sim_CSV_Template_with_Input (1t3qN8e537ghl38GTsXbVG8ML8OZtK2XyUpDiMQjnGAI)
+Files: 2 .gs files (137 KB total)
+File Names: Categories_Pathways_Feature_Phase2, Multi_Step_Cache_Enrichment
+Features: Cache system, Pathway builder
+RECOMMENDATION: ⚠️ Can likely DELETE - Older experimental version, superseded by #2
+
+5. TEST_FEATURE_BASED_CODE [SECOND ONE]
+──────────────────────────────────────────────────────────────────────
+⚠️  Old feature-split experiment
+Script ID: 1KBkujOTXGDmmhWOFm-ifxoMjXM5pRwwM5FpFBtPWK8eoE99fr4lla1OE
+Title: TEST_Feature_Based_Code
+Created: 11/4/2025, 1:37:54 PM
+Updated: 11/4/2025, 2:30:59 PM
+Bound To: TEST_Convert_Master_Sim_CSV_Template_with_Input (1t3qN8e537ghl38GTsXbVG8ML8OZtK2XyUpDiMQjnGAI)
+Files: 3 .gs files (68 KB total)
+File Names: ATSR_Title_Generator_Feature, Batch_Processing_Sidebar_Feature, Core_Processing_Engine
+RECOMMENDATION: ⚠️ Can likely DELETE - Old experimental version
+
+6. TEST_FEATURE_BASED_CODE [THIRD ONE]
+──────────────────────────────────────────────────────────────────────
+⚠️  Old feature-split experiment (nearly identical to #5)
+Script ID: 1INZy2-kQNEfEWEipSQ_WCvrvEhGgAeW4G4TM61W2ajNp_63G39KLPm4Y
+Title: TEST_Feature_Based_Code
+Created: 11/4/2025, 11:56:43 AM
+Updated: 11/4/2025, 2:22:56 PM
+Bound To: TEST_Convert_Master_Sim_CSV_Template_with_Input (1t3qN8e537ghl38GTsXbVG8ML8OZtK2XyUpDiMQjnGAI)
+Files: 3 .gs files (68 KB total)
+File Names: ATSR_Title_Generator_Feature, Batch_Processing_Sidebar_Feature, Core_Processing_Engine
+RECOMMENDATION: ⚠️ Can likely DELETE - Duplicate of #5
+
+═══════════════════════════════════════════════════════════════
+
+🎯 CLEAR RECOMMENDATIONS:
+
+✅ KEEP (2 projects):
+   1. GPT Formatter (main original)
+   2. TEST Menu Script (Bound) - FIRST ONE (1HIw4Ok...) ← This is your working project!
+
+❌ SAFE TO DELETE (4 projects):
+   3. TEST Menu Script (Bound) - SECOND ONE (1bwLs70...) ← Empty duplicate
+   4. TEST_Feature_Based_Code - FIRST ONE (1kkPZU3...) ← Old experimental version
+   5. TEST_Feature_Based_Code - SECOND ONE (1KBkujO...) ← Old experimental version
+   6. TEST_Feature_Based_Code - THIRD ONE (1INZy2-...) ← Duplicate of #5
+
+═══════════════════════════════════════════════════════════════
+
+🔑 KEY INSIGHT:
+
+Project #2 (1HIw4Ok4G88YzHsECb5e_GvJH9XYefEY59pHXalFstiddLciyHXC06zNf) is THE ONE we've been deploying to all morning. It has:
+   • All 3 .gs files (Code, Phase2, ATSR)
+   • All features (menu, cache, pathway builder, field selector, AI)
+   • Updated timestamp from today (11/6/2025 9:43 AM)
+
+All others are either empty (#3) or old experimental versions (#4, #5, #6) that can be safely deleted.
+
+═══════════════════════════════════════════════════════════════

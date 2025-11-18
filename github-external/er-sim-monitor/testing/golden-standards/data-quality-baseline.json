@@ -1,0 +1,120 @@
+{
+  "metadata": {
+    "timestamp": "2025-11-03T05:24:08",
+    "totalRecords": 189,
+    "source": "Pre-AWS Migration Backup",
+    "purpose": "Golden Standard Baseline for Quality Verification"
+  },
+  "waveforms": {
+    "sinus_ecg": 183,
+    "asystole_ecg": 3,
+    "nsr_ecg": 2,
+    "vtach_ecg": 1
+  },
+  "bpFormats": {
+    "object": 189,
+    "string": 0,
+    "null": 0
+  },
+  "keyFormats": {
+    "lowercase": 189,
+    "uppercase": 0,
+    "mixed": 0
+  },
+  "requiredFields": {
+    "hr": 189,
+    "spo2": 189,
+    "bp": 189,
+    "rr": 189,
+    "temp": 189,
+    "waveform": 189,
+    "etco2": 154,
+    "lastupdated": 189
+  },
+  "nullValues": {
+    "spo2": 2,
+    "bp": 4,
+    "hr": 2
+  },
+  "sampleRecords": {
+    "sinus_ecg": {
+      "rowNum": 3,
+      "caseId": "GAST0001",
+      "vitals": {
+        "hr": 122,
+        "bp": {
+          "sys": 95,
+          "dia": 60
+        },
+        "rr": 28,
+        "temp": 39.2,
+        "spo2": 94,
+        "waveform": "sinus_ecg",
+        "etco2": 31,
+        "lastupdated": "2025-11-03T05:01:35.883Z"
+      }
+    },
+    "asystole_ecg": {
+      "rowNum": 53,
+      "caseId": "CARD0047",
+      "vitals": {
+        "hr": 0,
+        "bp": {
+          "sys": null,
+          "dia": null
+        },
+        "rr": 0,
+        "temp": 36.8,
+        "spo2": null,
+        "waveform": "asystole_ecg",
+        "lastupdated": "2025-11-03T05:02:29.237Z"
+      }
+    },
+    "nsr_ecg": {
+      "rowNum": 95,
+      "caseId": "NEUR0012",
+      "vitals": {
+        "hr": 98,
+        "bp": {
+          "sys": 128,
+          "dia": 82
+        },
+        "rr": 19,
+        "temp": 36.8,
+        "spo2": 95,
+        "waveform": "nsr_ecg",
+        "etco2": 34,
+        "lastupdated": "2025-11-03T05:01:35.888Z"
+      }
+    },
+    "vtach_ecg": {
+      "rowNum": 113,
+      "caseId": "CARD0051",
+      "vitals": {
+        "hr": 130,
+        "bp": {
+          "sys": 70,
+          "dia": 40
+        },
+        "rr": 30,
+        "temp": 36.9,
+        "spo2": 85,
+        "waveform": "vtach_ecg",
+        "etco2": 28,
+        "lastupdated": "2025-11-03T05:01:35.889Z"
+      }
+    }
+  },
+  "qualityMetrics": {
+    "allLowercaseKeys": 189,
+    "allBPObjects": 189,
+    "allWaveformsValid": 189,
+    "allRequiredPresent": 189
+  },
+  "qualityScores": {
+    "lowercaseKeys": "100.00%",
+    "bpObjects": "100.00%",
+    "validWaveforms": "100.00%",
+    "requiredFields": "100.00%"
+  }
+}

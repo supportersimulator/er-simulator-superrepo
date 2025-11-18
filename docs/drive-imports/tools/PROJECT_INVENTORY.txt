@@ -1,0 +1,104 @@
+═══════════════════════════════════════════════════════════════
+📦 APPS SCRIPT PROJECTS INVENTORY
+Backup Date: 11/6/2025, 10:10:42 AM
+═══════════════════════════════════════════════════════════════
+
+🔗 BACKUP FOLDER LINK:
+https://drive.google.com/drive/folders/13WO4iP-iaNFZH8n1pJlCsRPjfjjqSt-I
+
+═══════════════════════════════════════════════════════════════
+
+1. GPT FORMATTER
+──────────────────────────────────────────────────────────────────────
+⚠️  MAIN PROJECT - Original production project
+Script ID: 1orJ__UUViG-gdSOHXt2VSGzo--ASib9XdVLVCApccKujWnqTuxq7wHIw
+Direct Link: https://script.google.com/home/projects/1orJ__UUViG-gdSOHXt2VSGzo--ASib9XdVLVCApccKujWnqTuxq7wHIw/edit
+Title: GPT Formatter
+Created: 11/4/2025, 11:44:07 AM
+Updated: 11/4/2025, 11:44:11 AM
+Bound To: TEST_Convert_Master_Sim_CSV_Template_with_Input (1t3qN8e537ghl38GTsXbVG8ML8OZtK2XyUpDiMQjnGAI)
+Files: 1 .gs files (133 KB total)
+File Names: Code
+Features: Menu (onOpen)
+
+2. TEST MENU SCRIPT (BOUND) #1
+──────────────────────────────────────────────────────────────────────
+Script ID: 1HIw4Ok4G88YzHsECb5e_GvJH9XYefEY59pHXalFstiddLciyHXC06zNf
+Direct Link: https://script.google.com/home/projects/1HIw4Ok4G88YzHsECb5e_GvJH9XYefEY59pHXalFstiddLciyHXC06zNf/edit
+Title: TEST Menu Script (Bound)
+Created: 11/5/2025, 2:32:11 AM
+Updated: 11/6/2025, 9:43:30 AM
+Bound To: TEST_Convert_Master_Sim_CSV_Template_with_Input (1t3qN8e537ghl38GTsXbVG8ML8OZtK2XyUpDiMQjnGAI)
+Files: 3 .gs files (134 KB total)
+File Names: Code, Categories_Pathways_Feature_Phase2, ATSR_Title_Generator_Feature
+Features: Menu (onOpen), TEST Tools menu, Cache system, Pathway builder, Field selector, AI recommendations
+
+3. TEST MENU SCRIPT (BOUND) #2
+──────────────────────────────────────────────────────────────────────
+Script ID: 1bwLs70zTwQsJxtAqA_yNJfyANjAW5x39YEY0VJhFPMamgDwb100qtqJD
+Direct Link: https://script.google.com/home/projects/1bwLs70zTwQsJxtAqA_yNJfyANjAW5x39YEY0VJhFPMamgDwb100qtqJD/edit
+Title: TEST Menu Script (Bound)
+Created: 11/5/2025, 2:31:49 AM
+Updated: 11/5/2025, 2:31:49 AM
+Bound To: TEST_Convert_Master_Sim_CSV_Template_with_Input (1t3qN8e537ghl38GTsXbVG8ML8OZtK2XyUpDiMQjnGAI)
+Files: 0 .gs files (0 KB total)
+File Names: 
+
+4. TEST_FEATURE_BASED_CODE #1
+──────────────────────────────────────────────────────────────────────
+Script ID: 1kkPZU3GsCCuu5IhTEOufmDT1Cb2rSQVB3Y3u1DPf87yoSV4WVtoNvd6i
+Direct Link: https://script.google.com/home/projects/1kkPZU3GsCCuu5IhTEOufmDT1Cb2rSQVB3Y3u1DPf87yoSV4WVtoNvd6i/edit
+Title: TEST_Feature_Based_Code
+Created: 11/4/2025, 1:32:11 PM
+Updated: 11/5/2025, 1:56:45 AM
+Bound To: TEST_Convert_Master_Sim_CSV_Template_with_Input (1t3qN8e537ghl38GTsXbVG8ML8OZtK2XyUpDiMQjnGAI)
+Files: 2 .gs files (137 KB total)
+File Names: Categories_Pathways_Feature_Phase2, Multi_Step_Cache_Enrichment
+Features: Cache system, Pathway builder
+
+5. TEST_FEATURE_BASED_CODE #2
+──────────────────────────────────────────────────────────────────────
+Script ID: 1KBkujOTXGDmmhWOFm-ifxoMjXM5pRwwM5FpFBtPWK8eoE99fr4lla1OE
+Direct Link: https://script.google.com/home/projects/1KBkujOTXGDmmhWOFm-ifxoMjXM5pRwwM5FpFBtPWK8eoE99fr4lla1OE/edit
+Title: TEST_Feature_Based_Code
+Created: 11/4/2025, 1:37:54 PM
+Updated: 11/4/2025, 2:30:59 PM
+Bound To: TEST_Convert_Master_Sim_CSV_Template_with_Input (1t3qN8e537ghl38GTsXbVG8ML8OZtK2XyUpDiMQjnGAI)
+Files: 3 .gs files (68 KB total)
+File Names: ATSR_Title_Generator_Feature, Batch_Processing_Sidebar_Feature, Core_Processing_Engine
+
+6. TEST_FEATURE_BASED_CODE #3
+──────────────────────────────────────────────────────────────────────
+Script ID: 1INZy2-kQNEfEWEipSQ_WCvrvEhGgAeW4G4TM61W2ajNp_63G39KLPm4Y
+Direct Link: https://script.google.com/home/projects/1INZy2-kQNEfEWEipSQ_WCvrvEhGgAeW4G4TM61W2ajNp_63G39KLPm4Y/edit
+Title: TEST_Feature_Based_Code
+Created: 11/4/2025, 11:56:43 AM
+Updated: 11/4/2025, 2:22:56 PM
+Bound To: TEST_Convert_Master_Sim_CSV_Template_with_Input (1t3qN8e537ghl38GTsXbVG8ML8OZtK2XyUpDiMQjnGAI)
+Files: 3 .gs files (68 KB total)
+File Names: ATSR_Title_Generator_Feature, Batch_Processing_Sidebar_Feature, Core_Processing_Engine
+
+═══════════════════════════════════════════════════════════════
+
+📊 DUPLICATE ANALYSIS:
+
+⚠️  DUPLICATE: 2 "TEST Menu Script (Bound)" projects found:
+   • TEST Menu Script (Bound) #1 (1HIw4Ok4G88YzHsECb5e_GvJH9XYefEY59pHXalFstiddLciyHXC06zNf)
+     Updated: 11/6/2025, 9:43:30 AM
+     Bound To: TEST_Convert_Master_Sim_CSV_Template_with_Input (1t3qN8e537ghl38GTsXbVG8ML8OZtK2XyUpDiMQjnGAI)
+   • TEST Menu Script (Bound) #2 (1bwLs70zTwQsJxtAqA_yNJfyANjAW5x39YEY0VJhFPMamgDwb100qtqJD)
+     Updated: 11/5/2025, 2:31:49 AM
+     Bound To: TEST_Convert_Master_Sim_CSV_Template_with_Input (1t3qN8e537ghl38GTsXbVG8ML8OZtK2XyUpDiMQjnGAI)
+
+⚠️  DUPLICATE: 3 "TEST_Feature_Based_Code" projects found:
+   • TEST_Feature_Based_Code #1 (1kkPZU3GsCCuu5IhTEOufmDT1Cb2rSQVB3Y3u1DPf87yoSV4WVtoNvd6i)
+     Updated: 11/5/2025, 1:56:45 AM
+     Bound To: TEST_Convert_Master_Sim_CSV_Template_with_Input (1t3qN8e537ghl38GTsXbVG8ML8OZtK2XyUpDiMQjnGAI)
+   • TEST_Feature_Based_Code #2 (1KBkujOTXGDmmhWOFm-ifxoMjXM5pRwwM5FpFBtPWK8eoE99fr4lla1OE)
+     Updated: 11/4/2025, 2:30:59 PM
+     Bound To: TEST_Convert_Master_Sim_CSV_Template_with_Input (1t3qN8e537ghl38GTsXbVG8ML8OZtK2XyUpDiMQjnGAI)
+   • TEST_Feature_Based_Code #3 (1INZy2-kQNEfEWEipSQ_WCvrvEhGgAeW4G4TM61W2ajNp_63G39KLPm4Y)
+     Updated: 11/4/2025, 2:22:56 PM
+     Bound To: TEST_Convert_Master_Sim_CSV_Template_with_Input (1t3qN8e537ghl38GTsXbVG8ML8OZtK2XyUpDiMQjnGAI)
+
+═══════════════════════════════════════════════════════════════

@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Auto-Trace AFib - Black Pixels</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 20px;
+      background: #000;
+      font-family: monospace;
+      color: #0f0;
+    }
+    .container {
+      max-width: 1400px;
+      margin: 0 auto;
+    }
+    h1 {
+      text-align: center;
+      color: #0f0;
+    }
+    .controls {
+      text-align: center;
+      margin: 30px 0;
+      background: #1a1a1a;
+      padding: 20px;
+      border-radius: 10px;
+      border: 2px solid #0f0;
+    }
+    button {
+      background: #0f0;
+      color: #000;
+      border: none;
+      padding: 15px 30px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      border-radius: 5px;
+      margin: 10px;
+    }
+    button:hover {
+      background: #0c0;
+    }
+    button:disabled {
+      background: #555;
+      cursor: not-allowed;
+    }
+    input[type="file"] {
+      color: #0f0;
+      background: #333;
+      padding: 12px;
+      border: 2px solid #0f0;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 14px;
+    }
+    canvas {
+      background: #000;
+      display: block;
+      margin: 20px auto;
+      border: 2px solid #333;
+    }
+    .section {
+      margin: 30px 0;
+      padding: 20px;
+      background: #1a1a1a;
+      border-radius: 10px;
+    }
+    .section h2 {
+      color: #ff0;
+      margin-top: 0;
+    }
+    .output {
+      background: #000;
+      padding: 15px;
+      border-radius: 8px;
+      margin-top: 20px;
+      max-height: 500px;
+      overflow-y: auto;
+      font-family: 'Courier New', monospace;
+      font-size: 11px;
+      color: #0f0;
+      border: 1px solid #0f0;
+    }
+    .info {
+      color: #ff0;
+      text-align: center;
+      margin: 10px 0;
+      font-size: 14px;
+    }
+    .stats {
+      color: #0ff;
+      text-align: center;
+      margin: 15px 0;
+      font-size: 16px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>🎯 Auto-Trace AFib Waveform (Black Pixels)</h1>
+    <div class="info">Upload ResusMonitor pink grid screenshot - extracts every black pixel</div>
+
+    <div class="controls">
+      <input type="file" id="imageUpload" accept="image/*">
+      <br><br>
+      <button id="traceBlackBtn" onclick="autoTrace('black')" disabled>Extract Black Pixels</button>
+      <button id="traceGreenBtn" onclick="autoTrace('green')" disabled>Extract Green Pixels</button>
+      <button onclick="copyToClipboard()" disabled id="copyBtn">Copy Coordinates</button>
+    </div>
+
+    <div class="section">
+      <h2>1. Source Image</h2>
+      <div class="info">Your uploaded ResusMonitor screenshot</div>
+      <canvas id="sourceCanvas"></canvas>
+    </div>
+
+    <div class="section">
+      <h2>2. Extracted Waveform (Rendered)</h2>
+      <div class="info">Auto-traced from black pixels - this is what you'll get in the app</div>
+      <div class="stats" id="stats"></div>
+      <canvas id="tracedCanvas" width="1200" height="200"></canvas>
+    </div>
+
+    <div class="section">
+      <h2>3. JavaScript Coordinates (Ready to Use)</h2>
+      <div class="info">Copy/paste into WaveformTracedAFib.js</div>
+      <div class="output" id="output">Upload an image to start...</div>
+    </div>
+  </div>
+
+  <script>
+    let imageData = null;
+    let extractedPoints = [];
+
+    document.getElementById('imageUpload').addEventListener('change', function(e) {
+      const file = e.target.files[0];
+      if (!file) return;
+
+      const reader = new FileReader();
+      reader.onload = function(event) {
+        const img = new Image();
+        img.onload = function() {
+          const canvas = document.getElementById('sourceCanvas');
+          canvas.width = img.width;
+          canvas.height = img.height;
+          const ctx = canvas.getContext('2d');
+          ctx.drawImage(img, 0, 0);
+          imageData = ctx.getImageData(0, 0, img.width, img.height);
+
+          document.getElementById('output').textContent = 'Image loaded! Choose: Extract Black Pixels (for pink grid) or Extract Green Pixels (for your app).';
+          document.getElementById('traceBlackBtn').disabled = false;
+          document.getElementById('traceGreenBtn').disabled = false;
+        };
+        img.src = event.target.result;
+      };
+      reader.readAsDataURL(file);
+    });
+
+    function autoTrace(mode) {
+      if (!imageData) {
+        alert('Please upload an image first!');
+        return;
+      }
+
+      const width = imageData.width;
+      const height = imageData.height;
+      const data = imageData.data;
+
+      document.getElementById('output').textContent = `Processing... extracting ${mode} pixels from image...`;
+
+      // Find pixels based on mode
+      const points = [];
+
+      // For each column (x position), find the target pixel
+      for (let x = 0; x < width; x++) {
+        let targetValue = mode === 'black' ? 255 : 0; // min brightness for black, max green for green
+        let targetY = -1;
+
+        // Scan this column for target pixel
+        for (let y = 0; y < height; y++) {
+          const idx = (y * width + x) * 4;
+          const r = data[idx];
+          const g = data[idx + 1];
+          const b = data[idx + 2];
+
+          if (mode === 'black') {
+            // Find darkest pixel (black waveform line)
+            const brightness = (r + g + b) / 3;
+            // Threshold: must be darker than 100 to ignore pink grid
+            if (brightness < 100 && brightness < targetValue) {
+              targetValue = brightness;
+              targetY = y;
+            }
+          } else if (mode === 'green') {
+            // Find brightest green pixel (ECG waveform)
+            // Check if this is a green pixel (g > 150 and dominates r,b)
+            if (g > 150 && g > r * 1.5 && g > b * 1.5) {
+              if (g > targetValue) {
+                targetValue = g;
+                targetY = y;
+              }
+            }
+          }
+        }
+
+        // If we found a target pixel in this column
+        if (targetY !== -1) {
+          points.push({
+            x: x / width,
+            y: (height / 2 - targetY) / (height / 2)
+          });
+        }
+      }
+
+      extractedPoints = points;
+
+      // Draw traced waveform
+      const canvas = document.getElementById('tracedCanvas');
+      const ctx = canvas.getContext('2d');
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+      // Draw baseline
+      ctx.strokeStyle = '#333';
+      ctx.lineWidth = 1;
+      ctx.beginPath();
+      ctx.moveTo(0, canvas.height / 2);
+      ctx.lineTo(canvas.width, canvas.height / 2);
+      ctx.stroke();
+
+      // Draw extracted waveform
+      ctx.strokeStyle = '#0f0';
+      ctx.lineWidth = 2;
+      ctx.beginPath();
+
+      points.forEach((pt, i) => {
+        const x = pt.x * canvas.width;
+        const y = canvas.height / 2 - pt.y * (canvas.height / 3);
+        if (i === 0) ctx.moveTo(x, y);
+        else ctx.lineTo(x, y);
+      });
+      ctx.stroke();
+
+      // Show stats
+      document.getElementById('stats').textContent =
+        `✓ Extracted ${points.length} points from ${width}x${height} image`;
+
+      // Export coordinates with smart downsampling
+      let output = `// Auto-traced from image using ${mode.toUpperCase()} pixel extraction\n`;
+      output += `// Original: ${points.length} points, Downsampled: `;
+
+      // Downsample intelligently:
+      // - Keep ALL points during QRS complexes (rapid changes)
+      // - Thin out points during flat baseline (slow changes)
+      const downsampledPoints = [];
+      const CHANGE_THRESHOLD = 0.05; // Threshold for "significant change"
+
+      for (let i = 0; i < points.length; i++) {
+        if (i === 0 || i === points.length - 1) {
+          // Always keep first and last
+          downsampledPoints.push(points[i]);
+        } else {
+          // Check if this point represents significant change
+          const prevY = points[i - 1].y;
+          const currY = points[i].y;
+          const change = Math.abs(currY - prevY);
+
+          // Keep point if rapid change (QRS) or every 10th point (baseline)
+          if (change > CHANGE_THRESHOLD || i % 10 === 0) {
+            downsampledPoints.push(points[i]);
+          }
+        }
+      }
+
+      output += `${downsampledPoints.length} points (smart sampling)\n\n`;
+      output += `const AFIB_TRACED_COORDS = [\n`;
+
+      downsampledPoints.forEach((pt, i) => {
+        output += `  { x: ${pt.x.toFixed(4)}, y: ${pt.y.toFixed(4)} }`;
+        if (i < downsampledPoints.length - 1) output += ',';
+        output += '\n';
+      });
+      output += `];\n`;
+
+      document.getElementById('output').textContent = output;
+      document.getElementById('copyBtn').disabled = false;
+    }
+
+    function copyToClipboard() {
+      const output = document.getElementById('output').textContent;
+      navigator.clipboard.writeText(output).then(() => {
+        alert('✓ Coordinates copied to clipboard!\n\nPaste into WaveformTracedAFib.js');
+      });
+    }
+  </script>
+</body>
+</html>

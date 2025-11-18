@@ -1,0 +1,354 @@
+[dotenv@17.2.3] injecting env (0) from .env -- tip: 🔐 encrypt with Dotenvx: https://dotenvx.com
+{
+  "CP": {
+    "accronym": "CP",
+    "fullName": "Chest Pain",
+    "preCategory": "Chest Pain Cases",
+    "postCategory1": "Cardiovascular",
+    "postCategory2": "Pulmonary",
+    "postCategory3": "Gastrointestinal",
+    "notes": "Can also be Psychiatric, Musculoskeletal"
+  },
+  "SOB": {
+    "accronym": "SOB",
+    "fullName": "Respiratory Distress (severe)",
+    "preCategory": "Respiratory Cases",
+    "postCategory1": "Pulmonary",
+    "postCategory2": "Critical Care",
+    "postCategory3": "",
+    "notes": ""
+  },
+  "ABD": {
+    "accronym": "ABD",
+    "fullName": "Abdominal Pain",
+    "preCategory": "Abdominal Pain Cases",
+    "postCategory1": "Gastrointestinal",
+    "postCategory2": "Obstetrics/Gynecology",
+    "postCategory3": "Renal/Genitourinary",
+    "notes": "Can also be Trauma"
+  },
+  "HA": {
+    "accronym": "HA",
+    "fullName": "Headache",
+    "preCategory": "Headache Cases",
+    "postCategory1": "Neurologic",
+    "postCategory2": "Infectious Disease",
+    "postCategory3": "Cardiovascular",
+    "notes": "Can also be Ophthalmologic, HEENT"
+  },
+  "AMS": {
+    "accronym": "AMS",
+    "fullName": "Altered Mental Status",
+    "preCategory": "Altered Mental Status Cases",
+    "postCategory1": "Neurologic",
+    "postCategory2": "Endocrine/Metabolic",
+    "postCategory3": "Toxicology",
+    "notes": "Can also be Infectious Disease, Psychiatric"
+  },
+  "SYNC": {
+    "accronym": "SYNC",
+    "fullName": "Syncope / Near Syncope",
+    "preCategory": "Syncope Cases",
+    "postCategory1": "Cardiovascular",
+    "postCategory2": "Neurologic",
+    "postCategory3": "Endocrine/Metabolic",
+    "notes": ""
+  },
+  "SZ": {
+    "accronym": "SZ",
+    "fullName": "Seizure",
+    "preCategory": "Seizure Cases",
+    "postCategory1": "Neurologic",
+    "postCategory2": "Endocrine/Metabolic",
+    "postCategory3": "Toxicology",
+    "notes": "Can also be Obstetrics (eclampsia)"
+  },
+  "DIZZ": {
+    "accronym": "DIZZ",
+    "fullName": "Dizziness / Vertigo",
+    "preCategory": "Dizziness Cases",
+    "postCategory1": "Neurologic",
+    "postCategory2": "Cardiovascular",
+    "postCategory3": "HEENT",
+    "notes": ""
+  },
+  "WEAK": {
+    "accronym": "WEAK",
+    "fullName": "Weakness / Fatigue",
+    "preCategory": "Weakness Cases",
+    "postCategory1": "Neurologic",
+    "postCategory2": "Endocrine/Metabolic",
+    "postCategory3": "Hematologic/Oncologic",
+    "notes": "Can also be Cardiovascular"
+  },
+  "NT": {
+    "accronym": "NT",
+    "fullName": "Numbness / Tingling",
+    "preCategory": "Numbness & Tingling Cases",
+    "postCategory1": "Neurologic",
+    "postCategory2": "Endocrine/Metabolic",
+    "postCategory3": "Toxicology",
+    "notes": ""
+  },
+  "GLF": {
+    "accronym": "GLF",
+    "fullName": "Ground Level Fall",
+    "preCategory": "Fall Cases",
+    "postCategory1": "Trauma",
+    "postCategory2": "Neurologic",
+    "postCategory3": "Cardiovascular",
+    "notes": "Can also be Endocrine/Metabolic, Musculoskeletal"
+  },
+  "TR": {
+    "accronym": "TR",
+    "fullName": "Trauma (general)",
+    "preCategory": "Trauma Cases",
+    "postCategory1": "Trauma",
+    "postCategory2": "Musculoskeletal/Orthopedics",
+    "postCategory3": "",
+    "notes": ""
+  },
+  "MVC": {
+    "accronym": "MVC",
+    "fullName": "Motor Vehicle Collision",
+    "preCategory": "Motor Vehicle Accident Cases",
+    "postCategory1": "Trauma",
+    "postCategory2": "Neurologic",
+    "postCategory3": "Musculoskeletal",
+    "notes": "Head injury common"
+  },
+  "BURN": {
+    "accronym": "BURN",
+    "fullName": "Burn Injury",
+    "preCategory": "Burn Injury Cases",
+    "postCategory1": "Trauma",
+    "postCategory2": "Dermatology",
+    "postCategory3": "",
+    "notes": ""
+  },
+  "FX": {
+    "accronym": "FX",
+    "fullName": "Fracture / Orthopedic Injury",
+    "preCategory": "Fracture & Bone Injury Cases",
+    "postCategory1": "Musculoskeletal/Orthopedics",
+    "postCategory2": "Trauma",
+    "postCategory3": "",
+    "notes": ""
+  },
+  "HEAD": {
+    "accronym": "HEAD",
+    "fullName": "Head Injury / Head Trauma",
+    "preCategory": "Head Injury Cases",
+    "postCategory1": "Trauma",
+    "postCategory2": "Neurologic",
+    "postCategory3": "",
+    "notes": ""
+  },
+  "LAC": {
+    "accronym": "LAC",
+    "fullName": "Laceration / Wound",
+    "preCategory": "Laceration & Wound Cases",
+    "postCategory1": "Trauma",
+    "postCategory2": "Dermatology",
+    "postCategory3": "Procedures",
+    "notes": ""
+  },
+  "GI": {
+    "accronym": "GI",
+    "fullName": "GI Complaint (non-painful)",
+    "preCategory": "GI Complaint Cases",
+    "postCategory1": "Gastrointestinal",
+    "postCategory2": "Infectious Disease",
+    "postCategory3": "",
+    "notes": "N/V, diarrhea, GI bleed"
+  },
+  "GU": {
+    "accronym": "GU",
+    "fullName": "Genitourinary Complaint",
+    "preCategory": "Genitourinary Cases",
+    "postCategory1": "Renal/Genitourinary",
+    "postCategory2": "Infectious Disease",
+    "postCategory3": "",
+    "notes": "Dysuria, hematuria, kidney stone"
+  },
+  "GYN": {
+    "accronym": "GYN",
+    "fullName": "Gynecologic Complaint",
+    "preCategory": "Gynecologic Cases",
+    "postCategory1": "Obstetrics/Gynecology",
+    "postCategory2": "",
+    "postCategory3": "",
+    "notes": ""
+  },
+  "OB": {
+    "accronym": "OB",
+    "fullName": "Obstetric Emergency",
+    "preCategory": "Obstetric Emergencies",
+    "postCategory1": "Obstetrics/Gynecology",
+    "postCategory2": "",
+    "postCategory3": "",
+    "notes": ""
+  },
+  "DERM": {
+    "accronym": "DERM",
+    "fullName": "Dermatologic Complaint",
+    "preCategory": "Skin & Rash Cases",
+    "postCategory1": "Dermatology",
+    "postCategory2": "Infectious Disease",
+    "postCategory3": "Hematologic/Oncologic",
+    "notes": ""
+  },
+  "EYE": {
+    "accronym": "EYE",
+    "fullName": "Eye Complaint",
+    "preCategory": "Eye Cases",
+    "postCategory1": "Ophthalmologic",
+    "postCategory2": "Neurologic",
+    "postCategory3": "Infectious Disease",
+    "notes": ""
+  },
+  "ENT": {
+    "accronym": "ENT",
+    "fullName": "ENT Complaint",
+    "preCategory": "Ear, Nose, Throat Cases",
+    "postCategory1": "HEENT",
+    "postCategory2": "Infectious Disease",
+    "postCategory3": "",
+    "notes": ""
+  },
+  "PSY": {
+    "accronym": "PSY",
+    "fullName": "Psychiatric Emergency",
+    "preCategory": "Behavioral Health Cases",
+    "postCategory1": "Psychiatry/Behavioral",
+    "postCategory2": "Toxicology",
+    "postCategory3": "Neurologic",
+    "notes": ""
+  },
+  "ACLS": {
+    "accronym": "ACLS",
+    "fullName": "Cardiac Arrest / Code Blue",
+    "preCategory": "Cardiac Arrest Cases",
+    "postCategory1": "Cardiovascular",
+    "postCategory2": "Critical Care",
+    "postCategory3": "",
+    "notes": ""
+  },
+  "SHOC": {
+    "accronym": "SHOC",
+    "fullName": "Shock (undifferentiated)",
+    "preCategory": "Shock Cases",
+    "postCategory1": "Critical Care",
+    "postCategory2": "Cardiovascular",
+    "postCategory3": "Infectious Disease",
+    "notes": "Can also be Trauma"
+  },
+  "TOX": {
+    "accronym": "TOX",
+    "fullName": "Toxicologic Emergency / Overdose",
+    "preCategory": "Toxicology Cases",
+    "postCategory1": "Toxicology",
+    "postCategory2": "Psychiatry/Behavioral",
+    "postCategory3": "",
+    "notes": ""
+  },
+  "ENV": {
+    "accronym": "ENV",
+    "fullName": "Environmental Emergency",
+    "preCategory": "Environmental Emergencies",
+    "postCategory1": "Environmental",
+    "postCategory2": "Toxicology",
+    "postCategory3": "",
+    "notes": ""
+  },
+  "END": {
+    "accronym": "END",
+    "fullName": "Endocrine Emergency",
+    "preCategory": "Endocrine Cases",
+    "postCategory1": "Endocrine/Metabolic",
+    "postCategory2": "",
+    "postCategory3": "",
+    "notes": ""
+  },
+  "HEM": {
+    "accronym": "HEM",
+    "fullName": "Hematologic Emergency",
+    "preCategory": "Hematology Cases",
+    "postCategory1": "Hematologic/Oncologic",
+    "postCategory2": "",
+    "postCategory3": "",
+    "notes": ""
+  },
+  "INF": {
+    "accronym": "INF",
+    "fullName": "Infectious Disease / Sepsis",
+    "preCategory": "Infection & Sepsis Cases",
+    "postCategory1": "Infectious Disease",
+    "postCategory2": "Critical Care",
+    "postCategory3": "",
+    "notes": ""
+  },
+  "PCP": {
+    "accronym": "PCP",
+    "fullName": "Pediatric Chest Pain",
+    "preCategory": "Pediatric Chest Pain Cases",
+    "postCategory1": "Pediatric Cardiovascular",
+    "postCategory2": "Pediatric Pulmonary",
+    "postCategory3": "Pediatric Musculoskeletal",
+    "notes": ""
+  },
+  "PSOB": {
+    "accronym": "PSOB",
+    "fullName": "Pediatric Respiratory Distress",
+    "preCategory": "Pediatric Respiratory Emergencies",
+    "postCategory1": "Pediatric Pulmonary",
+    "postCategory2": "Pediatric Critical Care",
+    "postCategory3": "",
+    "notes": ""
+  },
+  "PABD": {
+    "accronym": "PABD",
+    "fullName": "Pediatric Abdominal Pain",
+    "preCategory": "Pediatric Belly Pain Cases",
+    "postCategory1": "Pediatric Gastrointestinal",
+    "postCategory2": "Pediatric Surgery",
+    "postCategory3": "",
+    "notes": ""
+  },
+  "PFEV": {
+    "accronym": "PFEV",
+    "fullName": "Pediatric Fever",
+    "preCategory": "Pediatric Fever Cases",
+    "postCategory1": "Pediatric Infectious Disease",
+    "postCategory2": "Pediatric Neurologic",
+    "postCategory3": "",
+    "notes": ""
+  },
+  "PSZ": {
+    "accronym": "PSZ",
+    "fullName": "Pediatric Seizure",
+    "preCategory": "Pediatric Seizure Cases",
+    "postCategory1": "Pediatric Neurologic",
+    "postCategory2": "Pediatric Endocrine/Metabolic",
+    "postCategory3": "",
+    "notes": ""
+  },
+  "PTR": {
+    "accronym": "PTR",
+    "fullName": "Pediatric Trauma",
+    "preCategory": "Pediatric Injury Cases",
+    "postCategory1": "Pediatric Trauma",
+    "postCategory2": "Pediatric Musculoskeletal",
+    "postCategory3": "",
+    "notes": ""
+  },
+  "PGEN": {
+    "accronym": "PGEN",
+    "fullName": "Pediatric General",
+    "preCategory": "Pediatric General Cases",
+    "postCategory1": "Pediatric General Cases",
+    "postCategory2": "Pediatric General Cases",
+    "postCategory3": "",
+    "notes": ""
+  }
+}

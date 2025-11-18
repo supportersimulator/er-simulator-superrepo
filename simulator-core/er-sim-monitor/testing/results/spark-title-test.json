@@ -1,0 +1,25 @@
+{
+  "timestamp": "2025-11-03T05:29:40.698Z",
+  "tool": "Spark Title Generation",
+  "totalTested": 3,
+  "testCases": [
+    {
+      "rowNum": 13,
+      "caseId": "NEUR0034",
+      "currentSpark": "Crisis Case 5: Subarachnoid Hemorrhage │ © 2023 EM Sim Cases (CC BY-SA 4.0)",
+      "vitals": "{\"hr\":125,\"bp\":{\"sys\":130,\"dia\":85},\"rr\":22,\"temp\":37.5,\"spo2\":97,\"waveform\":\"sinus_ecg\",\"lastupdated\":\"2025-11-03T05:01:35.886Z\"}"
+    },
+    {
+      "rowNum": 53,
+      "caseId": "CARD0047",
+      "currentSpark": "CPR Case 1: Cardiac Arrest Management │ © 2023 EM Sim Cases (CC BY-SA 4.0)",
+      "vitals": "{\"hr\":0,\"bp\":{\"sys\":null,\"dia\":null},\"rr\":0,\"temp\":36.8,\"spo2\":null,\"waveform\":\"asystole_ecg\",\"lastupdated\":\"2025-11-03T05:02:29.237Z\"}"
+    },
+    {
+      "rowNum": 103,
+      "caseId": "CARD0050",
+      "currentSpark": "Cardiac Case 2: STEMI Management │ © 2023 EM Sim Cases (CC BY-SA 4.0)",
+      "vitals": "{\"hr\":135,\"bp\":{\"sys\":110,\"dia\":70},\"rr\":30,\"temp\":37.5,\"spo2\":93,\"waveform\":\"sinus_ecg\",\"etco2\":36,\"lastupdated\":\"2025-11-03T05:01:35.889Z\"}"
+    }
+  ]
+}

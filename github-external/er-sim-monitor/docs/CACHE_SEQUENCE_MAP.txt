@@ -1,0 +1,82 @@
+📥 Downloading current production...
+
+🗺️  COMPLETE CACHE SEQUENCE MAP
+
+═══════════════════════════════════════════════════════════════
+
+USER ACTION: Clicks "🧩 Categories & Pathways" menu
+
+═══════════════════════════════════════════════════════════════
+
+STEP 1: runPathwayChainBuilder() [Line 6150]
+  Description: Entry point - Background preparation
+  Reads: SELECTED_CACHE_FIELDS
+  Calls: refreshHeaders
+
+STEP 1.1: refreshHeaders() [Line 3493]
+  Description: Read Row 2 from sheet → cache CACHED_MERGED_KEYS
+
+STEP 1.2: getFieldSelectorRoughDraft() [Line 4978]
+  Description: Initialize 35 defaults if not saved
+  Reads: CACHED_MERGED_KEYS, SELECTED_CACHE_FIELDS
+  Calls: refreshHeaders
+
+STEP 1.3: getAvailableFields() [Line 4920]
+  Description: Get all fields from CACHED_MERGED_KEYS
+  Reads: CACHED_MERGED_KEYS
+  Calls: refreshHeaders, getFieldSelectorRoughDraft
+
+STEP 1.4: getRecommendedFields() [Line 5080]
+  Description: Call OpenAI API → validate → cache AI_RECOMMENDED_FIELDS
+  Calls: getStaticRecommendedFields_
+
+STEP 1.5: getOrCreateHolisticAnalysis_() [Line 6265]
+  Description: Get or generate pathway analysis
+  Calls: refreshHeaders
+
+STEP 2: Pathway UI Displays
+  Description: Modal shows with cache button ready
+
+STEP 3: showFieldSelector() [Line 30]
+  Description: User clicks cache button → modal opens
+  Calls: getFieldSelectorRoughDraft
+
+STEP 3.1: getFieldSelectorRoughDraft() [Line 4978]
+  Description: Get cached data instantly (already populated)
+  Reads: CACHED_MERGED_KEYS, SELECTED_CACHE_FIELDS
+  Calls: refreshHeaders
+
+STEP 3.2: Field Selector Modal HTML
+  Description: 3-section layout renders with pre-cached data
+
+STEP 4: saveFieldSelectionAndStartCache() [Line 5248]
+  Description: User clicks "Continue to Cache" → save selection
+  Writes: SELECTED_CACHE_FIELDS
+  Calls: showFieldSelector
+
+STEP 4.1: performCacheWithProgress() [Line 5369]
+  Description: Start batch processing (25 rows at a time)
+  Calls: refreshHeaders, getOrCreateHolisticAnalysis_
+
+═══════════════════════════════════════════════════════════════
+
+KEY CACHE PROPERTIES:
+
+CACHED_MERGED_KEYS:
+  - Created by: refreshHeaders() [Step 1.1]
+  - Read by: getFieldSelectorRoughDraft, getAvailableFields, getRecommendedFields
+  - Format: ["Case_Organization_Case_ID", ...]
+
+SELECTED_CACHE_FIELDS:
+  - Created by: getFieldSelectorRoughDraft() [Step 1.2] if not exists
+  - Updated by: saveFieldSelectionAndStartCache() [Step 4]
+  - Read by: getFieldSelectorRoughDraft, getRecommendedFields
+  - Format: ["Case_Organization_Case_ID", ...] (35 defaults or user selection)
+
+AI_RECOMMENDED_FIELDS:
+  - Created by: getRecommendedFields() [Step 1.4]
+  - Read by: showFieldSelector() HTML (pre-cached for instant display)
+  - Format: ["Field_Name_1", "Field_Name_2", ...] (validated exact matches)
+
+═══════════════════════════════════════════════════════════════
+

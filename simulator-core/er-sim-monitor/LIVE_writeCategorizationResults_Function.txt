@@ -1,0 +1,91 @@
+1456: function writeCategorizationResults(cases, categorizations) {
+1457:   addUltimateCategorizationLog('     📝 writeCategorizationResults() - Starting...');
+1458:   addUltimateCategorizationLog('       Cases to write: ' + cases.length);
+1459:   addUltimateCategorizationLog('       Categorizations received: ' + categorizations.length);
+1460: 
+1461:   const ss = SpreadsheetApp.getActiveSpreadsheet();
+1462:   let resultsSheet = ss.getSheetByName('AI_Categorization_Results');
+1463: 
+1464:   if (!resultsSheet) {
+1465:     addUltimateCategorizationLog('       📋 Results sheet not found - creating new sheet...');
+1466:     resultsSheet = ss.insertSheet('AI_Categorization_Results');
+1467:     // Create header structure with Final columns (15 columns: A-O)
+1468:     resultsSheet.getRange(1, 1, 1, 15).setValues([[
+1469:       'Case_ID', 'Legacy_Case_ID', 'Row_Index', 'Current_Symptom', 'Current_System',
+1470:       'Suggested_Symptom', 'Suggested_Symptom_Name', 'Suggested_System',
+1471:       'AI_Reasoning', 'Confidence', 'Status', 'User_Decision',
+1472:       'Final_Symptom', 'Final_System', 'Final_Symptom_Name'
+1473:     ]]);
+1474:     addUltimateCategorizationLog('       ✅ Created new sheet with headers (15 columns including Final columns)');
+1475:   } else {
+1476:     addUltimateCategorizationLog('       ✅ Results sheet found');
+1477:     // Check if Final columns exist, add them if missing
+1478:     const lastCol = resultsSheet.getLastColumn();
+1479:     if (lastCol < 15) {
+1480:       addUltimateCategorizationLog('       📋 Adding Final columns to existing sheet...');
+1481:       resultsSheet.getRange(1, 13, 1, 3).setValues([['Final_Symptom', 'Final_System', 'Final_Symptom_Name']]);
+1482:       addUltimateCategorizationLog('       ✅ Final columns added');
+1483:     }
+1484:   }
+1485: 
+1486:   const existingLastRow = resultsSheet.getLastRow();
+1487:   addUltimateCategorizationLog('       Current last row: ' + existingLastRow);
+1488: 
+1489:   let existingCaseIDs = new Set();
+1490:   if (existingLastRow > 1) {
+1491:     addUltimateCategorizationLog('       🔍 Checking for duplicate Case IDs...');
+1492:     const existingData = resultsSheet.getRange(2, 1, existingLastRow - 1, 15).getValues();
+1493:     existingData.forEach(function(row) { if (row[0]) existingCaseIDs.add(row[0]); });
+1494:     addUltimateCategorizationLog('       Found ' + existingCaseIDs.size + ' existing Case IDs');
+1495:   }
+1496: 
+1497:   let nextRow = resultsSheet.getLastRow() + 1;
+1498:   addUltimateCategorizationLog('       Next available row: ' + nextRow);
+1499: 
+1500:   let newRowsWritten = 0;
+1501:   let duplicatesSkipped = 0;
+1502: 
+1503:   // FIX: Get mapping for fallback symptom names
+1504:   const mapping = getAccronymMapping();
+1505: 
+1506:   cases.forEach(function(caseData, idx) {
+1507:     if (existingCaseIDs.has(caseData.caseID)) {
+1508:       duplicatesSkipped++;
+1509:       return;
+1510:     }
+1511: 
+1512:     const cat = categorizations[idx] || {};
+1513:     const suggestedSymptom = cat.symptom || '';
+1514:     const suggestedSymptomName = cat.symptomName || mapping[cat.symptom] || '';  // FIX: Fallback to mapping
+1515:     const suggestedSystem = cat.system || '';
+1516:     let status = 'new';
+1517:     if (caseData.currentSymptom && caseData.currentSymptom === suggestedSymptom) status = 'match';
+1518:     else if (caseData.currentSymptom && caseData.currentSymptom !== suggestedSymptom) status = 'conflict';
+1519: 
+1520:     // Write results in correct column order (A through O) with Final columns
+1521:     resultsSheet.getRange(nextRow, 1, 1, 15).setValues([[
+1522:       caseData.caseID,          // A: Case_ID
+1523:       caseData.legacyCaseID,    // B: Legacy_Case_ID
+1524:       caseData.rowIndex,        // C: Row_Index
+1525:       caseData.currentSymptom,  // D: Current_Symptom
+1526:       caseData.currentSystem,   // E: Current_System
+1527:       suggestedSymptom,         // F: Suggested_Symptom (from AI)
+1528:       suggestedSymptomName,     // G: Suggested_Symptom_Name (from AI)
+1529:       suggestedSystem,          // H: Suggested_System (from AI)
+1530:       cat.reasoning || '',      // I: AI_Reasoning
+1531:       'medium',                 // J: Confidence
+1532:       status,                   // K: Status
+1533:       '',                       // L: User_Decision
+1534:       suggestedSymptomName,     // M: Final_Symptom (full name like "Chest Pain")
+1535:       suggestedSystem,          // N: Final_System (copy from Suggested, user can edit)
+1536:       suggestedSymptomName      // O: Final_Symptom_Name (copy from Suggested, user can edit)
+1537:     ]]);
+1538:     nextRow++;
+1539:     newRowsWritten++;
+1540:   });
+1541: 
+1542:   addUltimateCategorizationLog('       ✅ Write complete:');
+1543:   addUltimateCategorizationLog('         New rows written: ' + newRowsWritten);
+1544:   addUltimateCategorizationLog('         Duplicates skipped: ' + duplicatesSkipped);
+1545:   addUltimateCategorizationLog('         Final row: ' + (nextRow - 1));
+1546: }

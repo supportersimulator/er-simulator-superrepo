@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>NSR vs AFib Comparison</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 20px;
+      background: #000;
+      font-family: monospace;
+    }
+    canvas {
+      background: #000;
+      display: block;
+      margin: 10px auto;
+      border: 1px solid #333;
+    }
+    .info {
+      color: #0f0;
+      text-align: center;
+      margin: 20px 0 5px 0;
+      font-size: 16px;
+      font-weight: bold;
+    }
+    .description {
+      color: #888;
+      text-align: center;
+      margin-bottom: 10px;
+      font-size: 12px;
+    }
+  </style>
+</head>
+<body>
+  <div class="info">Normal Sinus Rhythm (NSR) - 60 bpm</div>
+  <div class="description">Regular rhythm with P waves, QRS complexes, and T waves</div>
+  <canvas id="nsr" width="1200" height="200"></canvas>
+
+  <div class="info">Atrial Fibrillation (AFib)</div>
+  <div class="description">6 irregular beats with fibrillatory baseline (no P waves)</div>
+  <canvas id="afib" width="1200" height="200"></canvas>
+
+  <script>
+    const containerWidth = 1200;
+    const height = 200;
+    const AMP = 1.5;
+
+    // NSR Generator (exact same logic as WaveformECG.js)
+    function generateNSR(x) {
+      const numCycles = 5;
+      const cycleLength = containerWidth / numCycles;
+      const t = x % cycleLength;
+      const progress = t / cycleLength;
+
+      // P wave (0.12 - 0.20)
+      if (progress > 0.12 && progress < 0.20) {
+        const pPhase = (progress - 0.12) / 0.08;
+        return 6 * Math.sin(pPhase * Math.PI) * AMP;
+      }
+
+      // PR segment (flat)
+      if (progress > 0.20 && progress < 0.25) {
+        return 0;
+      }
+
+      // QRS complex (0.25 - 0.33)
+      if (progress > 0.25 && progress < 0.33) {
+        const qrsPhase = (progress - 0.25) / 0.08;
+        if (qrsPhase < 0.2) return -6 * AMP; // Q wave
+        if (qrsPhase < 0.5) return 45 * AMP; // R wave (tall spike)
+        if (qrsPhase < 1.0) return -8 * AMP; // S wave
+      }
+
+      // ST segment (flat, slightly elevated)
+      if (progress > 0.33 && progress < 0.40) {
+        return 0.5 * AMP;
+      }
+
+      // T wave (0.40 - 0.55)
+      if (progress > 0.40 && progress < 0.55) {
+        const tPhase = (progress - 0.40) / 0.15;
+        return 12 * Math.sin(tPhase * Math.PI) * AMP;
+      }
+
+      return 0;
+    }
+
+    // AFib Generator (exact same logic as WaveformECG.js)
+    function generateAFib(x) {
+      // 6 irregular R-wave positions across ENTIRE screen
+      const afib_positions_absolute = [0.08, 0.16, 0.38, 0.54, 0.72, 0.88];
+
+      // Use absolute position x instead of per-cycle position
+      const xProgress = x / containerWidth; // 0.0 to 1.0 across entire screen
+
+      for (let rPos of afib_positions_absolute) {
+        const distFromR = Math.abs(xProgress - rPos);
+
+        // Narrow QRS (<120ms) - same width as NSR
+        const qrsWidth = 4 / containerWidth;
+        if (distFromR < qrsWidth) {
+          const localDist = distFromR / qrsWidth; // Normalize to 0-1 within QRS
+          if (localDist < 0.25) return -6 * AMP; // Q wave
+          if (localDist < 0.5) return 45 * AMP; // R wave
+          if (localDist < 1.0) return -8 * AMP; // S wave
+        }
+      }
+
+      // FIBRILLATORY BASELINE with f-waves (like real AFib and ResusMonitor)
+      // Layer 1: Smooth underlying undulation
+      const smooth1 = Math.sin((x / containerWidth) * Math.PI * 4) * 1.0 * AMP;
+      const smooth2 = Math.sin((x / containerWidth) * Math.PI * 6.5 + 1.3) * 0.6 * AMP;
+
+      // Layer 2: Fine fibrillatory bumps (f-waves) - high frequency, very low amplitude
+      const fWave1 = Math.sin((x / containerWidth) * Math.PI * 60) * 0.3 * AMP;
+      const fWave2 = Math.sin((x / containerWidth) * Math.PI * 75 + 2.1) * 0.25 * AMP;
+      const fWave3 = Math.sin((x / containerWidth) * Math.PI * 52 + 4.7) * 0.2 * AMP;
+
+      return smooth1 + smooth2 + fWave1 + fWave2 + fWave3;
+    }
+
+    // Draw NSR
+    const nsrCanvas = document.getElementById('nsr');
+    const nsrCtx = nsrCanvas.getContext('2d');
+    nsrCtx.strokeStyle = '#00ff00';
+    nsrCtx.lineWidth = 2;
+    nsrCtx.beginPath();
+    for (let x = 0; x <= containerWidth; x += 1) {
+      const y = height / 2 - generateNSR(x);
+      if (x === 0) nsrCtx.moveTo(x, y);
+      else nsrCtx.lineTo(x, y);
+    }
+    nsrCtx.stroke();
+
+    // Draw AFib
+    const afibCanvas = document.getElementById('afib');
+    const afibCtx = afibCanvas.getContext('2d');
+    afibCtx.strokeStyle = '#00ff00';
+    afibCtx.lineWidth = 2;
+    afibCtx.beginPath();
+    for (let x = 0; x <= containerWidth; x += 1) {
+      const y = height / 2 - generateAFib(x);
+      if (x === 0) afibCtx.moveTo(x, y);
+      else afibCtx.lineTo(x, y);
+    }
+    afibCtx.stroke();
+
+    // Draw position markers for AFib (6 irregular beats)
+    afibCtx.fillStyle = '#ff0';
+    afibCtx.font = '12px monospace';
+    const positions = [0.08, 0.16, 0.38, 0.54, 0.72, 0.88];
+    positions.forEach((pos, i) => {
+      const x = pos * containerWidth;
+      afibCtx.fillRect(x - 1, 0, 2, height);
+      afibCtx.fillText(`${i + 1}`, x - 5, 15);
+    });
+  </script>
+</body>
+</html>

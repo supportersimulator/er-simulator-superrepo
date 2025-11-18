@@ -1,0 +1,1720 @@
+{
+  "backupDate": "2025-11-05T00:10:48.255Z",
+  "totalFiles": 297,
+  "uploadedFiles": 3,
+  "updatedFiles": 219,
+  "notFoundFiles": 74,
+  "errorFiles": 1,
+  "totalSizeMB": "2.70",
+  "phases": 16,
+  "details": [
+    {
+      "phase": "Phase 1 - Source Material Preparation",
+      "status": "not_found",
+      "fileName": "ecg-to-svg-converter.html"
+    },
+    {
+      "phase": "Phase 1 - Source Material Preparation",
+      "status": "not_found",
+      "fileName": "ecg-save-server.cjs"
+    },
+    {
+      "phase": "Phase 1 - Source Material Preparation",
+      "status": "updated",
+      "fileName": "migrateWaveformNaming.cjs",
+      "size": 9232
+    },
+    {
+      "phase": "Phase 1 - Source Material Preparation",
+      "status": "not_found",
+      "fileName": "updateWaveformRegistry.cjs"
+    },
+    {
+      "phase": "Phase 1 - Source Material Preparation",
+      "status": "updated",
+      "fileName": "fetchVitalsFromSheetsOAuth.js",
+      "size": 3156
+    },
+    {
+      "phase": "Phase 1 - Source Material Preparation",
+      "status": "updated",
+      "fileName": "fetchVitalsFromSheetsSecure.js",
+      "size": 1334
+    },
+    {
+      "phase": "Phase 1 - Source Material Preparation",
+      "status": "updated",
+      "fileName": "GoogleSheetsAppsScript.js",
+      "size": 18402
+    },
+    {
+      "phase": "Phase 1 - Source Material Preparation",
+      "status": "updated",
+      "fileName": "GoogleSheetsAppsScript_Enhanced.js",
+      "size": 30312
+    },
+    {
+      "phase": "Phase 1 - Source Material Preparation",
+      "status": "updated",
+      "fileName": "syncVitalsToSheets.js",
+      "size": 7646
+    },
+    {
+      "phase": "Phase 1 - Source Material Preparation",
+      "status": "updated",
+      "fileName": "liveSyncServer.js",
+      "size": 2867
+    },
+    {
+      "phase": "Phase 2 - Input Validation",
+      "status": "updated",
+      "fileName": "validateVitalsJSON.cjs",
+      "size": 8817
+    },
+    {
+      "phase": "Phase 2 - Input Validation",
+      "status": "updated",
+      "fileName": "fetchSampleRows.cjs",
+      "size": 2792
+    },
+    {
+      "phase": "Phase 2 - Input Validation",
+      "status": "updated",
+      "fileName": "analyzeDuplicateScenarios.cjs",
+      "size": 10043
+    },
+    {
+      "phase": "Phase 3 - Scenario Generation",
+      "status": "updated",
+      "fileName": "addClinicalDefaults.cjs",
+      "size": 13451
+    },
+    {
+      "phase": "Phase 3 - Scenario Generation",
+      "status": "updated",
+      "fileName": "addClinicalDefaultsToAppsScript.cjs",
+      "size": 10543
+    },
+    {
+      "phase": "Phase 3 - Scenario Generation",
+      "status": "not_found",
+      "fileName": "testClinicalDefaults.cjs"
+    },
+    {
+      "phase": "Phase 4 - Quality Scoring & Analysis",
+      "status": "not_found",
+      "fileName": "validateBatchQuality.cjs"
+    },
+    {
+      "phase": "Phase 4 - Quality Scoring & Analysis",
+      "status": "updated",
+      "fileName": "qualityProgressionAnalysis.cjs",
+      "size": 9189
+    },
+    {
+      "phase": "Phase 4 - Quality Scoring & Analysis",
+      "status": "updated",
+      "fileName": "compareDataQuality.cjs",
+      "size": 4624
+    },
+    {
+      "phase": "Phase 4 - Quality Scoring & Analysis",
+      "status": "updated",
+      "fileName": "analyzeLastThreeRows.cjs",
+      "size": 5398
+    },
+    {
+      "phase": "Phase 4 - Quality Scoring & Analysis",
+      "status": "updated",
+      "fileName": "checkRowFields.cjs",
+      "size": 2633
+    },
+    {
+      "phase": "Phase 4 - Quality Scoring & Analysis",
+      "status": "updated",
+      "fileName": "compareMultipleRows.cjs",
+      "size": 4097
+    },
+    {
+      "phase": "Phase 4 - Quality Scoring & Analysis",
+      "status": "updated",
+      "fileName": "compareRows189and190.cjs",
+      "size": 4592
+    },
+    {
+      "phase": "Phase 4 - Quality Scoring & Analysis",
+      "status": "updated",
+      "fileName": "compareWithBackup.cjs",
+      "size": 1805
+    },
+    {
+      "phase": "Phase 4 - Quality Scoring & Analysis",
+      "status": "updated",
+      "fileName": "investigateInvalidWaveforms.cjs",
+      "size": 2630
+    },
+    {
+      "phase": "Phase 5 - Title & Metadata Enhancement",
+      "status": "updated",
+      "fileName": "addCategoryColumn.cjs",
+      "size": 9753
+    },
+    {
+      "phase": "Phase 5 - Title & Metadata Enhancement",
+      "status": "updated",
+      "fileName": "categoriesAndPathwaysTool.cjs",
+      "size": 30395
+    },
+    {
+      "phase": "Phase 5 - Title & Metadata Enhancement",
+      "status": "updated",
+      "fileName": "consolidatePathways.cjs",
+      "size": 8253
+    },
+    {
+      "phase": "Phase 5 - Title & Metadata Enhancement",
+      "status": "not_found",
+      "fileName": "consolidateRowPathways.cjs"
+    },
+    {
+      "phase": "Phase 5 - Title & Metadata Enhancement",
+      "status": "not_found",
+      "fileName": "addColorCoding.cjs"
+    },
+    {
+      "phase": "Phase 5 - Title & Metadata Enhancement",
+      "status": "not_found",
+      "fileName": "enhanceTitleGeneration.cjs"
+    },
+    {
+      "phase": "Phase 5 - Title & Metadata Enhancement",
+      "status": "updated",
+      "fileName": "testATSRPrompt.cjs",
+      "size": 3277
+    },
+    {
+      "phase": "Phase 6 - Media Management",
+      "status": "not_found",
+      "fileName": "validateMediaURLs.cjs"
+    },
+    {
+      "phase": "Phase 6 - Media Management",
+      "status": "not_found",
+      "fileName": "analyzeMediaURLsDetail.cjs"
+    },
+    {
+      "phase": "Phase 7 - Batch Reports & Monitoring",
+      "status": "not_found",
+      "fileName": "createBatchReportsSheet.cjs"
+    },
+    {
+      "phase": "Phase 7 - Batch Reports & Monitoring",
+      "status": "updated",
+      "fileName": "checkBatchStatus.cjs",
+      "size": 2693
+    },
+    {
+      "phase": "Phase 7 - Batch Reports & Monitoring",
+      "status": "updated",
+      "fileName": "verifyBatchTool.cjs",
+      "size": 2677
+    },
+    {
+      "phase": "Phase 7 - Batch Reports & Monitoring",
+      "status": "not_found",
+      "fileName": "checkBatchProgress.cjs"
+    },
+    {
+      "phase": "Phase 7 - Batch Reports & Monitoring",
+      "status": "not_found",
+      "fileName": "checkLatestBatchDetails.cjs"
+    },
+    {
+      "phase": "Phase 7 - Batch Reports & Monitoring",
+      "status": "not_found",
+      "fileName": "checkResults.cjs"
+    },
+    {
+      "phase": "Phase 7 - Batch Reports & Monitoring",
+      "status": "not_found",
+      "fileName": "debugBatchQueue.cjs"
+    },
+    {
+      "phase": "Phase 7 - Batch Reports & Monitoring",
+      "status": "not_found",
+      "fileName": "diagnoseLoggingSystem.cjs"
+    },
+    {
+      "phase": "Phase 7 - Batch Reports & Monitoring",
+      "status": "updated",
+      "fileName": "analyzeLiveLogging.cjs",
+      "size": 5706
+    },
+    {
+      "phase": "Phase 7 - Batch Reports & Monitoring",
+      "status": "updated",
+      "fileName": "enableLogsForAllModes.cjs",
+      "size": 4176
+    },
+    {
+      "phase": "Phase 8 - Backup & Version Control",
+      "status": "updated",
+      "fileName": "createComprehensiveBackup.cjs",
+      "size": 5727
+    },
+    {
+      "phase": "Phase 8 - Backup & Version Control",
+      "status": "updated",
+      "fileName": "createLocalBackup.cjs",
+      "size": 7487
+    },
+    {
+      "phase": "Phase 8 - Backup & Version Control",
+      "status": "updated",
+      "fileName": "restoreATSRComplete.cjs",
+      "size": 7302
+    },
+    {
+      "phase": "Phase 8 - Backup & Version Control",
+      "status": "updated",
+      "fileName": "restoreOriginalATSR.cjs",
+      "size": 7012
+    },
+    {
+      "phase": "Phase 8 - Backup & Version Control",
+      "status": "updated",
+      "fileName": "restorePreviousAppsScriptVersion.cjs",
+      "size": 2545
+    },
+    {
+      "phase": "Phase 8 - Backup & Version Control",
+      "status": "not_found",
+      "fileName": "backupAppsScriptProject.cjs"
+    },
+    {
+      "phase": "Phase 8 - Backup & Version Control",
+      "status": "not_found",
+      "fileName": "backupAllVersions.cjs"
+    },
+    {
+      "phase": "Phase 8 - Backup & Version Control",
+      "status": "not_found",
+      "fileName": "createVersionSnapshot.cjs"
+    },
+    {
+      "phase": "Phase 8 - Backup & Version Control",
+      "status": "not_found",
+      "fileName": "backupMetadataConfig.cjs"
+    },
+    {
+      "phase": "Phase 8 - Backup & Version Control",
+      "status": "not_found",
+      "fileName": "restoreMetadataConfig.cjs"
+    },
+    {
+      "phase": "Phase 8 - Backup & Version Control",
+      "status": "not_found",
+      "fileName": "compareAppsScriptVersions.cjs"
+    },
+    {
+      "phase": "Phase 8 - Backup & Version Control",
+      "status": "not_found",
+      "fileName": "trackCodeChanges.cjs"
+    },
+    {
+      "phase": "Phase 8 - Backup & Version Control",
+      "status": "not_found",
+      "fileName": "rollbackToVersion.cjs"
+    },
+    {
+      "phase": "Phase 9 - Deployment & Distribution",
+      "status": "updated",
+      "fileName": "deployATSR.cjs",
+      "size": 1688
+    },
+    {
+      "phase": "Phase 9 - Deployment & Distribution",
+      "status": "updated",
+      "fileName": "deployATSRNoCaseID.cjs",
+      "size": 3700
+    },
+    {
+      "phase": "Phase 9 - Deployment & Distribution",
+      "status": "updated",
+      "fileName": "deployCategoriesPanel.cjs",
+      "size": 4307
+    },
+    {
+      "phase": "Phase 9 - Deployment & Distribution",
+      "status": "updated",
+      "fileName": "deployRestoredFinal.cjs",
+      "size": 3368
+    },
+    {
+      "phase": "Phase 9 - Deployment & Distribution",
+      "status": "updated",
+      "fileName": "deployUltimateFixed.cjs",
+      "size": 1985
+    },
+    {
+      "phase": "Phase 9 - Deployment & Distribution",
+      "status": "updated",
+      "fileName": "fetchCurrentAppsScript.cjs",
+      "size": 1846
+    },
+    {
+      "phase": "Phase 9 - Deployment & Distribution",
+      "status": "not_found",
+      "fileName": "updateDeploymentVersion.cjs"
+    },
+    {
+      "phase": "Phase 9 - Deployment & Distribution",
+      "status": "not_found",
+      "fileName": "setupWebAppEndpoint.cjs"
+    },
+    {
+      "phase": "Phase 9 - Deployment & Distribution",
+      "status": "not_found",
+      "fileName": "deployScriptLibrary.cjs"
+    },
+    {
+      "phase": "Phase 9 - Deployment & Distribution",
+      "status": "not_found",
+      "fileName": "publishWebApp.cjs"
+    },
+    {
+      "phase": "Phase 9 - Deployment & Distribution",
+      "status": "not_found",
+      "fileName": "updateWebAppConfig.cjs"
+    },
+    {
+      "phase": "Phase 9 - Deployment & Distribution",
+      "status": "not_found",
+      "fileName": "testWebAppDeployment.cjs"
+    },
+    {
+      "phase": "Phase 10 - Testing & Validation",
+      "status": "not_found",
+      "fileName": "testBatchProcessing.cjs"
+    },
+    {
+      "phase": "Phase 10 - Testing & Validation",
+      "status": "updated",
+      "fileName": "verifySetup.cjs",
+      "size": 4900
+    },
+    {
+      "phase": "Phase 10 - Testing & Validation",
+      "status": "updated",
+      "fileName": "testAllWorkflowTools.cjs",
+      "size": 8129
+    },
+    {
+      "phase": "Phase 10 - Testing & Validation",
+      "status": "not_found",
+      "fileName": "testATSREnhancements.cjs"
+    },
+    {
+      "phase": "Phase 10 - Testing & Validation",
+      "status": "not_found",
+      "fileName": "validateRowDetection.cjs"
+    },
+    {
+      "phase": "Phase 10 - Testing & Validation",
+      "status": "not_found",
+      "fileName": "testQualityScoring.cjs"
+    },
+    {
+      "phase": "Phase 10 - Testing & Validation",
+      "status": "not_found",
+      "fileName": "verifyDuplicateDetection.cjs"
+    },
+    {
+      "phase": "Phase 10 - Testing & Validation",
+      "status": "not_found",
+      "fileName": "testBatchReporting.cjs"
+    },
+    {
+      "phase": "Phase 10 - Testing & Validation",
+      "status": "updated",
+      "fileName": "validateSystemIntegrity.cjs",
+      "size": 12648
+    },
+    {
+      "phase": "Phase 11 - Analytics & Dashboards",
+      "status": "not_found",
+      "fileName": "createDashboard.cjs"
+    },
+    {
+      "phase": "Phase 11 - Analytics & Dashboards",
+      "status": "not_found",
+      "fileName": "generateAnalyticsDashboard.cjs"
+    },
+    {
+      "phase": "Phase 11 - Analytics & Dashboards",
+      "status": "not_found",
+      "fileName": "createInteractiveDashboard.cjs"
+    },
+    {
+      "phase": "Phase 11 - Analytics & Dashboards",
+      "status": "updated",
+      "fileName": "analyzeSheetStructure.cjs",
+      "size": 6757
+    },
+    {
+      "phase": "Phase 11 - Analytics & Dashboards",
+      "status": "not_found",
+      "fileName": "exportDashboardHTML.cjs"
+    },
+    {
+      "phase": "Phase 11 - Analytics & Dashboards",
+      "status": "not_found",
+      "fileName": "generateSystemMetrics.cjs"
+    },
+    {
+      "phase": "Phase 12 - Optimization & Maintenance",
+      "status": "updated",
+      "fileName": "standardizeAllVitals.cjs",
+      "size": 5451
+    },
+    {
+      "phase": "Phase 12 - Optimization & Maintenance",
+      "status": "not_found",
+      "fileName": "repairAllVitalsJSON.cjs"
+    },
+    {
+      "phase": "Phase 12 - Optimization & Maintenance",
+      "status": "not_found",
+      "fileName": "findMissingVitals.cjs"
+    },
+    {
+      "phase": "Phase 12 - Optimization & Maintenance",
+      "status": "not_found",
+      "fileName": "fixMalformedVitals.cjs"
+    },
+    {
+      "phase": "Phase 12 - Optimization & Maintenance",
+      "status": "not_found",
+      "fileName": "validateAllVitals.cjs"
+    },
+    {
+      "phase": "Phase 12 - Optimization & Maintenance",
+      "status": "not_found",
+      "fileName": "setOpenAIKey.cjs"
+    },
+    {
+      "phase": "Phase 12 - Optimization & Maintenance",
+      "status": "not_found",
+      "fileName": "rotateAPIKeys.cjs"
+    },
+    {
+      "phase": "Phase 12 - Optimization & Maintenance",
+      "status": "not_found",
+      "fileName": "enhanceRowDetection.cjs"
+    },
+    {
+      "phase": "Phase 12 - Optimization & Maintenance",
+      "status": "not_found",
+      "fileName": "optimizeSheetPerformance.cjs"
+    },
+    {
+      "phase": "Phase 12 - Optimization & Maintenance",
+      "status": "not_found",
+      "fileName": "cleanupDuplicateRows.cjs"
+    },
+    {
+      "phase": "Phase 12 - Optimization & Maintenance",
+      "status": "not_found",
+      "fileName": "archiveOldBatches.cjs"
+    },
+    {
+      "phase": "Phase 12 - Optimization & Maintenance",
+      "status": "not_found",
+      "fileName": "optimizeQualityScoring.cjs"
+    },
+    {
+      "phase": "Apps Script Code Variants",
+      "status": "updated",
+      "fileName": "Code_ULTIMATE_ATSR.gs",
+      "size": 137879
+    },
+    {
+      "phase": "Apps Script Code Variants",
+      "status": "updated",
+      "fileName": "Code_WITH_CATEGORIES_LIGHT.gs",
+      "size": 124508
+    },
+    {
+      "phase": "Apps Script Code Variants",
+      "status": "not_found",
+      "fileName": "Code_ATSR_NO_CASEID.gs"
+    },
+    {
+      "phase": "Apps Script Code Variants",
+      "status": "not_found",
+      "fileName": "Code_ENHANCED.gs"
+    },
+    {
+      "phase": "Apps Script Code Variants",
+      "status": "not_found",
+      "fileName": "Code_LIGHTWEIGHT.gs"
+    },
+    {
+      "phase": "Apps Script Code Variants",
+      "status": "updated",
+      "fileName": "Code_RESTORED_FINAL.gs",
+      "size": 123432
+    },
+    {
+      "phase": "Apps Script Code Variants",
+      "status": "not_found",
+      "fileName": "Code_RESTORED_ORIGINAL.gs"
+    },
+    {
+      "phase": "Apps Script Code Variants",
+      "status": "not_found",
+      "fileName": "Code_WITH_SMART_DUPLICATION.gs"
+    },
+    {
+      "phase": "Apps Script Code Variants",
+      "status": "not_found",
+      "fileName": "Code_WITH_ENHANCED_TITLE_GEN.gs"
+    },
+    {
+      "phase": "Apps Script Code Variants",
+      "status": "not_found",
+      "fileName": "Code_WITH_PATHWAY_CONSOLIDATION.gs"
+    },
+    {
+      "phase": "Apps Script Code Variants",
+      "status": "not_found",
+      "fileName": "Code_WITH_COLOR_CODING.gs"
+    },
+    {
+      "phase": "Apps Script Code Variants",
+      "status": "not_found",
+      "fileName": "Code_MONOLITHIC.gs"
+    },
+    {
+      "phase": "Apps Script Code Variants",
+      "status": "not_found",
+      "fileName": "Code_MODULAR_BASE.gs"
+    },
+    {
+      "phase": "System Builders & Code Generators",
+      "status": "not_found",
+      "fileName": "createFullProject.cjs"
+    },
+    {
+      "phase": "System Builders & Code Generators",
+      "status": "not_found",
+      "fileName": "buildFromScratch.cjs"
+    },
+    {
+      "phase": "System Builders & Code Generators",
+      "status": "not_found",
+      "fileName": "mergeAllCode.cjs"
+    },
+    {
+      "phase": "System Builders & Code Generators",
+      "status": "not_found",
+      "fileName": "generateAppsScriptBundle.cjs"
+    },
+    {
+      "phase": "System Builders & Code Generators",
+      "status": "updated",
+      "fileName": "createToolsWorkflowSheet.cjs",
+      "size": 25172
+    },
+    {
+      "phase": "System Builders & Code Generators",
+      "status": "updated",
+      "fileName": "generateAllToolsDocs.cjs",
+      "size": 6730
+    },
+    {
+      "phase": "System Builders & Code Generators",
+      "status": "not_found",
+      "fileName": "createProjectStructure.cjs"
+    },
+    {
+      "phase": "Additional Tools & Utilities",
+      "status": "updated",
+      "fileName": "importEmsimFinal.cjs",
+      "size": 10676
+    },
+    {
+      "phase": "Additional Tools & Utilities",
+      "status": "not_found",
+      "fileName": "run100percentIdealState.cjs"
+    },
+    {
+      "phase": "Additional Tools & Utilities",
+      "status": "not_found",
+      "fileName": "setupDriveFolders.cjs"
+    },
+    {
+      "phase": "Additional Tools & Utilities",
+      "status": "not_found",
+      "fileName": "organizeProjectFiles.cjs"
+    },
+    {
+      "phase": "Additional Tools & Utilities",
+      "status": "not_found",
+      "fileName": "searchCodeFor.cjs"
+    },
+    {
+      "phase": "Additional Tools & Utilities",
+      "status": "not_found",
+      "fileName": "findAllReferences.cjs"
+    },
+    {
+      "phase": "Additional Tools & Utilities",
+      "status": "updated",
+      "fileName": "deleteEmptyRows.cjs",
+      "size": 4262
+    },
+    {
+      "phase": "Additional Tools & Utilities",
+      "status": "not_found",
+      "fileName": "trimWhitespace.cjs"
+    },
+    {
+      "phase": "Additional Tools & Utilities",
+      "status": "not_found",
+      "fileName": "normalizeLineEndings.cjs"
+    },
+    {
+      "phase": "Additional Scripts",
+      "status": "updated",
+      "fileName": "ATSR_Enhanced_Function.gs",
+      "size": 12169
+    },
+    {
+      "phase": "Additional Scripts",
+      "status": "updated",
+      "fileName": "CategoriesPathwaysPanel.gs",
+      "size": 15535
+    },
+    {
+      "phase": "Additional Scripts",
+      "status": "updated",
+      "fileName": "CategoriesPathwaysPanel_Light.gs",
+      "size": 10607
+    },
+    {
+      "phase": "Additional Scripts",
+      "status": "updated",
+      "fileName": "Code_ATSR_NO_CASE_ID.gs",
+      "size": 115510
+    },
+    {
+      "phase": "Additional Scripts",
+      "status": "updated",
+      "fileName": "Code_ATSR_Trimmed.gs",
+      "size": 134429
+    },
+    {
+      "phase": "Additional Scripts",
+      "status": "updated",
+      "fileName": "Code_COMPLETE_LIGHT.gs",
+      "size": 123297
+    },
+    {
+      "phase": "Additional Scripts",
+      "status": "updated",
+      "fileName": "Code_CURRENT_DEPLOYED.gs",
+      "size": 115615
+    },
+    {
+      "phase": "Additional Scripts",
+      "status": "updated",
+      "fileName": "Code_ENHANCED_ATSR.gs",
+      "size": 113901
+    },
+    {
+      "phase": "Additional Scripts",
+      "status": "updated",
+      "fileName": "Code_FINAL_WITH_BOTH_PANELS.gs",
+      "size": 123223
+    },
+    {
+      "phase": "Additional Scripts",
+      "status": "updated",
+      "fileName": "Code_FIXED.gs",
+      "size": 104932
+    },
+    {
+      "phase": "Additional Scripts",
+      "status": "updated",
+      "fileName": "Code_ORIGINAL_RESTORED.gs",
+      "size": 115411
+    },
+    {
+      "phase": "Additional Scripts",
+      "status": "updated",
+      "fileName": "Code_SIMPLIFIED_ATSR_LIGHT.gs",
+      "size": 112616
+    },
+    {
+      "phase": "Additional Scripts",
+      "status": "updated",
+      "fileName": "WaveformAdjustmentTool.html",
+      "size": 15304
+    },
+    {
+      "phase": "Additional Scripts",
+      "status": "updated",
+      "fileName": "achieve100PercentIdealState.cjs",
+      "size": 8448
+    },
+    {
+      "phase": "Additional Scripts",
+      "status": "updated",
+      "fileName": "addCategoriesMenuItem.cjs",
+      "size": 1011
+    },
+    {
+      "phase": "Additional Scripts",
+      "status": "updated",
+      "fileName": "addCategoriesPathwaysPanel.cjs",
+      "size": 3852
+    },
+    {
+      "phase": "Additional Scripts",
+      "status": "updated",
+      "fileName": "addEmptyRows.cjs",
+      "size": 3627
+    },
+    {
+      "phase": "Additional Scripts",
+      "status": "updated",
+      "fileName": "addLogDiagnosticFunction.cjs",
+      "size": 6398
+    },
+    {
+      "phase": "Additional Scripts",
+      "status": "updated",
+      "fileName": "addMilestoneFolders.cjs",
+      "size": 5243
+    },
+    {
+      "phase": "Additional Scripts",
+      "status": "updated",
+      "fileName": "addOpenAIResponseLogging.cjs",
+      "size": 4445
+    },
+    {
+      "phase": "Additional Scripts",
+      "status": "updated",
+      "fileName": "addOverviewColumnsToSheet.cjs",
+      "size": 6861
+    },
+    {
+      "phase": "Additional Scripts",
+      "status": "updated",
+      "fileName": "addRowDetectionLogging.cjs",
+      "size": 6369
+    },
+    {
+      "phase": "Additional Scripts",
+      "status": "updated",
+      "fileName": "addShowToastFunction.cjs",
+      "size": 6034
+    },
+    {
+      "phase": "Additional Scripts",
+      "status": "updated",
+      "fileName": "addWebAppEndpoint.cjs",
+      "size": 6200
+    },
+    {
+      "phase": "Additional Scripts",
+      "status": "updated",
+      "fileName": "aiEnhancedRenaming.cjs",
+      "size": 24435
+    },
+    {
+      "phase": "Additional Scripts",
+      "status": "updated",
+      "fileName": "analyzeCaseIDUsage.cjs",
+      "size": 1855
+    },
+    {
+      "phase": "Additional Scripts",
+      "status": "updated",
+      "fileName": "analyzeColumnCategories.cjs",
+      "size": 4734
+    },
+    {
+      "phase": "Additional Scripts",
+      "status": "updated",
+      "fileName": "analyzeMediaURLsDetailed.cjs",
+      "size": 4778
+    },
+    {
+      "phase": "Additional Scripts",
+      "status": "updated",
+      "fileName": "analyzeMonolithicScripts.cjs",
+      "size": 7850
+    },
+    {
+      "phase": "Additional Scripts",
+      "status": "updated",
+      "fileName": "analyzeOutputSheetForSimulationId.cjs",
+      "size": 9007
+    },
+    {
+      "phase": "Additional Scripts",
+      "status": "updated",
+      "fileName": "analyzePathwayNames.cjs",
+      "size": 3080
+    },
+    {
+      "phase": "Additional Scripts",
+      "status": "updated",
+      "fileName": "auditAllTools.cjs",
+      "size": 9641
+    },
+    {
+      "phase": "Additional Scripts",
+      "status": "updated",
+      "fileName": "authGoogleDrive.cjs",
+      "size": 2520
+    },
+    {
+      "phase": "Additional Scripts",
+      "status": "updated",
+      "fileName": "autoCloseSuccessPopup.cjs",
+      "size": 5397
+    },
+    {
+      "phase": "Additional Scripts",
+      "status": "updated",
+      "fileName": "autoFlagFoundationalCases.cjs",
+      "size": 9662
+    },
+    {
+      "phase": "Additional Scripts",
+      "status": "updated",
+      "fileName": "autoTrimATSR.cjs",
+      "size": 4747
+    },
+    {
+      "phase": "Additional Scripts",
+      "status": "updated",
+      "fileName": "backupAllCodeToDrive.cjs",
+      "size": 13441
+    },
+    {
+      "phase": "Additional Scripts",
+      "status": "updated",
+      "fileName": "backupHeadersAndFlatten.cjs",
+      "size": 10192
+    },
+    {
+      "phase": "Additional Scripts",
+      "status": "updated",
+      "fileName": "backupMetadata.cjs",
+      "size": 5091
+    },
+    {
+      "phase": "Additional Scripts",
+      "status": "updated",
+      "fileName": "backupToGoogleDrive.cjs",
+      "size": 4543
+    },
+    {
+      "phase": "Additional Scripts",
+      "status": "updated",
+      "fileName": "batchStatusSummary.cjs",
+      "size": 4052
+    },
+    {
+      "phase": "Additional Scripts",
+      "status": "updated",
+      "fileName": "buildUltimateATSR.cjs",
+      "size": 19642
+    },
+    {
+      "phase": "Additional Scripts",
+      "status": "updated",
+      "fileName": "checkBatchReportsDetail.cjs",
+      "size": 4228
+    },
+    {
+      "phase": "Additional Scripts",
+      "status": "updated",
+      "fileName": "checkDeployedATSR.cjs",
+      "size": 2085
+    },
+    {
+      "phase": "Additional Scripts",
+      "status": "updated",
+      "fileName": "checkExecutionHistory.cjs",
+      "size": 4878
+    },
+    {
+      "phase": "Additional Scripts",
+      "status": "updated",
+      "fileName": "checkInputTabRow206.cjs",
+      "size": 7279
+    },
+    {
+      "phase": "Additional Scripts",
+      "status": "updated",
+      "fileName": "checkMediaURLs.cjs",
+      "size": 5071
+    },
+    {
+      "phase": "Additional Scripts",
+      "status": "updated",
+      "fileName": "checkTestExecutionStatus.cjs",
+      "size": 8280
+    },
+    {
+      "phase": "Additional Scripts",
+      "status": "updated",
+      "fileName": "cleanupInputRow2.cjs",
+      "size": 3182
+    },
+    {
+      "phase": "Additional Scripts",
+      "status": "updated",
+      "fileName": "clearApiKeyCache.cjs",
+      "size": 5023
+    },
+    {
+      "phase": "Additional Scripts",
+      "status": "updated",
+      "fileName": "colorCodeCategoryHeaders.cjs",
+      "size": 7786
+    },
+    {
+      "phase": "Additional Scripts",
+      "status": "updated",
+      "fileName": "compareBackups.cjs",
+      "size": 15497
+    },
+    {
+      "phase": "Additional Scripts",
+      "status": "updated",
+      "fileName": "compareMonolithicVsTest.cjs",
+      "size": 13301
+    },
+    {
+      "phase": "Additional Scripts",
+      "status": "updated",
+      "fileName": "compareOriginalVsTest.cjs",
+      "size": 12125
+    },
+    {
+      "phase": "Additional Scripts",
+      "status": "updated",
+      "fileName": "compareRow190vsRow206.cjs",
+      "size": 5834
+    },
+    {
+      "phase": "Additional Scripts",
+      "status": "updated",
+      "fileName": "compareSheetColumns.cjs",
+      "size": 4120
+    },
+    {
+      "phase": "Additional Scripts",
+      "status": "updated",
+      "fileName": "completeAuth.cjs",
+      "size": 4505
+    },
+    {
+      "phase": "Additional Scripts",
+      "status": "updated",
+      "fileName": "copyApiKeyToTestSheet.cjs",
+      "size": 7086
+    },
+    {
+      "phase": "Additional Scripts",
+      "status": "updated",
+      "fileName": "createATSRProject.cjs",
+      "size": 6851
+    },
+    {
+      "phase": "Additional Scripts",
+      "status": "updated",
+      "fileName": "createBoundScriptAndDeploy.cjs",
+      "size": 7999
+    },
+    {
+      "phase": "Additional Scripts",
+      "status": "updated",
+      "fileName": "createDocSubfolders.cjs",
+      "size": 3435
+    },
+    {
+      "phase": "Additional Scripts",
+      "status": "updated",
+      "fileName": "createNewVersion.cjs",
+      "size": 3689
+    },
+    {
+      "phase": "Additional Scripts",
+      "status": "updated",
+      "fileName": "createProgressTracker.cjs",
+      "size": 8193
+    },
+    {
+      "phase": "Additional Scripts",
+      "status": "updated",
+      "fileName": "createSimplifiedATSR.cjs",
+      "size": 6090
+    },
+    {
+      "phase": "Additional Scripts",
+      "status": "updated",
+      "fileName": "createTestSpreadsheet.cjs",
+      "size": 5921
+    },
+    {
+      "phase": "Additional Scripts",
+      "status": "updated",
+      "fileName": "debugRow16Data.cjs",
+      "size": 1664
+    },
+    {
+      "phase": "Additional Scripts",
+      "status": "updated",
+      "fileName": "decomposeMonolithicCode.cjs",
+      "size": 8150
+    },
+    {
+      "phase": "Additional Scripts",
+      "status": "updated",
+      "fileName": "deleteDocumentProperty.cjs",
+      "size": 4409
+    },
+    {
+      "phase": "Additional Scripts",
+      "status": "updated",
+      "fileName": "deployATSRUpdates.cjs",
+      "size": 5222
+    },
+    {
+      "phase": "Additional Scripts",
+      "status": "updated",
+      "fileName": "deployAppsScript.cjs",
+      "size": 6615
+    },
+    {
+      "phase": "Additional Scripts",
+      "status": "created",
+      "fileName": "deployCategoriesPathways.cjs",
+      "size": 4213
+    },
+    {
+      "phase": "Additional Scripts",
+      "status": "updated",
+      "fileName": "deployEnhancedATSR.cjs",
+      "size": 6587
+    },
+    {
+      "phase": "Additional Scripts",
+      "status": "updated",
+      "fileName": "deployFeaturesToTestSpreadsheet.cjs",
+      "size": 7932
+    },
+    {
+      "phase": "Additional Scripts",
+      "status": "created",
+      "fileName": "deployPhase2A.cjs",
+      "size": 4327
+    },
+    {
+      "phase": "Additional Scripts",
+      "status": "updated",
+      "fileName": "deployPromptCaching.cjs",
+      "size": 5232
+    },
+    {
+      "phase": "Additional Scripts",
+      "status": "updated",
+      "fileName": "deployRetryLogic.cjs",
+      "size": 5572
+    },
+    {
+      "phase": "Additional Scripts",
+      "status": "updated",
+      "fileName": "deployToExistingProject.cjs",
+      "size": 5749
+    },
+    {
+      "phase": "Additional Scripts",
+      "status": "updated",
+      "fileName": "deployWaveformSystem.cjs",
+      "size": 6000
+    },
+    {
+      "phase": "Additional Scripts",
+      "status": "updated",
+      "fileName": "deployWebApp.cjs",
+      "size": 6108
+    },
+    {
+      "phase": "Additional Scripts",
+      "status": "updated",
+      "fileName": "enhancedValidation.cjs",
+      "size": 13180
+    },
+    {
+      "phase": "Additional Scripts",
+      "status": "updated",
+      "fileName": "excludeOverviewColumnsFromPrompt.cjs",
+      "size": 7268
+    },
+    {
+      "phase": "Additional Scripts",
+      "status": "updated",
+      "fileName": "exportDashboardData.cjs",
+      "size": 12078
+    },
+    {
+      "phase": "Additional Scripts",
+      "status": "updated",
+      "fileName": "extractCompleteFeatures.cjs",
+      "size": 11475
+    },
+    {
+      "phase": "Additional Scripts",
+      "status": "updated",
+      "fileName": "fetchOldVersion.cjs",
+      "size": 3813
+    },
+    {
+      "phase": "Additional Scripts",
+      "status": "updated",
+      "fileName": "final100PercentAudit.cjs",
+      "size": 3830
+    },
+    {
+      "phase": "Additional Scripts",
+      "status": "updated",
+      "fileName": "finalTestEnvironmentCheck.cjs",
+      "size": 12123
+    },
+    {
+      "phase": "Additional Scripts",
+      "status": "updated",
+      "fileName": "findAndImportSimFinal.cjs",
+      "size": 11369
+    },
+    {
+      "phase": "Additional Scripts",
+      "status": "updated",
+      "fileName": "findCaseIDValidation.cjs",
+      "size": 2288
+    },
+    {
+      "phase": "Additional Scripts",
+      "status": "updated",
+      "fileName": "findDriveBackupLocation.cjs",
+      "size": 3895
+    },
+    {
+      "phase": "Additional Scripts",
+      "status": "updated",
+      "fileName": "findDriveFile.cjs",
+      "size": 5110
+    },
+    {
+      "phase": "Additional Scripts",
+      "status": "updated",
+      "fileName": "findDuplicateATSR.cjs",
+      "size": 3413
+    },
+    {
+      "phase": "Additional Scripts",
+      "status": "updated",
+      "fileName": "findSidebarHTML.cjs",
+      "size": 3472
+    },
+    {
+      "phase": "Additional Scripts",
+      "status": "updated",
+      "fileName": "findSimulationIdColumn.cjs",
+      "size": 9656
+    },
+    {
+      "phase": "Additional Scripts",
+      "status": "updated",
+      "fileName": "fixATSRModel.cjs",
+      "size": 5075
+    },
+    {
+      "phase": "Additional Scripts",
+      "status": "updated",
+      "fileName": "fixBPandSpo2Final.cjs",
+      "size": 3405
+    },
+    {
+      "phase": "Additional Scripts",
+      "status": "updated",
+      "fileName": "fixInvalidJSONRows.cjs",
+      "size": 3099
+    },
+    {
+      "phase": "Additional Scripts",
+      "status": "updated",
+      "fileName": "fixInvalidJSONRowsFINAL.cjs",
+      "size": 3264
+    },
+    {
+      "phase": "Additional Scripts",
+      "status": "updated",
+      "fileName": "fixMissingUtilitiesAndBind.cjs",
+      "size": 9574
+    },
+    {
+      "phase": "Additional Scripts",
+      "status": "updated",
+      "fileName": "fixRemainingBPStrings.cjs",
+      "size": 2716
+    },
+    {
+      "phase": "Additional Scripts",
+      "status": "updated",
+      "fileName": "forceClearAndUpdateApiKey.cjs",
+      "size": 4549
+    },
+    {
+      "phase": "Additional Scripts",
+      "status": "updated",
+      "fileName": "fullyAutomatedTrim.cjs",
+      "size": 1313
+    },
+    {
+      "phase": "Additional Scripts",
+      "status": "updated",
+      "fileName": "generateDashboard.cjs",
+      "size": 17973
+    },
+    {
+      "phase": "Additional Scripts",
+      "status": "updated",
+      "fileName": "generateFeatureModules.cjs",
+      "size": 9795
+    },
+    {
+      "phase": "Additional Scripts",
+      "status": "updated",
+      "fileName": "generateOverviewsStandalone.cjs",
+      "size": 5413
+    },
+    {
+      "phase": "Additional Scripts",
+      "status": "updated",
+      "fileName": "generateToolsAuditReport.cjs",
+      "size": 9636
+    },
+    {
+      "phase": "Additional Scripts",
+      "status": "updated",
+      "fileName": "getAppsScriptVersions.cjs",
+      "size": 3335
+    },
+    {
+      "phase": "Additional Scripts",
+      "status": "updated",
+      "fileName": "getSheetIdForMaster.cjs",
+      "size": 1114
+    },
+    {
+      "phase": "Additional Scripts",
+      "status": "updated",
+      "fileName": "getSheetScriptId.cjs",
+      "size": 7154
+    },
+    {
+      "phase": "Additional Scripts",
+      "status": "updated",
+      "fileName": "implementRobustRowDetection.cjs",
+      "size": 7581
+    },
+    {
+      "phase": "Additional Scripts",
+      "status": "error",
+      "fileName": "implementSmartRowDetection.cjs",
+      "error": "request to https://www.googleapis.com/upload/drive/v3/files/12pSEva1oss8Yq0ctEaBffiReKLvAkB1l?fields=id%2C%20name%2C%20size&uploadType=media failed, reason: read ETIMEDOUT"
+    },
+    {
+      "phase": "Additional Scripts",
+      "status": "updated",
+      "fileName": "initializeAndDeployAppsScript.cjs",
+      "size": 6510
+    },
+    {
+      "phase": "Additional Scripts",
+      "status": "updated",
+      "fileName": "inspectAsystoleRows.cjs",
+      "size": 2254
+    },
+    {
+      "phase": "Additional Scripts",
+      "status": "updated",
+      "fileName": "inspectRow16.cjs",
+      "size": 1603
+    },
+    {
+      "phase": "Additional Scripts",
+      "status": "updated",
+      "fileName": "inspectSampleRow.cjs",
+      "size": 2108
+    },
+    {
+      "phase": "Additional Scripts",
+      "status": "updated",
+      "fileName": "inspectTestSpreadsheetStructure.cjs",
+      "size": 7364
+    },
+    {
+      "phase": "Additional Scripts",
+      "status": "updated",
+      "fileName": "interactiveDashboard.cjs",
+      "size": 13800
+    },
+    {
+      "phase": "Additional Scripts",
+      "status": "updated",
+      "fileName": "interactiveDashboardV2.cjs",
+      "size": 15794
+    },
+    {
+      "phase": "Additional Scripts",
+      "status": "updated",
+      "fileName": "listAllHeaders.cjs",
+      "size": 1202
+    },
+    {
+      "phase": "Additional Scripts",
+      "status": "updated",
+      "fileName": "listAllSheets.cjs",
+      "size": 972
+    },
+    {
+      "phase": "Additional Scripts",
+      "status": "updated",
+      "fileName": "listAppsScriptProjects.cjs",
+      "size": 7841
+    },
+    {
+      "phase": "Additional Scripts",
+      "status": "updated",
+      "fileName": "mergeEnhancedATSR.cjs",
+      "size": 3330
+    },
+    {
+      "phase": "Additional Scripts",
+      "status": "updated",
+      "fileName": "moveToolsInventoryToFolder.cjs",
+      "size": 2232
+    },
+    {
+      "phase": "Additional Scripts",
+      "status": "updated",
+      "fileName": "openDeploymentFiles.cjs",
+      "size": 4821
+    },
+    {
+      "phase": "Additional Scripts",
+      "status": "updated",
+      "fileName": "operationHistory.cjs",
+      "size": 7623
+    },
+    {
+      "phase": "Additional Scripts",
+      "status": "updated",
+      "fileName": "organizeDriveStructure.cjs",
+      "size": 5698
+    },
+    {
+      "phase": "Additional Scripts",
+      "status": "updated",
+      "fileName": "processWithStandardAPI.cjs",
+      "size": 8364
+    },
+    {
+      "phase": "Additional Scripts",
+      "status": "updated",
+      "fileName": "progressMonitor.cjs",
+      "size": 6805
+    },
+    {
+      "phase": "Additional Scripts",
+      "status": "updated",
+      "fileName": "quickAuth.cjs",
+      "size": 4876
+    },
+    {
+      "phase": "Additional Scripts",
+      "status": "updated",
+      "fileName": "readAppsScript.cjs",
+      "size": 5560
+    },
+    {
+      "phase": "Additional Scripts",
+      "status": "updated",
+      "fileName": "readScriptLine.cjs",
+      "size": 1450
+    },
+    {
+      "phase": "Additional Scripts",
+      "status": "updated",
+      "fileName": "refineDecomposition.cjs",
+      "size": 6113
+    },
+    {
+      "phase": "Additional Scripts",
+      "status": "updated",
+      "fileName": "removeCaseIDFromATSR.cjs",
+      "size": 4311
+    },
+    {
+      "phase": "Additional Scripts",
+      "status": "updated",
+      "fileName": "reorganizeByFeature.cjs",
+      "size": 6130
+    },
+    {
+      "phase": "Additional Scripts",
+      "status": "updated",
+      "fileName": "reorganizeDriveStructure.cjs",
+      "size": 4963
+    },
+    {
+      "phase": "Additional Scripts",
+      "status": "updated",
+      "fileName": "reset-project.js",
+      "size": 3608
+    },
+    {
+      "phase": "Additional Scripts",
+      "status": "updated",
+      "fileName": "restoreMetadata.cjs",
+      "size": 8774
+    },
+    {
+      "phase": "Additional Scripts",
+      "status": "updated",
+      "fileName": "safeImportFromSimFinal.cjs",
+      "size": 7624
+    },
+    {
+      "phase": "Additional Scripts",
+      "status": "updated",
+      "fileName": "searchProcessingLogic.cjs",
+      "size": 2108
+    },
+    {
+      "phase": "Additional Scripts",
+      "status": "updated",
+      "fileName": "smartRenameToolPhase2.cjs",
+      "size": 14927
+    },
+    {
+      "phase": "Additional Scripts",
+      "status": "updated",
+      "fileName": "standardizeAllVitalsFIXED.cjs",
+      "size": 5964
+    },
+    {
+      "phase": "Additional Scripts",
+      "status": "updated",
+      "fileName": "standardizeApiKeyUsage.cjs",
+      "size": 4675
+    },
+    {
+      "phase": "Additional Scripts",
+      "status": "updated",
+      "fileName": "switchToDocumentProperties.cjs",
+      "size": 5381
+    },
+    {
+      "phase": "Additional Scripts",
+      "status": "updated",
+      "fileName": "syncFoundationalToSheet.cjs",
+      "size": 9046
+    },
+    {
+      "phase": "Additional Scripts",
+      "status": "updated",
+      "fileName": "syncOverviewsToSheet.cjs",
+      "size": 8056
+    },
+    {
+      "phase": "Additional Scripts",
+      "status": "updated",
+      "fileName": "testATSRStandalone.cjs",
+      "size": 3205
+    },
+    {
+      "phase": "Additional Scripts",
+      "status": "updated",
+      "fileName": "testAppsScriptModification.cjs",
+      "size": 8301
+    },
+    {
+      "phase": "Additional Scripts",
+      "status": "updated",
+      "fileName": "testDeployedFeatures.cjs",
+      "size": 12210
+    },
+    {
+      "phase": "Additional Scripts",
+      "status": "updated",
+      "fileName": "testIntelligentMapping.js",
+      "size": 1076
+    },
+    {
+      "phase": "Additional Scripts",
+      "status": "updated",
+      "fileName": "testSidebarMode.cjs",
+      "size": 4935
+    },
+    {
+      "phase": "Additional Scripts",
+      "status": "updated",
+      "fileName": "testSuite.cjs",
+      "size": 12481
+    },
+    {
+      "phase": "Additional Scripts",
+      "status": "updated",
+      "fileName": "updateATSRCode.cjs",
+      "size": 3708
+    },
+    {
+      "phase": "Additional Scripts",
+      "status": "updated",
+      "fileName": "updateDeploymentAsWebApp.cjs",
+      "size": 6446
+    },
+    {
+      "phase": "Additional Scripts",
+      "status": "updated",
+      "fileName": "updateDeploymentToHEAD.cjs",
+      "size": 5648
+    },
+    {
+      "phase": "Additional Scripts",
+      "status": "updated",
+      "fileName": "updateSyncApiButton.cjs",
+      "size": 6396
+    },
+    {
+      "phase": "Additional Scripts",
+      "status": "updated",
+      "fileName": "updateWorkflowTrackerStatus.cjs",
+      "size": 5128
+    },
+    {
+      "phase": "Additional Scripts",
+      "status": "updated",
+      "fileName": "upgradeTokenScopes.cjs",
+      "size": 3158
+    },
+    {
+      "phase": "Additional Scripts",
+      "status": "updated",
+      "fileName": "uploadCompleteAppsScript.cjs",
+      "size": 7036
+    },
+    {
+      "phase": "Additional Scripts",
+      "status": "updated",
+      "fileName": "uploadFeatureModulesToDrive.cjs",
+      "size": 8332
+    },
+    {
+      "phase": "Additional Scripts",
+      "status": "updated",
+      "fileName": "uploadIsolatedToolsToDrive.cjs",
+      "size": 7070
+    },
+    {
+      "phase": "Additional Scripts",
+      "status": "updated",
+      "fileName": "uploadLegacyDocumentation.cjs",
+      "size": 5326
+    },
+    {
+      "phase": "Additional Scripts",
+      "status": "updated",
+      "fileName": "uploadToolsInventory.cjs",
+      "size": 4780
+    },
+    {
+      "phase": "Additional Scripts",
+      "status": "updated",
+      "fileName": "uploadWorkflowDocumentation.cjs",
+      "size": 5322
+    },
+    {
+      "phase": "Additional Scripts",
+      "status": "updated",
+      "fileName": "useExistingDeployment.cjs",
+      "size": 2240
+    },
+    {
+      "phase": "Additional Scripts",
+      "status": "created",
+      "fileName": "verifyCategoriesPathways.cjs",
+      "size": 4364
+    },
+    {
+      "phase": "Additional Scripts",
+      "status": "updated",
+      "fileName": "verifyDeployedCSS.cjs",
+      "size": 2719
+    },
+    {
+      "phase": "Additional Scripts",
+      "status": "updated",
+      "fileName": "verifyIterativeMystery.cjs",
+      "size": 4225
+    },
+    {
+      "phase": "Additional Scripts",
+      "status": "updated",
+      "fileName": "verifyRow82.cjs",
+      "size": 1367
+    },
+    {
+      "phase": "Additional Scripts",
+      "status": "updated",
+      "fileName": "verifyRowDetection.cjs",
+      "size": 7274
+    },
+    {
+      "phase": "Additional Scripts",
+      "status": "updated",
+      "fileName": "verifySingleRowProcessing.cjs",
+      "size": 3131
+    },
+    {
+      "phase": "Additional Scripts",
+      "status": "updated",
+      "fileName": "verifyStandardization.cjs",
+      "size": 1484
+    },
+    {
+      "phase": "Additional Scripts",
+      "status": "updated",
+      "fileName": "verifyTestIsolation.cjs",
+      "size": 6613
+    },
+    {
+      "phase": "Additional Scripts",
+      "status": "updated",
+      "fileName": "viewProcessFunction.cjs",
+      "size": 1352
+    }
+  ]
+}

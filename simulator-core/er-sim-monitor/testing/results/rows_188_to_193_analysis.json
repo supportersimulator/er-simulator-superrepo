@@ -1,0 +1,88 @@
+{
+  "metadata": {
+    "timestamp": "2025-11-03T17:08:46.201Z",
+    "rowsAnalyzed": 5
+  },
+  "rows": [
+    {
+      "rowNumber": 188,
+      "caseId": "PEDMU09",
+      "sparkTitle": "Fever and Rash (5 M): Worried About My Child!",
+      "revealTitle": "Kawasaki Disease (5 M): Importance of Early Recognition",
+      "category": "Multisystem",
+      "totalColumns": 590,
+      "vitalsData": {
+        "initial": "{\"HR\":125,\"BP\":\"95/60\",\"RR\":22,\"SpO2\":96,\"waveform\":\"sinus_ecg\",\"Temp\":39.0,\"EtCO2\":34}",
+        "state1": "{\"HR\":135,\"BP\":\"85/50\",\"SpO2\":92,\"waveform\":\"sinus_ecg\",\"RR\":26,\"Temp\":39.7,\"EtCO2\":29}",
+        "state2": "{\"HR\":145,\"BP\":\"75/40\",\"SpO2\":88,\"waveform\":\"pea_ecg\",\"RR\":0,\"Temp\":38.8,\"EtCO2\":0}",
+        "state3": "Dr. Emily Carter, Dr. Mark Chen",
+        "state4": "Children's Hospital / EM Sim Cases",
+        "state5": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "rowNumber": 189,
+      "caseId": "CARD0045",
+      "sparkTitle": "Crushing Chest Pain (55 M): Racing Against Time",
+      "revealTitle": "Acute Myocardial Infarction (55 M): Rapid Response Saves Lives",
+      "category": "Cardiology",
+      "totalColumns": 602,
+      "vitalsData": {
+        "initial": "{\"HR\":140,\"BP\":\"85/55\",\"RR\":28,\"SpO2\":90,\"waveform\":\"sinus_tachycardia\",\"Temp\":37.2,\"EtCO2\":29}",
+        "state1": "{\"HR\":155,\"BP\":\"75/45\",\"SpO2\":85,\"waveform\":\"sinus_tachycardia\",\"RR\":35,\"Temp\":36.8,\"EtCO2\":25}",
+        "state2": "{\"HR\":165,\"BP\":\"60/40\",\"SpO2\":81,\"waveform\":\"pea_ecg\",\"RR\":0,\"EtCO2\":0}",
+        "state3": "Dr. Sarah Kim, Dr. John Doe",
+        "state4": "Global Cardiac Institute / EM Sim Cases",
+        "state5": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "rowNumber": 190,
+      "caseId": "NEURO0021",
+      "sparkTitle": "Severe Headache (28 F): Uncovering the Silent Danger",
+      "revealTitle": "Subarachnoid Hemorrhage (28 F): Time-Sensitive Intervention",
+      "category": "Neurology",
+      "totalColumns": 604,
+      "vitalsData": {
+        "initial": "{\"HR\":125,\"BP\":\"160/90\",\"RR\":20,\"SpO2\":98,\"waveform\":\"sinus_ecg\",\"Temp\":36.8,\"EtCO2\":35}",
+        "state1": "{\"HR\":135,\"BP\":\"150/85\",\"SpO2\":95,\"waveform\":\"sinus_ecg\",\"RR\":22,\"Temp\":37.2,\"EtCO2\":33}",
+        "state2": "{\"HR\":140,\"BP\":\"145/80\",\"SpO2\":90,\"waveform\":\"asystole_ecg\",\"RR\":0,\"EtCO2\":0}",
+        "state3": "Dr. Emily Zhao, Dr. Marcus Lee",
+        "state4": "University Hospital / EM Sim Cases",
+        "state5": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "rowNumber": 191,
+      "caseId": "CARD0025",
+      "sparkTitle": "Sudden Collapse (55 M): Racing Against Time",
+      "revealTitle": "Acute Myocardial Infarction (55 M): Rapid Response Saves Lives",
+      "category": "Cardiology",
+      "totalColumns": 606,
+      "vitalsData": {
+        "initial": "{\"HR\":110,\"BP\":\"90/50\",\"RR\":24,\"SpO2\":89,\"waveform\":\"vfib_ecg\",\"Temp\":36.5,\"EtCO2\":20}",
+        "state1": "{\"HR\":120,\"BP\":\"80/40\",\"SpO2\":85,\"waveform\":\"vfib_ecg\",\"RR\":0,\"Temp\":36.0,\"EtCO2\":15}",
+        "state2": "{\"HR\":130,\"BP\":\"70/30\",\"SpO2\":75,\"waveform\":\"asystole_ecg\",\"RR\":0,\"Temp\":35.5,\"EtCO2\":0}",
+        "state3": "Dr. Alex Green, Dr. Lisa Wang",
+        "state4": "Cardiology Simulation Center / EM Sim Cases",
+        "state5": "CC BY-SA 4.0"
+      }
+    },
+    {
+      "rowNumber": 192,
+      "caseId": "CARD0042",
+      "sparkTitle": "Sudden Collapse (65 M): Heart Stopped!",
+      "revealTitle": "Cardiac Arrest (65 M): A Race Against Time",
+      "category": "Cardiology",
+      "totalColumns": 608,
+      "vitalsData": {
+        "initial": "{\"HR\":0,\"BP\":\"0/0\",\"RR\":0,\"SpO2\":0,\"waveform\":\"asystole\",\"Temp\":35.5,\"EtCO2\":0}",
+        "state1": "{\"HR\":0,\"BP\":\"0/0\",\"SpO2\":0,\"waveform\":\"asystole\",\"RR\":0,\"Temp\":35.5,\"EtCO2\":0}",
+        "state2": "{\"HR\":0,\"BP\":\"0/0\",\"SpO2\":0,\"waveform\":\"asystole\",\"RR\":0,\"Temp\":35.5,\"EtCO2\":0}",
+        "state3": "Dr. John Doe, Dr. Jane Smith",
+        "state4": "Heart Health Institute / EM Sim Cases",
+        "state5": "CC BY-SA 4.0"
+      }
+    }
+  ]
+}

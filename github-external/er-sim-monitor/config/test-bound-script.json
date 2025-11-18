@@ -1,0 +1,12 @@
+{
+  "testSpreadsheetId": "1t3qN8e537ghl38GTsXbVG8ML8OZtK2XyUpDiMQjnGAI",
+  "boundScriptId": "1kkPZU3GsCCuu5IhTEOufmDT1Cb2rSQVB3Y3u1DPf87yoSV4WVtoNvd6i",
+  "deploymentDate": "2025-11-04T21:15:00.000Z",
+  "filesDeployed": 3,
+  "features": [
+    "ATSR Title Generator",
+    "Batch Processing Sidebar",
+    "Core Processing Engine"
+  ],
+  "notes": "CORRECT test environment - DO NOT modify monolithic script"
+}

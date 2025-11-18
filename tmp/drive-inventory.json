@@ -1,0 +1,4016 @@
+{
+  "code": [
+    {
+      "id": "1I0Y-hAJHKP04Q1NCvw-UcBpzsefHkWbt",
+      "name": "BACKUP_METADATA.json",
+      "mimeType": "application/json",
+      "category": "code",
+      "subcategory": "general-code",
+      "confidence": "medium",
+      "modifiedTime": "2025-11-14T16:34:53.131Z",
+      "size": "489",
+      "parents": [
+        "1eUJvAk0lqzJrvkd8jPvtcSOFb0C-QW1l"
+      ]
+    },
+    {
+      "id": "1Dst3_UbHOIQu97yp16kMHE5Aum1DSx_l",
+      "name": "Ultimate_Categorization_Tool_Complete.gs",
+      "mimeType": "text/plain",
+      "category": "code",
+      "subcategory": "apps-script",
+      "confidence": "medium",
+      "modifiedTime": "2025-11-14T16:34:51.646Z",
+      "size": "85618",
+      "parents": [
+        "1eUJvAk0lqzJrvkd8jPvtcSOFb0C-QW1l"
+      ]
+    },
+    {
+      "id": "1Tle5xpUsJVrxAzrxtXW0fgQkR43-Ns9P",
+      "name": "Code.gs",
+      "mimeType": "text/plain",
+      "category": "code",
+      "subcategory": "apps-script",
+      "confidence": "medium",
+      "modifiedTime": "2025-11-14T16:34:49.675Z",
+      "size": "484927",
+      "parents": [
+        "1eUJvAk0lqzJrvkd8jPvtcSOFb0C-QW1l"
+      ]
+    },
+    {
+      "id": "1o_fNrUGgmaLJLKZFYl258vsLCwugtbc5",
+      "name": "appsscript.json",
+      "mimeType": "text/plain",
+      "category": "code",
+      "subcategory": "general-code",
+      "confidence": "medium",
+      "modifiedTime": "2025-11-14T16:34:48.372Z",
+      "size": "125",
+      "parents": [
+        "1eUJvAk0lqzJrvkd8jPvtcSOFb0C-QW1l"
+      ]
+    },
+    {
+      "id": "1TuwKmLVIdH9eds-i682l2lgm0Udm79Ou",
+      "name": "Ultimate_Categorization_Tool_Complete.gs",
+      "mimeType": "application/octet-stream",
+      "category": "code",
+      "subcategory": "apps-script",
+      "confidence": "medium",
+      "modifiedTime": "2025-11-12T06:16:19.976Z",
+      "size": "63180",
+      "parents": [
+        "157Gs2JvPJNT0LwCQz6yv5t_quoqyByGH"
+      ]
+    },
+    {
+      "id": "1sBq1f1L0ZOF7NDniz3j67oFmmZ9FIBF4",
+      "name": "Code_Backup_11-11-2025_18-32-54.json",
+      "mimeType": "application/json",
+      "category": "code",
+      "subcategory": "general-code",
+      "confidence": "medium",
+      "modifiedTime": "2025-11-12T01:32:55.583Z",
+      "size": "645327",
+      "parents": [
+        "1D8Gdst2uiDu7IZBBx_uNY7pUv7qvOO5N"
+      ]
+    },
+    {
+      "id": "1ddYIur2GbrNi1gxO5ZMQqrwOl1HNijjy",
+      "name": "Phase2_Enhanced_Categories_With_AI.gs",
+      "mimeType": "text/plain",
+      "category": "code",
+      "subcategory": "apps-script",
+      "confidence": "medium",
+      "modifiedTime": "2025-11-12T00:14:28.426Z",
+      "size": "48827",
+      "parents": [
+        "1v3mW6-Uwi4bZzX2DY9EMHlczcAjHmmy5"
+      ]
+    },
+    {
+      "id": "18C-cpqD_02wuaCosl_eMIvl1x1kw_Cor",
+      "name": "Enhanced_Visual_Panel_With_Toggle.gs",
+      "mimeType": "text/plain",
+      "category": "code",
+      "subcategory": "apps-script",
+      "confidence": "medium",
+      "modifiedTime": "2025-11-12T00:14:27.040Z",
+      "size": "10319",
+      "parents": [
+        "1v3mW6-Uwi4bZzX2DY9EMHlczcAjHmmy5"
+      ]
+    },
+    {
+      "id": "1-VubTaK4j68rypWDR0Y_CnJf9P_4FMAs",
+      "name": "Phase2_Modal_Integration.gs",
+      "mimeType": "text/plain",
+      "category": "code",
+      "subcategory": "apps-script",
+      "confidence": "medium",
+      "modifiedTime": "2025-11-12T00:14:25.445Z",
+      "size": "234",
+      "parents": [
+        "1v3mW6-Uwi4bZzX2DY9EMHlczcAjHmmy5"
+      ]
+    },
+    {
+      "id": "190Y3oCcDdG__eoWvEnBfHW7sgzoDd09G",
+      "name": "Phase2_Enhanced_Categories_Pathways_Panel_ARCHIVE_2025-11-11.gs",
+      "mimeType": "text/plain",
+      "category": "code",
+      "subcategory": "apps-script",
+      "confidence": "medium",
+      "modifiedTime": "2025-11-12T00:14:23.524Z",
+      "size": "6181",
+      "parents": [
+        "1v3mW6-Uwi4bZzX2DY9EMHlczcAjHmmy5"
+      ]
+    },
+    {
+      "id": "11NhC1xdrV5-PsiYGhLDHBuzcC1Pi-gG9",
+      "name": "Phase2_Pathway_Discovery_UI.gs",
+      "mimeType": "text/plain",
+      "category": "code",
+      "subcategory": "apps-script",
+      "confidence": "medium",
+      "modifiedTime": "2025-11-12T00:14:21.794Z",
+      "size": "18490",
+      "parents": [
+        "1v3mW6-Uwi4bZzX2DY9EMHlczcAjHmmy5"
+      ]
+    },
+    {
+      "id": "19Kw_kVF3wo6-Vvs73Z7yKPgIJKZsmv01",
+      "name": "Phase2_AI_Scoring_Pathways.gs",
+      "mimeType": "text/plain",
+      "category": "code",
+      "subcategory": "apps-script",
+      "confidence": "medium",
+      "modifiedTime": "2025-11-12T00:14:20.528Z",
+      "size": "22054",
+      "parents": [
+        "1v3mW6-Uwi4bZzX2DY9EMHlczcAjHmmy5"
+      ]
+    },
+    {
+      "id": "10Gl80HWjWk2TC4SspKNxajoAUK_9pnL_",
+      "name": "Code.gs",
+      "mimeType": "text/plain",
+      "category": "code",
+      "subcategory": "apps-script",
+      "confidence": "medium",
+      "modifiedTime": "2025-11-12T00:14:18.907Z",
+      "size": "486041",
+      "parents": [
+        "1v3mW6-Uwi4bZzX2DY9EMHlczcAjHmmy5"
+      ]
+    },
+    {
+      "id": "1TKfcxZYOBUkRQTsjhzyRrWnrEBzHtNDr",
+      "name": "appsscript.json",
+      "mimeType": "text/plain",
+      "category": "code",
+      "subcategory": "general-code",
+      "confidence": "medium",
+      "modifiedTime": "2025-11-12T00:14:17.407Z",
+      "size": "124",
+      "parents": [
+        "1v3mW6-Uwi4bZzX2DY9EMHlczcAjHmmy5"
+      ]
+    },
+    {
+      "id": "1zoKkm-JCAG4htkbWO0DWyzbCWYSqSR1e",
+      "name": "Phase2_Enhanced_Categories_With_AI.gs",
+      "mimeType": "text/plain",
+      "category": "code",
+      "subcategory": "apps-script",
+      "confidence": "medium",
+      "modifiedTime": "2025-11-12T00:10:05.251Z",
+      "size": "48814",
+      "parents": [
+        "1Xfs3LBvfSlhnsmdtwYSCzv_Fzl-Ykc7V"
+      ]
+    },
+    {
+      "id": "1kKCv_BygX-VRNxVdbyPaN977B4CwQykz",
+      "name": "Enhanced_Visual_Panel_With_Toggle.gs",
+      "mimeType": "text/plain",
+      "category": "code",
+      "subcategory": "apps-script",
+      "confidence": "medium",
+      "modifiedTime": "2025-11-12T00:10:03.583Z",
+      "size": "10319",
+      "parents": [
+        "1Xfs3LBvfSlhnsmdtwYSCzv_Fzl-Ykc7V"
+      ]
+    },
+    {
+      "id": "1fGuk5OGYb4dR6uptGxoz94JmZrQIWqhJ",
+      "name": "Phase2_Modal_Integration.gs",
+      "mimeType": "text/plain",
+      "category": "code",
+      "subcategory": "apps-script",
+      "confidence": "medium",
+      "modifiedTime": "2025-11-12T00:10:01.750Z",
+      "size": "234",
+      "parents": [
+        "1Xfs3LBvfSlhnsmdtwYSCzv_Fzl-Ykc7V"
+      ]
+    },
+    {
+      "id": "1M-zI-Awm88IKLTkH6eG7rE2nE8gFTeSb",
+      "name": "Phase2_Enhanced_Categories_Pathways_Panel_ARCHIVE_2025-11-11.gs",
+      "mimeType": "text/plain",
+      "category": "code",
+      "subcategory": "apps-script",
+      "confidence": "medium",
+      "modifiedTime": "2025-11-12T00:10:00.191Z",
+      "size": "6181",
+      "parents": [
+        "1Xfs3LBvfSlhnsmdtwYSCzv_Fzl-Ykc7V"
+      ]
+    },
+    {
+      "id": "1KYgHdwkc0JvugYpcvJGXxhdITZLoqewh",
+      "name": "Phase2_Pathway_Discovery_UI.gs",
+      "mimeType": "text/plain",
+      "category": "code",
+      "subcategory": "apps-script",
+      "confidence": "medium",
+      "modifiedTime": "2025-11-12T00:09:58.563Z",
+      "size": "18490",
+      "parents": [
+        "1Xfs3LBvfSlhnsmdtwYSCzv_Fzl-Ykc7V"
+      ]
+    },
+    {
+      "id": "1dRFtnzMf46g3HZ79o2osmA8FP18m3cPe",
+      "name": "Phase2_AI_Scoring_Pathways.gs",
+      "mimeType": "text/plain",
+      "category": "code",
+      "subcategory": "apps-script",
+      "confidence": "medium",
+      "modifiedTime": "2025-11-12T00:09:56.887Z",
+      "size": "22054",
+      "parents": [
+        "1Xfs3LBvfSlhnsmdtwYSCzv_Fzl-Ykc7V"
+      ]
+    },
+    {
+      "id": "1Z-GRSfM-IYgmwt16mYMR1VcCXYimidIl",
+      "name": "Code.gs",
+      "mimeType": "text/plain",
+      "category": "code",
+      "subcategory": "apps-script",
+      "confidence": "medium",
+      "modifiedTime": "2025-11-12T00:09:55.415Z",
+      "size": "486041",
+      "parents": [
+        "1Xfs3LBvfSlhnsmdtwYSCzv_Fzl-Ykc7V"
+      ]
+    },
+    {
+      "id": "1FDn5GInQZAV4FSqkM_mtRHZcM9Yddk0m",
+      "name": "appsscript.json",
+      "mimeType": "text/plain",
+      "category": "code",
+      "subcategory": "general-code",
+      "confidence": "medium",
+      "modifiedTime": "2025-11-12T00:09:53.828Z",
+      "size": "124",
+      "parents": [
+        "1Xfs3LBvfSlhnsmdtwYSCzv_Fzl-Ykc7V"
+      ]
+    },
+    {
+      "id": "1k3HWgeem7HbfCDUgW06negtfLp5BcZqU",
+      "name": "Phase2_Enhanced_Categories_With_AI.gs",
+      "mimeType": "text/plain",
+      "category": "code",
+      "subcategory": "apps-script",
+      "confidence": "medium",
+      "modifiedTime": "2025-11-11T18:31:41.586Z",
+      "size": "50065",
+      "parents": [
+        "1bglMgUrBsqDPDqVbYt7TvHnMEVY0m35B"
+      ]
+    },
+    {
+      "id": "1lGuSk9H3j8KPL01Cd_gqOMm3XOLdeu0V",
+      "name": "Enhanced_Visual_Panel_With_Toggle.gs",
+      "mimeType": "text/plain",
+      "category": "code",
+      "subcategory": "apps-script",
+      "confidence": "medium",
+      "modifiedTime": "2025-11-11T18:31:39.996Z",
+      "size": "10313",
+      "parents": [
+        "1bglMgUrBsqDPDqVbYt7TvHnMEVY0m35B"
+      ]
+    },
+    {
+      "id": "1Kx4poXjgVejmbaayumA0CjogTUed10UR",
+      "name": "Phase2_Modal_Integration.gs",
+      "mimeType": "text/plain",
+      "category": "code",
+      "subcategory": "apps-script",
+      "confidence": "medium",
+      "modifiedTime": "2025-11-11T18:31:38.330Z",
+      "size": "234",
+      "parents": [
+        "1bglMgUrBsqDPDqVbYt7TvHnMEVY0m35B"
+      ]
+    },
+    {
+      "id": "1mrZTCfwnrg0b34q6fmPF9j1P9CmacsGz",
+      "name": "Phase2_Enhanced_Categories_Pathways_Panel.gs",
+      "mimeType": "text/plain",
+      "category": "code",
+      "subcategory": "apps-script",
+      "confidence": "medium",
+      "modifiedTime": "2025-11-11T18:31:36.891Z",
+      "size": "39167",
+      "parents": [
+        "1bglMgUrBsqDPDqVbYt7TvHnMEVY0m35B"
+      ]
+    },
+    {
+      "id": "1VuFF4JmpBPzNTJfOXjKcAIEgabHaJ1Yh",
+      "name": "Phase2_Pathway_Discovery_UI.gs",
+      "mimeType": "text/plain",
+      "category": "code",
+      "subcategory": "apps-script",
+      "confidence": "medium",
+      "modifiedTime": "2025-11-11T18:31:35.593Z",
+      "size": "18490",
+      "parents": [
+        "1bglMgUrBsqDPDqVbYt7TvHnMEVY0m35B"
+      ]
+    },
+    {
+      "id": "1qBebSC3LL-BiVI0n-_Oa7923Gi7pzO3_",
+      "name": "Phase2_AI_Scoring_Pathways.gs",
+      "mimeType": "text/plain",
+      "category": "code",
+      "subcategory": "apps-script",
+      "confidence": "medium",
+      "modifiedTime": "2025-11-11T18:31:34.026Z",
+      "size": "22054",
+      "parents": [
+        "1bglMgUrBsqDPDqVbYt7TvHnMEVY0m35B"
+      ]
+    },
+    {
+      "id": "1uFfoPe5a6XhINV3BRkHxt5Nv-dlrStS6",
+      "name": "appsscript.json",
+      "mimeType": "text/plain",
+      "category": "code",
+      "subcategory": "general-code",
+      "confidence": "medium",
+      "modifiedTime": "2025-11-11T18:31:32.415Z",
+      "size": "124",
+      "parents": [
+        "1bglMgUrBsqDPDqVbYt7TvHnMEVY0m35B"
+      ]
+    },
+    {
+      "id": "1YoO_svOuBTxu8IrBlSwsotiYnB5IoEnq",
+      "name": "Code.gs",
+      "mimeType": "text/plain",
+      "category": "code",
+      "subcategory": "apps-script",
+      "confidence": "medium",
+      "modifiedTime": "2025-11-11T18:31:31.048Z",
+      "size": "485196",
+      "parents": [
+        "1bglMgUrBsqDPDqVbYt7TvHnMEVY0m35B"
+      ]
+    },
+    {
+      "id": "1hbq4_raeL_sYvZfrtFnj-4zujNHrHDBJ",
+      "name": "Code_Backup_11-10-2025_22-00-22.json",
+      "mimeType": "application/json",
+      "category": "code",
+      "subcategory": "general-code",
+      "confidence": "medium",
+      "modifiedTime": "2025-11-11T05:00:24.862Z",
+      "size": "667367",
+      "parents": [
+        "1D8Gdst2uiDu7IZBBx_uNY7pUv7qvOO5N"
+      ]
+    },
+    {
+      "id": "1OF6zvKTXsAFGe52Xi_kiIdZxhPAe_jol",
+      "name": "Code_Backup_11-10-2025_20-23-11.json",
+      "mimeType": "application/json",
+      "category": "code",
+      "subcategory": "general-code",
+      "confidence": "medium",
+      "modifiedTime": "2025-11-11T03:23:15.038Z",
+      "size": "657595",
+      "parents": [
+        "1B00VE9QIEILV9Q1SqTitR3Poldg7-W2k"
+      ]
+    },
+    {
+      "id": "1qCYjbGRumdOJQ_ACR-f5A7IeXMcSSCA1",
+      "name": "batch-caching-complete-2025-11-09T02-41-35-904Z.gs",
+      "mimeType": "text/plain",
+      "category": "code",
+      "subcategory": "apps-script",
+      "confidence": "medium",
+      "modifiedTime": "2025-11-09T02:41:36.722Z",
+      "size": "393804",
+      "parents": [
+        "1q-OWAS0sgoqGg1hPHT7GYCKV6yCSquh3"
+      ]
+    },
+    {
+      "id": "1lILEn3QdQRNvYyYacs0Ho6HiPczzT2p-",
+      "name": "batch-caching-complete-2025-11-09T02-26-15-926Z.gs",
+      "mimeType": "text/plain",
+      "category": "code",
+      "subcategory": "apps-script",
+      "confidence": "medium",
+      "modifiedTime": "2025-11-09T02:26:16.750Z",
+      "size": "393672",
+      "parents": [
+        "1q-OWAS0sgoqGg1hPHT7GYCKV6yCSquh3"
+      ]
+    },
+    {
+      "id": "1fYC21r8zu9gpttfA2BKVJYRrwzBeFEyB",
+      "name": "batch-caching-complete-2025-11-09T01-51-02-844Z.gs",
+      "mimeType": "text/plain",
+      "category": "code",
+      "subcategory": "apps-script",
+      "confidence": "medium",
+      "modifiedTime": "2025-11-09T01:51:03.567Z",
+      "size": "393672",
+      "parents": [
+        "1q-OWAS0sgoqGg1hPHT7GYCKV6yCSquh3"
+      ]
+    },
+    {
+      "id": "1ot9VlZDMQAK6rJ3IPiM1YXwO-Hh1hGjX",
+      "name": "batch-caching-complete-2025-11-08T23-58-09-860Z.gs",
+      "mimeType": "text/plain",
+      "category": "code",
+      "subcategory": "apps-script",
+      "confidence": "medium",
+      "modifiedTime": "2025-11-08T23:58:10.562Z",
+      "size": "393672",
+      "parents": [
+        "1q-OWAS0sgoqGg1hPHT7GYCKV6yCSquh3"
+      ]
+    },
+    {
+      "id": "1dlvbiM6MoZXz5IcEytZ1s983layUE8sF",
+      "name": "batch-caching-complete-2025-11-08T06-27-15-358Z.gs",
+      "mimeType": "text/plain",
+      "category": "code",
+      "subcategory": "apps-script",
+      "confidence": "medium",
+      "modifiedTime": "2025-11-08T06:27:16.034Z",
+      "size": "393672",
+      "parents": [
+        "1q-OWAS0sgoqGg1hPHT7GYCKV6yCSquh3"
+      ]
+    },
+    {
+      "id": "1eCEE0G239-C-JG9aUHcypeqhZ3ukyX8i",
+      "name": "field-selector-complete-2025-11-08T03-11-29.gs",
+      "mimeType": "text/plain",
+      "category": "code",
+      "subcategory": "apps-script",
+      "confidence": "medium",
+      "modifiedTime": "2025-11-08T03:11:30.464Z",
+      "size": "382824",
+      "parents": [
+        "0AGavFioOg0nxUk9PVA"
+      ]
+    },
+    {
+      "id": "1jC_X23DkVRgmKJXkJMZXdciBSqrr5ilx",
+      "name": "monolithic-complete-2025-11-07-13-22-21.gs",
+      "mimeType": "text/plain",
+      "category": "code",
+      "subcategory": "apps-script",
+      "confidence": "medium",
+      "modifiedTime": "2025-11-07T20:22:22.669Z",
+      "size": "365471",
+      "parents": [
+        "1q-OWAS0sgoqGg1hPHT7GYCKV6yCSquh3"
+      ]
+    },
+    {
+      "id": "1fG-SG-FGC0TS5r4jNpxJgqr4d_2Vi7AE",
+      "name": "monolithic-complete-2025-11-07-13-15-46.gs",
+      "mimeType": "text/plain",
+      "category": "code",
+      "subcategory": "apps-script",
+      "confidence": "medium",
+      "modifiedTime": "2025-11-07T20:15:47.314Z",
+      "size": "368715",
+      "parents": [
+        "1q-OWAS0sgoqGg1hPHT7GYCKV6yCSquh3"
+      ]
+    },
+    {
+      "id": "1zXmfw1CdrCSO3Z3bv6ZZ0Y_7wNp-KsD4",
+      "name": "test-with-complete-atsr-2025-11-06.gs",
+      "mimeType": "text/plain",
+      "category": "code",
+      "subcategory": "apps-script-tools",
+      "confidence": "high",
+      "modifiedTime": "2025-11-07T03:11:21.146Z",
+      "size": "327798",
+      "parents": [
+        "1ss4nqpBzFKAILp0AiolLIqrPUDFfbRcl"
+      ]
+    },
+    {
+      "id": "1scYCFnZLGmtB93gvGwfkPo1JPJbYWZN_",
+      "name": "production-before-saved-fields-menu-2025-11-06.gs",
+      "mimeType": "text/plain",
+      "category": "code",
+      "subcategory": "apps-script",
+      "confidence": "medium",
+      "modifiedTime": "2025-11-07T03:11:19.612Z",
+      "size": "330125",
+      "parents": [
+        "1ss4nqpBzFKAILp0AiolLIqrPUDFfbRcl"
+      ]
+    },
+    {
+      "id": "18D16GJPxqxiXOxrPrt0YsjrRf840H_LM",
+      "name": "production-before-category-indexof-fix-2025-11-06.gs",
+      "mimeType": "text/plain",
+      "category": "code",
+      "subcategory": "apps-script",
+      "confidence": "medium",
+      "modifiedTime": "2025-11-07T03:11:17.916Z",
+      "size": "331000",
+      "parents": [
+        "1ss4nqpBzFKAILp0AiolLIqrPUDFfbRcl"
+      ]
+    },
+    {
+      "id": "1or2cEnJGG60F3UtindElvOBQOZD_-RAm",
+      "name": "production-before-sheet-property-fix-2025-11-06.gs",
+      "mimeType": "text/plain",
+      "category": "code",
+      "subcategory": "apps-script",
+      "confidence": "medium",
+      "modifiedTime": "2025-11-07T03:11:16.269Z",
+      "size": "329471",
+      "parents": [
+        "1ss4nqpBzFKAILp0AiolLIqrPUDFfbRcl"
+      ]
+    },
+    {
+      "id": "1Fhmyn3P43XSwiZlPZTf_llHIIEpLOwk_",
+      "name": "production-manifest-2025-11-06.json",
+      "mimeType": "text/plain",
+      "category": "code",
+      "subcategory": "general-code",
+      "confidence": "medium",
+      "modifiedTime": "2025-11-07T03:11:14.532Z",
+      "size": "1587",
+      "parents": [
+        "1ss4nqpBzFKAILp0AiolLIqrPUDFfbRcl"
+      ]
+    },
+    {
+      "id": "1_WtVmQgDcHYRdjm9gebgPxne17ROrLaU",
+      "name": "production-code-2025-11-06.gs",
+      "mimeType": "text/plain",
+      "category": "code",
+      "subcategory": "apps-script",
+      "confidence": "medium",
+      "modifiedTime": "2025-11-07T03:11:12.765Z",
+      "size": "331069",
+      "parents": [
+        "1ss4nqpBzFKAILp0AiolLIqrPUDFfbRcl"
+      ]
+    },
+    {
+      "id": "1lR3rBjgMl9mSUqKrSrvApWmTrxvTJwet",
+      "name": "GPT_Formatter_PRODUCTION_appsscript.html",
+      "mimeType": "text/plain",
+      "category": "code",
+      "subcategory": "general-code",
+      "confidence": "medium",
+      "modifiedTime": "2025-11-06T19:53:49.277Z",
+      "size": "209",
+      "parents": [
+        "1JazntmPtY37DrD77OFTWcs-gkz5LLG9A"
+      ]
+    },
+    {
+      "id": "15ooiZRXUC32TDgyUFqxQa8TShC0VIyLu",
+      "name": "GPT_Formatter_PRODUCTION_Code.gs",
+      "mimeType": "text/plain",
+      "category": "code",
+      "subcategory": "apps-script",
+      "confidence": "medium",
+      "modifiedTime": "2025-11-06T19:53:47.842Z",
+      "size": "137100",
+      "parents": [
+        "1JazntmPtY37DrD77OFTWcs-gkz5LLG9A"
+      ]
+    },
+    {
+      "id": "1US3a7mhdNj1JUTHOnLVb41ZlyJF42KJ6",
+      "name": "Advanced_Cache_System_Multi_Step_Cache_Enrichment.gs",
+      "mimeType": "text/plain",
+      "category": "code",
+      "subcategory": "apps-script",
+      "confidence": "medium",
+      "modifiedTime": "2025-11-06T19:53:46.029Z",
+      "size": "20123",
+      "parents": [
+        "1JazntmPtY37DrD77OFTWcs-gkz5LLG9A"
+      ]
+    },
+    {
+      "id": "1hH8wsH8pewYErRtVbczvyGOYJHpA50uu",
+      "name": "Advanced_Cache_System_Categories_Pathways_Feature_Phase2.gs",
+      "mimeType": "text/plain",
+      "category": "code",
+      "subcategory": "apps-script",
+      "confidence": "medium",
+      "modifiedTime": "2025-11-06T19:53:44.712Z",
+      "size": "121005",
+      "parents": [
+        "1JazntmPtY37DrD77OFTWcs-gkz5LLG9A"
+      ]
+    },
+    {
+      "id": "1xqx1GqVuC2lS63Fmd6Ult91P9fsrLPsm",
+      "name": "Advanced_Cache_System_appsscript.html",
+      "mimeType": "text/plain",
+      "category": "code",
+      "subcategory": "general-code",
+      "confidence": "medium",
+      "modifiedTime": "2025-11-06T19:53:43.258Z",
+      "size": "124",
+      "parents": [
+        "1JazntmPtY37DrD77OFTWcs-gkz5LLG9A"
+      ]
+    },
+    {
+      "id": "1FaOBpbHolo0sP8ATXHdZNAGlnIrB26jt",
+      "name": "Title_Optimizer_appsscript.html",
+      "mimeType": "text/plain",
+      "category": "code",
+      "subcategory": "general-code",
+      "confidence": "medium",
+      "modifiedTime": "2025-11-06T19:53:41.214Z",
+      "size": "124",
+      "parents": [
+        "1JazntmPtY37DrD77OFTWcs-gkz5LLG9A"
+      ]
+    },
+    {
+      "id": "1g9b5C2UGkh5hotlOV69Mnl1zzuGZDv8g",
+      "name": "Title_Optimizer_ATSR_Title_Generator_Feature.gs",
+      "mimeType": "text/plain",
+      "category": "code",
+      "subcategory": "apps-script-tools",
+      "confidence": "high",
+      "modifiedTime": "2025-11-06T19:53:39.853Z",
+      "size": "43714",
+      "parents": [
+        "1JazntmPtY37DrD77OFTWcs-gkz5LLG9A"
+      ]
+    },
+    {
+      "id": "1ItN_cL1DFeeW_f8ddGtn4YdmBdvK4O_0",
+      "name": "Title_Optimizer_Categories_Pathways_Feature_Phase2.gs",
+      "mimeType": "text/plain",
+      "category": "code",
+      "subcategory": "apps-script",
+      "confidence": "medium",
+      "modifiedTime": "2025-11-06T19:53:38.218Z",
+      "size": "51606",
+      "parents": [
+        "1JazntmPtY37DrD77OFTWcs-gkz5LLG9A"
+      ]
+    },
+    {
+      "id": "1pMwPxLFCUY4OuBhBcRVTH0WlltsLFOlW",
+      "name": "Title_Optimizer_Code.gs",
+      "mimeType": "text/plain",
+      "category": "code",
+      "subcategory": "apps-script",
+      "confidence": "medium",
+      "modifiedTime": "2025-11-06T19:53:36.755Z",
+      "size": "43714",
+      "parents": [
+        "1JazntmPtY37DrD77OFTWcs-gkz5LLG9A"
+      ]
+    },
+    {
+      "id": "1GbDl9KJOV1xeH_YHIj1kNDJkDwFQDsD9",
+      "name": "Core_Batch_Processing_Quality_Engine_appsscript.html",
+      "mimeType": "text/plain",
+      "category": "code",
+      "subcategory": "general-code",
+      "confidence": "medium",
+      "modifiedTime": "2025-11-06T19:53:34.244Z",
+      "size": "124",
+      "parents": [
+        "1JazntmPtY37DrD77OFTWcs-gkz5LLG9A"
+      ]
+    },
+    {
+      "id": "1VXUjQpexzDcVt-E8WRhHS6Ky8jxwtf47",
+      "name": "Core_Batch_Processing_Quality_Engine_Code.gs",
+      "mimeType": "text/plain",
+      "category": "code",
+      "subcategory": "apps-script",
+      "confidence": "medium",
+      "modifiedTime": "2025-11-06T19:53:32.837Z",
+      "size": "137564",
+      "parents": [
+        "1JazntmPtY37DrD77OFTWcs-gkz5LLG9A"
+      ]
+    },
+    {
+      "id": "1nlIuGlFK8nZ2wKyiBZpLdK6mMhha69wk",
+      "name": "TEST_Feature_Based_Code #3 - Core_Processing_Engine.gs",
+      "mimeType": "text/plain",
+      "category": "code",
+      "subcategory": "apps-script",
+      "confidence": "medium",
+      "modifiedTime": "2025-11-06T17:10:41.600Z",
+      "size": "23403",
+      "parents": [
+        "13WO4iP-iaNFZH8n1pJlCsRPjfjjqSt-I"
+      ]
+    },
+    {
+      "id": "1mpFSQf2rdT8hIYWCo9Wi69wmwbYJTDz5",
+      "name": "TEST_Feature_Based_Code #3 - Batch_Processing_Sidebar_Feature.gs",
+      "mimeType": "text/plain",
+      "category": "code",
+      "subcategory": "apps-script",
+      "confidence": "medium",
+      "modifiedTime": "2025-11-06T17:10:39.983Z",
+      "size": "19899",
+      "parents": [
+        "13WO4iP-iaNFZH8n1pJlCsRPjfjjqSt-I"
+      ]
+    },
+    {
+      "id": "1vE_oLIgDwfqbkoRypNLV0WD59hG0rUax",
+      "name": "TEST_Feature_Based_Code #3 - ATSR_Title_Generator_Feature.gs",
+      "mimeType": "text/plain",
+      "category": "code",
+      "subcategory": "apps-script-tools",
+      "confidence": "high",
+      "modifiedTime": "2025-11-06T17:10:38.637Z",
+      "size": "27048",
+      "parents": [
+        "13WO4iP-iaNFZH8n1pJlCsRPjfjjqSt-I"
+      ]
+    },
+    {
+      "id": "1mB1fgndKVttL8jxsuqiiXRBeAssDxptH",
+      "name": "TEST_Feature_Based_Code #2 - Core_Processing_Engine.gs",
+      "mimeType": "text/plain",
+      "category": "code",
+      "subcategory": "apps-script",
+      "confidence": "medium",
+      "modifiedTime": "2025-11-06T17:10:35.838Z",
+      "size": "23403",
+      "parents": [
+        "13WO4iP-iaNFZH8n1pJlCsRPjfjjqSt-I"
+      ]
+    },
+    {
+      "id": "1Jb27L-gZJukACEBLH_fK97qZ8_ARy-L-",
+      "name": "TEST_Feature_Based_Code #2 - Batch_Processing_Sidebar_Feature.gs",
+      "mimeType": "text/plain",
+      "category": "code",
+      "subcategory": "apps-script",
+      "confidence": "medium",
+      "modifiedTime": "2025-11-06T17:10:34.200Z",
+      "size": "19899",
+      "parents": [
+        "13WO4iP-iaNFZH8n1pJlCsRPjfjjqSt-I"
+      ]
+    },
+    {
+      "id": "1P5ShNaq8rX7iWT2vVOMPV7fsbqSUwEj5",
+      "name": "TEST_Feature_Based_Code #2 - ATSR_Title_Generator_Feature.gs",
+      "mimeType": "text/plain",
+      "category": "code",
+      "subcategory": "apps-script-tools",
+      "confidence": "high",
+      "modifiedTime": "2025-11-06T17:10:32.859Z",
+      "size": "26923",
+      "parents": [
+        "13WO4iP-iaNFZH8n1pJlCsRPjfjjqSt-I"
+      ]
+    },
+    {
+      "id": "1sOtunJPSzUgaH9E21Zl4kiQEqJjZyGce",
+      "name": "TEST_Feature_Based_Code #1 - Multi_Step_Cache_Enrichment.gs",
+      "mimeType": "text/plain",
+      "category": "code",
+      "subcategory": "apps-script",
+      "confidence": "medium",
+      "modifiedTime": "2025-11-06T17:10:30.343Z",
+      "size": "20123",
+      "parents": [
+        "13WO4iP-iaNFZH8n1pJlCsRPjfjjqSt-I"
+      ]
+    },
+    {
+      "id": "1bw3-SRGAuILK3ndnLDXebfaEEDTE3GLe",
+      "name": "TEST_Feature_Based_Code #1 - Categories_Pathways_Feature_Phase2.gs",
+      "mimeType": "text/plain",
+      "category": "code",
+      "subcategory": "apps-script",
+      "confidence": "medium",
+      "modifiedTime": "2025-11-06T17:10:28.979Z",
+      "size": "121005",
+      "parents": [
+        "13WO4iP-iaNFZH8n1pJlCsRPjfjjqSt-I"
+      ]
+    },
+    {
+      "id": "1DrlzdB-kN8upjdCnvhmouhXqecDBj90v",
+      "name": "TEST Menu Script (Bound) #1 - ATSR_Title_Generator_Feature.gs",
+      "mimeType": "text/plain",
+      "category": "code",
+      "subcategory": "apps-script-tools",
+      "confidence": "high",
+      "modifiedTime": "2025-11-06T17:10:23.901Z",
+      "size": "43714",
+      "parents": [
+        "13WO4iP-iaNFZH8n1pJlCsRPjfjjqSt-I"
+      ]
+    },
+    {
+      "id": "1OciByTdbje-bMS0qZ8jfikv47SyH1eZD",
+      "name": "TEST Menu Script (Bound) #1 - Categories_Pathways_Feature_Phase2.gs",
+      "mimeType": "text/plain",
+      "category": "code",
+      "subcategory": "apps-script",
+      "confidence": "medium",
+      "modifiedTime": "2025-11-06T17:10:22.551Z",
+      "size": "51606",
+      "parents": [
+        "13WO4iP-iaNFZH8n1pJlCsRPjfjjqSt-I"
+      ]
+    },
+    {
+      "id": "1mDBCp8AR2Alzadv_5oq2bRug0PLfuZ2p",
+      "name": "TEST Menu Script (Bound) #1 - Code.gs",
+      "mimeType": "text/plain",
+      "category": "code",
+      "subcategory": "apps-script",
+      "confidence": "medium",
+      "modifiedTime": "2025-11-06T17:10:21.119Z",
+      "size": "43714",
+      "parents": [
+        "13WO4iP-iaNFZH8n1pJlCsRPjfjjqSt-I"
+      ]
+    },
+    {
+      "id": "1aERLo4836Kl9njZz68wprP59gArLRHS3",
+      "name": "GPT Formatter - Code.gs",
+      "mimeType": "text/plain",
+      "category": "code",
+      "subcategory": "apps-script",
+      "confidence": "medium",
+      "modifiedTime": "2025-11-06T17:10:17.944Z",
+      "size": "137100",
+      "parents": [
+        "13WO4iP-iaNFZH8n1pJlCsRPjfjjqSt-I"
+      ]
+    },
+    {
+      "id": "1T_dMVpw1kY8m4ziHkk9QJbiJaHATpZvY",
+      "name": "Categories_Pathways_Feature_Phase2_BACKUP_2025-11-06T04-49-52-979Z.gs",
+      "mimeType": "text/plain",
+      "category": "code",
+      "subcategory": "apps-script",
+      "confidence": "medium",
+      "modifiedTime": "2025-11-06T04:49:55.471Z",
+      "size": "131990",
+      "parents": [
+        "1P1nbLQIaGrRSEW8-6aQMvBty8fglZ7S8"
+      ]
+    },
+    {
+      "id": "1iEsC4Of9J2Uuu8LR8GHV-5R6SG9t-nBK",
+      "name": "Categories_Pathways_Feature_Phase2_BACKUP_2025-11-06T04-45-29-909Z.gs",
+      "mimeType": "text/plain",
+      "category": "code",
+      "subcategory": "apps-script",
+      "confidence": "medium",
+      "modifiedTime": "2025-11-06T04:45:31.445Z",
+      "size": "131771",
+      "parents": [
+        "1P1nbLQIaGrRSEW8-6aQMvBty8fglZ7S8"
+      ]
+    },
+    {
+      "id": "1Z794-XY2Xs4FYFWHxtoTQW-kf3_8jzQS",
+      "name": "Categories_Pathways_Feature_Phase2_BACKUP_2025-11-06T04-40-41-604Z.gs",
+      "mimeType": "text/plain",
+      "category": "code",
+      "subcategory": "apps-script",
+      "confidence": "medium",
+      "modifiedTime": "2025-11-06T04:40:43.536Z",
+      "size": "127217",
+      "parents": [
+        "1P1nbLQIaGrRSEW8-6aQMvBty8fglZ7S8"
+      ]
+    },
+    {
+      "id": "1bFhzhpTDRTyGV4f5CSw1e0QVRbQ3gh6E",
+      "name": "Categories_Pathways_Feature_Phase2_BACKUP_2025-11-06T04-33-02-912Z.gs",
+      "mimeType": "text/plain",
+      "category": "code",
+      "subcategory": "apps-script",
+      "confidence": "medium",
+      "modifiedTime": "2025-11-06T04:33:04.181Z",
+      "size": "122629",
+      "parents": [
+        "1P1nbLQIaGrRSEW8-6aQMvBty8fglZ7S8"
+      ]
+    },
+    {
+      "id": "1MESL-MIH_sjSz99eJQn4ZxuzGLdPlrFY",
+      "name": "CODE_BACKUP_MANIFEST_2025-11-05.json",
+      "mimeType": "application/json",
+      "category": "code",
+      "subcategory": "general-code",
+      "confidence": "medium",
+      "modifiedTime": "2025-11-05T00:10:48.961Z",
+      "size": "43105",
+      "parents": [
+        "1XHEhp9NSja9GLnsftaP-j8PPquekVwIm"
+      ]
+    },
+    {
+      "id": "1aRjOrIv1iSZqO1PZ2-eEtdnWAo43yASi",
+      "name": "testIntelligentMapping.js",
+      "mimeType": "text/javascript",
+      "category": "code",
+      "subcategory": "general-code",
+      "confidence": "medium",
+      "modifiedTime": "2025-11-05T00:09:59.311Z",
+      "size": "1076",
+      "parents": [
+        "1tefSDr1G8MRDX8r6zHvu2675sMna0v01"
+      ]
+    },
+    {
+      "id": "1NbuUr9E8btLJk2Op7RM9TSkMzCSjFTXI",
+      "name": "reset-project.js",
+      "mimeType": "text/javascript",
+      "category": "code",
+      "subcategory": "general-code",
+      "confidence": "medium",
+      "modifiedTime": "2025-11-05T00:09:31.991Z",
+      "size": "3608",
+      "parents": [
+        "1tefSDr1G8MRDX8r6zHvu2675sMna0v01"
+      ]
+    },
+    {
+      "id": "1rByw-8Nj-EUkKm6rlm0UM6jiK7FYK3dI",
+      "name": "WaveformAdjustmentTool.html",
+      "mimeType": "text/html",
+      "category": "code",
+      "subcategory": "general-code",
+      "confidence": "medium",
+      "modifiedTime": "2025-11-04T23:55:12.425Z",
+      "size": "15304",
+      "parents": [
+        "1tefSDr1G8MRDX8r6zHvu2675sMna0v01"
+      ]
+    },
+    {
+      "id": "1wHUQaIEY_Ui5F7jQp4VH5bJnxF_YQGJh",
+      "name": "Code_SIMPLIFIED_ATSR_LIGHT.gs",
+      "mimeType": "text/plain",
+      "category": "code",
+      "subcategory": "apps-script-tools",
+      "confidence": "high",
+      "modifiedTime": "2025-11-04T23:55:10.440Z",
+      "size": "112616",
+      "parents": [
+        "1tefSDr1G8MRDX8r6zHvu2675sMna0v01"
+      ]
+    },
+    {
+      "id": "1p8k6ocDdtVTssx-qWTwFYYrXLui6Ng5s",
+      "name": "Code_ORIGINAL_RESTORED.gs",
+      "mimeType": "text/plain",
+      "category": "code",
+      "subcategory": "apps-script",
+      "confidence": "medium",
+      "modifiedTime": "2025-11-04T23:55:08.015Z",
+      "size": "115411",
+      "parents": [
+        "1tefSDr1G8MRDX8r6zHvu2675sMna0v01"
+      ]
+    },
+    {
+      "id": "1sM3sBb___ruQ7TIMNDzoi6pOyK--PhH-",
+      "name": "Code_FIXED.gs",
+      "mimeType": "text/plain",
+      "category": "code",
+      "subcategory": "apps-script",
+      "confidence": "medium",
+      "modifiedTime": "2025-11-04T23:55:04.502Z",
+      "size": "104932",
+      "parents": [
+        "1tefSDr1G8MRDX8r6zHvu2675sMna0v01"
+      ]
+    },
+    {
+      "id": "1qXsQRn4c3KIlEhR8eHboTsksOgD-EAUV",
+      "name": "Code_FINAL_WITH_BOTH_PANELS.gs",
+      "mimeType": "text/plain",
+      "category": "code",
+      "subcategory": "apps-script",
+      "confidence": "medium",
+      "modifiedTime": "2025-11-04T23:55:00.634Z",
+      "size": "123223",
+      "parents": [
+        "1tefSDr1G8MRDX8r6zHvu2675sMna0v01"
+      ]
+    },
+    {
+      "id": "1qwuekgv-6M5KZR_EPIsa7UGpladfj0rd",
+      "name": "Code_ENHANCED_ATSR.gs",
+      "mimeType": "text/plain",
+      "category": "code",
+      "subcategory": "apps-script-tools",
+      "confidence": "high",
+      "modifiedTime": "2025-11-04T23:54:58.600Z",
+      "size": "113901",
+      "parents": [
+        "1tefSDr1G8MRDX8r6zHvu2675sMna0v01"
+      ]
+    },
+    {
+      "id": "1Firjwt2rG1I__cH66fLm6s4GB0FR6iD-",
+      "name": "Code_CURRENT_DEPLOYED.gs",
+      "mimeType": "text/plain",
+      "category": "code",
+      "subcategory": "apps-script",
+      "confidence": "medium",
+      "modifiedTime": "2025-11-04T23:54:55.307Z",
+      "size": "115615",
+      "parents": [
+        "1tefSDr1G8MRDX8r6zHvu2675sMna0v01"
+      ]
+    },
+    {
+      "id": "1PkD_q5qg9nv04vPpxYCM-rQlalVT2iaE",
+      "name": "Code_COMPLETE_LIGHT.gs",
+      "mimeType": "text/plain",
+      "category": "code",
+      "subcategory": "apps-script",
+      "confidence": "medium",
+      "modifiedTime": "2025-11-04T23:54:50.747Z",
+      "size": "123297",
+      "parents": [
+        "1tefSDr1G8MRDX8r6zHvu2675sMna0v01"
+      ]
+    },
+    {
+      "id": "1L5VK6zHzQK24zV86dfoDhbrxeQIl170-",
+      "name": "Code_ATSR_Trimmed.gs",
+      "mimeType": "text/plain",
+      "category": "code",
+      "subcategory": "apps-script-tools",
+      "confidence": "high",
+      "modifiedTime": "2025-11-04T23:54:48.207Z",
+      "size": "134429",
+      "parents": [
+        "1tefSDr1G8MRDX8r6zHvu2675sMna0v01"
+      ]
+    },
+    {
+      "id": "1hbvDv_QMbOzYTrhdQjeV0LJqXpaR8URW",
+      "name": "Code_ATSR_NO_CASE_ID.gs",
+      "mimeType": "text/plain",
+      "category": "code",
+      "subcategory": "apps-script-tools",
+      "confidence": "high",
+      "modifiedTime": "2025-11-04T23:54:42.606Z",
+      "size": "115510",
+      "parents": [
+        "1tefSDr1G8MRDX8r6zHvu2675sMna0v01"
+      ]
+    },
+    {
+      "id": "1W0tNP1jn6lTcUq11NzT57y_37aijt8SH",
+      "name": "CategoriesPathwaysPanel_Light.gs",
+      "mimeType": "text/plain",
+      "category": "code",
+      "subcategory": "apps-script",
+      "confidence": "medium",
+      "modifiedTime": "2025-11-04T23:54:40.234Z",
+      "size": "10607",
+      "parents": [
+        "1tefSDr1G8MRDX8r6zHvu2675sMna0v01"
+      ]
+    },
+    {
+      "id": "18EY16IxIlk6apoNeSCjWBNAd459uNxWX",
+      "name": "CategoriesPathwaysPanel.gs",
+      "mimeType": "text/plain",
+      "category": "code",
+      "subcategory": "apps-script",
+      "confidence": "medium",
+      "modifiedTime": "2025-11-04T23:54:38.413Z",
+      "size": "15535",
+      "parents": [
+        "1tefSDr1G8MRDX8r6zHvu2675sMna0v01"
+      ]
+    },
+    {
+      "id": "1H_B67nnoaMVFRe8_ledS0eCwSYbWU2dx",
+      "name": "ATSR_Enhanced_Function.gs",
+      "mimeType": "text/plain",
+      "category": "code",
+      "subcategory": "apps-script-tools",
+      "confidence": "high",
+      "modifiedTime": "2025-11-04T23:54:36.821Z",
+      "size": "12169",
+      "parents": [
+        "1tefSDr1G8MRDX8r6zHvu2675sMna0v01"
+      ]
+    },
+    {
+      "id": "11U7hi4u1aFthkk3zsDYitff3bBajFAo7",
+      "name": "Code_RESTORED_FINAL.gs",
+      "mimeType": "text/plain",
+      "category": "code",
+      "subcategory": "apps-script",
+      "confidence": "medium",
+      "modifiedTime": "2025-11-04T23:54:25.533Z",
+      "size": "123432",
+      "parents": [
+        "1aXvtMsSCjKpKS0ikDxzU-muVEHjIbK6_"
+      ]
+    },
+    {
+      "id": "1lcBoB-AmDBPiqAjnViDNcU3xAnQ97hrn",
+      "name": "Code_WITH_CATEGORIES_LIGHT.gs",
+      "mimeType": "text/plain",
+      "category": "code",
+      "subcategory": "apps-script",
+      "confidence": "medium",
+      "modifiedTime": "2025-11-04T23:54:22.332Z",
+      "size": "124508",
+      "parents": [
+        "1aXvtMsSCjKpKS0ikDxzU-muVEHjIbK6_"
+      ]
+    },
+    {
+      "id": "1K6BG5HJ3Vzs385D1UA4BFmH9CasV6wLG",
+      "name": "Code_ULTIMATE_ATSR.gs",
+      "mimeType": "text/plain",
+      "category": "code",
+      "subcategory": "apps-script-tools",
+      "confidence": "high",
+      "modifiedTime": "2025-11-04T23:54:19.449Z",
+      "size": "137879",
+      "parents": [
+        "1aXvtMsSCjKpKS0ikDxzU-muVEHjIbK6_"
+      ]
+    },
+    {
+      "id": "1c_jnzAAShuoqbD5F7s-oM04j7mMzxKni",
+      "name": "liveSyncServer.js",
+      "mimeType": "text/javascript",
+      "category": "code",
+      "subcategory": "general-code",
+      "confidence": "medium",
+      "modifiedTime": "2025-11-04T23:52:45.387Z",
+      "size": "2867",
+      "parents": [
+        "1ybKSYs2xqrD3_dkaH83ClAQxa-EQjmjB"
+      ]
+    },
+    {
+      "id": "1CCS9_E_y38NbSc_74liU5c7YqZ9-tZD0",
+      "name": "syncVitalsToSheets.js",
+      "mimeType": "text/javascript",
+      "category": "code",
+      "subcategory": "general-code",
+      "confidence": "medium",
+      "modifiedTime": "2025-11-04T23:52:43.687Z",
+      "size": "7646",
+      "parents": [
+        "1ybKSYs2xqrD3_dkaH83ClAQxa-EQjmjB"
+      ]
+    },
+    {
+      "id": "1ftc178wfVhq8vlJ2rh7iHztqMYVqUFaq",
+      "name": "GoogleSheetsAppsScript_Enhanced.js",
+      "mimeType": "text/javascript",
+      "category": "code",
+      "subcategory": "general-code",
+      "confidence": "medium",
+      "modifiedTime": "2025-11-04T23:52:41.705Z",
+      "size": "30312",
+      "parents": [
+        "1ybKSYs2xqrD3_dkaH83ClAQxa-EQjmjB"
+      ]
+    },
+    {
+      "id": "17CWmE0-oiRNhZHywsRoYiXimftOYNbO7",
+      "name": "GoogleSheetsAppsScript.js",
+      "mimeType": "text/javascript",
+      "category": "code",
+      "subcategory": "general-code",
+      "confidence": "medium",
+      "modifiedTime": "2025-11-04T23:52:39.964Z",
+      "size": "18402",
+      "parents": [
+        "1ybKSYs2xqrD3_dkaH83ClAQxa-EQjmjB"
+      ]
+    },
+    {
+      "id": "1uiTVWI17RnB183PVfvXj_6bhL_51RqFY",
+      "name": "fetchVitalsFromSheetsSecure.js",
+      "mimeType": "text/javascript",
+      "category": "code",
+      "subcategory": "general-code",
+      "confidence": "medium",
+      "modifiedTime": "2025-11-04T23:52:38.289Z",
+      "size": "1334",
+      "parents": [
+        "1ybKSYs2xqrD3_dkaH83ClAQxa-EQjmjB"
+      ]
+    },
+    {
+      "id": "17jakDhwtHS-qaQ42Ylki6Obp8Ds_3GSh",
+      "name": "fetchVitalsFromSheetsOAuth.js",
+      "mimeType": "text/javascript",
+      "category": "code",
+      "subcategory": "general-code",
+      "confidence": "medium",
+      "modifiedTime": "2025-11-04T23:52:36.270Z",
+      "size": "3156",
+      "parents": [
+        "1ybKSYs2xqrD3_dkaH83ClAQxa-EQjmjB"
+      ]
+    },
+    {
+      "id": "1f_aIkgUCCnvE_TtEx0OOU7JJg3aTz5EW",
+      "name": "CODE_BACKUP_MANIFEST_2025-11-04.json",
+      "mimeType": "application/json",
+      "category": "code",
+      "subcategory": "general-code",
+      "confidence": "medium",
+      "modifiedTime": "2025-11-04T23:11:43.004Z",
+      "size": "42510",
+      "parents": [
+        "1XHEhp9NSja9GLnsftaP-j8PPquekVwIm"
+      ]
+    },
+    {
+      "id": "13OHOCgkapfszu6I6ZE3SmzgCwoBTI6ST",
+      "name": "REFINED_MANIFEST.json",
+      "mimeType": "text/plain",
+      "category": "code",
+      "subcategory": "general-code",
+      "confidence": "medium",
+      "modifiedTime": "2025-11-04T18:31:32.104Z",
+      "size": "988",
+      "parents": [
+        "1vPPqyMy8VnvH_afVhL_3uD54PH5TZALX"
+      ]
+    },
+    {
+      "id": "1cHrkz8MgjJuTyNtTsoXBdKKPtJB1MpI2",
+      "name": "DECOMPOSITION_MANIFEST.json",
+      "mimeType": "text/plain",
+      "category": "code",
+      "subcategory": "general-code",
+      "confidence": "medium",
+      "modifiedTime": "2025-11-04T18:31:30.220Z",
+      "size": "1059",
+      "parents": [
+        "1j8TT6shvxfk12RHD5wMczLxbJdRb9YVn"
+      ]
+    },
+    {
+      "id": "1ZMxOy_BC2-8NazG4AJw14nzJP9jxM4u0",
+      "name": "Value_Extraction.gs",
+      "mimeType": "text/plain",
+      "category": "code",
+      "subcategory": "apps-script",
+      "confidence": "medium",
+      "modifiedTime": "2025-11-04T18:31:28.574Z",
+      "size": "1462",
+      "parents": [
+        "1vPPqyMy8VnvH_afVhL_3uD54PH5TZALX"
+      ]
+    },
+    {
+      "id": "1kRYmil4TGd72PpmeXPUrvMkvCHoXpaez",
+      "name": "Sidebar_Backend.gs",
+      "mimeType": "text/plain",
+      "category": "code",
+      "subcategory": "apps-script",
+      "confidence": "medium",
+      "modifiedTime": "2025-11-04T18:31:27.157Z",
+      "size": "18408",
+      "parents": [
+        "1vPPqyMy8VnvH_afVhL_3uD54PH5TZALX"
+      ]
+    },
+    {
+      "id": "1pu6CmrnuuH3PHmh7sOLY-J2oYrXvDHht",
+      "name": "Sheet_Operations.gs",
+      "mimeType": "text/plain",
+      "category": "code",
+      "subcategory": "apps-script",
+      "confidence": "medium",
+      "modifiedTime": "2025-11-04T18:31:25.075Z",
+      "size": "543",
+      "parents": [
+        "1vPPqyMy8VnvH_afVhL_3uD54PH5TZALX"
+      ]
+    },
+    {
+      "id": "13NrUFY-O_9i-obLJhwmjnIrCiT-E56Ye",
+      "name": "Logging_Utilities.gs",
+      "mimeType": "text/plain",
+      "category": "code",
+      "subcategory": "apps-script",
+      "confidence": "medium",
+      "modifiedTime": "2025-11-04T18:31:23.456Z",
+      "size": "5236",
+      "parents": [
+        "1vPPqyMy8VnvH_afVhL_3uD54PH5TZALX"
+      ]
+    },
+    {
+      "id": "1eYrGQXAwdD4zfKwco5VuOsGFfUaFe01l",
+      "name": "Header_Caching.gs",
+      "mimeType": "text/plain",
+      "category": "code",
+      "subcategory": "apps-script",
+      "confidence": "medium",
+      "modifiedTime": "2025-11-04T18:31:22.022Z",
+      "size": "1125",
+      "parents": [
+        "1vPPqyMy8VnvH_afVhL_3uD54PH5TZALX"
+      ]
+    },
+    {
+      "id": "1gxlV1rvAc3ny4s9Wv7x4eQ2Yh27BN5H1",
+      "name": "General_Utilities.gs",
+      "mimeType": "text/plain",
+      "category": "code",
+      "subcategory": "apps-script",
+      "confidence": "medium",
+      "modifiedTime": "2025-11-04T18:31:20.325Z",
+      "size": "32326",
+      "parents": [
+        "1vPPqyMy8VnvH_afVhL_3uD54PH5TZALX"
+      ]
+    },
+    {
+      "id": "1a6xPe5pe8Qmln7GKg5NjxSFlI9Gcfrdk",
+      "name": "API_Management.gs",
+      "mimeType": "text/plain",
+      "category": "code",
+      "subcategory": "apps-script",
+      "confidence": "medium",
+      "modifiedTime": "2025-11-04T18:31:18.251Z",
+      "size": "2133",
+      "parents": [
+        "1vPPqyMy8VnvH_afVhL_3uD54PH5TZALX"
+      ]
+    },
+    {
+      "id": "1zOwG3olQCEstkc1CHCB2bTWChtuLSSYF",
+      "name": "Utilities.gs",
+      "mimeType": "text/plain",
+      "category": "code",
+      "subcategory": "apps-script",
+      "confidence": "medium",
+      "modifiedTime": "2025-11-04T18:31:16.607Z",
+      "size": "52192",
+      "parents": [
+        "1j8TT6shvxfk12RHD5wMczLxbJdRb9YVn"
+      ]
+    },
+    {
+      "id": "1XBrZOt0O8eYttAkxt06ZsXBeTItPslLb",
+      "name": "UIMenu.gs",
+      "mimeType": "text/plain",
+      "category": "code",
+      "subcategory": "apps-script",
+      "confidence": "medium",
+      "modifiedTime": "2025-11-04T18:31:15.036Z",
+      "size": "464",
+      "parents": [
+        "1j8TT6shvxfk12RHD5wMczLxbJdRb9YVn"
+      ]
+    },
+    {
+      "id": "1sG9kLVO3hSL1kSRWuZkGKMHEosdJTWzc",
+      "name": "TitleGeneration.gs",
+      "mimeType": "text/plain",
+      "category": "code",
+      "subcategory": "apps-script",
+      "confidence": "medium",
+      "modifiedTime": "2025-11-04T18:31:13.051Z",
+      "size": "28907",
+      "parents": [
+        "1j8TT6shvxfk12RHD5wMczLxbJdRb9YVn"
+      ]
+    },
+    {
+      "id": "1jtnh-2xUYtzhVt_NXMGnjOTldN-xWhPK",
+      "name": "QualityScoring.gs",
+      "mimeType": "text/plain",
+      "category": "code",
+      "subcategory": "apps-script",
+      "confidence": "medium",
+      "modifiedTime": "2025-11-04T18:31:11.453Z",
+      "size": "1702",
+      "parents": [
+        "1j8TT6shvxfk12RHD5wMczLxbJdRb9YVn"
+      ]
+    },
+    {
+      "id": "14oEYKn25NqMnRw0XrhRIA8aIFrQkpy46",
+      "name": "InputValidation.gs",
+      "mimeType": "text/plain",
+      "category": "code",
+      "subcategory": "apps-script",
+      "confidence": "medium",
+      "modifiedTime": "2025-11-04T18:31:09.722Z",
+      "size": "1390",
+      "parents": [
+        "1j8TT6shvxfk12RHD5wMczLxbJdRb9YVn"
+      ]
+    },
+    {
+      "id": "1Kj5nD2iNA5mjtw-JQVENf6_Oc8D-CHKo",
+      "name": "Configuration.gs",
+      "mimeType": "text/plain",
+      "category": "code",
+      "subcategory": "apps-script",
+      "confidence": "medium",
+      "modifiedTime": "2025-11-04T18:31:08.053Z",
+      "size": "373",
+      "parents": [
+        "1j8TT6shvxfk12RHD5wMczLxbJdRb9YVn"
+      ]
+    },
+    {
+      "id": "1uq6h5VraZRvHvphlSEWJupPLpy3Es6V3",
+      "name": "ClinicalDefaults.gs",
+      "mimeType": "text/plain",
+      "category": "code",
+      "subcategory": "apps-script",
+      "confidence": "medium",
+      "modifiedTime": "2025-11-04T18:31:06.528Z",
+      "size": "4488",
+      "parents": [
+        "1j8TT6shvxfk12RHD5wMczLxbJdRb9YVn"
+      ]
+    },
+    {
+      "id": "1mJunJoCwbDc1BZBppcuUThlfsomupJVt",
+      "name": "BatchProcessing.gs",
+      "mimeType": "text/plain",
+      "category": "code",
+      "subcategory": "apps-script",
+      "confidence": "medium",
+      "modifiedTime": "2025-11-04T18:31:04.803Z",
+      "size": "15976",
+      "parents": [
+        "1j8TT6shvxfk12RHD5wMczLxbJdRb9YVn"
+      ]
+    },
+    {
+      "id": "1pBqQsmLhZsLkgUr_FfVRz0X3T5hj9y_L",
+      "name": "CODE_BACKUP_MANIFEST_2025-11-04.json",
+      "mimeType": "application/json",
+      "category": "code",
+      "subcategory": "general-code",
+      "confidence": "medium",
+      "modifiedTime": "2025-11-04T18:15:50.992Z",
+      "size": "38023",
+      "parents": [
+        "1XHEhp9NSja9GLnsftaP-j8PPquekVwIm"
+      ]
+    },
+    {
+      "id": "10sz7wlSZTcgcqLeoeLAAaZ4bVSfD8x9p",
+      "name": "testIntelligentMapping.js",
+      "mimeType": "text/javascript",
+      "category": "code",
+      "subcategory": "general-code",
+      "confidence": "medium",
+      "modifiedTime": "2025-11-04T18:15:19.074Z",
+      "size": "1076",
+      "parents": [
+        "13vLjpWARk1RCsntpyyjp8y3-CSYjBEff"
+      ]
+    },
+    {
+      "id": "1mfxvSaC1aNpZsZSjefr0MQ6Od8XS2SOq",
+      "name": "reset-project.js",
+      "mimeType": "text/javascript",
+      "category": "code",
+      "subcategory": "general-code",
+      "confidence": "medium",
+      "modifiedTime": "2025-11-04T18:14:57.936Z",
+      "size": "3608",
+      "parents": [
+        "13vLjpWARk1RCsntpyyjp8y3-CSYjBEff"
+      ]
+    },
+    {
+      "id": "1MQGcOt0JrNAUx7fDGHrevyKMDOjqMRYL",
+      "name": "WaveformAdjustmentTool.html",
+      "mimeType": "text/html",
+      "category": "code",
+      "subcategory": "general-code",
+      "confidence": "medium",
+      "modifiedTime": "2025-11-04T18:12:12.945Z",
+      "size": "15304",
+      "parents": [
+        "13vLjpWARk1RCsntpyyjp8y3-CSYjBEff"
+      ]
+    },
+    {
+      "id": "14qLXw6hW4TjKVahiiOTI3jTZYTb-kWmv",
+      "name": "Code_SIMPLIFIED_ATSR_LIGHT.gs",
+      "mimeType": "text/plain",
+      "category": "code",
+      "subcategory": "apps-script-tools",
+      "confidence": "high",
+      "modifiedTime": "2025-11-04T18:12:11.531Z",
+      "size": "112616",
+      "parents": [
+        "13vLjpWARk1RCsntpyyjp8y3-CSYjBEff"
+      ]
+    },
+    {
+      "id": "1U7LFEIkTY-Rw9XpvKvbkxCVQ8TPWCF7z",
+      "name": "Code_ORIGINAL_RESTORED.gs",
+      "mimeType": "text/plain",
+      "category": "code",
+      "subcategory": "apps-script",
+      "confidence": "medium",
+      "modifiedTime": "2025-11-04T18:12:09.993Z",
+      "size": "115411",
+      "parents": [
+        "13vLjpWARk1RCsntpyyjp8y3-CSYjBEff"
+      ]
+    },
+    {
+      "id": "1NWyyGk-B1rn46ekRpzjMqjJ8d4_-NtIX",
+      "name": "Code_FIXED.gs",
+      "mimeType": "text/plain",
+      "category": "code",
+      "subcategory": "apps-script",
+      "confidence": "medium",
+      "modifiedTime": "2025-11-04T18:12:08.206Z",
+      "size": "104932",
+      "parents": [
+        "13vLjpWARk1RCsntpyyjp8y3-CSYjBEff"
+      ]
+    },
+    {
+      "id": "1tY3E71eOihLUF6P41Z6szL3nsSrEDz2E",
+      "name": "Code_FINAL_WITH_BOTH_PANELS.gs",
+      "mimeType": "text/plain",
+      "category": "code",
+      "subcategory": "apps-script",
+      "confidence": "medium",
+      "modifiedTime": "2025-11-04T18:12:06.649Z",
+      "size": "123223",
+      "parents": [
+        "13vLjpWARk1RCsntpyyjp8y3-CSYjBEff"
+      ]
+    },
+    {
+      "id": "1C48SVxbpxUXxDqzA2pd0NYW7aRf2zsl0",
+      "name": "Code_ENHANCED_ATSR.gs",
+      "mimeType": "text/plain",
+      "category": "code",
+      "subcategory": "apps-script-tools",
+      "confidence": "high",
+      "modifiedTime": "2025-11-04T18:12:04.329Z",
+      "size": "113901",
+      "parents": [
+        "13vLjpWARk1RCsntpyyjp8y3-CSYjBEff"
+      ]
+    },
+    {
+      "id": "1OF3_N4VdkgGHPgz62AL23HBPcY9skE7_",
+      "name": "Code_CURRENT_DEPLOYED.gs",
+      "mimeType": "text/plain",
+      "category": "code",
+      "subcategory": "apps-script",
+      "confidence": "medium",
+      "modifiedTime": "2025-11-04T18:12:02.665Z",
+      "size": "115615",
+      "parents": [
+        "13vLjpWARk1RCsntpyyjp8y3-CSYjBEff"
+      ]
+    },
+    {
+      "id": "1pC6B7KzcUHj1UXh_f_orSpIGcDkOW_rW",
+      "name": "Code_COMPLETE_LIGHT.gs",
+      "mimeType": "text/plain",
+      "category": "code",
+      "subcategory": "apps-script",
+      "confidence": "medium",
+      "modifiedTime": "2025-11-04T18:12:01.021Z",
+      "size": "123297",
+      "parents": [
+        "13vLjpWARk1RCsntpyyjp8y3-CSYjBEff"
+      ]
+    },
+    {
+      "id": "1diMOZRY8rXQoIepQd40_djaIk5bLe3Th",
+      "name": "Code_ATSR_Trimmed.gs",
+      "mimeType": "text/plain",
+      "category": "code",
+      "subcategory": "apps-script-tools",
+      "confidence": "high",
+      "modifiedTime": "2025-11-04T18:11:58.952Z",
+      "size": "134429",
+      "parents": [
+        "13vLjpWARk1RCsntpyyjp8y3-CSYjBEff"
+      ]
+    },
+    {
+      "id": "1QsFM_LwmD2q6sHQF-7l0wjGNPIqmwe0x",
+      "name": "Code_ATSR_NO_CASE_ID.gs",
+      "mimeType": "text/plain",
+      "category": "code",
+      "subcategory": "apps-script-tools",
+      "confidence": "high",
+      "modifiedTime": "2025-11-04T18:11:56.705Z",
+      "size": "115510",
+      "parents": [
+        "13vLjpWARk1RCsntpyyjp8y3-CSYjBEff"
+      ]
+    },
+    {
+      "id": "1MelVdzioweACfhnjHQ8sP8TJNxz5oFUn",
+      "name": "CategoriesPathwaysPanel_Light.gs",
+      "mimeType": "text/plain",
+      "category": "code",
+      "subcategory": "apps-script",
+      "confidence": "medium",
+      "modifiedTime": "2025-11-04T18:11:55.099Z",
+      "size": "10607",
+      "parents": [
+        "13vLjpWARk1RCsntpyyjp8y3-CSYjBEff"
+      ]
+    },
+    {
+      "id": "1MKNIkU4xfcPlEHU2koqZm4P7rMseqeQG",
+      "name": "CategoriesPathwaysPanel.gs",
+      "mimeType": "text/plain",
+      "category": "code",
+      "subcategory": "apps-script",
+      "confidence": "medium",
+      "modifiedTime": "2025-11-04T18:11:52.995Z",
+      "size": "15535",
+      "parents": [
+        "13vLjpWARk1RCsntpyyjp8y3-CSYjBEff"
+      ]
+    },
+    {
+      "id": "12TN4uePmZaZ0yDZWU1PCNWm-JcGIBDx1",
+      "name": "ATSR_Enhanced_Function.gs",
+      "mimeType": "text/plain",
+      "category": "code",
+      "subcategory": "apps-script-tools",
+      "confidence": "high",
+      "modifiedTime": "2025-11-04T18:11:51.266Z",
+      "size": "12169",
+      "parents": [
+        "13vLjpWARk1RCsntpyyjp8y3-CSYjBEff"
+      ]
+    },
+    {
+      "id": "10hsipb0ktcM26aqlXfV2U8VqXm-45BOC",
+      "name": "Code_RESTORED_FINAL.gs",
+      "mimeType": "text/plain",
+      "category": "code",
+      "subcategory": "apps-script",
+      "confidence": "medium",
+      "modifiedTime": "2025-11-04T18:11:39.923Z",
+      "size": "123432",
+      "parents": [
+        "121Ni9arXc2JgpGExRoZmf3GXBJwVFaCZ"
+      ]
+    },
+    {
+      "id": "1X3QlnJOl18hcEhim03b-o-Wenmh-TNGC",
+      "name": "Code_WITH_CATEGORIES_LIGHT.gs",
+      "mimeType": "text/plain",
+      "category": "code",
+      "subcategory": "apps-script",
+      "confidence": "medium",
+      "modifiedTime": "2025-11-04T18:11:37.915Z",
+      "size": "124508",
+      "parents": [
+        "121Ni9arXc2JgpGExRoZmf3GXBJwVFaCZ"
+      ]
+    },
+    {
+      "id": "1Mbh4giHHDbJFIr9K5oirME5fN7T1bfFG",
+      "name": "Code_ULTIMATE_ATSR.gs",
+      "mimeType": "text/plain",
+      "category": "code",
+      "subcategory": "apps-script-tools",
+      "confidence": "high",
+      "modifiedTime": "2025-11-04T18:11:36.243Z",
+      "size": "137879",
+      "parents": [
+        "121Ni9arXc2JgpGExRoZmf3GXBJwVFaCZ"
+      ]
+    },
+    {
+      "id": "1lbWPUaxjlo8cuUqN7A9wd0zaOPmA-2qr",
+      "name": "liveSyncServer.js",
+      "mimeType": "text/javascript",
+      "category": "code",
+      "subcategory": "general-code",
+      "confidence": "medium",
+      "modifiedTime": "2025-11-04T18:10:12.866Z",
+      "size": "2867",
+      "parents": [
+        "1k-ChgvuyQTL8_p98q99t8OW4chVnDHFT"
+      ]
+    },
+    {
+      "id": "1mKP-TFwiR32Q8tCBivbhbYVIhTpL3Uz3",
+      "name": "syncVitalsToSheets.js",
+      "mimeType": "text/javascript",
+      "category": "code",
+      "subcategory": "general-code",
+      "confidence": "medium",
+      "modifiedTime": "2025-11-04T18:10:11.181Z",
+      "size": "7646",
+      "parents": [
+        "1k-ChgvuyQTL8_p98q99t8OW4chVnDHFT"
+      ]
+    },
+    {
+      "id": "1VZH-BVJ5kfl4KY2s04UPwOx_eYFizLxf",
+      "name": "GoogleSheetsAppsScript_Enhanced.js",
+      "mimeType": "text/javascript",
+      "category": "code",
+      "subcategory": "general-code",
+      "confidence": "medium",
+      "modifiedTime": "2025-11-04T18:10:09.285Z",
+      "size": "30312",
+      "parents": [
+        "1k-ChgvuyQTL8_p98q99t8OW4chVnDHFT"
+      ]
+    },
+    {
+      "id": "1hSgo0LdfRa03GHKNSmNr3PJRO-Lqm4lt",
+      "name": "GoogleSheetsAppsScript.js",
+      "mimeType": "text/javascript",
+      "category": "code",
+      "subcategory": "general-code",
+      "confidence": "medium",
+      "modifiedTime": "2025-11-04T18:10:07.411Z",
+      "size": "18402",
+      "parents": [
+        "1k-ChgvuyQTL8_p98q99t8OW4chVnDHFT"
+      ]
+    },
+    {
+      "id": "1c-jKOW2U6xVFyjSDW2xf_pjrBT8es8zo",
+      "name": "fetchVitalsFromSheetsSecure.js",
+      "mimeType": "text/javascript",
+      "category": "code",
+      "subcategory": "general-code",
+      "confidence": "medium",
+      "modifiedTime": "2025-11-04T18:10:05.303Z",
+      "size": "1334",
+      "parents": [
+        "1k-ChgvuyQTL8_p98q99t8OW4chVnDHFT"
+      ]
+    },
+    {
+      "id": "18UaAHk-lbaBO73RT8a4aNfKhjuDu2r2_",
+      "name": "fetchVitalsFromSheetsOAuth.js",
+      "mimeType": "text/javascript",
+      "category": "code",
+      "subcategory": "general-code",
+      "confidence": "medium",
+      "modifiedTime": "2025-11-04T18:10:03.569Z",
+      "size": "3156",
+      "parents": [
+        "1k-ChgvuyQTL8_p98q99t8OW4chVnDHFT"
+      ]
+    },
+    {
+      "id": "1IgUlsBzHPsN2GEzh1C_O-zpBQUHEmxQU",
+      "name": "ER_Simulator_Builder_v3.7.gs",
+      "mimeType": "text/plain",
+      "category": "code",
+      "subcategory": "sim-builder",
+      "confidence": "high",
+      "modifiedTime": "2025-11-04T16:34:48.693Z",
+      "size": "1351",
+      "parents": [
+        "1XHEhp9NSja9GLnsftaP-j8PPquekVwIm"
+      ]
+    }
+  ],
+  "csv": [],
+  "docs": [
+    {
+      "id": "1GuOuNrHomx750fA1aaC0zUEd9gaslUha",
+      "name": "COMPLETE_TOOL_DEPLOYMENT_SUMMARY.md",
+      "mimeType": "text/markdown",
+      "category": "docs",
+      "subcategory": "documentation",
+      "confidence": "high",
+      "modifiedTime": "2025-11-12T06:16:23.067Z",
+      "size": "12150",
+      "parents": [
+        "157Gs2JvPJNT0LwCQz6yv5t_quoqyByGH"
+      ]
+    },
+    {
+      "id": "1ATLMLWVMfZLxWfPTIhEsieDqYNN0QY2g",
+      "name": "TESTING_GUIDE_COMPLETE.md",
+      "mimeType": "text/markdown",
+      "category": "docs",
+      "subcategory": "documentation",
+      "confidence": "high",
+      "modifiedTime": "2025-11-12T06:16:21.722Z",
+      "size": "12927",
+      "parents": [
+        "157Gs2JvPJNT0LwCQz6yv5t_quoqyByGH"
+      ]
+    },
+    {
+      "id": "1i2V4F86xv0vYtOd9Pzr5wRXYF5-Gek63",
+      "name": "Atlas Project Understanding 2025-11-08 01:02:47.txt",
+      "mimeType": "text/plain",
+      "category": "docs",
+      "subcategory": "documentation",
+      "confidence": "high",
+      "modifiedTime": "2025-11-08T01:02:48.245Z",
+      "size": "21101",
+      "parents": [
+        "1q-OWAS0sgoqGg1hPHT7GYCKV6yCSquh3"
+      ]
+    },
+    {
+      "id": "1KqUc_qa0e7P1HeVOKe2vy10FHM6mDSOV",
+      "name": "DEPLOYMENT_SUMMARY.md",
+      "mimeType": "text/plain",
+      "category": "docs",
+      "subcategory": "documentation",
+      "confidence": "high",
+      "modifiedTime": "2025-11-07T03:11:23.069Z",
+      "size": "2346",
+      "parents": [
+        "1ss4nqpBzFKAILp0AiolLIqrPUDFfbRcl"
+      ]
+    },
+    {
+      "id": "11LmfLptZPH0IHT5f_43dHBjK3XpXE3z0",
+      "name": "README.txt",
+      "mimeType": "text/plain",
+      "category": "docs",
+      "subcategory": "documentation",
+      "confidence": "high",
+      "modifiedTime": "2025-11-06T19:53:50.562Z",
+      "size": "754",
+      "parents": [
+        "1JazntmPtY37DrD77OFTWcs-gkz5LLG9A"
+      ]
+    },
+    {
+      "id": "1uyAejgljnGTxJj0Ohit-Df3ozKbvWkBA",
+      "name": "PROJECT_INVENTORY.txt",
+      "mimeType": "text/plain",
+      "category": "docs",
+      "subcategory": "documentation",
+      "confidence": "high",
+      "modifiedTime": "2025-11-06T17:10:42.969Z",
+      "size": "7025",
+      "parents": [
+        "13WO4iP-iaNFZH8n1pJlCsRPjfjjqSt-I"
+      ]
+    },
+    {
+      "id": "1Rjhgm_mcYBXnf3MsLSb36OIN3SS6lzNu",
+      "name": "CACHE_FIX_RESUME_POINT.md",
+      "mimeType": "text/markdown",
+      "category": "docs",
+      "subcategory": "documentation",
+      "confidence": "high",
+      "modifiedTime": "2025-11-06T15:48:14.125Z",
+      "size": "5228",
+      "parents": [
+        "1aGEiprFwqDLeB_wJ_cEwKWU72fAHQQL7"
+      ]
+    },
+    {
+      "id": "1WrD3RQp_vOgJZkWZuz_dO9R8VYb8uFCx",
+      "name": "CACHE_FIX_IMPLEMENTATION_PLAN.md",
+      "mimeType": "text/markdown",
+      "category": "docs",
+      "subcategory": "documentation",
+      "confidence": "high",
+      "modifiedTime": "2025-11-06T15:48:12.270Z",
+      "size": "9632",
+      "parents": [
+        "1aGEiprFwqDLeB_wJ_cEwKWU72fAHQQL7"
+      ]
+    },
+    {
+      "id": "1Q_8ZmwYF8Gb3tImpVJyj5MbmvQ8WnhHZ",
+      "name": "CACHE_FIX_DEPLOYMENT_COMPLETE.md",
+      "mimeType": "text/markdown",
+      "category": "docs",
+      "subcategory": "documentation",
+      "confidence": "high",
+      "modifiedTime": "2025-11-06T15:48:10.465Z",
+      "size": "10034",
+      "parents": [
+        "1aGEiprFwqDLeB_wJ_cEwKWU72fAHQQL7"
+      ]
+    },
+    {
+      "id": "11HAGxjHN7NZH6mHVRfxnh_xTx6HNJC7h",
+      "name": "SIMPLE_MODAL_DEPLOYED.md",
+      "mimeType": "text/markdown",
+      "category": "docs",
+      "subcategory": "documentation",
+      "confidence": "high",
+      "modifiedTime": "2025-11-06T15:48:08.245Z",
+      "size": "4807",
+      "parents": [
+        "1aGEiprFwqDLeB_wJ_cEwKWU72fAHQQL7"
+      ]
+    },
+    {
+      "id": "1gpDfgnszXU6olC3Utq7cICPqjaicAPI5",
+      "name": "CACHE_SYSTEM_SUCCESS.md",
+      "mimeType": "text/markdown",
+      "category": "docs",
+      "subcategory": "documentation",
+      "confidence": "high",
+      "modifiedTime": "2025-11-06T15:48:06.476Z",
+      "size": "11803",
+      "parents": [
+        "1aGEiprFwqDLeB_wJ_cEwKWU72fAHQQL7"
+      ]
+    },
+    {
+      "id": "1AcNiw9HZUiKlipikAeg-5soM4kbnoZje",
+      "name": "README_Pathways_Phase2_Backup_2025-11-06T04-49-52-979Z.txt",
+      "mimeType": "text/plain",
+      "category": "docs",
+      "subcategory": "documentation",
+      "confidence": "high",
+      "modifiedTime": "2025-11-06T04:49:57.012Z",
+      "size": "2043",
+      "parents": [
+        "1P1nbLQIaGrRSEW8-6aQMvBty8fglZ7S8"
+      ]
+    },
+    {
+      "id": "1T2vSRDEIfx9fg_H50nqn9lpRs1fY6H7j",
+      "name": "README_Pathways_Phase2_Backup_2025-11-06T04-45-29-909Z.txt",
+      "mimeType": "text/plain",
+      "category": "docs",
+      "subcategory": "documentation",
+      "confidence": "high",
+      "modifiedTime": "2025-11-06T04:45:33.206Z",
+      "size": "2043",
+      "parents": [
+        "1P1nbLQIaGrRSEW8-6aQMvBty8fglZ7S8"
+      ]
+    },
+    {
+      "id": "1HdJCx6XkCEnMPnehEhHxl0DSOte7bW63",
+      "name": "README_Pathways_Phase2_Backup_2025-11-06T04-40-41-604Z.txt",
+      "mimeType": "text/plain",
+      "category": "docs",
+      "subcategory": "documentation",
+      "confidence": "high",
+      "modifiedTime": "2025-11-06T04:40:44.886Z",
+      "size": "2043",
+      "parents": [
+        "1P1nbLQIaGrRSEW8-6aQMvBty8fglZ7S8"
+      ]
+    },
+    {
+      "id": "19f3gZOxjNDrrt_9OULnjdg3S7qgORW_Z",
+      "name": "README_Pathways_Phase2_Backup_2025-11-06T04-33-02-912Z.txt",
+      "mimeType": "text/plain",
+      "category": "docs",
+      "subcategory": "documentation",
+      "confidence": "high",
+      "modifiedTime": "2025-11-06T04:33:05.678Z",
+      "size": "2043",
+      "parents": [
+        "1P1nbLQIaGrRSEW8-6aQMvBty8fglZ7S8"
+      ]
+    },
+    {
+      "id": "1NLVysRxpkdFXFxiHsjVqixqftaS1kUuC",
+      "name": "updateATSRCode.cjs",
+      "mimeType": "text/plain",
+      "category": "docs",
+      "subcategory": "documentation",
+      "confidence": "high",
+      "modifiedTime": "2025-11-05T00:10:07.365Z",
+      "size": "3708",
+      "parents": [
+        "1tefSDr1G8MRDX8r6zHvu2675sMna0v01"
+      ]
+    },
+    {
+      "id": "1bkeoHybU-RBf4i0tZLoc84m7mb-gNGc4",
+      "name": "testATSRStandalone.cjs",
+      "mimeType": "text/plain",
+      "category": "docs",
+      "subcategory": "documentation",
+      "confidence": "high",
+      "modifiedTime": "2025-11-05T00:09:53.646Z",
+      "size": "3205",
+      "parents": [
+        "1tefSDr1G8MRDX8r6zHvu2675sMna0v01"
+      ]
+    },
+    {
+      "id": "1J3g5IJurJ9D67kUHCCSOxjFJqI1Wk08z",
+      "name": "standardizeAllVitalsFIXED.cjs",
+      "mimeType": "text/plain",
+      "category": "docs",
+      "subcategory": "documentation",
+      "confidence": "high",
+      "modifiedTime": "2025-11-05T00:09:42.574Z",
+      "size": "5964",
+      "parents": [
+        "1tefSDr1G8MRDX8r6zHvu2675sMna0v01"
+      ]
+    },
+    {
+      "id": "1AEvCuYEfFKc6QZsk0Z-bYuGlrHpvgDNL",
+      "name": "removeCaseIDFromATSR.cjs",
+      "mimeType": "text/plain",
+      "category": "docs",
+      "subcategory": "documentation",
+      "confidence": "high",
+      "modifiedTime": "2025-11-05T00:09:26.905Z",
+      "size": "4311",
+      "parents": [
+        "1tefSDr1G8MRDX8r6zHvu2675sMna0v01"
+      ]
+    },
+    {
+      "id": "1yOnB367pREA1WGDNVxsy06MI3_64hIOi",
+      "name": "progressMonitor.cjs",
+      "mimeType": "text/plain",
+      "category": "docs",
+      "subcategory": "documentation",
+      "confidence": "high",
+      "modifiedTime": "2025-11-05T00:09:18.146Z",
+      "size": "6805",
+      "parents": [
+        "1tefSDr1G8MRDX8r6zHvu2675sMna0v01"
+      ]
+    },
+    {
+      "id": "1cU4XjB67L7qV2OyeqdotH-mmofehGAtW",
+      "name": "mergeEnhancedATSR.cjs",
+      "mimeType": "text/plain",
+      "category": "docs",
+      "subcategory": "documentation",
+      "confidence": "high",
+      "modifiedTime": "2025-11-05T00:09:06.075Z",
+      "size": "3330",
+      "parents": [
+        "1tefSDr1G8MRDX8r6zHvu2675sMna0v01"
+      ]
+    },
+    {
+      "id": "1McZEe7UluErTAab335GarZW6OSQ0dYAM",
+      "name": "fixATSRModel.cjs",
+      "mimeType": "text/plain",
+      "category": "docs",
+      "subcategory": "documentation",
+      "confidence": "high",
+      "modifiedTime": "2025-11-04T23:58:01.154Z",
+      "size": "5075",
+      "parents": [
+        "1tefSDr1G8MRDX8r6zHvu2675sMna0v01"
+      ]
+    },
+    {
+      "id": "10I-ymrCwj0SwX9-D-O9fO0dX7prAbuDO",
+      "name": "findDuplicateATSR.cjs",
+      "mimeType": "text/plain",
+      "category": "docs",
+      "subcategory": "documentation",
+      "confidence": "high",
+      "modifiedTime": "2025-11-04T23:57:56.393Z",
+      "size": "3413",
+      "parents": [
+        "1tefSDr1G8MRDX8r6zHvu2675sMna0v01"
+      ]
+    },
+    {
+      "id": "1N6b_E27woTcQ2tKV8brMq_-jyAazSDWt",
+      "name": "exportDashboardData.cjs",
+      "mimeType": "text/plain",
+      "category": "docs",
+      "subcategory": "documentation",
+      "confidence": "high",
+      "modifiedTime": "2025-11-04T23:57:39.744Z",
+      "size": "12078",
+      "parents": [
+        "1tefSDr1G8MRDX8r6zHvu2675sMna0v01"
+      ]
+    },
+    {
+      "id": "1GTyojkFXw_8GpZcJxd8uab8ugIkYDvVy",
+      "name": "deployEnhancedATSR.cjs",
+      "mimeType": "text/plain",
+      "category": "docs",
+      "subcategory": "documentation",
+      "confidence": "high",
+      "modifiedTime": "2025-11-04T23:57:20.847Z",
+      "size": "6587",
+      "parents": [
+        "1tefSDr1G8MRDX8r6zHvu2675sMna0v01"
+      ]
+    },
+    {
+      "id": "1tb2pNP6_yHvpE8KA1zMFdfwq_S53fVOI",
+      "name": "deployATSRUpdates.cjs",
+      "mimeType": "text/plain",
+      "category": "docs",
+      "subcategory": "documentation",
+      "confidence": "high",
+      "modifiedTime": "2025-11-04T23:57:14.189Z",
+      "size": "5222",
+      "parents": [
+        "1tefSDr1G8MRDX8r6zHvu2675sMna0v01"
+      ]
+    },
+    {
+      "id": "1FCi14lZ4lNM_a9HV7HQuhWWXaDqpDXEP",
+      "name": "createSimplifiedATSR.cjs",
+      "mimeType": "text/plain",
+      "category": "docs",
+      "subcategory": "documentation",
+      "confidence": "high",
+      "modifiedTime": "2025-11-04T23:57:03.676Z",
+      "size": "6090",
+      "parents": [
+        "1tefSDr1G8MRDX8r6zHvu2675sMna0v01"
+      ]
+    },
+    {
+      "id": "1nyYtk8llT_asBehvLoOa-90bZ15yZYlT",
+      "name": "createATSRProject.cjs",
+      "mimeType": "text/plain",
+      "category": "docs",
+      "subcategory": "documentation",
+      "confidence": "high",
+      "modifiedTime": "2025-11-04T23:56:52.655Z",
+      "size": "6851",
+      "parents": [
+        "1tefSDr1G8MRDX8r6zHvu2675sMna0v01"
+      ]
+    },
+    {
+      "id": "19C9HL1bxAwemjgYI0QWQ-F_oqUcS1omu",
+      "name": "checkDeployedATSR.cjs",
+      "mimeType": "text/plain",
+      "category": "docs",
+      "subcategory": "documentation",
+      "confidence": "high",
+      "modifiedTime": "2025-11-04T23:56:16.778Z",
+      "size": "2085",
+      "parents": [
+        "1tefSDr1G8MRDX8r6zHvu2675sMna0v01"
+      ]
+    },
+    {
+      "id": "19az0Hkhcuofn7eWVEdz0h_QKY2-7fZqt",
+      "name": "buildUltimateATSR.cjs",
+      "mimeType": "text/plain",
+      "category": "docs",
+      "subcategory": "documentation",
+      "confidence": "high",
+      "modifiedTime": "2025-11-04T23:56:12.464Z",
+      "size": "19642",
+      "parents": [
+        "1tefSDr1G8MRDX8r6zHvu2675sMna0v01"
+      ]
+    },
+    {
+      "id": "1oj9o08sDsRst5wny6wxEjg0CQW5l3Aoh",
+      "name": "autoTrimATSR.cjs",
+      "mimeType": "text/plain",
+      "category": "docs",
+      "subcategory": "documentation",
+      "confidence": "high",
+      "modifiedTime": "2025-11-04T23:56:01.186Z",
+      "size": "4747",
+      "parents": [
+        "1tefSDr1G8MRDX8r6zHvu2675sMna0v01"
+      ]
+    },
+    {
+      "id": "1oCdroW1fpOjToAfyl_pDicJiVK7O-gx0",
+      "name": "standardizeAllVitals.cjs",
+      "mimeType": "text/plain",
+      "category": "docs",
+      "subcategory": "documentation",
+      "confidence": "high",
+      "modifiedTime": "2025-11-04T23:54:16.419Z",
+      "size": "5451",
+      "parents": [
+        "128TRJCmiRbcdV-59sftpHom8sSse-jxs"
+      ]
+    },
+    {
+      "id": "1VIiB0qS8co73KQ9H5TVBnyOf_0vYmzcH",
+      "name": "deployATSRNoCaseID.cjs",
+      "mimeType": "text/plain",
+      "category": "docs",
+      "subcategory": "documentation",
+      "confidence": "high",
+      "modifiedTime": "2025-11-04T23:53:44.929Z",
+      "size": "3700",
+      "parents": [
+        "1NKWumjw4HO5DKPzBfBr0wyX8JzLsM5xm"
+      ]
+    },
+    {
+      "id": "1CmXzQ1Smrnb15nAmR9jc4tG2zRU1DBbQ",
+      "name": "deployATSR.cjs",
+      "mimeType": "text/plain",
+      "category": "docs",
+      "subcategory": "documentation",
+      "confidence": "high",
+      "modifiedTime": "2025-11-04T23:53:42.819Z",
+      "size": "1688",
+      "parents": [
+        "1NKWumjw4HO5DKPzBfBr0wyX8JzLsM5xm"
+      ]
+    },
+    {
+      "id": "18LTtYIT04a26PBEFoFRFOqWPEnJPRNsG",
+      "name": "restoreOriginalATSR.cjs",
+      "mimeType": "text/plain",
+      "category": "docs",
+      "subcategory": "documentation",
+      "confidence": "high",
+      "modifiedTime": "2025-11-04T23:53:38.444Z",
+      "size": "7012",
+      "parents": [
+        "1B5rSzEX1Ny89kcd_ut8dc0AkGFpYhSIS"
+      ]
+    },
+    {
+      "id": "1wpz23PPnpcqMVX2t5fArD5WKpH0dSS3h",
+      "name": "restoreATSRComplete.cjs",
+      "mimeType": "text/plain",
+      "category": "docs",
+      "subcategory": "documentation",
+      "confidence": "high",
+      "modifiedTime": "2025-11-04T23:53:36.476Z",
+      "size": "7302",
+      "parents": [
+        "1B5rSzEX1Ny89kcd_ut8dc0AkGFpYhSIS"
+      ]
+    },
+    {
+      "id": "1KZQxtw9XNj2hUgeprar6ousCsbeEeeNH",
+      "name": "testATSRPrompt.cjs",
+      "mimeType": "text/plain",
+      "category": "docs",
+      "subcategory": "documentation",
+      "confidence": "high",
+      "modifiedTime": "2025-11-04T23:53:22.351Z",
+      "size": "3277",
+      "parents": [
+        "1Bmt8nL9x83rm-cmwIuxbaQ6fDR21H3cC"
+      ]
+    },
+    {
+      "id": "16dOaAaBKVXZsPPajFUcPruTbsak7bLrT",
+      "name": "analyzeDuplicateScenarios.cjs",
+      "mimeType": "text/plain",
+      "category": "docs",
+      "subcategory": "documentation",
+      "confidence": "high",
+      "modifiedTime": "2025-11-04T23:52:51.905Z",
+      "size": "10043",
+      "parents": [
+        "1Nj-g6ooBas3gyhxeUlEpBqZn94khFEtT"
+      ]
+    },
+    {
+      "id": "16IsGbii2d_i5oK8BQGfQtTM_HTCVydgj",
+      "name": "validateVitalsJSON.cjs",
+      "mimeType": "text/plain",
+      "category": "docs",
+      "subcategory": "documentation",
+      "confidence": "high",
+      "modifiedTime": "2025-11-04T23:52:48.443Z",
+      "size": "8817",
+      "parents": [
+        "1Nj-g6ooBas3gyhxeUlEpBqZn94khFEtT"
+      ]
+    },
+    {
+      "id": "1y9srwz2C2aiB9cVDLjEgZnVc2Qu9OKsd",
+      "name": "updateATSRCode.cjs",
+      "mimeType": "text/plain",
+      "category": "docs",
+      "subcategory": "documentation",
+      "confidence": "high",
+      "modifiedTime": "2025-11-04T18:15:24.077Z",
+      "size": "3708",
+      "parents": [
+        "13vLjpWARk1RCsntpyyjp8y3-CSYjBEff"
+      ]
+    },
+    {
+      "id": "1YYnmm7yziyjK7DX82kxZsq8FCY2bs-rM",
+      "name": "testATSRStandalone.cjs",
+      "mimeType": "text/plain",
+      "category": "docs",
+      "subcategory": "documentation",
+      "confidence": "high",
+      "modifiedTime": "2025-11-04T18:15:16.142Z",
+      "size": "3205",
+      "parents": [
+        "13vLjpWARk1RCsntpyyjp8y3-CSYjBEff"
+      ]
+    },
+    {
+      "id": "1OLqNMSLK13ZF7woie1FeMvAuaj0d_6Sg",
+      "name": "standardizeAllVitalsFIXED.cjs",
+      "mimeType": "text/plain",
+      "category": "docs",
+      "subcategory": "documentation",
+      "confidence": "high",
+      "modifiedTime": "2025-11-04T18:15:06.093Z",
+      "size": "5964",
+      "parents": [
+        "13vLjpWARk1RCsntpyyjp8y3-CSYjBEff"
+      ]
+    },
+    {
+      "id": "1YJwz95TBkaclWOjDj03OoBWTX0H_1tA-",
+      "name": "removeCaseIDFromATSR.cjs",
+      "mimeType": "text/plain",
+      "category": "docs",
+      "subcategory": "documentation",
+      "confidence": "high",
+      "modifiedTime": "2025-11-04T18:14:56.323Z",
+      "size": "4311",
+      "parents": [
+        "13vLjpWARk1RCsntpyyjp8y3-CSYjBEff"
+      ]
+    },
+    {
+      "id": "12KMr4L0g7mCGo3ZOSxpdyNJcs-q0x856",
+      "name": "progressMonitor.cjs",
+      "mimeType": "text/plain",
+      "category": "docs",
+      "subcategory": "documentation",
+      "confidence": "high",
+      "modifiedTime": "2025-11-04T18:14:49.712Z",
+      "size": "6805",
+      "parents": [
+        "13vLjpWARk1RCsntpyyjp8y3-CSYjBEff"
+      ]
+    },
+    {
+      "id": "10J1mnq5Uc-emlCZsNbjuevvAVUPdtBh2",
+      "name": "mergeEnhancedATSR.cjs",
+      "mimeType": "text/plain",
+      "category": "docs",
+      "subcategory": "documentation",
+      "confidence": "high",
+      "modifiedTime": "2025-11-04T18:14:39.212Z",
+      "size": "3330",
+      "parents": [
+        "13vLjpWARk1RCsntpyyjp8y3-CSYjBEff"
+      ]
+    },
+    {
+      "id": "1c1_aelRofeB2Eo5XJwTudpn83083uxOp",
+      "name": "fixATSRModel.cjs",
+      "mimeType": "text/plain",
+      "category": "docs",
+      "subcategory": "documentation",
+      "confidence": "high",
+      "modifiedTime": "2025-11-04T18:13:58.367Z",
+      "size": "5075",
+      "parents": [
+        "13vLjpWARk1RCsntpyyjp8y3-CSYjBEff"
+      ]
+    },
+    {
+      "id": "1nZzuUgKDRdYSgZSAGanyOFKg1guKbN13",
+      "name": "exportDashboardData.cjs",
+      "mimeType": "text/plain",
+      "category": "docs",
+      "subcategory": "documentation",
+      "confidence": "high",
+      "modifiedTime": "2025-11-04T18:13:43.479Z",
+      "size": "12078",
+      "parents": [
+        "13vLjpWARk1RCsntpyyjp8y3-CSYjBEff"
+      ]
+    },
+    {
+      "id": "1ooMmBa67hzI3DxlvVmsvUDwR75bhSdWq",
+      "name": "deployEnhancedATSR.cjs",
+      "mimeType": "text/plain",
+      "category": "docs",
+      "subcategory": "documentation",
+      "confidence": "high",
+      "modifiedTime": "2025-11-04T18:13:31.525Z",
+      "size": "6587",
+      "parents": [
+        "13vLjpWARk1RCsntpyyjp8y3-CSYjBEff"
+      ]
+    },
+    {
+      "id": "1M8QxyPsi6CkHys1Aba7fy2VQr_S_C4t0",
+      "name": "createSimplifiedATSR.cjs",
+      "mimeType": "text/plain",
+      "category": "docs",
+      "subcategory": "documentation",
+      "confidence": "high",
+      "modifiedTime": "2025-11-04T18:13:24.987Z",
+      "size": "6090",
+      "parents": [
+        "13vLjpWARk1RCsntpyyjp8y3-CSYjBEff"
+      ]
+    },
+    {
+      "id": "1BJlGkR1AiRsUaAXOPuDAuzLsJ_LeMuSP",
+      "name": "createATSRProject.cjs",
+      "mimeType": "text/plain",
+      "category": "docs",
+      "subcategory": "documentation",
+      "confidence": "high",
+      "modifiedTime": "2025-11-04T18:13:17.863Z",
+      "size": "6851",
+      "parents": [
+        "13vLjpWARk1RCsntpyyjp8y3-CSYjBEff"
+      ]
+    },
+    {
+      "id": "1yK875ayxTc9w1fNLtVrYumCb18NhFpBx",
+      "name": "buildUltimateATSR.cjs",
+      "mimeType": "text/plain",
+      "category": "docs",
+      "subcategory": "documentation",
+      "confidence": "high",
+      "modifiedTime": "2025-11-04T18:13:03.306Z",
+      "size": "19642",
+      "parents": [
+        "13vLjpWARk1RCsntpyyjp8y3-CSYjBEff"
+      ]
+    },
+    {
+      "id": "16E-3Z5g5mpML2Wwzos5KuHoNmBgYdez3",
+      "name": "autoTrimATSR.cjs",
+      "mimeType": "text/plain",
+      "category": "docs",
+      "subcategory": "documentation",
+      "confidence": "high",
+      "modifiedTime": "2025-11-04T18:12:52.928Z",
+      "size": "4747",
+      "parents": [
+        "13vLjpWARk1RCsntpyyjp8y3-CSYjBEff"
+      ]
+    },
+    {
+      "id": "1sE5l5_Rp3vnrWHj89BJyIa9R12APCbKK",
+      "name": "standardizeAllVitals.cjs",
+      "mimeType": "text/plain",
+      "category": "docs",
+      "subcategory": "documentation",
+      "confidence": "high",
+      "modifiedTime": "2025-11-04T18:11:33.093Z",
+      "size": "5451",
+      "parents": [
+        "1IgBtQmXaF43LiAsksa15XhNM8uq1Y2zO"
+      ]
+    },
+    {
+      "id": "1mN9_0cm1rd3jhsLsDCumUkI8C0DXZkLE",
+      "name": "deployATSRNoCaseID.cjs",
+      "mimeType": "text/plain",
+      "category": "docs",
+      "subcategory": "documentation",
+      "confidence": "high",
+      "modifiedTime": "2025-11-04T18:11:11.141Z",
+      "size": "3700",
+      "parents": [
+        "1BEC6q7cFGCHGVfFv7K7wsPK9-mEPgknw"
+      ]
+    },
+    {
+      "id": "1Xo9xiRdhLR5btkXIlSwBc9078ZBNTEa6",
+      "name": "deployATSR.cjs",
+      "mimeType": "text/plain",
+      "category": "docs",
+      "subcategory": "documentation",
+      "confidence": "high",
+      "modifiedTime": "2025-11-04T18:11:09.466Z",
+      "size": "1688",
+      "parents": [
+        "1BEC6q7cFGCHGVfFv7K7wsPK9-mEPgknw"
+      ]
+    },
+    {
+      "id": "1CrfEt-P-Xqefsn1IKcp13A39Ms8Dr7Ti",
+      "name": "restoreOriginalATSR.cjs",
+      "mimeType": "text/plain",
+      "category": "docs",
+      "subcategory": "documentation",
+      "confidence": "high",
+      "modifiedTime": "2025-11-04T18:11:04.916Z",
+      "size": "7012",
+      "parents": [
+        "1v4XorI-Vuqz6Ef_ftNinVVZPhqgPxXFG"
+      ]
+    },
+    {
+      "id": "1YTuG2OyR5-7-rAZ3GB99Yu30ccsvAas1",
+      "name": "restoreATSRComplete.cjs",
+      "mimeType": "text/plain",
+      "category": "docs",
+      "subcategory": "documentation",
+      "confidence": "high",
+      "modifiedTime": "2025-11-04T18:11:03.214Z",
+      "size": "7302",
+      "parents": [
+        "1v4XorI-Vuqz6Ef_ftNinVVZPhqgPxXFG"
+      ]
+    },
+    {
+      "id": "1HqEwz-ITyunB0H3ZIzMkzi-p8kTtE4T-",
+      "name": "testATSRPrompt.cjs",
+      "mimeType": "text/plain",
+      "category": "docs",
+      "subcategory": "documentation",
+      "confidence": "high",
+      "modifiedTime": "2025-11-04T18:10:49.223Z",
+      "size": "3277",
+      "parents": [
+        "13j80vnzjYLFOf_0zJq2owVIKnovSq3HX"
+      ]
+    },
+    {
+      "id": "1PweVrGGEVnCow4EGMZyW-Bo4yAAPKZUG",
+      "name": "analyzeDuplicateScenarios.cjs",
+      "mimeType": "text/plain",
+      "category": "docs",
+      "subcategory": "documentation",
+      "confidence": "high",
+      "modifiedTime": "2025-11-04T18:10:19.585Z",
+      "size": "10043",
+      "parents": [
+        "1iTSW5voR4XHi2eEFjBPL0YQxKQPMbcel"
+      ]
+    },
+    {
+      "id": "11eNkfljsQVjmYXW3D1WypF2mkDIc0SRE",
+      "name": "validateVitalsJSON.cjs",
+      "mimeType": "text/plain",
+      "category": "docs",
+      "subcategory": "documentation",
+      "confidence": "high",
+      "modifiedTime": "2025-11-04T18:10:15.708Z",
+      "size": "8817",
+      "parents": [
+        "1iTSW5voR4XHi2eEFjBPL0YQxKQPMbcel"
+      ]
+    },
+    {
+      "id": "1tgpeZDsLhzzGqc079e3vnvVzUANc36rL",
+      "name": "COMPLETE_TOOLS_DOCUMENTATION.md",
+      "mimeType": "text/markdown",
+      "category": "docs",
+      "subcategory": "documentation",
+      "confidence": "high",
+      "modifiedTime": "2025-11-04T18:01:35.774Z",
+      "size": "9013",
+      "parents": [
+        "17jU_k0nVAx_7UMYWD5gryQ4PMQyOTCYZ"
+      ]
+    },
+    {
+      "id": "1ssrIJUEtep6DIQY1BpxIGluoGi6bg9YH",
+      "name": "TOOL_TEST_RESULTS.md",
+      "mimeType": "text/markdown",
+      "category": "docs",
+      "subcategory": "documentation",
+      "confidence": "high",
+      "modifiedTime": "2025-11-04T18:01:33.847Z",
+      "size": "1856",
+      "parents": [
+        "17jU_k0nVAx_7UMYWD5gryQ4PMQyOTCYZ"
+      ]
+    },
+    {
+      "id": "1SiTOZnvP6W7LK_nXfB7jtiJAOadPMrNN",
+      "name": "TOOLS_AUDIT_REPORT.md",
+      "mimeType": "text/markdown",
+      "category": "docs",
+      "subcategory": "documentation",
+      "confidence": "high",
+      "modifiedTime": "2025-11-04T18:01:31.798Z",
+      "size": "22700",
+      "parents": [
+        "17jU_k0nVAx_7UMYWD5gryQ4PMQyOTCYZ"
+      ]
+    },
+    {
+      "id": "16FuJJQoCXCQngUqL9cxTJF1eAZn3kGLA",
+      "name": "WORKFLOW_TOOLS_MASTER.md",
+      "mimeType": "text/markdown",
+      "category": "docs",
+      "subcategory": "documentation",
+      "confidence": "high",
+      "modifiedTime": "2025-11-04T18:01:29.772Z",
+      "size": "91960",
+      "parents": [
+        "17jU_k0nVAx_7UMYWD5gryQ4PMQyOTCYZ"
+      ]
+    },
+    {
+      "id": "1sLyW7xkpQoRedyo78jnjMkPTNQ5diu8h",
+      "name": "LEGACY_CODE_ANALYSIS.txt",
+      "mimeType": "text/plain",
+      "category": "docs",
+      "subcategory": "documentation",
+      "confidence": "high",
+      "modifiedTime": "2025-11-04T16:34:51.186Z",
+      "size": "4603",
+      "parents": [
+        "17jU_k0nVAx_7UMYWD5gryQ4PMQyOTCYZ"
+      ]
+    },
+    {
+      "id": "1WpqbfCXyDS5Glb2g1JtE14w7M-GkUpjz",
+      "name": "LEGACY_TOOLS_V3.7_DOCUMENTATION.md",
+      "mimeType": "text/markdown",
+      "category": "docs",
+      "subcategory": "documentation",
+      "confidence": "high",
+      "modifiedTime": "2025-11-04T16:34:46.762Z",
+      "size": "27595",
+      "parents": [
+        "17jU_k0nVAx_7UMYWD5gryQ4PMQyOTCYZ"
+      ]
+    },
+    {
+      "id": "1hKUnBPjcdCZUgvjpRt2RggHkZsqYHGtU",
+      "name": "COMPREHENSIVE_TOOLS_INVENTORY.md",
+      "mimeType": "text/markdown",
+      "category": "docs",
+      "subcategory": "documentation",
+      "confidence": "high",
+      "modifiedTime": "2025-11-04T16:15:31.737Z",
+      "size": "39531",
+      "parents": [
+        "1UP8APtJ3-oZ58PvTTa_RJIupPruXZDRm"
+      ]
+    }
+  ],
+  "sheets": [
+    {
+      "id": "1PvZMOb1fvN20iKztTdeqm7wtInfbad9Rbr_kTbzfBy8",
+      "name": "ER Sim - Symptom to System Category Mapping (EDITABLE)",
+      "mimeType": "application/vnd.google-apps.spreadsheet",
+      "category": "sheets",
+      "subcategory": "scenario-data",
+      "confidence": "high",
+      "modifiedTime": "2025-11-10T15:01:48.176Z",
+      "size": "2506",
+      "parents": [
+        "0AGavFioOg0nxUk9PVA"
+      ]
+    },
+    {
+      "id": "1t3qN8e537ghl38GTsXbVG8ML8OZtK2XyUpDiMQjnGAI",
+      "name": "TEST_Convert_Master_Sim_CSV_Template_with_Input",
+      "mimeType": "application/vnd.google-apps.spreadsheet",
+      "category": "sheets",
+      "subcategory": "scenario-data",
+      "confidence": "high",
+      "modifiedTime": "2025-11-07T02:05:01.923Z",
+      "size": "1438100",
+      "parents": [
+        "0AGavFioOg0nxUk9PVA"
+      ]
+    }
+  ],
+  "folders": [
+    {
+      "id": "1eUJvAk0lqzJrvkd8jPvtcSOFb0C-QW1l",
+      "name": "Apps Script Backup - Working - 2025-11-14T16-34-45",
+      "mimeType": "application/vnd.google-apps.folder",
+      "category": "folder",
+      "subcategory": "unknown",
+      "confidence": "high",
+      "modifiedTime": "2025-11-14T16:34:46.511Z",
+      "size": "N/A",
+      "parents": [
+        "0AGavFioOg0nxUk9PVA"
+      ]
+    },
+    {
+      "id": "157Gs2JvPJNT0LwCQz6yv5t_quoqyByGH",
+      "name": "Ultimate_Tool_Backup_2025-11-12T06-16-18",
+      "mimeType": "application/vnd.google-apps.folder",
+      "category": "folder",
+      "subcategory": "unknown",
+      "confidence": "high",
+      "modifiedTime": "2025-11-12T06:16:18.882Z",
+      "size": "N/A",
+      "parents": [
+        "0AGavFioOg0nxUk9PVA"
+      ]
+    },
+    {
+      "id": "1v3mW6-Uwi4bZzX2DY9EMHlczcAjHmmy5",
+      "name": "Apps Script Backup 2025-11-12",
+      "mimeType": "application/vnd.google-apps.folder",
+      "category": "folder",
+      "subcategory": "unknown",
+      "confidence": "high",
+      "modifiedTime": "2025-11-12T00:14:16.234Z",
+      "size": "N/A",
+      "parents": [
+        "0AGavFioOg0nxUk9PVA"
+      ]
+    },
+    {
+      "id": "1Xfs3LBvfSlhnsmdtwYSCzv_Fzl-Ykc7V",
+      "name": "Apps Script Backup 2025-11-12",
+      "mimeType": "application/vnd.google-apps.folder",
+      "category": "folder",
+      "subcategory": "unknown",
+      "confidence": "high",
+      "modifiedTime": "2025-11-12T00:09:52.870Z",
+      "size": "N/A",
+      "parents": [
+        "0AGavFioOg0nxUk9PVA"
+      ]
+    },
+    {
+      "id": "1bglMgUrBsqDPDqVbYt7TvHnMEVY0m35B",
+      "name": "Apps Script Backup 2025-11-11",
+      "mimeType": "application/vnd.google-apps.folder",
+      "category": "folder",
+      "subcategory": "unknown",
+      "confidence": "high",
+      "modifiedTime": "2025-11-11T18:31:29.732Z",
+      "size": "N/A",
+      "parents": [
+        "0AGavFioOg0nxUk9PVA"
+      ]
+    },
+    {
+      "id": "1D8Gdst2uiDu7IZBBx_uNY7pUv7qvOO5N",
+      "name": "Apps Script Backups",
+      "mimeType": "application/vnd.google-apps.folder",
+      "category": "folder",
+      "subcategory": "unknown",
+      "confidence": "high",
+      "modifiedTime": "2025-11-11T05:00:23.532Z",
+      "size": "N/A",
+      "parents": [
+        "0AGavFioOg0nxUk9PVA"
+      ]
+    },
+    {
+      "id": "1B00VE9QIEILV9Q1SqTitR3Poldg7-W2k",
+      "name": "Entire Code Backups",
+      "mimeType": "application/vnd.google-apps.folder",
+      "category": "folder",
+      "subcategory": "unknown",
+      "confidence": "high",
+      "modifiedTime": "2025-11-11T03:23:12.887Z",
+      "size": "N/A",
+      "parents": [
+        "0AGavFioOg0nxUk9PVA"
+      ]
+    },
+    {
+      "id": "1ss4nqpBzFKAILp0AiolLIqrPUDFfbRcl",
+      "name": "Convert Project 11-6",
+      "mimeType": "application/vnd.google-apps.folder",
+      "category": "folder",
+      "subcategory": "unknown",
+      "confidence": "high",
+      "modifiedTime": "2025-11-07T03:11:10.725Z",
+      "size": "N/A",
+      "parents": [
+        "0AGavFioOg0nxUk9PVA"
+      ]
+    },
+    {
+      "id": "1JazntmPtY37DrD77OFTWcs-gkz5LLG9A",
+      "name": "Apps Script Backup 2025-11-06",
+      "mimeType": "application/vnd.google-apps.folder",
+      "category": "folder",
+      "subcategory": "unknown",
+      "confidence": "high",
+      "modifiedTime": "2025-11-06T19:53:30.776Z",
+      "size": "N/A",
+      "parents": [
+        "13WO4iP-iaNFZH8n1pJlCsRPjfjjqSt-I"
+      ]
+    },
+    {
+      "id": "13WO4iP-iaNFZH8n1pJlCsRPjfjjqSt-I",
+      "name": "All Projects Backup - 2025-11-06",
+      "mimeType": "application/vnd.google-apps.folder",
+      "category": "folder",
+      "subcategory": "unknown",
+      "confidence": "high",
+      "modifiedTime": "2025-11-06T17:10:15.577Z",
+      "size": "N/A",
+      "parents": [
+        "0AGavFioOg0nxUk9PVA"
+      ]
+    },
+    {
+      "id": "1aGEiprFwqDLeB_wJ_cEwKWU72fAHQQL7",
+      "name": "er-sim-monitor-docs",
+      "mimeType": "application/vnd.google-apps.folder",
+      "category": "folder",
+      "subcategory": "unknown",
+      "confidence": "high",
+      "modifiedTime": "2025-11-06T15:48:05.067Z",
+      "size": "N/A",
+      "parents": [
+        "0AGavFioOg0nxUk9PVA"
+      ]
+    },
+    {
+      "id": "1P1nbLQIaGrRSEW8-6aQMvBty8fglZ7S8",
+      "name": "Categories and Pathways",
+      "mimeType": "application/vnd.google-apps.folder",
+      "category": "folder",
+      "subcategory": "unknown",
+      "confidence": "high",
+      "modifiedTime": "2025-11-06T04:33:02.327Z",
+      "size": "N/A",
+      "parents": [
+        "1q-OWAS0sgoqGg1hPHT7GYCKV6yCSquh3"
+      ]
+    },
+    {
+      "id": "1q-OWAS0sgoqGg1hPHT7GYCKV6yCSquh3",
+      "name": "Lost and Found",
+      "mimeType": "application/vnd.google-apps.folder",
+      "category": "folder",
+      "subcategory": "unknown",
+      "confidence": "high",
+      "modifiedTime": "2025-11-06T04:33:01.484Z",
+      "size": "N/A",
+      "parents": [
+        "0AGavFioOg0nxUk9PVA"
+      ]
+    },
+    {
+      "id": "1tefSDr1G8MRDX8r6zHvu2675sMna0v01",
+      "name": "Additional Scripts",
+      "mimeType": "application/vnd.google-apps.folder",
+      "category": "folder",
+      "subcategory": "unknown",
+      "confidence": "high",
+      "modifiedTime": "2025-11-04T23:06:24.352Z",
+      "size": "N/A",
+      "parents": [
+        "1XHEhp9NSja9GLnsftaP-j8PPquekVwIm"
+      ]
+    },
+    {
+      "id": "1GZGyR4YCPE7D5pm4jRrCYJb12kWVJWHU",
+      "name": "Additional Tools & Utilities",
+      "mimeType": "application/vnd.google-apps.folder",
+      "category": "folder",
+      "subcategory": "unknown",
+      "confidence": "high",
+      "modifiedTime": "2025-11-04T23:06:20.173Z",
+      "size": "N/A",
+      "parents": [
+        "1XHEhp9NSja9GLnsftaP-j8PPquekVwIm"
+      ]
+    },
+    {
+      "id": "1EphhszLRePvrLj_jVxVWQChClfgsf2St",
+      "name": "System Builders & Code Generators",
+      "mimeType": "application/vnd.google-apps.folder",
+      "category": "folder",
+      "subcategory": "unknown",
+      "confidence": "high",
+      "modifiedTime": "2025-11-04T23:06:15.156Z",
+      "size": "N/A",
+      "parents": [
+        "1XHEhp9NSja9GLnsftaP-j8PPquekVwIm"
+      ]
+    },
+    {
+      "id": "1aXvtMsSCjKpKS0ikDxzU-muVEHjIbK6_",
+      "name": "Apps Script Code Variants",
+      "mimeType": "application/vnd.google-apps.folder",
+      "category": "folder",
+      "subcategory": "unknown",
+      "confidence": "high",
+      "modifiedTime": "2025-11-04T23:06:05.849Z",
+      "size": "N/A",
+      "parents": [
+        "1XHEhp9NSja9GLnsftaP-j8PPquekVwIm"
+      ]
+    },
+    {
+      "id": "128TRJCmiRbcdV-59sftpHom8sSse-jxs",
+      "name": "Phase 12 - Optimization & Maintenance",
+      "mimeType": "application/vnd.google-apps.folder",
+      "category": "folder",
+      "subcategory": "unknown",
+      "confidence": "high",
+      "modifiedTime": "2025-11-04T23:06:03.451Z",
+      "size": "N/A",
+      "parents": [
+        "1XHEhp9NSja9GLnsftaP-j8PPquekVwIm"
+      ]
+    },
+    {
+      "id": "1MTwTnNB0g6PMRh1wxMqFOTNAqZshPON6",
+      "name": "Phase 11 - Analytics & Dashboards",
+      "mimeType": "application/vnd.google-apps.folder",
+      "category": "folder",
+      "subcategory": "unknown",
+      "confidence": "high",
+      "modifiedTime": "2025-11-04T23:06:00.756Z",
+      "size": "N/A",
+      "parents": [
+        "1XHEhp9NSja9GLnsftaP-j8PPquekVwIm"
+      ]
+    },
+    {
+      "id": "1a7Qv-pJFnmJpWvYIpdJ14M1n9TwPPpWM",
+      "name": "Phase 10 - Testing & Validation",
+      "mimeType": "application/vnd.google-apps.folder",
+      "category": "folder",
+      "subcategory": "unknown",
+      "confidence": "high",
+      "modifiedTime": "2025-11-04T23:05:53.961Z",
+      "size": "N/A",
+      "parents": [
+        "1XHEhp9NSja9GLnsftaP-j8PPquekVwIm"
+      ]
+    },
+    {
+      "id": "1NKWumjw4HO5DKPzBfBr0wyX8JzLsM5xm",
+      "name": "Phase 9 - Deployment & Distribution",
+      "mimeType": "application/vnd.google-apps.folder",
+      "category": "folder",
+      "subcategory": "unknown",
+      "confidence": "high",
+      "modifiedTime": "2025-11-04T23:05:42.469Z",
+      "size": "N/A",
+      "parents": [
+        "1XHEhp9NSja9GLnsftaP-j8PPquekVwIm"
+      ]
+    },
+    {
+      "id": "1B5rSzEX1Ny89kcd_ut8dc0AkGFpYhSIS",
+      "name": "Phase 8 - Backup & Version Control",
+      "mimeType": "application/vnd.google-apps.folder",
+      "category": "folder",
+      "subcategory": "unknown",
+      "confidence": "high",
+      "modifiedTime": "2025-11-04T23:05:32.945Z",
+      "size": "N/A",
+      "parents": [
+        "1XHEhp9NSja9GLnsftaP-j8PPquekVwIm"
+      ]
+    },
+    {
+      "id": "1zeAKRvcF69IN-TWSdKPy6HSE3C0o_tcn",
+      "name": "Phase 7 - Batch Reports & Monitoring",
+      "mimeType": "application/vnd.google-apps.folder",
+      "category": "folder",
+      "subcategory": "unknown",
+      "confidence": "high",
+      "modifiedTime": "2025-11-04T23:05:24.983Z",
+      "size": "N/A",
+      "parents": [
+        "1XHEhp9NSja9GLnsftaP-j8PPquekVwIm"
+      ]
+    },
+    {
+      "id": "1m5Ae9Z2WAyUaT1EqKQZ4cz-WXPmFaJgD",
+      "name": "Phase 6 - Media Management",
+      "mimeType": "application/vnd.google-apps.folder",
+      "category": "folder",
+      "subcategory": "unknown",
+      "confidence": "high",
+      "modifiedTime": "2025-11-04T23:05:24.037Z",
+      "size": "N/A",
+      "parents": [
+        "1XHEhp9NSja9GLnsftaP-j8PPquekVwIm"
+      ]
+    },
+    {
+      "id": "1Bmt8nL9x83rm-cmwIuxbaQ6fDR21H3cC",
+      "name": "Phase 5 - Title & Metadata Enhancement",
+      "mimeType": "application/vnd.google-apps.folder",
+      "category": "folder",
+      "subcategory": "unknown",
+      "confidence": "high",
+      "modifiedTime": "2025-11-04T23:05:16.540Z",
+      "size": "N/A",
+      "parents": [
+        "1XHEhp9NSja9GLnsftaP-j8PPquekVwIm"
+      ]
+    },
+    {
+      "id": "1lQyk8QDEB0DuaCwR6mtaekQr9R3RuFUi",
+      "name": "Phase 4 - Quality Scoring & Analysis",
+      "mimeType": "application/vnd.google-apps.folder",
+      "category": "folder",
+      "subcategory": "unknown",
+      "confidence": "high",
+      "modifiedTime": "2025-11-04T23:05:02.147Z",
+      "size": "N/A",
+      "parents": [
+        "1XHEhp9NSja9GLnsftaP-j8PPquekVwIm"
+      ]
+    },
+    {
+      "id": "1i2rIlfy8ZjoMPcONWtpFt42QiH_pXVK9",
+      "name": "Phase 3 - Scenario Generation",
+      "mimeType": "application/vnd.google-apps.folder",
+      "category": "folder",
+      "subcategory": "unknown",
+      "confidence": "high",
+      "modifiedTime": "2025-11-04T23:04:57.371Z",
+      "size": "N/A",
+      "parents": [
+        "1XHEhp9NSja9GLnsftaP-j8PPquekVwIm"
+      ]
+    },
+    {
+      "id": "1Nj-g6ooBas3gyhxeUlEpBqZn94khFEtT",
+      "name": "Phase 2 - Input Validation",
+      "mimeType": "application/vnd.google-apps.folder",
+      "category": "folder",
+      "subcategory": "unknown",
+      "confidence": "high",
+      "modifiedTime": "2025-11-04T23:04:51.187Z",
+      "size": "N/A",
+      "parents": [
+        "1XHEhp9NSja9GLnsftaP-j8PPquekVwIm"
+      ]
+    },
+    {
+      "id": "1ybKSYs2xqrD3_dkaH83ClAQxa-EQjmjB",
+      "name": "Phase 1 - Source Material Preparation",
+      "mimeType": "application/vnd.google-apps.folder",
+      "category": "folder",
+      "subcategory": "unknown",
+      "confidence": "high",
+      "modifiedTime": "2025-11-04T23:04:35.864Z",
+      "size": "N/A",
+      "parents": [
+        "1XHEhp9NSja9GLnsftaP-j8PPquekVwIm"
+      ]
+    },
+    {
+      "id": "1vPPqyMy8VnvH_afVhL_3uD54PH5TZALX",
+      "name": "Refined Utilities",
+      "mimeType": "application/vnd.google-apps.folder",
+      "category": "folder",
+      "subcategory": "unknown",
+      "confidence": "high",
+      "modifiedTime": "2025-11-04T18:31:03.146Z",
+      "size": "N/A",
+      "parents": [
+        "1hI4TvB6JxBNrLCH56nCiiBIFKM2AB5eF"
+      ]
+    },
+    {
+      "id": "1j8TT6shvxfk12RHD5wMczLxbJdRb9YVn",
+      "name": "Core Modules",
+      "mimeType": "application/vnd.google-apps.folder",
+      "category": "folder",
+      "subcategory": "unknown",
+      "confidence": "high",
+      "modifiedTime": "2025-11-04T18:31:02.286Z",
+      "size": "N/A",
+      "parents": [
+        "1hI4TvB6JxBNrLCH56nCiiBIFKM2AB5eF"
+      ]
+    },
+    {
+      "id": "1hI4TvB6JxBNrLCH56nCiiBIFKM2AB5eF",
+      "name": "Current Code",
+      "mimeType": "application/vnd.google-apps.folder",
+      "category": "folder",
+      "subcategory": "unknown",
+      "confidence": "high",
+      "modifiedTime": "2025-11-04T18:26:28.646Z",
+      "size": "N/A",
+      "parents": [
+        "1XHEhp9NSja9GLnsftaP-j8PPquekVwIm"
+      ]
+    },
+    {
+      "id": "1hTC9X7mFluUX8EIdkjjDZXtes8fliqhW",
+      "name": "Legacy Code",
+      "mimeType": "application/vnd.google-apps.folder",
+      "category": "folder",
+      "subcategory": "unknown",
+      "confidence": "high",
+      "modifiedTime": "2025-11-04T18:26:27.906Z",
+      "size": "N/A",
+      "parents": [
+        "1XHEhp9NSja9GLnsftaP-j8PPquekVwIm"
+      ]
+    },
+    {
+      "id": "13vLjpWARk1RCsntpyyjp8y3-CSYjBEff",
+      "name": "Additional Scripts",
+      "mimeType": "application/vnd.google-apps.folder",
+      "category": "folder",
+      "subcategory": "unknown",
+      "confidence": "high",
+      "modifiedTime": "2025-11-04T18:11:49.830Z",
+      "size": "N/A",
+      "parents": [
+        "1hTC9X7mFluUX8EIdkjjDZXtes8fliqhW"
+      ]
+    },
+    {
+      "id": "1tEJKViC80evg9SnZ7JLnHOk-oIgEiVSl",
+      "name": "Additional Tools & Utilities",
+      "mimeType": "application/vnd.google-apps.folder",
+      "category": "folder",
+      "subcategory": "unknown",
+      "confidence": "high",
+      "modifiedTime": "2025-11-04T18:11:45.505Z",
+      "size": "N/A",
+      "parents": [
+        "1hTC9X7mFluUX8EIdkjjDZXtes8fliqhW"
+      ]
+    },
+    {
+      "id": "1VmKzGWS7yYyWcJQxXaU3ssN56t2IAoO-",
+      "name": "System Builders & Code Generators",
+      "mimeType": "application/vnd.google-apps.folder",
+      "category": "folder",
+      "subcategory": "unknown",
+      "confidence": "high",
+      "modifiedTime": "2025-11-04T18:11:41.186Z",
+      "size": "N/A",
+      "parents": [
+        "1hTC9X7mFluUX8EIdkjjDZXtes8fliqhW"
+      ]
+    },
+    {
+      "id": "121Ni9arXc2JgpGExRoZmf3GXBJwVFaCZ",
+      "name": "Apps Script Code Variants",
+      "mimeType": "application/vnd.google-apps.folder",
+      "category": "folder",
+      "subcategory": "unknown",
+      "confidence": "high",
+      "modifiedTime": "2025-11-04T18:11:34.907Z",
+      "size": "N/A",
+      "parents": [
+        "1hTC9X7mFluUX8EIdkjjDZXtes8fliqhW"
+      ]
+    },
+    {
+      "id": "1IgBtQmXaF43LiAsksa15XhNM8uq1Y2zO",
+      "name": "Phase 12 - Optimization & Maintenance",
+      "mimeType": "application/vnd.google-apps.folder",
+      "category": "folder",
+      "subcategory": "unknown",
+      "confidence": "high",
+      "modifiedTime": "2025-11-04T18:11:29.426Z",
+      "size": "N/A",
+      "parents": [
+        "1hTC9X7mFluUX8EIdkjjDZXtes8fliqhW"
+      ]
+    },
+    {
+      "id": "1MJeVB_ctya6iiYQY3fsjpUuOgooQms2j",
+      "name": "Phase 11 - Analytics & Dashboards",
+      "mimeType": "application/vnd.google-apps.folder",
+      "category": "folder",
+      "subcategory": "unknown",
+      "confidence": "high",
+      "modifiedTime": "2025-11-04T18:11:26.545Z",
+      "size": "N/A",
+      "parents": [
+        "1hTC9X7mFluUX8EIdkjjDZXtes8fliqhW"
+      ]
+    },
+    {
+      "id": "1JtVebm7vPhL1JyXhJNqJgysoI_mLCsGU",
+      "name": "Phase 10 - Testing & Validation",
+      "mimeType": "application/vnd.google-apps.folder",
+      "category": "folder",
+      "subcategory": "unknown",
+      "confidence": "high",
+      "modifiedTime": "2025-11-04T18:11:20.599Z",
+      "size": "N/A",
+      "parents": [
+        "1hTC9X7mFluUX8EIdkjjDZXtes8fliqhW"
+      ]
+    },
+    {
+      "id": "1BEC6q7cFGCHGVfFv7K7wsPK9-mEPgknw",
+      "name": "Phase 9 - Deployment & Distribution",
+      "mimeType": "application/vnd.google-apps.folder",
+      "category": "folder",
+      "subcategory": "unknown",
+      "confidence": "high",
+      "modifiedTime": "2025-11-04T18:11:08.030Z",
+      "size": "N/A",
+      "parents": [
+        "1hTC9X7mFluUX8EIdkjjDZXtes8fliqhW"
+      ]
+    },
+    {
+      "id": "1v4XorI-Vuqz6Ef_ftNinVVZPhqgPxXFG",
+      "name": "Phase 8 - Backup & Version Control",
+      "mimeType": "application/vnd.google-apps.folder",
+      "category": "folder",
+      "subcategory": "unknown",
+      "confidence": "high",
+      "modifiedTime": "2025-11-04T18:10:58.677Z",
+      "size": "N/A",
+      "parents": [
+        "1hTC9X7mFluUX8EIdkjjDZXtes8fliqhW"
+      ]
+    },
+    {
+      "id": "14p-Dz9rnQg_LAqgveSe8dQsKdvI4tUFg",
+      "name": "Phase 7 - Batch Reports & Monitoring",
+      "mimeType": "application/vnd.google-apps.folder",
+      "category": "folder",
+      "subcategory": "unknown",
+      "confidence": "high",
+      "modifiedTime": "2025-11-04T18:10:51.659Z",
+      "size": "N/A",
+      "parents": [
+        "1hTC9X7mFluUX8EIdkjjDZXtes8fliqhW"
+      ]
+    },
+    {
+      "id": "1yRgVMLeGkhYOWQgb-njCVCUSypN3w9Q4",
+      "name": "Phase 6 - Media Management",
+      "mimeType": "application/vnd.google-apps.folder",
+      "category": "folder",
+      "subcategory": "unknown",
+      "confidence": "high",
+      "modifiedTime": "2025-11-04T18:10:50.451Z",
+      "size": "N/A",
+      "parents": [
+        "1hTC9X7mFluUX8EIdkjjDZXtes8fliqhW"
+      ]
+    },
+    {
+      "id": "13j80vnzjYLFOf_0zJq2owVIKnovSq3HX",
+      "name": "Phase 5 - Title & Metadata Enhancement",
+      "mimeType": "application/vnd.google-apps.folder",
+      "category": "folder",
+      "subcategory": "unknown",
+      "confidence": "high",
+      "modifiedTime": "2025-11-04T18:10:41.451Z",
+      "size": "N/A",
+      "parents": [
+        "1hTC9X7mFluUX8EIdkjjDZXtes8fliqhW"
+      ]
+    },
+    {
+      "id": "1s4-Bgi2lFO7g1hQcvF0hMQeclXHlywKW",
+      "name": "Phase 4 - Quality Scoring & Analysis",
+      "mimeType": "application/vnd.google-apps.folder",
+      "category": "folder",
+      "subcategory": "unknown",
+      "confidence": "high",
+      "modifiedTime": "2025-11-04T18:10:25.169Z",
+      "size": "N/A",
+      "parents": [
+        "1hTC9X7mFluUX8EIdkjjDZXtes8fliqhW"
+      ]
+    },
+    {
+      "id": "1Z2GvuIwpGTkj3RXhRbImh-6rgluIx64f",
+      "name": "Phase 3 - Scenario Generation",
+      "mimeType": "application/vnd.google-apps.folder",
+      "category": "folder",
+      "subcategory": "unknown",
+      "confidence": "high",
+      "modifiedTime": "2025-11-04T18:10:20.857Z",
+      "size": "N/A",
+      "parents": [
+        "1hTC9X7mFluUX8EIdkjjDZXtes8fliqhW"
+      ]
+    },
+    {
+      "id": "1iTSW5voR4XHi2eEFjBPL0YQxKQPMbcel",
+      "name": "Phase 2 - Input Validation",
+      "mimeType": "application/vnd.google-apps.folder",
+      "category": "folder",
+      "subcategory": "unknown",
+      "confidence": "high",
+      "modifiedTime": "2025-11-04T18:10:14.270Z",
+      "size": "N/A",
+      "parents": [
+        "1hTC9X7mFluUX8EIdkjjDZXtes8fliqhW"
+      ]
+    },
+    {
+      "id": "1k-ChgvuyQTL8_p98q99t8OW4chVnDHFT",
+      "name": "Phase 1 - Source Material Preparation",
+      "mimeType": "application/vnd.google-apps.folder",
+      "category": "folder",
+      "subcategory": "unknown",
+      "confidence": "high",
+      "modifiedTime": "2025-11-04T18:09:59.988Z",
+      "size": "N/A",
+      "parents": [
+        "1hTC9X7mFluUX8EIdkjjDZXtes8fliqhW"
+      ]
+    },
+    {
+      "id": "1YwJhYp7iWWaqEcJKQhnbrXXVMNBhTHCK",
+      "name": "Phase V.E - AI Facilitator",
+      "mimeType": "application/vnd.google-apps.folder",
+      "category": "folder",
+      "subcategory": "unknown",
+      "confidence": "high",
+      "modifiedTime": "2025-11-04T16:20:32.432Z",
+      "size": "N/A",
+      "parents": [
+        "1iO-cCNybsf_1Ydzwif3j7690fghIJh9u"
+      ]
+    },
+    {
+      "id": "1QXND_5y6oH7HZ-Z7REfwvEzxmnqGLwiJ",
+      "name": "Phase V.D - Database Migration",
+      "mimeType": "application/vnd.google-apps.folder",
+      "category": "folder",
+      "subcategory": "unknown",
+      "confidence": "high",
+      "modifiedTime": "2025-11-04T16:20:31.370Z",
+      "size": "N/A",
+      "parents": [
+        "1iO-cCNybsf_1Ydzwif3j7690fghIJh9u"
+      ]
+    },
+    {
+      "id": "1JGzZgsEXLkQpFhIp9RDMuJPey26HDcMk",
+      "name": "Phase V.C - Subscription Platform",
+      "mimeType": "application/vnd.google-apps.folder",
+      "category": "folder",
+      "subcategory": "unknown",
+      "confidence": "high",
+      "modifiedTime": "2025-11-04T16:20:30.534Z",
+      "size": "N/A",
+      "parents": [
+        "1iO-cCNybsf_1Ydzwif3j7690fghIJh9u"
+      ]
+    },
+    {
+      "id": "1UpeByRhz8ZCxaJ9xbN3xsMy-eu8foEpM",
+      "name": "Phase V.B - AWS Infrastructure",
+      "mimeType": "application/vnd.google-apps.folder",
+      "category": "folder",
+      "subcategory": "unknown",
+      "confidence": "high",
+      "modifiedTime": "2025-11-04T16:20:29.657Z",
+      "size": "N/A",
+      "parents": [
+        "1iO-cCNybsf_1Ydzwif3j7690fghIJh9u"
+      ]
+    },
+    {
+      "id": "1hSXmMlGcZ5cRdIYijIbFdtHvBtrqmRH6",
+      "name": "Phase V.A - Prerequisites",
+      "mimeType": "application/vnd.google-apps.folder",
+      "category": "folder",
+      "subcategory": "unknown",
+      "confidence": "high",
+      "modifiedTime": "2025-11-04T16:20:28.565Z",
+      "size": "N/A",
+      "parents": [
+        "1iO-cCNybsf_1Ydzwif3j7690fghIJh9u"
+      ]
+    },
+    {
+      "id": "1iO-cCNybsf_1Ydzwif3j7690fghIJh9u",
+      "name": "☁️ Phase V - AWS Integration & Production (FUTURE)",
+      "mimeType": "application/vnd.google-apps.folder",
+      "category": "folder",
+      "subcategory": "unknown",
+      "confidence": "high",
+      "modifiedTime": "2025-11-04T16:20:27.554Z",
+      "size": "N/A",
+      "parents": [
+        "1LjQcTA1U3TNwNchKqBs5GkvqLmDD6hh9"
+      ]
+    },
+    {
+      "id": "1_jS1O0PSBmSYj-Mv4ZbINSycIWek9wtd",
+      "name": "Automated Refinement",
+      "mimeType": "application/vnd.google-apps.folder",
+      "category": "folder",
+      "subcategory": "unknown",
+      "confidence": "high",
+      "modifiedTime": "2025-11-04T16:20:26.657Z",
+      "size": "N/A",
+      "parents": [
+        "1kY86Fcp2hIkBMcdsXt1kYVEBwWUF_RH9"
+      ]
+    },
+    {
+      "id": "1CZ-PdRzQD73WOTtrpdKNtfsDhupxj7ID",
+      "name": "Curriculum Balancing",
+      "mimeType": "application/vnd.google-apps.folder",
+      "category": "folder",
+      "subcategory": "unknown",
+      "confidence": "high",
+      "modifiedTime": "2025-11-04T16:20:25.784Z",
+      "size": "N/A",
+      "parents": [
+        "1kY86Fcp2hIkBMcdsXt1kYVEBwWUF_RH9"
+      ]
+    },
+    {
+      "id": "1hKhP4rRNX7OUA5TBVrfFXRob_DF_f2Ws",
+      "name": "Similarity Analysis",
+      "mimeType": "application/vnd.google-apps.folder",
+      "category": "folder",
+      "subcategory": "unknown",
+      "confidence": "high",
+      "modifiedTime": "2025-11-04T16:20:24.928Z",
+      "size": "N/A",
+      "parents": [
+        "1kY86Fcp2hIkBMcdsXt1kYVEBwWUF_RH9"
+      ]
+    },
+    {
+      "id": "1kY86Fcp2hIkBMcdsXt1kYVEBwWUF_RH9",
+      "name": "🧠 Phase IV - Intelligent Case Improvement (PLANNED)",
+      "mimeType": "application/vnd.google-apps.folder",
+      "category": "folder",
+      "subcategory": "unknown",
+      "confidence": "high",
+      "modifiedTime": "2025-11-04T16:20:24.148Z",
+      "size": "N/A",
+      "parents": [
+        "1LjQcTA1U3TNwNchKqBs5GkvqLmDD6hh9"
+      ]
+    },
+    {
+      "id": "1Y9U4Kb6UX1FmV8j59qyRIEMrQGWl1Zu9",
+      "name": "Modular Apps Script Architecture",
+      "mimeType": "application/vnd.google-apps.folder",
+      "category": "folder",
+      "subcategory": "unknown",
+      "confidence": "high",
+      "modifiedTime": "2025-11-04T16:20:23.377Z",
+      "size": "N/A",
+      "parents": [
+        "1ioA_PkSJQAptQ04JtnxkF6F9ejGgnniK"
+      ]
+    },
+    {
+      "id": "11sCr2v7b0mcb_LUJVKdMQtBNXv9ElEv_",
+      "name": "Reporting Systems",
+      "mimeType": "application/vnd.google-apps.folder",
+      "category": "folder",
+      "subcategory": "unknown",
+      "confidence": "high",
+      "modifiedTime": "2025-11-04T16:20:22.527Z",
+      "size": "N/A",
+      "parents": [
+        "1ioA_PkSJQAptQ04JtnxkF6F9ejGgnniK"
+      ]
+    },
+    {
+      "id": "1O5ya308JMQIP5_pPfgcZ1A2xqHcxIbrc",
+      "name": "Automated Quality Metrics",
+      "mimeType": "application/vnd.google-apps.folder",
+      "category": "folder",
+      "subcategory": "unknown",
+      "confidence": "high",
+      "modifiedTime": "2025-11-04T16:20:21.584Z",
+      "size": "N/A",
+      "parents": [
+        "1ioA_PkSJQAptQ04JtnxkF6F9ejGgnniK"
+      ]
+    },
+    {
+      "id": "1ioA_PkSJQAptQ04JtnxkF6F9ejGgnniK",
+      "name": "📊 Phase III - Quality Scoring & Assessment (PLANNED)",
+      "mimeType": "application/vnd.google-apps.folder",
+      "category": "folder",
+      "subcategory": "unknown",
+      "confidence": "high",
+      "modifiedTime": "2025-11-04T16:20:20.945Z",
+      "size": "N/A",
+      "parents": [
+        "1LjQcTA1U3TNwNchKqBs5GkvqLmDD6hh9"
+      ]
+    },
+    {
+      "id": "1Un0N_wPA76Gsc6df3m_PmdKIgL_pfOaS",
+      "name": "Title & Text Similarity",
+      "mimeType": "application/vnd.google-apps.folder",
+      "category": "folder",
+      "subcategory": "unknown",
+      "confidence": "high",
+      "modifiedTime": "2025-11-04T16:20:20.167Z",
+      "size": "N/A",
+      "parents": [
+        "1X4BtdcqjdZ979ksATFwubaZEYAC_fQhZ"
+      ]
+    },
+    {
+      "id": "1Tfm-qD9Z4PHMYHbcdZFuaDKFa_JYMREo",
+      "name": "Media URL Uniqueness Check",
+      "mimeType": "application/vnd.google-apps.folder",
+      "category": "folder",
+      "subcategory": "unknown",
+      "confidence": "high",
+      "modifiedTime": "2025-11-04T16:20:19.345Z",
+      "size": "N/A",
+      "parents": [
+        "1X4BtdcqjdZ979ksATFwubaZEYAC_fQhZ"
+      ]
+    },
+    {
+      "id": "15gPvrGwB3MkatkPE5BreEkIX7o43grSM",
+      "name": "Phase II.B - Advanced Quality Scoring",
+      "mimeType": "application/vnd.google-apps.folder",
+      "category": "folder",
+      "subcategory": "unknown",
+      "confidence": "high",
+      "modifiedTime": "2025-11-04T16:20:18.398Z",
+      "size": "N/A",
+      "parents": [
+        "1X4BtdcqjdZ979ksATFwubaZEYAC_fQhZ"
+      ]
+    },
+    {
+      "id": "1FWqXLqT_uvxA8hmxpWQmBHJWOQDFCUJi",
+      "name": "Phase II.A - Smart Duplicate Detection",
+      "mimeType": "application/vnd.google-apps.folder",
+      "category": "folder",
+      "subcategory": "unknown",
+      "confidence": "high",
+      "modifiedTime": "2025-11-04T16:20:17.643Z",
+      "size": "N/A",
+      "parents": [
+        "1X4BtdcqjdZ979ksATFwubaZEYAC_fQhZ"
+      ]
+    },
+    {
+      "id": "1X4BtdcqjdZ979ksATFwubaZEYAC_fQhZ",
+      "name": "🔄 Phase II - Quality Control Mechanisms (IN PROGRESS)",
+      "mimeType": "application/vnd.google-apps.folder",
+      "category": "folder",
+      "subcategory": "unknown",
+      "confidence": "high",
+      "modifiedTime": "2025-11-04T16:20:16.764Z",
+      "size": "N/A",
+      "parents": [
+        "1LjQcTA1U3TNwNchKqBs5GkvqLmDD6hh9"
+      ]
+    },
+    {
+      "id": "1i3cbVRAdG4wKEIYLtoLGm8Zd_h12XLz7",
+      "name": "Input Validation",
+      "mimeType": "application/vnd.google-apps.folder",
+      "category": "folder",
+      "subcategory": "unknown",
+      "confidence": "high",
+      "modifiedTime": "2025-11-04T16:20:15.974Z",
+      "size": "N/A",
+      "parents": [
+        "1dOhU-lPJsRdcx7i7e0hERKf9i2z5xjG1"
+      ]
+    },
+    {
+      "id": "1R4xBJXR-VuS9eqa9L62OPSXzg1lcsPd0",
+      "name": "Clinical Defaults",
+      "mimeType": "application/vnd.google-apps.folder",
+      "category": "folder",
+      "subcategory": "unknown",
+      "confidence": "high",
+      "modifiedTime": "2025-11-04T16:20:15.192Z",
+      "size": "N/A",
+      "parents": [
+        "1dOhU-lPJsRdcx7i7e0hERKf9i2z5xjG1"
+      ]
+    },
+    {
+      "id": "1B073m4CtrFhB2VcutDHzwrEUNnJKanVV",
+      "name": "Scenario Processing System",
+      "mimeType": "application/vnd.google-apps.folder",
+      "category": "folder",
+      "subcategory": "unknown",
+      "confidence": "high",
+      "modifiedTime": "2025-11-04T16:20:14.462Z",
+      "size": "N/A",
+      "parents": [
+        "1dOhU-lPJsRdcx7i7e0hERKf9i2z5xjG1"
+      ]
+    },
+    {
+      "id": "1owAH_2mknZp9DF2EwTjlhx_xqJFphiXZ",
+      "name": "Source Data Collection",
+      "mimeType": "application/vnd.google-apps.folder",
+      "category": "folder",
+      "subcategory": "unknown",
+      "confidence": "high",
+      "modifiedTime": "2025-11-04T16:20:13.665Z",
+      "size": "N/A",
+      "parents": [
+        "1dOhU-lPJsRdcx7i7e0hERKf9i2z5xjG1"
+      ]
+    },
+    {
+      "id": "1dOhU-lPJsRdcx7i7e0hERKf9i2z5xjG1",
+      "name": "🏁 Phase I - Data Organization & Case Management (COMPLETE)",
+      "mimeType": "application/vnd.google-apps.folder",
+      "category": "folder",
+      "subcategory": "unknown",
+      "confidence": "high",
+      "modifiedTime": "2025-11-04T16:20:12.849Z",
+      "size": "N/A",
+      "parents": [
+        "1LjQcTA1U3TNwNchKqBs5GkvqLmDD6hh9"
+      ]
+    },
+    {
+      "id": "1jrSqPqOiHxiyHuKHDaW7WaCFxNJJzICZ",
+      "name": "Client Deliverables",
+      "mimeType": "application/vnd.google-apps.folder",
+      "category": "folder",
+      "subcategory": "unknown",
+      "confidence": "high",
+      "modifiedTime": "2025-11-04T16:18:32.617Z",
+      "size": "N/A",
+      "parents": [
+        "1KvxZSH0AQZK-mLawAnDn8SlAh4AdYOUx"
+      ]
+    },
+    {
+      "id": "1sbWeTfUeAEhIbk3R1FWGiCWMw7ZDFioz",
+      "name": "Production Releases",
+      "mimeType": "application/vnd.google-apps.folder",
+      "category": "folder",
+      "subcategory": "unknown",
+      "confidence": "high",
+      "modifiedTime": "2025-11-04T16:18:31.839Z",
+      "size": "N/A",
+      "parents": [
+        "1KvxZSH0AQZK-mLawAnDn8SlAh4AdYOUx"
+      ]
+    },
+    {
+      "id": "1KvxZSH0AQZK-mLawAnDn8SlAh4AdYOUx",
+      "name": "📦 Deliverables",
+      "mimeType": "application/vnd.google-apps.folder",
+      "category": "folder",
+      "subcategory": "unknown",
+      "confidence": "high",
+      "modifiedTime": "2025-11-04T16:18:30.986Z",
+      "size": "N/A",
+      "parents": [
+        "1LjQcTA1U3TNwNchKqBs5GkvqLmDD6hh9"
+      ]
+    },
+    {
+      "id": "1HLd82a4sF8ExXtZyWc0iVAbZ5VFVPTPO",
+      "name": "Decision Logs",
+      "mimeType": "application/vnd.google-apps.folder",
+      "category": "folder",
+      "subcategory": "unknown",
+      "confidence": "high",
+      "modifiedTime": "2025-11-04T16:18:30.136Z",
+      "size": "N/A",
+      "parents": [
+        "1JfRnVaYQzmowRxiWS-QpN4vpgvwDb_BN"
+      ]
+    },
+    {
+      "id": "1D_53z58PupEejTsdpEhiuw8QdUr2dxXT",
+      "name": "Requirements",
+      "mimeType": "application/vnd.google-apps.folder",
+      "category": "folder",
+      "subcategory": "unknown",
+      "confidence": "high",
+      "modifiedTime": "2025-11-04T16:18:29.211Z",
+      "size": "N/A",
+      "parents": [
+        "1JfRnVaYQzmowRxiWS-QpN4vpgvwDb_BN"
+      ]
+    },
+    {
+      "id": "1kAawsFWnSLX1CaTw2Sq4tmDCIWv31HGd",
+      "name": "Roadmaps",
+      "mimeType": "application/vnd.google-apps.folder",
+      "category": "folder",
+      "subcategory": "unknown",
+      "confidence": "high",
+      "modifiedTime": "2025-11-04T16:18:28.511Z",
+      "size": "N/A",
+      "parents": [
+        "1JfRnVaYQzmowRxiWS-QpN4vpgvwDb_BN"
+      ]
+    },
+    {
+      "id": "1JfRnVaYQzmowRxiWS-QpN4vpgvwDb_BN",
+      "name": "🎯 Project Management",
+      "mimeType": "application/vnd.google-apps.folder",
+      "category": "folder",
+      "subcategory": "unknown",
+      "confidence": "high",
+      "modifiedTime": "2025-11-04T16:18:27.650Z",
+      "size": "N/A",
+      "parents": [
+        "1LjQcTA1U3TNwNchKqBs5GkvqLmDD6hh9"
+      ]
+    },
+    {
+      "id": "1ry4Ty9lEDAo3ctzkQxtVHSb9gyGQ9wwL",
+      "name": "Configuration Backups",
+      "mimeType": "application/vnd.google-apps.folder",
+      "category": "folder",
+      "subcategory": "unknown",
+      "confidence": "high",
+      "modifiedTime": "2025-11-04T16:18:26.789Z",
+      "size": "N/A",
+      "parents": [
+        "1_Bu2Rn6Z7t27D1R1h3dY-4iKLS3p0N0V"
+      ]
+    },
+    {
+      "id": "1ceXhn-mlKPEfM4P7c0WVZTYH-bdpbHxR",
+      "name": "Data Backups",
+      "mimeType": "application/vnd.google-apps.folder",
+      "category": "folder",
+      "subcategory": "unknown",
+      "confidence": "high",
+      "modifiedTime": "2025-11-04T16:18:25.867Z",
+      "size": "N/A",
+      "parents": [
+        "1_Bu2Rn6Z7t27D1R1h3dY-4iKLS3p0N0V"
+      ]
+    },
+    {
+      "id": "1XHEhp9NSja9GLnsftaP-j8PPquekVwIm",
+      "name": "Code Backups",
+      "mimeType": "application/vnd.google-apps.folder",
+      "category": "folder",
+      "subcategory": "unknown",
+      "confidence": "high",
+      "modifiedTime": "2025-11-04T16:18:24.722Z",
+      "size": "N/A",
+      "parents": [
+        "1_Bu2Rn6Z7t27D1R1h3dY-4iKLS3p0N0V"
+      ]
+    },
+    {
+      "id": "1_Bu2Rn6Z7t27D1R1h3dY-4iKLS3p0N0V",
+      "name": "💾 Backups",
+      "mimeType": "application/vnd.google-apps.folder",
+      "category": "folder",
+      "subcategory": "unknown",
+      "confidence": "high",
+      "modifiedTime": "2025-11-04T16:18:23.931Z",
+      "size": "N/A",
+      "parents": [
+        "1LjQcTA1U3TNwNchKqBs5GkvqLmDD6hh9"
+      ]
+    },
+    {
+      "id": "1uwP3wBlJmu2OeOSOtUPt0MkKnx7F3HNj",
+      "name": "Dashboards",
+      "mimeType": "application/vnd.google-apps.folder",
+      "category": "folder",
+      "subcategory": "unknown",
+      "confidence": "high",
+      "modifiedTime": "2025-11-04T16:18:23.121Z",
+      "size": "N/A",
+      "parents": [
+        "1CfrCoAG_PszbqkPw4bSkbFbh0n1rNOsJ"
+      ]
+    },
+    {
+      "id": "1TjnxSEFC2R_OtnM0zfhNmuU6ExFk1N7B",
+      "name": "Batch Reports",
+      "mimeType": "application/vnd.google-apps.folder",
+      "category": "folder",
+      "subcategory": "unknown",
+      "confidence": "high",
+      "modifiedTime": "2025-11-04T16:18:22.378Z",
+      "size": "N/A",
+      "parents": [
+        "1CfrCoAG_PszbqkPw4bSkbFbh0n1rNOsJ"
+      ]
+    },
+    {
+      "id": "1mxoJ1BvnP-_Gba2sLPLFOdHcXA5O7Hsh",
+      "name": "Quality Reports",
+      "mimeType": "application/vnd.google-apps.folder",
+      "category": "folder",
+      "subcategory": "unknown",
+      "confidence": "high",
+      "modifiedTime": "2025-11-04T16:18:21.342Z",
+      "size": "N/A",
+      "parents": [
+        "1CfrCoAG_PszbqkPw4bSkbFbh0n1rNOsJ"
+      ]
+    },
+    {
+      "id": "1CfrCoAG_PszbqkPw4bSkbFbh0n1rNOsJ",
+      "name": "📊 Reports & Analytics",
+      "mimeType": "application/vnd.google-apps.folder",
+      "category": "folder",
+      "subcategory": "unknown",
+      "confidence": "high",
+      "modifiedTime": "2025-11-04T16:18:20.552Z",
+      "size": "N/A",
+      "parents": [
+        "1LjQcTA1U3TNwNchKqBs5GkvqLmDD6hh9"
+      ]
+    },
+    {
+      "id": "1lZodqJOknxETOjZCdS_PH7y5Wjwg6yjQ",
+      "name": "Batch Processing",
+      "mimeType": "application/vnd.google-apps.folder",
+      "category": "folder",
+      "subcategory": "unknown",
+      "confidence": "high",
+      "modifiedTime": "2025-11-04T16:18:19.100Z",
+      "size": "N/A",
+      "parents": [
+        "1wxr4nDmGZVF-l2C2vfS4hPcLfUVbrj40"
+      ]
+    },
+    {
+      "id": "14W9e8Ou1gkY16f_O0Qw9olZMR-6OibRR",
+      "name": "Waveform Management",
+      "mimeType": "application/vnd.google-apps.folder",
+      "category": "folder",
+      "subcategory": "unknown",
+      "confidence": "high",
+      "modifiedTime": "2025-11-04T16:18:18.078Z",
+      "size": "N/A",
+      "parents": [
+        "1wxr4nDmGZVF-l2C2vfS4hPcLfUVbrj40"
+      ]
+    },
+    {
+      "id": "1zkflf0vQ5JiriR6FMc8R3lV_ymAU4xHq",
+      "name": "ECG Processing",
+      "mimeType": "application/vnd.google-apps.folder",
+      "category": "folder",
+      "subcategory": "unknown",
+      "confidence": "high",
+      "modifiedTime": "2025-11-04T16:18:17.126Z",
+      "size": "N/A",
+      "parents": [
+        "1wxr4nDmGZVF-l2C2vfS4hPcLfUVbrj40"
+      ]
+    },
+    {
+      "id": "1wxr4nDmGZVF-l2C2vfS4hPcLfUVbrj40",
+      "name": "🛠️ Tools & Utilities",
+      "mimeType": "application/vnd.google-apps.folder",
+      "category": "folder",
+      "subcategory": "unknown",
+      "confidence": "high",
+      "modifiedTime": "2025-11-04T16:18:16.405Z",
+      "size": "N/A",
+      "parents": [
+        "1LjQcTA1U3TNwNchKqBs5GkvqLmDD6hh9"
+      ]
+    },
+    {
+      "id": "16siD8F0fA4wpwz6sF4_qM8tHmrprCvZq",
+      "name": "User Guides",
+      "mimeType": "application/vnd.google-apps.folder",
+      "category": "folder",
+      "subcategory": "unknown",
+      "confidence": "high",
+      "modifiedTime": "2025-11-04T16:18:15.573Z",
+      "size": "N/A",
+      "parents": [
+        "1UP8APtJ3-oZ58PvTTa_RJIupPruXZDRm"
+      ]
+    },
+    {
+      "id": "1358h5oIBni1GsRQsf3BK_ZLFR_LEqscl",
+      "name": "Session Summaries",
+      "mimeType": "application/vnd.google-apps.folder",
+      "category": "folder",
+      "subcategory": "unknown",
+      "confidence": "high",
+      "modifiedTime": "2025-11-04T16:18:14.817Z",
+      "size": "N/A",
+      "parents": [
+        "1UP8APtJ3-oZ58PvTTa_RJIupPruXZDRm"
+      ]
+    },
+    {
+      "id": "17jU_k0nVAx_7UMYWD5gryQ4PMQyOTCYZ",
+      "name": "System Documentation",
+      "mimeType": "application/vnd.google-apps.folder",
+      "category": "folder",
+      "subcategory": "unknown",
+      "confidence": "high",
+      "modifiedTime": "2025-11-04T16:18:13.898Z",
+      "size": "N/A",
+      "parents": [
+        "1UP8APtJ3-oZ58PvTTa_RJIupPruXZDRm"
+      ]
+    },
+    {
+      "id": "15sRXZQ9sYLVElS6wX44adBa9gmBfgo1F",
+      "name": "Architecture & Planning",
+      "mimeType": "application/vnd.google-apps.folder",
+      "category": "folder",
+      "subcategory": "unknown",
+      "confidence": "high",
+      "modifiedTime": "2025-11-04T16:18:13.192Z",
+      "size": "N/A",
+      "parents": [
+        "1UP8APtJ3-oZ58PvTTa_RJIupPruXZDRm"
+      ]
+    },
+    {
+      "id": "1UP8APtJ3-oZ58PvTTa_RJIupPruXZDRm",
+      "name": "📚 Documentation",
+      "mimeType": "application/vnd.google-apps.folder",
+      "category": "folder",
+      "subcategory": "unknown",
+      "confidence": "high",
+      "modifiedTime": "2025-11-04T16:18:10.860Z",
+      "size": "N/A",
+      "parents": [
+        "1LjQcTA1U3TNwNchKqBs5GkvqLmDD6hh9"
+      ]
+    }
+  ],
+  "other": []
+}

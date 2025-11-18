@@ -1,0 +1,146 @@
+[
+  {
+    "pathway": "Cardiac Mastery Foundations",
+    "caseCount": 57,
+    "foundationalCount": 57,
+    "foundationalPercent": "100.0",
+    "avgComplexity": "2.21",
+    "avgPriority": "10.00",
+    "systemFocus": "Unknown"
+  },
+  {
+    "pathway": "Airway & Breathing Mastery",
+    "caseCount": 44,
+    "foundationalCount": 43,
+    "foundationalPercent": "97.7",
+    "avgComplexity": "2.14",
+    "avgPriority": "9.52",
+    "systemFocus": "Unknown"
+  },
+  {
+    "pathway": "Stroke & Neuro Foundations",
+    "caseCount": 43,
+    "foundationalCount": 29,
+    "foundationalPercent": "67.4",
+    "avgComplexity": "3.05",
+    "avgPriority": "9.58",
+    "systemFocus": "Unknown"
+  },
+  {
+    "pathway": "Multi-System Foundations",
+    "caseCount": 15,
+    "foundationalCount": 15,
+    "foundationalPercent": "100.0",
+    "avgComplexity": "1.93",
+    "avgPriority": "9.13",
+    "systemFocus": "Unknown"
+  },
+  {
+    "pathway": "ATLS Mastery",
+    "caseCount": 10,
+    "foundationalCount": 10,
+    "foundationalPercent": "100.0",
+    "avgComplexity": "3.00",
+    "avgPriority": "9.50",
+    "systemFocus": "Unknown"
+  },
+  {
+    "pathway": "Comprehensive Emergency Excellence",
+    "caseCount": 4,
+    "foundationalCount": 0,
+    "foundationalPercent": "0.0",
+    "avgComplexity": "1.00",
+    "avgPriority": "5.00",
+    "systemFocus": "Unknown"
+  },
+  {
+    "pathway": "Allergic Emergency Mastery",
+    "caseCount": 3,
+    "foundationalCount": 2,
+    "foundationalPercent": "66.7",
+    "avgComplexity": "3.67",
+    "avgPriority": "10.00",
+    "systemFocus": "Unknown"
+  },
+  {
+    "pathway": "Endocrine Emergency Mastery",
+    "caseCount": 3,
+    "foundationalCount": 3,
+    "foundationalPercent": "100.0",
+    "avgComplexity": "2.33",
+    "avgPriority": "10.00",
+    "systemFocus": "Unknown"
+  },
+  {
+    "pathway": "Acute Abdomen Mastery",
+    "caseCount": 2,
+    "foundationalCount": 2,
+    "foundationalPercent": "100.0",
+    "avgComplexity": "2.00",
+    "avgPriority": "9.50",
+    "systemFocus": "Unknown"
+  },
+  {
+    "pathway": "Trauma Excellence",
+    "caseCount": 2,
+    "foundationalCount": 0,
+    "foundationalPercent": "0.0",
+    "avgComplexity": "3.00",
+    "avgPriority": "5.00",
+    "systemFocus": "Unknown"
+  },
+  {
+    "pathway": "Respiratory Excellence",
+    "caseCount": 1,
+    "foundationalCount": 0,
+    "foundationalPercent": "0.0",
+    "avgComplexity": "1.00",
+    "avgPriority": "5.00",
+    "systemFocus": "Unknown"
+  },
+  {
+    "pathway": "Neurological Excellence",
+    "caseCount": 1,
+    "foundationalCount": 0,
+    "foundationalPercent": "0.0",
+    "avgComplexity": "1.00",
+    "avgPriority": "5.00",
+    "systemFocus": "Unknown"
+  },
+  {
+    "pathway": "OB Emergency Foundations",
+    "caseCount": 1,
+    "foundationalCount": 0,
+    "foundationalPercent": "0.0",
+    "avgComplexity": "5.00",
+    "avgPriority": "9.00",
+    "systemFocus": "Unknown"
+  },
+  {
+    "pathway": "Sepsis Excellence",
+    "caseCount": 1,
+    "foundationalCount": 0,
+    "foundationalPercent": "0.0",
+    "avgComplexity": "1.00",
+    "avgPriority": "5.00",
+    "systemFocus": "Unknown"
+  },
+  {
+    "pathway": "Behavioral Health Excellence",
+    "caseCount": 1,
+    "foundationalCount": 1,
+    "foundationalPercent": "100.0",
+    "avgComplexity": "2.00",
+    "avgPriority": "8.00",
+    "systemFocus": "Unknown"
+  },
+  {
+    "pathway": "MSK Emergency Foundations",
+    "caseCount": 1,
+    "foundationalCount": 1,
+    "foundationalPercent": "100.0",
+    "avgComplexity": "3.00",
+    "avgPriority": "9.00",
+    "systemFocus": "Unknown"
+  }
+]

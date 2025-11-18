@@ -1,0 +1,21 @@
+
+GPT Formatter Structure Analysis
+Generated: 11/6/2025, 6:50:09 PM
+
+Size: 307.7 KB
+Lines: 8,704
+Functions: 185
+Sections: 30
+Duplicates: 10
+
+WARNING: Duplicate functions found!
+- checkApiStatus() x2
+- stop() x2
+- imgSync() x2
+- openSettings() x2
+- parseRowSpec_() x3
+- logLong_() x2
+- clearApiKeyCache() x2
+- showToast() x2
+- analyzeOutputSheetStructure() x2
+- clearAllBatchProperties() x2

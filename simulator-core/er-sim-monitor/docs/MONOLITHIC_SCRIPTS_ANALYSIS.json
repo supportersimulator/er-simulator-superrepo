@@ -1,0 +1,3337 @@
+{
+  "timestamp": "2025-11-04T18:20:43.586Z",
+  "totalScripts": 189,
+  "monolithicCount": 41,
+  "singlePurposeCount": 148,
+  "monolithicFiles": [
+    {
+      "fileName": "Code_ULTIMATE_ATSR.gs",
+      "sizeKB": 134.6,
+      "functionCount": 124,
+      "categories": [
+        "Batch Processing",
+        "Title Generation",
+        "Input Validation",
+        "Clinical Defaults",
+        "Duplicate Detection",
+        "Categories/Pathways",
+        "Testing",
+        "Analysis",
+        "UI/Menu",
+        "Configuration"
+      ],
+      "functions": [
+        "getSafeUi_",
+        "ensureQualityColumns_",
+        "evaluateSimulationQuality",
+        "attachQualityToRow_",
+        "runQualityAudit_AllOrRows",
+        "cleanUpLowValueRows",
+        "getProp",
+        "setProp",
+        "estimateTokens",
+        "estimateCostUSD"
+      ]
+    },
+    {
+      "fileName": "Code_ATSR_Trimmed.gs",
+      "sizeKB": 131.3,
+      "functionCount": 123,
+      "categories": [
+        "Batch Processing",
+        "Title Generation",
+        "Input Validation",
+        "Clinical Defaults",
+        "Duplicate Detection",
+        "Categories/Pathways",
+        "Testing",
+        "Analysis",
+        "UI/Menu",
+        "Configuration"
+      ],
+      "functions": [
+        "getSafeUi_",
+        "ensureQualityColumns_",
+        "evaluateSimulationQuality",
+        "attachQualityToRow_",
+        "runQualityAudit_AllOrRows",
+        "cleanUpLowValueRows",
+        "getProp",
+        "setProp",
+        "estimateTokens",
+        "estimateCostUSD"
+      ]
+    },
+    {
+      "fileName": "Code_WITH_CATEGORIES_LIGHT.gs",
+      "sizeKB": 121.6,
+      "functionCount": 121,
+      "categories": [
+        "Batch Processing",
+        "Title Generation",
+        "Input Validation",
+        "Clinical Defaults",
+        "Duplicate Detection",
+        "Categories/Pathways",
+        "Testing",
+        "Analysis",
+        "UI/Menu",
+        "Configuration"
+      ],
+      "functions": [
+        "getSafeUi_",
+        "ensureQualityColumns_",
+        "evaluateSimulationQuality",
+        "attachQualityToRow_",
+        "runQualityAudit_AllOrRows",
+        "cleanUpLowValueRows",
+        "getProp",
+        "setProp",
+        "estimateTokens",
+        "estimateCostUSD"
+      ]
+    },
+    {
+      "fileName": "Code_RESTORED_FINAL.gs",
+      "sizeKB": 120.5,
+      "functionCount": 121,
+      "categories": [
+        "Batch Processing",
+        "Title Generation",
+        "Input Validation",
+        "Clinical Defaults",
+        "Duplicate Detection",
+        "Categories/Pathways",
+        "Testing",
+        "Analysis",
+        "UI/Menu",
+        "Configuration"
+      ],
+      "functions": [
+        "getSafeUi_",
+        "ensureQualityColumns_",
+        "evaluateSimulationQuality",
+        "attachQualityToRow_",
+        "runQualityAudit_AllOrRows",
+        "cleanUpLowValueRows",
+        "getProp",
+        "setProp",
+        "estimateTokens",
+        "estimateCostUSD"
+      ]
+    },
+    {
+      "fileName": "Code_COMPLETE_LIGHT.gs",
+      "sizeKB": 120.4,
+      "functionCount": 121,
+      "categories": [
+        "Batch Processing",
+        "Title Generation",
+        "Input Validation",
+        "Clinical Defaults",
+        "Duplicate Detection",
+        "Categories/Pathways",
+        "Testing",
+        "Analysis",
+        "UI/Menu",
+        "Configuration"
+      ],
+      "functions": [
+        "getSafeUi_",
+        "ensureQualityColumns_",
+        "evaluateSimulationQuality",
+        "attachQualityToRow_",
+        "runQualityAudit_AllOrRows",
+        "cleanUpLowValueRows",
+        "getProp",
+        "setProp",
+        "estimateTokens",
+        "estimateCostUSD"
+      ]
+    },
+    {
+      "fileName": "Code_FINAL_WITH_BOTH_PANELS.gs",
+      "sizeKB": 120.3,
+      "functionCount": 121,
+      "categories": [
+        "Batch Processing",
+        "Title Generation",
+        "Input Validation",
+        "Clinical Defaults",
+        "Duplicate Detection",
+        "Categories/Pathways",
+        "Testing",
+        "Analysis",
+        "UI/Menu",
+        "Configuration"
+      ],
+      "functions": [
+        "getSafeUi_",
+        "ensureQualityColumns_",
+        "evaluateSimulationQuality",
+        "attachQualityToRow_",
+        "runQualityAudit_AllOrRows",
+        "cleanUpLowValueRows",
+        "getProp",
+        "setProp",
+        "estimateTokens",
+        "estimateCostUSD"
+      ]
+    },
+    {
+      "fileName": "Code_CURRENT_DEPLOYED.gs",
+      "sizeKB": 112.9,
+      "functionCount": 121,
+      "categories": [
+        "Batch Processing",
+        "Title Generation",
+        "Input Validation",
+        "Clinical Defaults",
+        "Duplicate Detection",
+        "Categories/Pathways",
+        "Testing",
+        "Analysis",
+        "UI/Menu",
+        "Configuration"
+      ],
+      "functions": [
+        "getSafeUi_",
+        "ensureQualityColumns_",
+        "evaluateSimulationQuality",
+        "attachQualityToRow_",
+        "runQualityAudit_AllOrRows",
+        "cleanUpLowValueRows",
+        "getProp",
+        "setProp",
+        "estimateTokens",
+        "estimateCostUSD"
+      ]
+    },
+    {
+      "fileName": "Code_ATSR_NO_CASE_ID.gs",
+      "sizeKB": 112.8,
+      "functionCount": 121,
+      "categories": [
+        "Batch Processing",
+        "Title Generation",
+        "Input Validation",
+        "Clinical Defaults",
+        "Duplicate Detection",
+        "Categories/Pathways",
+        "Testing",
+        "Analysis",
+        "UI/Menu",
+        "Configuration"
+      ],
+      "functions": [
+        "getSafeUi_",
+        "ensureQualityColumns_",
+        "evaluateSimulationQuality",
+        "attachQualityToRow_",
+        "runQualityAudit_AllOrRows",
+        "cleanUpLowValueRows",
+        "getProp",
+        "setProp",
+        "estimateTokens",
+        "estimateCostUSD"
+      ]
+    },
+    {
+      "fileName": "Code_ORIGINAL_RESTORED.gs",
+      "sizeKB": 112.7,
+      "functionCount": 121,
+      "categories": [
+        "Batch Processing",
+        "Title Generation",
+        "Input Validation",
+        "Clinical Defaults",
+        "Duplicate Detection",
+        "Categories/Pathways",
+        "Testing",
+        "Analysis",
+        "UI/Menu",
+        "Configuration"
+      ],
+      "functions": [
+        "getSafeUi_",
+        "ensureQualityColumns_",
+        "evaluateSimulationQuality",
+        "attachQualityToRow_",
+        "runQualityAudit_AllOrRows",
+        "cleanUpLowValueRows",
+        "getProp",
+        "setProp",
+        "estimateTokens",
+        "estimateCostUSD"
+      ]
+    },
+    {
+      "fileName": "Code_ENHANCED_ATSR.gs",
+      "sizeKB": 111.2,
+      "functionCount": 106,
+      "categories": [
+        "Batch Processing",
+        "Title Generation",
+        "Input Validation",
+        "Clinical Defaults",
+        "Duplicate Detection",
+        "Categories/Pathways",
+        "Testing",
+        "Analysis",
+        "UI/Menu",
+        "Configuration"
+      ],
+      "functions": [
+        "getSafeUi_",
+        "ensureQualityColumns_",
+        "evaluateSimulationQuality",
+        "attachQualityToRow_",
+        "runQualityAudit_AllOrRows",
+        "cleanUpLowValueRows",
+        "getProp",
+        "setProp",
+        "estimateTokens",
+        "estimateCostUSD"
+      ]
+    },
+    {
+      "fileName": "Code_SIMPLIFIED_ATSR_LIGHT.gs",
+      "sizeKB": 110,
+      "functionCount": 106,
+      "categories": [
+        "Batch Processing",
+        "Title Generation",
+        "Input Validation",
+        "Clinical Defaults",
+        "Duplicate Detection",
+        "Categories/Pathways",
+        "Testing",
+        "Analysis",
+        "UI/Menu",
+        "Configuration"
+      ],
+      "functions": [
+        "getSafeUi_",
+        "ensureQualityColumns_",
+        "evaluateSimulationQuality",
+        "attachQualityToRow_",
+        "runQualityAudit_AllOrRows",
+        "cleanUpLowValueRows",
+        "getProp",
+        "setProp",
+        "estimateTokens",
+        "estimateCostUSD"
+      ]
+    },
+    {
+      "fileName": "Code_FIXED.gs",
+      "sizeKB": 102.5,
+      "functionCount": 106,
+      "categories": [
+        "Batch Processing",
+        "Title Generation",
+        "Input Validation",
+        "Clinical Defaults",
+        "Duplicate Detection",
+        "Categories/Pathways",
+        "Testing",
+        "Analysis",
+        "UI/Menu",
+        "Configuration"
+      ],
+      "functions": [
+        "getSafeUi_",
+        "ensureQualityColumns_",
+        "evaluateSimulationQuality",
+        "attachQualityToRow_",
+        "runQualityAudit_AllOrRows",
+        "cleanUpLowValueRows",
+        "getProp",
+        "setProp",
+        "estimateTokens",
+        "estimateCostUSD"
+      ]
+    },
+    {
+      "fileName": "categoriesAndPathwaysTool.cjs",
+      "sizeKB": 29.7,
+      "functionCount": 15,
+      "categories": [
+        "Clinical Defaults",
+        "Categories/Pathways",
+        "Testing",
+        "Analysis",
+        "UI/Menu"
+      ],
+      "functions": [
+        "initializeOpenAI",
+        "createInterface",
+        "askQuestion",
+        "generatePathwayNameOptions",
+        "analyzeCasePathwayFit",
+        "recommendCaseSequence",
+        "mainMenu",
+        "viewCasesByCategory",
+        "moveCaseCategory",
+        "viewEditPathwaySequence"
+      ]
+    },
+    {
+      "fileName": "GoogleSheetsAppsScript_Enhanced.js",
+      "sizeKB": 29.6,
+      "functionCount": 22,
+      "categories": [
+        "Clinical Defaults",
+        "Categories/Pathways",
+        "Testing",
+        "Analysis",
+        "UI/Menu",
+        "Configuration"
+      ],
+      "functions": [
+        "onOpen",
+        "openWaveformAdjustmentTool",
+        "getAllCasesForAdjustmentTool",
+        "updateWaveformForCaseState",
+        "analyzeCaseWithAI",
+        "buildAIAnalysisPrompt",
+        "parseAISuggestions",
+        "launchECGConverter",
+        "configureOpenAIKey",
+        "detectWaveformForState"
+      ]
+    },
+    {
+      "fileName": "createToolsWorkflowSheet.cjs",
+      "sizeKB": 24.6,
+      "functionCount": 1,
+      "categories": [
+        "Title Generation",
+        "Input Validation",
+        "Clinical Defaults",
+        "Duplicate Detection",
+        "Categories/Pathways",
+        "Backup/Restore",
+        "Deployment",
+        "Testing",
+        "Analysis"
+      ],
+      "functions": [
+        "createToolsWorkflowSheet"
+      ]
+    },
+    {
+      "fileName": "GoogleSheetsAppsScript.js",
+      "sizeKB": 18,
+      "functionCount": 14,
+      "categories": [
+        "Clinical Defaults",
+        "Categories/Pathways",
+        "Testing",
+        "Analysis",
+        "UI/Menu"
+      ],
+      "functions": [
+        "onOpen",
+        "viewCasesByCategory",
+        "viewPathwayOrganization",
+        "detectWaveformForState",
+        "suggestWaveformMapping",
+        "autoMapAllWaveforms",
+        "analyzeCurrentMappings",
+        "clearAllWaveforms",
+        "jumpToCaseById",
+        "validateCurrentRow"
+      ]
+    },
+    {
+      "fileName": "generateDashboard.cjs",
+      "sizeKB": 17.6,
+      "functionCount": 8,
+      "categories": [
+        "Clinical Defaults",
+        "Categories/Pathways",
+        "Testing",
+        "Analysis"
+      ],
+      "functions": [
+        "loadJSON",
+        "createBarChart",
+        "analyzePathways",
+        "analyzeCategories",
+        "analyzeComplexityPriorityMatrix",
+        "analyzeCoverageGaps",
+        "analyzeNamingQuality",
+        "generateDashboard"
+      ]
+    },
+    {
+      "fileName": "interactiveDashboardV2.cjs",
+      "sizeKB": 15.4,
+      "functionCount": 15,
+      "categories": [
+        "Input Validation",
+        "Categories/Pathways",
+        "Backup/Restore",
+        "Testing",
+        "UI/Menu"
+      ],
+      "functions": [
+        "loadJSON",
+        "promptUser",
+        "executeCommand",
+        "showMainMenu",
+        "action1_viewDashboard",
+        "action2_addressCoverageGaps",
+        "action3_refinePathwayNames",
+        "action4_rebalancePathways",
+        "action5_autoFlagFoundational",
+        "action6_consolidatePathways"
+      ]
+    },
+    {
+      "fileName": "CategoriesPathwaysPanel.gs",
+      "sizeKB": 15.2,
+      "functionCount": 23,
+      "categories": [
+        "Categories/Pathways",
+        "UI/Menu"
+      ],
+      "functions": [
+        "openCategoriesPathwaysPanel",
+        "buildCategoriesPathwaysMainMenu_",
+        "viewCategory",
+        "viewPathway",
+        "viewAllCategories",
+        "viewAllPathways",
+        "assignCaseToCategory",
+        "assignCaseToPathway",
+        "showCategoryView",
+        "showPathwayView"
+      ]
+    },
+    {
+      "fileName": "compareBackups.cjs",
+      "sizeKB": 15.1,
+      "functionCount": 6,
+      "categories": [
+        "Categories/Pathways",
+        "Backup/Restore",
+        "Testing",
+        "Analysis"
+      ],
+      "functions": [
+        "getAllBackups",
+        "loadBackupData",
+        "loadCurrentData",
+        "promptUserChoice",
+        "compareData",
+        "main"
+      ]
+    },
+    {
+      "fileName": "backupAllCodeToDrive.cjs",
+      "sizeKB": 13.1,
+      "functionCount": 3,
+      "categories": [
+        "Title Generation",
+        "Input Validation",
+        "Backup/Restore",
+        "Deployment",
+        "Testing",
+        "Analysis"
+      ],
+      "functions": [
+        "createPhaseFolder",
+        "uploadFile",
+        "backupAllCodeToDrive"
+      ]
+    },
+    {
+      "fileName": "enhancedValidation.cjs",
+      "sizeKB": 12.9,
+      "functionCount": 4,
+      "categories": [
+        "Input Validation",
+        "Categories/Pathways",
+        "Backup/Restore",
+        "Testing"
+      ],
+      "functions": [
+        "loadJSON",
+        "isPediatricPrefix",
+        "isFoundational",
+        "enhancedValidation"
+      ]
+    },
+    {
+      "fileName": "testSuite.cjs",
+      "sizeKB": 12.2,
+      "functionCount": 2,
+      "categories": [
+        "Input Validation",
+        "Categories/Pathways",
+        "Backup/Restore",
+        "Testing"
+      ],
+      "functions": [
+        "runTest",
+        "runTestSuite"
+      ]
+    },
+    {
+      "fileName": "ATSR_Enhanced_Function.gs",
+      "sizeKB": 11.9,
+      "functionCount": 1,
+      "categories": [
+        "Title Generation",
+        "Clinical Defaults",
+        "Categories/Pathways",
+        "Backup/Restore",
+        "Testing"
+      ],
+      "functions": [
+        "runATSRTitleGenerator"
+      ]
+    },
+    {
+      "fileName": "addClinicalDefaultsToAppsScript.cjs",
+      "sizeKB": 10.3,
+      "functionCount": 6,
+      "categories": [
+        "Batch Processing",
+        "Clinical Defaults",
+        "Categories/Pathways",
+        "Testing"
+      ],
+      "functions": [
+        "to",
+        "addClinicalDefaultsToAppsScript",
+        "console",
+        "applyClinicalDefaults_",
+        "processOneInputRow_",
+        "source"
+      ]
+    },
+    {
+      "fileName": "auditAllTools.cjs",
+      "sizeKB": 9.4,
+      "functionCount": 1,
+      "categories": [
+        "Title Generation",
+        "Input Validation",
+        "Clinical Defaults",
+        "Categories/Pathways",
+        "Testing"
+      ],
+      "functions": [
+        "auditAllTools"
+      ]
+    },
+    {
+      "fileName": "generateToolsAuditReport.cjs",
+      "sizeKB": 9.4,
+      "functionCount": 1,
+      "categories": [
+        "Categories/Pathways",
+        "Backup/Restore",
+        "Deployment",
+        "Testing",
+        "Analysis"
+      ],
+      "functions": [
+        "as"
+      ]
+    },
+    {
+      "fileName": "restoreMetadata.cjs",
+      "sizeKB": 8.6,
+      "functionCount": 4,
+      "categories": [
+        "Input Validation",
+        "Categories/Pathways",
+        "Backup/Restore",
+        "Testing"
+      ],
+      "functions": [
+        "getAllBackups",
+        "promptUserChoice",
+        "restoreFromBackup",
+        "main"
+      ]
+    },
+    {
+      "fileName": "testAllWorkflowTools.cjs",
+      "sizeKB": 7.9,
+      "functionCount": 1,
+      "categories": [
+        "Title Generation",
+        "Input Validation",
+        "Clinical Defaults",
+        "Testing",
+        "Analysis"
+      ],
+      "functions": [
+        "runTests"
+      ]
+    },
+    {
+      "fileName": "analyzeMonolithicScripts.cjs",
+      "sizeKB": 7.7,
+      "functionCount": 7,
+      "categories": [
+        "Batch Processing",
+        "Quality Scoring",
+        "Title Generation",
+        "Input Validation",
+        "Clinical Defaults",
+        "Duplicate Detection",
+        "Categories/Pathways",
+        "Backup/Restore",
+        "Deployment",
+        "Testing",
+        "Analysis",
+        "UI/Menu",
+        "Configuration"
+      ],
+      "functions": [
+        "analyzeScriptComplexity",
+        "functionCount",
+        "names",
+        "avgFunctionSize",
+        "isMonolithic",
+        "functions",
+        "totalFunctions"
+      ]
+    },
+    {
+      "fileName": "createLocalBackup.cjs",
+      "sizeKB": 7.3,
+      "functionCount": 1,
+      "categories": [
+        "Title Generation",
+        "Backup/Restore",
+        "Deployment",
+        "Testing"
+      ],
+      "functions": [
+        "createLocalBackup"
+      ]
+    },
+    {
+      "fileName": "excludeOverviewColumnsFromPrompt.cjs",
+      "sizeKB": 7.1,
+      "functionCount": 8,
+      "categories": [
+        "Batch Processing",
+        "Duplicate Detection",
+        "Backup/Restore",
+        "Testing"
+      ],
+      "functions": [
+        "createGoogleClient",
+        "addOverviewExclusionLogic",
+        "filterOverviewColumns_",
+        "extractValueFromParsed_",
+        "const",
+        "insertPosition",
+        "const",
+        "to"
+      ]
+    },
+    {
+      "fileName": "restoreOriginalATSR.cjs",
+      "sizeKB": 6.8,
+      "functionCount": 2,
+      "categories": [
+        "Title Generation",
+        "Backup/Restore",
+        "Deployment",
+        "UI/Menu"
+      ],
+      "functions": [
+        "onOpen",
+        "deploy"
+      ]
+    },
+    {
+      "fileName": "createATSRProject.cjs",
+      "sizeKB": 6.7,
+      "functionCount": 3,
+      "categories": [
+        "Batch Processing",
+        "Title Generation",
+        "Input Validation",
+        "Deployment",
+        "Testing",
+        "UI/Menu"
+      ],
+      "functions": [
+        "createATSRProject",
+        "deploy",
+        "was"
+      ]
+    },
+    {
+      "fileName": "generateAllToolsDocs.cjs",
+      "sizeKB": 6.6,
+      "functionCount": 2,
+      "categories": [
+        "Title Generation",
+        "Input Validation",
+        "Categories/Pathways",
+        "Backup/Restore",
+        "Deployment",
+        "Testing",
+        "Analysis"
+      ],
+      "functions": [
+        "extractDocumentation",
+        "generateDocumentation"
+      ]
+    },
+    {
+      "fileName": "deployPromptCaching.cjs",
+      "sizeKB": 5.1,
+      "functionCount": 3,
+      "categories": [
+        "Batch Processing",
+        "Deployment",
+        "Testing",
+        "Analysis"
+      ],
+      "functions": [
+        "loadToken",
+        "createAppsScriptClient",
+        "deployPromptCaching"
+      ]
+    },
+    {
+      "fileName": "fixATSRModel.cjs",
+      "sizeKB": 5,
+      "functionCount": 0,
+      "categories": [
+        "Title Generation",
+        "Clinical Defaults",
+        "Backup/Restore",
+        "Deployment"
+      ],
+      "functions": []
+    },
+    {
+      "fileName": "autoTrimATSR.cjs",
+      "sizeKB": 4.6,
+      "functionCount": 4,
+      "categories": [
+        "Batch Processing",
+        "Title Generation",
+        "Input Validation",
+        "Testing",
+        "UI/Menu"
+      ],
+      "functions": [
+        "definitions",
+        "calls",
+        "calls",
+        "const"
+      ]
+    },
+    {
+      "fileName": "addCategoriesPathwaysPanel.cjs",
+      "sizeKB": 3.8,
+      "functionCount": 3,
+      "categories": [
+        "Title Generation",
+        "Categories/Pathways",
+        "Deployment",
+        "UI/Menu"
+      ],
+      "functions": [
+        "onOpen",
+        "at",
+        "console"
+      ]
+    },
+    {
+      "fileName": "verifySingleRowProcessing.cjs",
+      "sizeKB": 3.1,
+      "functionCount": 4,
+      "categories": [
+        "Batch Processing",
+        "Title Generation",
+        "Input Validation",
+        "Clinical Defaults",
+        "Testing"
+      ],
+      "functions": [
+        "const",
+        "processOneInputRow_",
+        "NOT",
+        "signature"
+      ]
+    },
+    {
+      "fileName": "compareWithBackup.cjs",
+      "sizeKB": 1.8,
+      "functionCount": 1,
+      "categories": [
+        "Batch Processing",
+        "Title Generation",
+        "Input Validation",
+        "Backup/Restore",
+        "Analysis"
+      ],
+      "functions": [
+        "from"
+      ]
+    }
+  ],
+  "singlePurposeFiles": [
+    {
+      "fileName": "aiEnhancedRenaming.cjs",
+      "sizeKB": 23.9,
+      "functionCount": 10
+    },
+    {
+      "fileName": "buildUltimateATSR.cjs",
+      "sizeKB": 19.2,
+      "functionCount": 10
+    },
+    {
+      "fileName": "smartRenameToolPhase2.cjs",
+      "sizeKB": 14.6,
+      "functionCount": 8
+    },
+    {
+      "fileName": "interactiveDashboard.cjs",
+      "sizeKB": 13.5,
+      "functionCount": 12
+    },
+    {
+      "fileName": "addClinicalDefaults.cjs",
+      "sizeKB": 13.1,
+      "functionCount": 9
+    },
+    {
+      "fileName": "validateSystemIntegrity.cjs",
+      "sizeKB": 12.4,
+      "functionCount": 3
+    },
+    {
+      "fileName": "exportDashboardData.cjs",
+      "sizeKB": 11.8,
+      "functionCount": 7
+    },
+    {
+      "fileName": "findAndImportSimFinal.cjs",
+      "sizeKB": 11.1,
+      "functionCount": 8
+    },
+    {
+      "fileName": "importEmsimFinal.cjs",
+      "sizeKB": 10.4,
+      "functionCount": 8
+    },
+    {
+      "fileName": "CategoriesPathwaysPanel_Light.gs",
+      "sizeKB": 10.4,
+      "functionCount": 15
+    },
+    {
+      "fileName": "backupHeadersAndFlatten.cjs",
+      "sizeKB": 10,
+      "functionCount": 6
+    },
+    {
+      "fileName": "analyzeDuplicateScenarios.cjs",
+      "sizeKB": 9.8,
+      "functionCount": 4
+    },
+    {
+      "fileName": "addCategoryColumn.cjs",
+      "sizeKB": 9.5,
+      "functionCount": 3
+    },
+    {
+      "fileName": "autoFlagFoundationalCases.cjs",
+      "sizeKB": 9.4,
+      "functionCount": 2
+    },
+    {
+      "fileName": "findSimulationIdColumn.cjs",
+      "sizeKB": 9.4,
+      "functionCount": 2
+    },
+    {
+      "fileName": "migrateWaveformNaming.cjs",
+      "sizeKB": 9,
+      "functionCount": 4
+    },
+    {
+      "fileName": "qualityProgressionAnalysis.cjs",
+      "sizeKB": 9,
+      "functionCount": 2
+    },
+    {
+      "fileName": "syncFoundationalToSheet.cjs",
+      "sizeKB": 8.8,
+      "functionCount": 2
+    },
+    {
+      "fileName": "analyzeOutputSheetForSimulationId.cjs",
+      "sizeKB": 8.8,
+      "functionCount": 7
+    },
+    {
+      "fileName": "validateVitalsJSON.cjs",
+      "sizeKB": 8.6,
+      "functionCount": 4
+    },
+    {
+      "fileName": "achieve100PercentIdealState.cjs",
+      "sizeKB": 8.3,
+      "functionCount": 1
+    },
+    {
+      "fileName": "processWithStandardAPI.cjs",
+      "sizeKB": 8.2,
+      "functionCount": 5
+    },
+    {
+      "fileName": "testAppsScriptModification.cjs",
+      "sizeKB": 8.1,
+      "functionCount": 3
+    },
+    {
+      "fileName": "consolidatePathways.cjs",
+      "sizeKB": 8.1,
+      "functionCount": 5
+    },
+    {
+      "fileName": "createProgressTracker.cjs",
+      "sizeKB": 8,
+      "functionCount": 3
+    },
+    {
+      "fileName": "syncOverviewsToSheet.cjs",
+      "sizeKB": 7.9,
+      "functionCount": 3
+    },
+    {
+      "fileName": "listAppsScriptProjects.cjs",
+      "sizeKB": 7.7,
+      "functionCount": 4
+    },
+    {
+      "fileName": "colorCodeCategoryHeaders.cjs",
+      "sizeKB": 7.6,
+      "functionCount": 2
+    },
+    {
+      "fileName": "syncVitalsToSheets.js",
+      "sizeKB": 7.5,
+      "functionCount": 5
+    },
+    {
+      "fileName": "safeImportFromSimFinal.cjs",
+      "sizeKB": 7.4,
+      "functionCount": 5
+    },
+    {
+      "fileName": "operationHistory.cjs",
+      "sizeKB": 7.4,
+      "functionCount": 6
+    },
+    {
+      "fileName": "implementRobustRowDetection.cjs",
+      "sizeKB": 7.4,
+      "functionCount": 6
+    },
+    {
+      "fileName": "restoreATSRComplete.cjs",
+      "sizeKB": 7.1,
+      "functionCount": 3
+    },
+    {
+      "fileName": "verifyRowDetection.cjs",
+      "sizeKB": 7.1,
+      "functionCount": 1
+    },
+    {
+      "fileName": "getSheetScriptId.cjs",
+      "sizeKB": 7,
+      "functionCount": 3
+    },
+    {
+      "fileName": "uploadCompleteAppsScript.cjs",
+      "sizeKB": 6.9,
+      "functionCount": 3
+    },
+    {
+      "fileName": "addOverviewColumnsToSheet.cjs",
+      "sizeKB": 6.7,
+      "functionCount": 3
+    },
+    {
+      "fileName": "progressMonitor.cjs",
+      "sizeKB": 6.6,
+      "functionCount": 12
+    },
+    {
+      "fileName": "analyzeSheetStructure.cjs",
+      "sizeKB": 6.6,
+      "functionCount": 1
+    },
+    {
+      "fileName": "deployAppsScript.cjs",
+      "sizeKB": 6.5,
+      "functionCount": 4
+    },
+    {
+      "fileName": "deployEnhancedATSR.cjs",
+      "sizeKB": 6.4,
+      "functionCount": 1
+    },
+    {
+      "fileName": "updateDeploymentAsWebApp.cjs",
+      "sizeKB": 6.3,
+      "functionCount": 3
+    },
+    {
+      "fileName": "addLogDiagnosticFunction.cjs",
+      "sizeKB": 6.2,
+      "functionCount": 6
+    },
+    {
+      "fileName": "updateSyncApiButton.cjs",
+      "sizeKB": 6.2,
+      "functionCount": 10
+    },
+    {
+      "fileName": "addRowDetectionLogging.cjs",
+      "sizeKB": 6.2,
+      "functionCount": 3
+    },
+    {
+      "fileName": "addWebAppEndpoint.cjs",
+      "sizeKB": 6.1,
+      "functionCount": 3
+    },
+    {
+      "fileName": "deployWebApp.cjs",
+      "sizeKB": 6,
+      "functionCount": 3
+    },
+    {
+      "fileName": "createSimplifiedATSR.cjs",
+      "sizeKB": 5.9,
+      "functionCount": 3
+    },
+    {
+      "fileName": "addShowToastFunction.cjs",
+      "sizeKB": 5.9,
+      "functionCount": 8
+    },
+    {
+      "fileName": "deployWaveformSystem.cjs",
+      "sizeKB": 5.9,
+      "functionCount": 0
+    },
+    {
+      "fileName": "standardizeAllVitalsFIXED.cjs",
+      "sizeKB": 5.8,
+      "functionCount": 3
+    },
+    {
+      "fileName": "createComprehensiveBackup.cjs",
+      "sizeKB": 5.6,
+      "functionCount": 1
+    },
+    {
+      "fileName": "analyzeLiveLogging.cjs",
+      "sizeKB": 5.6,
+      "functionCount": 10
+    },
+    {
+      "fileName": "organizeDriveStructure.cjs",
+      "sizeKB": 5.6,
+      "functionCount": 1
+    },
+    {
+      "fileName": "updateDeploymentToHEAD.cjs",
+      "sizeKB": 5.5,
+      "functionCount": 3
+    },
+    {
+      "fileName": "deployRetryLogic.cjs",
+      "sizeKB": 5.4,
+      "functionCount": 3
+    },
+    {
+      "fileName": "readAppsScript.cjs",
+      "sizeKB": 5.4,
+      "functionCount": 3
+    },
+    {
+      "fileName": "standardizeAllVitals.cjs",
+      "sizeKB": 5.3,
+      "functionCount": 2
+    },
+    {
+      "fileName": "implementSmartRowDetection.cjs",
+      "sizeKB": 5.3,
+      "functionCount": 3
+    },
+    {
+      "fileName": "generateOverviewsStandalone.cjs",
+      "sizeKB": 5.3,
+      "functionCount": 1
+    },
+    {
+      "fileName": "analyzeLastThreeRows.cjs",
+      "sizeKB": 5.3,
+      "functionCount": 1
+    },
+    {
+      "fileName": "autoCloseSuccessPopup.cjs",
+      "sizeKB": 5.3,
+      "functionCount": 10
+    },
+    {
+      "fileName": "switchToDocumentProperties.cjs",
+      "sizeKB": 5.3,
+      "functionCount": 3
+    },
+    {
+      "fileName": "uploadLegacyDocumentation.cjs",
+      "sizeKB": 5.2,
+      "functionCount": 1
+    },
+    {
+      "fileName": "uploadWorkflowDocumentation.cjs",
+      "sizeKB": 5.2,
+      "functionCount": 1
+    },
+    {
+      "fileName": "addMilestoneFolders.cjs",
+      "sizeKB": 5.1,
+      "functionCount": 1
+    },
+    {
+      "fileName": "updateWorkflowTrackerStatus.cjs",
+      "sizeKB": 5,
+      "functionCount": 3
+    },
+    {
+      "fileName": "findDriveFile.cjs",
+      "sizeKB": 5,
+      "functionCount": 3
+    },
+    {
+      "fileName": "backupMetadata.cjs",
+      "sizeKB": 5,
+      "functionCount": 2
+    },
+    {
+      "fileName": "checkMediaURLs.cjs",
+      "sizeKB": 5,
+      "functionCount": 1
+    },
+    {
+      "fileName": "clearApiKeyCache.cjs",
+      "sizeKB": 4.9,
+      "functionCount": 10
+    },
+    {
+      "fileName": "testSidebarMode.cjs",
+      "sizeKB": 4.8,
+      "functionCount": 2
+    },
+    {
+      "fileName": "verifySetup.cjs",
+      "sizeKB": 4.8,
+      "functionCount": 1
+    },
+    {
+      "fileName": "checkExecutionHistory.cjs",
+      "sizeKB": 4.8,
+      "functionCount": 1
+    },
+    {
+      "fileName": "quickAuth.cjs",
+      "sizeKB": 4.8,
+      "functionCount": 1
+    },
+    {
+      "fileName": "openDeploymentFiles.cjs",
+      "sizeKB": 4.7,
+      "functionCount": 0
+    },
+    {
+      "fileName": "uploadToolsInventory.cjs",
+      "sizeKB": 4.7,
+      "functionCount": 1
+    },
+    {
+      "fileName": "analyzeMediaURLsDetailed.cjs",
+      "sizeKB": 4.7,
+      "functionCount": 1
+    },
+    {
+      "fileName": "analyzeColumnCategories.cjs",
+      "sizeKB": 4.6,
+      "functionCount": 2
+    },
+    {
+      "fileName": "standardizeApiKeyUsage.cjs",
+      "sizeKB": 4.6,
+      "functionCount": 1
+    },
+    {
+      "fileName": "compareDataQuality.cjs",
+      "sizeKB": 4.5,
+      "functionCount": 3
+    },
+    {
+      "fileName": "compareRows189and190.cjs",
+      "sizeKB": 4.5,
+      "functionCount": 2
+    },
+    {
+      "fileName": "forceClearAndUpdateApiKey.cjs",
+      "sizeKB": 4.4,
+      "functionCount": 4
+    },
+    {
+      "fileName": "backupToGoogleDrive.cjs",
+      "sizeKB": 4.4,
+      "functionCount": 1
+    },
+    {
+      "fileName": "completeAuth.cjs",
+      "sizeKB": 4.4,
+      "functionCount": 1
+    },
+    {
+      "fileName": "addOpenAIResponseLogging.cjs",
+      "sizeKB": 4.3,
+      "functionCount": 3
+    },
+    {
+      "fileName": "deleteDocumentProperty.cjs",
+      "sizeKB": 4.3,
+      "functionCount": 4
+    },
+    {
+      "fileName": "removeCaseIDFromATSR.cjs",
+      "sizeKB": 4.2,
+      "functionCount": 0
+    },
+    {
+      "fileName": "deployCategoriesPanel.cjs",
+      "sizeKB": 4.2,
+      "functionCount": 2
+    },
+    {
+      "fileName": "deleteEmptyRows.cjs",
+      "sizeKB": 4.2,
+      "functionCount": 3
+    },
+    {
+      "fileName": "enableLogsForAllModes.cjs",
+      "sizeKB": 4.1,
+      "functionCount": 1
+    },
+    {
+      "fileName": "compareSheetColumns.cjs",
+      "sizeKB": 4,
+      "functionCount": 3
+    },
+    {
+      "fileName": "compareMultipleRows.cjs",
+      "sizeKB": 4,
+      "functionCount": 1
+    },
+    {
+      "fileName": "batchStatusSummary.cjs",
+      "sizeKB": 4,
+      "functionCount": 3
+    },
+    {
+      "fileName": "findDriveBackupLocation.cjs",
+      "sizeKB": 3.8,
+      "functionCount": 1
+    },
+    {
+      "fileName": "final100PercentAudit.cjs",
+      "sizeKB": 3.7,
+      "functionCount": 1
+    },
+    {
+      "fileName": "fetchOldVersion.cjs",
+      "sizeKB": 3.7,
+      "functionCount": 1
+    },
+    {
+      "fileName": "updateATSRCode.cjs",
+      "sizeKB": 3.6,
+      "functionCount": 1
+    },
+    {
+      "fileName": "deployATSRNoCaseID.cjs",
+      "sizeKB": 3.6,
+      "functionCount": 1
+    },
+    {
+      "fileName": "createNewVersion.cjs",
+      "sizeKB": 3.6,
+      "functionCount": 3
+    },
+    {
+      "fileName": "addEmptyRows.cjs",
+      "sizeKB": 3.5,
+      "functionCount": 3
+    },
+    {
+      "fileName": "reset-project.js",
+      "sizeKB": 3.5,
+      "functionCount": 2
+    },
+    {
+      "fileName": "findSidebarHTML.cjs",
+      "sizeKB": 3.4,
+      "functionCount": 2
+    },
+    {
+      "fileName": "createDocSubfolders.cjs",
+      "sizeKB": 3.4,
+      "functionCount": 1
+    },
+    {
+      "fileName": "fixBPandSpo2Final.cjs",
+      "sizeKB": 3.3,
+      "functionCount": 2
+    },
+    {
+      "fileName": "deployRestoredFinal.cjs",
+      "sizeKB": 3.3,
+      "functionCount": 1
+    },
+    {
+      "fileName": "getAppsScriptVersions.cjs",
+      "sizeKB": 3.3,
+      "functionCount": 1
+    },
+    {
+      "fileName": "mergeEnhancedATSR.cjs",
+      "sizeKB": 3.3,
+      "functionCount": 4
+    },
+    {
+      "fileName": "testATSRPrompt.cjs",
+      "sizeKB": 3.2,
+      "functionCount": 1
+    },
+    {
+      "fileName": "fixInvalidJSONRowsFINAL.cjs",
+      "sizeKB": 3.2,
+      "functionCount": 3
+    },
+    {
+      "fileName": "testATSRStandalone.cjs",
+      "sizeKB": 3.1,
+      "functionCount": 2
+    },
+    {
+      "fileName": "cleanupInputRow2.cjs",
+      "sizeKB": 3.1,
+      "functionCount": 1
+    },
+    {
+      "fileName": "upgradeTokenScopes.cjs",
+      "sizeKB": 3.1,
+      "functionCount": 1
+    },
+    {
+      "fileName": "fetchVitalsFromSheetsOAuth.js",
+      "sizeKB": 3.1,
+      "functionCount": 4
+    },
+    {
+      "fileName": "fixInvalidJSONRows.cjs",
+      "sizeKB": 3,
+      "functionCount": 2
+    },
+    {
+      "fileName": "analyzePathwayNames.cjs",
+      "sizeKB": 3,
+      "functionCount": 0
+    },
+    {
+      "fileName": "liveSyncServer.js",
+      "sizeKB": 2.8,
+      "functionCount": 2
+    },
+    {
+      "fileName": "fetchSampleRows.cjs",
+      "sizeKB": 2.7,
+      "functionCount": 1
+    },
+    {
+      "fileName": "fixRemainingBPStrings.cjs",
+      "sizeKB": 2.7,
+      "functionCount": 2
+    },
+    {
+      "fileName": "checkBatchStatus.cjs",
+      "sizeKB": 2.6,
+      "functionCount": 1
+    },
+    {
+      "fileName": "verifyBatchTool.cjs",
+      "sizeKB": 2.6,
+      "functionCount": 3
+    },
+    {
+      "fileName": "checkRowFields.cjs",
+      "sizeKB": 2.6,
+      "functionCount": 1
+    },
+    {
+      "fileName": "investigateInvalidWaveforms.cjs",
+      "sizeKB": 2.6,
+      "functionCount": 1
+    },
+    {
+      "fileName": "restorePreviousAppsScriptVersion.cjs",
+      "sizeKB": 2.5,
+      "functionCount": 1
+    },
+    {
+      "fileName": "authGoogleDrive.cjs",
+      "sizeKB": 2.5,
+      "functionCount": 1
+    },
+    {
+      "fileName": "findCaseIDValidation.cjs",
+      "sizeKB": 2.2,
+      "functionCount": 6
+    },
+    {
+      "fileName": "inspectAsystoleRows.cjs",
+      "sizeKB": 2.2,
+      "functionCount": 1
+    },
+    {
+      "fileName": "useExistingDeployment.cjs",
+      "sizeKB": 2.2,
+      "functionCount": 0
+    },
+    {
+      "fileName": "moveToolsInventoryToFolder.cjs",
+      "sizeKB": 2.2,
+      "functionCount": 1
+    },
+    {
+      "fileName": "inspectSampleRow.cjs",
+      "sizeKB": 2.1,
+      "functionCount": 1
+    },
+    {
+      "fileName": "searchProcessingLogic.cjs",
+      "sizeKB": 2.1,
+      "functionCount": 4
+    },
+    {
+      "fileName": "deployUltimateFixed.cjs",
+      "sizeKB": 1.9,
+      "functionCount": 1
+    },
+    {
+      "fileName": "analyzeCaseIDUsage.cjs",
+      "sizeKB": 1.8,
+      "functionCount": 3
+    },
+    {
+      "fileName": "fetchCurrentAppsScript.cjs",
+      "sizeKB": 1.8,
+      "functionCount": 1
+    },
+    {
+      "fileName": "deployATSR.cjs",
+      "sizeKB": 1.6,
+      "functionCount": 1
+    },
+    {
+      "fileName": "debugRow16Data.cjs",
+      "sizeKB": 1.6,
+      "functionCount": 1
+    },
+    {
+      "fileName": "inspectRow16.cjs",
+      "sizeKB": 1.6,
+      "functionCount": 1
+    },
+    {
+      "fileName": "verifyStandardization.cjs",
+      "sizeKB": 1.4,
+      "functionCount": 1
+    },
+    {
+      "fileName": "readScriptLine.cjs",
+      "sizeKB": 1.4,
+      "functionCount": 3
+    },
+    {
+      "fileName": "verifyRow82.cjs",
+      "sizeKB": 1.3,
+      "functionCount": 1
+    },
+    {
+      "fileName": "viewProcessFunction.cjs",
+      "sizeKB": 1.3,
+      "functionCount": 3
+    },
+    {
+      "fileName": "fetchVitalsFromSheetsSecure.js",
+      "sizeKB": 1.3,
+      "functionCount": 1
+    },
+    {
+      "fileName": "fullyAutomatedTrim.cjs",
+      "sizeKB": 1.3,
+      "functionCount": 1
+    },
+    {
+      "fileName": "listAllHeaders.cjs",
+      "sizeKB": 1.2,
+      "functionCount": 1
+    },
+    {
+      "fileName": "getSheetIdForMaster.cjs",
+      "sizeKB": 1.1,
+      "functionCount": 1
+    },
+    {
+      "fileName": "testIntelligentMapping.js",
+      "sizeKB": 1.1,
+      "functionCount": 0
+    },
+    {
+      "fileName": "addCategoriesMenuItem.cjs",
+      "sizeKB": 1,
+      "functionCount": 0
+    },
+    {
+      "fileName": "listAllSheets.cjs",
+      "sizeKB": 0.9,
+      "functionCount": 1
+    }
+  ],
+  "decompositionPlan": [
+    {
+      "fileName": "Code_ULTIMATE_ATSR.gs",
+      "sizeKB": 134.6,
+      "functionCount": 124,
+      "categories": [
+        "Batch Processing",
+        "Title Generation",
+        "Input Validation",
+        "Clinical Defaults",
+        "Duplicate Detection",
+        "Categories/Pathways",
+        "Testing",
+        "Analysis",
+        "UI/Menu",
+        "Configuration"
+      ],
+      "recommendedSplit": [
+        {
+          "category": "Batch Processing",
+          "targetFileName": "BatchProcessing_extracted.gs"
+        },
+        {
+          "category": "Title Generation",
+          "targetFileName": "TitleGeneration_extracted.gs"
+        },
+        {
+          "category": "Input Validation",
+          "targetFileName": "InputValidation_extracted.gs"
+        },
+        {
+          "category": "Clinical Defaults",
+          "targetFileName": "ClinicalDefaults_extracted.gs"
+        },
+        {
+          "category": "Duplicate Detection",
+          "targetFileName": "DuplicateDetection_extracted.gs"
+        },
+        {
+          "category": "Categories/Pathways",
+          "targetFileName": "CategoriesPathways_extracted.gs"
+        },
+        {
+          "category": "Testing",
+          "targetFileName": "Testing_extracted.gs"
+        },
+        {
+          "category": "Analysis",
+          "targetFileName": "Analysis_extracted.gs"
+        },
+        {
+          "category": "UI/Menu",
+          "targetFileName": "UIMenu_extracted.gs"
+        },
+        {
+          "category": "Configuration",
+          "targetFileName": "Configuration_extracted.gs"
+        }
+      ]
+    },
+    {
+      "fileName": "Code_ATSR_Trimmed.gs",
+      "sizeKB": 131.3,
+      "functionCount": 123,
+      "categories": [
+        "Batch Processing",
+        "Title Generation",
+        "Input Validation",
+        "Clinical Defaults",
+        "Duplicate Detection",
+        "Categories/Pathways",
+        "Testing",
+        "Analysis",
+        "UI/Menu",
+        "Configuration"
+      ],
+      "recommendedSplit": [
+        {
+          "category": "Batch Processing",
+          "targetFileName": "BatchProcessing_extracted.gs"
+        },
+        {
+          "category": "Title Generation",
+          "targetFileName": "TitleGeneration_extracted.gs"
+        },
+        {
+          "category": "Input Validation",
+          "targetFileName": "InputValidation_extracted.gs"
+        },
+        {
+          "category": "Clinical Defaults",
+          "targetFileName": "ClinicalDefaults_extracted.gs"
+        },
+        {
+          "category": "Duplicate Detection",
+          "targetFileName": "DuplicateDetection_extracted.gs"
+        },
+        {
+          "category": "Categories/Pathways",
+          "targetFileName": "CategoriesPathways_extracted.gs"
+        },
+        {
+          "category": "Testing",
+          "targetFileName": "Testing_extracted.gs"
+        },
+        {
+          "category": "Analysis",
+          "targetFileName": "Analysis_extracted.gs"
+        },
+        {
+          "category": "UI/Menu",
+          "targetFileName": "UIMenu_extracted.gs"
+        },
+        {
+          "category": "Configuration",
+          "targetFileName": "Configuration_extracted.gs"
+        }
+      ]
+    },
+    {
+      "fileName": "Code_WITH_CATEGORIES_LIGHT.gs",
+      "sizeKB": 121.6,
+      "functionCount": 121,
+      "categories": [
+        "Batch Processing",
+        "Title Generation",
+        "Input Validation",
+        "Clinical Defaults",
+        "Duplicate Detection",
+        "Categories/Pathways",
+        "Testing",
+        "Analysis",
+        "UI/Menu",
+        "Configuration"
+      ],
+      "recommendedSplit": [
+        {
+          "category": "Batch Processing",
+          "targetFileName": "BatchProcessing_extracted.gs"
+        },
+        {
+          "category": "Title Generation",
+          "targetFileName": "TitleGeneration_extracted.gs"
+        },
+        {
+          "category": "Input Validation",
+          "targetFileName": "InputValidation_extracted.gs"
+        },
+        {
+          "category": "Clinical Defaults",
+          "targetFileName": "ClinicalDefaults_extracted.gs"
+        },
+        {
+          "category": "Duplicate Detection",
+          "targetFileName": "DuplicateDetection_extracted.gs"
+        },
+        {
+          "category": "Categories/Pathways",
+          "targetFileName": "CategoriesPathways_extracted.gs"
+        },
+        {
+          "category": "Testing",
+          "targetFileName": "Testing_extracted.gs"
+        },
+        {
+          "category": "Analysis",
+          "targetFileName": "Analysis_extracted.gs"
+        },
+        {
+          "category": "UI/Menu",
+          "targetFileName": "UIMenu_extracted.gs"
+        },
+        {
+          "category": "Configuration",
+          "targetFileName": "Configuration_extracted.gs"
+        }
+      ]
+    },
+    {
+      "fileName": "Code_RESTORED_FINAL.gs",
+      "sizeKB": 120.5,
+      "functionCount": 121,
+      "categories": [
+        "Batch Processing",
+        "Title Generation",
+        "Input Validation",
+        "Clinical Defaults",
+        "Duplicate Detection",
+        "Categories/Pathways",
+        "Testing",
+        "Analysis",
+        "UI/Menu",
+        "Configuration"
+      ],
+      "recommendedSplit": [
+        {
+          "category": "Batch Processing",
+          "targetFileName": "BatchProcessing_extracted.gs"
+        },
+        {
+          "category": "Title Generation",
+          "targetFileName": "TitleGeneration_extracted.gs"
+        },
+        {
+          "category": "Input Validation",
+          "targetFileName": "InputValidation_extracted.gs"
+        },
+        {
+          "category": "Clinical Defaults",
+          "targetFileName": "ClinicalDefaults_extracted.gs"
+        },
+        {
+          "category": "Duplicate Detection",
+          "targetFileName": "DuplicateDetection_extracted.gs"
+        },
+        {
+          "category": "Categories/Pathways",
+          "targetFileName": "CategoriesPathways_extracted.gs"
+        },
+        {
+          "category": "Testing",
+          "targetFileName": "Testing_extracted.gs"
+        },
+        {
+          "category": "Analysis",
+          "targetFileName": "Analysis_extracted.gs"
+        },
+        {
+          "category": "UI/Menu",
+          "targetFileName": "UIMenu_extracted.gs"
+        },
+        {
+          "category": "Configuration",
+          "targetFileName": "Configuration_extracted.gs"
+        }
+      ]
+    },
+    {
+      "fileName": "Code_COMPLETE_LIGHT.gs",
+      "sizeKB": 120.4,
+      "functionCount": 121,
+      "categories": [
+        "Batch Processing",
+        "Title Generation",
+        "Input Validation",
+        "Clinical Defaults",
+        "Duplicate Detection",
+        "Categories/Pathways",
+        "Testing",
+        "Analysis",
+        "UI/Menu",
+        "Configuration"
+      ],
+      "recommendedSplit": [
+        {
+          "category": "Batch Processing",
+          "targetFileName": "BatchProcessing_extracted.gs"
+        },
+        {
+          "category": "Title Generation",
+          "targetFileName": "TitleGeneration_extracted.gs"
+        },
+        {
+          "category": "Input Validation",
+          "targetFileName": "InputValidation_extracted.gs"
+        },
+        {
+          "category": "Clinical Defaults",
+          "targetFileName": "ClinicalDefaults_extracted.gs"
+        },
+        {
+          "category": "Duplicate Detection",
+          "targetFileName": "DuplicateDetection_extracted.gs"
+        },
+        {
+          "category": "Categories/Pathways",
+          "targetFileName": "CategoriesPathways_extracted.gs"
+        },
+        {
+          "category": "Testing",
+          "targetFileName": "Testing_extracted.gs"
+        },
+        {
+          "category": "Analysis",
+          "targetFileName": "Analysis_extracted.gs"
+        },
+        {
+          "category": "UI/Menu",
+          "targetFileName": "UIMenu_extracted.gs"
+        },
+        {
+          "category": "Configuration",
+          "targetFileName": "Configuration_extracted.gs"
+        }
+      ]
+    },
+    {
+      "fileName": "Code_FINAL_WITH_BOTH_PANELS.gs",
+      "sizeKB": 120.3,
+      "functionCount": 121,
+      "categories": [
+        "Batch Processing",
+        "Title Generation",
+        "Input Validation",
+        "Clinical Defaults",
+        "Duplicate Detection",
+        "Categories/Pathways",
+        "Testing",
+        "Analysis",
+        "UI/Menu",
+        "Configuration"
+      ],
+      "recommendedSplit": [
+        {
+          "category": "Batch Processing",
+          "targetFileName": "BatchProcessing_extracted.gs"
+        },
+        {
+          "category": "Title Generation",
+          "targetFileName": "TitleGeneration_extracted.gs"
+        },
+        {
+          "category": "Input Validation",
+          "targetFileName": "InputValidation_extracted.gs"
+        },
+        {
+          "category": "Clinical Defaults",
+          "targetFileName": "ClinicalDefaults_extracted.gs"
+        },
+        {
+          "category": "Duplicate Detection",
+          "targetFileName": "DuplicateDetection_extracted.gs"
+        },
+        {
+          "category": "Categories/Pathways",
+          "targetFileName": "CategoriesPathways_extracted.gs"
+        },
+        {
+          "category": "Testing",
+          "targetFileName": "Testing_extracted.gs"
+        },
+        {
+          "category": "Analysis",
+          "targetFileName": "Analysis_extracted.gs"
+        },
+        {
+          "category": "UI/Menu",
+          "targetFileName": "UIMenu_extracted.gs"
+        },
+        {
+          "category": "Configuration",
+          "targetFileName": "Configuration_extracted.gs"
+        }
+      ]
+    },
+    {
+      "fileName": "Code_CURRENT_DEPLOYED.gs",
+      "sizeKB": 112.9,
+      "functionCount": 121,
+      "categories": [
+        "Batch Processing",
+        "Title Generation",
+        "Input Validation",
+        "Clinical Defaults",
+        "Duplicate Detection",
+        "Categories/Pathways",
+        "Testing",
+        "Analysis",
+        "UI/Menu",
+        "Configuration"
+      ],
+      "recommendedSplit": [
+        {
+          "category": "Batch Processing",
+          "targetFileName": "BatchProcessing_extracted.gs"
+        },
+        {
+          "category": "Title Generation",
+          "targetFileName": "TitleGeneration_extracted.gs"
+        },
+        {
+          "category": "Input Validation",
+          "targetFileName": "InputValidation_extracted.gs"
+        },
+        {
+          "category": "Clinical Defaults",
+          "targetFileName": "ClinicalDefaults_extracted.gs"
+        },
+        {
+          "category": "Duplicate Detection",
+          "targetFileName": "DuplicateDetection_extracted.gs"
+        },
+        {
+          "category": "Categories/Pathways",
+          "targetFileName": "CategoriesPathways_extracted.gs"
+        },
+        {
+          "category": "Testing",
+          "targetFileName": "Testing_extracted.gs"
+        },
+        {
+          "category": "Analysis",
+          "targetFileName": "Analysis_extracted.gs"
+        },
+        {
+          "category": "UI/Menu",
+          "targetFileName": "UIMenu_extracted.gs"
+        },
+        {
+          "category": "Configuration",
+          "targetFileName": "Configuration_extracted.gs"
+        }
+      ]
+    },
+    {
+      "fileName": "Code_ATSR_NO_CASE_ID.gs",
+      "sizeKB": 112.8,
+      "functionCount": 121,
+      "categories": [
+        "Batch Processing",
+        "Title Generation",
+        "Input Validation",
+        "Clinical Defaults",
+        "Duplicate Detection",
+        "Categories/Pathways",
+        "Testing",
+        "Analysis",
+        "UI/Menu",
+        "Configuration"
+      ],
+      "recommendedSplit": [
+        {
+          "category": "Batch Processing",
+          "targetFileName": "BatchProcessing_extracted.gs"
+        },
+        {
+          "category": "Title Generation",
+          "targetFileName": "TitleGeneration_extracted.gs"
+        },
+        {
+          "category": "Input Validation",
+          "targetFileName": "InputValidation_extracted.gs"
+        },
+        {
+          "category": "Clinical Defaults",
+          "targetFileName": "ClinicalDefaults_extracted.gs"
+        },
+        {
+          "category": "Duplicate Detection",
+          "targetFileName": "DuplicateDetection_extracted.gs"
+        },
+        {
+          "category": "Categories/Pathways",
+          "targetFileName": "CategoriesPathways_extracted.gs"
+        },
+        {
+          "category": "Testing",
+          "targetFileName": "Testing_extracted.gs"
+        },
+        {
+          "category": "Analysis",
+          "targetFileName": "Analysis_extracted.gs"
+        },
+        {
+          "category": "UI/Menu",
+          "targetFileName": "UIMenu_extracted.gs"
+        },
+        {
+          "category": "Configuration",
+          "targetFileName": "Configuration_extracted.gs"
+        }
+      ]
+    },
+    {
+      "fileName": "Code_ORIGINAL_RESTORED.gs",
+      "sizeKB": 112.7,
+      "functionCount": 121,
+      "categories": [
+        "Batch Processing",
+        "Title Generation",
+        "Input Validation",
+        "Clinical Defaults",
+        "Duplicate Detection",
+        "Categories/Pathways",
+        "Testing",
+        "Analysis",
+        "UI/Menu",
+        "Configuration"
+      ],
+      "recommendedSplit": [
+        {
+          "category": "Batch Processing",
+          "targetFileName": "BatchProcessing_extracted.gs"
+        },
+        {
+          "category": "Title Generation",
+          "targetFileName": "TitleGeneration_extracted.gs"
+        },
+        {
+          "category": "Input Validation",
+          "targetFileName": "InputValidation_extracted.gs"
+        },
+        {
+          "category": "Clinical Defaults",
+          "targetFileName": "ClinicalDefaults_extracted.gs"
+        },
+        {
+          "category": "Duplicate Detection",
+          "targetFileName": "DuplicateDetection_extracted.gs"
+        },
+        {
+          "category": "Categories/Pathways",
+          "targetFileName": "CategoriesPathways_extracted.gs"
+        },
+        {
+          "category": "Testing",
+          "targetFileName": "Testing_extracted.gs"
+        },
+        {
+          "category": "Analysis",
+          "targetFileName": "Analysis_extracted.gs"
+        },
+        {
+          "category": "UI/Menu",
+          "targetFileName": "UIMenu_extracted.gs"
+        },
+        {
+          "category": "Configuration",
+          "targetFileName": "Configuration_extracted.gs"
+        }
+      ]
+    },
+    {
+      "fileName": "Code_ENHANCED_ATSR.gs",
+      "sizeKB": 111.2,
+      "functionCount": 106,
+      "categories": [
+        "Batch Processing",
+        "Title Generation",
+        "Input Validation",
+        "Clinical Defaults",
+        "Duplicate Detection",
+        "Categories/Pathways",
+        "Testing",
+        "Analysis",
+        "UI/Menu",
+        "Configuration"
+      ],
+      "recommendedSplit": [
+        {
+          "category": "Batch Processing",
+          "targetFileName": "BatchProcessing_extracted.gs"
+        },
+        {
+          "category": "Title Generation",
+          "targetFileName": "TitleGeneration_extracted.gs"
+        },
+        {
+          "category": "Input Validation",
+          "targetFileName": "InputValidation_extracted.gs"
+        },
+        {
+          "category": "Clinical Defaults",
+          "targetFileName": "ClinicalDefaults_extracted.gs"
+        },
+        {
+          "category": "Duplicate Detection",
+          "targetFileName": "DuplicateDetection_extracted.gs"
+        },
+        {
+          "category": "Categories/Pathways",
+          "targetFileName": "CategoriesPathways_extracted.gs"
+        },
+        {
+          "category": "Testing",
+          "targetFileName": "Testing_extracted.gs"
+        },
+        {
+          "category": "Analysis",
+          "targetFileName": "Analysis_extracted.gs"
+        },
+        {
+          "category": "UI/Menu",
+          "targetFileName": "UIMenu_extracted.gs"
+        },
+        {
+          "category": "Configuration",
+          "targetFileName": "Configuration_extracted.gs"
+        }
+      ]
+    },
+    {
+      "fileName": "Code_SIMPLIFIED_ATSR_LIGHT.gs",
+      "sizeKB": 110,
+      "functionCount": 106,
+      "categories": [
+        "Batch Processing",
+        "Title Generation",
+        "Input Validation",
+        "Clinical Defaults",
+        "Duplicate Detection",
+        "Categories/Pathways",
+        "Testing",
+        "Analysis",
+        "UI/Menu",
+        "Configuration"
+      ],
+      "recommendedSplit": [
+        {
+          "category": "Batch Processing",
+          "targetFileName": "BatchProcessing_extracted.gs"
+        },
+        {
+          "category": "Title Generation",
+          "targetFileName": "TitleGeneration_extracted.gs"
+        },
+        {
+          "category": "Input Validation",
+          "targetFileName": "InputValidation_extracted.gs"
+        },
+        {
+          "category": "Clinical Defaults",
+          "targetFileName": "ClinicalDefaults_extracted.gs"
+        },
+        {
+          "category": "Duplicate Detection",
+          "targetFileName": "DuplicateDetection_extracted.gs"
+        },
+        {
+          "category": "Categories/Pathways",
+          "targetFileName": "CategoriesPathways_extracted.gs"
+        },
+        {
+          "category": "Testing",
+          "targetFileName": "Testing_extracted.gs"
+        },
+        {
+          "category": "Analysis",
+          "targetFileName": "Analysis_extracted.gs"
+        },
+        {
+          "category": "UI/Menu",
+          "targetFileName": "UIMenu_extracted.gs"
+        },
+        {
+          "category": "Configuration",
+          "targetFileName": "Configuration_extracted.gs"
+        }
+      ]
+    },
+    {
+      "fileName": "Code_FIXED.gs",
+      "sizeKB": 102.5,
+      "functionCount": 106,
+      "categories": [
+        "Batch Processing",
+        "Title Generation",
+        "Input Validation",
+        "Clinical Defaults",
+        "Duplicate Detection",
+        "Categories/Pathways",
+        "Testing",
+        "Analysis",
+        "UI/Menu",
+        "Configuration"
+      ],
+      "recommendedSplit": [
+        {
+          "category": "Batch Processing",
+          "targetFileName": "BatchProcessing_extracted.gs"
+        },
+        {
+          "category": "Title Generation",
+          "targetFileName": "TitleGeneration_extracted.gs"
+        },
+        {
+          "category": "Input Validation",
+          "targetFileName": "InputValidation_extracted.gs"
+        },
+        {
+          "category": "Clinical Defaults",
+          "targetFileName": "ClinicalDefaults_extracted.gs"
+        },
+        {
+          "category": "Duplicate Detection",
+          "targetFileName": "DuplicateDetection_extracted.gs"
+        },
+        {
+          "category": "Categories/Pathways",
+          "targetFileName": "CategoriesPathways_extracted.gs"
+        },
+        {
+          "category": "Testing",
+          "targetFileName": "Testing_extracted.gs"
+        },
+        {
+          "category": "Analysis",
+          "targetFileName": "Analysis_extracted.gs"
+        },
+        {
+          "category": "UI/Menu",
+          "targetFileName": "UIMenu_extracted.gs"
+        },
+        {
+          "category": "Configuration",
+          "targetFileName": "Configuration_extracted.gs"
+        }
+      ]
+    },
+    {
+      "fileName": "categoriesAndPathwaysTool.cjs",
+      "sizeKB": 29.7,
+      "functionCount": 15,
+      "categories": [
+        "Clinical Defaults",
+        "Categories/Pathways",
+        "Testing",
+        "Analysis",
+        "UI/Menu"
+      ],
+      "recommendedSplit": [
+        {
+          "category": "Clinical Defaults",
+          "targetFileName": "ClinicalDefaults_extracted.gs"
+        },
+        {
+          "category": "Categories/Pathways",
+          "targetFileName": "CategoriesPathways_extracted.gs"
+        },
+        {
+          "category": "Testing",
+          "targetFileName": "Testing_extracted.gs"
+        },
+        {
+          "category": "Analysis",
+          "targetFileName": "Analysis_extracted.gs"
+        },
+        {
+          "category": "UI/Menu",
+          "targetFileName": "UIMenu_extracted.gs"
+        }
+      ]
+    },
+    {
+      "fileName": "GoogleSheetsAppsScript_Enhanced.js",
+      "sizeKB": 29.6,
+      "functionCount": 22,
+      "categories": [
+        "Clinical Defaults",
+        "Categories/Pathways",
+        "Testing",
+        "Analysis",
+        "UI/Menu",
+        "Configuration"
+      ],
+      "recommendedSplit": [
+        {
+          "category": "Clinical Defaults",
+          "targetFileName": "ClinicalDefaults_extracted.gs"
+        },
+        {
+          "category": "Categories/Pathways",
+          "targetFileName": "CategoriesPathways_extracted.gs"
+        },
+        {
+          "category": "Testing",
+          "targetFileName": "Testing_extracted.gs"
+        },
+        {
+          "category": "Analysis",
+          "targetFileName": "Analysis_extracted.gs"
+        },
+        {
+          "category": "UI/Menu",
+          "targetFileName": "UIMenu_extracted.gs"
+        },
+        {
+          "category": "Configuration",
+          "targetFileName": "Configuration_extracted.gs"
+        }
+      ]
+    },
+    {
+      "fileName": "createToolsWorkflowSheet.cjs",
+      "sizeKB": 24.6,
+      "functionCount": 1,
+      "categories": [
+        "Title Generation",
+        "Input Validation",
+        "Clinical Defaults",
+        "Duplicate Detection",
+        "Categories/Pathways",
+        "Backup/Restore",
+        "Deployment",
+        "Testing",
+        "Analysis"
+      ],
+      "recommendedSplit": [
+        {
+          "category": "Title Generation",
+          "targetFileName": "TitleGeneration_extracted.gs"
+        },
+        {
+          "category": "Input Validation",
+          "targetFileName": "InputValidation_extracted.gs"
+        },
+        {
+          "category": "Clinical Defaults",
+          "targetFileName": "ClinicalDefaults_extracted.gs"
+        },
+        {
+          "category": "Duplicate Detection",
+          "targetFileName": "DuplicateDetection_extracted.gs"
+        },
+        {
+          "category": "Categories/Pathways",
+          "targetFileName": "CategoriesPathways_extracted.gs"
+        },
+        {
+          "category": "Backup/Restore",
+          "targetFileName": "BackupRestore_extracted.gs"
+        },
+        {
+          "category": "Deployment",
+          "targetFileName": "Deployment_extracted.gs"
+        },
+        {
+          "category": "Testing",
+          "targetFileName": "Testing_extracted.gs"
+        },
+        {
+          "category": "Analysis",
+          "targetFileName": "Analysis_extracted.gs"
+        }
+      ]
+    },
+    {
+      "fileName": "GoogleSheetsAppsScript.js",
+      "sizeKB": 18,
+      "functionCount": 14,
+      "categories": [
+        "Clinical Defaults",
+        "Categories/Pathways",
+        "Testing",
+        "Analysis",
+        "UI/Menu"
+      ],
+      "recommendedSplit": [
+        {
+          "category": "Clinical Defaults",
+          "targetFileName": "ClinicalDefaults_extracted.gs"
+        },
+        {
+          "category": "Categories/Pathways",
+          "targetFileName": "CategoriesPathways_extracted.gs"
+        },
+        {
+          "category": "Testing",
+          "targetFileName": "Testing_extracted.gs"
+        },
+        {
+          "category": "Analysis",
+          "targetFileName": "Analysis_extracted.gs"
+        },
+        {
+          "category": "UI/Menu",
+          "targetFileName": "UIMenu_extracted.gs"
+        }
+      ]
+    },
+    {
+      "fileName": "generateDashboard.cjs",
+      "sizeKB": 17.6,
+      "functionCount": 8,
+      "categories": [
+        "Clinical Defaults",
+        "Categories/Pathways",
+        "Testing",
+        "Analysis"
+      ],
+      "recommendedSplit": [
+        {
+          "category": "Clinical Defaults",
+          "targetFileName": "ClinicalDefaults_extracted.gs"
+        },
+        {
+          "category": "Categories/Pathways",
+          "targetFileName": "CategoriesPathways_extracted.gs"
+        },
+        {
+          "category": "Testing",
+          "targetFileName": "Testing_extracted.gs"
+        },
+        {
+          "category": "Analysis",
+          "targetFileName": "Analysis_extracted.gs"
+        }
+      ]
+    },
+    {
+      "fileName": "interactiveDashboardV2.cjs",
+      "sizeKB": 15.4,
+      "functionCount": 15,
+      "categories": [
+        "Input Validation",
+        "Categories/Pathways",
+        "Backup/Restore",
+        "Testing",
+        "UI/Menu"
+      ],
+      "recommendedSplit": [
+        {
+          "category": "Input Validation",
+          "targetFileName": "InputValidation_extracted.gs"
+        },
+        {
+          "category": "Categories/Pathways",
+          "targetFileName": "CategoriesPathways_extracted.gs"
+        },
+        {
+          "category": "Backup/Restore",
+          "targetFileName": "BackupRestore_extracted.gs"
+        },
+        {
+          "category": "Testing",
+          "targetFileName": "Testing_extracted.gs"
+        },
+        {
+          "category": "UI/Menu",
+          "targetFileName": "UIMenu_extracted.gs"
+        }
+      ]
+    },
+    {
+      "fileName": "CategoriesPathwaysPanel.gs",
+      "sizeKB": 15.2,
+      "functionCount": 23,
+      "categories": [
+        "Categories/Pathways",
+        "UI/Menu"
+      ],
+      "recommendedSplit": [
+        {
+          "category": "Categories/Pathways",
+          "targetFileName": "CategoriesPathways_extracted.gs"
+        },
+        {
+          "category": "UI/Menu",
+          "targetFileName": "UIMenu_extracted.gs"
+        }
+      ]
+    },
+    {
+      "fileName": "compareBackups.cjs",
+      "sizeKB": 15.1,
+      "functionCount": 6,
+      "categories": [
+        "Categories/Pathways",
+        "Backup/Restore",
+        "Testing",
+        "Analysis"
+      ],
+      "recommendedSplit": [
+        {
+          "category": "Categories/Pathways",
+          "targetFileName": "CategoriesPathways_extracted.gs"
+        },
+        {
+          "category": "Backup/Restore",
+          "targetFileName": "BackupRestore_extracted.gs"
+        },
+        {
+          "category": "Testing",
+          "targetFileName": "Testing_extracted.gs"
+        },
+        {
+          "category": "Analysis",
+          "targetFileName": "Analysis_extracted.gs"
+        }
+      ]
+    },
+    {
+      "fileName": "backupAllCodeToDrive.cjs",
+      "sizeKB": 13.1,
+      "functionCount": 3,
+      "categories": [
+        "Title Generation",
+        "Input Validation",
+        "Backup/Restore",
+        "Deployment",
+        "Testing",
+        "Analysis"
+      ],
+      "recommendedSplit": [
+        {
+          "category": "Title Generation",
+          "targetFileName": "TitleGeneration_extracted.gs"
+        },
+        {
+          "category": "Input Validation",
+          "targetFileName": "InputValidation_extracted.gs"
+        },
+        {
+          "category": "Backup/Restore",
+          "targetFileName": "BackupRestore_extracted.gs"
+        },
+        {
+          "category": "Deployment",
+          "targetFileName": "Deployment_extracted.gs"
+        },
+        {
+          "category": "Testing",
+          "targetFileName": "Testing_extracted.gs"
+        },
+        {
+          "category": "Analysis",
+          "targetFileName": "Analysis_extracted.gs"
+        }
+      ]
+    },
+    {
+      "fileName": "enhancedValidation.cjs",
+      "sizeKB": 12.9,
+      "functionCount": 4,
+      "categories": [
+        "Input Validation",
+        "Categories/Pathways",
+        "Backup/Restore",
+        "Testing"
+      ],
+      "recommendedSplit": [
+        {
+          "category": "Input Validation",
+          "targetFileName": "InputValidation_extracted.gs"
+        },
+        {
+          "category": "Categories/Pathways",
+          "targetFileName": "CategoriesPathways_extracted.gs"
+        },
+        {
+          "category": "Backup/Restore",
+          "targetFileName": "BackupRestore_extracted.gs"
+        },
+        {
+          "category": "Testing",
+          "targetFileName": "Testing_extracted.gs"
+        }
+      ]
+    },
+    {
+      "fileName": "testSuite.cjs",
+      "sizeKB": 12.2,
+      "functionCount": 2,
+      "categories": [
+        "Input Validation",
+        "Categories/Pathways",
+        "Backup/Restore",
+        "Testing"
+      ],
+      "recommendedSplit": [
+        {
+          "category": "Input Validation",
+          "targetFileName": "InputValidation_extracted.gs"
+        },
+        {
+          "category": "Categories/Pathways",
+          "targetFileName": "CategoriesPathways_extracted.gs"
+        },
+        {
+          "category": "Backup/Restore",
+          "targetFileName": "BackupRestore_extracted.gs"
+        },
+        {
+          "category": "Testing",
+          "targetFileName": "Testing_extracted.gs"
+        }
+      ]
+    },
+    {
+      "fileName": "ATSR_Enhanced_Function.gs",
+      "sizeKB": 11.9,
+      "functionCount": 1,
+      "categories": [
+        "Title Generation",
+        "Clinical Defaults",
+        "Categories/Pathways",
+        "Backup/Restore",
+        "Testing"
+      ],
+      "recommendedSplit": [
+        {
+          "category": "Title Generation",
+          "targetFileName": "TitleGeneration_extracted.gs"
+        },
+        {
+          "category": "Clinical Defaults",
+          "targetFileName": "ClinicalDefaults_extracted.gs"
+        },
+        {
+          "category": "Categories/Pathways",
+          "targetFileName": "CategoriesPathways_extracted.gs"
+        },
+        {
+          "category": "Backup/Restore",
+          "targetFileName": "BackupRestore_extracted.gs"
+        },
+        {
+          "category": "Testing",
+          "targetFileName": "Testing_extracted.gs"
+        }
+      ]
+    },
+    {
+      "fileName": "addClinicalDefaultsToAppsScript.cjs",
+      "sizeKB": 10.3,
+      "functionCount": 6,
+      "categories": [
+        "Batch Processing",
+        "Clinical Defaults",
+        "Categories/Pathways",
+        "Testing"
+      ],
+      "recommendedSplit": [
+        {
+          "category": "Batch Processing",
+          "targetFileName": "BatchProcessing_extracted.gs"
+        },
+        {
+          "category": "Clinical Defaults",
+          "targetFileName": "ClinicalDefaults_extracted.gs"
+        },
+        {
+          "category": "Categories/Pathways",
+          "targetFileName": "CategoriesPathways_extracted.gs"
+        },
+        {
+          "category": "Testing",
+          "targetFileName": "Testing_extracted.gs"
+        }
+      ]
+    },
+    {
+      "fileName": "auditAllTools.cjs",
+      "sizeKB": 9.4,
+      "functionCount": 1,
+      "categories": [
+        "Title Generation",
+        "Input Validation",
+        "Clinical Defaults",
+        "Categories/Pathways",
+        "Testing"
+      ],
+      "recommendedSplit": [
+        {
+          "category": "Title Generation",
+          "targetFileName": "TitleGeneration_extracted.gs"
+        },
+        {
+          "category": "Input Validation",
+          "targetFileName": "InputValidation_extracted.gs"
+        },
+        {
+          "category": "Clinical Defaults",
+          "targetFileName": "ClinicalDefaults_extracted.gs"
+        },
+        {
+          "category": "Categories/Pathways",
+          "targetFileName": "CategoriesPathways_extracted.gs"
+        },
+        {
+          "category": "Testing",
+          "targetFileName": "Testing_extracted.gs"
+        }
+      ]
+    },
+    {
+      "fileName": "generateToolsAuditReport.cjs",
+      "sizeKB": 9.4,
+      "functionCount": 1,
+      "categories": [
+        "Categories/Pathways",
+        "Backup/Restore",
+        "Deployment",
+        "Testing",
+        "Analysis"
+      ],
+      "recommendedSplit": [
+        {
+          "category": "Categories/Pathways",
+          "targetFileName": "CategoriesPathways_extracted.gs"
+        },
+        {
+          "category": "Backup/Restore",
+          "targetFileName": "BackupRestore_extracted.gs"
+        },
+        {
+          "category": "Deployment",
+          "targetFileName": "Deployment_extracted.gs"
+        },
+        {
+          "category": "Testing",
+          "targetFileName": "Testing_extracted.gs"
+        },
+        {
+          "category": "Analysis",
+          "targetFileName": "Analysis_extracted.gs"
+        }
+      ]
+    },
+    {
+      "fileName": "restoreMetadata.cjs",
+      "sizeKB": 8.6,
+      "functionCount": 4,
+      "categories": [
+        "Input Validation",
+        "Categories/Pathways",
+        "Backup/Restore",
+        "Testing"
+      ],
+      "recommendedSplit": [
+        {
+          "category": "Input Validation",
+          "targetFileName": "InputValidation_extracted.gs"
+        },
+        {
+          "category": "Categories/Pathways",
+          "targetFileName": "CategoriesPathways_extracted.gs"
+        },
+        {
+          "category": "Backup/Restore",
+          "targetFileName": "BackupRestore_extracted.gs"
+        },
+        {
+          "category": "Testing",
+          "targetFileName": "Testing_extracted.gs"
+        }
+      ]
+    },
+    {
+      "fileName": "testAllWorkflowTools.cjs",
+      "sizeKB": 7.9,
+      "functionCount": 1,
+      "categories": [
+        "Title Generation",
+        "Input Validation",
+        "Clinical Defaults",
+        "Testing",
+        "Analysis"
+      ],
+      "recommendedSplit": [
+        {
+          "category": "Title Generation",
+          "targetFileName": "TitleGeneration_extracted.gs"
+        },
+        {
+          "category": "Input Validation",
+          "targetFileName": "InputValidation_extracted.gs"
+        },
+        {
+          "category": "Clinical Defaults",
+          "targetFileName": "ClinicalDefaults_extracted.gs"
+        },
+        {
+          "category": "Testing",
+          "targetFileName": "Testing_extracted.gs"
+        },
+        {
+          "category": "Analysis",
+          "targetFileName": "Analysis_extracted.gs"
+        }
+      ]
+    },
+    {
+      "fileName": "analyzeMonolithicScripts.cjs",
+      "sizeKB": 7.7,
+      "functionCount": 7,
+      "categories": [
+        "Batch Processing",
+        "Quality Scoring",
+        "Title Generation",
+        "Input Validation",
+        "Clinical Defaults",
+        "Duplicate Detection",
+        "Categories/Pathways",
+        "Backup/Restore",
+        "Deployment",
+        "Testing",
+        "Analysis",
+        "UI/Menu",
+        "Configuration"
+      ],
+      "recommendedSplit": [
+        {
+          "category": "Batch Processing",
+          "targetFileName": "BatchProcessing_extracted.gs"
+        },
+        {
+          "category": "Quality Scoring",
+          "targetFileName": "QualityScoring_extracted.gs"
+        },
+        {
+          "category": "Title Generation",
+          "targetFileName": "TitleGeneration_extracted.gs"
+        },
+        {
+          "category": "Input Validation",
+          "targetFileName": "InputValidation_extracted.gs"
+        },
+        {
+          "category": "Clinical Defaults",
+          "targetFileName": "ClinicalDefaults_extracted.gs"
+        },
+        {
+          "category": "Duplicate Detection",
+          "targetFileName": "DuplicateDetection_extracted.gs"
+        },
+        {
+          "category": "Categories/Pathways",
+          "targetFileName": "CategoriesPathways_extracted.gs"
+        },
+        {
+          "category": "Backup/Restore",
+          "targetFileName": "BackupRestore_extracted.gs"
+        },
+        {
+          "category": "Deployment",
+          "targetFileName": "Deployment_extracted.gs"
+        },
+        {
+          "category": "Testing",
+          "targetFileName": "Testing_extracted.gs"
+        },
+        {
+          "category": "Analysis",
+          "targetFileName": "Analysis_extracted.gs"
+        },
+        {
+          "category": "UI/Menu",
+          "targetFileName": "UIMenu_extracted.gs"
+        },
+        {
+          "category": "Configuration",
+          "targetFileName": "Configuration_extracted.gs"
+        }
+      ]
+    },
+    {
+      "fileName": "createLocalBackup.cjs",
+      "sizeKB": 7.3,
+      "functionCount": 1,
+      "categories": [
+        "Title Generation",
+        "Backup/Restore",
+        "Deployment",
+        "Testing"
+      ],
+      "recommendedSplit": [
+        {
+          "category": "Title Generation",
+          "targetFileName": "TitleGeneration_extracted.gs"
+        },
+        {
+          "category": "Backup/Restore",
+          "targetFileName": "BackupRestore_extracted.gs"
+        },
+        {
+          "category": "Deployment",
+          "targetFileName": "Deployment_extracted.gs"
+        },
+        {
+          "category": "Testing",
+          "targetFileName": "Testing_extracted.gs"
+        }
+      ]
+    },
+    {
+      "fileName": "excludeOverviewColumnsFromPrompt.cjs",
+      "sizeKB": 7.1,
+      "functionCount": 8,
+      "categories": [
+        "Batch Processing",
+        "Duplicate Detection",
+        "Backup/Restore",
+        "Testing"
+      ],
+      "recommendedSplit": [
+        {
+          "category": "Batch Processing",
+          "targetFileName": "BatchProcessing_extracted.gs"
+        },
+        {
+          "category": "Duplicate Detection",
+          "targetFileName": "DuplicateDetection_extracted.gs"
+        },
+        {
+          "category": "Backup/Restore",
+          "targetFileName": "BackupRestore_extracted.gs"
+        },
+        {
+          "category": "Testing",
+          "targetFileName": "Testing_extracted.gs"
+        }
+      ]
+    },
+    {
+      "fileName": "restoreOriginalATSR.cjs",
+      "sizeKB": 6.8,
+      "functionCount": 2,
+      "categories": [
+        "Title Generation",
+        "Backup/Restore",
+        "Deployment",
+        "UI/Menu"
+      ],
+      "recommendedSplit": [
+        {
+          "category": "Title Generation",
+          "targetFileName": "TitleGeneration_extracted.gs"
+        },
+        {
+          "category": "Backup/Restore",
+          "targetFileName": "BackupRestore_extracted.gs"
+        },
+        {
+          "category": "Deployment",
+          "targetFileName": "Deployment_extracted.gs"
+        },
+        {
+          "category": "UI/Menu",
+          "targetFileName": "UIMenu_extracted.gs"
+        }
+      ]
+    },
+    {
+      "fileName": "createATSRProject.cjs",
+      "sizeKB": 6.7,
+      "functionCount": 3,
+      "categories": [
+        "Batch Processing",
+        "Title Generation",
+        "Input Validation",
+        "Deployment",
+        "Testing",
+        "UI/Menu"
+      ],
+      "recommendedSplit": [
+        {
+          "category": "Batch Processing",
+          "targetFileName": "BatchProcessing_extracted.gs"
+        },
+        {
+          "category": "Title Generation",
+          "targetFileName": "TitleGeneration_extracted.gs"
+        },
+        {
+          "category": "Input Validation",
+          "targetFileName": "InputValidation_extracted.gs"
+        },
+        {
+          "category": "Deployment",
+          "targetFileName": "Deployment_extracted.gs"
+        },
+        {
+          "category": "Testing",
+          "targetFileName": "Testing_extracted.gs"
+        },
+        {
+          "category": "UI/Menu",
+          "targetFileName": "UIMenu_extracted.gs"
+        }
+      ]
+    },
+    {
+      "fileName": "generateAllToolsDocs.cjs",
+      "sizeKB": 6.6,
+      "functionCount": 2,
+      "categories": [
+        "Title Generation",
+        "Input Validation",
+        "Categories/Pathways",
+        "Backup/Restore",
+        "Deployment",
+        "Testing",
+        "Analysis"
+      ],
+      "recommendedSplit": [
+        {
+          "category": "Title Generation",
+          "targetFileName": "TitleGeneration_extracted.gs"
+        },
+        {
+          "category": "Input Validation",
+          "targetFileName": "InputValidation_extracted.gs"
+        },
+        {
+          "category": "Categories/Pathways",
+          "targetFileName": "CategoriesPathways_extracted.gs"
+        },
+        {
+          "category": "Backup/Restore",
+          "targetFileName": "BackupRestore_extracted.gs"
+        },
+        {
+          "category": "Deployment",
+          "targetFileName": "Deployment_extracted.gs"
+        },
+        {
+          "category": "Testing",
+          "targetFileName": "Testing_extracted.gs"
+        },
+        {
+          "category": "Analysis",
+          "targetFileName": "Analysis_extracted.gs"
+        }
+      ]
+    },
+    {
+      "fileName": "deployPromptCaching.cjs",
+      "sizeKB": 5.1,
+      "functionCount": 3,
+      "categories": [
+        "Batch Processing",
+        "Deployment",
+        "Testing",
+        "Analysis"
+      ],
+      "recommendedSplit": [
+        {
+          "category": "Batch Processing",
+          "targetFileName": "BatchProcessing_extracted.gs"
+        },
+        {
+          "category": "Deployment",
+          "targetFileName": "Deployment_extracted.gs"
+        },
+        {
+          "category": "Testing",
+          "targetFileName": "Testing_extracted.gs"
+        },
+        {
+          "category": "Analysis",
+          "targetFileName": "Analysis_extracted.gs"
+        }
+      ]
+    },
+    {
+      "fileName": "fixATSRModel.cjs",
+      "sizeKB": 5,
+      "functionCount": 0,
+      "categories": [
+        "Title Generation",
+        "Clinical Defaults",
+        "Backup/Restore",
+        "Deployment"
+      ],
+      "recommendedSplit": [
+        {
+          "category": "Title Generation",
+          "targetFileName": "TitleGeneration_extracted.gs"
+        },
+        {
+          "category": "Clinical Defaults",
+          "targetFileName": "ClinicalDefaults_extracted.gs"
+        },
+        {
+          "category": "Backup/Restore",
+          "targetFileName": "BackupRestore_extracted.gs"
+        },
+        {
+          "category": "Deployment",
+          "targetFileName": "Deployment_extracted.gs"
+        }
+      ]
+    },
+    {
+      "fileName": "autoTrimATSR.cjs",
+      "sizeKB": 4.6,
+      "functionCount": 4,
+      "categories": [
+        "Batch Processing",
+        "Title Generation",
+        "Input Validation",
+        "Testing",
+        "UI/Menu"
+      ],
+      "recommendedSplit": [
+        {
+          "category": "Batch Processing",
+          "targetFileName": "BatchProcessing_extracted.gs"
+        },
+        {
+          "category": "Title Generation",
+          "targetFileName": "TitleGeneration_extracted.gs"
+        },
+        {
+          "category": "Input Validation",
+          "targetFileName": "InputValidation_extracted.gs"
+        },
+        {
+          "category": "Testing",
+          "targetFileName": "Testing_extracted.gs"
+        },
+        {
+          "category": "UI/Menu",
+          "targetFileName": "UIMenu_extracted.gs"
+        }
+      ]
+    },
+    {
+      "fileName": "addCategoriesPathwaysPanel.cjs",
+      "sizeKB": 3.8,
+      "functionCount": 3,
+      "categories": [
+        "Title Generation",
+        "Categories/Pathways",
+        "Deployment",
+        "UI/Menu"
+      ],
+      "recommendedSplit": [
+        {
+          "category": "Title Generation",
+          "targetFileName": "TitleGeneration_extracted.gs"
+        },
+        {
+          "category": "Categories/Pathways",
+          "targetFileName": "CategoriesPathways_extracted.gs"
+        },
+        {
+          "category": "Deployment",
+          "targetFileName": "Deployment_extracted.gs"
+        },
+        {
+          "category": "UI/Menu",
+          "targetFileName": "UIMenu_extracted.gs"
+        }
+      ]
+    },
+    {
+      "fileName": "verifySingleRowProcessing.cjs",
+      "sizeKB": 3.1,
+      "functionCount": 4,
+      "categories": [
+        "Batch Processing",
+        "Title Generation",
+        "Input Validation",
+        "Clinical Defaults",
+        "Testing"
+      ],
+      "recommendedSplit": [
+        {
+          "category": "Batch Processing",
+          "targetFileName": "BatchProcessing_extracted.gs"
+        },
+        {
+          "category": "Title Generation",
+          "targetFileName": "TitleGeneration_extracted.gs"
+        },
+        {
+          "category": "Input Validation",
+          "targetFileName": "InputValidation_extracted.gs"
+        },
+        {
+          "category": "Clinical Defaults",
+          "targetFileName": "ClinicalDefaults_extracted.gs"
+        },
+        {
+          "category": "Testing",
+          "targetFileName": "Testing_extracted.gs"
+        }
+      ]
+    },
+    {
+      "fileName": "compareWithBackup.cjs",
+      "sizeKB": 1.8,
+      "functionCount": 1,
+      "categories": [
+        "Batch Processing",
+        "Title Generation",
+        "Input Validation",
+        "Backup/Restore",
+        "Analysis"
+      ],
+      "recommendedSplit": [
+        {
+          "category": "Batch Processing",
+          "targetFileName": "BatchProcessing_extracted.gs"
+        },
+        {
+          "category": "Title Generation",
+          "targetFileName": "TitleGeneration_extracted.gs"
+        },
+        {
+          "category": "Input Validation",
+          "targetFileName": "InputValidation_extracted.gs"
+        },
+        {
+          "category": "Backup/Restore",
+          "targetFileName": "BackupRestore_extracted.gs"
+        },
+        {
+          "category": "Analysis",
+          "targetFileName": "Analysis_extracted.gs"
+        }
+      ]
+    }
+  ]
+}

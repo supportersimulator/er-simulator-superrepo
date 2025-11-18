@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <base target="_top">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      padding: 15px;
+      background: #f5f5f5;
+    }
+
+    .header {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+      padding: 20px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+
+    .header h2 {
+      margin: 0 0 10px 0;
+      font-size: 20px;
+    }
+
+    .header p {
+      margin: 0;
+      opacity: 0.9;
+      font-size: 13px;
+    }
+
+    .section {
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      margin-bottom: 15px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    }
+
+    .section-title {
+      font-size: 16px;
+      font-weight: 600;
+      margin-bottom: 15px;
+      color: #333;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .btn {
+      width: 100%;
+      padding: 12px;
+      border: none;
+      border-radius: 6px;
+      font-size: 14px;
+      font-weight: 500;
+      cursor: pointer;
+      transition: all 0.3s;
+      margin-bottom: 10px;
+    }
+
+    .btn-primary {
+      background: #4CAF50;
+      color: white;
+    }
+
+    .btn-primary:hover {
+      background: #45a049;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 8px rgba(76, 175, 80, 0.3);
+    }
+
+    .btn-secondary {
+      background: #2196F3;
+      color: white;
+    }
+
+    .btn-secondary:hover {
+      background: #0b7dda;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 8px rgba(33, 150, 243, 0.3);
+    }
+
+    .btn-ai {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+    }
+
+    .btn-ai:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+    }
+
+    .case-list {
+      max-height: 300px;
+      overflow-y: auto;
+      border: 1px solid #e0e0e0;
+      border-radius: 6px;
+      padding: 10px;
+    }
+
+    .case-item {
+      padding: 12px;
+      border-bottom: 1px solid #f0f0f0;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+
+    .case-item:hover {
+      background: #f8f9fa;
+    }
+
+    .case-item:last-child {
+      border-bottom: none;
+    }
+
+    .case-id {
+      font-weight: 600;
+      color: #667eea;
+      font-size: 13px;
+    }
+
+    .case-title {
+      font-size: 12px;
+      color: #555;
+      margin-top: 4px;
+    }
+
+    .state-row {
+      padding: 10px;
+      border-left: 3px solid #667eea;
+      margin-bottom: 10px;
+      background: #f8f9fa;
+      border-radius: 4px;
+    }
+
+    .state-name {
+      font-weight: 600;
+      font-size: 13px;
+      margin-bottom: 5px;
+    }
+
+    .state-vitals {
+      font-size: 11px;
+      color: #666;
+      margin-bottom: 8px;
+    }
+
+    .waveform-select {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      font-size: 12px;
+    }
+
+    .loading {
+      text-align: center;
+      padding: 30px;
+      color: #666;
+    }
+
+    .spinner {
+      border: 3px solid #f3f3f3;
+      border-top: 3px solid #667eea;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      animation: spin 1s linear infinite;
+      margin: 0 auto 15px;
+    }
+
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+    .ai-analysis {
+      background: #f0f4ff;
+      border-left: 4px solid #667eea;
+      padding: 15px;
+      margin-top: 15px;
+      border-radius: 4px;
+      font-size: 13px;
+      line-height: 1.6;
+      white-space: pre-wrap;
+    }
+
+    .suggestions-list {
+      margin-top: 10px;
+    }
+
+    .suggestion-item {
+      padding: 8px;
+      background: white;
+      border-radius: 4px;
+      margin-bottom: 8px;
+      font-size: 12px;
+    }
+
+    .stats {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 15px;
+      gap: 10px;
+    }
+
+    .stat-box {
+      flex: 1;
+      background: #f8f9fa;
+      padding: 15px;
+      border-radius: 6px;
+      text-align: center;
+    }
+
+    .stat-number {
+      font-size: 24px;
+      font-weight: 700;
+      color: #667eea;
+    }
+
+    .stat-label {
+      font-size: 11px;
+      color: #666;
+      margin-top: 5px;
+    }
+
+    .alert {
+      padding: 12px;
+      border-radius: 6px;
+      margin-bottom: 15px;
+      font-size: 13px;
+    }
+
+    .alert-success {
+      background: #d4edda;
+      border: 1px solid #c3e6cb;
+      color: #155724;
+    }
+
+    .alert-error {
+      background: #f8d7da;
+      border: 1px solid #f5c6cb;
+      color: #721c24;
+    }
+
+    .alert-info {
+      background: #d1ecf1;
+      border: 1px solid #bee5eb;
+      color: #0c5460;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h2>🔬 Adjust Waveforms Data</h2>
+    <p>AI-Powered Waveform Management</p>
+  </div>
+
+  <div id="mainContent">
+    <div class="section">
+      <div class="section-title">📊 Quick Actions</div>
+
+      <button class="btn btn-primary" onclick="loadAllCases()">
+        🔄 Load All Cases
+      </button>
+
+      <button class="btn btn-ai" onclick="analyzeWithAI()">
+        🤖 AI Analysis & Suggestions
+      </button>
+
+      <button class="btn btn-secondary" onclick="applyBulkChanges()">
+        ✅ Apply Bulk Changes
+      </button>
+    </div>
+
+    <div class="section">
+      <div class="section-title">📋 System Statistics</div>
+      <div class="stats">
+        <div class="stat-box">
+          <div class="stat-number" id="totalCases">0</div>
+          <div class="stat-label">Total Cases</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-number" id="totalStates">0</div>
+          <div class="stat-label">Total States</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-number" id="withWaveforms">0</div>
+          <div class="stat-label">With Waveforms</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-title">🗂️ Cases</div>
+      <div id="casesList" class="case-list">
+        <div class="loading">
+          <p>Click "Load All Cases" to begin</p>
+        </div>
+      </div>
+    </div>
+
+    <div id="aiAnalysisSection" style="display: none;" class="section">
+      <div class="section-title">🤖 AI Analysis</div>
+      <div id="aiAnalysisContent"></div>
+    </div>
+
+    <div id="alertSection"></div>
+  </div>
+
+  <script>
+    let allCases = [];
+    let selectedCase = null;
+    let pendingChanges = [];
+
+    /**
+     * Load all cases from Google Sheets
+     */
+    function loadAllCases() {
+      showLoading('Loading cases from sheet...');
+
+      google.script.run
+        .withSuccessHandler(onCasesLoaded)
+        .withFailureHandler(onError)
+        .getAllCasesForAdjustmentTool();
+    }
+
+    /**
+     * Handle cases loaded successfully
+     */
+    function onCasesLoaded(result) {
+      if (result.error) {
+        showAlert(result.error, 'error');
+        return;
+      }
+
+      allCases = result.cases;
+
+      // Update statistics
+      document.getElementById('totalCases').textContent = result.totalCases;
+
+      let totalStatesCount = 0;
+      let withWaveformsCount = 0;
+
+      allCases.forEach(c => {
+        totalStatesCount += c.states.length;
+        c.states.forEach(s => {
+          if (s.waveform && s.waveform !== 'none') {
+            withWaveformsCount++;
+          }
+        });
+      });
+
+      document.getElementById('totalStates').textContent = totalStatesCount;
+      document.getElementById('withWaveforms').textContent = withWaveformsCount;
+
+      // Render case list
+      renderCaseList();
+
+      showAlert(`Loaded ${result.totalCases} cases successfully!`, 'success');
+    }
+
+    /**
+     * Render case list
+     */
+    function renderCaseList() {
+      const container = document.getElementById('casesList');
+      container.innerHTML = '';
+
+      allCases.forEach(caseData => {
+        const caseDiv = document.createElement('div');
+        caseDiv.className = 'case-item';
+        caseDiv.onclick = () => selectCase(caseData);
+
+        caseDiv.innerHTML = `
+          <div class="case-id">${caseData.caseId}</div>
+          <div class="case-title">${caseData.title}</div>
+          <div class="case-title">${caseData.states.length} states · ${caseData.category}</div>
+        `;
+
+        container.appendChild(caseDiv);
+      });
+    }
+
+    /**
+     * Select a case to view/edit
+     */
+    function selectCase(caseData) {
+      selectedCase = caseData;
+
+      const container = document.getElementById('casesList');
+      container.innerHTML = `
+        <button class="btn btn-secondary" onclick="renderCaseList()" style="margin-bottom: 15px;">
+          ← Back to Cases
+        </button>
+
+        <h3 style="margin-bottom: 15px;">${caseData.caseId}</h3>
+        <p style="font-size: 13px; color: #666; margin-bottom: 20px;">${caseData.title}</p>
+
+        <div id="statesList"></div>
+      `;
+
+      renderStates(caseData);
+    }
+
+    /**
+     * Render states for selected case
+     */
+    function renderStates(caseData) {
+      const container = document.getElementById('statesList');
+      container.innerHTML = '';
+
+      caseData.states.forEach((state, idx) => {
+        const stateDiv = document.createElement('div');
+        stateDiv.className = 'state-row';
+
+        const vitalsText = `HR: ${state.vitals.HR || state.vitals.hr || 'N/A'} |
+                           BP: ${state.vitals.BP || state.vitals.bp || 'N/A'} |
+                           SpO2: ${state.vitals.SpO2 || state.vitals.spo2 || 'N/A'}`;
+
+        stateDiv.innerHTML = `
+          <div class="state-name">${state.name}</div>
+          <div class="state-vitals">${vitalsText}</div>
+          <select class="waveform-select"
+                  id="waveform_${caseData.caseId}_${idx}"
+                  onchange="markChange('${caseData.caseId}', '${state.field}', this.value)">
+            <option value="">-- Select Waveform --</option>
+            ${getWaveformOptions(state.waveform)}
+          </select>
+        `;
+
+        container.appendChild(stateDiv);
+      });
+    }
+
+    /**
+     * Get waveform options HTML
+     */
+    function getWaveformOptions(currentWaveform) {
+      const waveforms = {
+        'sinus_ecg': 'Normal Sinus Rhythm',
+        'afib_ecg': 'Atrial Fibrillation',
+        'aflutter_ecg': 'Atrial Flutter',
+        'svt_ecg': 'Supraventricular Tachycardia',
+        'vtach_ecg': 'Ventricular Tachycardia',
+        'vfib_ecg': 'Ventricular Fibrillation',
+        'asystole_ecg': 'Asystole (Flatline)',
+        'paced_ecg': 'Paced Rhythm',
+        'junctional_ecg': 'Junctional Rhythm',
+        'bigeminy_ecg': 'Ventricular Bigeminy',
+        'trigeminy_ecg': 'Ventricular Trigeminy',
+        'idioventricular_ecg': 'Idioventricular Rhythm',
+        'torsades_ecg': 'Torsades de Pointes',
+        'peapulseless_ecg': 'Pulseless Electrical Activity',
+        'artifact_ecg': 'Artifact / Noise'
+      };
+
+      let html = '';
+      Object.keys(waveforms).forEach(key => {
+        const selected = key === currentWaveform ? 'selected' : '';
+        html += `<option value="${key}" ${selected}>${waveforms[key]}</option>`;
+      });
+
+      return html;
+    }
+
+    /**
+     * Mark a change for bulk application
+     */
+    function markChange(caseId, stateField, newWaveform) {
+      // Remove existing change for this case/state
+      pendingChanges = pendingChanges.filter(c =>
+        !(c.caseId === caseId && c.stateField === stateField)
+      );
+
+      // Add new change
+      pendingChanges.push({ caseId, stateField, newWaveform });
+
+      showAlert(`Marked change for ${caseId} (${pendingChanges.length} total changes)`, 'info');
+    }
+
+    /**
+     * Apply bulk changes to Google Sheets
+     */
+    function applyBulkChanges() {
+      if (pendingChanges.length === 0) {
+        showAlert('No changes to apply', 'info');
+        return;
+      }
+
+      showLoading(`Applying ${pendingChanges.length} changes...`);
+
+      let completed = 0;
+      let errors = 0;
+
+      pendingChanges.forEach(change => {
+        google.script.run
+          .withSuccessHandler(() => {
+            completed++;
+            if (completed + errors === pendingChanges.length) {
+              showAlert(`✅ Applied ${completed} changes successfully!`, 'success');
+              pendingChanges = [];
+              loadAllCases(); // Reload
+            }
+          })
+          .withFailureHandler(() => {
+            errors++;
+            if (completed + errors === pendingChanges.length) {
+              showAlert(`⚠️ Completed with ${completed} successes and ${errors} errors`, 'error');
+            }
+          })
+          .updateWaveformForCaseState(change.caseId, change.stateField, change.newWaveform);
+      });
+    }
+
+    /**
+     * Analyze with AI
+     */
+    function analyzeWithAI() {
+      if (!selectedCase) {
+        showAlert('Please select a case first', 'info');
+        return;
+      }
+
+      showLoading('Analyzing with ChatGPT...');
+
+      google.script.run
+        .withSuccessHandler(onAIAnalysisComplete)
+        .withFailureHandler(onError)
+        .analyzeCaseWithAI(selectedCase);
+    }
+
+    /**
+     * Handle AI analysis complete
+     */
+    function onAIAnalysisComplete(result) {
+      const section = document.getElementById('aiAnalysisSection');
+      const content = document.getElementById('aiAnalysisContent');
+
+      if (result.error) {
+        content.innerHTML = `<div class="alert alert-error">${result.error}</div>`;
+      } else {
+        content.innerHTML = `
+          <div class="ai-analysis">${result.analysis}</div>
+
+          ${result.suggestions && result.suggestions.length > 0 ? `
+            <div class="suggestions-list">
+              <h4 style="margin-top: 20px; margin-bottom: 10px;">💡 Suggested Changes:</h4>
+              ${result.suggestions.map(s => `
+                <div class="suggestion-item">
+                  <strong>${s.stateName}:</strong> ${s.waveform}<br>
+                  <span style="font-size: 11px; color: #666;">${s.reason}</span>
+                </div>
+              `).join('')}
+            </div>
+          ` : ''}
+        `;
+      }
+
+      section.style.display = 'block';
+      hideLoading();
+    }
+
+    /**
+     * Show loading spinner
+     */
+    function showLoading(message) {
+      document.getElementById('mainContent').style.opacity = '0.5';
+      document.getElementById('alertSection').innerHTML = `
+        <div class="loading">
+          <div class="spinner"></div>
+          <p>${message}</p>
+        </div>
+      `;
+    }
+
+    /**
+     * Hide loading spinner
+     */
+    function hideLoading() {
+      document.getElementById('mainContent').style.opacity = '1';
+      document.getElementById('alertSection').innerHTML = '';
+    }
+
+    /**
+     * Show alert message
+     */
+    function showAlert(message, type) {
+      const alertDiv = document.getElementById('alertSection');
+      alertDiv.innerHTML = `<div class="alert alert-${type}">${message}</div>`;
+
+      setTimeout(() => {
+        alertDiv.innerHTML = '';
+      }, 5000);
+    }
+
+    /**
+     * Handle errors
+     */
+    function onError(error) {
+      hideLoading();
+      showAlert(`Error: ${error.message}`, 'error');
+      console.error(error);
+    }
+  </script>
+</body>
+</html>

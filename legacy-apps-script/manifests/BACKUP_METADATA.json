@@ -1,0 +1,23 @@
+{
+  "timestamp": "2025-11-14T16:34:52.439Z",
+  "scriptId": "12NihbVaaAIyRMCtzZ-aGjJ71CdL-HDjhmjxiD_S_EgIOuDOtrUH6M1l2",
+  "description": "Working copy - Menu fully restored",
+  "fileCount": 3,
+  "files": [
+    {
+      "name": "appsscript",
+      "type": "JSON",
+      "size": 125
+    },
+    {
+      "name": "Code",
+      "type": "SERVER_JS",
+      "size": 479270
+    },
+    {
+      "name": "Ultimate_Categorization_Tool_Complete",
+      "type": "SERVER_JS",
+      "size": 80872
+    }
+  ]
+}

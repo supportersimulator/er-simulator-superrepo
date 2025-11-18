@@ -1,0 +1,1514 @@
+[
+  {
+    "rowNum": 3,
+    "oldId": "GI01234",
+    "newId": "GAST0001",
+    "system": "GAST",
+    "complexity": 1,
+    "revealTitle": "Cholangitis & Sepsis (47 M): Early Intervention is Key"
+  },
+  {
+    "rowNum": 105,
+    "oldId": "OB0002",
+    "newId": "GAST0002",
+    "system": "GAST",
+    "complexity": 3,
+    "revealTitle": "Acute Pancreatitis (40 F): Critical Early Management"
+  },
+  {
+    "rowNum": 14,
+    "oldId": "PULM00123",
+    "newId": "RESP0001",
+    "system": "RESP",
+    "complexity": 1,
+    "revealTitle": "Pulmonary Embolism (55 M): Quick Recognition Saves Lives"
+  },
+  {
+    "rowNum": 49,
+    "oldId": "PULM2023",
+    "newId": "RESP0002",
+    "system": "RESP",
+    "complexity": 1,
+    "revealTitle": "Pulmonary Embolism (52 F): Quick Recognition Saves Lives"
+  },
+  {
+    "rowNum": 50,
+    "oldId": "TRA00123",
+    "newId": "RESP0003",
+    "system": "RESP",
+    "complexity": 1,
+    "revealTitle": "Pneumothorax and Hemothorax (26 M): Swift Action Required"
+  },
+  {
+    "rowNum": 61,
+    "oldId": "PNEU001",
+    "newId": "RESP0004",
+    "system": "RESP",
+    "complexity": 1,
+    "revealTitle": "Pneumonia in a Young Adult (25 M): Timely Recognition and Intervention"
+  },
+  {
+    "rowNum": 66,
+    "oldId": "PEDS001",
+    "newId": "PEDRE05",
+    "system": "RESP",
+    "complexity": 1,
+    "revealTitle": "Pneumonia in Pediatric Patient (5 F): Quick Recognition Saves Lives"
+  },
+  {
+    "rowNum": 96,
+    "oldId": "PULM001",
+    "newId": "RESP0006",
+    "system": "RESP",
+    "complexity": 1,
+    "revealTitle": "Pulmonary Embolism (28 F): Recognizing the Signs"
+  },
+  {
+    "rowNum": 110,
+    "oldId": "TRA00123",
+    "newId": "RESP0007",
+    "system": "RESP",
+    "complexity": 1,
+    "revealTitle": "Pneumothorax & Hemothorax (28 M): Time is of the Essence"
+  },
+  {
+    "rowNum": 114,
+    "oldId": "TRI00321",
+    "newId": "RESP0008",
+    "system": "RESP",
+    "complexity": 1,
+    "revealTitle": "Pulmonary Embolism (56 F): Quick Recognition Saves Lives"
+  },
+  {
+    "rowNum": 140,
+    "oldId": "PULM00345",
+    "newId": "RESP0009",
+    "system": "RESP",
+    "complexity": 1,
+    "revealTitle": "Pulmonary Embolism (55 M): Prompt Recognition and Action"
+  },
+  {
+    "rowNum": 142,
+    "oldId": "ED00123",
+    "newId": "RESP0010",
+    "system": "RESP",
+    "complexity": 1,
+    "revealTitle": "Pulmonary Embolism (65 F): Time is of the Essence"
+  },
+  {
+    "rowNum": 144,
+    "oldId": "PEDS0001",
+    "newId": "PEDRE11",
+    "system": "RESP",
+    "complexity": 1,
+    "revealTitle": "Pediatric Asthma Exacerbation (5 M): Quick Thinking Saves the Day"
+  },
+  {
+    "rowNum": 150,
+    "oldId": "PNEU0001",
+    "newId": "RESP0012",
+    "system": "RESP",
+    "complexity": 1,
+    "revealTitle": "Pneumonia with Respiratory Distress (45 F): Timely Intervention"
+  },
+  {
+    "rowNum": 161,
+    "oldId": "PE0001",
+    "newId": "RESP0013",
+    "system": "RESP",
+    "complexity": 1,
+    "revealTitle": "Pulmonary Embolism (55 F): Swift Action Saves Lives"
+  },
+  {
+    "rowNum": 174,
+    "oldId": "RESP00321",
+    "newId": "RESP0014",
+    "system": "RESP",
+    "complexity": 1,
+    "revealTitle": "Pulmonary Embolism (65 F): Timely Action Saves Lives"
+  },
+  {
+    "rowNum": 176,
+    "oldId": "NEO001",
+    "newId": "RESP0015",
+    "system": "RESP",
+    "complexity": 1,
+    "revealTitle": "Neonatal Respiratory Distress Syndrome (1 Day): Timely Interventions Save Lives"
+  },
+  {
+    "rowNum": 6,
+    "oldId": "PNEU001",
+    "newId": "RESP0016",
+    "system": "RESP",
+    "complexity": 2,
+    "revealTitle": "Pneumothorax (26 F): Rapid Recognition and Action"
+  },
+  {
+    "rowNum": 27,
+    "oldId": "PE0001",
+    "newId": "RESP0017",
+    "system": "RESP",
+    "complexity": 2,
+    "revealTitle": "Pulmonary Embolism (55 F): Rapid Recognition Saves Lives"
+  },
+  {
+    "rowNum": 34,
+    "oldId": "TR0001",
+    "newId": "RESP0018",
+    "system": "RESP",
+    "complexity": 2,
+    "revealTitle": "Acute Pulmonary Embolism (25 F): Swift Diagnosis is Crucial"
+  },
+  {
+    "rowNum": 37,
+    "oldId": "TRA1001",
+    "newId": "RESP0019",
+    "system": "RESP",
+    "complexity": 2,
+    "revealTitle": "Pneumothorax & Hemothorax (25 M): Rapid Assessment and Intervention"
+  },
+  {
+    "rowNum": 54,
+    "oldId": "TRI101",
+    "newId": "RESP0020",
+    "system": "RESP",
+    "complexity": 2,
+    "revealTitle": "Acute Pulmonary Embolism (50 F): Rapid Response Saves Lives"
+  },
+  {
+    "rowNum": 59,
+    "oldId": "PULM00567",
+    "newId": "RESP0021",
+    "system": "RESP",
+    "complexity": 2,
+    "revealTitle": "Acute Pulmonary Embolism (55 M): Rapid Recognition and Action"
+  },
+  {
+    "rowNum": 68,
+    "oldId": "PNEU001",
+    "newId": "RESP0022",
+    "system": "RESP",
+    "complexity": 2,
+    "revealTitle": "Acute Pneumonia (55 F): Rapid Assessment Saves Lives"
+  },
+  {
+    "rowNum": 82,
+    "oldId": "NEO0001",
+    "newId": "RESP0023",
+    "system": "RESP",
+    "complexity": 2,
+    "revealTitle": "Neonatal Respiratory Distress Syndrome: Rapid Intervention Required"
+  },
+  {
+    "rowNum": 107,
+    "oldId": "CV0003",
+    "newId": "RESP0024",
+    "system": "RESP",
+    "complexity": 2,
+    "revealTitle": "Acute Pulmonary Embolism (65 M): Timely Intervention Matters"
+  },
+  {
+    "rowNum": 119,
+    "oldId": "OB0002",
+    "newId": "RESP0025",
+    "system": "RESP",
+    "complexity": 2,
+    "revealTitle": "Pulmonary Embolism (29 F): Rapid Recognition and Action"
+  },
+  {
+    "rowNum": 158,
+    "oldId": "TRI0002",
+    "newId": "RESP0026",
+    "system": "RESP",
+    "complexity": 2,
+    "revealTitle": "Acute Pulmonary Embolism (55 M): Recognizing the Signs"
+  },
+  {
+    "rowNum": 4,
+    "oldId": "OB0001",
+    "newId": "RESP0027",
+    "system": "RESP",
+    "complexity": 3,
+    "revealTitle": "Asthma Attack in Pregnancy (30 F): Effective Interventions"
+  },
+  {
+    "rowNum": 16,
+    "oldId": "PEDS00456",
+    "newId": "PEDRE28",
+    "system": "RESP",
+    "complexity": 3,
+    "revealTitle": "Severe Asthma Exacerbation (8 M): Swift Action Required"
+  },
+  {
+    "rowNum": 36,
+    "oldId": "PEDS001",
+    "newId": "PEDRE29",
+    "system": "RESP",
+    "complexity": 3,
+    "revealTitle": "Severe Asthma Attack (8 M): Quick Action Required"
+  },
+  {
+    "rowNum": 39,
+    "oldId": "PEDS04567",
+    "newId": "PEDRE30",
+    "system": "RESP",
+    "complexity": 3,
+    "revealTitle": "Pediatric Asthma Exacerbation (5 Y): Timely Intervention Saves Lives"
+  },
+  {
+    "rowNum": 41,
+    "oldId": "PEDS00345",
+    "newId": "PEDRE31",
+    "system": "RESP",
+    "complexity": 3,
+    "revealTitle": "Severe Asthma Exacerbation (5 F): Quick Action Saves the Day"
+  },
+  {
+    "rowNum": 44,
+    "oldId": "PEDS001",
+    "newId": "PEDRE32",
+    "system": "RESP",
+    "complexity": 3,
+    "revealTitle": "Severe Asthma Exacerbation (5 F): Quick Action Required"
+  },
+  {
+    "rowNum": 70,
+    "oldId": "PEDS001",
+    "newId": "PEDRE33",
+    "system": "RESP",
+    "complexity": 3,
+    "revealTitle": "Acute Asthma Exacerbation (5 M): Timely Intervention Critical"
+  },
+  {
+    "rowNum": 74,
+    "oldId": "PED00234",
+    "newId": "PEDRE34",
+    "system": "RESP",
+    "complexity": 3,
+    "revealTitle": "Pediatric Asthma Exacerbation (8 M): Timely Management Saves Lives"
+  },
+  {
+    "rowNum": 76,
+    "oldId": "TR00123",
+    "newId": "RESP0035",
+    "system": "RESP",
+    "complexity": 3,
+    "revealTitle": "Pulmonary Embolism (55 F): Recognizing the Danger Signs"
+  },
+  {
+    "rowNum": 92,
+    "oldId": "PEDS00123",
+    "newId": "PEDRE36",
+    "system": "RESP",
+    "complexity": 3,
+    "revealTitle": "Acute Asthma Exacerbation (6 Y/O): Timely Intervention Saves Life"
+  },
+  {
+    "rowNum": 100,
+    "oldId": "PED00123",
+    "newId": "PEDRE37",
+    "system": "RESP",
+    "complexity": 3,
+    "revealTitle": "Severe Asthma Exacerbation in a Child (5 F): Rapid Response Required"
+  },
+  {
+    "rowNum": 130,
+    "oldId": "EM12345",
+    "newId": "RESP0038",
+    "system": "RESP",
+    "complexity": 3,
+    "revealTitle": "Pulmonary Embolism (65 M): Time is Critical"
+  },
+  {
+    "rowNum": 149,
+    "oldId": "RESP001",
+    "newId": "RESP0039",
+    "system": "RESP",
+    "complexity": 3,
+    "revealTitle": "Pulmonary Embolism (55 F): Timely Recognition is Critical"
+  },
+  {
+    "rowNum": 153,
+    "oldId": "PED0002",
+    "newId": "PEDRE40",
+    "system": "RESP",
+    "complexity": 3,
+    "revealTitle": "Severe Asthma Exacerbation in Pediatric Patient (8 M): Timely Intervention is Crucial"
+  },
+  {
+    "rowNum": 159,
+    "oldId": "PEDS00234",
+    "newId": "PEDRE41",
+    "system": "RESP",
+    "complexity": 3,
+    "revealTitle": "Severe Asthma Attack in Pediatric Patient (5 Y): Swift Action Required"
+  },
+  {
+    "rowNum": 163,
+    "oldId": "PEDS00567",
+    "newId": "PEDRE42",
+    "system": "RESP",
+    "complexity": 3,
+    "revealTitle": "Acute Asthma Exacerbation in Pediatric Patient (5 M): Timely Management is Crucial"
+  },
+  {
+    "rowNum": 170,
+    "oldId": "PNEU001",
+    "newId": "RESP0043",
+    "system": "RESP",
+    "complexity": 3,
+    "revealTitle": "Acute Exacerbation of COPD (65 M): Timely Intervention Required"
+  },
+  {
+    "rowNum": 188,
+    "oldId": "PEDS00345",
+    "newId": "PEDRE44",
+    "system": "RESP",
+    "complexity": 3,
+    "revealTitle": "Severe Asthma Exacerbation (5 M): Quick Action Saves Lives"
+  },
+  {
+    "rowNum": 31,
+    "oldId": "PNEU0002",
+    "newId": "RESP0045",
+    "system": "RESP",
+    "complexity": 4,
+    "revealTitle": "Acute Exacerbation of COPD (54 M): Timely Intervention is Critical"
+  },
+  {
+    "rowNum": 26,
+    "oldId": "PEDS001",
+    "newId": "PEDIM01",
+    "system": "IMMU",
+    "complexity": 3,
+    "revealTitle": "Acute Anaphylaxis (4 Y): Timely Recognition Saves Lives"
+  },
+  {
+    "rowNum": 101,
+    "oldId": "PED00456",
+    "newId": "PEDIM02",
+    "system": "IMMU",
+    "complexity": 3,
+    "revealTitle": "Anaphylaxis in a Child (8 M): Swift Action Saves Lives"
+  },
+  {
+    "rowNum": 5,
+    "oldId": "OB0002",
+    "newId": "IMMU0003",
+    "system": "IMMU",
+    "complexity": 5,
+    "revealTitle": "Anaphylaxis (28 F): Understanding Management in Pregnancy"
+  },
+  {
+    "rowNum": 7,
+    "oldId": "CV00234",
+    "newId": "CARD0001",
+    "system": "CARD",
+    "complexity": 2,
+    "revealTitle": "Acute Coronary Syndrome (55 M): Timely Intervention Saves Lives"
+  },
+  {
+    "rowNum": 8,
+    "oldId": "CA0001",
+    "newId": "CARD0002",
+    "system": "CARD",
+    "complexity": 2,
+    "revealTitle": "Acute Myocardial Infarction (55 M): Time is Muscle"
+  },
+  {
+    "rowNum": 10,
+    "oldId": "CARDIAC001",
+    "newId": "CARD0003",
+    "system": "CARD",
+    "complexity": 2,
+    "revealTitle": "Acute Myocardial Infarction (50 M): Timely Intervention Saves Lives"
+  },
+  {
+    "rowNum": 18,
+    "oldId": "TR0001",
+    "newId": "CARD0004",
+    "system": "CARD",
+    "complexity": 2,
+    "revealTitle": "Acute Myocardial Infarction (55 M): Timely Intervention Saves Lives"
+  },
+  {
+    "rowNum": 28,
+    "oldId": "CARDIAC045",
+    "newId": "CARD0005",
+    "system": "CARD",
+    "complexity": 2,
+    "revealTitle": "Acute Myocardial Infarction (58 M): Rapid Response Saves Lives"
+  },
+  {
+    "rowNum": 30,
+    "oldId": "CARDI001",
+    "newId": "CARD0006",
+    "system": "CARD",
+    "complexity": 2,
+    "revealTitle": "Acute Myocardial Infarction (55 M): Rapid Intervention Saves Lives"
+  },
+  {
+    "rowNum": 33,
+    "oldId": "CV00123",
+    "newId": "CARD0007",
+    "system": "CARD",
+    "complexity": 2,
+    "revealTitle": "Acute Coronary Syndrome (52 M): Timely Intervention Saves Lives"
+  },
+  {
+    "rowNum": 46,
+    "oldId": "CVD1001",
+    "newId": "CARD0008",
+    "system": "CARD",
+    "complexity": 2,
+    "revealTitle": "Acute Coronary Syndrome (58 M): Rapid Assessment is Crucial"
+  },
+  {
+    "rowNum": 47,
+    "oldId": "CARDIAC001",
+    "newId": "CARD0009",
+    "system": "CARD",
+    "complexity": 2,
+    "revealTitle": "Acute Myocardial Infarction (55 M): Time is Muscle"
+  },
+  {
+    "rowNum": 60,
+    "oldId": "CARDIAC001",
+    "newId": "CARD0010",
+    "system": "CARD",
+    "complexity": 2,
+    "revealTitle": "Acute Myocardial Infarction (55 M): Swift Intervention Saves Lives"
+  },
+  {
+    "rowNum": 63,
+    "oldId": "CARDIAC001",
+    "newId": "CARD0011",
+    "system": "CARD",
+    "complexity": 2,
+    "revealTitle": "Acute Coronary Syndrome (54 M): Quick Recognition Saves Lives"
+  },
+  {
+    "rowNum": 71,
+    "oldId": "CARDIAC007",
+    "newId": "CARD0012",
+    "system": "CARD",
+    "complexity": 2,
+    "revealTitle": "Acute Myocardial Infarction (50 M): Time is Muscle"
+  },
+  {
+    "rowNum": 81,
+    "oldId": "CARDIAC001",
+    "newId": "CARD0013",
+    "system": "CARD",
+    "complexity": 2,
+    "revealTitle": "Acute Myocardial Infarction (52 M): Time is Muscle"
+  },
+  {
+    "rowNum": 83,
+    "oldId": "CARDIAC001",
+    "newId": "CARD0014",
+    "system": "CARD",
+    "complexity": 2,
+    "revealTitle": "Acute Myocardial Infarction (55 M): Timely Intervention Saves Lives"
+  },
+  {
+    "rowNum": 84,
+    "oldId": "CAR0002",
+    "newId": "CARD0015",
+    "system": "CARD",
+    "complexity": 2,
+    "revealTitle": "Acute Coronary Syndrome (54 M): Timely Intervention Saves Lives"
+  },
+  {
+    "rowNum": 85,
+    "oldId": "CV00123",
+    "newId": "CARD0016",
+    "system": "CARD",
+    "complexity": 2,
+    "revealTitle": "Acute Coronary Syndrome (ACS) (55 M): Time is Muscle"
+  },
+  {
+    "rowNum": 90,
+    "oldId": "CARDIO001",
+    "newId": "CARD0017",
+    "system": "CARD",
+    "complexity": 2,
+    "revealTitle": "Acute Myocardial Infarction (62 M): Time is Muscle"
+  },
+  {
+    "rowNum": 91,
+    "oldId": "CVD00123",
+    "newId": "CARD0018",
+    "system": "CARD",
+    "complexity": 2,
+    "revealTitle": "Acute Myocardial Infarction (58 M): Timely Intervention Saves Lives"
+  },
+  {
+    "rowNum": 97,
+    "oldId": "TRA00123",
+    "newId": "CARD0019",
+    "system": "CARD",
+    "complexity": 2,
+    "revealTitle": "Acute Myocardial Infarction (55 M): Rapid Response Required"
+  },
+  {
+    "rowNum": 104,
+    "oldId": "CARDIAC002",
+    "newId": "CARD0020",
+    "system": "CARD",
+    "complexity": 2,
+    "revealTitle": "Acute Myocardial Infarction (55 M): Rapid Recognition Saves Lives"
+  },
+  {
+    "rowNum": 106,
+    "oldId": "CV02345",
+    "newId": "CARD0021",
+    "system": "CARD",
+    "complexity": 2,
+    "revealTitle": "Acute Myocardial Infarction (55 M): Rapid Intervention Saves Lives"
+  },
+  {
+    "rowNum": 108,
+    "oldId": "CARDIAC001",
+    "newId": "CARD0022",
+    "system": "CARD",
+    "complexity": 2,
+    "revealTitle": "Acute Myocardial Infarction (58 M): Timely Intervention Matters"
+  },
+  {
+    "rowNum": 111,
+    "oldId": "CARD00123",
+    "newId": "CARD0023",
+    "system": "CARD",
+    "complexity": 2,
+    "revealTitle": "Acute Myocardial Infarction (58 M): Act Fast to Save a Life"
+  },
+  {
+    "rowNum": 112,
+    "oldId": "CARDIAC001",
+    "newId": "CARD0024",
+    "system": "CARD",
+    "complexity": 2,
+    "revealTitle": "Myocardial Infarction (55 M): Rapid Response Needed"
+  },
+  {
+    "rowNum": 116,
+    "oldId": "CARDIAC001",
+    "newId": "CARD0025",
+    "system": "CARD",
+    "complexity": 2,
+    "revealTitle": "Acute Myocardial Infarction (64 M): Time is Muscle"
+  },
+  {
+    "rowNum": 118,
+    "oldId": "CARDIAC001",
+    "newId": "CARD0026",
+    "system": "CARD",
+    "complexity": 2,
+    "revealTitle": "Acute Coronary Syndrome (ACS) (55 M): Time is Muscle"
+  },
+  {
+    "rowNum": 120,
+    "oldId": "CV0002",
+    "newId": "CARD0027",
+    "system": "CARD",
+    "complexity": 2,
+    "revealTitle": "Acute Myocardial Infarction (55 M): Rapid Response Required"
+  },
+  {
+    "rowNum": 121,
+    "oldId": "CARDIAC001",
+    "newId": "CARD0028",
+    "system": "CARD",
+    "complexity": 2,
+    "revealTitle": "Acute Myocardial Infarction (62 M): Time is Muscle"
+  },
+  {
+    "rowNum": 122,
+    "oldId": "CARDIAC001",
+    "newId": "CARD0029",
+    "system": "CARD",
+    "complexity": 2,
+    "revealTitle": "Acute Myocardial Infarction (55 M): Time is Muscle"
+  },
+  {
+    "rowNum": 123,
+    "oldId": "TRI0002",
+    "newId": "CARD0030",
+    "system": "CARD",
+    "complexity": 2,
+    "revealTitle": "Acute Coronary Syndrome (65 M): Rapid Response Needed"
+  },
+  {
+    "rowNum": 126,
+    "oldId": "CV0005",
+    "newId": "CARD0031",
+    "system": "CARD",
+    "complexity": 2,
+    "revealTitle": "Acute Coronary Syndrome (55 M): Timely Action Saves Lives"
+  },
+  {
+    "rowNum": 127,
+    "oldId": "CARDIO001",
+    "newId": "CARD0032",
+    "system": "CARD",
+    "complexity": 2,
+    "revealTitle": "Acute Coronary Syndrome (55 M): Timely Recognition Saves Lives"
+  },
+  {
+    "rowNum": 131,
+    "oldId": "CV0005",
+    "newId": "CARD0033",
+    "system": "CARD",
+    "complexity": 2,
+    "revealTitle": "Acute Myocardial Infarction (54 M): Time is Muscle"
+  },
+  {
+    "rowNum": 138,
+    "oldId": "CV0001",
+    "newId": "CARD0034",
+    "system": "CARD",
+    "complexity": 2,
+    "revealTitle": "Acute Myocardial Infarction (55 M): Time is Muscle"
+  },
+  {
+    "rowNum": 141,
+    "oldId": "CARDIAC001",
+    "newId": "CARD0035",
+    "system": "CARD",
+    "complexity": 2,
+    "revealTitle": "Acute Myocardial Infarction (55 M): Time is Muscle"
+  },
+  {
+    "rowNum": 148,
+    "oldId": "CV0002",
+    "newId": "CARD0036",
+    "system": "CARD",
+    "complexity": 2,
+    "revealTitle": "Acute Myocardial Infarction (55 M): Timely Intervention Saves Lives"
+  },
+  {
+    "rowNum": 152,
+    "oldId": "TRI0001",
+    "newId": "CARD0037",
+    "system": "CARD",
+    "complexity": 2,
+    "revealTitle": "Acute Heart Failure (65 M): Recognizing the Signs"
+  },
+  {
+    "rowNum": 156,
+    "oldId": "CARDIAC001",
+    "newId": "CARD0038",
+    "system": "CARD",
+    "complexity": 2,
+    "revealTitle": "Acute Myocardial Infarction (55 M): Timely Intervention Saves Lives"
+  },
+  {
+    "rowNum": 164,
+    "oldId": "CV0005",
+    "newId": "CARD0039",
+    "system": "CARD",
+    "complexity": 2,
+    "revealTitle": "Acute Coronary Syndrome (60 F): Rapid Recognition Saves Lives"
+  },
+  {
+    "rowNum": 166,
+    "oldId": "CARDIAC001",
+    "newId": "CARD0040",
+    "system": "CARD",
+    "complexity": 2,
+    "revealTitle": "Acute Myocardial Infarction (55 M): Time is Muscle!"
+  },
+  {
+    "rowNum": 169,
+    "oldId": "CARDIAC001",
+    "newId": "CARD0041",
+    "system": "CARD",
+    "complexity": 2,
+    "revealTitle": "Acute Coronary Syndrome (ACS) in a Middle-Aged Male"
+  },
+  {
+    "rowNum": 177,
+    "oldId": "CV0005",
+    "newId": "CARD0042",
+    "system": "CARD",
+    "complexity": 2,
+    "revealTitle": "Acute Myocardial Infarction (50 M): Time is Muscle"
+  },
+  {
+    "rowNum": 182,
+    "oldId": "CARDIAC001",
+    "newId": "CARD0043",
+    "system": "CARD",
+    "complexity": 2,
+    "revealTitle": "Acute Myocardial Infarction (54 M): Rapid Response Saves Lives"
+  },
+  {
+    "rowNum": 184,
+    "oldId": "TRI00987",
+    "newId": "CARD0044",
+    "system": "CARD",
+    "complexity": 2,
+    "revealTitle": "Acute Myocardial Infarction (65 M): Timely Recognition Saves Lives"
+  },
+  {
+    "rowNum": 186,
+    "oldId": "CARDIAC001",
+    "newId": "CARD0045",
+    "system": "CARD",
+    "complexity": 2,
+    "revealTitle": "Acute Myocardial Infarction (55 M): Timely Recognition Saves Lives"
+  },
+  {
+    "rowNum": 48,
+    "oldId": "CARDIAC0003",
+    "newId": "CARD0046",
+    "system": "CARD",
+    "complexity": 3,
+    "revealTitle": "Acute Myocardial Infarction (52 M): Time is Muscle"
+  },
+  {
+    "rowNum": 53,
+    "oldId": "CPR001",
+    "newId": "CARD0047",
+    "system": "CARD",
+    "complexity": 3,
+    "revealTitle": "Cardiac Arrest (65 M): Swift Action Saves Lives"
+  },
+  {
+    "rowNum": 72,
+    "oldId": "EM12345",
+    "newId": "CARD0048",
+    "system": "CARD",
+    "complexity": 3,
+    "revealTitle": "Acute Myocardial Infarction (62 M): Rapid Response Required"
+  },
+  {
+    "rowNum": 79,
+    "oldId": "CV0001",
+    "newId": "CARD0049",
+    "system": "CARD",
+    "complexity": 3,
+    "revealTitle": "Acute Myocardial Infarction (55 M): Critical Early Interventions"
+  },
+  {
+    "rowNum": 103,
+    "oldId": "CV00321",
+    "newId": "CARD0050",
+    "system": "CARD",
+    "complexity": 3,
+    "revealTitle": "Acute Myocardial Infarction (55 M): Rapid Intervention Needed"
+  },
+  {
+    "rowNum": 113,
+    "oldId": "TRI0001",
+    "newId": "CARD0051",
+    "system": "CARD",
+    "complexity": 3,
+    "revealTitle": "Acute Myocardial Infarction (55 M): Timely Intervention Saves Lives"
+  },
+  {
+    "rowNum": 129,
+    "oldId": "CARDIAC001",
+    "newId": "CARD0052",
+    "system": "CARD",
+    "complexity": 3,
+    "revealTitle": "Acute Myocardial Infarction (55 M): Timely Intervention is Critical"
+  },
+  {
+    "rowNum": 137,
+    "oldId": "CPR2023",
+    "newId": "CARD0053",
+    "system": "CARD",
+    "complexity": 3,
+    "revealTitle": "Cardiac Arrest (65 M): Timely CPR Saves Lives"
+  },
+  {
+    "rowNum": 143,
+    "oldId": "CARDIAC001",
+    "newId": "CARD0054",
+    "system": "CARD",
+    "complexity": 3,
+    "revealTitle": "Acute Myocardial Infarction (55 M): Timely Action is Critical"
+  },
+  {
+    "rowNum": 147,
+    "oldId": "TRIAGE001",
+    "newId": "CARD0055",
+    "system": "CARD",
+    "complexity": 3,
+    "revealTitle": "Acute Myocardial Infarction (55 M): Timely Intervention Saves Lives"
+  },
+  {
+    "rowNum": 175,
+    "oldId": "EM2025",
+    "newId": "CARD0056",
+    "system": "CARD",
+    "complexity": 3,
+    "revealTitle": "Acute Myocardial Infarction (65 M): Rapid Response Required"
+  },
+  {
+    "rowNum": 178,
+    "oldId": "TRA00123",
+    "newId": "CARD0057",
+    "system": "CARD",
+    "complexity": 3,
+    "revealTitle": "Acute Myocardial Infarction (50 M): Fast Action Saves Lives"
+  },
+  {
+    "rowNum": 9,
+    "oldId": "TR0002",
+    "newId": "ENDO0001",
+    "system": "ENDO",
+    "complexity": 2,
+    "revealTitle": "Hypoglycemia in a Diabetic Patient (55 M): Quick Action Saves Lives"
+  },
+  {
+    "rowNum": 157,
+    "oldId": "TRI0005",
+    "newId": "ENDO0002",
+    "system": "ENDO",
+    "complexity": 2,
+    "revealTitle": "Hypoglycemia (68 M): Swift Action Saves a Life"
+  },
+  {
+    "rowNum": 45,
+    "oldId": "PED00123",
+    "newId": "PEDEN03",
+    "system": "ENDO",
+    "complexity": 3,
+    "revealTitle": "Hypoglycemia in a Child (6 Y): Swift Action Required"
+  },
+  {
+    "rowNum": 80,
+    "oldId": "TRI0002",
+    "newId": "NEUR0001",
+    "system": "NEUR",
+    "complexity": 1,
+    "revealTitle": "Hypoglycemia Leading to Altered Mental Status (25 M): Quick Recognition Saves Lives"
+  },
+  {
+    "rowNum": 88,
+    "oldId": "TRI001",
+    "newId": "NEUR0002",
+    "system": "NEUR",
+    "complexity": 1,
+    "revealTitle": "Head Injury with Intracranial Hemorrhage (25 M): Time-Sensitive Decisions"
+  },
+  {
+    "rowNum": 128,
+    "oldId": "NEURO01234",
+    "newId": "NEUR0003",
+    "system": "NEUR",
+    "complexity": 1,
+    "revealTitle": "Stroke (58 M): Time is Brain!"
+  },
+  {
+    "rowNum": 160,
+    "oldId": "NEURO001",
+    "newId": "NEUR0004",
+    "system": "NEUR",
+    "complexity": 1,
+    "revealTitle": "Stroke (65 M): Time Is Brain"
+  },
+  {
+    "rowNum": 167,
+    "oldId": "NEURO001",
+    "newId": "NEUR0005",
+    "system": "NEUR",
+    "complexity": 1,
+    "revealTitle": "Stroke (65 M): Time is Brain"
+  },
+  {
+    "rowNum": 190,
+    "oldId": "PEDS001",
+    "newId": "PEDNE06",
+    "system": "NEUR",
+    "complexity": 1,
+    "revealTitle": "Viral Exanthem in Pediatrics (5 M): Differentiating the Causes"
+  },
+  {
+    "rowNum": 20,
+    "oldId": "NEU00123",
+    "newId": "NEUR0007",
+    "system": "NEUR",
+    "complexity": 2,
+    "revealTitle": "Acute Stroke (62 M): Time is Brain"
+  },
+  {
+    "rowNum": 32,
+    "oldId": "NEU0001",
+    "newId": "NEUR0008",
+    "system": "NEUR",
+    "complexity": 2,
+    "revealTitle": "Acute Stroke (62 M): Time is Brain"
+  },
+  {
+    "rowNum": 38,
+    "oldId": "PEDS03021",
+    "newId": "PEDNE09",
+    "system": "NEUR",
+    "complexity": 2,
+    "revealTitle": "Kawasaki Disease (5 M): Rapid Recognition is Essential"
+  },
+  {
+    "rowNum": 40,
+    "oldId": "NEU00123",
+    "newId": "NEUR0010",
+    "system": "NEUR",
+    "complexity": 2,
+    "revealTitle": "Acute Ischemic Stroke (65 M): Time is Brain"
+  },
+  {
+    "rowNum": 51,
+    "oldId": "NEURO00321",
+    "newId": "NEUR0011",
+    "system": "NEUR",
+    "complexity": 2,
+    "revealTitle": "Acute Stroke (65 M): Time is Brain"
+  },
+  {
+    "rowNum": 58,
+    "oldId": "NEURO001",
+    "newId": "NEUR0012",
+    "system": "NEUR",
+    "complexity": 2,
+    "revealTitle": "Acute Ischemic Stroke (62 M): Time is Brain"
+  },
+  {
+    "rowNum": 89,
+    "oldId": "NEU00345",
+    "newId": "NEUR0013",
+    "system": "NEUR",
+    "complexity": 2,
+    "revealTitle": "Acute Ischemic Stroke (62 M): Time is Brain"
+  },
+  {
+    "rowNum": 95,
+    "oldId": "NEU0001",
+    "newId": "NEUR0014",
+    "system": "NEUR",
+    "complexity": 2,
+    "revealTitle": "Acute Ischemic Stroke (65 M): Time is Brain!"
+  },
+  {
+    "rowNum": 98,
+    "oldId": "NEU001",
+    "newId": "NEUR0015",
+    "system": "NEUR",
+    "complexity": 2,
+    "revealTitle": "Acute Stroke (62 M): Time is Brain"
+  },
+  {
+    "rowNum": 99,
+    "oldId": "NEU00123",
+    "newId": "NEUR0016",
+    "system": "NEUR",
+    "complexity": 2,
+    "revealTitle": "Acute Ischemic Stroke (52 F): Quick Recognition Saves Lives"
+  },
+  {
+    "rowNum": 117,
+    "oldId": "NEU04567",
+    "newId": "NEUR0017",
+    "system": "NEUR",
+    "complexity": 2,
+    "revealTitle": "Acute Stroke (58 F): Time is Brain"
+  },
+  {
+    "rowNum": 132,
+    "oldId": "NEU04567",
+    "newId": "NEUR0018",
+    "system": "NEUR",
+    "complexity": 2,
+    "revealTitle": "Acute Ischemic Stroke (62 M): Time is Brain"
+  },
+  {
+    "rowNum": 154,
+    "oldId": "NEURO00567",
+    "newId": "NEUR0019",
+    "system": "NEUR",
+    "complexity": 2,
+    "revealTitle": "Acute Ischemic Stroke (65 M): Swift Action Saves Lives"
+  },
+  {
+    "rowNum": 165,
+    "oldId": "NEURO001",
+    "newId": "NEUR0020",
+    "system": "NEUR",
+    "complexity": 2,
+    "revealTitle": "Acute Ischemic Stroke (62 F): Time is Brain!"
+  },
+  {
+    "rowNum": 180,
+    "oldId": "NEU02345",
+    "newId": "NEUR0021",
+    "system": "NEUR",
+    "complexity": 2,
+    "revealTitle": "Acute Ischemic Stroke (65 F): Time is Brain"
+  },
+  {
+    "rowNum": 93,
+    "oldId": "TRA00123",
+    "newId": "NEUR0022",
+    "system": "NEUR",
+    "complexity": 3,
+    "revealTitle": "Severe Concussion and Intracranial Hemorrhage (25 M): Timely Intervention Required"
+  },
+  {
+    "rowNum": 136,
+    "oldId": "TRA00123",
+    "newId": "NEUR0023",
+    "system": "NEUR",
+    "complexity": 3,
+    "revealTitle": "Intracranial Hemorrhage (25 M): Time is Brain"
+  },
+  {
+    "rowNum": 155,
+    "oldId": "NEURO075",
+    "newId": "NEUR0024",
+    "system": "NEUR",
+    "complexity": 3,
+    "revealTitle": "Acute Stroke (68 F): Time is Brain"
+  },
+  {
+    "rowNum": 162,
+    "oldId": "NEU0456",
+    "newId": "NEUR0025",
+    "system": "NEUR",
+    "complexity": 3,
+    "revealTitle": "Subarachnoid Hemorrhage (55 M): Timely Recognition Saves Lives"
+  },
+  {
+    "rowNum": 172,
+    "oldId": "CA01234",
+    "newId": "NEUR0026",
+    "system": "NEUR",
+    "complexity": 3,
+    "revealTitle": "Intracranial Hemorrhage (25 F): Timely Diagnosis is Crucial"
+  },
+  {
+    "rowNum": 179,
+    "oldId": "NEURO001",
+    "newId": "NEUR0027",
+    "system": "NEUR",
+    "complexity": 3,
+    "revealTitle": "Acute Stroke (65 M): Swift Action Saves Lives"
+  },
+  {
+    "rowNum": 181,
+    "oldId": "TRA00123",
+    "newId": "NEUR0028",
+    "system": "NEUR",
+    "complexity": 3,
+    "revealTitle": "Severe Brain Injury (25 M): Quick Action Saves Lives"
+  },
+  {
+    "rowNum": 183,
+    "oldId": "NEU04567",
+    "newId": "NEUR0029",
+    "system": "NEUR",
+    "complexity": 3,
+    "revealTitle": "Acute Ischemic Stroke (68 M): Timely Intervention Saves Lives"
+  },
+  {
+    "rowNum": 185,
+    "oldId": "NEURO001",
+    "newId": "NEUR0030",
+    "system": "NEUR",
+    "complexity": 3,
+    "revealTitle": "Subarachnoid Hemorrhage (25 F): Recognizing the Signs"
+  },
+  {
+    "rowNum": 21,
+    "oldId": "PED0002",
+    "newId": "PEDNE31",
+    "system": "NEUR",
+    "complexity": 4,
+    "revealTitle": "Febrile Seizure in a Toddler (2 Y): Quick Recognition Saves Lives"
+  },
+  {
+    "rowNum": 11,
+    "oldId": "NEU00567",
+    "newId": "NEUR0032",
+    "system": "NEUR",
+    "complexity": 5,
+    "revealTitle": "Subarachnoid Hemorrhage (28 F): Rapid Diagnosis is Essential"
+  },
+  {
+    "rowNum": 13,
+    "oldId": "TR0002",
+    "newId": "NEUR0033",
+    "system": "NEUR",
+    "complexity": 5,
+    "revealTitle": "Subarachnoid Hemorrhage (28 F): Rapid Recognition Saves Lives"
+  },
+  {
+    "rowNum": 22,
+    "oldId": "ED01235",
+    "newId": "NEUR0034",
+    "system": "NEUR",
+    "complexity": 5,
+    "revealTitle": "Subarachnoid Hemorrhage (25 F): Urgent Intervention Required"
+  },
+  {
+    "rowNum": 43,
+    "oldId": "TR0005",
+    "newId": "NEUR0035",
+    "system": "NEUR",
+    "complexity": 5,
+    "revealTitle": "Subarachnoid Hemorrhage (45 F): Timely Diagnosis is Critical"
+  },
+  {
+    "rowNum": 73,
+    "oldId": "NEU001",
+    "newId": "NEUR0036",
+    "system": "NEUR",
+    "complexity": 5,
+    "revealTitle": "Subarachnoid Hemorrhage (28 F): Timely Recognition Saves Lives"
+  },
+  {
+    "rowNum": 115,
+    "oldId": "EM00123",
+    "newId": "NEUR0037",
+    "system": "NEUR",
+    "complexity": 5,
+    "revealTitle": "Subarachnoid Hemorrhage (29 F): Timely Diagnosis Saves Lives"
+  },
+  {
+    "rowNum": 124,
+    "oldId": "ED23456",
+    "newId": "NEUR0038",
+    "system": "NEUR",
+    "complexity": 5,
+    "revealTitle": "Subarachnoid Hemorrhage (29 F): Rapid Recognition Saves Lives"
+  },
+  {
+    "rowNum": 125,
+    "oldId": "TR12345",
+    "newId": "NEUR0039",
+    "system": "NEUR",
+    "complexity": 5,
+    "revealTitle": "Subarachnoid Hemorrhage (28 F): Timely Intervention Saves Lives"
+  },
+  {
+    "rowNum": 133,
+    "oldId": "EM00345",
+    "newId": "NEUR0040",
+    "system": "NEUR",
+    "complexity": 5,
+    "revealTitle": "Subarachnoid Hemorrhage (54 F): Timely Diagnosis Essential"
+  },
+  {
+    "rowNum": 135,
+    "oldId": "EM202401",
+    "newId": "NEUR0041",
+    "system": "NEUR",
+    "complexity": 5,
+    "revealTitle": "Subarachnoid Hemorrhage (35 F): Time is Critical"
+  },
+  {
+    "rowNum": 171,
+    "oldId": "TR00123",
+    "newId": "NEUR0042",
+    "system": "NEUR",
+    "complexity": 5,
+    "revealTitle": "Subarachnoid Hemorrhage (28 F): Timely Recognition Saves Lives"
+  },
+  {
+    "rowNum": 173,
+    "oldId": "EM00123",
+    "newId": "NEUR0043",
+    "system": "NEUR",
+    "complexity": 5,
+    "revealTitle": "Subarachnoid Hemorrhage (28 F): Timely Diagnosis Saves Lives"
+  },
+  {
+    "rowNum": 187,
+    "oldId": "NEU00245",
+    "newId": "NEUR0044",
+    "system": "NEUR",
+    "complexity": 5,
+    "revealTitle": "Subarachnoid Hemorrhage (29 F): Urgent Intervention Required"
+  },
+  {
+    "rowNum": 17,
+    "oldId": "PEDS001",
+    "newId": "PEDMU01",
+    "system": "MULT",
+    "complexity": 1,
+    "revealTitle": "Kawasaki Disease (6 M): Early Recognition is Vital"
+  },
+  {
+    "rowNum": 19,
+    "oldId": "PEDS001",
+    "newId": "PEDMU02",
+    "system": "MULT",
+    "complexity": 1,
+    "revealTitle": "Kawasaki Disease (5 M): Early Recognition is Crucial"
+  },
+  {
+    "rowNum": 57,
+    "oldId": "PEDS0001",
+    "newId": "PEDMU03",
+    "system": "MULT",
+    "complexity": 1,
+    "revealTitle": "Kawasaki Disease (5 M): Timely Diagnosis is Crucial"
+  },
+  {
+    "rowNum": 65,
+    "oldId": "PED0001",
+    "newId": "PEDMU04",
+    "system": "MULT",
+    "complexity": 1,
+    "revealTitle": "Hemolytic Uremic Syndrome (5 Y): Timely Recognition is Crucial"
+  },
+  {
+    "rowNum": 67,
+    "oldId": "PEDS001",
+    "newId": "PEDMU05",
+    "system": "MULT",
+    "complexity": 1,
+    "revealTitle": "Kawasaki Disease (5 F): Timely Recognition Matters"
+  },
+  {
+    "rowNum": 69,
+    "oldId": "PED00321",
+    "newId": "PEDMU06",
+    "system": "MULT",
+    "complexity": 1,
+    "revealTitle": "Kawasaki Disease in Children (5 M): Early Recognition Matters"
+  },
+  {
+    "rowNum": 75,
+    "oldId": "PEDS001",
+    "newId": "PEDMU07",
+    "system": "MULT",
+    "complexity": 1,
+    "revealTitle": "Croup in a Child (5 M): Timely Intervention is Crucial"
+  },
+  {
+    "rowNum": 109,
+    "oldId": "PEDS00234",
+    "newId": "PEDMU08",
+    "system": "MULT",
+    "complexity": 1,
+    "revealTitle": "Kawasaki Disease (5 M): Early Recognition Saves Lives"
+  },
+  {
+    "rowNum": 134,
+    "oldId": "INF00321",
+    "newId": "MULT0009",
+    "system": "MULT",
+    "complexity": 1,
+    "revealTitle": "Meningococcemia (25 M): Timely Recognition Saves Lives"
+  },
+  {
+    "rowNum": 145,
+    "oldId": "PEDS001",
+    "newId": "PEDMU10",
+    "system": "MULT",
+    "complexity": 1,
+    "revealTitle": "Bronchiolitis (6 M): Timely Intervention Matters"
+  },
+  {
+    "rowNum": 189,
+    "oldId": "PEDS0001",
+    "newId": "PEDMU11",
+    "system": "MULT",
+    "complexity": 1,
+    "revealTitle": "Kawasaki Disease (5 M): Importance of Early Recognition"
+  },
+  {
+    "rowNum": 52,
+    "oldId": "PEDS00234",
+    "newId": "PEDMU12",
+    "system": "MULT",
+    "complexity": 2,
+    "revealTitle": "Acute Bronchiolitis (5 F): Timely Interventions Matter"
+  },
+  {
+    "rowNum": 87,
+    "oldId": "PEDS001",
+    "newId": "PEDMU13",
+    "system": "MULT",
+    "complexity": 2,
+    "revealTitle": "Acute Bronchiolitis in Infants (6 M): Early Intervention Matters"
+  },
+  {
+    "rowNum": 12,
+    "oldId": "PEDS001",
+    "newId": "PEDMU14",
+    "system": "MULT",
+    "complexity": 3,
+    "revealTitle": "Kawasaki Disease (5 Y): Early Recognition is Critical"
+  },
+  {
+    "rowNum": 15,
+    "oldId": "PED0003",
+    "newId": "PEDMU15",
+    "system": "MULT",
+    "complexity": 3,
+    "revealTitle": "Kawasaki Disease (5 M): Timely Recognition is Critical"
+  },
+  {
+    "rowNum": 35,
+    "oldId": "TRI001",
+    "newId": "MULT0016",
+    "system": "MULT",
+    "complexity": 3,
+    "revealTitle": "Anaphylactic Shock (25 F): Timely Intervention Saves Lives"
+  },
+  {
+    "rowNum": 42,
+    "oldId": "PEDS045",
+    "newId": "PEDMU17",
+    "system": "MULT",
+    "complexity": 3,
+    "revealTitle": "Hypovolemic Shock from Gastroenteritis (5 M): Swift Action Required"
+  },
+  {
+    "rowNum": 55,
+    "oldId": "NEU00123",
+    "newId": "MULT0018",
+    "system": "MULT",
+    "complexity": 3,
+    "revealTitle": "Migraine with Aura (29 F): Timely Intervention is Crucial"
+  },
+  {
+    "rowNum": 77,
+    "oldId": "PEDS00567",
+    "newId": "PEDMU19",
+    "system": "MULT",
+    "complexity": 3,
+    "revealTitle": "Kawasaki Disease (5 M): Early Recognition is Critical"
+  },
+  {
+    "rowNum": 23,
+    "oldId": "CAR001",
+    "newId": "TRAU0001",
+    "system": "TRAU",
+    "complexity": 3,
+    "revealTitle": "Traumatic Brain Injury (25 M): Rapid Response Required"
+  },
+  {
+    "rowNum": 24,
+    "oldId": "CAR00567",
+    "newId": "TRAU0002",
+    "system": "TRAU",
+    "complexity": 3,
+    "revealTitle": "Severe Traumatic Brain Injury (25 M): Rapid Assessment and Intervention"
+  },
+  {
+    "rowNum": 29,
+    "oldId": "TRA00123",
+    "newId": "TRAU0003",
+    "system": "TRAU",
+    "complexity": 3,
+    "revealTitle": "Severe Traumatic Brain Injury (25 M): Rapid Intervention Required"
+  },
+  {
+    "rowNum": 56,
+    "oldId": "TRA00123",
+    "newId": "TRAU0004",
+    "system": "TRAU",
+    "complexity": 3,
+    "revealTitle": "Severe Traumatic Brain Injury (25 M): Rapid Assessment & Intervention"
+  },
+  {
+    "rowNum": 62,
+    "oldId": "TRA00123",
+    "newId": "TRAU0005",
+    "system": "TRAU",
+    "complexity": 3,
+    "revealTitle": "Traumatic Brain Injury (29 M): Time is Critical"
+  },
+  {
+    "rowNum": 64,
+    "oldId": "TRA00123",
+    "newId": "TRAU0006",
+    "system": "TRAU",
+    "complexity": 3,
+    "revealTitle": "Severe Head Injury (25 M): Rapid Assessment Saves Lives"
+  },
+  {
+    "rowNum": 78,
+    "oldId": "TRA00123",
+    "newId": "TRAU0007",
+    "system": "TRAU",
+    "complexity": 3,
+    "revealTitle": "Severe Head Injury (25 M): Rapid Assessment and Intervention"
+  },
+  {
+    "rowNum": 86,
+    "oldId": "TRA00123",
+    "newId": "TRAU0008",
+    "system": "TRAU",
+    "complexity": 3,
+    "revealTitle": "Severe Head Trauma (25 M): Time is Critical"
+  },
+  {
+    "rowNum": 94,
+    "oldId": "TRA00123",
+    "newId": "TRAU0009",
+    "system": "TRAU",
+    "complexity": 3,
+    "revealTitle": "Severe Traumatic Brain Injury (25 M): Rapid Action Required"
+  },
+  {
+    "rowNum": 102,
+    "oldId": "TRI00345",
+    "newId": "TRAU0010",
+    "system": "TRAU",
+    "complexity": 3,
+    "revealTitle": "Severe Traumatic Brain Injury (25 M): Rapid Response Required"
+  },
+  {
+    "rowNum": 139,
+    "oldId": "TRA00123",
+    "newId": "TRAU0011",
+    "system": "TRAU",
+    "complexity": 3,
+    "revealTitle": "Hypovolemic Shock Due to Trauma (25 M): Rapid Assessment Required"
+  },
+  {
+    "rowNum": 191,
+    "oldId": "TRA00123",
+    "newId": "TRAU0012",
+    "system": "TRAU",
+    "complexity": 3,
+    "revealTitle": "Traumatic Brain Injury (28 M): Rapid Assessment and Intervention"
+  },
+  {
+    "rowNum": 25,
+    "oldId": "OB0002",
+    "newId": "OBST0001",
+    "system": "OBST",
+    "complexity": 5,
+    "revealTitle": "Ovarian Torsion in Pregnancy (28 F): Swift Diagnosis is Critical"
+  },
+  {
+    "rowNum": 146,
+    "oldId": "PEDS03456",
+    "newId": "PEDID01",
+    "system": "INFD",
+    "complexity": 1,
+    "revealTitle": "Viral Exanthem (5 M): Recognizing the Signs"
+  },
+  {
+    "rowNum": 151,
+    "oldId": "PSY00567",
+    "newId": "PSYC0001",
+    "system": "PSYC",
+    "complexity": 2,
+    "revealTitle": "Acute Psychosis (28 F): Rapid Assessment and Management"
+  },
+  {
+    "rowNum": 168,
+    "oldId": "TRA00123",
+    "newId": "MUSC0001",
+    "system": "MUSC",
+    "complexity": 3,
+    "revealTitle": "Femur Fracture & Compartment Syndrome (25 M): Time is Critical"
+  }
+]

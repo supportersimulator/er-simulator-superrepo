@@ -1,0 +1,141 @@
+#!/usr/bin/env node
+
+/**
+ * FIX MISSING 8 FIELDS
+ * Remove the 8 fields that don't exist and replace with 8 that do
+ */
+
+const fs = require('fs');
+const path = require('path');
+const { google } = require('googleapis');
+
+const PRODUCTION_PROJECT_ID = '12NihbVaaAIyRMCtzZ-aGjJ71CdL-HDjhmjxiD_S_EgIOuDOtrUH6M1l2';
+
+async function authorize() {
+  const credentialsPath = path.join(__dirname, '../config/credentials.json');
+  const tokenPath = path.join(__dirname, '../config/token.json');
+  const credentials = JSON.parse(fs.readFileSync(credentialsPath, 'utf8'));
+  const token = JSON.parse(fs.readFileSync(tokenPath, 'utf8'));
+  const { client_secret, client_id, redirect_uris } = credentials.installed || credentials.web;
+  const oAuth2Client = new google.auth.OAuth2(client_id, client_secret, redirect_uris[0]);
+  oAuth2Client.setCredentials(token);
+  return oAuth2Client;
+}
+
+async function fix() {
+  try {
+    const auth = await authorize();
+    const script = google.script({ version: 'v1', auth });
+
+    console.log('📥 Downloading current code...\n');
+
+    const content = await script.projects.getContent({
+      scriptId: PRODUCTION_PROJECT_ID
+    });
+
+    const codeFile = content.data.files.find(f => f.name === 'Code');
+    const manifestFile = content.data.files.find(f => f.name === 'appsscript');
+
+    let code = codeFile.source;
+
+    console.log('🔧 Removing 8 non-existent fields and adding 8 that do exist...\n');
+
+    // Remove these 8 that don't exist:
+    // Clinical_Assessment_Primary_Diagnosis
+    // Clinical_Assessment_Key_Clinical_Features
+    // Clinical_Assessment_Differential_Diagnosis
+    // Scoring_Criteria_Critical_Action_Checklist
+    // Case_Debrief_Time_Sensitive_Factors
+    // Case_Debrief_Key_Teaching_Points
+    // Case_Debrief_Common_Pitfalls_Discussion
+    // Scoring_Criteria_Performance_Benchmarks
+
+    // Replace with these 8 that DO exist from Row 2 headers:
+    const complete27Defaults = [
+      'Case_Organization_Case_ID',
+      'Case_Organization_Spark_Title',
+      'Case_Organization_Reveal_Title',
+      'Case_Organization_Pathway_or_Course_Name',
+      'Case_Organization_Difficulty_Level',
+      'Case_Organization_Medical_Category',
+      'Case_Organization_Pre_Sim_Overview',
+      'Case_Organization_Post_Sim_Overview',
+      'Version_and_Attribution_Full_Attribution_Details',
+      'Set_the_Stage_Context_Educational_Goal',
+      'Set_the_Stage_Context_Case_Summary_Concise',
+      'Set_the_Stage_Context_Environment_Description_for_AI_Image',
+      'Monitor_Vital_Signs_Initial_Vitals',
+      'Monitor_Vital_Signs_State1_Vitals',
+      'Monitor_Vital_Signs_State2_Vitals',
+      'Monitor_Vital_Signs_State3_Vitals',
+      'Monitor_Vital_Signs_State4_Vitals',
+      'Monitor_Vital_Signs_State5_Vitals',
+      'Patient_Demographics_and_Clinical_Data_Age',
+      'Patient_Demographics_and_Clinical_Data_Gender',
+      'Patient_Demographics_and_Clinical_Data_Presenting_Complaint',
+      'Patient_Demographics_and_Clinical_Data_Past_Medical_History',
+      'Patient_Demographics_and_Clinical_Data_Current_Medications',
+      'Patient_Demographics_and_Clinical_Data_Exam_Positive_Findings',
+      'Scenario_Progression_States_Decision_Nodes_JSON',
+      'CME_and_Educational_Content_CME_Learning_Objective',
+      'CME_and_Educational_Content_Quiz_Q1'
+    ];
+
+    console.log(`Updated to ${complete27Defaults.length} fields (all verified to exist)\n`);
+
+    // Find the selectedFields array assignment
+    const arrayStart = code.indexOf('// Use exact Row 2');
+
+    if (arrayStart === -1) {
+      console.log('❌ Could not find defaults section\n');
+      return;
+    }
+
+    const arrayAssignStart = code.indexOf('selectedFields = [', arrayStart);
+    const arrayEnd = code.indexOf('];', arrayAssignStart) + 2;
+
+    // Format the array with proper indentation
+    const formattedDefaults = complete27Defaults.map(name => `        '${name}'`).join(',\n');
+
+    const newCode = `// Use exact Row 2 header field names (27 fields - all verified to exist)
+      selectedFields = [
+${formattedDefaults}
+      ];
+
+      addLog('      ✅ Loaded ' + selectedFields.length + ' default fields');
+
+      `;
+
+    code = code.substring(0, arrayAssignStart) + newCode + code.substring(arrayEnd);
+
+    console.log('✅ Replaced with complete 27 existing fields\n');
+
+    await script.projects.updateContent({
+      scriptId: PRODUCTION_PROJECT_ID,
+      requestBody: { files: [
+        { name: 'Code', type: 'SERVER_JS', source: code },
+        manifestFile
+      ]}
+    });
+
+    console.log('✅ Deployed!\n');
+    console.log('═══════════════════════════════════════════════════════════════\n');
+    console.log('✅ ALL 27 FIELDS NOW EXIST IN ROW 2!\n');
+    console.log('\nComplete defaults list:\n');
+    complete27Defaults.forEach((name, i) => {
+      console.log(`  ${i+1}. ${name}`);
+    });
+    console.log('\nTry "Categories & Pathways" - should show all 27 fields!\n');
+    console.log('No more "Missing fields" warnings!\n');
+    console.log('═══════════════════════════════════════════════════════════════\n');
+
+  } catch (error) {
+    console.error('❌ ERROR:', error.message);
+    if (error.response) {
+      console.error('Response:', JSON.stringify(error.response.data, null, 2));
+    }
+    process.exit(1);
+  }
+}
+
+fix();

@@ -1,0 +1,15 @@
+aws_region       = "us-west-2"
+project_name     = "ersim"
+
+vpc_cidr             = "10.0.0.0/16"
+public_subnet_cidrs  = ["10.0.1.0/24", "10.0.2.0/24"]
+private_subnet_cidrs = ["10.0.11.0/24", "10.0.12.0/24"]
+
+# RDS configuration
+db_name     = "ersim_prod"
+db_username = "ersim_app"
+# IMPORTANT: set a strong password in your own terraform.tfvars (do not commit it)
+db_password = "CHANGE_ME_STRONG_PASSWORD"
+
+app_instance_type      = "t3.small"
+s3_assets_bucket_name  = "ersimulator-core-assets" # must be globally unique

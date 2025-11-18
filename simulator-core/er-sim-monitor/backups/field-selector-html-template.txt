@@ -1,0 +1,183 @@
+const html =
+    '<!DOCTYPE html>' +
+    '<html>' +
+    '<head>' +
+    '<style>' +
+    'body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; padding: 20px; background: #f5f5f5; margin: 0; }' +
+    '.header { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 20px; border-radius: 8px; margin-bottom: 20px; }' +
+    '.header h2 { margin: 0 0 10px 0; }' +
+    '.header p { margin: 0; opacity: 0.9; font-size: 14px; }' +
+    '.categories-container { max-height: 500px; overflow-y: auto; padding-right: 10px; }' +
+    '.category { background: white; border-radius: 8px; padding: 15px; margin-bottom: 15px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }' +
+    '.category-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px; padding-bottom: 10px; border-bottom: 2px solid #e0e0e0; }' +
+    '.category-title { font-weight: bold; font-size: 16px; color: #333; }' +
+    '.category-count { color: #667eea; font-size: 14px; margin-left: 8px; }' +
+    '.category-actions button { font-size: 11px; padding: 4px 8px; margin-left: 5px; cursor: pointer; border: 1px solid #ddd; background: white; border-radius: 4px; }' +
+    '.category-actions button:hover { background: #f0f0f0; }' +
+    '.field-item { padding: 8px; margin: 5px 0; background: #f9f9f9; border-radius: 4px; display: flex; align-items: flex-start; }' +
+    '.field-item:hover { background: #f0f0f0; }' +
+    '.field-item input { margin-right: 10px; margin-top: 3px; cursor: pointer; }' +
+    '.field-item label { cursor: pointer; flex: 1; font-size: 14px; }' +
+    '.field-name { font-weight: 500; color: #333; }' +
+    '.field-header { color: #666; font-size: 12px; display: block; margin-top: 2px; }' +
+    '.footer { position: sticky; bottom: 0; background: white; padding: 15px 20px; border-top: 2px solid #e0e0e0; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 -2px 10px rgba(0,0,0,0.1); margin: 0 -20px -20px -20px; }' +
+    '.field-count { font-weight: bold; color: #667eea; font-size: 16px; }' +
+    '.btn-continue { background: linear-gradient(135deg, #667eea, #764ba2); color: white; border: none; padding: 12px 24px; border-radius: 6px; font-size: 16px; font-weight: bold; cursor: pointer; transition: all 0.2s; }' +
+    '.btn-continue:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4); }' +
+    '.btn-continue:disabled { opacity: 0.5; cursor: not-allowed; transform: none; }' +
+    '.btn-reset { background: white; color: #667eea; border: 2px solid #667eea; padding: 10px 20px; border-radius: 6px; font-size: 14px; font-weight: bold; cursor: pointer; transition: all 0.2s; margin-right: 10px; }' +
+    '.btn-reset:hover { background: #f0f0ff; transform: translateY(-1px); }' +
+    '</style>' +
+    '</head>' +
+    '<body>' +
+    '<div class="header">' +
+    '  <h2>🎯 Select Fields to Cache</h2>' +
+    '  <p>Choose which fields the AI will analyze for pathway discovery</p>' +
+    '</div>' +
+    '<div class="categories-container" id="categories"></div>' +
+    '<div class="footer">' +
+    '  <span class="field-count" id="count">Loading...</span>' +
+    '  <div style="display: flex; gap: 10px;"><button class="btn-reset" onclick="resetToDefault27()">🔄 Reset to Default 27</button><button class="btn-continue" onclick="continueToCache()">Continue to Cache →</button></div>' +
+    '</div>' +
+    '<script>' +
+    'const categoriesData = ' + categoriesJson + ';' +
+    'const selectedFields = ' + selectedJson + ';' +
+    'const recommendedFieldNames = ' + JSON.stringify(recommendedFields) + ';' +
+    'const totalFields = ' + totalFields + ';' +
+    'function renderCategories() {' +
+    '  const container = document.getElementById("categories");' +
+    '  container.innerHTML = "";' +
+    '  for (const [category, fields] of Object.entries(categoriesData)) {' +
+    '    const categoryDiv = document.createElement("div");' +
+    '    categoryDiv.className = "category";' +
+    '    const headerDiv = document.createElement("div");' +
+    '    headerDiv.className = "category-header";' +
+    '    headerDiv.innerHTML = "<div><span class=\\"category-title\\">" + category + "</span><span class=\\"category-count\\">(" + fields.length + ")</span></div>";' +
+    '    const actionsDiv = document.createElement("div");' +
+    '    actionsDiv.className = "category-actions";' +
+    '    const selectBtn = document.createElement("button");' +
+    '    selectBtn.textContent = "Select All";' +
+    '    selectBtn.onclick = function() { selectCategory(category, true); };' +
+    '    const deselectBtn = document.createElement("button");' +
+    '    deselectBtn.textContent = "Deselect All";' +
+    '    deselectBtn.onclick = function() { selectCategory(category, false); };' +
+    '    actionsDiv.appendChild(selectBtn);' +
+    '    actionsDiv.appendChild(deselectBtn);' +
+    '    headerDiv.appendChild(actionsDiv);' +
+    '    categoryDiv.appendChild(headerDiv);' +
+    '    let lastSection = null;' +
+    '    fields.forEach((field, index) => {' +
+    '      const isChecked = selectedFields.includes(field.name);' +
+    '      const isRecommended = recommendedFieldNames.includes(field.name);' +
+    '      ' +
+    '      // Determine section: selected > recommended > other' +
+    '      let currentSection = isChecked ? "selected" : (isRecommended ? "recommended" : "other");' +
+    '      ' +
+    '      // Insert section header if section changed' +
+    '      if (currentSection !== lastSection) {' +
+    '        const sectionDiv = document.createElement("div");' +
+    '        sectionDiv.style.marginTop = lastSection ? "12px" : "5px";' +
+    '        sectionDiv.style.marginBottom = "5px";' +
+    '        sectionDiv.style.paddingTop = "5px";' +
+    '        sectionDiv.style.paddingBottom = "3px";' +
+    '        sectionDiv.style.borderTop = lastSection ? "1px solid #ddd" : "none";' +
+    '        sectionDiv.style.fontWeight = "bold";' +
+    '        sectionDiv.style.fontSize = "11px";' +
+    '        sectionDiv.style.textTransform = "uppercase";' +
+    '        sectionDiv.style.letterSpacing = "0.3px";' +
+    '        ' +
+    '        if (currentSection === "selected") {' +
+    '          sectionDiv.style.color = "#4caf50";' +
+    '          sectionDiv.innerHTML = "✅ Selected Fields";' +
+    '        } else if (currentSection === "recommended") {' +
+    '          sectionDiv.style.color = "#ff9800";' +
+    '          sectionDiv.innerHTML = "💡 Recommended to Consider <span style=\\\"font-size: 10px; font-weight: normal; color: #888; text-transform: none;\\\">(AI suggests for pathway discovery)</span>";' +
+    '        } else {' +
+    '          sectionDiv.style.color = "#999";' +
+    '          sectionDiv.innerHTML = "📋 All Other Fields";' +
+    '        }' +
+    '        ' +
+    '        categoryDiv.appendChild(sectionDiv);' +
+    '        lastSection = currentSection;' +
+    '      }' +
+    '      ' +
+    '      const fieldDiv = document.createElement("div");' +
+    '      fieldDiv.className = "field-item";' +
+    '      const checkbox = document.createElement("input");' +
+    '      checkbox.type = "checkbox";' +
+    '      checkbox.id = field.name;' +
+    '      checkbox.checked = isChecked;' +
+    '      checkbox.onchange = updateCount;' +
+    '      const label = document.createElement("label");' +
+    '      label.htmlFor = field.name;' +
+    '      label.innerHTML = "<span class=\\"field-name\\">" + field.name + "</span><span class=\\"field-header\\">→ " + field.header + "</span>";' +
+    '      fieldDiv.appendChild(checkbox);' +
+    '      fieldDiv.appendChild(label);' +
+    '      categoryDiv.appendChild(fieldDiv);' +
+    '    });' +
+    '    container.appendChild(categoryDiv);' +
+    '  }' +
+    '  updateCount();' +
+    '}' +
+    'function selectCategory(category, select) {' +
+    '  categoriesData[category].forEach(field => {' +
+    '    const checkbox = document.getElementById(field.name);' +
+    '    if (checkbox) checkbox.checked = select;' +
+    '  });' +
+    '  updateCount();' +
+    '}' +
+    'function updateCount() {' +
+    '  let selected = 0;' +
+    '  for (const fields of Object.values(categoriesData)) {' +
+    '    fields.forEach(field => {' +
+    '      const checkbox = document.getElementById(field.name);' +
+    '      if (checkbox && checkbox.checked) selected++;' +
+    '    });' +
+    '  }' +
+    '  document.getElementById("count").textContent = "Selected: " + selected + "/" + totalFields + " fields";' +
+    '  document.querySelector(".btn-continue").disabled = selected === 0;' +
+    '}' +
+    'function resetToDefault27() {' +
+    '  const defaultFields = ' + JSON.stringify(getDefaultFieldNames_()) + ';' +
+    '  for (const fields of Object.values(categoriesData)) {' +
+    '    fields.forEach(field => {' +
+    '      const checkbox = document.getElementById(field.name);' +
+    '      if (checkbox) {' +
+    '        checkbox.checked = defaultFields.includes(field.name);' +
+    '      }' +
+    '    });' +
+    '  }' +
+    '  updateCount();' +
+    '  alert("✅ Reset to original 27 default fields");' +
+    '}' +
+    'function continueToCache() {' +
+    '  const selected = [];' +
+    '  for (const fields of Object.values(categoriesData)) {' +
+    '    fields.forEach(field => {' +
+    '      const checkbox = document.getElementById(field.name);' +
+    '      if (checkbox && checkbox.checked) {' +
+    '        selected.push(field.name);' +
+    '      }' +
+    '    });' +
+    '  }' +
+    '  google.script.run' +
+    '    .withSuccessHandler(function() {' +
+    '      google.script.host.close();' +
+    '    })' +
+    '    .withFailureHandler(function(e) {' +
+    '      alert("Error saving selection: " + e.message);' +
+    '    })' +
+    '    .saveFieldSelectionAndStartCache(selected);' +
+    '}' +
+    'renderCategories();' +
+    '</script>' +
+    '</body>' +
+    '</html>';
+
+  Logger.log('📋 Step 6: Creating HTML output...');
+  const htmlOutput = HtmlService.createHtmlOutput(html)
+    .setWidth(800)
+    .setHeight(700);
+
+  Logger.log('📋 Step 7: Showing modal dialog...');
+  SpreadsheetApp.getUi().

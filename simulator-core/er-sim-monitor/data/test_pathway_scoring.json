@@ -1,0 +1,52 @@
+{
+  "pathway_id": "PATH_TEST_001",
+  "pathway_name": "The Diagnostic Traps Collection",
+  "educational_value": {
+    "educational_value_score": 8,
+    "clarity_score": 3,
+    "progression_score": 2,
+    "gap_filling_score": 2,
+    "retention_score": 1,
+    "reasoning": "Clear outcomes focused on anchoring bias recognition. Progression from subtle to obvious traps is pedagogically sound. Fills critical gap in cognitive debiasing training. However, retention may be challenged without repeated exposure.",
+    "strengths": [
+      "Specific measurable outcomes",
+      "Logical progression",
+      "Addresses bias blind spot"
+    ],
+    "weaknesses": [
+      "May need spaced repetition to stick"
+    ]
+  },
+  "novelty": {
+    "novelty_score": 8,
+    "unexpectedness_score": 3,
+    "differentiation_score": 3,
+    "creative_connections_score": 2,
+    "reasoning": "The pathway offers a novel approach by focusing on cognitive biases and diagnostic traps instead of traditional organ-based or symptom-based groupings. While it may not be entirely revolutionary, it challenges conventional curriculum design by addressing how clinicians think rather than what they know. The cases are connected through the theme of cognitive biases, providing a fresh perspective and standing out in a curriculum catalog.",
+    "comparison_to_traditional": "Traditional: Organize by organ system or symptom type. This pathway: Organize by cognitive bias and diagnostic errors.",
+    "innovation_level": "High - It focuses on cognitive processes involved in diagnosis, which is less commonly addressed in traditional medical education."
+  },
+  "market_validation": {
+    "market_validation_score": 7,
+    "structural_alignment_score": 2,
+    "naming_appeal_score": 2,
+    "audience_demand_score": 2,
+    "adoption_likelihood_score": 1,
+    "reasoning": "While cognitive bias training isn't a traditional EM curriculum staple, there's growing market demand (Harvard, Stanford offer similar courses). Structure doesn't perfectly match OnlineMedEd/Rosh, but aligns with emerging 'thinking skills' trend. Naming is compelling. Target audience (PGY2-3) is large segment. Adoption may be challenged by non-traditional focus.",
+    "similar_successful_products": [
+      "Harvard Critical Thinking in Medicine",
+      "Stanford Diagnostic Excellence"
+    ],
+    "market_demand_level": "Growing - Cognitive bias awareness is emerging trend",
+    "pricing_comparable": "Premium pricing justified by novelty and depth"
+  },
+  "composite_score": 7.75,
+  "tier": "B-Tier (Good)",
+  "persuasion": {
+    "persuasion_narrative": "In today's fast-paced medical environment, misdiagnosis can be the difference between life and death. The Diagnostic Traps Collection challenges residents with cases that defy conventional wisdom, honing their ability to think critically and avoid common pitfalls. As medicine evolves, equipping your team with the skills to recognize and navigate these deceptive cases is crucial to elevating patient care standards.",
+    "hook": "In today's fast-paced medical environment, misdiagnosis can be the difference between life and death.",
+    "unique_value": "The Diagnostic Traps Collection challenges residents with cases that defy conventional wisdom, honing their ability to think critically and avoid common pitfalls.",
+    "urgency": "As medicine evolves, equipping your team with the skills to recognize and navigate these deceptive cases is crucial to elevating patient care standards."
+  },
+  "scored_at": "2025-11-09T01:32:11.459Z"
+}

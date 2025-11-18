@@ -1,0 +1,39 @@
+═══════════════════════════════════════════════════════════════
+PROJECT RENAME LOG
+Date: 11/6/2025, 11:13:31 AM
+═══════════════════════════════════════════════════════════════
+
+RENAMED PROJECTS:
+
+
+
+═══════════════════════════════════════════════════════════════
+
+RECOMMENDED PROJECT STRUCTURE:
+
+1. GPT Formatter
+   - Original monolithic reference
+   - Keep as-is for baseline comparison
+
+2. TEST Menu Script (Bound)
+   - Integration test environment
+   - Contains all features working together
+   - Has TEST Tools menu
+
+3. Pathways & Categories Panel (Isolated)
+   - Pathway discovery system
+   - Field selector with AI recommendations
+   - Multi-step cache enrichment
+   - Pre-cache functionality
+
+4. ATSR Panel (Isolated)
+   - ATSR title generation only
+   - Pathway chain building
+   - Should NOT contain batch processing
+
+5. Batch Processing Panel (Isolated)
+   - Batch row processing only
+   - Core processing engine
+   - Should NOT contain ATSR functions
+
+═══════════════════════════════════════════════════════════════

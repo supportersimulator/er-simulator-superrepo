@@ -1,0 +1,85 @@
+=== CONTEXT BEFORE ===
+  <div class="help-text">
+        AI will analyze all cases and suggest Symptom + System categories.
+        Review and adjust before applying to Master Scenario Convert.
+      </div>
+    </div>
+
+    <!-- AI Review Container (shows after AI run) -->
+    <div id="ai-review-container">
+      <div class="section">
+        <div class="section-title">📋 Review AI Suggestions</div>
+
+        <!-- Stats -->
+        <div class="stats-mini">
+          <div class="stat-mini">
+            <span class="num" id="stat-new">${categorizationStats.new}</span>
+            <span class="label">New</span>
+          </div>
+          <div class="stat-mini">
+            <span class="num" id="stat-matches">${categorizationStats.matches}</span>
+            <span class="label">Matches</span>
+          </div>
+          <div class="stat-mini">
+            <span class="num" id="stat-conflicts">${categorizationStats.conflicts}</span>
+            <span class="label">Conflicts</span>
+          </div>
+          <div class="stat-mini">
+            <span class="num" id="stat-errors">${categorizationStats.errors}</span>
+            <span class="label">Errors</span>
+          </div>
+        </div>
+
+        <!-- Filter Bar -->
+        <div class="filter-bar">
+          <select id="filter-status" onchange="filterResults()">
+            <option value="all">All Cases</option>
+            <option value="new">New (Uncategorized)</option>
+            <option value="matches">Matches (AI Agrees)</option>
+            <option value="conflicts">Conflicts (AI Disagrees)</option>
+            <option value="errors">Errors</option>
+          </select>
+          <button class="btn btn-mini" onclick="refreshReviewData()">🔄 Refresh</button>
+        </div>
+
+        <!-- Results Table (loaded via AJAX) -->
+        <div id="review-results" class="scrollable" style="max-height: 400px;">
+          <p class="help-text">Click "Refresh" to load AI categorization results</p>
+        </div>
+
+        <!-- Action Buttons -->
+        
+
+=== APPLY BUTTON ===
+<button id="apply-btn" class="btn btn-primary" onclick="applyCategorizations()" style="margin-top: 12px;">
+          ✅ Apply Selected Categories to Master
+        </button>
+
+=== CONTEXT AFTER ===
+<button id="apply-btn" class="btn btn-primary" onclick="applyCategorizations()" style="margin-top: 12px;">
+          ✅ Apply Selected Categories to Master
+        </button>
+        <button class="btn" onclick="exportCategorizationResults()">
+          💾 Export Results to CSV
+        </button>
+      </div>
+    </div>
+
+    <!-- Manual Actions Section -->
+    <div class="section">
+      <div class="section-title">Manual Actions</div>
+      <button class="btn" onclick="viewAllCategories()">📊 View All Categories</button>
+      <button class="btn" onclick="viewAllPathways()">🧩 View All Pathways</button>
+      <button class="btn" onclick="assignCase()">🔗 Assign Case to Category/Pathway</button>
+    </div>
+
+    <!-- Category List -->
+    <div class="section">
+      <div class="section-title">Medical System Categories</div>
+      <div class="scrollable">
+        ${categoryList || '<div class="info">No categories found</div>'}
+      </div>
+    </div>
+
+    <!-- Pathway List -->
+    <div class

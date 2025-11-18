@@ -1,0 +1,55 @@
+{
+  "timestamp": "2025-11-03T05:29:21.326Z",
+  "executionTime": "1.47s",
+  "goldenStandardBaseline": {
+    "lowercaseKeys": "100.00%",
+    "bpObjects": "100.00%",
+    "validWaveforms": "100.00%",
+    "requiredFields": "100.00%"
+  },
+  "testSuite": {
+    "vitalsValidation": {
+      "tested": 189,
+      "passed": 189,
+      "failed": 0,
+      "details": []
+    },
+    "sparkTitles": {
+      "tested": 189,
+      "passed": 0,
+      "failed": 189,
+      "details": []
+    },
+    "revealTitles": {
+      "tested": 189,
+      "passed": 4,
+      "failed": 185,
+      "details": []
+    },
+    "preSimOverviews": {
+      "tested": 189,
+      "passed": 189,
+      "failed": 0,
+      "details": []
+    },
+    "postSimOverviews": {
+      "tested": 189,
+      "passed": 189,
+      "failed": 0,
+      "details": []
+    },
+    "categories": {
+      "tested": 189,
+      "passed": 0,
+      "failed": 189,
+      "details": []
+    }
+  },
+  "overallMetrics": {
+    "totalTests": 1134,
+    "totalPassed": 571,
+    "totalFailed": 563,
+    "overallScore": "50.35%"
+  },
+  "passingGrade": "❌ NEEDS IMPROVEMENT"
+}

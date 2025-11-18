@@ -1,0 +1,129 @@
+function runAICategorization(mode, specificInput) {
+  // Clear old logs and start fresh
+  PropertiesService.getDocumentProperties().deleteProperty('Sidebar_Logs');
+  addAILog('🚀 Starting AI Categorization for All Cases...');
+  addAILog('');
+
+  const ss = SpreadsheetApp.getActiveSpreadsheet();
+  const masterSheet = ss.getSheetByName('Master Scenario Convert');
+
+  if (!masterSheet) {
+    throw new Error('Master Scenario Convert sheet not found!');
+  }
+
+  Logger.log('🤖 Starting AI Categorization...');
+  Logger.log('');
+
+  // Clear old results sheet immediately to prevent conflicts
+  const existingResults = ss.getSheetByName('AI_Categorization_Results');
+  if (existingResults) {
+    existingResults.clear();
+    Logger.log('✅ Cleared old results sheet');
+    Logger.log('');
+  }
+
+  // Get all case data (skip 2 header rows)
+  const lastRow = masterSheet.getLastRow();
+  const data = masterSheet.getRange(3, 1, lastRow - 2, 646).getValues();
+
+  Logger.log('📊 Loaded ' + data.length + ' cases');
+
+  // Extract relevant fields for each case
+  const cases = [];
+  for (let i = 0; i < data.length; i++) {
+    const row = data[i];
+
+    cases.push({
+      rowIndex: i + 3,                    // Actual row number in sheet
+      caseID: row[0],                     // Column A: Case_ID
+      legacyCaseID: row[8],               // Column I: Legacy_Case_ID
+      currentSymptom: row[17] || '',      // Column R: Case_Organization_Category_Symptom
+      currentSystem: row[18] || '',       // Column S: Case_Organization_Category_System
+      chiefComplaint: row[4] || '',       // Column E: Chief_Complaint (approximate)
+      presentation: row[5] || '',         // Column F: Presentation (approximate)
+      diagnosis: row[6] || ''             // Column G: Diagnosis (approximate)
+    });
+  }
+
+  Logger.log('✅ Extracted case data');
+  Logger.log('');
+
+  // Process in batches of 25
+  const batchSize = 25;
+
+  addAILog('   Total cases found: ' + cases.length);
+  addAILog('   Batch size: ' + batchSize);
+  addAILog('   Total batches: ' + Math.ceil(cases.length / batchSize));
+  addAILog('');
+  const allResults = [];
+
+  for (let i = 0; i < cases.length; i += batchSize) {
+    const batch = cases.slice(i, Math.min(i + batchSize, cases.length));
+    const batchNum = Math.floor(i / batchSize) + 1;
+    const totalBatches = Math.ceil(cases.length / batchSize);
+
+    Logger.log('📦 Processing batch ' + batchNum + '/' + totalBatches + ' (' + batch.length + ' cases)...');
+
+    try {
+      const batchResults = categorizeBatchWithAI(batch);
+      addAILog('   ✅ API responded with ' + batchResults.length + ' results');
+
+      // Log sample result
+      if (batchResults.length > 0) {
+        const sample = batchResults[0];
+        addAILog('   Sample: ' + sample.caseID + ' → ' + (sample.suggestedSymptom || '(empty)') + ' / ' + (sample.suggestedSystem || '(empty)'));
+        if (sample.reasoning) {
+          addAILog('   Reasoning: ' + sample.reasoning.substring(0, 80) + '...');
+        }
+      }
+
+      // Log any empty results
+      const emptyResults = batchResults.filter(r => !r.suggestedSymptom || r.suggestedSymptom.length === 0);
+      if (emptyResults.length > 0) {
+        addAILog('   ⚠️  WARNING: ' + emptyResults.length + ' results still empty!');
+        emptyResults.forEach(er => {
+          addAILog('      - ' + er.caseID + ': ' + (er.reasoning || 'no reasoning'));
+        });
+      }
+      allResults.push(...batchResults);
+
+      Logger.log('✅ Batch ' + batchNum + ' complete');
+
+      // Small delay to avoid rate limits
+      Utilities.sleep(1000);
+
+    } catch (error) {
+      Logger.log('❌ Batch ' + batchNum + ' failed: ' + error.message);
+
+      // Add placeholder results for failed batch
+      batch.forEach(caseData => {
+        allResults.push({
+          caseID: caseData.caseID,
+          rowIndex: caseData.rowIndex,
+          currentSymptom: caseData.currentSymptom,
+          currentSystem: caseData.currentSystem,
+          suggestedSymptom: '',
+          suggestedSymptomName: '',
+          suggestedSystem: '',
+          reasoning: 'AI processing failed: ' + error.message,
+          status: 'error'
+        });
+      });
+    }
+  }
+
+  Logger.log('');
+  Logger.log('🎉 AI Categorization complete!');
+  Logger.log('   Total cases processed: ' + allResults.length);
+
+  // Save results to temporary sheet for review
+  saveCategorizationResults(allResults);
+
+  Logger.log('✅ Results saved to AI_Categorization_Results sheet');
+
+  return {
+    success: true,
+    totalCases: allResults.length,
+    resultsSheetName: 'AI_Categorization_Results'
+  };
+}

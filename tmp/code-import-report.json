@@ -1,0 +1,18 @@
+{
+  "total": 142,
+  "downloaded": 142,
+  "skipped": 0,
+  "failed": 0,
+  "byCategory": {
+    "legacy-apps-script/manifests": 5,
+    "google-drive-code/apps-script": 70,
+    "google-drive-code/misc": 18,
+    "legacy-apps-script/misc": 3,
+    "legacy-apps-script/general": 18,
+    "legacy-apps-script/atsr-tools": 1,
+    "google-drive-code/atsr-tools": 16,
+    "google-drive-code/utilities": 8,
+    "google-drive-code/manifests": 2,
+    "google-drive-code/sim-builder": 1
+  }
+}

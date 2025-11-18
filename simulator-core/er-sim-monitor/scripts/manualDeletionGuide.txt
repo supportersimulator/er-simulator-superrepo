@@ -1,0 +1,65 @@
+═══════════════════════════════════════════════════════════════
+MANUAL DELETION GUIDE - Apps Script Projects
+═══════════════════════════════════════════════════════════════
+
+You're seeing all 6 projects because container-bound scripts can't be 
+deleted via Drive API. You need to delete them manually through the 
+Apps Script web interface.
+
+PROJECTS TO KEEP (DO NOT DELETE):
+══════════════════════════════════════════════════════════════
+
+1. GPT Formatter
+   https://script.google.com/u/0/home/projects/1orJ__UUViG-gdSOHXt2VSGzo--ASib9XdVLVCApccKujWnqTuxq7wHIw/edit
+   ✅ KEEP - Original main project
+
+2. TEST Menu Script (Bound) [FIRST ONE in the list]
+   https://script.google.com/u/0/home/projects/1HIw4Ok4G88YzHsECb5e_GvJH9XYefEY59pHXalFstiddLciyHXC06zNf/edit
+   ✅ KEEP - Active working project (updated today 9:43 AM)
+
+PROJECTS TO DELETE (Follow steps below):
+══════════════════════════════════════════════════════════════
+
+3. TEST Menu Script (Bound) [SECOND ONE - duplicate]
+   https://script.google.com/u/0/home/projects/1bwLs70zTwQsJxtAqA_yNJfyANjAW5x39YEY0VJhFPMamgDwb100qtqJD/edit
+   ❌ DELETE - Empty duplicate
+
+4. TEST_Feature_Based_Code [FIRST ONE]
+   https://script.google.com/u/0/home/projects/1kkPZU3GsCCuu5IhTEOufmDT1Cb2rSQVB3Y3u1DPf87yoSV4WVtoNvd6i/edit
+   ❌ DELETE - Old experimental version
+
+5. TEST_Feature_Based_Code [SECOND ONE]
+   https://script.google.com/u/0/home/projects/1KBkujOTXGDmmhWOFm-ifxoMjXM5pRwwM5FpFBtPWK8eoE99fr4lla1OE/edit
+   ❌ DELETE - Old experimental version
+
+6. TEST_Feature_Based_Code [THIRD ONE]
+   https://script.google.com/u/0/home/projects/1INZy2-kQNEfEWEipSQ_WCvrvEhGgAeW4G4TM61W2ajNp_63G39KLPm4Y/edit
+   ❌ DELETE - Duplicate
+
+═══════════════════════════════════════════════════════════════
+HOW TO DELETE MANUALLY:
+═══════════════════════════════════════════════════════════════
+
+For EACH project listed above (#3, #4, #5, #6):
+
+1. Click the URL to open the project
+2. Look at the file list - verify it matches the description above
+3. Click the three-dot menu (⋮) in the top-right corner
+4. Select "Remove project" or "Move to trash"
+5. Confirm deletion
+
+IMPORTANT: Double-check you're deleting the RIGHT project by:
+   - Checking the "Last modified" date
+   - The KEEP projects were modified today (11/6/2025 9:43 AM)
+   - The DELETE projects are older (11/4 or 11/5)
+
+═══════════════════════════════════════════════════════════════
+
+After deleting all 4 projects, refresh the page. You should see only 2:
+   1. GPT Formatter
+   2. TEST Menu Script (Bound)
+
+All code is backed up at:
+   https://drive.google.com/drive/folders/13WO4iP-iaNFZH8n1pJlCsRPjfjjqSt-I
+
+═══════════════════════════════════════════════════════════════

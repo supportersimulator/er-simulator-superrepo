@@ -1,0 +1,74 @@
+
+=== BUTTON 1 ===
+<button id="run-ai-btn" class="btn btn-success" onclick="runAICategorization()">
+        🚀 Run AI Categorization (All 207 Cases)
+      </button>
+
+=== BUTTON 2 ===
+<button id="retry-failed-btn" class="btn btn-warning" onclick="retryFailedCases()" style="background: #ff9800;">
+        🔄 Retry Failed Cases
+      </button>
+
+=== BUTTON 3 ===
+<button class="btn btn-danger" onclick="clearAIResults()">
+        🗑️ Clear Results
+      </button>
+
+=== BUTTON 4 ===
+<button class="btn" onclick="editCategoryMappings()">
+        ⚙️ Edit Category Mappings (Symptoms & Systems)
+      </button>
+
+=== BUTTON 5 ===
+<button id="copyAILogsBtn" class="log-btn copy" onclick="copyAILogs()">Copy Logs</button>
+
+=== BUTTON 6 ===
+<button id="refreshAILogsBtn" class="log-btn" onclick="refreshAILogs()">Refresh</button>
+
+=== BUTTON 7 ===
+<button id="clearAILogsBtn" class="log-btn danger" onclick="clearAILogs()">Clear</button>
+
+=== BUTTON 8 ===
+<button class="btn btn-mini" onclick="refreshReviewData()">🔄 Refresh</button>
+
+=== BUTTON 9 ===
+<button id="apply-btn" class="btn btn-primary" onclick="applyCategorizations()" style="margin-top: 12px;">
+          ✅ Apply Selected Categories to Master
+        </button>
+
+=== BUTTON 10 ===
+<button class="btn" onclick="exportCategorizationResults()">
+          💾 Export Results to CSV
+        </button>
+
+=== BUTTON 11 ===
+<button class="btn" onclick="viewAllCategories()">📊 View All Categories</button>
+
+=== BUTTON 12 ===
+<button class="btn" onclick="viewAllPathways()">🧩 View All Pathways</button>
+
+=== BUTTON 13 ===
+<button class="btn" onclick="assignCase()">🔗 Assign Case to Category/Pathway</button>
+
+=== BUTTON 14 ===
+<button id="discover-btn" class="btn btn-primary" onclick="discoverPathways()" disabled>
+        🤖 Discover Pathways
+      </button>
+
+=== BUTTON 15 ===
+<button class="btn" onclick="viewLogicTypeLibrary()">📚 View Logic Type Library</button>
+
+=== BUTTON 16 ===
+<button class="btn" onclick="viewPathwaysMaster()">📊 View All Discovered Pathways</button>
+
+=== BUTTON 17 ===
+<button onclick="deleteRow(${i})">🗑️</button>
+
+=== BUTTON 18 ===
+<button onclick="addNewRow()" style="margin-top: 16px;">➕ Add New Mapping</button>
+
+=== BUTTON 19 ===
+<button onclick="saveMappings()" class="btn-success" style="margin-top: 16px;">💾 Save All Changes</button>
+
+=== BUTTON 20 ===
+<button onclick="deleteRow(\${rowCount})">🗑️</button>

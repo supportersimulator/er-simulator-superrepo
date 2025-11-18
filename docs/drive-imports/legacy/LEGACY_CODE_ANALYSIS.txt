@@ -1,0 +1,166 @@
+LEGACY ER_SIMULATOR_BUILDER.GS v3.7 - TOOL ANALYSIS
+
+=== DISCOVERED TOOLS & FEATURES ===
+
+1. BATCH ENGINE
+   - Run All / 25 Rows / Specific Rows
+   - Live log sidebar
+   - Queue management system
+   - Progress tracking
+   - Batch Reports sheet integration
+
+2. SINGLE CASE GENERATOR
+   - Two-tier header aware
+   - Individual row processing
+   - Sidebar integration
+
+3. ATSR TITLE GENERATOR
+   - Keep & Regenerate functionality
+   - Deselect mode
+   - Memory tracker for 10 character motifs
+   - Spark Title generation
+   - Reveal Title generation
+   - Case_ID auto-generation
+
+4. CASE SUMMARY ENHANCER
+   - Auto-bold Dx/Intervention/Takeaway
+   - Summary formatting
+
+5. IMAGE SYNC DEFAULTS MANAGER
+   - Refresh functionality
+   - Editable defaults
+   - Default image URLs per vital state
+
+6. SETTINGS PANEL
+   - API key management (Script Properties or Settings sheet)
+   - Model selection (gpt-4o-mini, gpt-4o, o4-mini, o3-mini)
+   - Price configuration (input/output per 1K tokens)
+   - Header cache management
+
+7. QUALITY SCORING SYSTEM
+   - Weighted rubric scoring (0-100%)
+   - Components:
+     * Core Identity (10): Case_ID, Spark_Title, Reveal_Title
+     * Patient Basics (10): Age, Sex, Setting, HPI
+     * Vitals (20): Initial + state vitals
+     * Branching (18): Progression states, decision rules
+     * Education (15): Objectives + MCQ
+     * Orders Data (12): Labs/Imaging/ECG presence
+     * Environment AV (8): Scene/time/ambience/media
+     * Meta Completeness (7): Reflection + developer metadata
+   - Auto-ensures quality columns
+   - Targeted improvement suggestions
+   - Audit tools for existing rows
+   - Cleanup tool for low-value rows
+
+8. DUPLICATE DETECTION
+   - Content hash signature system
+   - Hash-based duplicate checking before processing
+   - Prevents reprocessing identical inputs
+
+9. BATCH REPORTS
+   - Popup summaries
+   - Writes to Batch_Reports sheet
+   - Tracks: Created, Skipped, Duplicates, Errors, Cost, Elapsed time
+
+10. API STATUS CHECKER
+    - Quick OpenAI API connectivity test
+    - Returns "OK" confirmation
+
+11. HEADER CACHE SYSTEM
+    - Two-tier header caching
+    - Performance optimization
+    - Refresh/clear functionality
+
+12. SIDEBAR UI (DARK THEME)
+    - Input/Output sheet selection
+    - Model selection
+    - API key input (masked)
+    - Run mode selector
+    - Live log viewer
+    - Status indicators
+    - Image Sync button
+    - Settings button
+
+13. LIVE LOGS PANEL
+    - Real-time log viewing
+    - Refresh button
+    - Clear button
+    - Auto-refresh every 5 seconds
+    - Fade-in animation for new logs
+
+14. VITALS VALIDATION & NORMALIZATION
+    - JSON validation for Monitor/Vitals fields
+    - Compact JSON format enforcement
+    - Format: {"HR":120,"BP":"95/60","RR":28,"Temp":39.2,"SpO2":94}
+
+15. INPUT SYSTEM (4-column)
+    - Column A: Formal_Info
+    - Column B: HTML content
+    - Column C: DOC (document text)
+    - Column D: Extra notes
+    - Any column may be blank
+
+16. PRICING & COST ESTIMATION
+    - Token estimation (4 chars = 1 token)
+    - Cost calculation per input/output
+    - Configurable pricing per 1K tokens
+
+17. DUPLICATE LINE CLEANER
+    - Removes excessive repeated lines (max 3 occurrences)
+    - Text cleanup utility
+
+18. JSON PARSER (TOLERANT)
+    - Extracts JSON from mixed text
+    - Handles markdown code fences
+    - Regex-based JSON extraction
+
+19. OUTPUT SHEET MANAGEMENT
+    - Dynamic selection from Settings!A1
+    - Auto-refresh to valid Convert sheet
+    - Fallback logic for missing sheets
+
+20. PROPERTY MANAGEMENT
+    - Script Properties storage
+    - Document Properties for logs
+    - Persistent settings across sessions
+
+=== KEY INTEGRATIONS ===
+
+- OpenAI API (gpt-4o-mini, gpt-4o, o4-mini, o3-mini)
+- Google Sheets (two-tier header system)
+- Apps Script Properties Service
+- Real-time sidebar communication
+- Batch queue state management
+
+=== HIDDEN/PLANNED FEATURES ===
+
+From code comments:
+- ResusVitals API integration (mentioned in prompt but not implemented)
+- AI Facilitator system (referenced in prompt)
+- Voice-responsive simulation (future use)
+- Mobile/desktop interactive scenarios (planned)
+
+=== SETTINGS SHEET INTEGRATIONS ===
+
+Settings!A1: Output sheet name (dynamic)
+Settings sheet KV pairs: OPENAI_API_KEY lookup
+Settings panel: Model, API key, pricing
+
+=== BATCH_REPORTS SHEET ===
+
+Columns:
+- Timestamp
+- Mode
+- Created (count)
+- Skipped (count)
+- Duplicates (count)
+- Errors (count)
+- Estimated Cost (USD)
+- Elapsed (time)
+
+=== QUALITY COLUMNS AUTO-CREATED ===
+
+Developer_and_QA_Metadata:Simulation_Quality_Score
+Developer_and_QA_Metadata:Simulation_Enhancement_Suggestions
+

@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>EKG Icon - Ultra Smooth Scanning Beam</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { background: #1a1a1a; color: #fff; font-family: -apple-system, sans-serif; padding: 40px; }
+    h1 { text-align: center; margin-bottom: 40px; font-size: 24px; font-weight: 300; letter-spacing: 2px; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 30px; max-width: 1200px; margin: 0 auto 40px; }
+    .card { background: #0a0a0a; border: 2px solid #2a2a2a; border-radius: 12px; padding: 20px; text-align: center; transition: all 0.3s; }
+    .card.selected { border-color: #00BFFF; box-shadow: 0 0 25px rgba(0, 191, 255, 0.4); transform: translateY(-5px); }
+    .card h3 { font-size: 13px; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 15px; opacity: 0.7; font-weight: 400; }
+
+    /* EKG Monitor */
+    .ekg-monitor {
+      width: 140px;
+      height: 140px;
+      margin: 0 auto 15px;
+      border: 2px solid #2a2a2a;
+      border-radius: 8px;
+      background: #0a0a0a;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      position: relative;
+    }
+
+    /* State colors with fluorescent glow */
+    .ekg-monitor.normal { box-shadow: 0 0 15px rgba(0, 191, 255, 0.3), inset 0 0 10px rgba(0, 191, 255, 0.08); }
+    .ekg-monitor.abnormal { box-shadow: 0 0 15px rgba(0, 255, 100, 0.3), inset 0 0 10px rgba(0, 255, 100, 0.08); }
+    .ekg-monitor.critical { box-shadow: 0 0 20px rgba(255, 50, 50, 0.4), inset 0 0 10px rgba(255, 50, 50, 0.12); animation: critical-pulse 1.5s ease-in-out infinite; }
+    .ekg-monitor.flatline { box-shadow: 0 0 25px rgba(255, 0, 0, 0.5), inset 0 0 15px rgba(255, 0, 0, 0.15); }
+
+    @keyframes critical-pulse {
+      0%, 100% { box-shadow: 0 0 20px rgba(255, 50, 50, 0.4), inset 0 0 10px rgba(255, 50, 50, 0.12); }
+      50% { box-shadow: 0 0 30px rgba(255, 50, 50, 0.6), inset 0 0 15px rgba(255, 50, 50, 0.2); }
+    }
+
+    /* SVG Container - positioned absolutely for masking effect */
+    .svg-container {
+      position: relative;
+      width: 100%;
+      height: 65%;
+      overflow: hidden;
+    }
+
+    svg {
+      position: absolute;
+      width: 200%;
+      height: 100%;
+      left: 0;
+      top: 0;
+    }
+
+    /* The waveform itself - static, no animation */
+    .waveform {
+      fill: none;
+      stroke-width: 2.5;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    /* Animated container moves the whole SVG smoothly - RIGHT to LEFT like real monitors */
+    /* Animation loops at exactly 50% for seamless infinite scrolling */
+    .ekg-monitor.normal svg { animation: slide-smooth 12s linear infinite; }
+    .ekg-monitor.abnormal svg { animation: slide-smooth 12s linear infinite; }
+    .ekg-monitor.critical svg { animation: slide-fast 5s linear infinite; }
+    .ekg-monitor.flatline svg { animation: none; }
+
+    @keyframes slide-smooth {
+      from { transform: translateX(-50%); }
+      to { transform: translateX(0%); }
+    }
+
+    @keyframes slide-fast {
+      from { transform: translateX(-50%); }
+      to { transform: translateX(0%); }
+    }
+
+    /* Normal - Blue with fluorescent glow */
+    .ekg-monitor.normal .waveform {
+      stroke: #00BFFF;
+      filter: drop-shadow(0 0 3px #00BFFF) drop-shadow(0 0 6px rgba(0, 191, 255, 0.6)) drop-shadow(0 0 10px rgba(0, 191, 255, 0.3));
+    }
+
+    /* Abnormal - Green with fluorescent glow */
+    .ekg-monitor.abnormal .waveform {
+      stroke: #00FF64;
+      filter: drop-shadow(0 0 3px #00FF64) drop-shadow(0 0 6px rgba(0, 255, 100, 0.6)) drop-shadow(0 0 10px rgba(0, 255, 100, 0.3));
+    }
+
+    /* Critical - Red with intense fluorescent glow */
+    .ekg-monitor.critical .waveform {
+      stroke: #FF3232;
+      filter: drop-shadow(0 0 4px #FF3232) drop-shadow(0 0 8px rgba(255, 50, 50, 0.7)) drop-shadow(0 0 12px rgba(255, 50, 50, 0.4));
+    }
+
+    /* Flatline - static red line */
+    .ekg-monitor.flatline .waveform {
+      stroke: #FF0000;
+      filter: drop-shadow(0 0 5px #FF0000) drop-shadow(0 0 10px rgba(255, 0, 0, 0.8)) drop-shadow(0 0 15px rgba(255, 0, 0, 0.4));
+    }
+
+    /* Beep indicator for flatline */
+    .beep-indicator {
+      position: absolute;
+      top: 12px;
+      right: 12px;
+      width: 10px;
+      height: 10px;
+      background: #FF0000;
+      border-radius: 50%;
+      box-shadow: 0 0 10px #FF0000, 0 0 20px rgba(255, 0, 0, 0.5);
+      animation: beep-pulse 0.8s ease-in-out infinite;
+    }
+
+    @keyframes beep-pulse {
+      0%, 100% { transform: scale(1); opacity: 1; }
+      50% { transform: scale(1.4); opacity: 0.6; }
+    }
+
+    /* Selection UI */
+    .checkbox-container { margin: 15px 0; }
+    .checkbox-container input { width: 20px; height: 20px; cursor: pointer; accent-color: #00BFFF; }
+    .checkbox-container label { margin-left: 10px; cursor: pointer; font-size: 14px; transition: all 0.2s; }
+    .checkbox-container input:checked + label { color: #00BFFF; font-weight: 500; }
+
+    textarea {
+      width: 100%;
+      padding: 10px;
+      background: #1a1a1a;
+      border: 1px solid #3a3a3a;
+      color: #fff;
+      border-radius: 6px;
+      font-size: 12px;
+      resize: vertical;
+      min-height: 60px;
+      margin-top: 10px;
+      font-family: inherit;
+    }
+    textarea::placeholder { color: #666; font-style: italic; }
+    textarea:focus { outline: none; border-color: #00BFFF; box-shadow: 0 0 10px rgba(0, 191, 255, 0.2); }
+
+    /* Submit button */
+    .submit-section { max-width: 600px; margin: 40px auto; text-align: center; }
+    .send-btn {
+      width: 100%;
+      padding: 18px 40px;
+      background: linear-gradient(135deg, #00BFFF 0%, #0088CC 100%);
+      border: none;
+      color: #000;
+      font-size: 16px;
+      font-weight: 700;
+      border-radius: 10px;
+      cursor: pointer;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      transition: all 0.3s;
+      box-shadow: 0 5px 20px rgba(0, 191, 255, 0.3);
+    }
+    .send-btn:hover {
+      background: linear-gradient(135deg, #00D4FF 0%, #0099DD 100%);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 30px rgba(0, 191, 255, 0.5);
+    }
+    .send-btn:active { transform: translateY(0); }
+
+    /* Status message */
+    .status {
+      margin-top: 20px;
+      padding: 15px;
+      border-radius: 8px;
+      display: none;
+      animation: fadeIn 0.3s;
+    }
+    .status.success { background: rgba(0, 255, 100, 0.1); border: 1px solid #00FF64; color: #00FF64; display: block; }
+    .status.error { background: rgba(255, 50, 50, 0.1); border: 1px solid #FF3232; color: #FF3232; display: block; }
+    @keyframes fadeIn { from { opacity: 0; transform: translateY(-10px); } to { opacity: 1; transform: translateY(0); } }
+
+    .info-box {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 25px;
+      background: rgba(0, 191, 255, 0.05);
+      border-left: 4px solid #00BFFF;
+      border-radius: 8px;
+    }
+    .info-box h4 { color: #00BFFF; margin-bottom: 15px; font-weight: 500; letter-spacing: 1px; }
+    .info-box p { font-size: 14px; line-height: 1.8; opacity: 0.9; }
+    .info-box code { background: #1a1a1a; padding: 2px 6px; border-radius: 3px; color: #00BFFF; }
+  </style>
+</head>
+<body>
+  <h1>🎨 EKG ICON - ULTRA-SMOOTH SCANNING BEAM</h1>
+
+  <div class="grid">
+    <!-- Normal State -->
+    <div class="card" id="card-normal">
+      <h3>Normal (60 BPM)</h3>
+      <div class="ekg-monitor normal">
+        <div class="svg-container">
+          <svg viewBox="0 0 1200 60" preserveAspectRatio="none">
+            <!-- TWELVE ultra-exaggerated cardiac cycles with extra-wide QRS complexes -->
+            <polyline class="waveform" points="
+              0,30 10,30 20,30 30,30 40,30 50,30 60,30 70,30
+              78,30 82,24 86,30 90,30 94,30 98,30 102,30 106,30 110,36 122,2 134,58 146,30 168,30 172,23 180,30
+              188,30 198,30 208,30 218,30 228,30 238,30 248,30 258,30
+              266,30 270,24 274,30 278,30 282,30 286,30 290,30 294,30 298,36 310,2 322,58 334,30 356,30 360,23 368,30
+              376,30 386,30 396,30 406,30 416,30 426,30 436,30 446,30
+              454,30 458,24 462,30 466,30 470,30 474,30 478,30 482,30 486,36 498,2 510,58 522,30 544,30 548,23 556,30
+              564,30 574,30 584,30 594,30 604,30 614,30 624,30 634,30
+              642,30 646,24 650,30 654,30 658,30 662,30 666,30 670,30 674,36 686,2 698,58 710,30 732,30 736,23 744,30
+              752,30 762,30 772,30 782,30 792,30 802,30 812,30 822,30
+              830,30 834,24 838,30 842,30 846,30 850,30 854,30 858,30 862,36 874,2 886,58 898,30 920,30 924,23 932,30
+              940,30 950,30 960,30 970,30 980,30 990,30 1000,30 1010,30
+              1018,30 1022,24 1026,30 1030,30 1034,30 1038,30 1042,30 1046,30 1050,36 1062,2 1074,58 1086,30 1108,30 1112,23 1120,30
+              1128,30 1138,30 1148,30 1158,30 1168,30 1178,30 1188,30 1198,30 1200,30"/>
+          </svg>
+        </div>
+      </div>
+      <div class="checkbox-container">
+        <input type="checkbox" id="sel-normal" data-variant="Normal Blue" data-state="normal">
+        <label for="sel-normal">⭐ Select</label>
+      </div>
+      <textarea id="notes-normal" placeholder="What do you like about this one?"></textarea>
+    </div>
+
+    <!-- Abnormal State -->
+    <div class="card" id="card-abnormal">
+      <h3>Abnormal (Irregular)</h3>
+      <div class="ekg-monitor abnormal">
+        <div class="svg-container">
+          <svg viewBox="0 0 1200 60" preserveAspectRatio="none">
+            <!-- TWELVE ultra-exaggerated irregular cardiac cycles with extra-wide QRS complexes -->
+            <polyline class="waveform" points="
+              0,30 10,30 20,30 30,30 40,30 50,30 60,30 70,30
+              78,30 82,19 86,30 92,30 98,30 104,30 110,43 118,30 124,3 136,59 148,30 170,30 174,21 184,30
+              192,30 202,30 212,30 222,30 232,30 242,30 252,30 262,30
+              270,30 274,17 278,30 284,30 290,30 296,30 302,41 310,30 316,5 328,57 340,30 362,30 366,20 376,30
+              384,30 394,30 404,30 414,30 424,30 434,30 444,30 454,30
+              462,30 466,15 470,30 476,30 482,30 488,30 494,45 502,30 508,2 520,60 532,30 554,30 558,18 568,30
+              576,30 586,30 596,30 606,30 616,30 626,30 636,30 646,30
+              654,30 658,20 662,30 668,30 674,30 680,30 686,42 694,30 700,4 712,58 724,30 746,30 750,22 760,30
+              768,30 778,30 788,30 798,30 808,30 818,30 828,30 838,30
+              846,30 850,18 854,30 860,30 866,30 872,30 878,43 886,30 892,3 904,59 916,30 938,30 942,21 952,30
+              960,30 970,30 980,30 990,30 1000,30 1010,30 1020,30 1030,30
+              1038,30 1042,16 1046,30 1052,30 1058,30 1064,30 1070,40 1078,30 1084,5 1096,57 1108,30 1130,30 1134,19 1144,30
+              1152,30 1162,30 1172,30 1182,30 1192,30 1200,30"/>
+          </svg>
+        </div>
+      </div>
+      <div class="checkbox-container">
+        <input type="checkbox" id="sel-abnormal" data-variant="Abnormal Green" data-state="abnormal">
+        <label for="sel-abnormal">⭐ Select</label>
+      </div>
+      <textarea id="notes-abnormal" placeholder="What do you like about this one?"></textarea>
+    </div>
+
+    <!-- Critical State -->
+    <div class="card" id="card-critical">
+      <h3>Critical (Fast)</h3>
+      <div class="ekg-monitor critical">
+        <div class="svg-container">
+          <svg viewBox="0 0 1200 60" preserveAspectRatio="none">
+            <!-- TWELVE ultra-exaggerated fast cardiac cycles with extra-wide QRS complexes -->
+            <polyline class="waveform" points="
+              0,30 10,30 20,30 30,30 40,30
+              47,30 50,26 53,30 56,30 59,30 62,34 70,3 78,55 86,30 100,30 103,25 108,30
+              116,30 124,30 132,30 140,30
+              147,30 150,26 153,30 156,30 159,30 162,34 170,3 178,55 186,30 200,30 203,25 208,30
+              216,30 224,30 232,30 240,30
+              247,30 250,26 253,30 256,30 259,30 262,34 270,3 278,55 286,30 300,30 303,25 308,30
+              316,30 324,30 332,30 340,30
+              347,30 350,26 353,30 356,30 359,30 362,34 370,3 378,55 386,30 400,30 403,25 408,30
+              416,30 424,30 432,30 440,30
+              447,30 450,26 453,30 456,30 459,30 462,34 470,3 478,55 486,30 500,30 503,25 508,30
+              516,30 524,30 532,30 540,30
+              547,30 550,26 553,30 556,30 559,30 562,34 570,3 578,55 586,30 600,30 603,25 608,30
+              616,30 624,30 632,30 640,30 648,30
+              655,30 658,26 661,30 664,30 667,30 670,34 678,3 686,55 694,30 708,30 711,25 716,30
+              724,30 732,30 740,30 748,30
+              755,30 758,26 761,30 764,30 767,30 770,34 778,3 786,55 794,30 808,30 811,25 816,30
+              824,30 832,30 840,30 848,30
+              855,30 858,26 861,30 864,30 867,30 870,34 878,3 886,55 894,30 908,30 911,25 916,30
+              924,30 932,30 940,30 948,30
+              955,30 958,26 961,30 964,30 967,30 970,34 978,3 986,55 994,30 1008,30 1011,25 1016,30
+              1024,30 1032,30 1040,30 1048,30
+              1055,30 1058,26 1061,30 1064,30 1067,30 1070,34 1078,3 1086,55 1094,30 1108,30 1111,25 1116,30
+              1124,30 1132,30 1140,30 1148,30
+              1155,30 1158,26 1161,30 1164,30 1167,30 1170,34 1178,3 1186,55 1194,30 1200,30"/>
+          </svg>
+        </div>
+      </div>
+      <div class="checkbox-container">
+        <input type="checkbox" id="sel-critical" data-variant="Critical Red Fast" data-state="critical">
+        <label for="sel-critical">⭐ Select</label>
+      </div>
+      <textarea id="notes-critical" placeholder="What do you like about this one?"></textarea>
+    </div>
+
+    <!-- Flatline State -->
+    <div class="card" id="card-flatline">
+      <h3>Pulseless (Flatline)</h3>
+      <div class="ekg-monitor flatline">
+        <div class="beep-indicator"></div>
+        <div class="svg-container">
+          <svg viewBox="0 0 400 60" preserveAspectRatio="none">
+            <polyline class="waveform" points="0,30 400,30"/>
+          </svg>
+        </div>
+      </div>
+      <div class="checkbox-container">
+        <input type="checkbox" id="sel-flatline" data-variant="Flatline Red" data-state="flatline">
+        <label for="sel-flatline">⭐ Select</label>
+      </div>
+      <textarea id="notes-flatline" placeholder="What do you like about this one?"></textarea>
+    </div>
+  </div>
+
+  <div class="submit-section">
+    <button class="send-btn" onclick="sendToClaude()">🚀 Send Selections to Claude</button>
+    <div class="status" id="status"></div>
+  </div>
+
+  <div class="info-box">
+    <h4>✨ Ultra-Smooth Scanning Beam Technology</h4>
+    <p>
+      <strong>The Secret:</strong> The entire SVG slides smoothly using <code>transform: translateX()</code> with a perfectly tiled waveform pattern. The animation resets at exactly 50%, creating an infinite seamless loop - like paper scrolling through a real EKG machine!<br><br>
+      <strong>No Choppiness:</strong> Zero stroke-dasharray tricks = zero gaps or flashing<br>
+      <strong>Triple-Layer Glow:</strong> Three stacked drop-shadows create that intense fluorescent scintillation<br>
+      <strong>GPU Accelerated:</strong> CSS transforms = 60fps butter-smooth performance
+    </p>
+  </div>
+
+  <script>
+    // Handle card selection highlighting
+    const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+    checkboxes.forEach(cb => {
+      cb.addEventListener('change', (e) => {
+        const card = e.target.closest('.card');
+        if (e.target.checked) {
+          card.classList.add('selected');
+        } else {
+          card.classList.remove('selected');
+        }
+      });
+    });
+
+    // Send selections to Claude via local server
+    async function sendToClaude() {
+      const status = document.getElementById('status');
+      const selected = [];
+
+      checkboxes.forEach(cb => {
+        if (cb.checked) {
+          const notesId = 'notes-' + cb.id.replace('sel-', '');
+          const notes = document.getElementById(notesId).value;
+          selected.push({
+            name: cb.dataset.variant,
+            state: cb.dataset.state,
+            notes: notes || 'No notes provided'
+          });
+        }
+      });
+
+      if (selected.length === 0) {
+        status.className = 'status error';
+        status.textContent = '⚠️ Please select at least one favorite!';
+        return;
+      }
+
+      status.className = 'status';
+      status.textContent = '⏳ Sending to Claude...';
+      status.style.display = 'block';
+
+      try {
+        const response = await fetch('http://localhost:3334/submit-favorites', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            selections: selected,
+            timestamp: new Date().toISOString()
+          })
+        });
+
+        const result = await response.json();
+
+        if (result.success) {
+          status.className = 'status success';
+          status.textContent = '✅ Success! Claude received your selections. Check the terminal!';
+        } else {
+          throw new Error(result.message);
+        }
+      } catch (error) {
+        status.className = 'status error';
+        status.textContent = '❌ Error: Could not reach server. Make sure the selection server is running!';
+        console.error(error);
+      }
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,684 @@
+# Atlas Project Understanding - 2025-11-07 22:30:00
+
+---
+
+## TRUST-BUILDING PROTOCOL COMMITMENT
+
+### New Working Protocol (Enforce Daily)
+
+**BEFORE doing ANYTHING on a task:**
+
+1. ✅ **Read existing code FIRST**
+   - Check if function already exists
+   - Check if similar pattern exists
+   - Check what naming conventions are used
+   - Check what data structures are used
+
+2. ✅ **Understand complete flow BEFORE fixing**
+   - What triggers this?
+   - What calls what?
+   - What's the data flow?
+   - What's the user experience?
+
+3. ✅ **Check architecture docs**
+   - CLAUDE.md principles
+   - ADAPTIVE_SALIENCE_ARCHITECTURE.md patterns
+   - Existing documentation
+
+4. ✅ **Verify assumptions with code inspection**
+   - Don't guess function names - grep for them
+   - Don't guess data formats - read the actual data
+   - Don't guess patterns - find examples
+
+5. ✅ **Fix root cause, not symptoms**
+   - If modal doesn't show → why doesn't HTML render?
+   - If JavaScript doesn't run → what's the syntax error?
+   - If data is wrong → where does it get corrupted?
+
+**CONCRETE CHECKLIST (Use on EVERY task):**
+
+```
+Before writing ANY code:
+[ ] Read related existing code
+[ ] Grep for similar patterns
+[ ] Check if function/feature already exists
+[ ] Understand complete data flow
+[ ] Identify root cause (not symptom)
+[ ] Verify fix won't break core components
+
+Only THEN:
+[ ] Write minimal fix
+[ ] Test against actual behavior
+[ ] Verify core components still work
+```
+
+---
+
+## CORRECTIONS FROM USER FEEDBACK (November 7, 2025)
+
+### What I Did Wrong All Day
+
+1. **Didn't read existing code first** - Made assumptions instead of checking
+2. **Created new code instead of using what exists** - Reinvented wheels
+3. **Fixed symptoms instead of root cause** - CSS quotes, live log, error handlers
+4. **Didn't understand complete intention** - Random fixes without holistic view
+5. **Ignored your repeated guidance** - You told me to read the code multiple times
+
+### Critical Corrections Applied
+
+1. ✅ **Remove Duplicates from CACHED_MERGED_KEYS**
+   - Headers cache should have NO duplicates
+   - Single source of truth for field names
+
+2. ❌ **Tier System - NOT IMPORTANT**
+   - Remove all tier labels/organization
+   - Just use raw field names: `['Case_Organization_Case_ID', 'Patient_Demographics_and_Clinical_Data_Age', ...]`
+   - Format must match headers cache exactly
+
+3. ✅ **Duplicate Removal Logic**
+   - When removing duplicates: **KEEP the ones in `selected`, REMOVE duplicates from `allFields`**
+   - Never delete selected fields just because they appear twice
+
+4. ✅ **OpenAI Model**
+   - ❌ gpt-4o-mini
+   - ✅ gpt-4o (project standard)
+
+5. ✅ **AI Recommendation Count**
+   - ❌ Force 8-12 recommendations
+   - ✅ Let AI decide: 1+ recommendations (whatever makes sense)
+
+6. ✅ **Core Components Hierarchy**
+   ```
+   CORE COMPONENTS (DO NOT BREAK):
+   1. Batch Conversion Engine (Input → Structured Output)
+   2. Headers Cache Formatting System (consistency guarantee)
+   3. Quality & Optimization Pipeline (titles optimizer, etc.)
+   4. AI-Powered Pathway Discovery (ultimate goal)
+
+   SUPPORTING TOOLS (parts of pathway discovery):
+   - Field Selector Modal (helps optimize what gets sent to AI)
+   - Batch Caching (sends 25 rows at a time)
+   ```
+
+7. ✅ **35 Defaults Format**
+   - ❌ Tiered structure with labels
+   - ✅ Simple array matching CACHED_MERGED_KEYS format:
+   ```javascript
+   [
+     'Case_Organization_Case_ID',
+     'Case_Organization_Spark_Title',
+     'Patient_Demographics_and_Clinical_Data_Age',
+     // ... 32 more, no tiers, no organization
+   ]
+   ```
+
+8. ✅ **Live Log Position**
+   - ❌ Bottom
+   - ✅ Top
+
+---
+
+## COMPLETE PROJECT UNDERSTANDING (REVISED)
+
+### **THE COMPLETE VISION: AI-Powered Medical Simulation Pipeline**
+
+---
+
+## **WHAT THIS SYSTEM IS**
+
+An **intelligent medical simulation management system** for emergency medicine training with **FOUR core components**:
+
+1. **Batch Conversion Engine** (Input → Structured Output)
+2. **Headers Cache Formatting System** (Consistency guarantee)
+3. **Quality & Optimization Pipeline** (Titles optimizer, quality scoring)
+4. **AI-Powered Pathway Discovery** (Finding learning patterns)
+
+---
+
+## **CORE COMPONENT 1: Batch Conversion Engine**
+
+### **Purpose**
+Convert raw medical cases into structured JSON format
+
+### **Flow**
+- **Input Sheet**: Raw scenario data (various formats - Formal_Info, HTML, DOC, Extra)
+- **OpenAI API** (gpt-4o): Parses and structures the data
+- **Output Sheet** ("Master Scenario Convert"): Clean, structured JSON with 150+ fields
+- **Batch Processing**: Three modes (Next 25, All Remaining, Specific Rows)
+- **Duplicate Prevention**: 1:1 row correlation (Input Row N → Output Row N)
+
+### **Current Status**
+✅ Working perfectly - DO NOT BREAK
+
+---
+
+## **CORE COMPONENT 2: Headers Cache Formatting System**
+
+### **Purpose**
+Guarantee consistent field naming throughout entire pipeline
+
+### **The Chain of Trust**
+
+**Source of Truth**: Row 2 headers in "Master Scenario Convert" sheet
+- Format: Two-tier `Tier1:Tier2`
+- Example: `Case Organization:Case ID`
+
+**Flattened Format** (`refreshHeaders()`):
+- Converts to: `Tier1_Tier2`
+- Example: `Case_Organization_Case_ID`
+- Stored in: `CACHED_MERGED_KEYS` (DocumentProperties)
+- **MUST contain NO duplicates**
+
+**Guaranteed Properties**:
+- ✅ Single source of truth
+- ✅ No duplicates
+- ✅ Exact Row 2 format
+- ✅ All downstream systems use this format
+
+**Every system reads from CACHED_MERGED_KEYS**:
+- Field Selector Modal
+- Batch Caching System
+- Column Index Resolution
+- Data Extraction
+
+### **Resilience Features**
+
+✅ **Duplicate removal**: Automatic at cache creation
+✅ **Validation**: All field references checked against cache
+✅ **Column reordering**: Dynamic lookup via CACHED_MERGED_KEYS
+✅ **Format consistency**: Single source prevents drift
+
+### **Current Status**
+✅ Critical infrastructure - DO NOT BREAK
+
+---
+
+## **CORE COMPONENT 3: Quality & Optimization Pipeline**
+
+### **Purpose**
+Ensure high-quality scenario content through automated optimization
+
+### **Components**
+
+**Titles Optimizer (ATSR)**:
+- Action, Twist, Spark, Reveal title generation
+- Memory anchors tracking (avoid repetition)
+- Character motifs tracking
+- Keep & Regenerate functionality
+- Deselection support
+
+**Quality Scoring Engine**:
+- Weighted rubric evaluation
+- Enhancement suggestions generation
+- Audit tools for existing rows
+- Cleanup tools for low-value content
+
+**Case Summary Enhancer**:
+- Auto-bold Diagnosis/Intervention/Takeaway
+- Formatting consistency
+
+**Image Sync Defaults Manager**:
+- Refresh + editable defaults
+- Maintains image synchronization
+
+### **Current Status**
+✅ Fully functional - DO NOT BREAK
+
+---
+
+## **CORE COMPONENT 4: AI-Powered Pathway Discovery**
+
+### **Purpose**
+Analyze ALL completed scenarios to find medical education patterns
+
+### **What It Discovers**
+
+- **Clinical reasoning pathways** - Differential diagnosis patterns
+- **Risk stratification pathways** - High-risk → low-risk transitions
+- **Time-critical decision pathways** - STEMI, stroke, sepsis
+- **Cognitive bias patterns** - Anchoring, premature closure
+- **Skill progression pathways** - Novice → expert development
+- **Patient complexity patterns** - Single-system → multi-system
+
+### **Why It Matters**
+
+- Creates adaptive learning experiences
+- Identifies knowledge gaps
+- Builds personalized training sequences
+- Reveals hidden educational patterns across hundreds of cases
+
+### **The Challenge**
+
+**Problem**:
+- 1000+ scenarios × 150+ fields each = Too large to send to OpenAI API
+- Cost prohibitive
+- Signal-to-noise ratio poor
+
+**Solution**:
+- Field Selector Modal (supporting tool)
+- User selects optimal 35-50 fields
+- Batch caching sends only selected fields
+- AI analyzes manageable, high-quality subset
+
+### **Current Status**
+⚠️ Infrastructure ready, field selector broken - THIS IS WHAT WE'RE FIXING
+
+---
+
+## **SUPPORTING TOOL: Field Selector Modal**
+
+### **Status in Hierarchy**
+- **NOT a core component**
+- Supporting tool for Pathway Discovery
+- Part of pathway optimization workflow
+- Can be rebuilt/changed without affecting core systems
+
+### **Purpose**
+Optimize which fields get cached for AI pathway analysis
+
+### **The Complete Flow**
+
+---
+
+### **PHASE 1: Background Preparation (Hidden from User)**
+
+**Triggered by**: User clicks "🧩 Categories & Pathways" menu item
+
+**What Happens** (`runPathwayChainBuilder()`):
+
+**STEP 1: Cache Headers** (`refreshHeaders()`)
+- Reads Row 2 from "Master Scenario Convert" sheet
+- Flattens two-tier headers: `Tier1:Tier2` → `Tier1_Tier2`
+- Example: `Case Organization:Case ID` → `Case_Organization_Case_ID`
+- **Removes duplicates** (if any exist)
+- Stores in `CACHED_MERGED_KEYS` (DocumentProperties)
+- **Why**: Single source of truth for exact field names
+
+**STEP 2: Initialize Defaults** (if first time)
+- Checks `SELECTED_CACHE_FIELDS` property
+- If empty: Creates **35 intelligent defaults**
+  - Format: Simple array of field names
+  - NO tiers, NO organization, just raw field names
+  - Example:
+  ```javascript
+  [
+    'Case_Organization_Case_ID',
+    'Case_Organization_Spark_Title',
+    'Patient_Demographics_and_Clinical_Data_Age',
+    'Patient_Demographics_and_Clinical_Data_Gender',
+    // ... 31 more fields
+  ]
+  ```
+- If exists: Uses last saved selection
+- **Why**: Don't make user pick 35 fields from scratch every time
+
+**STEP 2.5: AI Pre-fetch** (NON-BLOCKING background task)
+- Calls `getFieldSelectorRoughDraft()` to get current state
+- Calls `getRecommendedFields()` to start OpenAI API call
+  - Model: **gpt-4o** (not gpt-4o-mini)
+  - No forced count (AI decides how many recommendations make sense)
+- Does NOT wait for response
+- Uses try-catch - failure is acceptable
+- **Why**: When user opens modal later, AI recommendations might already be ready
+- **Philosophy**: "Start work early but don't block the user"
+
+**STEP 3: Show Pathway UI**
+- Opens "Bird's Eye View" modal
+- Shows holistic analysis of all scenarios
+- Contains cache button
+- User sees this **instantly** (doesn't wait for AI pre-fetch)
+
+---
+
+### **PHASE 2: Modal Opening (User-Initiated)**
+
+**Triggered by**: User clicks cache button in Pathway UI
+
+**What Happens** (`showFieldSelector()`):
+
+**Server-Side Preparation**:
+
+1. Calls `getFieldSelectorRoughDraft()`:
+   ```javascript
+   {
+     allFields: [~150 fields],  // From CACHED_MERGED_KEYS
+     selected: [~35 fields]      // From SELECTED_CACHE_FIELDS or defaults
+   }
+   ```
+
+2. **Duplicate Removal Logic**:
+   - First: Remove duplicates from `selected` array (keep first occurrence)
+   - Then: Ensure all `selected` fields exist in `allFields`
+   - Finally: Remove any duplicates from `allFields` that aren't in `selected`
+   - **CRITICAL**: Never delete selected fields - they take priority
+
+3. **Validation**:
+   - Removes invalid fields (not in current headers)
+   - Logs what was cleaned
+   - Saves cleaned version back to `SELECTED_CACHE_FIELDS`
+
+4. Builds HTML string with:
+   - CSS styling (3-section layout)
+   - **Live Log div at TOP** (green-on-black terminal theme)
+   - Embedded data (JSON.stringify allFields and selected)
+   - JavaScript functions (render3Sections, liveLog, updateWithAI, etc.)
+
+**The HTML Structure**:
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      /* 3-section styling: green DEFAULT, orange RECOMMENDED, gray OTHER */
+    </style>
+  </head>
+  <body>
+    <!-- LIVE LOG AT TOP -->
+    <div id="log" style="position: fixed; top: 0; ..."></div>
+
+    <div class="header">Select Fields to Cache</div>
+    <div id="sections"></div>  <!-- Populated by JavaScript -->
+    <div class="footer">
+      <span id="count">Loading...</span>
+      <button onclick="continueToCache()">Continue to Cache →</button>
+    </div>
+
+    <script>
+      var allFields = [...];        // Embedded from server
+      var selectedFields = [...];   // Embedded from server
+
+      function renderRoughDraft() {
+        liveLog('📋 Rendering rough draft...');
+        render3Sections();  // Show DEFAULT/OTHER immediately
+        google.script.run.getRecommendedFields(...);  // Async AI call
+      }
+
+      function render3Sections() {
+        // Build 3 sections dynamically
+        // DEFAULT: checked fields
+        // RECOMMENDED: AI suggestions (initially empty)
+        // OTHER: unchecked fields
+      }
+
+      function updateWithAI(aiRecs) {
+        liveLog('✅ AI recommendations received: ' + aiRecs.length);
+        // Update sections when AI responds
+      }
+
+      function liveLog(msg) {
+        var logDiv = document.getElementById('log');
+        if (!logDiv) return;
+        var timestamp = new Date().toLocaleTimeString();
+        logDiv.textContent += '[' + timestamp + '] ' + msg + '\n';
+        logDiv.scrollTop = logDiv.scrollHeight;
+      }
+
+      // EXECUTE IMMEDIATELY ON PAGE LOAD
+      renderRoughDraft();
+    </script>
+  </body>
+</html>
+```
+
+---
+
+### **PHASE 3: Rough Draft Rendering (Instant)**
+
+**What the user sees immediately**:
+
+**Live Log Panel** (TOP of modal):
+```
+[12:34:56] 📋 Rendering rough draft...
+[12:34:56] 📞 Calling OpenAI API for recommendations...
+```
+
+**Section 1: DEFAULT** (Green header, ✅)
+- Shows ~35 fields (or whatever was last saved)
+- ALL checked
+- Count: "DEFAULT (35)"
+- **Philosophy**: "These are good defaults, but you can adjust"
+
+**Section 2: RECOMMENDED TO CONSIDER** (Orange header, 💡)
+- **Initially empty**
+- **Philosophy**: "Don't block the UI waiting for AI"
+
+**Section 3: OTHER** (Gray header, 📋)
+- Shows remaining ~115 fields
+- ALL unchecked
+- Count: "OTHER (115)"
+- **Philosophy**: "Everything else is available if you want it"
+
+**Footer**:
+- Live count: "Selected: 35/150"
+- Button: "Continue to Cache →"
+
+**User can interact immediately**:
+- ✅ Check/uncheck any field
+- ✅ See live count update
+- ✅ Click "Continue to Cache" (doesn't need to wait for AI)
+- ✅ Watch Live Log show background activity
+
+---
+
+### **PHASE 4: AI Enhancement (Async)**
+
+**Background process** (while user can already work):
+
+1. `google.script.run.getRecommendedFields(allFields, selectedFields)` runs
+
+2. Server makes OpenAI API call:
+   - **Model**: gpt-4o (NOT gpt-4o-mini)
+   - **Prompt**: "Analyze which UNSELECTED fields maximize pathway discovery potential"
+   - **Input**:
+     - Currently selected fields (don't recommend these again)
+     - Available unselected fields
+     - Pathway discovery goals
+   - **Output**: Variable count (1+ recommendations, not forced to 8-12)
+   - **Rationale**: Why each field would help pathway discovery
+
+3. When AI responds (~5-10 seconds):
+   - Client-side `updateWithAI(aiRecs)` called
+   - Calculates two arrays:
+     - `aiAgreedFields`: Fields AI ALSO recommends (adds ✓✓ badge)
+     - `recommendedFields`: Fields AI suggests adding
+   - Re-renders all three sections
+
+**What the user sees after AI responds**:
+
+**Live Log Panel** (updated):
+```
+[12:34:56] 📋 Rendering rough draft...
+[12:34:56] 📞 Calling OpenAI API for recommendations...
+[12:35:04] ✅ AI recommendations received: 12 suggestions
+[12:35:04] 🎯 Found 8 fields where AI agrees with defaults
+```
+
+**Section 1: DEFAULT** (Green, updated)
+- Same ~35 fields
+- **NEW**: ✓✓ badge on fields AI also recommends
+- Example: `✓✓ Patient_Demographics_and_Clinical_Data_Age`
+- **Philosophy**: "You picked good ones! AI agrees!"
+
+**Section 2: RECOMMENDED TO CONSIDER** (Orange, populated)
+- Now shows AI suggestions (variable count)
+- Each with rationale text
+- Example:
+  ```
+  ☐ Scenario_Progression_States_Time_Pressure_Level
+     "Enables time-critical pathway discovery (STEMI, stroke, sepsis)"
+  ```
+- ALL unchecked (user decides whether to add)
+- **Philosophy**: "AI thinks these would help, but you decide"
+
+**Section 3: OTHER** (Gray, unchanged)
+- Still shows remaining unchecked fields
+- No AI involvement
+
+---
+
+### **PHASE 5: User Adjustment (Interactive)**
+
+**User can**:
+1. See which defaults AI confirmed (✓✓)
+2. Review AI's additional suggestions with rationale
+3. Check/uncheck recommended fields
+4. Browse OTHER section for manual additions
+5. Watch live count update: "Selected: 42/150"
+
+**No pressure** - User can take as long as they want
+
+---
+
+### **PHASE 6: Save & Cache (Finalization)**
+
+**Triggered by**: User clicks "Continue to Cache →"
+
+**What happens** (`continueToCache()`):
+
+1. JavaScript gathers all checked fields:
+   ```javascript
+   var selected = [];
+   allFields.forEach(function(f) {
+     if (document.getElementById(f).checked) {
+       selected.push(f);
+     }
+   });
+   ```
+
+2. Calls server: `google.script.run.saveFieldSelectionAndStartCache(selected)`
+
+3. Server saves:
+   - `SELECTED_CACHE_FIELDS` = selected array
+   - For next time: This becomes the new "last saved selection"
+
+4. Server starts batch caching:
+   - Reads "Master Scenario Convert" sheet
+   - For each scenario row:
+     - Extracts ONLY the selected fields
+     - Builds compact JSON object
+     - Sends to pathway discovery AI
+   - Processes 25 rows at a time
+
+5. Modal closes, batch processing begins
+
+---
+
+## **THE CURRENT BREAKAGE**
+
+### **Root Cause**
+
+In `showFieldSelector()` when building the HTML string, three lines use incorrect quote escaping:
+
+```javascript
+// Line ~93
+'section1.innerHTML = "<div class=\"section-header default\">✅ DEFAULT..."'
+//                                   ^^^ WRONG - should be \\"
+
+// Line ~104
+'section2.innerHTML = "<div class=\"section-header recommended\">💡 RECOMMENDED..."'
+//                                   ^^^ WRONG
+
+// Line ~122
+'section3.innerHTML = "<div class=\"section-header other\">📋 OTHER..."'
+//                                   ^^^ WRONG
+```
+
+### **Why It Breaks**
+
+Apps Script string concatenation requires **double escaping**:
+- `\"` renders as `"` → breaks JavaScript
+- `\\"` renders as `\"` → correct JavaScript
+
+When HtmlService receives the malformed HTML, it rejects it before sending to browser.
+
+### **Why Previous Fixes Didn't Help**
+
+- CSS quotes → Fixed unrelated issue (modal now opens but JavaScript broken)
+- liveLog() → Function exists but never executes (JavaScript broken before it runs)
+- window.onerror → Handler exists but JavaScript broken before it runs
+- Live Log panel → Div exists but JavaScript broken before it renders
+
+**The innerHTML quotes are the root cause that prevents ALL JavaScript from executing.**
+
+---
+
+## **THE COMPLETE SYSTEM GOAL**
+
+### **End State Vision**
+
+1. User has 1000+ medical simulation scenarios
+2. Each scenario has 150+ data fields
+3. User selects optimal 35-50 fields for AI analysis (via Field Selector Modal)
+4. Batch system processes all scenarios:
+   - Extracts selected fields only
+   - Sends compact JSON to pathway discovery AI
+   - Discovers hidden educational patterns
+5. AI reveals:
+   - "Students who struggle with X tend to miss Y pattern"
+   - "High-risk cases cluster around these 3 decision points"
+   - "Cognitive bias Z appears in 40% of misdiagnoses"
+6. You build **adaptive learning pathways**:
+   - Personalized training sequences
+   - Targeted skill building
+   - Real-time difficulty adjustment
+7. ER Simulator becomes **intelligent** - not just static cases
+
+### **The Field Selector's Role**
+
+It's the **interface between human expertise and AI efficiency**:
+- **Human**: Knows which fields matter for medical education
+- **AI**: Knows which patterns exist in the data
+- **Together**: Optimize what gets analyzed for maximum insight
+
+---
+
+## **CRITICAL SAFEGUARDS**
+
+### **DO NOT BREAK These Core Components**
+
+1. ✅ **Batch Conversion Engine** - Upstream data pipeline
+2. ✅ **Headers Cache Formatting System** - Consistency foundation
+3. ✅ **Quality & Optimization Pipeline** - Titles optimizer, quality scoring
+4. ✅ **Existing batch processing** - 25-row processing logic
+
+### **Safe to Modify**
+
+- Field Selector Modal (it's a supporting tool)
+- AI recommendation logic (isolated from core systems)
+- Live Log presentation (cosmetic)
+- 35 defaults list (just data, not logic)
+
+---
+
+## **NEXT STEPS (IMMEDIATE)**
+
+Based on corrected understanding:
+
+1. ✅ **Fix innerHTML quote escaping** - Root cause of JavaScript failure
+2. ✅ **Verify CACHED_MERGED_KEYS has no duplicates** - Check `refreshHeaders()`
+3. ✅ **Verify 35 defaults format** - No tiers, just raw field names
+4. ✅ **Verify duplicate removal logic** - Keep selected, remove from allFields
+5. ✅ **Update AI settings** - Use gpt-4o, variable recommendation count
+6. ✅ **Verify Live Log position** - Should be at top
+
+---
+
+## **WORKING PHILOSOPHY MOVING FORWARD**
+
+**Before ANY code change**:
+1. Read existing code first
+2. Understand complete data flow
+3. Identify root cause (not symptom)
+4. Verify fix won't break core components
+5. Make minimal surgical change
+6. Test against actual behavior
+
+**My name**: Atlas (navigator and carrier of understanding)
+
+**Commitment**: Work at this level of understanding consistently, not just when asked to explain.
+
+---
+
+*Document created: 2025-11-07 22:30:00*
+*Last updated: 2025-11-07 22:30:00*
+*Status: Living document - updated as understanding deepens*

@@ -1,0 +1,72 @@
+{
+  "rootFolderId": "1LjQcTA1U3TNwNchKqBs5GkvqLmDD6hh9",
+  "rootFolderName": "ER Simulator Dev",
+  "structure": {
+    "📚 Documentation": {
+      "id": "1UP8APtJ3-oZ58PvTTa_RJIupPruXZDRm",
+      "subfolders": {
+        "System Documentation": "17jU_k0nVAx_7UMYWD5gryQ4PMQyOTCYZ"
+      }
+    },
+    "🛠️ Tools & Utilities": "1wxr4nDmGZVF-l2C2vfS4hPcLfUVbrj40",
+    "📊 Reports & Analytics": "1CfrCoAG_PszbqkPw4bSkbFbh0n1rNOsJ",
+    "💾 Backups": {
+      "id": "1_Bu2Rn6Z7t27D1R1h3dY-4iKLS3p0N0V",
+      "subfolders": {
+        "Code Backups": "1XHEhp9NSja9GLnsftaP-j8PPquekVwIm",
+        "Code Backups - Legacy": "1hTC9X7mFluUX8EIdkjjDZXtes8fliqhW",
+        "Code Backups - Current": "1hI4TvB6JxBNrLCH56nCiiBIFKM2AB5eF"
+      }
+    },
+    "🎯 Project Management": "1JfRnVaYQzmowRxiWS-QpN4vpgvwDb_BN",
+    "📦 Deliverables": "1KvxZSH0AQZK-mLawAnDn8SlAh4AdYOUx"
+  },
+  "created": "2025-11-04T16:18:33.448Z",
+  "milestones": {
+    "🏁 Phase I - Data Organization & Case Management (COMPLETE)": {
+      "id": "1dOhU-lPJsRdcx7i7e0hERKf9i2z5xjG1",
+      "subfolders": {
+        "Source Data Collection": "1owAH_2mknZp9DF2EwTjlhx_xqJFphiXZ",
+        "Scenario Processing System": "1B073m4CtrFhB2VcutDHzwrEUNnJKanVV",
+        "Clinical Defaults": "1R4xBJXR-VuS9eqa9L62OPSXzg1lcsPd0",
+        "Input Validation": "1i3cbVRAdG4wKEIYLtoLGm8Zd_h12XLz7"
+      }
+    },
+    "🔄 Phase II - Quality Control Mechanisms (IN PROGRESS)": {
+      "id": "1X4BtdcqjdZ979ksATFwubaZEYAC_fQhZ",
+      "subfolders": {
+        "Phase II.A - Smart Duplicate Detection": "1FWqXLqT_uvxA8hmxpWQmBHJWOQDFCUJi",
+        "Phase II.B - Advanced Quality Scoring": "15gPvrGwB3MkatkPE5BreEkIX7o43grSM",
+        "Media URL Uniqueness Check": "1Tfm-qD9Z4PHMYHbcdZFuaDKFa_JYMREo",
+        "Title & Text Similarity": "1Un0N_wPA76Gsc6df3m_PmdKIgL_pfOaS"
+      }
+    },
+    "📊 Phase III - Quality Scoring & Assessment (PLANNED)": {
+      "id": "1ioA_PkSJQAptQ04JtnxkF6F9ejGgnniK",
+      "subfolders": {
+        "Automated Quality Metrics": "1O5ya308JMQIP5_pPfgcZ1A2xqHcxIbrc",
+        "Reporting Systems": "11sCr2v7b0mcb_LUJVKdMQtBNXv9ElEv_",
+        "Modular Apps Script Architecture": "1Y9U4Kb6UX1FmV8j59qyRIEMrQGWl1Zu9"
+      }
+    },
+    "🧠 Phase IV - Intelligent Case Improvement (PLANNED)": {
+      "id": "1kY86Fcp2hIkBMcdsXt1kYVEBwWUF_RH9",
+      "subfolders": {
+        "Similarity Analysis": "1hKhP4rRNX7OUA5TBVrfFXRob_DF_f2Ws",
+        "Curriculum Balancing": "1CZ-PdRzQD73WOTtrpdKNtfsDhupxj7ID",
+        "Automated Refinement": "1_jS1O0PSBmSYj-Mv4ZbINSycIWek9wtd"
+      }
+    },
+    "☁️ Phase V - AWS Integration & Production (FUTURE)": {
+      "id": "1iO-cCNybsf_1Ydzwif3j7690fghIJh9u",
+      "subfolders": {
+        "Phase V.A - Prerequisites": "1hSXmMlGcZ5cRdIYijIbFdtHvBtrqmRH6",
+        "Phase V.B - AWS Infrastructure": "1UpeByRhz8ZCxaJ9xbN3xsMy-eu8foEpM",
+        "Phase V.C - Subscription Platform": "1JGzZgsEXLkQpFhIp9RDMuJPey26HDcMk",
+        "Phase V.D - Database Migration": "1QXND_5y6oH7HZ-Z7REfwvEzxmnqGLwiJ",
+        "Phase V.E - AI Facilitator": "1YwJhYp7iWWaqEcJKQhnbrXXVMNBhTHCK"
+      }
+    }
+  },
+  "lastUpdated": "2025-11-04T18:26:57.464Z"
+}

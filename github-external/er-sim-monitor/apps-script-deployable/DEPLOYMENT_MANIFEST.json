@@ -1,0 +1,24 @@
+{
+  "timestamp": "2025-11-04T18:48:41.651Z",
+  "purpose": "Feature-based Apps Script deployment with golden prompts preserved",
+  "testSpreadsheetId": "1t3qN8e537ghl38GTsXbVG8ML8OZtK2XyUpDiMQjnGAI",
+  "testSpreadsheetUrl": "https://docs.google.com/spreadsheets/d/1t3qN8e537ghl38GTsXbVG8ML8OZtK2XyUpDiMQjnGAI/edit",
+  "source": "Code_ULTIMATE_ATSR.gs",
+  "files": [
+    {
+      "name": "ATSR_Title_Generator_Feature.gs",
+      "functions": 4,
+      "sizeKB": 25.7
+    },
+    {
+      "name": "Batch_Processing_Sidebar_Feature.gs",
+      "functions": 11,
+      "sizeKB": 19.3
+    },
+    {
+      "name": "Core_Processing_Engine.gs",
+      "functions": 4,
+      "sizeKB": 21.3
+    }
+  ]
+}

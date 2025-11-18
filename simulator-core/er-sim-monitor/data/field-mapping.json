@@ -1,0 +1,203 @@
+{
+  "mappedFields": {
+    "caseId": {
+      "index": 0,
+      "columnName": "Case_Organization_Case_ID",
+      "tier": "basic"
+    },
+    "sparkTitle": {
+      "index": 1,
+      "columnName": "Case_Organization_Spark_Title",
+      "tier": "basic"
+    },
+    "pathway": {
+      "index": 5,
+      "columnName": "Case_Organization_Pathway_or_Course_Name",
+      "tier": "metadata"
+    }
+  },
+  "unmappedFields": [
+    {
+      "field": "diagnosis",
+      "tier": "basic",
+      "attemptedNames": [
+        "Case_Orientation_Chief_Diagnosis",
+        "Chief Diagnosis",
+        "Diagnosis"
+      ]
+    },
+    {
+      "field": "preSimOverview",
+      "tier": "learning",
+      "attemptedNames": [
+        "Case_Orientation_PreSim_Overview",
+        "PreSim Overview",
+        "Pre-Sim"
+      ]
+    },
+    {
+      "field": "postSimOverview",
+      "tier": "learning",
+      "attemptedNames": [
+        "Case_Orientation_PostSim_Overview",
+        "PostSim Overview",
+        "Post-Sim"
+      ]
+    },
+    {
+      "field": "learningOutcomes",
+      "tier": "learning",
+      "attemptedNames": [
+        "Case_Orientation_Actual_Learning_Outcomes",
+        "Learning Outcomes",
+        "Outcomes"
+      ]
+    },
+    {
+      "field": "learningObjectives",
+      "tier": "learning",
+      "attemptedNames": [
+        "Case_Orientation_Learning_Objectives",
+        "Learning Objectives",
+        "Objectives"
+      ]
+    },
+    {
+      "field": "category",
+      "tier": "metadata",
+      "attemptedNames": [
+        "Case_Organization_Category",
+        "Category"
+      ]
+    },
+    {
+      "field": "difficulty",
+      "tier": "metadata",
+      "attemptedNames": [
+        "Case_Organization_Difficulty",
+        "Difficulty",
+        "Level"
+      ]
+    },
+    {
+      "field": "estimatedDuration",
+      "tier": "metadata",
+      "attemptedNames": [
+        "Case_Organization_Estimated_Duration",
+        "Duration",
+        "Time"
+      ]
+    },
+    {
+      "field": "setting",
+      "tier": "metadata",
+      "attemptedNames": [
+        "Case_Orientation_Setting",
+        "Setting",
+        "Location"
+      ]
+    },
+    {
+      "field": "age",
+      "tier": "demographics",
+      "attemptedNames": [
+        "Case_Orientation_Patient_Age",
+        "Patient Age",
+        "Age"
+      ]
+    },
+    {
+      "field": "gender",
+      "tier": "demographics",
+      "attemptedNames": [
+        "Case_Orientation_Patient_Gender",
+        "Patient Gender",
+        "Gender"
+      ]
+    },
+    {
+      "field": "chiefComplaint",
+      "tier": "demographics",
+      "attemptedNames": [
+        "Case_Orientation_Chief_Complaint",
+        "Chief Complaint",
+        "Complaint"
+      ]
+    },
+    {
+      "field": "initialVitals",
+      "tier": "vitals",
+      "attemptedNames": [
+        "Case_Orientation_Initial_Vitals",
+        "Initial Vitals",
+        "Vitals",
+        "Initial_Vitals"
+      ]
+    },
+    {
+      "field": "examFindings",
+      "tier": "clinical",
+      "attemptedNames": [
+        "Case_Orientation_Exam_Findings",
+        "Exam Findings",
+        "Physical Exam"
+      ]
+    },
+    {
+      "field": "medications",
+      "tier": "clinical",
+      "attemptedNames": [
+        "Case_Orientation_Medications",
+        "Medications",
+        "Meds",
+        "Past Medications"
+      ]
+    },
+    {
+      "field": "pastMedicalHistory",
+      "tier": "clinical",
+      "attemptedNames": [
+        "Case_Orientation_Past_Medical_History",
+        "PMH",
+        "Medical History"
+      ]
+    },
+    {
+      "field": "allergies",
+      "tier": "clinical",
+      "attemptedNames": [
+        "Case_Orientation_Allergies",
+        "Allergies"
+      ]
+    },
+    {
+      "field": "environmentType",
+      "tier": "environment",
+      "attemptedNames": [
+        "Case_Orientation_Environment_Type",
+        "Environment Type",
+        "Environment"
+      ]
+    },
+    {
+      "field": "dispositionPlan",
+      "tier": "environment",
+      "attemptedNames": [
+        "Case_Orientation_Disposition_Plan",
+        "Disposition Plan",
+        "Disposition"
+      ]
+    },
+    {
+      "field": "context",
+      "tier": "environment",
+      "attemptedNames": [
+        "Case_Orientation_Context",
+        "Context",
+        "Background"
+      ]
+    }
+  ],
+  "sheetName": "Master Scenario Convert",
+  "analyzedAt": "2025-11-05T08:03:49.322Z"
+}

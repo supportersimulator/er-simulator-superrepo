@@ -1,0 +1,44 @@
+{
+  "timestamp": "2025-11-04T18:30:22.777Z",
+  "source": "Utilities.gs",
+  "originalFunctionCount": 67,
+  "refinedModules": 7,
+  "htmlFilesExtracted": 0,
+  "modules": [
+    {
+      "category": "Value_Extraction",
+      "fileName": "Value_Extraction.gs",
+      "functionCount": 1
+    },
+    {
+      "category": "API_Management",
+      "fileName": "API_Management.gs",
+      "functionCount": 3
+    },
+    {
+      "category": "Header_Caching",
+      "fileName": "Header_Caching.gs",
+      "functionCount": 5
+    },
+    {
+      "category": "Sheet_Operations",
+      "fileName": "Sheet_Operations.gs",
+      "functionCount": 1
+    },
+    {
+      "category": "Sidebar_Backend",
+      "fileName": "Sidebar_Backend.gs",
+      "functionCount": 7
+    },
+    {
+      "category": "Logging_Utilities",
+      "fileName": "Logging_Utilities.gs",
+      "functionCount": 11
+    },
+    {
+      "category": "General_Utilities",
+      "fileName": "General_Utilities.gs",
+      "functionCount": 59
+    }
+  ]
+}

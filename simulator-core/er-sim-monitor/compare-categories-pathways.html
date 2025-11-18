@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Categories & Pathways Version Comparison</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #1e1e1e;
+            color: #e0e0e0;
+            padding: 20px;
+        }
+
+        .header {
+            background: #2d2d2d;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            border-left: 4px solid #4CAF50;
+        }
+
+        .header h1 {
+            color: #4CAF50;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            color: #888;
+            font-size: 14px;
+        }
+
+        .versions-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .version-card {
+            background: #2d2d2d;
+            border-radius: 8px;
+            padding: 20px;
+            border: 2px solid #444;
+            transition: all 0.3s ease;
+        }
+
+        .version-card:hover {
+            border-color: #4CAF50;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(76, 175, 80, 0.2);
+        }
+
+        .version-number {
+            display: inline-block;
+            background: #4CAF50;
+            color: white;
+            font-weight: bold;
+            font-size: 24px;
+            padding: 10px 20px;
+            border-radius: 50%;
+            margin-bottom: 15px;
+            min-width: 60px;
+            text-align: center;
+        }
+
+        .version-title {
+            font-size: 18px;
+            font-weight: bold;
+            color: #4CAF50;
+            margin-bottom: 10px;
+        }
+
+        .version-meta {
+            display: grid;
+            gap: 8px;
+            margin-bottom: 15px;
+            padding: 15px;
+            background: #1e1e1e;
+            border-radius: 4px;
+        }
+
+        .meta-item {
+            display: flex;
+            justify-content: space-between;
+            font-size: 13px;
+        }
+
+        .meta-label {
+            color: #888;
+        }
+
+        .meta-value {
+            color: #e0e0e0;
+            font-weight: 500;
+        }
+
+        .code-preview {
+            background: #1e1e1e;
+            border-radius: 4px;
+            padding: 15px;
+            margin-top: 15px;
+            max-height: 300px;
+            overflow-y: auto;
+            border: 1px solid #444;
+        }
+
+        .code-preview pre {
+            font-family: 'Consolas', 'Monaco', monospace;
+            font-size: 12px;
+            line-height: 1.5;
+            color: #d4d4d4;
+            white-space: pre-wrap;
+        }
+
+        .feature-list {
+            margin-top: 15px;
+            padding: 15px;
+            background: #1e1e1e;
+            border-radius: 4px;
+        }
+
+        .feature-item {
+            padding: 5px 0;
+            font-size: 13px;
+        }
+
+        .feature-item.has {
+            color: #4CAF50;
+        }
+
+        .feature-item.missing {
+            color: #888;
+            text-decoration: line-through;
+        }
+
+        .feature-item::before {
+            margin-right: 8px;
+        }
+
+        .feature-item.has::before {
+            content: '✓';
+        }
+
+        .feature-item.missing::before {
+            content: '✗';
+        }
+
+        .selection-button {
+            width: 100%;
+            padding: 12px;
+            background: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            margin-top: 15px;
+            transition: all 0.3s ease;
+        }
+
+        .selection-button:hover {
+            background: #45a049;
+            transform: scale(1.02);
+        }
+
+        .selection-button:active {
+            transform: scale(0.98);
+        }
+
+        .instructions {
+            background: #2d2d2d;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 20px;
+            border-left: 4px solid #2196F3;
+        }
+
+        .instructions h2 {
+            color: #2196F3;
+            margin-bottom: 10px;
+        }
+
+        .instructions ol {
+            margin-left: 20px;
+            line-height: 1.8;
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 11px;
+            font-weight: bold;
+            margin-left: 8px;
+        }
+
+        .badge.recommended {
+            background: #4CAF50;
+            color: white;
+        }
+
+        .badge.phase {
+            background: #2196F3;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>📋 Categories & Pathways - Version Comparison</h1>
+        <p>Review each version and select the most current one you want to use</p>
+    </div>
+
+    <div class="versions-grid" id="versionsGrid">
+        <!-- Versions will be loaded here -->
+    </div>
+
+    <div class="instructions">
+        <h2>📖 Instructions</h2>
+        <ol>
+            <li>Review each version card above</li>
+            <li>Look at the file size, last modified date, and features</li>
+            <li>Check the code preview to see what's included</li>
+            <li>Click "SELECT THIS VERSION" on the one you want</li>
+            <li>Tell Claude the version number you selected</li>
+        </ol>
+    </div>
+
+    <script>
+        const versions = [
+            {
+                number: 1,
+                name: 'Categories_Pathways_Feature.gs',
+                path: 'apps-script-deployable/Categories_Pathways_Feature.gs',
+                size: '31 KB',
+                modified: 'Nov 4, 2025',
+                phase: 'Phase 1',
+                description: 'Original Categories & Pathways implementation'
+            },
+            {
+                number: 2,
+                name: 'Categories_Pathways_Feature_Phase2.gs',
+                path: 'apps-script-deployable/Categories_Pathways_Feature_Phase2.gs',
+                size: '120 KB',
+                modified: 'Nov 5, 2025',
+                phase: 'Phase 2',
+                description: 'Most recent and comprehensive implementation',
+                recommended: true
+            },
+            {
+                number: 3,
+                name: 'Categories_Pathways_Feature_Phase3A.gs',
+                path: 'apps-script-deployable/Categories_Pathways_Feature_Phase3A.gs',
+                size: '12 KB',
+                modified: 'Nov 4, 2025',
+                phase: 'Phase 3A',
+                description: 'Experimental next-generation features'
+            },
+            {
+                number: 4,
+                name: 'CategoriesPathwaysPanel.gs',
+                path: 'scripts/CategoriesPathwaysPanel.gs',
+                size: '15 KB',
+                modified: 'Earlier',
+                phase: 'UI Panel',
+                description: 'Sidebar UI panel component'
+            },
+            {
+                number: 5,
+                name: 'CategoriesPathwaysPanel_Light.gs',
+                path: 'scripts/CategoriesPathwaysPanel_Light.gs',
+                size: '10 KB',
+                modified: 'Earlier',
+                phase: 'UI Panel (Light)',
+                description: 'Lightweight sidebar UI variant'
+            }
+        ];
+
+        function selectVersion(versionNumber) {
+            const version = versions.find(v => v.number === versionNumber);
+            alert(`✅ You selected Version ${versionNumber}: ${version.name}\n\nNow tell Claude: "I want Version ${versionNumber}"`);
+        }
+
+        function createVersionCard(version) {
+            const card = document.createElement('div');
+            card.className = 'version-card';
+
+            const badges = version.recommended ?
+                `<span class="badge recommended">RECOMMENDED</span>` : '';
+
+            const phaseBadge = `<span class="badge phase">${version.phase}</span>`;
+
+            card.innerHTML = `
+                <div class="version-number">${version.number}</div>
+                <div class="version-title">
+                    ${version.name}
+                    ${phaseBadge}
+                    ${badges}
+                </div>
+                <div class="version-meta">
+                    <div class="meta-item">
+                        <span class="meta-label">File Size:</span>
+                        <span class="meta-value">${version.size}</span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-label">Last Modified:</span>
+                        <span class="meta-value">${version.modified}</span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-label">Description:</span>
+                        <span class="meta-value">${version.description}</span>
+                    </div>
+                </div>
+
+                <div class="feature-list">
+                    <strong style="color: #4CAF50; display: block; margin-bottom: 10px;">Key Features:</strong>
+                    ${getFeatureList(version)}
+                </div>
+
+                <button class="selection-button" onclick="selectVersion(${version.number})">
+                    SELECT VERSION ${version.number}
+                </button>
+            `;
+
+            return card;
+        }
+
+        function getFeatureList(version) {
+            const features = {
+                1: [
+                    { name: 'Basic Categories', has: true },
+                    { name: 'Basic Pathways', has: true },
+                    { name: 'OpenAI Integration', has: true },
+                    { name: 'Advanced Pathway Detection', has: false },
+                    { name: 'Batch Processing', has: false }
+                ],
+                2: [
+                    { name: 'Full Categories System', has: true },
+                    { name: 'Advanced Pathways', has: true },
+                    { name: 'OpenAI Integration', has: true },
+                    { name: 'Advanced Pathway Detection', has: true },
+                    { name: 'Batch Processing', has: true },
+                    { name: 'Cache System', has: true },
+                    { name: 'Multi-Step Processing', has: true }
+                ],
+                3: [
+                    { name: 'Experimental Features', has: true },
+                    { name: 'Next-Gen Architecture', has: true },
+                    { name: 'Limited Compatibility', has: false }
+                ],
+                4: [
+                    { name: 'Sidebar UI', has: true },
+                    { name: 'Visual Controls', has: true },
+                    { name: 'Full Feature Set', has: false }
+                ],
+                5: [
+                    { name: 'Lightweight UI', has: true },
+                    { name: 'Essential Controls Only', has: true },
+                    { name: 'Full Feature Set', has: false }
+                ]
+            };
+
+            return features[version.number].map(f =>
+                `<div class="feature-item ${f.has ? 'has' : 'missing'}">${f.name}</div>`
+            ).join('');
+        }
+
+        // Load all versions
+        const grid = document.getElementById('versionsGrid');
+        versions.forEach(version => {
+            grid.appendChild(createVersionCard(version));
+        });
+    </script>
+</body>
+</html>

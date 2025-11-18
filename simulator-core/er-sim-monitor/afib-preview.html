@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>AFib Waveform Preview</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 20px;
+      background: #000;
+      font-family: monospace;
+    }
+    canvas {
+      background: #000;
+      display: block;
+      margin: 20px auto;
+      border: 1px solid #333;
+    }
+    .info {
+      color: #0f0;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="info">AFib Waveform - 6 Irregular Beats with Smooth Baseline</div>
+  <canvas id="waveform" width="1200" height="200"></canvas>
+
+  <script>
+    const canvas = document.getElementById('waveform');
+    const ctx = canvas.getContext('2d');
+    const containerWidth = canvas.width;
+    const height = canvas.height;
+    const AMP = 1.5;
+
+    // AFib generator (exact same logic as WaveformECG.js)
+    function generateAFib(x) {
+      // 6 irregular R-wave positions across ENTIRE screen
+      const afib_positions_absolute = [0.08, 0.16, 0.38, 0.54, 0.72, 0.88];
+
+      // Use absolute position x instead of per-cycle position
+      const xProgress = x / containerWidth; // 0.0 to 1.0 across entire screen
+
+      for (let rPos of afib_positions_absolute) {
+        const distFromR = Math.abs(xProgress - rPos);
+
+        // SHARP, PROMINENT QRS with POINTED R-wave peak (like ResusMonitor)
+        // NARROW but VERY TALL to stand out above other waveforms
+        const qrsWidth = 3.0 / containerWidth; // Very narrow for crisp appearance
+        if (distFromR < qrsWidth) {
+          const localDist = distFromR / qrsWidth; // Normalize to 0-1 within QRS
+
+          // Q wave - sharp downward spike
+          if (localDist < 0.15) {
+            const qPhase = localDist / 0.15;
+            return -10 * (1 - qPhase) * AMP; // Deeper Q
+          }
+
+          // R wave - SHARP POINTED PEAK (triangle, not rounded) - VERY TALL
+          if (localDist < 0.35) {
+            const rPhase = (localDist - 0.15) / 0.2;
+            return 70 * (1 - rPhase) * AMP; // MUCH TALLER - was 55
+          }
+
+          // S wave - sharp downward spike
+          if (localDist < 1.0) {
+            const sPhase = (localDist - 0.35) / 0.65;
+            return -12 * Math.exp(-sPhase * 3) * AMP; // Deeper S
+          }
+        }
+      }
+
+      // FIBRILLATORY BASELINE with f-waves (like real AFib and ResusMonitor)
+      // Medical specs: f-waves are 300-600/min, amplitude < 0.5mm (fine) to > 0.5mm (coarse)
+      // Two-layer approach:
+      //   1. Low-frequency smooth waves (overall baseline shape)
+      //   2. High-frequency tiny bumps (fibrillatory artifacts/f-waves)
+
+      // Layer 1: Smooth underlying undulation (REDUCED to make QRS stand out more)
+      const smooth1 = Math.sin((x / containerWidth) * Math.PI * 4) * 0.8 * AMP; // was 1.0
+      const smooth2 = Math.sin((x / containerWidth) * Math.PI * 6.5 + 1.3) * 0.5 * AMP; // was 0.6
+
+      // Layer 2: Fine fibrillatory bumps (f-waves) - high frequency, very low amplitude
+      const fWave1 = Math.sin((x / containerWidth) * Math.PI * 60) * 0.3 * AMP;
+      const fWave2 = Math.sin((x / containerWidth) * Math.PI * 75 + 2.1) * 0.25 * AMP;
+      const fWave3 = Math.sin((x / containerWidth) * Math.PI * 52 + 4.7) * 0.2 * AMP;
+
+      return smooth1 + smooth2 + fWave1 + fWave2 + fWave3;
+    }
+
+    // Draw the waveform
+    ctx.strokeStyle = '#00ff00';
+    ctx.lineWidth = 2;
+    ctx.beginPath();
+
+    for (let x = 0; x <= containerWidth; x += 1) {
+      const y = height / 2 - generateAFib(x);
+      if (x === 0) {
+        ctx.moveTo(x, y);
+      } else {
+        ctx.lineTo(x, y);
+      }
+    }
+
+    ctx.stroke();
+
+    // Draw position markers for the 6 beats
+    ctx.fillStyle = '#ff0';
+    ctx.font = '12px monospace';
+    const positions = [0.08, 0.16, 0.38, 0.54, 0.72, 0.88];
+    positions.forEach((pos, i) => {
+      const x = pos * containerWidth;
+      ctx.fillRect(x - 1, 0, 2, height);
+      ctx.fillText(`${i + 1}`, x - 5, 15);
+    });
+  </script>
+</body>
+</html>

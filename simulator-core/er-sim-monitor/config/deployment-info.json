@@ -1,0 +1,12 @@
+{
+  "timestamp": "2025-11-04T18:58:04.476Z",
+  "testSheetId": "1t3qN8e537ghl38GTsXbVG8ML8OZtK2XyUpDiMQjnGAI",
+  "scriptId": "1INZy2-kQNEfEWEipSQ_WCvrvEhGgAeW4G4TM61W2ajNp_63G39KLPm4Y",
+  "filesDeployed": 4,
+  "files": [
+    "ATSR_Title_Generator_Feature",
+    "Batch_Processing_Sidebar_Feature",
+    "Core_Processing_Engine",
+    "appsscript"
+  ]
+}

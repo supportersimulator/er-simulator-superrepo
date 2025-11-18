@@ -1,0 +1,39 @@
+'<script>' +
+      'const logEl = document.getElementById("log");' +
+      'const logs = [];' +
+      'function log(msg) {' +
+      '  const timestamp = new Date().toISOString().substr(11, 8);' +
+      '  const line = "[" + timestamp + "] " + msg;' +
+      '  logs.push(line);' +
+      '  logEl.textContent = logs.join("\\n");' +
+      '  logEl.scrollTop = logEl.scrollHeight;' +
+      '}' +
+      'function copyLogs() {' +
+      '  navigator.clipboard.writeText(logs.join("\\n")).then(function() {' +
+      '    alert("✅ Logs copied to clipboard!");' +
+      '  });' +
+      '}' +
+      'log("🎯 Field Selector JavaScript started");' +
+      '<script>' +
+      'const fields = ' + JSON.stringify(availableFields) + ';' +
+      'const selected = ' + JSON.stringify(selectedFields) + ';' +
+      'console.log("Fields:", fields);' +
+      'console.log("Selected:", selected);' +
+      'const container = document.getElementById("fields");' +
+      'log("📋 Rendering " + Math.min(50, fields.length) + " fields...");' +
+      'fields.slice(0, 50).forEach(function(field) {' +
+      '  const div = document.createElement("div");' +
+      '  div.className = "field";' +
+      '  if (selected.indexOf(field.name) !== -1) div.className += " selected";' +
+      '  const checkbox = document.createElement("input");' +
+      '  checkbox.type = "checkbox";' +
+      '  checkbox.checked = selected.indexOf(field.name) !== -1;' +
+      '  div.appendChild(checkbox);' +
+      '  div.appendChild(document.createTextNode(field.name));' +
+      '  container.appendChild(div);' +
+      '});' +
+      'function closeDialog() { google.script.host.close(); }' +
+      'log("✅ Field selector loaded successfully!");' +
+      'log("Total logs generated: " + logs.length);' +
+      '</script>' +
+ 

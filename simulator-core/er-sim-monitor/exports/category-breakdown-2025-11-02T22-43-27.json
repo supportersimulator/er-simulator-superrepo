@@ -1,0 +1,98 @@
+[
+  {
+    "category": "CARD",
+    "count": 57,
+    "foundational": 57,
+    "foundationalPercent": "100.0",
+    "avgComplexity": "2.21",
+    "avgPriority": "10.00"
+  },
+  {
+    "category": "RESP",
+    "count": 45,
+    "foundational": 43,
+    "foundationalPercent": "95.6",
+    "avgComplexity": "2.11",
+    "avgPriority": "9.42"
+  },
+  {
+    "category": "NEUR",
+    "count": 44,
+    "foundational": 29,
+    "foundationalPercent": "65.9",
+    "avgComplexity": "3.00",
+    "avgPriority": "9.48"
+  },
+  {
+    "category": "MULT",
+    "count": 19,
+    "foundational": 15,
+    "foundationalPercent": "78.9",
+    "avgComplexity": "1.74",
+    "avgPriority": "8.26"
+  },
+  {
+    "category": "TRAU",
+    "count": 12,
+    "foundational": 10,
+    "foundationalPercent": "83.3",
+    "avgComplexity": "3.00",
+    "avgPriority": "8.75"
+  },
+  {
+    "category": "IMMU",
+    "count": 3,
+    "foundational": 2,
+    "foundationalPercent": "66.7",
+    "avgComplexity": "3.67",
+    "avgPriority": "10.00"
+  },
+  {
+    "category": "ENDO",
+    "count": 3,
+    "foundational": 3,
+    "foundationalPercent": "100.0",
+    "avgComplexity": "2.33",
+    "avgPriority": "10.00"
+  },
+  {
+    "category": "GAST",
+    "count": 2,
+    "foundational": 2,
+    "foundationalPercent": "100.0",
+    "avgComplexity": "2.00",
+    "avgPriority": "9.50"
+  },
+  {
+    "category": "OBST",
+    "count": 1,
+    "foundational": 0,
+    "foundationalPercent": "0.0",
+    "avgComplexity": "5.00",
+    "avgPriority": "9.00"
+  },
+  {
+    "category": "INFD",
+    "count": 1,
+    "foundational": 0,
+    "foundationalPercent": "0.0",
+    "avgComplexity": "1.00",
+    "avgPriority": "5.00"
+  },
+  {
+    "category": "PSYC",
+    "count": 1,
+    "foundational": 1,
+    "foundationalPercent": "100.0",
+    "avgComplexity": "2.00",
+    "avgPriority": "8.00"
+  },
+  {
+    "category": "MUSC",
+    "count": 1,
+    "foundational": 1,
+    "foundationalPercent": "100.0",
+    "avgComplexity": "3.00",
+    "avgPriority": "9.00"
+  }
+]

@@ -1,0 +1,22 @@
+AI Categorization Tool Struggles - Google Doc
+
+URL: https://docs.google.com/document/d/19LqaCPnQTw4pcSHSmwtGvzT4ghtE1g7Hk7gzpvVhZek/edit?usp=drivesdk
+
+Created: 2025-11-12T01:33:09.437Z
+
+This document contains:
+• Complete project context & background
+• Tool architecture overview (2 distinct tools explained)
+• ACLS problem explanation & fix
+• Case ID duplication issue
+• Specific Rows mode addition details
+• Live Logs attempt documentation
+• Crash incident & recovery steps
+• Hybrid code/function confusion hypothesis
+• All syntax errors found & fixed
+• Testing timeline (what worked, what broke)
+• Recommended next steps & diagnostic questions
+• All scripts created during debugging
+• Lessons learned & key resources
+
+If Atlas crashes again, read this document to pick up where we left off!

@@ -1,0 +1,267 @@
+{
+  "totalDuplicates": 30,
+  "analyzedFirst20": [
+    {
+      "caseId": "OB0002",
+      "occurrences": 4,
+      "rows": [
+        5,
+        25,
+        105,
+        119
+      ],
+      "similarity": null,
+      "verdict": "MANUAL REVIEW"
+    },
+    {
+      "caseId": "PNEU001",
+      "occurrences": 4,
+      "rows": [
+        6,
+        61,
+        68,
+        170
+      ],
+      "similarity": null,
+      "verdict": "MANUAL REVIEW"
+    },
+    {
+      "caseId": "TR0002",
+      "occurrences": 2,
+      "rows": [
+        9,
+        13
+      ],
+      "similarity": 0.3624930901050304,
+      "verdict": " DIFFERENT"
+    },
+    {
+      "caseId": "CARDIAC001",
+      "occurrences": 20,
+      "rows": [
+        10,
+        47,
+        60,
+        63,
+        81,
+        83,
+        108,
+        112,
+        116,
+        118,
+        121,
+        122,
+        129,
+        141,
+        143,
+        156,
+        166,
+        169,
+        182,
+        186
+      ],
+      "similarity": null,
+      "verdict": "MANUAL REVIEW"
+    },
+    {
+      "caseId": "PEDS001",
+      "occurrences": 13,
+      "rows": [
+        12,
+        17,
+        19,
+        26,
+        36,
+        44,
+        66,
+        67,
+        70,
+        75,
+        87,
+        145,
+        190
+      ],
+      "similarity": null,
+      "verdict": "MANUAL REVIEW"
+    },
+    {
+      "caseId": "TR0001",
+      "occurrences": 2,
+      "rows": [
+        18,
+        34
+      ],
+      "similarity": 0.2865086333040679,
+      "verdict": " DIFFERENT"
+    },
+    {
+      "caseId": "NEU00123",
+      "occurrences": 4,
+      "rows": [
+        20,
+        40,
+        55,
+        99
+      ],
+      "similarity": null,
+      "verdict": "MANUAL REVIEW"
+    },
+    {
+      "caseId": "PED0002",
+      "occurrences": 2,
+      "rows": [
+        21,
+        153
+      ],
+      "similarity": 0.21895424836601307,
+      "verdict": " DIFFERENT"
+    },
+    {
+      "caseId": "PE0001",
+      "occurrences": 2,
+      "rows": [
+        27,
+        161
+      ],
+      "similarity": 0.749611801242236,
+      "verdict": " SIMILAR"
+    },
+    {
+      "caseId": "TRA00123",
+      "occurrences": 17,
+      "rows": [
+        29,
+        50,
+        56,
+        62,
+        64,
+        78,
+        86,
+        93,
+        94,
+        97,
+        110,
+        136,
+        139,
+        168,
+        178,
+        181,
+        191
+      ],
+      "similarity": null,
+      "verdict": "MANUAL REVIEW"
+    },
+    {
+      "caseId": "NEU0001",
+      "occurrences": 2,
+      "rows": [
+        32,
+        95
+      ],
+      "similarity": 0.6495098039215687,
+      "verdict": " DIFFERENT"
+    },
+    {
+      "caseId": "CV00123",
+      "occurrences": 2,
+      "rows": [
+        33,
+        85
+      ],
+      "similarity": 0.5396825396825398,
+      "verdict": " DIFFERENT"
+    },
+    {
+      "caseId": "TRI001",
+      "occurrences": 2,
+      "rows": [
+        35,
+        88
+      ],
+      "similarity": 0.2392590286425903,
+      "verdict": " DIFFERENT"
+    },
+    {
+      "caseId": "PEDS00345",
+      "occurrences": 2,
+      "rows": [
+        41,
+        188
+      ],
+      "similarity": 0.7742424242424242,
+      "verdict": " SIMILAR"
+    },
+    {
+      "caseId": "PED00123",
+      "occurrences": 2,
+      "rows": [
+        45,
+        100
+      ],
+      "similarity": 0.4000544662309368,
+      "verdict": " DIFFERENT"
+    },
+    {
+      "caseId": "PEDS00234",
+      "occurrences": 3,
+      "rows": [
+        52,
+        109,
+        159
+      ],
+      "similarity": null,
+      "verdict": "MANUAL REVIEW"
+    },
+    {
+      "caseId": "PEDS0001",
+      "occurrences": 3,
+      "rows": [
+        57,
+        144,
+        189
+      ],
+      "similarity": null,
+      "verdict": "MANUAL REVIEW"
+    },
+    {
+      "caseId": "NEURO001",
+      "occurrences": 6,
+      "rows": [
+        58,
+        160,
+        165,
+        167,
+        179,
+        185
+      ],
+      "similarity": null,
+      "verdict": "MANUAL REVIEW"
+    },
+    {
+      "caseId": "EM12345",
+      "occurrences": 2,
+      "rows": [
+        72,
+        130
+      ],
+      "similarity": 0.29194050501556557,
+      "verdict": " DIFFERENT"
+    },
+    {
+      "caseId": "NEU001",
+      "occurrences": 2,
+      "rows": [
+        73,
+        98
+      ],
+      "similarity": 0.28480475382003395,
+      "verdict": " DIFFERENT"
+    }
+  ],
+  "summary": {
+    "identical": 0,
+    "similar": 0,
+    "different": 0,
+    "manual": 9
+  }
+}

@@ -1,0 +1,119 @@
+<svg width="1200" height="800" viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background - ER Room Walls -->
+  <rect width="1200" height="800" fill="#E8EBF0"/>
+
+  <!-- Floor -->
+  <rect y="600" width="1200" height="200" fill="#C8D0D8"/>
+
+  <!-- Back Wall Panel -->
+  <rect x="50" y="50" width="1100" height="500" fill="#D0D8E0" stroke="#B0B8C0" stroke-width="2"/>
+
+  <!-- Medical Equipment Rail on Wall -->
+  <rect x="100" y="150" width="1000" height="30" fill="#8090A0" rx="5"/>
+  <rect x="100" y="160" width="1000" height="10" fill="#607080"/>
+
+  <!-- Hospital Bed -->
+  <!-- Bed Frame -->
+  <rect x="300" y="400" width="600" height="250" fill="#A8B0B8" rx="10"/>
+  <rect x="320" y="420" width="560" height="200" fill="#E0E8F0" rx="5"/>
+
+  <!-- Pillow -->
+  <ellipse cx="610" cy="460" rx="120" ry="40" fill="#F0F4F8"/>
+  <ellipse cx="610" cy="460" rx="115" ry="35" fill="#FFFFFF"/>
+
+  <!-- PATIENT ON BED -->
+  <!-- Patient Body (under blanket) -->
+  <rect x="400" y="480" width="420" height="140" fill="#D0E8F0" rx="20"/>
+
+  <!-- Patient Head -->
+  <ellipse cx="610" cy="450" rx="45" ry="55" fill="#FFD4B0"/>
+
+  <!-- Patient Hair -->
+  <ellipse cx="610" cy="420" rx="50" ry="35" fill="#6B5544"/>
+
+  <!-- Patient Face Features -->
+  <!-- Eyes (closed/resting) -->
+  <path d="M 590 445 Q 595 448, 600 445" stroke="#8B7355" stroke-width="2" fill="none"/>
+  <path d="M 620 445 Q 625 448, 630 445" stroke="#8B7355" stroke-width="2" fill="none"/>
+
+  <!-- Nose -->
+  <ellipse cx="610" cy="460" rx="8" ry="12" fill="#FFB899"/>
+
+  <!-- Mouth (slight) -->
+  <path d="M 600 475 Q 610 478, 620 475" stroke="#D4A089" stroke-width="1.5" fill="none"/>
+
+  <!-- Neck -->
+  <rect x="595" y="485" width="30" height="20" fill="#FFD4B0"/>
+
+  <!-- Hospital Gown (shoulder/neck area) -->
+  <path d="M 580 500 L 640 500 L 635 515 L 585 515 Z" fill="#B8E8F8"/>
+  <circle cx="595" cy="507" r="3" fill="#88C8D8"/>
+  <circle cx="625" cy="507" r="3" fill="#88C8D8"/>
+
+  <!-- Bed Rails -->
+  <rect x="290" y="400" width="10" height="180" fill="#707880"/>
+  <rect x="900" y="400" width="10" height="180" fill="#707880"/>
+
+  <!-- IV Stand (Left Side) -->
+  <line x1="200" y1="350" x2="200" y2="600" stroke="#8090A0" stroke-width="8"/>
+  <circle cx="200" cy="340" r="15" fill="#6070A0"/>
+  <line x1="180" y1="360" x2="220" y2="380" stroke="#6070A0" stroke-width="3"/>
+  <rect x="185" y="380" width="30" height="40" fill="#E0E8F0" stroke="#A0A8B0" stroke-width="2"/>
+
+  <!-- IV Bag -->
+  <path d="M 190 360 Q 190 330, 210 330 Q 210 360, 190 360" fill="#D0E8FF" stroke="#A0C0E0" stroke-width="2"/>
+  <line x1="200" y1="360" x2="200" y2="380" stroke="#A0A8B0" stroke-width="2"/>
+
+  <!-- Monitor Stand (Right Side) -->
+  <line x1="950" y1="380" x2="950" y2="600" stroke="#707880" stroke-width="12"/>
+  <rect x="920" y="590" width="60" height="20" fill="#505860" rx="5"/>
+
+  <!-- Medical Cart -->
+  <rect x="100" y="500" width="120" height="100" fill="#C8D0D8" stroke="#909098" stroke-width="2" rx="5"/>
+  <rect x="110" y="510" width="100" height="30" fill="#E0E8F0" stroke="#A0A8B0" stroke-width="1"/>
+  <rect x="110" y="545" width="100" height="30" fill="#E0E8F0" stroke="#A0A8B0" stroke-width="1"/>
+  <circle cx="120" cy="595" r="8" fill="#505860"/>
+  <circle cx="200" cy="595" r="8" fill="#505860"/>
+
+  <!-- Oxygen Tank -->
+  <rect x="1000" y="450" width="50" height="150" fill="#4080A0" rx="25"/>
+  <circle cx="1025" cy="450" r="25" fill="#5090B0"/>
+  <rect x="1015" y="440" width="20" height="30" fill="#6098B8"/>
+
+  <!-- Wall Oxygen Port -->
+  <circle cx="150" cy="250" r="30" fill="#FFFFFF" stroke="#8090A0" stroke-width="3"/>
+  <circle cx="150" cy="250" r="20" fill="#4080C0"/>
+  <text x="145" y="257" font-family="Arial" font-size="16" fill="#FFFFFF" font-weight="bold">O₂</text>
+
+  <!-- Wall Suction Port -->
+  <circle cx="250" cy="250" r="30" fill="#FFFFFF" stroke="#8090A0" stroke-width="3"/>
+  <circle cx="250" cy="250" r="20" fill="#C08040"/>
+  <text x="242" y="257" font-family="Arial" font-size="16" fill="#FFFFFF" font-weight="bold">S</text>
+
+  <!-- Ceiling Medical Light -->
+  <ellipse cx="600" cy="80" rx="80" ry="20" fill="#B0B8C0"/>
+  <ellipse cx="600" cy="100" rx="60" ry="30" fill="#D0D8E0"/>
+  <ellipse cx="600" cy="100" rx="40" ry="20" fill="#F0F4F8"/>
+
+  <!-- Light beam effect -->
+  <path d="M 560 120 L 500 500 L 700 500 L 640 120 Z" fill="#FFFDF0" opacity="0.2"/>
+
+  <!-- Emergency Call Button (Red) -->
+  <rect x="1050" y="200" width="80" height="80" fill="#C03030" rx="10" stroke="#A02020" stroke-width="2"/>
+  <text x="1065" y="235" font-family="Arial" font-size="14" fill="#FFFFFF" font-weight="bold">CALL</text>
+  <text x="1055" y="255" font-family="Arial" font-size="12" fill="#FFFFFF">NURSE</text>
+
+  <!-- Hand Sanitizer Dispenser -->
+  <rect x="1050" y="320" width="60" height="100" fill="#E8F0F8" rx="5" stroke="#A0B0C0" stroke-width="2"/>
+  <rect x="1060" y="360" width="40" height="50" fill="#C0D8E8" rx="3"/>
+  <text x="1063" y="395" font-family="Arial" font-size="10" fill="#4070A0">HAND</text>
+  <text x="1063" y="408" font-family="Arial" font-size="10" fill="#4070A0">CLEAN</text>
+
+  <!-- Floor markers (social distancing / safety) -->
+  <circle cx="150" cy="650" r="8" fill="#FFD040" opacity="0.5"/>
+  <circle cx="350" cy="670" r="8" fill="#FFD040" opacity="0.5"/>
+  <circle cx="850" cy="660" r="8" fill="#FFD040" opacity="0.5"/>
+
+  <!-- Shadow under bed -->
+  <ellipse cx="600" cy="640" rx="280" ry="30" fill="#000000" opacity="0.1"/>
+</svg>

@@ -1,0 +1,16 @@
+{
+  "total": 67,
+  "downloaded": 67,
+  "skipped": 0,
+  "failed": 0,
+  "byCategory": {
+    "docs/drive-imports/deployment": 12,
+    "docs/drive-imports/testing": 6,
+    "docs/drive-imports/misc": 1,
+    "docs/drive-imports/guides": 5,
+    "docs/drive-imports/tools": 6,
+    "docs/drive-imports/technical": 7,
+    "google-drive-code/utilities": 29,
+    "docs/drive-imports/legacy": 1
+  }
+}

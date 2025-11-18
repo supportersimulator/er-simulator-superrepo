@@ -1,0 +1,33 @@
+{
+  "timestamp": "2025-11-13T04:18:18.929Z",
+  "scriptId": "12NihbVaaAIyRMCtzZ-aGjJ71CdL-HDjhmjxiD_S_EgIOuDOtrUH6M1l2",
+  "backupType": "pre-categorization-fix",
+  "filesBackedUp": [
+    "ADD_TO_MONOLITH.gs",
+    "AI_Categorization_Apply.gs",
+    "AI_Categorization_Backend.gs",
+    "AI_Categorization_Review_UI.html",
+    "ATSR_Title_Generator_Feature.gs",
+    "Batch_Processing_Sidebar_Feature.gs",
+    "Categories_Pathways_Feature.gs",
+    "Categories_Pathways_Feature_Phase2.gs",
+    "Categories_Pathways_Feature_Phase3A.gs",
+    "Core_Processing_Engine.gs",
+    "Enhanced_Visual_Panel_With_Toggle.gs",
+    "Multi_Step_Cache_Enrichment.gs",
+    "Multi_Step_Cache_UI.gs",
+    "Pathways_Master_Schema_Setup.gs",
+    "Phase2_AI_Scoring_Pathways.gs",
+    "Phase2_Enhanced_Categories_Pathways_Panel.gs",
+    "Phase2_Enhanced_Categories_With_AI.gs",
+    "Phase2_Modal_Integration.gs",
+    "Phase2_Modal_Integration_FIXED.gs",
+    "Phase2_Pathway_Discovery_UI.gs",
+    "Ultimate_Categorization_Tool.gs",
+    "Ultimate_Categorization_Tool_Complete.gs",
+    "Ultimate_Categorization_Tool_Phase2D_Backup.gs",
+    "Ultimate_Categorization_Tool_Phase2E.gs"
+  ],
+  "purpose": "Backup before deploying AI Categorizer GID fix (1564998840)",
+  "fixDescription": "Change from getSheetByName() to getSheetByGid_() to use correct Master Scenario Convert sheet"
+}

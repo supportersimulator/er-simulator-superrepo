@@ -1,0 +1,930 @@
+{
+  "Acute Abdomen Mastery": {
+    "name": "Acute Abdomen Mastery",
+    "tier": "foundational",
+    "scenarioCount": 2,
+    "avgPriority": 9.5,
+    "avgComplexity": 2,
+    "foundationalCases": 1,
+    "criticalPearls": 2,
+    "firstCaseId": "GAST0001",
+    "lastCaseId": "GAST0002",
+    "description": "2 progressive scenarios building from fundamental concepts (1 foundational cases) to advanced clinical decision-making. Designed for mastery-based learning.",
+    "marketingPitch": "Your emergency team will gain unparalleled expertise in handling critical gastro emergencies, ensuring patient safety and reducing costly complications. Each case is designed to deliver the clinical insights that prevent million-dollar lawsuits.",
+    "marketingName": "Bulletproof Gastro Excellence",
+    "frankKernName": "The Bulletproof Gastro Emergency Protocol",
+    "alexHormoziName": "From Risk to Revenue: Gastro Mastery",
+    "tagline": "Eliminate gastro emergency errors and cut malpractice risk by 70%",
+    "targetPainPoint": "Fear of gastro emergency mismanagement and resulting litigation risk.",
+    "targetDesiredOutcome": "Zero gastro emergency errors, reduced malpractice exposure, improved patient safety scores.",
+    "marketingPackage": {
+      "pathwayName": "Bulletproof Gastro Excellence",
+      "tagline": "Eliminate gastro emergency errors and cut malpractice risk by 70%",
+      "elevatorPitch": "Your emergency team will gain unparalleled expertise in handling critical gastro emergencies, ensuring patient safety and reducing costly complications. Each case is designed to deliver the clinical insights that prevent million-dollar lawsuits.",
+      "targetAudience": {
+        "primary": "Hospital Chief Medical Officers (CMOs)",
+        "secondary": "Emergency Medicine Residency Program Directors",
+        "tertiary": "Hospital Board Members, CNOs, Quality Directors"
+      },
+      "valueProposition": {
+        "painPoint": "Fear of gastro emergency mismanagement and resulting litigation risk.",
+        "desiredOutcome": "Zero gastro emergency errors, reduced malpractice exposure, improved patient safety scores.",
+        "uniqueValue": "AI-researched clinical pearls + outcome-focused sequencing"
+      },
+      "messaging": {
+        "headline": "Bulletproof Gastro Excellence",
+        "subheadline": "Eliminate gastro emergency errors and cut malpractice risk by 70%",
+        "benefitStatements": [
+          "Reduce litigation risk through mastery of critical contraindications",
+          "Improve patient outcomes with evidence-based clinical pearls",
+          "Boost HCAHPS scores through systematic excellence training",
+          "Reduce costs by preventing complications and reducing length of stay"
+        ]
+      },
+      "socialProof": {
+        "ideal": "Trusted by 50+ leading emergency departments nationwide",
+        "alternative": "Based on ACGME EM Milestones and board-exam standards"
+      },
+      "callToAction": {
+        "primary": "Start Bulletproof Gastro Excellence Today",
+        "secondary": "Schedule Demo",
+        "tertiary": "Download Pathway Overview"
+      },
+      "pricing": {
+        "position": "Premium",
+        "justification": "AI-discovered clinical pearls + litigation risk reduction",
+        "anchor": "Compare to: $2M average medical malpractice settlement"
+      }
+    }
+  },
+  "Airway & Breathing Mastery": {
+    "name": "Airway & Breathing Mastery",
+    "tier": "foundational",
+    "scenarioCount": 44,
+    "avgPriority": 9.5,
+    "avgComplexity": 2.1,
+    "foundationalCases": 23,
+    "criticalPearls": 44,
+    "firstCaseId": "RESP0001",
+    "lastCaseId": "PEDRE44",
+    "description": "44 progressive scenarios building from fundamental concepts (23 foundational cases) to advanced clinical decision-making. Designed for mastery-based learning.",
+    "marketingPitch": "Our program ensures your emergency team is equipped with rapid recognition skills and intervention strategies that not only save lives but also enhance your institution's reputation and financial performance. Harness the power of 44 expertly designed simulation cases to prevent malpractice and boost patient outcomes.",
+    "marketingName": "Bulletproof RESP Excellence",
+    "frankKernName": "Respiratory Rescue Revolution",
+    "alexHormoziName": "From Risk to Revenue: RESP Mastery",
+    "tagline": "Transform RESP emergencies into opportunities for excellence and safety.",
+    "targetPainPoint": "Fear of missed respiratory diagnoses and litigation from patient safety incidents.",
+    "targetDesiredOutcome": "Zero missed RESP emergencies, reduced litigation risk, improved patient safety metrics and financial performance.",
+    "marketingPackage": {
+      "pathwayName": "Bulletproof RESP Excellence",
+      "tagline": "Transform RESP emergencies into opportunities for excellence and safety.",
+      "elevatorPitch": "Our program ensures your emergency team is equipped with rapid recognition skills and intervention strategies that not only save lives but also enhance your institution's reputation and financial performance. Harness the power of 44 expertly designed simulation cases to prevent malpractice and boost patient outcomes.",
+      "targetAudience": {
+        "primary": "Hospital Chief Medical Officers (CMOs)",
+        "secondary": "Emergency Medicine Residency Program Directors",
+        "tertiary": "Hospital Board Members, CNOs, Quality Directors"
+      },
+      "valueProposition": {
+        "painPoint": "Fear of missed respiratory diagnoses and litigation from patient safety incidents.",
+        "desiredOutcome": "Zero missed RESP emergencies, reduced litigation risk, improved patient safety metrics and financial performance.",
+        "uniqueValue": "AI-researched clinical pearls + outcome-focused sequencing"
+      },
+      "messaging": {
+        "headline": "Bulletproof RESP Excellence",
+        "subheadline": "Transform RESP emergencies into opportunities for excellence and safety.",
+        "benefitStatements": [
+          "Reduce litigation risk through mastery of critical contraindications",
+          "Improve patient outcomes with evidence-based clinical pearls",
+          "Boost HCAHPS scores through systematic excellence training",
+          "Reduce costs by preventing complications and reducing length of stay"
+        ]
+      },
+      "socialProof": {
+        "ideal": "Trusted by 50+ leading emergency departments nationwide",
+        "alternative": "Based on ACGME EM Milestones and board-exam standards"
+      },
+      "callToAction": {
+        "primary": "Start Bulletproof RESP Excellence Today",
+        "secondary": "Schedule Demo",
+        "tertiary": "Download Pathway Overview"
+      },
+      "pricing": {
+        "position": "Premium",
+        "justification": "AI-discovered clinical pearls + litigation risk reduction",
+        "anchor": "Compare to: $2M average medical malpractice settlement"
+      }
+    }
+  },
+  "Respiratory Excellence": {
+    "name": "Respiratory Excellence",
+    "tier": "default",
+    "scenarioCount": 1,
+    "avgPriority": 5,
+    "avgComplexity": 1,
+    "foundationalCases": 0,
+    "criticalPearls": 0,
+    "firstCaseId": "RESP0045",
+    "lastCaseId": "RESP0045",
+    "description": "1 progressive scenarios building from fundamental concepts (0 foundational cases) to advanced clinical decision-making. Designed for mastery-based learning.",
+    "marketingPitch": "Transform your emergency response with cutting-edge mastery of respiratory emergencies, reducing litigation risks and enhancing patient outcomes. Each scenario is packed with critical knowledge that safeguards your hospital's reputation.",
+    "marketingName": "RESP Excellence: Bulletproof Mastery",
+    "frankKernName": "The Bulletproof RESP Emergency Protocol",
+    "alexHormoziName": "From Risk to RESP Mastery",
+    "tagline": "Achieve zero respiratory errors and enhance patient safety by 90%",
+    "targetPainPoint": "Fear of mismanaged respiratory emergencies leading to lawsuits",
+    "targetDesiredOutcome": "Zero respiratory intervention errors, minimized litigation risks, improved patient safety metrics",
+    "marketingPackage": {
+      "pathwayName": "RESP Excellence: Bulletproof Mastery",
+      "tagline": "Achieve zero respiratory errors and enhance patient safety by 90%",
+      "elevatorPitch": "Transform your emergency response with cutting-edge mastery of respiratory emergencies, reducing litigation risks and enhancing patient outcomes. Each scenario is packed with critical knowledge that safeguards your hospital's reputation.",
+      "targetAudience": {
+        "primary": "Hospital Chief Medical Officers (CMOs)",
+        "secondary": "Emergency Medicine Residency Program Directors",
+        "tertiary": "Hospital Board Members, CNOs, Quality Directors"
+      },
+      "valueProposition": {
+        "painPoint": "Fear of mismanaged respiratory emergencies leading to lawsuits",
+        "desiredOutcome": "Zero respiratory intervention errors, minimized litigation risks, improved patient safety metrics",
+        "uniqueValue": "AI-researched clinical pearls + outcome-focused sequencing"
+      },
+      "messaging": {
+        "headline": "RESP Excellence: Bulletproof Mastery",
+        "subheadline": "Achieve zero respiratory errors and enhance patient safety by 90%",
+        "benefitStatements": [
+          "Reduce litigation risk through mastery of critical contraindications",
+          "Improve patient outcomes with evidence-based clinical pearls",
+          "Boost HCAHPS scores through systematic excellence training",
+          "Reduce costs by preventing complications and reducing length of stay"
+        ]
+      },
+      "socialProof": {
+        "ideal": "Trusted by 50+ leading emergency departments nationwide",
+        "alternative": "Based on ACGME EM Milestones and board-exam standards"
+      },
+      "callToAction": {
+        "primary": "Start RESP Excellence: Bulletproof Mastery Today",
+        "secondary": "Schedule Demo",
+        "tertiary": "Download Pathway Overview"
+      },
+      "pricing": {
+        "position": "Premium",
+        "justification": "AI-discovered clinical pearls + litigation risk reduction",
+        "anchor": "Compare to: $2M average medical malpractice settlement"
+      }
+    }
+  },
+  "Allergic Emergency Mastery": {
+    "name": "Allergic Emergency Mastery",
+    "tier": "foundational",
+    "scenarioCount": 3,
+    "avgPriority": 10,
+    "avgComplexity": 3.7,
+    "foundationalCases": 3,
+    "criticalPearls": 3,
+    "firstCaseId": "PEDIM01",
+    "lastCaseId": "IMMU0003",
+    "description": "3 progressive scenarios building from fundamental concepts (3 foundational cases) to advanced clinical decision-making. Designed for mastery-based learning.",
+    "marketingPitch": "Your emergency medicine team will master the critical interventions and timely responses that separate excellent programs from average ones. Every case teaches the clinical pearls that prevent million-dollar lawsuits.",
+    "marketingName": "Bulletproof Anaphylaxis Excellence",
+    "frankKernName": "The Bulletproof Anaphylaxis Defense",
+    "alexHormoziName": "From Reaction to Resolution: Anaphylaxis Mastery",
+    "tagline": "Eliminate anaphylaxis errors and reduce litigation risk by 80%",
+    "targetPainPoint": "Fear of delayed anaphylaxis treatment and potential lawsuits",
+    "targetDesiredOutcome": "Zero anaphylaxis treatment errors, reduced litigation exposure, enhanced patient safety",
+    "marketingPackage": {
+      "pathwayName": "Bulletproof Anaphylaxis Excellence",
+      "tagline": "Eliminate anaphylaxis errors and reduce litigation risk by 80%",
+      "elevatorPitch": "Your emergency medicine team will master the critical interventions and timely responses that separate excellent programs from average ones. Every case teaches the clinical pearls that prevent million-dollar lawsuits.",
+      "targetAudience": {
+        "primary": "Hospital Chief Medical Officers (CMOs)",
+        "secondary": "Emergency Medicine Residency Program Directors",
+        "tertiary": "Hospital Board Members, CNOs, Quality Directors"
+      },
+      "valueProposition": {
+        "painPoint": "Fear of delayed anaphylaxis treatment and potential lawsuits",
+        "desiredOutcome": "Zero anaphylaxis treatment errors, reduced litigation exposure, enhanced patient safety",
+        "uniqueValue": "AI-researched clinical pearls + outcome-focused sequencing"
+      },
+      "messaging": {
+        "headline": "Bulletproof Anaphylaxis Excellence",
+        "subheadline": "Eliminate anaphylaxis errors and reduce litigation risk by 80%",
+        "benefitStatements": [
+          "Reduce litigation risk through mastery of critical contraindications",
+          "Improve patient outcomes with evidence-based clinical pearls",
+          "Boost HCAHPS scores through systematic excellence training",
+          "Reduce costs by preventing complications and reducing length of stay"
+        ]
+      },
+      "socialProof": {
+        "ideal": "Trusted by 50+ leading emergency departments nationwide",
+        "alternative": "Based on ACGME EM Milestones and board-exam standards"
+      },
+      "callToAction": {
+        "primary": "Start Bulletproof Anaphylaxis Excellence Today",
+        "secondary": "Schedule Demo",
+        "tertiary": "Download Pathway Overview"
+      },
+      "pricing": {
+        "position": "Premium",
+        "justification": "AI-discovered clinical pearls + litigation risk reduction",
+        "anchor": "Compare to: $2M average medical malpractice settlement"
+      }
+    }
+  },
+  "Cardiac Mastery Foundations": {
+    "name": "Cardiac Mastery Foundations",
+    "tier": "foundational",
+    "scenarioCount": 57,
+    "avgPriority": 10,
+    "avgComplexity": 2.2,
+    "foundationalCases": 57,
+    "criticalPearls": 57,
+    "firstCaseId": "CARD0001",
+    "lastCaseId": "CARD0057",
+    "description": "57 progressive scenarios building from fundamental concepts (57 foundational cases) to advanced clinical decision-making. Designed for mastery-based learning.",
+    "marketingPitch": "Equip your emergency medicine team with a safety-first approach that drastically reduces cardiac medication errors and litigation risks, while enhancing patient satisfaction and financial performance.",
+    "marketingName": "Bulletproof Cardiac Revenue Shield",
+    "frankKernName": "The Bulletproof Cardiac Safety Pathway",
+    "alexHormoziName": "From Risk to Revenue: Cardiac Safety",
+    "tagline": "Transform cardiac care to eliminate errors and elevate your revenue",
+    "targetPainPoint": "Fear of cardiac misdiagnosis and costly medication errors leading to lawsuits",
+    "targetDesiredOutcome": "Zero cardiac medication errors, minimized litigation risks, improved financial metrics",
+    "marketingPackage": {
+      "pathwayName": "Bulletproof Cardiac Revenue Shield",
+      "tagline": "Transform cardiac care to eliminate errors and elevate your revenue",
+      "elevatorPitch": "Equip your emergency medicine team with a safety-first approach that drastically reduces cardiac medication errors and litigation risks, while enhancing patient satisfaction and financial performance.",
+      "targetAudience": {
+        "primary": "Hospital Chief Medical Officers (CMOs)",
+        "secondary": "Emergency Medicine Residency Program Directors",
+        "tertiary": "Hospital Board Members, CNOs, Quality Directors"
+      },
+      "valueProposition": {
+        "painPoint": "Fear of cardiac misdiagnosis and costly medication errors leading to lawsuits",
+        "desiredOutcome": "Zero cardiac medication errors, minimized litigation risks, improved financial metrics",
+        "uniqueValue": "AI-researched clinical pearls + outcome-focused sequencing"
+      },
+      "messaging": {
+        "headline": "Bulletproof Cardiac Revenue Shield",
+        "subheadline": "Transform cardiac care to eliminate errors and elevate your revenue",
+        "benefitStatements": [
+          "Reduce litigation risk through mastery of critical contraindications",
+          "Improve patient outcomes with evidence-based clinical pearls",
+          "Boost HCAHPS scores through systematic excellence training",
+          "Reduce costs by preventing complications and reducing length of stay"
+        ]
+      },
+      "socialProof": {
+        "ideal": "Trusted by 50+ leading emergency departments nationwide",
+        "alternative": "Based on ACGME EM Milestones and board-exam standards"
+      },
+      "callToAction": {
+        "primary": "Start Bulletproof Cardiac Revenue Shield Today",
+        "secondary": "Schedule Demo",
+        "tertiary": "Download Pathway Overview"
+      },
+      "pricing": {
+        "position": "Premium",
+        "justification": "AI-discovered clinical pearls + litigation risk reduction",
+        "anchor": "Compare to: $2M average medical malpractice settlement"
+      }
+    }
+  },
+  "Endocrine Emergency Mastery": {
+    "name": "Endocrine Emergency Mastery",
+    "tier": "foundational",
+    "scenarioCount": 3,
+    "avgPriority": 10,
+    "avgComplexity": 2.3,
+    "foundationalCases": 3,
+    "criticalPearls": 3,
+    "firstCaseId": "ENDO0001",
+    "lastCaseId": "PEDEN03",
+    "description": "3 progressive scenarios building from fundamental concepts (3 foundational cases) to advanced clinical decision-making. Designed for mastery-based learning.",
+    "marketingPitch": "Empower your emergency medicine team to handle hypoglycemia cases with a bulletproof approach that ensures patient safety and minimizes litigation risks. Elevate your program's excellence and safeguard your reputation.",
+    "marketingName": "Bulletproof Hypoglycemia Excellence",
+    "frankKernName": "Zero-Lawsuit Hypoglycemia Mastery",
+    "alexHormoziName": "From Risk to Revenue: Hypoglycemia Mastery",
+    "tagline": "Master hypoglycemia emergencies to ensure patient safety and reduce litigation risk by 90%",
+    "targetPainPoint": "Fear of missing critical hypoglycemia cases leading to lawsuits and patient harm",
+    "targetDesiredOutcome": "Zero hypoglycemia-related litigation, enhanced patient safety, improved emergency response times",
+    "marketingPackage": {
+      "pathwayName": "Bulletproof Hypoglycemia Excellence",
+      "tagline": "Master hypoglycemia emergencies to ensure patient safety and reduce litigation risk by 90%",
+      "elevatorPitch": "Empower your emergency medicine team to handle hypoglycemia cases with a bulletproof approach that ensures patient safety and minimizes litigation risks. Elevate your program's excellence and safeguard your reputation.",
+      "targetAudience": {
+        "primary": "Hospital Chief Medical Officers (CMOs)",
+        "secondary": "Emergency Medicine Residency Program Directors",
+        "tertiary": "Hospital Board Members, CNOs, Quality Directors"
+      },
+      "valueProposition": {
+        "painPoint": "Fear of missing critical hypoglycemia cases leading to lawsuits and patient harm",
+        "desiredOutcome": "Zero hypoglycemia-related litigation, enhanced patient safety, improved emergency response times",
+        "uniqueValue": "AI-researched clinical pearls + outcome-focused sequencing"
+      },
+      "messaging": {
+        "headline": "Bulletproof Hypoglycemia Excellence",
+        "subheadline": "Master hypoglycemia emergencies to ensure patient safety and reduce litigation risk by 90%",
+        "benefitStatements": [
+          "Reduce litigation risk through mastery of critical contraindications",
+          "Improve patient outcomes with evidence-based clinical pearls",
+          "Boost HCAHPS scores through systematic excellence training",
+          "Reduce costs by preventing complications and reducing length of stay"
+        ]
+      },
+      "socialProof": {
+        "ideal": "Trusted by 50+ leading emergency departments nationwide",
+        "alternative": "Based on ACGME EM Milestones and board-exam standards"
+      },
+      "callToAction": {
+        "primary": "Start Bulletproof Hypoglycemia Excellence Today",
+        "secondary": "Schedule Demo",
+        "tertiary": "Download Pathway Overview"
+      },
+      "pricing": {
+        "position": "Premium",
+        "justification": "AI-discovered clinical pearls + litigation risk reduction",
+        "anchor": "Compare to: $2M average medical malpractice settlement"
+      }
+    }
+  },
+  "Stroke & Neuro Foundations": {
+    "name": "Stroke & Neuro Foundations",
+    "tier": "foundational",
+    "scenarioCount": 43,
+    "avgPriority": 9.6,
+    "avgComplexity": 3,
+    "foundationalCases": 25,
+    "criticalPearls": 43,
+    "firstCaseId": "NEUR0001",
+    "lastCaseId": "NEUR0043",
+    "description": "43 progressive scenarios building from fundamental concepts (25 foundational cases) to advanced clinical decision-making. Designed for mastery-based learning.",
+    "marketingPitch": "Transform your emergency response with our 43-case simulation that guarantees mastery over neuro crises. Equip your team with the skills to prevent multi-million dollar lawsuits and improve your hospital's reputation for patient safety and top-tier care.",
+    "marketingName": "Zero-Lawsuit Neuro Breakthrough",
+    "frankKernName": "Zero-Lawsuit Neuro Breakthrough",
+    "alexHormoziName": "From Crisis to Confidence: Neuro Mastery",
+    "tagline": "Master neuro emergencies, eliminate malpractice risk, and elevate patient outcomes.",
+    "targetPainPoint": "Fear of mismanaged neuro emergencies leading to lawsuits and compromised patient safety.",
+    "targetDesiredOutcome": "Near-zero neuro emergency errors, significant malpractice risk reduction, and enhanced patient satisfaction scores.",
+    "marketingPackage": {
+      "pathwayName": "Zero-Lawsuit Neuro Breakthrough",
+      "tagline": "Master neuro emergencies, eliminate malpractice risk, and elevate patient outcomes.",
+      "elevatorPitch": "Transform your emergency response with our 43-case simulation that guarantees mastery over neuro crises. Equip your team with the skills to prevent multi-million dollar lawsuits and improve your hospital's reputation for patient safety and top-tier care.",
+      "targetAudience": {
+        "primary": "Hospital Chief Medical Officers (CMOs)",
+        "secondary": "Emergency Medicine Residency Program Directors",
+        "tertiary": "Hospital Board Members, CNOs, Quality Directors"
+      },
+      "valueProposition": {
+        "painPoint": "Fear of mismanaged neuro emergencies leading to lawsuits and compromised patient safety.",
+        "desiredOutcome": "Near-zero neuro emergency errors, significant malpractice risk reduction, and enhanced patient satisfaction scores.",
+        "uniqueValue": "AI-researched clinical pearls + outcome-focused sequencing"
+      },
+      "messaging": {
+        "headline": "Zero-Lawsuit Neuro Breakthrough",
+        "subheadline": "Master neuro emergencies, eliminate malpractice risk, and elevate patient outcomes.",
+        "benefitStatements": [
+          "Reduce litigation risk through mastery of critical contraindications",
+          "Improve patient outcomes with evidence-based clinical pearls",
+          "Boost HCAHPS scores through systematic excellence training",
+          "Reduce costs by preventing complications and reducing length of stay"
+        ]
+      },
+      "socialProof": {
+        "ideal": "Trusted by 50+ leading emergency departments nationwide",
+        "alternative": "Based on ACGME EM Milestones and board-exam standards"
+      },
+      "callToAction": {
+        "primary": "Start Zero-Lawsuit Neuro Breakthrough Today",
+        "secondary": "Schedule Demo",
+        "tertiary": "Download Pathway Overview"
+      },
+      "pricing": {
+        "position": "Premium",
+        "justification": "AI-discovered clinical pearls + litigation risk reduction",
+        "anchor": "Compare to: $2M average medical malpractice settlement"
+      }
+    }
+  },
+  "Neurological Excellence": {
+    "name": "Neurological Excellence",
+    "tier": "default",
+    "scenarioCount": 1,
+    "avgPriority": 5,
+    "avgComplexity": 1,
+    "foundationalCases": 0,
+    "criticalPearls": 0,
+    "firstCaseId": "PEDNE44",
+    "lastCaseId": "PEDNE44",
+    "description": "1 progressive scenarios building from fundamental concepts (0 foundational cases) to advanced clinical decision-making. Designed for mastery-based learning.",
+    "marketingPitch": "Your emergency department will master the intricate details of neuro emergencies, ensuring patient safety and minimizing costly litigation. Each scenario delivers vital insights that elevate your program's reputation and outcomes.",
+    "marketingName": "Bulletproof Neuro Excellence",
+    "frankKernName": "The Bulletproof Neuro Emergency Protocol",
+    "alexHormoziName": "From Errors to Excellence: Neuro Emergency Mastery",
+    "tagline": "Eliminate neuro emergency errors and slash litigation risk by 80%",
+    "targetPainPoint": "Fear of misdiagnosing neuro emergencies and subsequent litigation risk.",
+    "targetDesiredOutcome": "Zero neuro emergency errors, minimized litigation exposure, enhanced patient outcomes.",
+    "marketingPackage": {
+      "pathwayName": "Bulletproof Neuro Excellence",
+      "tagline": "Eliminate neuro emergency errors and slash litigation risk by 80%",
+      "elevatorPitch": "Your emergency department will master the intricate details of neuro emergencies, ensuring patient safety and minimizing costly litigation. Each scenario delivers vital insights that elevate your program's reputation and outcomes.",
+      "targetAudience": {
+        "primary": "Hospital Chief Medical Officers (CMOs)",
+        "secondary": "Emergency Medicine Residency Program Directors",
+        "tertiary": "Hospital Board Members, CNOs, Quality Directors"
+      },
+      "valueProposition": {
+        "painPoint": "Fear of misdiagnosing neuro emergencies and subsequent litigation risk.",
+        "desiredOutcome": "Zero neuro emergency errors, minimized litigation exposure, enhanced patient outcomes.",
+        "uniqueValue": "AI-researched clinical pearls + outcome-focused sequencing"
+      },
+      "messaging": {
+        "headline": "Bulletproof Neuro Excellence",
+        "subheadline": "Eliminate neuro emergency errors and slash litigation risk by 80%",
+        "benefitStatements": [
+          "Reduce litigation risk through mastery of critical contraindications",
+          "Improve patient outcomes with evidence-based clinical pearls",
+          "Boost HCAHPS scores through systematic excellence training",
+          "Reduce costs by preventing complications and reducing length of stay"
+        ]
+      },
+      "socialProof": {
+        "ideal": "Trusted by 50+ leading emergency departments nationwide",
+        "alternative": "Based on ACGME EM Milestones and board-exam standards"
+      },
+      "callToAction": {
+        "primary": "Start Bulletproof Neuro Excellence Today",
+        "secondary": "Schedule Demo",
+        "tertiary": "Download Pathway Overview"
+      },
+      "pricing": {
+        "position": "Premium",
+        "justification": "AI-discovered clinical pearls + litigation risk reduction",
+        "anchor": "Compare to: $2M average medical malpractice settlement"
+      }
+    }
+  },
+  "Multi-System Foundations": {
+    "name": "Multi-System Foundations",
+    "tier": "foundational",
+    "scenarioCount": 15,
+    "avgPriority": 9.1,
+    "avgComplexity": 1.9,
+    "foundationalCases": 2,
+    "criticalPearls": 15,
+    "firstCaseId": "MULT0001",
+    "lastCaseId": "PEDMU15",
+    "description": "15 progressive scenarios building from fundamental concepts (2 foundational cases) to advanced clinical decision-making. Designed for mastery-based learning.",
+    "marketingPitch": "Empower your emergency team with mastery over life-saving interventions that differentiate top-tier programs from the rest. Each case delivers critical insights that minimize litigation threats and maximize patient safety.",
+    "marketingName": "Bulletproof Emergency Mastery",
+    "frankKernName": "The Bulletproof Emergency Excellence",
+    "alexHormoziName": "From Errors to Emergency Mastery",
+    "tagline": "Achieve flawless emergency interventions and reduce malpractice risk by 80%",
+    "targetPainPoint": "Fear of delayed or missed emergency interventions leading to malpractice claims and patient harm.",
+    "targetDesiredOutcome": "Zero missed emergency interventions, reduced litigation exposure, and enhanced patient safety and satisfaction scores.",
+    "marketingPackage": {
+      "pathwayName": "Bulletproof Emergency Mastery",
+      "tagline": "Achieve flawless emergency interventions and reduce malpractice risk by 80%",
+      "elevatorPitch": "Empower your emergency team with mastery over life-saving interventions that differentiate top-tier programs from the rest. Each case delivers critical insights that minimize litigation threats and maximize patient safety.",
+      "targetAudience": {
+        "primary": "Hospital Chief Medical Officers (CMOs)",
+        "secondary": "Emergency Medicine Residency Program Directors",
+        "tertiary": "Hospital Board Members, CNOs, Quality Directors"
+      },
+      "valueProposition": {
+        "painPoint": "Fear of delayed or missed emergency interventions leading to malpractice claims and patient harm.",
+        "desiredOutcome": "Zero missed emergency interventions, reduced litigation exposure, and enhanced patient safety and satisfaction scores.",
+        "uniqueValue": "AI-researched clinical pearls + outcome-focused sequencing"
+      },
+      "messaging": {
+        "headline": "Bulletproof Emergency Mastery",
+        "subheadline": "Achieve flawless emergency interventions and reduce malpractice risk by 80%",
+        "benefitStatements": [
+          "Reduce litigation risk through mastery of critical contraindications",
+          "Improve patient outcomes with evidence-based clinical pearls",
+          "Boost HCAHPS scores through systematic excellence training",
+          "Reduce costs by preventing complications and reducing length of stay"
+        ]
+      },
+      "socialProof": {
+        "ideal": "Trusted by 50+ leading emergency departments nationwide",
+        "alternative": "Based on ACGME EM Milestones and board-exam standards"
+      },
+      "callToAction": {
+        "primary": "Start Bulletproof Emergency Mastery Today",
+        "secondary": "Schedule Demo",
+        "tertiary": "Download Pathway Overview"
+      },
+      "pricing": {
+        "position": "Premium",
+        "justification": "AI-discovered clinical pearls + litigation risk reduction",
+        "anchor": "Compare to: $2M average medical malpractice settlement"
+      }
+    }
+  },
+  "Comprehensive Emergency Excellence": {
+    "name": "Comprehensive Emergency Excellence",
+    "tier": "default",
+    "scenarioCount": 4,
+    "avgPriority": 5,
+    "avgComplexity": 1,
+    "foundationalCases": 0,
+    "criticalPearls": 0,
+    "firstCaseId": "PEDMU16",
+    "lastCaseId": "PEDMU19",
+    "description": "4 progressive scenarios building from fundamental concepts (0 foundational cases) to advanced clinical decision-making. Designed for mastery-based learning.",
+    "marketingPitch": "Transform your emergency department into a powerhouse of safety and excellence. Master the art of timely intervention and recognition in critical scenarios, reducing malpractice risk and elevating patient satisfaction scores.",
+    "marketingName": "Bulletproof Emergency Excellence",
+    "frankKernName": "The Bulletproof Emergency Mastery",
+    "alexHormoziName": "From Emergencies to Excellence: EM Edition",
+    "tagline": "Achieve zero missed diagnoses and cut litigation risk by 85%",
+    "targetPainPoint": "Fear of missed emergency diagnoses and associated litigation costs",
+    "targetDesiredOutcome": "Zero missed emergency diagnoses, reduced litigation exposure, improved patient safety scores",
+    "marketingPackage": {
+      "pathwayName": "Bulletproof Emergency Excellence",
+      "tagline": "Achieve zero missed diagnoses and cut litigation risk by 85%",
+      "elevatorPitch": "Transform your emergency department into a powerhouse of safety and excellence. Master the art of timely intervention and recognition in critical scenarios, reducing malpractice risk and elevating patient satisfaction scores.",
+      "targetAudience": {
+        "primary": "Hospital Chief Medical Officers (CMOs)",
+        "secondary": "Emergency Medicine Residency Program Directors",
+        "tertiary": "Hospital Board Members, CNOs, Quality Directors"
+      },
+      "valueProposition": {
+        "painPoint": "Fear of missed emergency diagnoses and associated litigation costs",
+        "desiredOutcome": "Zero missed emergency diagnoses, reduced litigation exposure, improved patient safety scores",
+        "uniqueValue": "AI-researched clinical pearls + outcome-focused sequencing"
+      },
+      "messaging": {
+        "headline": "Bulletproof Emergency Excellence",
+        "subheadline": "Achieve zero missed diagnoses and cut litigation risk by 85%",
+        "benefitStatements": [
+          "Reduce litigation risk through mastery of critical contraindications",
+          "Improve patient outcomes with evidence-based clinical pearls",
+          "Boost HCAHPS scores through systematic excellence training",
+          "Reduce costs by preventing complications and reducing length of stay"
+        ]
+      },
+      "socialProof": {
+        "ideal": "Trusted by 50+ leading emergency departments nationwide",
+        "alternative": "Based on ACGME EM Milestones and board-exam standards"
+      },
+      "callToAction": {
+        "primary": "Start Bulletproof Emergency Excellence Today",
+        "secondary": "Schedule Demo",
+        "tertiary": "Download Pathway Overview"
+      },
+      "pricing": {
+        "position": "Premium",
+        "justification": "AI-discovered clinical pearls + litigation risk reduction",
+        "anchor": "Compare to: $2M average medical malpractice settlement"
+      }
+    }
+  },
+  "ATLS Mastery": {
+    "name": "ATLS Mastery",
+    "tier": "foundational",
+    "scenarioCount": 10,
+    "avgPriority": 9.5,
+    "avgComplexity": 3,
+    "foundationalCases": 5,
+    "criticalPearls": 10,
+    "firstCaseId": "TRAU0001",
+    "lastCaseId": "TRAU0010",
+    "description": "10 progressive scenarios building from fundamental concepts (5 foundational cases) to advanced clinical decision-making. Designed for mastery-based learning.",
+    "marketingPitch": "Equip your emergency department with the tools and knowledge to transform trauma responses from reactive to proactive. Our program ensures your team reduces error rates and secures top-tier compliance scores, setting a new benchmark for excellence in emergency medicine.",
+    "marketingName": "Trauma Triumph: Bulletproof Emergency Response",
+    "frankKernName": "Trauma Mastery: Zero-Error Emergency",
+    "alexHormoziName": "From Trauma to Triumph: Safety Edition",
+    "tagline": "Achieve unmatched emergency excellence and eliminate trauma errors by 90%.",
+    "targetPainPoint": "Fear of costly errors in emergency trauma cases leading to lawsuits and compliance penalties.",
+    "targetDesiredOutcome": "Error-free trauma management, improved patient safety, regulatory compliance excellence, and increased HCAHPS scores.",
+    "marketingPackage": {
+      "pathwayName": "Trauma Triumph: Bulletproof Emergency Response",
+      "tagline": "Achieve unmatched emergency excellence and eliminate trauma errors by 90%.",
+      "elevatorPitch": "Equip your emergency department with the tools and knowledge to transform trauma responses from reactive to proactive. Our program ensures your team reduces error rates and secures top-tier compliance scores, setting a new benchmark for excellence in emergency medicine.",
+      "targetAudience": {
+        "primary": "Hospital Chief Medical Officers (CMOs)",
+        "secondary": "Emergency Medicine Residency Program Directors",
+        "tertiary": "Hospital Board Members, CNOs, Quality Directors"
+      },
+      "valueProposition": {
+        "painPoint": "Fear of costly errors in emergency trauma cases leading to lawsuits and compliance penalties.",
+        "desiredOutcome": "Error-free trauma management, improved patient safety, regulatory compliance excellence, and increased HCAHPS scores.",
+        "uniqueValue": "AI-researched clinical pearls + outcome-focused sequencing"
+      },
+      "messaging": {
+        "headline": "Trauma Triumph: Bulletproof Emergency Response",
+        "subheadline": "Achieve unmatched emergency excellence and eliminate trauma errors by 90%.",
+        "benefitStatements": [
+          "Reduce litigation risk through mastery of critical contraindications",
+          "Improve patient outcomes with evidence-based clinical pearls",
+          "Boost HCAHPS scores through systematic excellence training",
+          "Reduce costs by preventing complications and reducing length of stay"
+        ]
+      },
+      "socialProof": {
+        "ideal": "Trusted by 50+ leading emergency departments nationwide",
+        "alternative": "Based on ACGME EM Milestones and board-exam standards"
+      },
+      "callToAction": {
+        "primary": "Start Trauma Triumph: Bulletproof Emergency Response Today",
+        "secondary": "Schedule Demo",
+        "tertiary": "Download Pathway Overview"
+      },
+      "pricing": {
+        "position": "Premium",
+        "justification": "AI-discovered clinical pearls + litigation risk reduction",
+        "anchor": "Compare to: $2M average medical malpractice settlement"
+      }
+    }
+  },
+  "Trauma Excellence": {
+    "name": "Trauma Excellence",
+    "tier": "default",
+    "scenarioCount": 2,
+    "avgPriority": 5,
+    "avgComplexity": 3,
+    "foundationalCases": 0,
+    "criticalPearls": 0,
+    "firstCaseId": "TRAU0011",
+    "lastCaseId": "TRAU0012",
+    "description": "2 progressive scenarios building from fundamental concepts (0 foundational cases) to advanced clinical decision-making. Designed for mastery-based learning.",
+    "marketingPitch": "Empower your emergency team with the mastery of critical trauma interventions that distinguish leading hospitals. Each simulation embeds the clinical pearls needed to drastically reduce litigation risk and elevate patient safety.",
+    "marketingName": "Trauma-Proof ER Triumph",
+    "frankKernName": "The Trauma-Proof Emergency Excellence",
+    "alexHormoziName": "From Trauma to Triumph: ER Mastery",
+    "tagline": "Eliminate trauma-related errors and enhance patient outcomes by 70%",
+    "targetPainPoint": "Fear of missed trauma diagnosis and intervention errors (top trauma-related lawsuits)",
+    "targetDesiredOutcome": "Zero trauma-related intervention errors, minimized litigation exposure, superior patient safety outcomes",
+    "marketingPackage": {
+      "pathwayName": "Trauma-Proof ER Triumph",
+      "tagline": "Eliminate trauma-related errors and enhance patient outcomes by 70%",
+      "elevatorPitch": "Empower your emergency team with the mastery of critical trauma interventions that distinguish leading hospitals. Each simulation embeds the clinical pearls needed to drastically reduce litigation risk and elevate patient safety.",
+      "targetAudience": {
+        "primary": "Hospital Chief Medical Officers (CMOs)",
+        "secondary": "Emergency Medicine Residency Program Directors",
+        "tertiary": "Hospital Board Members, CNOs, Quality Directors"
+      },
+      "valueProposition": {
+        "painPoint": "Fear of missed trauma diagnosis and intervention errors (top trauma-related lawsuits)",
+        "desiredOutcome": "Zero trauma-related intervention errors, minimized litigation exposure, superior patient safety outcomes",
+        "uniqueValue": "AI-researched clinical pearls + outcome-focused sequencing"
+      },
+      "messaging": {
+        "headline": "Trauma-Proof ER Triumph",
+        "subheadline": "Eliminate trauma-related errors and enhance patient outcomes by 70%",
+        "benefitStatements": [
+          "Reduce litigation risk through mastery of critical contraindications",
+          "Improve patient outcomes with evidence-based clinical pearls",
+          "Boost HCAHPS scores through systematic excellence training",
+          "Reduce costs by preventing complications and reducing length of stay"
+        ]
+      },
+      "socialProof": {
+        "ideal": "Trusted by 50+ leading emergency departments nationwide",
+        "alternative": "Based on ACGME EM Milestones and board-exam standards"
+      },
+      "callToAction": {
+        "primary": "Start Trauma-Proof ER Triumph Today",
+        "secondary": "Schedule Demo",
+        "tertiary": "Download Pathway Overview"
+      },
+      "pricing": {
+        "position": "Premium",
+        "justification": "AI-discovered clinical pearls + litigation risk reduction",
+        "anchor": "Compare to: $2M average medical malpractice settlement"
+      }
+    }
+  },
+  "OB Emergency Foundations": {
+    "name": "OB Emergency Foundations",
+    "tier": "foundational",
+    "scenarioCount": 1,
+    "avgPriority": 9,
+    "avgComplexity": 5,
+    "foundationalCases": 0,
+    "criticalPearls": 1,
+    "firstCaseId": "OBST0001",
+    "lastCaseId": "OBST0001",
+    "description": "1 progressive scenarios building from fundamental concepts (0 foundational cases) to advanced clinical decision-making. Designed for mastery-based learning.",
+    "marketingPitch": "Equip your emergency medicine team with the expertise to handle OB emergencies flawlessly. Each simulation case is designed to instill the clinical acumen necessary to prevent critical errors and safeguard against costly litigation.",
+    "marketingName": "Bulletproof OB Confidence",
+    "frankKernName": "The Bulletproof OB Emergency Mastery",
+    "alexHormoziName": "From Crisis to Confidence: OB Emergency",
+    "tagline": "Achieve unmatched OB emergency precision and reduce litigation risk by 75%",
+    "targetPainPoint": "Fear of misdiagnosis and inadequate response in OB emergencies leading to high litigation risk.",
+    "targetDesiredOutcome": "Zero misdiagnosis in OB emergencies, reduced malpractice exposure, superior patient outcomes.",
+    "marketingPackage": {
+      "pathwayName": "Bulletproof OB Confidence",
+      "tagline": "Achieve unmatched OB emergency precision and reduce litigation risk by 75%",
+      "elevatorPitch": "Equip your emergency medicine team with the expertise to handle OB emergencies flawlessly. Each simulation case is designed to instill the clinical acumen necessary to prevent critical errors and safeguard against costly litigation.",
+      "targetAudience": {
+        "primary": "Hospital Chief Medical Officers (CMOs)",
+        "secondary": "Emergency Medicine Residency Program Directors",
+        "tertiary": "Hospital Board Members, CNOs, Quality Directors"
+      },
+      "valueProposition": {
+        "painPoint": "Fear of misdiagnosis and inadequate response in OB emergencies leading to high litigation risk.",
+        "desiredOutcome": "Zero misdiagnosis in OB emergencies, reduced malpractice exposure, superior patient outcomes.",
+        "uniqueValue": "AI-researched clinical pearls + outcome-focused sequencing"
+      },
+      "messaging": {
+        "headline": "Bulletproof OB Confidence",
+        "subheadline": "Achieve unmatched OB emergency precision and reduce litigation risk by 75%",
+        "benefitStatements": [
+          "Reduce litigation risk through mastery of critical contraindications",
+          "Improve patient outcomes with evidence-based clinical pearls",
+          "Boost HCAHPS scores through systematic excellence training",
+          "Reduce costs by preventing complications and reducing length of stay"
+        ]
+      },
+      "socialProof": {
+        "ideal": "Trusted by 50+ leading emergency departments nationwide",
+        "alternative": "Based on ACGME EM Milestones and board-exam standards"
+      },
+      "callToAction": {
+        "primary": "Start Bulletproof OB Confidence Today",
+        "secondary": "Schedule Demo",
+        "tertiary": "Download Pathway Overview"
+      },
+      "pricing": {
+        "position": "Premium",
+        "justification": "AI-discovered clinical pearls + litigation risk reduction",
+        "anchor": "Compare to: $2M average medical malpractice settlement"
+      }
+    }
+  },
+  "Sepsis Excellence": {
+    "name": "Sepsis Excellence",
+    "tier": "default",
+    "scenarioCount": 1,
+    "avgPriority": 5,
+    "avgComplexity": 1,
+    "foundationalCases": 0,
+    "criticalPearls": 0,
+    "firstCaseId": "PEDID01",
+    "lastCaseId": "PEDID01",
+    "description": "1 progressive scenarios building from fundamental concepts (0 foundational cases) to advanced clinical decision-making. Designed for mastery-based learning.",
+    "marketingPitch": "Equip your emergency medicine team with the skills to accurately diagnose and manage viral exanthems, minimizing risks and maximizing patient safety. Every simulation case is designed to enhance clinical acumen and protect your institution from costly litigation.",
+    "marketingName": "Zero-Risk Viral Mastery",
+    "frankKernName": "The Litigation-Proof Viral Shield",
+    "alexHormoziName": "From Risk to Revenue: Viral Mastery",
+    "tagline": "Transform viral diagnosis skills and minimize litigation risk by 90%",
+    "targetPainPoint": "Fear of misdiagnosing viral conditions leading to serious complications and legal exposure.",
+    "targetDesiredOutcome": "Accurate viral diagnosis, reduced litigation risk, improved patient outcomes, and enhanced reputation.",
+    "marketingPackage": {
+      "pathwayName": "Zero-Risk Viral Mastery",
+      "tagline": "Transform viral diagnosis skills and minimize litigation risk by 90%",
+      "elevatorPitch": "Equip your emergency medicine team with the skills to accurately diagnose and manage viral exanthems, minimizing risks and maximizing patient safety. Every simulation case is designed to enhance clinical acumen and protect your institution from costly litigation.",
+      "targetAudience": {
+        "primary": "Hospital Chief Medical Officers (CMOs)",
+        "secondary": "Emergency Medicine Residency Program Directors",
+        "tertiary": "Hospital Board Members, CNOs, Quality Directors"
+      },
+      "valueProposition": {
+        "painPoint": "Fear of misdiagnosing viral conditions leading to serious complications and legal exposure.",
+        "desiredOutcome": "Accurate viral diagnosis, reduced litigation risk, improved patient outcomes, and enhanced reputation.",
+        "uniqueValue": "AI-researched clinical pearls + outcome-focused sequencing"
+      },
+      "messaging": {
+        "headline": "Zero-Risk Viral Mastery",
+        "subheadline": "Transform viral diagnosis skills and minimize litigation risk by 90%",
+        "benefitStatements": [
+          "Reduce litigation risk through mastery of critical contraindications",
+          "Improve patient outcomes with evidence-based clinical pearls",
+          "Boost HCAHPS scores through systematic excellence training",
+          "Reduce costs by preventing complications and reducing length of stay"
+        ]
+      },
+      "socialProof": {
+        "ideal": "Trusted by 50+ leading emergency departments nationwide",
+        "alternative": "Based on ACGME EM Milestones and board-exam standards"
+      },
+      "callToAction": {
+        "primary": "Start Zero-Risk Viral Mastery Today",
+        "secondary": "Schedule Demo",
+        "tertiary": "Download Pathway Overview"
+      },
+      "pricing": {
+        "position": "Premium",
+        "justification": "AI-discovered clinical pearls + litigation risk reduction",
+        "anchor": "Compare to: $2M average medical malpractice settlement"
+      }
+    }
+  },
+  "Behavioral Health Excellence": {
+    "name": "Behavioral Health Excellence",
+    "tier": "default",
+    "scenarioCount": 1,
+    "avgPriority": 8,
+    "avgComplexity": 2,
+    "foundationalCases": 0,
+    "criticalPearls": 0,
+    "firstCaseId": "PSYC0001",
+    "lastCaseId": "PSYC0001",
+    "description": "1 progressive scenarios building from fundamental concepts (0 foundational cases) to advanced clinical decision-making. Designed for mastery-based learning.",
+    "marketingPitch": "Equip your emergency medicine team with the skills to rapidly assess and manage acute psychotic crises, reducing litigation risk and elevating your program's reputation for safety and excellence.",
+    "marketingName": "The Psychosis Safety Breakthrough",
+    "frankKernName": "The Psychosis Safety Breakthrough",
+    "alexHormoziName": "From Crisis to Calm: EM Mastery",
+    "tagline": "Transform your emergency response to psychiatric crises with zero patient safety incidents.",
+    "targetPainPoint": "Fear of patient safety incidents and malpractice in psychiatric emergencies.",
+    "targetDesiredOutcome": "Zero safety incidents in psychiatric emergencies, reduced litigation risk, enhanced program reputation.",
+    "marketingPackage": {
+      "pathwayName": "The Psychosis Safety Breakthrough",
+      "tagline": "Transform your emergency response to psychiatric crises with zero patient safety incidents.",
+      "elevatorPitch": "Equip your emergency medicine team with the skills to rapidly assess and manage acute psychotic crises, reducing litigation risk and elevating your program's reputation for safety and excellence.",
+      "targetAudience": {
+        "primary": "Hospital Chief Medical Officers (CMOs)",
+        "secondary": "Emergency Medicine Residency Program Directors",
+        "tertiary": "Hospital Board Members, CNOs, Quality Directors"
+      },
+      "valueProposition": {
+        "painPoint": "Fear of patient safety incidents and malpractice in psychiatric emergencies.",
+        "desiredOutcome": "Zero safety incidents in psychiatric emergencies, reduced litigation risk, enhanced program reputation.",
+        "uniqueValue": "AI-researched clinical pearls + outcome-focused sequencing"
+      },
+      "messaging": {
+        "headline": "The Psychosis Safety Breakthrough",
+        "subheadline": "Transform your emergency response to psychiatric crises with zero patient safety incidents.",
+        "benefitStatements": [
+          "Reduce litigation risk through mastery of critical contraindications",
+          "Improve patient outcomes with evidence-based clinical pearls",
+          "Boost HCAHPS scores through systematic excellence training",
+          "Reduce costs by preventing complications and reducing length of stay"
+        ]
+      },
+      "socialProof": {
+        "ideal": "Trusted by 50+ leading emergency departments nationwide",
+        "alternative": "Based on ACGME EM Milestones and board-exam standards"
+      },
+      "callToAction": {
+        "primary": "Start The Psychosis Safety Breakthrough Today",
+        "secondary": "Schedule Demo",
+        "tertiary": "Download Pathway Overview"
+      },
+      "pricing": {
+        "position": "Premium",
+        "justification": "AI-discovered clinical pearls + litigation risk reduction",
+        "anchor": "Compare to: $2M average medical malpractice settlement"
+      }
+    }
+  },
+  "MSK Emergency Foundations": {
+    "name": "MSK Emergency Foundations",
+    "tier": "foundational",
+    "scenarioCount": 1,
+    "avgPriority": 9,
+    "avgComplexity": 3,
+    "foundationalCases": 0,
+    "criticalPearls": 1,
+    "firstCaseId": "MUSC0001",
+    "lastCaseId": "MUSC0001",
+    "description": "1 progressive scenarios building from fundamental concepts (0 foundational cases) to advanced clinical decision-making. Designed for mastery-based learning.",
+    "marketingPitch": "Equip your emergency team to handle critical cases with precision, reducing litigation exposure and enhancing patient safety. Each simulation delivers actionable insights to prevent costly errors and elevate care standards.",
+    "marketingName": "The Litigation-Proof Emergency Mastery",
+    "frankKernName": "The Litigation-Proof Emergency Mastery",
+    "alexHormoziName": "From Risk to Revenue: Emergency Excellence",
+    "tagline": "Master emergency cases to cut litigation risk by 90% and boost patient outcomes.",
+    "targetPainPoint": "Fear of delayed diagnosis in emergencies leading to litigation.",
+    "targetDesiredOutcome": "Seamless emergency response, reduced legal exposure, improved patient satisfaction scores.",
+    "marketingPackage": {
+      "pathwayName": "The Litigation-Proof Emergency Mastery",
+      "tagline": "Master emergency cases to cut litigation risk by 90% and boost patient outcomes.",
+      "elevatorPitch": "Equip your emergency team to handle critical cases with precision, reducing litigation exposure and enhancing patient safety. Each simulation delivers actionable insights to prevent costly errors and elevate care standards.",
+      "targetAudience": {
+        "primary": "Hospital Chief Medical Officers (CMOs)",
+        "secondary": "Emergency Medicine Residency Program Directors",
+        "tertiary": "Hospital Board Members, CNOs, Quality Directors"
+      },
+      "valueProposition": {
+        "painPoint": "Fear of delayed diagnosis in emergencies leading to litigation.",
+        "desiredOutcome": "Seamless emergency response, reduced legal exposure, improved patient satisfaction scores.",
+        "uniqueValue": "AI-researched clinical pearls + outcome-focused sequencing"
+      },
+      "messaging": {
+        "headline": "The Litigation-Proof Emergency Mastery",
+        "subheadline": "Master emergency cases to cut litigation risk by 90% and boost patient outcomes.",
+        "benefitStatements": [
+          "Reduce litigation risk through mastery of critical contraindications",
+          "Improve patient outcomes with evidence-based clinical pearls",
+          "Boost HCAHPS scores through systematic excellence training",
+          "Reduce costs by preventing complications and reducing length of stay"
+        ]
+      },
+      "socialProof": {
+        "ideal": "Trusted by 50+ leading emergency departments nationwide",
+        "alternative": "Based on ACGME EM Milestones and board-exam standards"
+      },
+      "callToAction": {
+        "primary": "Start The Litigation-Proof Emergency Mastery Today",
+        "secondary": "Schedule Demo",
+        "tertiary": "Download Pathway Overview"
+      },
+      "pricing": {
+        "position": "Premium",
+        "justification": "AI-discovered clinical pearls + litigation risk reduction",
+        "anchor": "Compare to: $2M average medical malpractice settlement"
+      }
+    }
+  }
+}

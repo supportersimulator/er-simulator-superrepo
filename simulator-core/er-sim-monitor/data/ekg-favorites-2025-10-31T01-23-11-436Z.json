@@ -1,0 +1,25 @@
+{
+  "selections": [
+    {
+      "name": "Normal Blue",
+      "state": "normal",
+      "notes": "No notes provided"
+    },
+    {
+      "name": "Abnormal Green",
+      "state": "abnormal",
+      "notes": "No notes provided"
+    },
+    {
+      "name": "Critical Red Fast",
+      "state": "critical",
+      "notes": "No notes provided"
+    },
+    {
+      "name": "Flatline Red",
+      "state": "flatline",
+      "notes": "No notes provided"
+    }
+  ],
+  "timestamp": "2025-10-31T01:23:11.411Z"
+}

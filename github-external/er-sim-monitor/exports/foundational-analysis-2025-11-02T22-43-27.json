@@ -1,0 +1,1703 @@
+[
+  {
+    "caseId": "GAST0001",
+    "isFoundational": "TRUE",
+    "complexity": 1,
+    "priority": 10,
+    "pathway": "Acute Abdomen Mastery",
+    "category": "GAST",
+    "title": "Untitled"
+  },
+  {
+    "caseId": "GAST0002",
+    "isFoundational": "TRUE",
+    "complexity": 3,
+    "priority": 9,
+    "pathway": "Acute Abdomen Mastery",
+    "category": "GAST",
+    "title": "Untitled"
+  },
+  {
+    "caseId": "RESP0001",
+    "isFoundational": "TRUE",
+    "complexity": 1,
+    "priority": 10,
+    "pathway": "Airway & Breathing Mastery",
+    "category": "RESP",
+    "title": "Untitled"
+  },
+  {
+    "caseId": "RESP0002",
+    "isFoundational": "TRUE",
+    "complexity": 1,
+    "priority": 10,
+    "pathway": "Airway & Breathing Mastery",
+    "category": "RESP",
+    "title": "Untitled"
+  },
+  {
+    "caseId": "RESP0003",
+    "isFoundational": "TRUE",
+    "complexity": 1,
+    "priority": 10,
+    "pathway": "Airway & Breathing Mastery",
+    "category": "RESP",
+    "title": "Untitled"
+  },
+  {
+    "caseId": "RESP0004",
+    "isFoundational": "TRUE",
+    "complexity": 1,
+    "priority": 10,
+    "pathway": "Airway & Breathing Mastery",
+    "category": "RESP",
+    "title": "Untitled"
+  },
+  {
+    "caseId": "RESP0005",
+    "isFoundational": "TRUE",
+    "complexity": 1,
+    "priority": 10,
+    "pathway": "Airway & Breathing Mastery",
+    "category": "RESP",
+    "title": "Untitled"
+  },
+  {
+    "caseId": "RESP0006",
+    "isFoundational": "TRUE",
+    "complexity": 1,
+    "priority": 10,
+    "pathway": "Airway & Breathing Mastery",
+    "category": "RESP",
+    "title": "Untitled"
+  },
+  {
+    "caseId": "RESP0007",
+    "isFoundational": "TRUE",
+    "complexity": 1,
+    "priority": 10,
+    "pathway": "Airway & Breathing Mastery",
+    "category": "RESP",
+    "title": "Untitled"
+  },
+  {
+    "caseId": "RESP0008",
+    "isFoundational": "TRUE",
+    "complexity": 1,
+    "priority": 10,
+    "pathway": "Airway & Breathing Mastery",
+    "category": "RESP",
+    "title": "Untitled"
+  },
+  {
+    "caseId": "RESP0009",
+    "isFoundational": "TRUE",
+    "complexity": 1,
+    "priority": 10,
+    "pathway": "Airway & Breathing Mastery",
+    "category": "RESP",
+    "title": "Untitled"
+  },
+  {
+    "caseId": "RESP0010",
+    "isFoundational": "TRUE",
+    "complexity": 2,
+    "priority": 10,
+    "pathway": "Airway & Breathing Mastery",
+    "category": "RESP",
+    "title": "Untitled"
+  },
+  {
+    "caseId": "RESP0011",
+    "isFoundational": "TRUE",
+    "complexity": 2,
+    "priority": 10,
+    "pathway": "Airway & Breathing Mastery",
+    "category": "RESP",
+    "title": "Untitled"
+  },
+  {
+    "caseId": "RESP0012",
+    "isFoundational": "TRUE",
+    "complexity": 2,
+    "priority": 10,
+    "pathway": "Airway & Breathing Mastery",
+    "category": "RESP",
+    "title": "Untitled"
+  },
+  {
+    "caseId": "RESP0013",
+    "isFoundational": "TRUE",
+    "complexity": 2,
+    "priority": 10,
+    "pathway": "Airway & Breathing Mastery",
+    "category": "RESP",
+    "title": "Untitled"
+  },
+  {
+    "caseId": "RESP0014",
+    "isFoundational": "TRUE",
+    "complexity": 2,
+    "priority": 10,
+    "pathway": "Airway & Breathing Mastery",
+    "category": "RESP",
+    "title": "Untitled"
+  },
+  {
+    "caseId": "RESP0015",
+    "isFoundational": "TRUE",
+    "complexity": 2,
+    "priority": 10,
+    "pathway": "Airway & Breathing Mastery",
+    "category": "RESP",
+    "title": "Untitled"
+  },
+  {
+    "caseId": "RESP0016",
+    "isFoundational": "TRUE",
+    "complexity": 2,
+    "priority": 10,
+    "pathway": "Airway & Breathing Mastery",
+    "category": "RESP",
+    "title": "Untitled"
+  },
+  {
+    "caseId": "RESP0017",
+    "isFoundational": "TRUE",
+    "complexity": 2,
+    "priority": 10,
+    "pathway": "Airway & Breathing Mastery",
+    "category": "RESP",
+    "title": "Untitled"
+  },
+  {
+    "caseId": "RESP0018",
+    "isFoundational": "TRUE",
+    "complexity": 2,
+    "priority": 10,
+    "pathway": "Airway & Breathing Mastery",
+    "category": "RESP",
+    "title": "Untitled"
+  },
+  {
+    "caseId": "RESP0019",
+    "isFoundational": "TRUE",
+    "complexity": 3,
+    "priority": 10,
+    "pathway": "Airway & Breathing Mastery",
+    "category": "RESP",
+    "title": "Untitled"
+  },
+  {
+    "caseId": "RESP0020",
+    "isFoundational": "TRUE",
+    "complexity": 3,
+    "priority": 10,
+    "pathway": "Airway & Breathing Mastery",
+    "category": "RESP",
+    "title": "Untitled"
+  },
+  {
+    "caseId": "RESP0021",
+    "isFoundational": "TRUE",
+    "complexity": 3,
+    "priority": 10,
+    "pathway": "Airway & Breathing Mastery",
+    "category": "RESP",
+    "title": "Untitled"
+  },
+  {
+    "caseId": "RESP0022",
+    "isFoundational": "TRUE",
+    "complexity": 3,
+    "priority": 10,
+    "pathway": "Airway & Breathing Mastery",
+    "category": "RESP",
+    "title": "Untitled"
+  },
+  {
+    "caseId": "RESP0023",
+    "isFoundational": "FALSE",
+    "complexity": 4,
+    "priority": 10,
+    "pathway": "Airway & Breathing Mastery",
+    "category": "RESP",
+    "title": "Untitled"
+  },
+  {
+    "caseId": "PEDRE24",
+    "isFoundational": "TRUE",
+    "complexity": 1,
+    "priority": 9,
+    "pathway": "Airway & Breathing Mastery",
+    "category": "RESP",
+    "title": "Untitled"
+  },
+  {
+    "caseId": "RESP0025",
+    "isFoundational": "TRUE",
+    "complexity": 1,
+    "priority": 9,
+    "pathway": "Airway & Breathing Mastery",
+    "category": "RESP",
+    "title": "Untitled"
+  },
+  {
+    "caseId": "PEDRE26",
+    "isFoundational": "TRUE",
+    "complexity": 1,
+    "priority": 9,
+    "pathway": "Airway & Breathing Mastery",
+    "category": "RESP",
+    "title": "Untitled"
+  },
+  {
+    "caseId": "RESP0027",
+    "isFoundational": "TRUE",
+    "complexity": 1,
+    "priority": 9,
+    "pathway": "Airway & Breathing Mastery",
+    "category": "RESP",
+    "title": "Untitled"
+  },
+  {
+    "caseId": "RESP0028",
+    "isFoundational": "TRUE",
+    "complexity": 1,
+    "priority": 9,
+    "pathway": "Airway & Breathing Mastery",
+    "category": "RESP",
+    "title": "Untitled"
+  },
+  {
+    "caseId": "RESP0029",
+    "isFoundational": "TRUE",
+    "complexity": 2,
+    "priority": 9,
+    "pathway": "Airway & Breathing Mastery",
+    "category": "RESP",
+    "title": "Untitled"
+  },
+  {
+    "caseId": "RESP0030",
+    "isFoundational": "TRUE",
+    "complexity": 2,
+    "priority": 9,
+    "pathway": "Airway & Breathing Mastery",
+    "category": "RESP",
+    "title": "Untitled"
+  },
+  {
+    "caseId": "RESP0031",
+    "isFoundational": "TRUE",
+    "complexity": 3,
+    "priority": 9,
+    "pathway": "Airway & Breathing Mastery",
+    "category": "RESP",
+    "title": "Untitled"
+  },
+  {
+    "caseId": "PEDRE32",
+    "isFoundational": "TRUE",
+    "complexity": 3,
+    "priority": 9,
+    "pathway": "Airway & Breathing Mastery",
+    "category": "RESP",
+    "title": "Untitled"
+  },
+  {
+    "caseId": "PEDRE33",
+    "isFoundational": "TRUE",
+    "complexity": 3,
+    "priority": 9,
+    "pathway": "Airway & Breathing Mastery",
+    "category": "RESP",
+    "title": "Untitled"
+  },
+  {
+    "caseId": "PEDRE34",
+    "isFoundational": "TRUE",
+    "complexity": 3,
+    "priority": 9,
+    "pathway": "Airway & Breathing Mastery",
+    "category": "RESP",
+    "title": "Untitled"
+  },
+  {
+    "caseId": "PEDRE35",
+    "isFoundational": "TRUE",
+    "complexity": 3,
+    "priority": 9,
+    "pathway": "Airway & Breathing Mastery",
+    "category": "RESP",
+    "title": "Untitled"
+  },
+  {
+    "caseId": "PEDRE36",
+    "isFoundational": "TRUE",
+    "complexity": 3,
+    "priority": 9,
+    "pathway": "Airway & Breathing Mastery",
+    "category": "RESP",
+    "title": "Untitled"
+  },
+  {
+    "caseId": "PEDRE37",
+    "isFoundational": "TRUE",
+    "complexity": 3,
+    "priority": 9,
+    "pathway": "Airway & Breathing Mastery",
+    "category": "RESP",
+    "title": "Untitled"
+  },
+  {
+    "caseId": "PEDRE38",
+    "isFoundational": "TRUE",
+    "complexity": 3,
+    "priority": 9,
+    "pathway": "Airway & Breathing Mastery",
+    "category": "RESP",
+    "title": "Untitled"
+  },
+  {
+    "caseId": "PEDRE39",
+    "isFoundational": "TRUE",
+    "complexity": 3,
+    "priority": 9,
+    "pathway": "Airway & Breathing Mastery",
+    "category": "RESP",
+    "title": "Untitled"
+  },
+  {
+    "caseId": "PEDRE40",
+    "isFoundational": "TRUE",
+    "complexity": 3,
+    "priority": 9,
+    "pathway": "Airway & Breathing Mastery",
+    "category": "RESP",
+    "title": "Untitled"
+  },
+  {
+    "caseId": "PEDRE41",
+    "isFoundational": "TRUE",
+    "complexity": 3,
+    "priority": 9,
+    "pathway": "Airway & Breathing Mastery",
+    "category": "RESP",
+    "title": "Untitled"
+  },
+  {
+    "caseId": "PEDRE42",
+    "isFoundational": "TRUE",
+    "complexity": 3,
+    "priority": 9,
+    "pathway": "Airway & Breathing Mastery",
+    "category": "RESP",
+    "title": "Untitled"
+  },
+  {
+    "caseId": "PEDRE43",
+    "isFoundational": "TRUE",
+    "complexity": 3,
+    "priority": 9,
+    "pathway": "Airway & Breathing Mastery",
+    "category": "RESP",
+    "title": "Untitled"
+  },
+  {
+    "caseId": "PEDRE44",
+    "isFoundational": "TRUE",
+    "complexity": 3,
+    "priority": 9,
+    "pathway": "Airway & Breathing Mastery",
+    "category": "RESP",
+    "title": "Untitled"
+  },
+  {
+    "caseId": "RESP0045",
+    "isFoundational": "FALSE",
+    "complexity": 1,
+    "priority": 5,
+    "pathway": "Respiratory Excellence",
+    "category": "RESP",
+    "title": "Untitled"
+  },
+  {
+    "caseId": "PEDIM01",
+    "isFoundational": "TRUE",
+    "complexity": 3,
+    "priority": 10,
+    "pathway": "Allergic Emergency Mastery",
+    "category": "IMMU",
+    "title": "Untitled"
+  },
+  {
+    "caseId": "PEDIM02",
+    "isFoundational": "TRUE",
+    "complexity": 3,
+    "priority": 10,
+    "pathway": "Allergic Emergency Mastery",
+    "category": "IMMU",
+    "title": "Untitled"
+  },
+  {
+    "caseId": "IMMU0003",
+    "isFoundational": "FALSE",
+    "complexity": 5,
+    "priority": 10,
+    "pathway": "Allergic Emergency Mastery",
+    "category": "IMMU",
+    "title": "Untitled"
+  },
+  {
+    "caseId": "CARD0001",
+    "isFoundational": "TRUE",
+    "complexity": 2,
+    "priority": 10,
+    "pathway": "Cardiac Mastery Foundations",
+    "category": "CARD",
+    "title": "Untitled"
+  },
+  {
+    "caseId": "CARD0002",
+    "isFoundational": "TRUE",
+    "complexity": 2,
+    "priority": 10,
+    "pathway": "Cardiac Mastery Foundations",
+    "category": "CARD",
+    "title": "Untitled"
+  },
+  {
+    "caseId": "CARD0003",
+    "isFoundational": "TRUE",
+    "complexity": 2,
+    "priority": 10,
+    "pathway": "Cardiac Mastery Foundations",
+    "category": "CARD",
+    "title": "Untitled"
+  },
+  {
+    "caseId": "CARD0004",
+    "isFoundational": "TRUE",
+    "complexity": 2,
+    "priority": 10,
+    "pathway": "Cardiac Mastery Foundations",
+    "category": "CARD",
+    "title": "Untitled"
+  },
+  {
+    "caseId": "CARD0005",
+    "isFoundational": "TRUE",
+    "complexity": 2,
+    "priority": 10,
+    "pathway": "Cardiac Mastery Foundations",
+    "category": "CARD",
+    "title": "Untitled"
+  },
+  {
+    "caseId": "CARD0006",
+    "isFoundational": "TRUE",
+    "complexity": 2,
+    "priority": 10,
+    "pathway": "Cardiac Mastery Foundations",
+    "category": "CARD",
+    "title": "Untitled"
+  },
+  {
+    "caseId": "CARD0007",
+    "isFoundational": "TRUE",
+    "complexity": 2,
+    "priority": 10,
+    "pathway": "Cardiac Mastery Foundations",
+    "category": "CARD",
+    "title": "Untitled"
+  },
+  {
+    "caseId": "CARD0008",
+    "isFoundational": "TRUE",
+    "complexity": 2,
+    "priority": 10,
+    "pathway": "Cardiac Mastery Foundations",
+    "category": "CARD",
+    "title": "Untitled"
+  },
+  {
+    "caseId": "CARD0009",
+    "isFoundational": "TRUE",
+    "complexity": 2,
+    "priority": 10,
+    "pathway": "Cardiac Mastery Foundations",
+    "category": "CARD",
+    "title": "Untitled"
+  },
+  {
+    "caseId": "CARD0010",
+    "isFoundational": "TRUE",
+    "complexity": 2,
+    "priority": 10,
+    "pathway": "Cardiac Mastery Foundations",
+    "category": "CARD",
+    "title": "Untitled"
+  },
+  {
+    "caseId": "CARD0011",
+    "isFoundational": "TRUE",
+    "complexity": 2,
+    "priority": 10,
+    "pathway": "Cardiac Mastery Foundations",
+    "category": "CARD",
+    "title": "Untitled"
+  },
+  {
+    "caseId": "CARD0012",
+    "isFoundational": "TRUE",
+    "complexity": 2,
+    "priority": 10,
+    "pathway": "Cardiac Mastery Foundations",
+    "category": "CARD",
+    "title": "Untitled"
+  },
+  {
+    "caseId": "CARD0013",
+    "isFoundational": "TRUE",
+    "complexity": 2,
+    "priority": 10,
+    "pathway": "Cardiac Mastery Foundations",
+    "category": "CARD",
+    "title": "Untitled"
+  },
+  {
+    "caseId": "CARD0014",
+    "isFoundational": "TRUE",
+    "complexity": 2,
+    "priority": 10,
+    "pathway": "Cardiac Mastery Foundations",
+    "category": "CARD",
+    "title": "Untitled"
+  },
+  {
+    "caseId": "CARD0015",
+    "isFoundational": "TRUE",
+    "complexity": 2,
+    "priority": 10,
+    "pathway": "Cardiac Mastery Foundations",
+    "category": "CARD",
+    "title": "Untitled"
+  },
+  {
+    "caseId": "CARD0016",
+    "isFoundational": "TRUE",
+    "complexity": 2,
+    "priority": 10,
+    "pathway": "Cardiac Mastery Foundations",
+    "category": "CARD",
+    "title": "Untitled"
+  },
+  {
+    "caseId": "CARD0017",
+    "isFoundational": "TRUE",
+    "complexity": 2,
+    "priority": 10,
+    "pathway": "Cardiac Mastery Foundations",
+    "category": "CARD",
+    "title": "Untitled"
+  },
+  {
+    "caseId": "CARD0018",
+    "isFoundational": "TRUE",
+    "complexity": 2,
+    "priority": 10,
+    "pathway": "Cardiac Mastery Foundations",
+    "category": "CARD",
+    "title": "Untitled"
+  },
+  {
+    "caseId": "CARD0019",
+    "isFoundational": "TRUE",
+    "complexity": 2,
+    "priority": 10,
+    "pathway": "Cardiac Mastery Foundations",
+    "category": "CARD",
+    "title": "Untitled"
+  },
+  {
+    "caseId": "CARD0020",
+    "isFoundational": "TRUE",
+    "complexity": 2,
+    "priority": 10,
+    "pathway": "Cardiac Mastery Foundations",
+    "category": "CARD",
+    "title": "Untitled"
+  },
+  {
+    "caseId": "CARD0021",
+    "isFoundational": "TRUE",
+    "complexity": 2,
+    "priority": 10,
+    "pathway": "Cardiac Mastery Foundations",
+    "category": "CARD",
+    "title": "Untitled"
+  },
+  {
+    "caseId": "CARD0022",
+    "isFoundational": "TRUE",
+    "complexity": 2,
+    "priority": 10,
+    "pathway": "Cardiac Mastery Foundations",
+    "category": "CARD",
+    "title": "Untitled"
+  },
+  {
+    "caseId": "CARD0023",
+    "isFoundational": "TRUE",
+    "complexity": 2,
+    "priority": 10,
+    "pathway": "Cardiac Mastery Foundations",
+    "category": "CARD",
+    "title": "Untitled"
+  },
+  {
+    "caseId": "CARD0024",
+    "isFoundational": "TRUE",
+    "complexity": 2,
+    "priority": 10,
+    "pathway": "Cardiac Mastery Foundations",
+    "category": "CARD",
+    "title": "Untitled"
+  },
+  {
+    "caseId": "CARD0025",
+    "isFoundational": "TRUE",
+    "complexity": 2,
+    "priority": 10,
+    "pathway": "Cardiac Mastery Foundations",
+    "category": "CARD",
+    "title": "Untitled"
+  },
+  {
+    "caseId": "CARD0026",
+    "isFoundational": "TRUE",
+    "complexity": 2,
+    "priority": 10,
+    "pathway": "Cardiac Mastery Foundations",
+    "category": "CARD",
+    "title": "Untitled"
+  },
+  {
+    "caseId": "CARD0027",
+    "isFoundational": "TRUE",
+    "complexity": 2,
+    "priority": 10,
+    "pathway": "Cardiac Mastery Foundations",
+    "category": "CARD",
+    "title": "Untitled"
+  },
+  {
+    "caseId": "CARD0028",
+    "isFoundational": "TRUE",
+    "complexity": 2,
+    "priority": 10,
+    "pathway": "Cardiac Mastery Foundations",
+    "category": "CARD",
+    "title": "Untitled"
+  },
+  {
+    "caseId": "CARD0029",
+    "isFoundational": "TRUE",
+    "complexity": 2,
+    "priority": 10,
+    "pathway": "Cardiac Mastery Foundations",
+    "category": "CARD",
+    "title": "Untitled"
+  },
+  {
+    "caseId": "CARD0030",
+    "isFoundational": "TRUE",
+    "complexity": 2,
+    "priority": 10,
+    "pathway": "Cardiac Mastery Foundations",
+    "category": "CARD",
+    "title": "Untitled"
+  },
+  {
+    "caseId": "CARD0031",
+    "isFoundational": "TRUE",
+    "complexity": 2,
+    "priority": 10,
+    "pathway": "Cardiac Mastery Foundations",
+    "category": "CARD",
+    "title": "Untitled"
+  },
+  {
+    "caseId": "CARD0032",
+    "isFoundational": "TRUE",
+    "complexity": 2,
+    "priority": 10,
+    "pathway": "Cardiac Mastery Foundations",
+    "category": "CARD",
+    "title": "Untitled"
+  },
+  {
+    "caseId": "CARD0033",
+    "isFoundational": "TRUE",
+    "complexity": 2,
+    "priority": 10,
+    "pathway": "Cardiac Mastery Foundations",
+    "category": "CARD",
+    "title": "Untitled"
+  },
+  {
+    "caseId": "CARD0034",
+    "isFoundational": "TRUE",
+    "complexity": 2,
+    "priority": 10,
+    "pathway": "Cardiac Mastery Foundations",
+    "category": "CARD",
+    "title": "Untitled"
+  },
+  {
+    "caseId": "CARD0035",
+    "isFoundational": "TRUE",
+    "complexity": 2,
+    "priority": 10,
+    "pathway": "Cardiac Mastery Foundations",
+    "category": "CARD",
+    "title": "Untitled"
+  },
+  {
+    "caseId": "CARD0036",
+    "isFoundational": "TRUE",
+    "complexity": 2,
+    "priority": 10,
+    "pathway": "Cardiac Mastery Foundations",
+    "category": "CARD",
+    "title": "Untitled"
+  },
+  {
+    "caseId": "CARD0037",
+    "isFoundational": "TRUE",
+    "complexity": 2,
+    "priority": 10,
+    "pathway": "Cardiac Mastery Foundations",
+    "category": "CARD",
+    "title": "Untitled"
+  },
+  {
+    "caseId": "CARD0038",
+    "isFoundational": "TRUE",
+    "complexity": 2,
+    "priority": 10,
+    "pathway": "Cardiac Mastery Foundations",
+    "category": "CARD",
+    "title": "Untitled"
+  },
+  {
+    "caseId": "CARD0039",
+    "isFoundational": "TRUE",
+    "complexity": 2,
+    "priority": 10,
+    "pathway": "Cardiac Mastery Foundations",
+    "category": "CARD",
+    "title": "Untitled"
+  },
+  {
+    "caseId": "CARD0040",
+    "isFoundational": "TRUE",
+    "complexity": 2,
+    "priority": 10,
+    "pathway": "Cardiac Mastery Foundations",
+    "category": "CARD",
+    "title": "Untitled"
+  },
+  {
+    "caseId": "CARD0041",
+    "isFoundational": "TRUE",
+    "complexity": 2,
+    "priority": 10,
+    "pathway": "Cardiac Mastery Foundations",
+    "category": "CARD",
+    "title": "Untitled"
+  },
+  {
+    "caseId": "CARD0042",
+    "isFoundational": "TRUE",
+    "complexity": 2,
+    "priority": 10,
+    "pathway": "Cardiac Mastery Foundations",
+    "category": "CARD",
+    "title": "Untitled"
+  },
+  {
+    "caseId": "CARD0043",
+    "isFoundational": "TRUE",
+    "complexity": 2,
+    "priority": 10,
+    "pathway": "Cardiac Mastery Foundations",
+    "category": "CARD",
+    "title": "Untitled"
+  },
+  {
+    "caseId": "CARD0044",
+    "isFoundational": "TRUE",
+    "complexity": 2,
+    "priority": 10,
+    "pathway": "Cardiac Mastery Foundations",
+    "category": "CARD",
+    "title": "Untitled"
+  },
+  {
+    "caseId": "CARD0045",
+    "isFoundational": "TRUE",
+    "complexity": 2,
+    "priority": 10,
+    "pathway": "Cardiac Mastery Foundations",
+    "category": "CARD",
+    "title": "Untitled"
+  },
+  {
+    "caseId": "CARD0046",
+    "isFoundational": "TRUE",
+    "complexity": 3,
+    "priority": 10,
+    "pathway": "Cardiac Mastery Foundations",
+    "category": "CARD",
+    "title": "Untitled"
+  },
+  {
+    "caseId": "CARD0047",
+    "isFoundational": "TRUE",
+    "complexity": 3,
+    "priority": 10,
+    "pathway": "Cardiac Mastery Foundations",
+    "category": "CARD",
+    "title": "Untitled"
+  },
+  {
+    "caseId": "CARD0048",
+    "isFoundational": "TRUE",
+    "complexity": 3,
+    "priority": 10,
+    "pathway": "Cardiac Mastery Foundations",
+    "category": "CARD",
+    "title": "Untitled"
+  },
+  {
+    "caseId": "CARD0049",
+    "isFoundational": "TRUE",
+    "complexity": 3,
+    "priority": 10,
+    "pathway": "Cardiac Mastery Foundations",
+    "category": "CARD",
+    "title": "Untitled"
+  },
+  {
+    "caseId": "CARD0050",
+    "isFoundational": "TRUE",
+    "complexity": 3,
+    "priority": 10,
+    "pathway": "Cardiac Mastery Foundations",
+    "category": "CARD",
+    "title": "Untitled"
+  },
+  {
+    "caseId": "CARD0051",
+    "isFoundational": "TRUE",
+    "complexity": 3,
+    "priority": 10,
+    "pathway": "Cardiac Mastery Foundations",
+    "category": "CARD",
+    "title": "Untitled"
+  },
+  {
+    "caseId": "CARD0052",
+    "isFoundational": "TRUE",
+    "complexity": 3,
+    "priority": 10,
+    "pathway": "Cardiac Mastery Foundations",
+    "category": "CARD",
+    "title": "Untitled"
+  },
+  {
+    "caseId": "CARD0053",
+    "isFoundational": "TRUE",
+    "complexity": 3,
+    "priority": 10,
+    "pathway": "Cardiac Mastery Foundations",
+    "category": "CARD",
+    "title": "Untitled"
+  },
+  {
+    "caseId": "CARD0054",
+    "isFoundational": "TRUE",
+    "complexity": 3,
+    "priority": 10,
+    "pathway": "Cardiac Mastery Foundations",
+    "category": "CARD",
+    "title": "Untitled"
+  },
+  {
+    "caseId": "CARD0055",
+    "isFoundational": "TRUE",
+    "complexity": 3,
+    "priority": 10,
+    "pathway": "Cardiac Mastery Foundations",
+    "category": "CARD",
+    "title": "Untitled"
+  },
+  {
+    "caseId": "CARD0056",
+    "isFoundational": "TRUE",
+    "complexity": 3,
+    "priority": 10,
+    "pathway": "Cardiac Mastery Foundations",
+    "category": "CARD",
+    "title": "Untitled"
+  },
+  {
+    "caseId": "CARD0057",
+    "isFoundational": "TRUE",
+    "complexity": 3,
+    "priority": 10,
+    "pathway": "Cardiac Mastery Foundations",
+    "category": "CARD",
+    "title": "Untitled"
+  },
+  {
+    "caseId": "ENDO0001",
+    "isFoundational": "TRUE",
+    "complexity": 2,
+    "priority": 10,
+    "pathway": "Endocrine Emergency Mastery",
+    "category": "ENDO",
+    "title": "Untitled"
+  },
+  {
+    "caseId": "ENDO0002",
+    "isFoundational": "TRUE",
+    "complexity": 2,
+    "priority": 10,
+    "pathway": "Endocrine Emergency Mastery",
+    "category": "ENDO",
+    "title": "Untitled"
+  },
+  {
+    "caseId": "PEDEN03",
+    "isFoundational": "TRUE",
+    "complexity": 3,
+    "priority": 10,
+    "pathway": "Endocrine Emergency Mastery",
+    "category": "ENDO",
+    "title": "Untitled"
+  },
+  {
+    "caseId": "NEUR0001",
+    "isFoundational": "TRUE",
+    "complexity": 1,
+    "priority": 10,
+    "pathway": "Stroke & Neuro Foundations",
+    "category": "NEUR",
+    "title": "Untitled"
+  },
+  {
+    "caseId": "NEUR0002",
+    "isFoundational": "TRUE",
+    "complexity": 1,
+    "priority": 10,
+    "pathway": "Stroke & Neuro Foundations",
+    "category": "NEUR",
+    "title": "Untitled"
+  },
+  {
+    "caseId": "NEUR0003",
+    "isFoundational": "TRUE",
+    "complexity": 1,
+    "priority": 10,
+    "pathway": "Stroke & Neuro Foundations",
+    "category": "NEUR",
+    "title": "Untitled"
+  },
+  {
+    "caseId": "NEUR0004",
+    "isFoundational": "TRUE",
+    "complexity": 1,
+    "priority": 10,
+    "pathway": "Stroke & Neuro Foundations",
+    "category": "NEUR",
+    "title": "Untitled"
+  },
+  {
+    "caseId": "NEUR0005",
+    "isFoundational": "TRUE",
+    "complexity": 1,
+    "priority": 10,
+    "pathway": "Stroke & Neuro Foundations",
+    "category": "NEUR",
+    "title": "Untitled"
+  },
+  {
+    "caseId": "NEUR0006",
+    "isFoundational": "TRUE",
+    "complexity": 2,
+    "priority": 10,
+    "pathway": "Stroke & Neuro Foundations",
+    "category": "NEUR",
+    "title": "Untitled"
+  },
+  {
+    "caseId": "NEUR0007",
+    "isFoundational": "TRUE",
+    "complexity": 2,
+    "priority": 10,
+    "pathway": "Stroke & Neuro Foundations",
+    "category": "NEUR",
+    "title": "Untitled"
+  },
+  {
+    "caseId": "NEUR0008",
+    "isFoundational": "TRUE",
+    "complexity": 2,
+    "priority": 10,
+    "pathway": "Stroke & Neuro Foundations",
+    "category": "NEUR",
+    "title": "Untitled"
+  },
+  {
+    "caseId": "NEUR0009",
+    "isFoundational": "TRUE",
+    "complexity": 2,
+    "priority": 10,
+    "pathway": "Stroke & Neuro Foundations",
+    "category": "NEUR",
+    "title": "Untitled"
+  },
+  {
+    "caseId": "NEUR0010",
+    "isFoundational": "TRUE",
+    "complexity": 2,
+    "priority": 10,
+    "pathway": "Stroke & Neuro Foundations",
+    "category": "NEUR",
+    "title": "Untitled"
+  },
+  {
+    "caseId": "NEUR0011",
+    "isFoundational": "TRUE",
+    "complexity": 2,
+    "priority": 10,
+    "pathway": "Stroke & Neuro Foundations",
+    "category": "NEUR",
+    "title": "Untitled"
+  },
+  {
+    "caseId": "NEUR0012",
+    "isFoundational": "TRUE",
+    "complexity": 2,
+    "priority": 10,
+    "pathway": "Stroke & Neuro Foundations",
+    "category": "NEUR",
+    "title": "Untitled"
+  },
+  {
+    "caseId": "NEUR0013",
+    "isFoundational": "TRUE",
+    "complexity": 2,
+    "priority": 10,
+    "pathway": "Stroke & Neuro Foundations",
+    "category": "NEUR",
+    "title": "Untitled"
+  },
+  {
+    "caseId": "NEUR0014",
+    "isFoundational": "TRUE",
+    "complexity": 2,
+    "priority": 10,
+    "pathway": "Stroke & Neuro Foundations",
+    "category": "NEUR",
+    "title": "Untitled"
+  },
+  {
+    "caseId": "NEUR0015",
+    "isFoundational": "TRUE",
+    "complexity": 2,
+    "priority": 10,
+    "pathway": "Stroke & Neuro Foundations",
+    "category": "NEUR",
+    "title": "Untitled"
+  },
+  {
+    "caseId": "NEUR0016",
+    "isFoundational": "TRUE",
+    "complexity": 2,
+    "priority": 10,
+    "pathway": "Stroke & Neuro Foundations",
+    "category": "NEUR",
+    "title": "Untitled"
+  },
+  {
+    "caseId": "NEUR0017",
+    "isFoundational": "TRUE",
+    "complexity": 2,
+    "priority": 10,
+    "pathway": "Stroke & Neuro Foundations",
+    "category": "NEUR",
+    "title": "Untitled"
+  },
+  {
+    "caseId": "NEUR0018",
+    "isFoundational": "TRUE",
+    "complexity": 2,
+    "priority": 10,
+    "pathway": "Stroke & Neuro Foundations",
+    "category": "NEUR",
+    "title": "Untitled"
+  },
+  {
+    "caseId": "NEUR0019",
+    "isFoundational": "TRUE",
+    "complexity": 2,
+    "priority": 10,
+    "pathway": "Stroke & Neuro Foundations",
+    "category": "NEUR",
+    "title": "Untitled"
+  },
+  {
+    "caseId": "NEUR0020",
+    "isFoundational": "TRUE",
+    "complexity": 3,
+    "priority": 10,
+    "pathway": "Stroke & Neuro Foundations",
+    "category": "NEUR",
+    "title": "Untitled"
+  },
+  {
+    "caseId": "NEUR0021",
+    "isFoundational": "TRUE",
+    "complexity": 3,
+    "priority": 10,
+    "pathway": "Stroke & Neuro Foundations",
+    "category": "NEUR",
+    "title": "Untitled"
+  },
+  {
+    "caseId": "NEUR0022",
+    "isFoundational": "TRUE",
+    "complexity": 3,
+    "priority": 10,
+    "pathway": "Stroke & Neuro Foundations",
+    "category": "NEUR",
+    "title": "Untitled"
+  },
+  {
+    "caseId": "NEUR0023",
+    "isFoundational": "TRUE",
+    "complexity": 3,
+    "priority": 10,
+    "pathway": "Stroke & Neuro Foundations",
+    "category": "NEUR",
+    "title": "Untitled"
+  },
+  {
+    "caseId": "NEUR0024",
+    "isFoundational": "FALSE",
+    "complexity": 5,
+    "priority": 10,
+    "pathway": "Stroke & Neuro Foundations",
+    "category": "NEUR",
+    "title": "Untitled"
+  },
+  {
+    "caseId": "NEUR0025",
+    "isFoundational": "FALSE",
+    "complexity": 5,
+    "priority": 10,
+    "pathway": "Stroke & Neuro Foundations",
+    "category": "NEUR",
+    "title": "Untitled"
+  },
+  {
+    "caseId": "PEDNE26",
+    "isFoundational": "TRUE",
+    "complexity": 2,
+    "priority": 9,
+    "pathway": "Stroke & Neuro Foundations",
+    "category": "NEUR",
+    "title": "Untitled"
+  },
+  {
+    "caseId": "NEUR0027",
+    "isFoundational": "TRUE",
+    "complexity": 3,
+    "priority": 9,
+    "pathway": "Stroke & Neuro Foundations",
+    "category": "NEUR",
+    "title": "Untitled"
+  },
+  {
+    "caseId": "NEUR0028",
+    "isFoundational": "TRUE",
+    "complexity": 3,
+    "priority": 9,
+    "pathway": "Stroke & Neuro Foundations",
+    "category": "NEUR",
+    "title": "Untitled"
+  },
+  {
+    "caseId": "NEUR0029",
+    "isFoundational": "TRUE",
+    "complexity": 3,
+    "priority": 9,
+    "pathway": "Stroke & Neuro Foundations",
+    "category": "NEUR",
+    "title": "Untitled"
+  },
+  {
+    "caseId": "NEUR0030",
+    "isFoundational": "TRUE",
+    "complexity": 3,
+    "priority": 9,
+    "pathway": "Stroke & Neuro Foundations",
+    "category": "NEUR",
+    "title": "Untitled"
+  },
+  {
+    "caseId": "NEUR0031",
+    "isFoundational": "TRUE",
+    "complexity": 3,
+    "priority": 9,
+    "pathway": "Stroke & Neuro Foundations",
+    "category": "NEUR",
+    "title": "Untitled"
+  },
+  {
+    "caseId": "PEDNE32",
+    "isFoundational": "FALSE",
+    "complexity": 4,
+    "priority": 9,
+    "pathway": "Stroke & Neuro Foundations",
+    "category": "NEUR",
+    "title": "Untitled"
+  },
+  {
+    "caseId": "NEUR0033",
+    "isFoundational": "FALSE",
+    "complexity": 5,
+    "priority": 9,
+    "pathway": "Stroke & Neuro Foundations",
+    "category": "NEUR",
+    "title": "Untitled"
+  },
+  {
+    "caseId": "NEUR0034",
+    "isFoundational": "FALSE",
+    "complexity": 5,
+    "priority": 9,
+    "pathway": "Stroke & Neuro Foundations",
+    "category": "NEUR",
+    "title": "Untitled"
+  },
+  {
+    "caseId": "NEUR0035",
+    "isFoundational": "FALSE",
+    "complexity": 5,
+    "priority": 9,
+    "pathway": "Stroke & Neuro Foundations",
+    "category": "NEUR",
+    "title": "Untitled"
+  },
+  {
+    "caseId": "NEUR0036",
+    "isFoundational": "FALSE",
+    "complexity": 5,
+    "priority": 9,
+    "pathway": "Stroke & Neuro Foundations",
+    "category": "NEUR",
+    "title": "Untitled"
+  },
+  {
+    "caseId": "NEUR0037",
+    "isFoundational": "FALSE",
+    "complexity": 5,
+    "priority": 9,
+    "pathway": "Stroke & Neuro Foundations",
+    "category": "NEUR",
+    "title": "Untitled"
+  },
+  {
+    "caseId": "NEUR0038",
+    "isFoundational": "FALSE",
+    "complexity": 5,
+    "priority": 9,
+    "pathway": "Stroke & Neuro Foundations",
+    "category": "NEUR",
+    "title": "Untitled"
+  },
+  {
+    "caseId": "NEUR0039",
+    "isFoundational": "FALSE",
+    "complexity": 5,
+    "priority": 9,
+    "pathway": "Stroke & Neuro Foundations",
+    "category": "NEUR",
+    "title": "Untitled"
+  },
+  {
+    "caseId": "NEUR0040",
+    "isFoundational": "FALSE",
+    "complexity": 5,
+    "priority": 9,
+    "pathway": "Stroke & Neuro Foundations",
+    "category": "NEUR",
+    "title": "Untitled"
+  },
+  {
+    "caseId": "NEUR0041",
+    "isFoundational": "FALSE",
+    "complexity": 5,
+    "priority": 9,
+    "pathway": "Stroke & Neuro Foundations",
+    "category": "NEUR",
+    "title": "Untitled"
+  },
+  {
+    "caseId": "NEUR0042",
+    "isFoundational": "FALSE",
+    "complexity": 5,
+    "priority": 9,
+    "pathway": "Stroke & Neuro Foundations",
+    "category": "NEUR",
+    "title": "Untitled"
+  },
+  {
+    "caseId": "NEUR0043",
+    "isFoundational": "FALSE",
+    "complexity": 5,
+    "priority": 9,
+    "pathway": "Stroke & Neuro Foundations",
+    "category": "NEUR",
+    "title": "Untitled"
+  },
+  {
+    "caseId": "PEDNE44",
+    "isFoundational": "FALSE",
+    "complexity": 1,
+    "priority": 5,
+    "pathway": "Neurological Excellence",
+    "category": "NEUR",
+    "title": "Untitled"
+  },
+  {
+    "caseId": "MULT0001",
+    "isFoundational": "TRUE",
+    "complexity": 3,
+    "priority": 10,
+    "pathway": "Multi-System Foundations",
+    "category": "MULT",
+    "title": "Untitled"
+  },
+  {
+    "caseId": "MULT0002",
+    "isFoundational": "TRUE",
+    "complexity": 3,
+    "priority": 10,
+    "pathway": "Multi-System Foundations",
+    "category": "MULT",
+    "title": "Untitled"
+  },
+  {
+    "caseId": "PEDMU03",
+    "isFoundational": "TRUE",
+    "complexity": 1,
+    "priority": 9,
+    "pathway": "Multi-System Foundations",
+    "category": "MULT",
+    "title": "Untitled"
+  },
+  {
+    "caseId": "PEDMU04",
+    "isFoundational": "TRUE",
+    "complexity": 1,
+    "priority": 9,
+    "pathway": "Multi-System Foundations",
+    "category": "MULT",
+    "title": "Untitled"
+  },
+  {
+    "caseId": "PEDMU05",
+    "isFoundational": "TRUE",
+    "complexity": 1,
+    "priority": 9,
+    "pathway": "Multi-System Foundations",
+    "category": "MULT",
+    "title": "Untitled"
+  },
+  {
+    "caseId": "PEDMU06",
+    "isFoundational": "TRUE",
+    "complexity": 1,
+    "priority": 9,
+    "pathway": "Multi-System Foundations",
+    "category": "MULT",
+    "title": "Untitled"
+  },
+  {
+    "caseId": "PEDMU07",
+    "isFoundational": "TRUE",
+    "complexity": 1,
+    "priority": 9,
+    "pathway": "Multi-System Foundations",
+    "category": "MULT",
+    "title": "Untitled"
+  },
+  {
+    "caseId": "PEDMU08",
+    "isFoundational": "TRUE",
+    "complexity": 1,
+    "priority": 9,
+    "pathway": "Multi-System Foundations",
+    "category": "MULT",
+    "title": "Untitled"
+  },
+  {
+    "caseId": "PEDMU09",
+    "isFoundational": "TRUE",
+    "complexity": 1,
+    "priority": 9,
+    "pathway": "Multi-System Foundations",
+    "category": "MULT",
+    "title": "Untitled"
+  },
+  {
+    "caseId": "PEDMU10",
+    "isFoundational": "TRUE",
+    "complexity": 2,
+    "priority": 9,
+    "pathway": "Multi-System Foundations",
+    "category": "MULT",
+    "title": "Untitled"
+  },
+  {
+    "caseId": "PEDMU11",
+    "isFoundational": "TRUE",
+    "complexity": 2,
+    "priority": 9,
+    "pathway": "Multi-System Foundations",
+    "category": "MULT",
+    "title": "Untitled"
+  },
+  {
+    "caseId": "PEDMU12",
+    "isFoundational": "TRUE",
+    "complexity": 3,
+    "priority": 9,
+    "pathway": "Multi-System Foundations",
+    "category": "MULT",
+    "title": "Untitled"
+  },
+  {
+    "caseId": "PEDMU13",
+    "isFoundational": "TRUE",
+    "complexity": 3,
+    "priority": 9,
+    "pathway": "Multi-System Foundations",
+    "category": "MULT",
+    "title": "Untitled"
+  },
+  {
+    "caseId": "PEDMU14",
+    "isFoundational": "TRUE",
+    "complexity": 3,
+    "priority": 9,
+    "pathway": "Multi-System Foundations",
+    "category": "MULT",
+    "title": "Untitled"
+  },
+  {
+    "caseId": "PEDMU15",
+    "isFoundational": "TRUE",
+    "complexity": 3,
+    "priority": 9,
+    "pathway": "Multi-System Foundations",
+    "category": "MULT",
+    "title": "Untitled"
+  },
+  {
+    "caseId": "PEDMU16",
+    "isFoundational": "FALSE",
+    "complexity": 1,
+    "priority": 5,
+    "pathway": "Comprehensive Emergency Excellence",
+    "category": "MULT",
+    "title": "Untitled"
+  },
+  {
+    "caseId": "PEDMU17",
+    "isFoundational": "FALSE",
+    "complexity": 1,
+    "priority": 5,
+    "pathway": "Comprehensive Emergency Excellence",
+    "category": "MULT",
+    "title": "Untitled"
+  },
+  {
+    "caseId": "MULT0018",
+    "isFoundational": "FALSE",
+    "complexity": 1,
+    "priority": 5,
+    "pathway": "Comprehensive Emergency Excellence",
+    "category": "MULT",
+    "title": "Untitled"
+  },
+  {
+    "caseId": "PEDMU19",
+    "isFoundational": "FALSE",
+    "complexity": 1,
+    "priority": 5,
+    "pathway": "Comprehensive Emergency Excellence",
+    "category": "MULT",
+    "title": "Untitled"
+  },
+  {
+    "caseId": "TRAU0001",
+    "isFoundational": "TRUE",
+    "complexity": 3,
+    "priority": 10,
+    "pathway": "ATLS Mastery",
+    "category": "TRAU",
+    "title": "Untitled"
+  },
+  {
+    "caseId": "TRAU0002",
+    "isFoundational": "TRUE",
+    "complexity": 3,
+    "priority": 10,
+    "pathway": "ATLS Mastery",
+    "category": "TRAU",
+    "title": "Untitled"
+  },
+  {
+    "caseId": "TRAU0003",
+    "isFoundational": "TRUE",
+    "complexity": 3,
+    "priority": 10,
+    "pathway": "ATLS Mastery",
+    "category": "TRAU",
+    "title": "Untitled"
+  },
+  {
+    "caseId": "TRAU0004",
+    "isFoundational": "TRUE",
+    "complexity": 3,
+    "priority": 10,
+    "pathway": "ATLS Mastery",
+    "category": "TRAU",
+    "title": "Untitled"
+  },
+  {
+    "caseId": "TRAU0005",
+    "isFoundational": "TRUE",
+    "complexity": 3,
+    "priority": 10,
+    "pathway": "ATLS Mastery",
+    "category": "TRAU",
+    "title": "Untitled"
+  },
+  {
+    "caseId": "TRAU0006",
+    "isFoundational": "TRUE",
+    "complexity": 3,
+    "priority": 9,
+    "pathway": "ATLS Mastery",
+    "category": "TRAU",
+    "title": "Untitled"
+  },
+  {
+    "caseId": "TRAU0007",
+    "isFoundational": "TRUE",
+    "complexity": 3,
+    "priority": 9,
+    "pathway": "ATLS Mastery",
+    "category": "TRAU",
+    "title": "Untitled"
+  },
+  {
+    "caseId": "TRAU0008",
+    "isFoundational": "TRUE",
+    "complexity": 3,
+    "priority": 9,
+    "pathway": "ATLS Mastery",
+    "category": "TRAU",
+    "title": "Untitled"
+  },
+  {
+    "caseId": "TRAU0009",
+    "isFoundational": "TRUE",
+    "complexity": 3,
+    "priority": 9,
+    "pathway": "ATLS Mastery",
+    "category": "TRAU",
+    "title": "Untitled"
+  },
+  {
+    "caseId": "TRAU0010",
+    "isFoundational": "TRUE",
+    "complexity": 3,
+    "priority": 9,
+    "pathway": "ATLS Mastery",
+    "category": "TRAU",
+    "title": "Untitled"
+  },
+  {
+    "caseId": "TRAU0011",
+    "isFoundational": "FALSE",
+    "complexity": 3,
+    "priority": 5,
+    "pathway": "Trauma Excellence",
+    "category": "TRAU",
+    "title": "Untitled"
+  },
+  {
+    "caseId": "TRAU0012",
+    "isFoundational": "FALSE",
+    "complexity": 3,
+    "priority": 5,
+    "pathway": "Trauma Excellence",
+    "category": "TRAU",
+    "title": "Untitled"
+  },
+  {
+    "caseId": "OBST0001",
+    "isFoundational": "FALSE",
+    "complexity": 5,
+    "priority": 9,
+    "pathway": "OB Emergency Foundations",
+    "category": "OBST",
+    "title": "Untitled"
+  },
+  {
+    "caseId": "PEDID01",
+    "isFoundational": "FALSE",
+    "complexity": 1,
+    "priority": 5,
+    "pathway": "Sepsis Excellence",
+    "category": "INFD",
+    "title": "Untitled"
+  },
+  {
+    "caseId": "PSYC0001",
+    "isFoundational": "TRUE",
+    "complexity": 2,
+    "priority": 8,
+    "pathway": "Behavioral Health Excellence",
+    "category": "PSYC",
+    "title": "Untitled"
+  },
+  {
+    "caseId": "MUSC0001",
+    "isFoundational": "TRUE",
+    "complexity": 3,
+    "priority": 9,
+    "pathway": "MSK Emergency Foundations",
+    "category": "MUSC",
+    "title": "Untitled"
+  }
+]

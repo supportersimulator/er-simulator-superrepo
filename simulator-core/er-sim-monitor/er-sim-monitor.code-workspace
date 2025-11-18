@@ -1,0 +1,27 @@
+{
+  "folders": [
+    {
+      "path": "."
+    }
+  ],
+  "settings": {
+    "python.defaultInterpreterPath": "${HOME}/.vscode_env/bin/python3",
+    "terminal.integrated.defaultProfile.osx": "zsh",
+    "editor.tabSize": 2,
+    "editor.formatOnSave": true,
+    "files.autoSave": "onWindowChange",
+    "workbench.startupEditor": "none",
+    "explorer.compactFolders": false,
+    "CodeGPT.apiKey": "CodeGPT Plus Beta"
+  },
+  "extensions": {
+    "recommendations": [
+      "ms-python.python",
+      "ms-toolsai.jupyter",
+      "ms-vscode.cpptools",
+      "ms-vscode.powershell",
+      "github.copilot",
+      "danielsanmedium.dscodegpt"
+    ]
+  }
+}

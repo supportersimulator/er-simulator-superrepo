@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visual Pathway Chain Builder Comparison</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #0a0e12;
+            color: #e0e0e0;
+            padding: 20px;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #1e2533 0%, #141824 100%);
+            padding: 30px;
+            border-radius: 12px;
+            margin-bottom: 30px;
+            border-left: 5px solid #2357ff;
+        }
+
+        .header h1 {
+            color: #2357ff;
+            margin-bottom: 10px;
+            font-size: 32px;
+        }
+
+        .header p {
+            color: #8b92a0;
+            font-size: 16px;
+        }
+
+        .comparison-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 40px;
+        }
+
+        .version-showcase {
+            background: #141824;
+            border-radius: 16px;
+            overflow: hidden;
+            border: 2px solid #2a3040;
+            transition: all 0.3s ease;
+        }
+
+        .version-showcase:hover {
+            border-color: #2357ff;
+            box-shadow: 0 8px 32px rgba(35, 87, 255, 0.3);
+        }
+
+        .version-header {
+            background: linear-gradient(135deg, #1e2533 0%, #181d28 100%);
+            padding: 24px 30px;
+            border-bottom: 2px solid #2a3040;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .version-number {
+            background: #2357ff;
+            color: white;
+            font-weight: bold;
+            font-size: 28px;
+            padding: 12px 24px;
+            border-radius: 12px;
+            min-width: 70px;
+            text-align: center;
+        }
+
+        .version-title {
+            flex: 1;
+            margin-left: 20px;
+        }
+
+        .version-title h2 {
+            color: #e7eaf0;
+            font-size: 22px;
+            margin-bottom: 6px;
+        }
+
+        .version-title .meta {
+            color: #8b92a0;
+            font-size: 13px;
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 6px 12px;
+            border-radius: 6px;
+            font-size: 12px;
+            font-weight: bold;
+            margin-left: 10px;
+        }
+
+        .badge.recommended {
+            background: #4CAF50;
+            color: white;
+        }
+
+        .badge.phase {
+            background: #2196F3;
+            color: white;
+        }
+
+        .badge.ui-only {
+            background: #FF9800;
+            color: white;
+        }
+
+        .screenshot-container {
+            padding: 30px;
+            background: #0f1115;
+        }
+
+        .screenshot {
+            background: linear-gradient(135deg, #1b1f2a 0%, #141824 100%);
+            border: 1px solid #2a3040;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        .screenshot h3 {
+            color: #2357ff;
+            font-size: 16px;
+            margin-bottom: 16px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #2a3040;
+        }
+
+        .screenshot-mockup {
+            background: #0a0e12;
+            border: 2px solid #2a3040;
+            border-radius: 10px;
+            padding: 20px;
+            font-family: 'Consolas', 'Monaco', monospace;
+            font-size: 13px;
+            line-height: 1.6;
+            color: #8b92a0;
+            min-height: 200px;
+        }
+
+        .ui-element {
+            background: #1e2533;
+            border: 1px solid #3a4458;
+            padding: 12px 16px;
+            border-radius: 8px;
+            margin: 8px 0;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .ui-element:hover {
+            background: #252b3a;
+            border-color: #2357ff;
+            transform: translateX(4px);
+        }
+
+        .ui-dropdown {
+            background: #0f1115;
+            border: 1px solid #2a3040;
+            padding: 10px 14px;
+            border-radius: 6px;
+            color: #e7eaf0;
+            margin: 6px 0;
+        }
+
+        .ui-button {
+            background: linear-gradient(135deg, #2357ff 0%, #1a47d9 100%);
+            border: none;
+            color: white;
+            padding: 12px 20px;
+            border-radius: 8px;
+            font-weight: 600;
+            cursor: pointer;
+            margin: 8px 0;
+            display: inline-block;
+        }
+
+        .ui-button:hover {
+            background: linear-gradient(135deg, #1a47d9 0%, #1538b8 100%);
+        }
+
+        .accordion-demo {
+            background: #1e2533;
+            border: 1px solid #2a3040;
+            padding: 14px 18px;
+            border-radius: 10px;
+            margin: 8px 0;
+            cursor: pointer;
+        }
+
+        .accordion-demo:hover {
+            background: #252b3a;
+        }
+
+        .card-grid-demo {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 12px;
+            margin: 10px 0;
+        }
+
+        .card-demo {
+            background: #141824;
+            border: 1px solid #2a3040;
+            padding: 12px;
+            border-radius: 8px;
+            font-size: 12px;
+        }
+
+        .feature-list {
+            background: #1e2533;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+
+        .feature-item {
+            padding: 8px 0;
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .feature-item.has {
+            color: #4CAF50;
+        }
+
+        .feature-item.missing {
+            color: #666;
+            text-decoration: line-through;
+        }
+
+        .feature-item::before {
+            font-size: 16px;
+        }
+
+        .feature-item.has::before {
+            content: '✓';
+        }
+
+        .feature-item.missing::before {
+            content: '✗';
+        }
+
+        .select-button {
+            width: 100%;
+            padding: 16px;
+            background: #2357ff;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            margin-top: 20px;
+            transition: all 0.3s;
+        }
+
+        .select-button:hover {
+            background: #1a47d9;
+            transform: scale(1.02);
+            box-shadow: 0 6px 20px rgba(35, 87, 255, 0.4);
+        }
+
+        .tab-demo {
+            background: #141824;
+            border: 1px solid #2a3040;
+            border-bottom: none;
+            color: #8b92a0;
+            padding: 12px 24px;
+            border-radius: 10px 10px 0 0;
+            display: inline-block;
+            margin-right: 4px;
+        }
+
+        .tab-demo.active {
+            background: linear-gradient(135deg, #0f1115 0%, #1a1d26 100%);
+            color: #2357ff;
+            border-color: #2a3040;
+        }
+
+        .comparison-note {
+            background: #1e2533;
+            border-left: 4px solid #2357ff;
+            padding: 16px 20px;
+            border-radius: 6px;
+            margin-top: 20px;
+            color: #8b92a0;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+        .light-theme-demo {
+            background: #f5f7fa;
+            color: #2c3e50;
+            border: 1px solid #dfe3e8;
+            padding: 12px 16px;
+            border-radius: 6px;
+            margin: 8px 0;
+        }
+
+        .sidebar-width {
+            max-width: 320px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>🧩 Visual Pathway Chain Builder Comparison</h1>
+        <p>See what each version looks like and select the one you want</p>
+    </div>
+
+    <div class="comparison-grid">
+        <!-- VERSION 1 -->
+        <div class="version-showcase">
+            <div class="version-header">
+                <div class="version-number">1</div>
+                <div class="version-title">
+                    <h2>
+                        Categories_Pathways_Feature.gs
+                        <span class="badge phase">Phase 1</span>
+                    </h2>
+                    <div class="meta">31 KB • Nov 4, 2025 • Modal Dialog (1920x1000)</div>
+                </div>
+            </div>
+
+            <div class="screenshot-container">
+                <div class="screenshot">
+                    <h3>🎨 Main Interface - AI-Powered Pathway Grouping</h3>
+                    <div class="screenshot-mockup">
+                        <div style="padding: 20px; background: linear-gradient(135deg, #1b1f2a 0%, #141824 100%); border-bottom: 2px solid #2a3040; margin: -20px -20px 20px -20px;">
+                            <div style="font-size: 24px; font-weight: 700; margin-bottom: 8px;">🧩 Categories & Pathways - AI-Powered Grouping Logic</div>
+                            <div style="font-size: 13px; color: #8b92a0;">Intelligent case organization using multiple pathway grouping strategies</div>
+                        </div>
+
+                        <div style="margin-bottom: 16px;">
+                            <div style="font-size: 11px; color: #8b92a0; margin-bottom: 6px; text-transform: uppercase;">🎯 Pathway Grouping Logic Type</div>
+                            <div class="ui-dropdown">System-Based (CARD, RESP, NEUR, GI, etc.) ▼</div>
+                        </div>
+
+                        <button class="ui-button">✨ Analyze & Generate Suggestions</button>
+
+                        <div style="margin-top: 24px;">
+                            <div class="accordion-demo">
+                                <div style="display: flex; justify-content: space-between; align-items: center;">
+                                    <div style="display: flex; align-items: center; gap: 12px;">
+                                        <span style="font-size: 20px;">❤️</span>
+                                        <span style="font-weight: 600;">Cardiovascular</span>
+                                        <span style="background: #0f1115; padding: 4px 10px; border-radius: 10px; font-size: 11px; color: #2357ff;">24 cases</span>
+                                    </div>
+                                    <span>▼</span>
+                                </div>
+                            </div>
+
+                            <div class="accordion-demo">
+                                <div style="display: flex; justify-content: space-between; align-items: center;">
+                                    <div style="display: flex; align-items: center; gap: 12px;">
+                                        <span style="font-size: 20px;">🫁</span>
+                                        <span style="font-weight: 600;">Respiratory</span>
+                                        <span style="background: #0f1115; padding: 4px 10px; border-radius: 10px; font-size: 11px; color: #2357ff;">18 cases</span>
+                                    </div>
+                                    <span>▼</span>
+                                </div>
+                            </div>
+
+                            <div class="accordion-demo">
+                                <div style="display: flex; justify-content: space-between; align-items: center;">
+                                    <div style="display: flex; align-items: center; gap: 12px;">
+                                        <span style="font-size: 20px;">🧠</span>
+                                        <span style="font-weight: 600;">Neurological</span>
+                                        <span style="background: #0f1115; padding: 4px 10px; border-radius: 10px; font-size: 11px; color: #2357ff;">15 cases</span>
+                                    </div>
+                                    <span>▼</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="screenshot">
+                    <h3>🔍 Key Features</h3>
+                    <div class="feature-list">
+                        <div class="feature-item has">6 built-in grouping logic types (System, Protocol, Specialty, etc.)</div>
+                        <div class="feature-item has">Accordion UI for collapsible category groups</div>
+                        <div class="feature-item has">AI-powered case grouping suggestions</div>
+                        <div class="feature-item has">Full modal dialog (1920x1000)</div>
+                        <div class="feature-item has">Dynamic logic type dropdown</div>
+                        <div class="feature-item missing">Dual-tab interface (Categories | Pathways)</div>
+                        <div class="feature-item missing">Chain builder workflow</div>
+                    </div>
+                </div>
+
+                <div class="comparison-note">
+                    <strong>What You Get:</strong> This is a full-featured pathway grouping panel with 6 different ways to organize cases (by medical system, by protocol like ACLS/PALS, by specialty, etc.). Uses accordion-style collapsible sections to show grouped cases. Great for analyzing case distribution patterns.
+                </div>
+
+                <button class="select-button" onclick="selectVersion(1)">SELECT VERSION 1</button>
+            </div>
+        </div>
+
+        <!-- VERSION 2 - Phase 2 -->
+        <div class="version-showcase" style="border-color: #4CAF50;">
+            <div class="version-header" style="background: linear-gradient(135deg, #1e3326 0%, #142619 100%);">
+                <div class="version-number" style="background: #4CAF50;">2</div>
+                <div class="version-title">
+                    <h2>
+                        Categories_Pathways_Feature_Phase2.gs
+                        <span class="badge recommended">RECOMMENDED</span>
+                        <span class="badge phase">Phase 2</span>
+                    </h2>
+                    <div class="meta">120 KB • Nov 5, 2025 • Most Comprehensive</div>
+                </div>
+            </div>
+
+            <div class="screenshot-container">
+                <div class="screenshot">
+                    <h3>🎨 Enhanced Interface - Full System</h3>
+                    <div class="screenshot-mockup">
+                        <div style="padding: 20px; background: linear-gradient(135deg, #1b1f2a 0%, #141824 100%); border-bottom: 2px solid #2a3040; margin: -20px -20px 20px -20px;">
+                            <div style="font-size: 24px; font-weight: 700; margin-bottom: 8px;">🧩 Pathway Chain Builder</div>
+                            <div style="display: flex; gap: 12px; margin-top: 12px;">
+                                <span style="background: #0f1115; border: 1px solid #2a3040; padding: 6px 12px; border-radius: 8px; font-size: 12px;">
+                                    <span style="color: #2357ff; font-weight: 700;">234</span> Total Cases
+                                </span>
+                                <span style="background: #0f1115; border: 1px solid #2a3040; padding: 6px 12px; border-radius: 8px; font-size: 12px;">
+                                    <span style="color: #2357ff; font-weight: 700;">12</span> Systems
+                                </span>
+                                <span style="background: #0f1115; border: 1px solid #2a3040; padding: 6px 12px; border-radius: 8px; font-size: 12px;">
+                                    <span style="color: #2357ff; font-weight: 700;">45</span> Opportunities
+                                </span>
+                            </div>
+                        </div>
+
+                        <div style="margin: 20px 0;">
+                            <div style="background: linear-gradient(135deg, #1e2533 0%, #181d28 100%); border: 1px solid #2a3040; border-left: 3px solid #2357ff; padding: 16px; border-radius: 8px; margin-bottom: 20px;">
+                                <div style="font-size: 14px; font-weight: 600; color: #2357ff; margin-bottom: 10px;">💡 AI-Suggested New Logic Types</div>
+                                <div style="font-size: 12px; color: #8b92a0; margin-bottom: 12px;">Based on patterns in your case data, these grouping logic types might be useful:</div>
+                                <div style="display: flex; gap: 8px; flex-wrap: wrap;">
+                                    <span style="background: #0f1115; border: 1px solid #2a3040; padding: 6px 12px; border-radius: 6px; font-size: 11px;">Age-Based Grouping</span>
+                                    <span style="background: #0f1115; border: 1px solid #2a3040; padding: 6px 12px; border-radius: 6px; font-size: 11px;">Acuity Levels (ESI)</span>
+                                    <span style="background: #0f1115; border: 1px solid #2a3040; padding: 6px 12px; border-radius: 6px; font-size: 11px;">Time-Sensitive Cases</span>
+                                </div>
+                            </div>
+
+                            <div class="card-grid-demo">
+                                <div class="card-demo">
+                                    <div style="margin-bottom: 8px; display: flex; justify-content: space-between;">
+                                        <span style="background: #0f1115; padding: 4px 8px; border-radius: 4px; font-weight: 700; color: #2357ff;">CARD0123</span>
+                                        <span style="color: #666;">Row 45</span>
+                                    </div>
+                                    <div style="font-size: 13px; margin-bottom: 6px;">Chest pain with ST elevation</div>
+                                    <div style="font-size: 10px; color: #666;">CARD • ACLS Pathway</div>
+                                </div>
+                                <div class="card-demo">
+                                    <div style="margin-bottom: 8px; display: flex; justify-content: space-between;">
+                                        <span style="background: #0f1115; padding: 4px 8px; border-radius: 4px; font-weight: 700; color: #2357ff;">CARD0124</span>
+                                        <span style="color: #666;">Row 46</span>
+                                    </div>
+                                    <div style="font-size: 13px; margin-bottom: 6px;">Atrial fibrillation with RVR</div>
+                                    <div style="font-size: 10px; color: #666;">CARD • ACLS Pathway</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="screenshot">
+                    <h3>🔍 Advanced Features</h3>
+                    <div class="feature-list">
+                        <div class="feature-item has">Full Categories System with AI analysis</div>
+                        <div class="feature-item has">Advanced Pathways with chain building</div>
+                        <div class="feature-item has">OpenAI Integration for smart grouping</div>
+                        <div class="feature-item has">Advanced Pathway Detection engine</div>
+                        <div class="feature-item has">Batch Processing support</div>
+                        <div class="feature-item has">Cache System for performance</div>
+                        <div class="feature-item has">Multi-Step Processing workflow</div>
+                        <div class="feature-item has">AI-powered logic type suggestions</div>
+                        <div class="feature-item has">Case cards with full metadata</div>
+                    </div>
+                </div>
+
+                <div class="comparison-note" style="border-left-color: #4CAF50; background: linear-gradient(135deg, #1e3326 0%, #142619 100%);">
+                    <strong>⭐ RECOMMENDED - Why This Version:</strong> This is the most complete and feature-rich version. Includes everything from Version 1 PLUS batch processing, cache system, multi-step workflows, and AI-powered suggestions. This is the production-ready version with all advanced features integrated. If you want the full pathway chain builder with all bells and whistles, this is it.
+                </div>
+
+                <button class="select-button" style="background: #4CAF50;" onclick="selectVersion(2)">✅ SELECT VERSION 2 (RECOMMENDED)</button>
+            </div>
+        </div>
+
+        <!-- VERSION 3 - Phase 3A -->
+        <div class="version-showcase">
+            <div class="version-header">
+                <div class="version-number">3</div>
+                <div class="version-title">
+                    <h2>
+                        Categories_Pathways_Feature_Phase3A.gs
+                        <span class="badge phase">Phase 3A</span>
+                        <span class="badge ui-only">Experimental</span>
+                    </h2>
+                    <div class="meta">12 KB • Nov 4, 2025 • Dual-Tab UI Prototype</div>
+                </div>
+            </div>
+
+            <div class="screenshot-container">
+                <div class="screenshot">
+                    <h3>🎨 Dual-Tab Interface (Categories | Pathways)</h3>
+                    <div class="screenshot-mockup">
+                        <div style="padding: 20px; background: linear-gradient(135deg, #1b1f2a 0%, #141824 100%); border-bottom: 2px solid #2a3040; margin: -20px -20px 20px -20px;">
+                            <div style="font-size: 24px; font-weight: 700; margin-bottom: 8px;">🧩 Pathway Chain Builder</div>
+                            <div style="margin-top: 16px;">
+                                <span class="tab-demo">📁 Categories</span>
+                                <span class="tab-demo active">🧩 Pathways</span>
+                            </div>
+                        </div>
+
+                        <div style="margin: 20px 0;">
+                            <div style="font-size: 16px; font-weight: 600; margin-bottom: 16px; color: #e7eaf0;">🧩 Suggested Pathways</div>
+
+                            <div style="background: linear-gradient(135deg, #1e2533 0%, #181d28 100%); border: 1px solid #2a3040; padding: 16px; border-radius: 10px; margin-bottom: 16px;">
+                                <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 10px;">
+                                    <span style="font-size: 28px;">💓</span>
+                                    <span style="font-size: 16px; font-weight: 600;">ACLS Cases</span>
+                                </div>
+                                <div style="font-size: 12px; color: #2357ff; font-weight: 600; margin-bottom: 10px;">18 cases • High Confidence</div>
+                                <div style="font-size: 12px; color: #8b92a0; margin-bottom: 12px;">Advanced Cardiac Life Support protocols</div>
+                                <button class="ui-button" style="width: 100%;">Build Chain →</button>
+                            </div>
+
+                            <div style="background: linear-gradient(135deg, #1e2533 0%, #181d28 100%); border: 1px solid #2a3040; padding: 16px; border-radius: 10px;">
+                                <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 10px;">
+                                    <span style="font-size: 28px;">🚑</span>
+                                    <span style="font-size: 16px; font-weight: 600;">Trauma Series</span>
+                                </div>
+                                <div style="font-size: 12px; color: #2357ff; font-weight: 600; margin-bottom: 10px;">24 cases • High Confidence</div>
+                                <div style="font-size: 12px; color: #8b92a0; margin-bottom: 12px;">ATLS trauma protocols</div>
+                                <button class="ui-button" style="width: 100%;">Build Chain →</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="screenshot">
+                    <h3>🔍 Experimental Features</h3>
+                    <div class="feature-list">
+                        <div class="feature-item has">Browser-style tab interface (Categories | Pathways)</div>
+                        <div class="feature-item has">Clean separation of organizational modes</div>
+                        <div class="feature-item has">Foundation for AI logic type discovery</div>
+                        <div class="feature-item has">Pathway cards with confidence scores</div>
+                        <div class="feature-item missing">Full backend integration (UI prototype only)</div>
+                        <div class="feature-item missing">Batch processing</div>
+                        <div class="feature-item missing">Cache system</div>
+                    </div>
+                </div>
+
+                <div class="comparison-note" style="border-left-color: #FF9800; background: linear-gradient(135deg, #332008 0%, #261805 100%);">
+                    <strong>⚠️ Experimental Warning:</strong> This is a UI prototype for the next-generation interface with browser-style tabs. It's only 12 KB because it's mostly just the UI shell - the backend functions aren't fully implemented. Use this ONLY if you want to test the dual-tab interface concept. For production use, stick with Version 2.
+                </div>
+
+                <button class="select-button" onclick="selectVersion(3)">SELECT VERSION 3 (Experimental)</button>
+            </div>
+        </div>
+
+        <!-- VERSION 4 - Sidebar Panel -->
+        <div class="version-showcase">
+            <div class="version-header">
+                <div class="version-number">4</div>
+                <div class="version-title">
+                    <h2>
+                        CategoriesPathwaysPanel.gs
+                        <span class="badge ui-only">UI Panel</span>
+                    </h2>
+                    <div class="meta">15 KB • Earlier • Dark Theme Sidebar</div>
+                </div>
+            </div>
+
+            <div class="screenshot-container sidebar-width" style="margin: 0 auto;">
+                <div class="screenshot">
+                    <h3>🎨 Sidebar Interface (Dark Theme)</h3>
+                    <div class="screenshot-mockup">
+                        <div style="padding: 16px; background: linear-gradient(135deg, #1b1f2a 0%, #141824 100%); border-bottom: 2px solid #2a3040; margin: -20px -20px 20px -20px;">
+                            <div style="font-size: 18px; font-weight: 600; margin-bottom: 6px;">📂 Categories & Pathways</div>
+                            <div style="font-size: 12px; color: #8b92a0;">Organize cases by medical systems and learning sequences</div>
+                        </div>
+
+                        <div style="background: #141824; padding: 12px; border-bottom: 1px solid #2a3040; margin: 0 -20px 16px -20px; display: flex; justify-content: space-around; gap: 12px;">
+                            <div style="text-align: center;">
+                                <div style="font-size: 22px; font-weight: 700; color: #2357ff;">234</div>
+                                <div style="font-size: 10px; color: #8b92a0; text-transform: uppercase;">Total Cases</div>
+                            </div>
+                            <div style="text-align: center;">
+                                <div style="font-size: 22px; font-weight: 700; color: #2357ff;">12</div>
+                                <div style="font-size: 10px; color: #8b92a0; text-transform: uppercase;">Categories</div>
+                            </div>
+                            <div style="text-align: center;">
+                                <div style="font-size: 22px; font-weight: 700; color: #2357ff;">45</div>
+                                <div style="font-size: 10px; color: #8b92a0; text-transform: uppercase;">Pathways</div>
+                            </div>
+                        </div>
+
+                        <div style="margin-bottom: 16px;">
+                            <div style="font-size: 13px; font-weight: 600; margin-bottom: 10px; padding-bottom: 6px; border-bottom: 1px solid #2a3040;">⚡ Quick Actions</div>
+                            <div class="ui-element">
+                                <div style="display: flex; align-items: center; gap: 10px;">
+                                    <span>📊</span>
+                                    <span style="font-size: 13px;">View All Categories</span>
+                                </div>
+                            </div>
+                            <div class="ui-element">
+                                <div style="display: flex; align-items: center; gap: 10px;">
+                                    <span>🧩</span>
+                                    <span style="font-size: 13px;">View All Pathways</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div style="font-size: 13px; font-weight: 600; margin-bottom: 10px; padding-bottom: 6px; border-bottom: 1px solid #2a3040;">📂 Medical System Categories</div>
+                            <div style="max-height: 150px; overflow-y: auto;">
+                                <div class="ui-element" style="display: flex; justify-content: space-between; padding: 10px 12px;">
+                                    <span style="font-size: 12px;">CARD - Cardiovascular</span>
+                                    <span style="font-size: 11px; background: #0f1115; padding: 2px 8px; border-radius: 10px;">24 cases</span>
+                                </div>
+                                <div class="ui-element" style="display: flex; justify-content: space-between; padding: 10px 12px;">
+                                    <span style="font-size: 12px;">RESP - Respiratory</span>
+                                    <span style="font-size: 11px; background: #0f1115; padding: 2px 8px; border-radius: 10px;">18 cases</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="screenshot">
+                    <h3>🔍 Sidebar Features</h3>
+                    <div class="feature-list">
+                        <div class="feature-item has">Compact sidebar UI (320px width)</div>
+                        <div class="feature-item has">Dark theme visual design</div>
+                        <div class="feature-item has">Quick action buttons</div>
+                        <div class="feature-item has">Category and pathway lists</div>
+                        <div class="feature-item has">Stats bar with case counts</div>
+                        <div class="feature-item missing">Full pathway chain builder</div>
+                        <div class="feature-item missing">AI-powered grouping</div>
+                        <div class="feature-item missing">Batch processing</div>
+                    </div>
+                </div>
+
+                <div class="comparison-note">
+                    <strong>Sidebar Component:</strong> This is a lightweight sidebar panel for quick access to categories and pathways. Good for browsing and navigating, but doesn't have the full chain builder workflow. Think of it as a navigation panel rather than a full feature. Better suited as a companion tool to a larger system.
+                </div>
+
+                <button class="select-button" onclick="selectVersion(4)">SELECT VERSION 4</button>
+            </div>
+        </div>
+
+        <!-- VERSION 5 - Light Theme Sidebar -->
+        <div class="version-showcase">
+            <div class="version-header">
+                <div class="version-number">5</div>
+                <div class="version-title">
+                    <h2>
+                        CategoriesPathwaysPanel_Light.gs
+                        <span class="badge ui-only">UI Panel (Light)</span>
+                    </h2>
+                    <div class="meta">10 KB • Earlier • Light Theme Sidebar</div>
+                </div>
+            </div>
+
+            <div class="screenshot-container sidebar-width" style="margin: 0 auto;">
+                <div class="screenshot">
+                    <h3>🎨 Sidebar Interface (Light Theme - Google Sheets Style)</h3>
+                    <div class="screenshot-mockup" style="background: #f5f7fa;">
+                        <div class="light-theme-demo" style="background: #fff; margin: -20px -20px 16px -20px; border-radius: 0;">
+                            <div style="font-size: 15px; font-weight: 600; margin-bottom: 4px; color: #2c3e50;">📂 Categories & Pathways</div>
+                            <div style="font-size: 11px; color: #7f8c9d;">Organize cases by system and learning path</div>
+                        </div>
+
+                        <div class="light-theme-demo" style="background: #fff; margin: 0 -20px 12px -20px; padding: 10px 16px; border: none; border-top: 1px solid #dfe3e8; border-bottom: 1px solid #dfe3e8; display: flex; justify-content: space-around;">
+                            <div style="text-align: center;">
+                                <div style="font-size: 18px; font-weight: 700; color: #3b7ddd;">234</div>
+                                <div style="font-size: 10px; color: #7f8c9d; text-transform: uppercase;">Cases</div>
+                            </div>
+                            <div style="text-align: center;">
+                                <div style="font-size: 18px; font-weight: 700; color: #3b7ddd;">12</div>
+                                <div style="font-size: 10px; color: #7f8c9d; text-transform: uppercase;">Categories</div>
+                            </div>
+                            <div style="text-align: center;">
+                                <div style="font-size: 18px; font-weight: 700; color: #3b7ddd;">45</div>
+                                <div style="font-size: 10px; color: #7f8c9d; text-transform: uppercase;">Pathways</div>
+                            </div>
+                        </div>
+
+                        <div style="margin-bottom: 14px;">
+                            <div style="font-size: 12px; font-weight: 600; margin-bottom: 8px; color: #2c3e50;">Quick Actions</div>
+                            <div class="light-theme-demo">
+                                <span style="font-size: 12px;">📊 View All Categories</span>
+                            </div>
+                            <div class="light-theme-demo">
+                                <span style="font-size: 12px;">🧩 View All Pathways</span>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div style="font-size: 12px; font-weight: 600; margin-bottom: 8px; color: #2c3e50;">Medical System Categories</div>
+                            <div class="light-theme-demo" style="background: #f8f9fa; display: flex; justify-content: space-between;">
+                                <span style="font-size: 12px;">CARD - Cardiovascular</span>
+                                <span style="font-size: 11px; background: #fff; padding: 2px 8px; border-radius: 10px; color: #7f8c9d;">24</span>
+                            </div>
+                            <div class="light-theme-demo" style="background: #f8f9fa; display: flex; justify-content: space-between;">
+                                <span style="font-size: 12px;">RESP - Respiratory</span>
+                                <span style="font-size: 11px; background: #fff; padding: 2px 8px; border-radius: 10px; color: #7f8c9d;">18</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="screenshot">
+                    <h3>🔍 Light Sidebar Features</h3>
+                    <div class="feature-list">
+                        <div class="feature-item has">Lightweight sidebar (320px)</div>
+                        <div class="feature-item has">Light theme (classic Google Sheets style)</div>
+                        <div class="feature-item has">Essential controls only</div>
+                        <div class="feature-item has">Clean, minimal design</div>
+                        <div class="feature-item has">Easy on the eyes for long sessions</div>
+                        <div class="feature-item missing">Full pathway chain builder</div>
+                        <div class="feature-item missing">AI-powered features</div>
+                        <div class="feature-item missing">Advanced grouping logic</div>
+                    </div>
+                </div>
+
+                <div class="comparison-note">
+                    <strong>Minimalist Sidebar:</strong> Same functionality as Version 4 but with a light theme that matches Google Sheets' default style. The most compact version at only 10 KB. Good for users who prefer light themes or want minimal visual distraction. Like Version 4, this is a navigation panel, not a full feature.
+                </div>
+
+                <button class="select-button" onclick="selectVersion(5)">SELECT VERSION 5</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="header" style="margin-top: 40px;">
+        <h2 style="font-size: 24px; margin-bottom: 16px;">📊 Quick Comparison Summary</h2>
+        <div style="color: #8b92a0; font-size: 14px; line-height: 1.8;">
+            <p><strong style="color: #2357ff;">Version 1:</strong> Full-featured AI pathway grouping panel with 6 logic types. Modal dialog. Good for analysis.</p>
+            <p><strong style="color: #4CAF50;">Version 2 (RECOMMENDED):</strong> Everything from V1 + batch processing + cache + multi-step workflows. Production-ready.</p>
+            <p><strong style="color: #FF9800;">Version 3:</strong> Experimental dual-tab UI prototype. Browser-style tabs. UI shell only (12 KB).</p>
+            <p><strong style="color: #888;">Version 4:</strong> Dark theme sidebar panel. Navigation-focused. No full chain builder.</p>
+            <p><strong style="color: #888;">Version 5:</strong> Light theme sidebar panel. Minimal design. Navigation only.</p>
+        </div>
+    </div>
+
+    <script>
+        function selectVersion(versionNumber) {
+            const versions = {
+                1: 'Categories_Pathways_Feature.gs (Phase 1)',
+                2: 'Categories_Pathways_Feature_Phase2.gs (Phase 2) - RECOMMENDED',
+                3: 'Categories_Pathways_Feature_Phase3A.gs (Phase 3A - Experimental)',
+                4: 'CategoriesPathwaysPanel.gs (UI Panel)',
+                5: 'CategoriesPathwaysPanel_Light.gs (UI Panel - Light)'
+            };
+
+            alert(`✅ You selected Version ${versionNumber}:\n\n${versions[versionNumber]}\n\nNow tell Claude: "I want Version ${versionNumber}"`);
+        }
+    </script>
+</body>
+</html>

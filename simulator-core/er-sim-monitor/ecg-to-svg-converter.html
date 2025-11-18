@@ -1,0 +1,3243 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ECG Image → Green SVG Converter</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 20px;
+      background: #000;
+      font-family: monospace;
+      color: #0f0;
+    }
+    .container {
+      max-width: 1600px;
+      margin: 0 auto;
+    }
+    h1 {
+      text-align: center;
+      color: #0f0;
+      margin-bottom: 10px;
+    }
+    .subtitle {
+      text-align: center;
+      color: #ff0;
+      margin-bottom: 30px;
+      font-size: 14px;
+    }
+    .step {
+      background: #1a1a1a;
+      padding: 20px;
+      margin: 20px 0;
+      border-left: 4px solid #0f0;
+      border-radius: 8px;
+    }
+    .step h2 {
+      color: #ff0;
+      margin-top: 0;
+    }
+    .controls {
+      text-align: center;
+      margin: 20px 0;
+    }
+    button {
+      background: #0f0;
+      color: #000;
+      border: none;
+      padding: 15px 30px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      border-radius: 5px;
+      margin: 5px;
+    }
+    button:hover {
+      background: #0c0;
+    }
+    button:disabled {
+      background: #555;
+      cursor: not-allowed;
+    }
+    input[type="file"] {
+      color: #0f0;
+      background: #333;
+      padding: 12px;
+      border: 2px solid #0f0;
+      border-radius: 5px;
+      font-size: 14px;
+      cursor: pointer;
+    }
+    input[type="number"] {
+      background: #333;
+      color: #0f0;
+      border: 2px solid #0f0;
+      padding: 8px;
+      border-radius: 5px;
+      font-size: 14px;
+      width: 80px;
+    }
+    canvas {
+      background: #000;
+      display: block;
+      margin: 15px auto;
+      border: 2px solid #333;
+    }
+    .output {
+      background: #000;
+      padding: 15px;
+      border-radius: 8px;
+      margin-top: 15px;
+      max-height: 400px;
+      overflow-y: auto;
+      font-family: 'Courier New', monospace;
+      font-size: 11px;
+      color: #0f0;
+      border: 1px solid #0f0;
+    }
+    .info {
+      color: #ccc;
+      margin: 10px 0;
+      line-height: 1.6;
+    }
+    .stats {
+      color: #0ff;
+      text-align: center;
+      margin: 15px 0;
+      font-weight: bold;
+    }
+    label {
+      color: #ff0;
+      margin-right: 10px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>🎨 ECG Image → Green SVG Converter</h1>
+    <div class="subtitle">Extract black waveform line → Convert to green SVG → Ready for React Native</div>
+
+    <!-- Waveform Progress Bulletin Board -->
+    <div class="step" style="background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); border: 3px solid #ffa500; box-shadow: 0 8px 16px rgba(255,165,0,0.3);">
+      <h2 style="color: #ffa500; text-shadow: 0 0 10px rgba(255,165,0,0.5);">📋 ECG Waveform Library Progress</h2>
+      <div style="display: flex; justify-content: space-between; margin-bottom: 15px; padding: 15px; background: rgba(0,0,0,0.3); border-radius: 8px;">
+        <div style="text-align: center;">
+          <div style="font-size: 32px; color: #0f0; font-weight: bold;" id="completedCount">0</div>
+          <div style="color: #888; font-size: 12px;">COMPLETED</div>
+        </div>
+        <div style="text-align: center;">
+          <div style="font-size: 32px; color: #ff0; font-weight: bold;" id="remainingCount">67</div>
+          <div style="color: #888; font-size: 12px;">REMAINING</div>
+        </div>
+        <div style="text-align: center;">
+          <div style="font-size: 32px; color: #888; font-weight: bold;">67</div>
+          <div style="color: #888; font-size: 12px;">TOTAL</div>
+        </div>
+        <div style="text-align: center;">
+          <div style="font-size: 32px; color: #0ff; font-weight: bold;" id="progressPercent">0%</div>
+          <div style="color: #888; font-size: 12px;">PROGRESS</div>
+        </div>
+      </div>
+
+      <div style="margin-bottom: 10px; display: flex; gap: 10px; align-items: center; flex-wrap: wrap;">
+        <!-- Server Status Indicator -->
+        <div id="serverStatus" style="padding: 8px 16px; background: #555; color: #fff; border-radius: 4px; font-weight: bold; border: 2px solid #777;">
+          🔄 Checking server...
+        </div>
+        <button onclick="refreshBulletinBoard()" style="padding: 8px 16px; background: #ffa500; color: #000; border: none; border-radius: 4px; cursor: pointer; font-weight: bold;">
+          🔄 Refresh Status
+        </button>
+        <div id="currentWorkingDisplay" style="color: #ffa500; font-size: 14px; font-weight: bold;"></div>
+      </div>
+
+      <div id="rWaveInfo" style="display: none; margin-bottom: 10px; padding: 12px; background: rgba(255, 165, 0, 0.1); border: 2px solid #ffa500; border-radius: 8px;">
+        <div style="color: #ffa500; font-weight: bold; margin-bottom: 8px;">🔊 Detected R-Wave Positions (for beep timing)</div>
+        <div id="rWavePositions" style="font-family: monospace; color: #0f0; font-size: 12px; margin-bottom: 8px;"></div>
+        <div style="color: #888; font-size: 11px;">These positions will be automatically saved with your waveform</div>
+      </div>
+
+      <div id="bulletinBoard" style="max-height: 400px; overflow-y: auto; background: rgba(0,0,0,0.5); padding: 15px; border-radius: 8px; border: 2px solid #333;">
+        <div style="color: #888; text-align: center; padding: 20px;">
+          Click "🔄 Refresh Status" to load waveform completion status...
+        </div>
+      </div>
+    </div>
+
+    <div class="step">
+      <h2>Step 1: Upload ECG Stripe Image</h2>
+      <div class="info">Upload any ECG image (pink grid, white background, etc.) with a black waveform line</div>
+      <div class="controls">
+        <input type="file" id="imageUpload" accept="image/*">
+        <button id="reloadLastECG" onclick="reloadCachedECG()" style="margin-left: 15px; padding: 8px 16px; background: #08f; color: #fff; border: 2px solid #0af; border-radius: 4px; cursor: pointer; display: none;">
+          🔄 Reload Last ECG
+        </button>
+        <span id="lastECGName" style="color: #888; font-size: 12px; margin-left: 10px;"></span>
+      </div>
+      <canvas id="sourceCanvas"></canvas>
+    </div>
+
+    <div class="step">
+      <h2>Step 2: Extract Black Line</h2>
+      <div class="info">Automatically finds and traces the black waveform centerline</div>
+      <div class="controls">
+        <label>Threshold:</label>
+        <input type="number" id="threshold" value="100" min="0" max="255">
+        <span style="color: #ccc; margin-left: 10px;">(lower = darker pixels only)</span>
+        <br><br>
+        <button id="extractBtn" onclick="extractLine()" disabled>Extract Black Line</button>
+      </div>
+      <div class="stats" id="extractStats"></div>
+      <div style="text-align: right; margin-bottom: 5px;">
+        <button id="undoExtractBtn" onclick="undoExtract()" disabled style="padding: 4px 12px; font-size: 11px; background: #f80; color: #000;">
+          ↶ Undo Extract
+        </button>
+      </div>
+      <canvas id="extractedCanvas" width="1200" height="200"></canvas>
+    </div>
+
+    <div class="step">
+      <h2>Step 3: Convert to Green SVG</h2>
+      <div class="info">Converts to vector SVG path with customizable line width</div>
+      <div class="controls">
+        <label>Line Width (stroke):</label>
+        <input type="number" id="lineWidth" value="2" min="0.5" max="10" step="0.1">
+        <span style="color: #ccc; margin-left: 10px;">px</span>
+        <button onclick="convertToSVG()">Update Preview</button>
+        <br><br>
+        <label>Smoothing:</label>
+        <input type="range" id="smoothing" value="0" min="0" max="10" step="1">
+        <span id="smoothingValue" style="color: #ccc; margin-left: 10px;">0 (none)</span>
+        <br><br>
+        <button id="convertBtn" onclick="convertToSVG()" disabled>Convert to Green SVG</button>
+      </div>
+      <div class="stats" id="svgStats"></div>
+      <div style="text-align: right; margin-bottom: 5px;">
+        <button id="undoSVGBtn" onclick="undoSVG()" disabled style="padding: 4px 12px; font-size: 11px; background: #f80; color: #000;">
+          ↶ Undo SVG Conversion
+        </button>
+      </div>
+      <canvas id="svgCanvas" width="1200" height="200"></canvas>
+    </div>
+
+    <div class="step" style="border-left-color: #ff0;">
+      <h2>Step 3.5: Crop Region Selector 📐</h2>
+      <div class="info" style="color: #ff0;">
+        <strong>REQUIRED:</strong> Set monitor dimensions, then slide the FIXED-WIDTH crop window to select your waveform segment.
+      </div>
+      <div class="controls">
+        <label style="color: #0ff;">Monitor Width:</label>
+        <input type="number" id="monitorWidth" value="1000" min="100" max="5000" step="50">
+        <span style="color: #ccc; margin-left: 10px;">px</span>
+        <span style="color: #888; margin-left: 15px;">|</span>
+        <label style="color: #0ff; margin-left: 15px;">Monitor Height:</label>
+        <input type="number" id="monitorHeight" value="60" min="20" max="300" step="5">
+        <span style="color: #ccc; margin-left: 10px;">px (EKG waveform area)</span>
+        <br>
+        <span style="color: #888; font-size: 11px; margin-left: 20px;">
+          Sets the exact dimensions of your monitor's waveform display area — brackets will match this size
+        </span>
+        <br><br>
+        <label>Slide Crop Window:</label>
+        <input type="range" id="cropPosition" value="0" min="0" max="100" step="0.5">
+        <span id="cropPositionValue" style="color: #ccc; margin-left: 10px;">0% (left edge)</span>
+        <br>
+        <span style="color: #888; font-size: 11px; margin-left: 20px;">
+          Moves the fixed-width crop window left ← or right → across the waveform
+        </span>
+        <br><br>
+        <label style="color: #0ff;">Output SVG Width:</label>
+        <input type="number" id="svgWidth" value="1000" min="100" max="5000" step="50">
+        <span style="color: #ccc; margin-left: 10px;">px (viewBox width, matches monitor)</span>
+        <br>
+        <span style="color: #888; font-size: 11px; margin-left: 20px;">
+          Higher = more detail. Should match Monitor Width for 1:1 scaling.
+        </span>
+      </div>
+      <div class="stats" id="cropStats"></div>
+      <div style="text-align: right; margin-bottom: 5px;">
+        <button id="undoCropBtn" onclick="undoCrop()" disabled style="padding: 4px 12px; font-size: 11px; background: #f80; color: #000;">
+          ↶ Undo Crop
+        </button>
+      </div>
+      <div style="background: #000; padding: 20px; border-radius: 8px; margin-top: 15px;">
+        <canvas id="cropCanvas" width="1400" height="300"></canvas>
+      </div>
+    </div>
+
+    <div class="step" style="border-left-color: #0ff;">
+      <h2>Step 3.75: Final Baseline Adjustment (Real-Time) 🎚️</h2>
+      <div class="info" style="color: #0ff;">
+        Fine-tune the cropped waveform by stretching or compressing the baseline. See changes instantly in the preview below.
+      </div>
+      <div class="controls">
+        <label style="color: #ff0;">💓 Cardiac Cycle Density Control:</label>
+        <input type="range" id="baselineSegments" value="0" min="-200" max="400" step="5">
+        <span id="baselineSegmentsValue" style="color: #ccc; margin-left: 10px;">0 pixels (no change)</span>
+        <br>
+        <span style="color: #888; font-size: 11px; margin-left: 20px;">
+          <strong style="color: #0f0;">Positive (+)</strong>: Spread cycles apart (fewer cycles in view) |
+          <strong style="color: #f00;">Negative (−)</strong>: Compress cycles together (more cycles in view)
+        </span>
+        <br>
+        <span style="color: #888; font-size: 11px; margin-left: 20px;">
+          ⚡ Adds/removes pixels EQUALLY across ALL baseline regions — uniform spacing, QRS/P/T waves perfectly preserved!
+        </span>
+        <br>
+        <span style="color: #888; font-size: 11px; margin-left: 20px;">
+          🎯 Control how many cardiac cycles fit within your bracket view — waveform extends beyond borders as needed
+        </span>
+        <br>
+        <span style="color: #888; font-size: 11px; margin-left: 20px;">
+          🔒 Click FINALIZE to lock in adjustment, then make additional adjustments if needed
+        </span>
+      </div>
+      <div class="stats" id="finalStats"></div>
+      <div style="text-align: right; margin-bottom: 5px;">
+        <button id="undoBaselineBtn" onclick="undoBaseline()" disabled style="padding: 4px 12px; font-size: 11px; background: #f80; color: #000;">
+          ↶ Undo Baseline Adjustment
+        </button>
+      </div>
+      <div style="background: #000; padding: 20px; border-radius: 8px; margin-top: 15px; text-align: center;">
+        <div style="color: #0ff; font-weight: bold; margin-bottom: 10px;">LIVE PREVIEW: Final Output (Monitor View)</div>
+        <canvas id="finalCanvas" width="1000" height="60" style="border: 2px solid #0ff;"></canvas>
+        <div style="color: #888; font-size: 11px; margin-top: 10px;">This is exactly how the waveform will appear on your monitor</div>
+      </div>
+    </div>
+
+    <div class="step" style="border-left-color: #ff0080;">
+      <h2>Step 3.9: R-Wave Detection & Verification 🔊</h2>
+      <div class="info" style="color: #ff0080;">
+        Detect R-wave peaks for audio beep synchronization. Verify visually and adjust sensitivity as needed.
+      </div>
+      <div class="controls">
+        <button id="detectRWavesBtn" onclick="detectAndShowRWaves()" disabled style="background: #ff0080; color: #000; font-weight: bold; font-size: 16px; padding: 12px 24px;">
+          🔍 DETECT R-WAVES
+        </button>
+        <span id="rWaveStatus" style="color: #888; margin-left: 15px; font-size: 12px;"></span>
+      </div>
+
+      <div id="rWaveControls" style="display: none; margin-top: 20px; padding: 20px; background: rgba(255, 0, 128, 0.1); border: 2px solid #ff0080; border-radius: 8px;">
+        <div style="margin-bottom: 20px;">
+          <label style="color: #ff0080; font-weight: bold;">Detection Sensitivity:</label>
+          <input type="range" id="rWaveSensitivity" min="0.5" max="3.0" step="0.1" value="1.5" style="width: 300px; vertical-align: middle; margin: 0 10px;">
+          <span id="sensitivityValue" style="color: #0f0; font-weight: bold;">1.5</span>
+          <span style="color: #888; font-size: 11px;"> (std deviations above mean)</span>
+          <br>
+          <span style="color: #888; font-size: 11px; margin-left: 20px;">
+            Lower = more sensitive (detects more peaks) | Higher = less sensitive (only strong peaks)
+          </span>
+        </div>
+
+        <div style="background: #000; padding: 15px; border-radius: 8px; margin-bottom: 15px;">
+          <div style="color: #ff0080; font-weight: bold; margin-bottom: 10px;">
+            Detected R-Waves: <span id="rWaveCount" style="color: #0f0; font-size: 20px;">0</span>
+          </div>
+          <div style="text-align: right; margin-bottom: 5px;">
+            <button id="undoRWaveBtn" onclick="undoRWave()" disabled style="padding: 4px 12px; font-size: 11px; background: #f80; color: #000;">
+              ↶ Undo R-Wave Detection
+            </button>
+          </div>
+          <canvas id="rWaveCanvas" width="1000" height="60" style="border: 2px solid #ff0080;"></canvas>
+          <div style="color: #888; font-size: 11px; margin-top: 10px;">
+            🔴 Red markers = detected R-wave peaks | Click on canvas to manually add/remove peaks
+          </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 20px;">
+          <button onclick="manualRWaveMode()" style="background: #f80; color: #000; padding: 10px 20px; margin: 0 5px;">
+            ✏️ Manual Adjust Mode
+          </button>
+          <button onclick="saveRWavePositions()" style="background: #0f0; color: #000; font-weight: bold; padding: 12px 24px; font-size: 16px; margin: 0 5px;">
+            ✅ SAVE R-WAVE POSITIONS
+          </button>
+          <button onclick="clearRWaves()" style="background: #f00; color: #fff; padding: 10px 20px; margin: 0 5px;">
+            🗑️ Clear All
+          </button>
+        </div>
+
+        <div id="rWavePositionsList" style="margin-top: 15px; padding: 10px; background: rgba(0,0,0,0.5); border-radius: 4px; font-family: monospace; color: #0f0; font-size: 11px;">
+        </div>
+      </div>
+    </div>
+
+    <div class="step">
+      <h2>Step 4: Download & Export</h2>
+      <div class="info">Ready-to-use SVG file and React Native code</div>
+      <div class="controls">
+        <label style="color: #ff0; font-weight: bold;">🏷️ Waveform Name (Internal System):</label>
+        <br>
+        <input type="text" id="waveformNameInput" placeholder="Auto-detected from filename..." style="width: 300px; padding: 8px; margin: 10px 0; font-size: 14px; background: #222; color: #0f0; border: 2px solid #0f0; border-radius: 4px;">
+        <br>
+        <span style="color: #888; font-size: 11px;">
+          💡 Auto-detects from filename (e.g., "afib" → afib_ecg) or type custom name
+          <br>
+          📋 Valid names: sinus_ecg, afib_ecg, vtach_ecg, vfib_ecg, asystole_ecg, etc.
+        </span>
+        <br><br>
+        <button id="saveToProjectBtn" onclick="saveToProjectFolder()" disabled style="background: #0af; color: #000; font-weight: bold; font-size: 16px; padding: 12px 24px; border: 3px solid #0ff;">
+          📁 SAVE TO PROJECT FOLDER (SVG + PNG)
+        </button>
+        <br>
+        <span style="color: #0ff; font-size: 11px;">↑ Saves to production folders with internal naming - Start server: npm run ecg-save-server</span>
+        <br><br>
+        <hr style="border-color: #333; margin: 20px 0;">
+        <span style="color: #888; font-size: 12px;">Alternative: Download to browser's download folder ↓</span>
+        <br><br>
+        <button id="autoSaveBtn" onclick="autoSaveDualFormats()" disabled style="background: #0f0; color: #000; font-weight: bold;">💾 DOWNLOAD: SVG + PNG (Local Backup)</button>
+        <span style="color: #888; font-size: 11px; margin-left: 15px;">Downloads to your browser's Downloads folder</span>
+      </div>
+      <div class="output" id="output">Upload an image to start...</div>
+    </div>
+
+    <div class="step" style="border-left-color: #ff0;">
+      <h2>📦 Export for Claude (Fine-Tuning)</h2>
+      <div class="info">
+        This exports everything Claude needs to fine-tune the waveform:<br>
+        • Original image data (base64)<br>
+        • Extracted coordinates<br>
+        • Current SVG settings<br>
+        • Preview canvas state<br>
+        <br>
+        Paste this data in your message to Claude and he can adjust width, smoothing, etc.
+      </div>
+      <div class="output" id="claudeExport" style="display: none;"></div>
+    </div>
+  </div>
+
+  <script>
+    let imageData = null;
+    let extractedPoints = [];
+    let processedPoints = []; // Points after smoothing (before crop)
+    let croppedPointsBeforeBaseline = []; // Cropped + auto-fitted points (before baseline adjustment)
+    let svgPath = '';
+    let fileName = 'waveform';
+    let originalImageBase64 = '';
+
+    // 🔄 UNDO HISTORY STACKS (for each major step)
+    let extractHistory = []; // History of extracted points
+    let svgHistory = []; // History of SVG conversions (with smoothing)
+    let cropHistory = []; // History of crop positions/settings
+    let baselineHistory = []; // History of baseline adjustments
+    let rWaveHistory = []; // History of R-wave detections
+    let cropWindowPosition = 0; // 0-100%, position of fixed-width crop window
+    let waveformPanOffset = 0; // Pixels to pan the waveform left/right
+    let isDraggingBracket = false;
+    let isDraggingWaveform = false;
+    let dragStartX = 0;
+    let dragStartPosition = 0;
+    let dragStartPanOffset = 0;
+
+    // === LOOPING/MERGING SYSTEM ===
+    let loopConnectionIndex = 0; // Which baseline segment to connect to (0 = first baseline after first QRS)
+    let availableBaselineConnections = []; // Array of {index, description} for connection points
+    let isMerged = false; // Whether user has accepted and merged the loop
+    let mergedWaveform = []; // Combined original + looped portion after merge
+    let stitchLinePosition = null; // {x, y1, y2} for drawing red stitch line with buttons
+    let currentDisplayedWaveform = []; // The current cropped/adjusted waveform being displayed
+
+    // Update smoothing value display
+    document.getElementById('smoothing').addEventListener('input', function(e) {
+      const val = e.target.value;
+      document.getElementById('smoothingValue').textContent = val + (val === '0' ? ' (none)' : ' points');
+      convertToSVG();
+    });
+
+    // Update baseline segments value display (bidirectional) with real-time preview
+    document.getElementById('baselineSegments').addEventListener('input', function(e) {
+      const val = parseInt(e.target.value);
+      let displayText;
+      if (val === 0) {
+        displayText = '0 pixels (no change)';
+      } else if (val > 0) {
+        displayText = `+${val} pixels (lengthen EKG)`;
+      } else {
+        displayText = `${val} pixels (shorten EKG)`;
+      }
+      document.getElementById('baselineSegmentsValue').textContent = displayText;
+      updateFinalPreview(); // Real-time preview instead of full regeneration
+    });
+
+    // Finalize baseline button removed - save button now uses preview data directly
+
+    // Update crop window position
+    document.getElementById('cropPosition').addEventListener('input', function(e) {
+      const val = parseFloat(e.target.value);
+      cropWindowPosition = val;
+      const positionDesc = val === 0 ? '(left edge)' : val === 100 ? '(right edge)' : '';
+      document.getElementById('cropPositionValue').textContent = val.toFixed(1) + '% ' + positionDesc;
+      updateCropPreview();
+    });
+
+    // Update monitor dimensions
+    document.getElementById('monitorWidth').addEventListener('input', function(e) {
+      // Auto-sync SVG width to match monitor width for 1:1 scaling
+      document.getElementById('svgWidth').value = e.target.value;
+      updateCropPreview();
+    });
+
+    document.getElementById('monitorHeight').addEventListener('input', function(e) {
+      updateCropPreview();
+    });
+
+    document.getElementById('svgWidth').addEventListener('input', function(e) {
+      updateCropPreview();
+    });
+
+    // R-wave sensitivity slider - real-time detection
+    document.getElementById('rWaveSensitivity').addEventListener('input', function(e) {
+      const sensitivity = e.target.value;
+      document.getElementById('sensitivityValue').textContent = sensitivity;
+
+      // Re-run detection with new sensitivity
+      runRWaveDetection();
+    });
+
+    // R-wave canvas click handler - manual add/remove
+    document.getElementById('rWaveCanvas').addEventListener('click', function(e) {
+      if (!manualAdjustMode) {
+        alert('⚠️ Enable manual adjust mode first by clicking "✏️ Manual Adjust Mode"');
+        return;
+      }
+
+      const rect = this.getBoundingClientRect();
+      const clickX = e.clientX - rect.left;
+      // CRITICAL: Use VISIBLE points for manual adjustments
+      const visiblePoints = window.lastVisiblePoints || [];
+
+      if (visiblePoints.length === 0) return;
+
+      // Convert click position to normalized position (0.0 - 1.0)
+      const position = clickX / this.width;
+
+      // Check if clicking near an existing marker (within 2%)
+      const threshold = 0.02;
+      const nearbyIndex = rWaveMarkers.findIndex(p => Math.abs(p - position) < threshold);
+
+      if (nearbyIndex >= 0) {
+        // Remove marker
+        rWaveMarkers.splice(nearbyIndex, 1);
+      } else {
+        // Add new marker
+        rWaveMarkers.push(position);
+        rWaveMarkers.sort((a, b) => a - b);
+      }
+
+      // Update UI
+      updateRWaveCount();
+      drawRWaveCanvas();
+      updateRWavePositionsList();
+    });
+
+    // Add drag-and-drop functionality to crop canvas
+    const cropCanvas = document.getElementById('cropCanvas');
+
+    cropCanvas.addEventListener('mousedown', function(e) {
+      const rect = cropCanvas.getBoundingClientRect();
+      const mouseX = e.clientX - rect.left;
+      const mouseY = e.clientY - rect.top;
+
+      // === CHECK FOR BUTTON CLICKS FIRST ===
+      // Check "Next Baseline" button
+      if (window.nextBaselineButton) {
+        const btn = window.nextBaselineButton;
+        if (mouseX >= btn.x && mouseX <= btn.x + btn.width &&
+            mouseY >= btn.y && mouseY <= btn.y + btn.height) {
+          nextBaselineConnection();
+          e.preventDefault();
+          return;
+        }
+      }
+
+      // Check "Accept & Merge" button
+      if (window.acceptMergeButton) {
+        const btn = window.acceptMergeButton;
+        if (mouseX >= btn.x && mouseX <= btn.x + btn.width &&
+            mouseY >= btn.y && mouseY <= btn.y + btn.height) {
+          acceptAndMergeLoop();
+          e.preventDefault();
+          return;
+        }
+      }
+
+      // Shift+Click = Pan waveform
+      if (e.shiftKey) {
+        isDraggingWaveform = true;
+        dragStartX = mouseX;
+        dragStartPanOffset = waveformPanOffset;
+        cropCanvas.style.cursor = 'grabbing';
+        e.preventDefault();
+        return;
+      }
+
+      // Regular click on bracket = Move bracket
+      if (window.lastBracketBounds) {
+        const { x, y, width, height } = window.lastBracketBounds;
+        if (mouseX >= x && mouseX <= x + width && mouseY >= y && mouseY <= y + height) {
+          isDraggingBracket = true;
+          dragStartX = mouseX;
+          dragStartPosition = cropWindowPosition;
+          cropCanvas.style.cursor = 'grabbing';
+          e.preventDefault();
+        }
+      }
+    });
+
+    cropCanvas.addEventListener('mousemove', function(e) {
+      const rect = cropCanvas.getBoundingClientRect();
+      const mouseX = e.clientX - rect.left;
+      const mouseY = e.clientY - rect.top;
+
+      if (isDraggingWaveform) {
+        // Pan waveform left/right
+        const deltaX = mouseX - dragStartX;
+        waveformPanOffset = dragStartPanOffset + deltaX;
+        updateCropPreview();
+        e.preventDefault();
+      } else if (isDraggingBracket) {
+        // Calculate bracket position change
+        const deltaX = mouseX - dragStartX;
+        const editAreaPadding = 60;
+        const editAreaWidth = cropCanvas.width - (editAreaPadding * 2);
+
+        // Assuming bracket covers 40% of editing area (from updateCropPreview)
+        const bracketWidthPercent = 0.4;
+        const maxSlideDistance = editAreaWidth * (1 - bracketWidthPercent);
+
+        // Convert pixel delta to percentage
+        const deltaPercent = (deltaX / maxSlideDistance) * 100;
+        const newPosition = Math.max(0, Math.min(100, dragStartPosition + deltaPercent));
+
+        cropWindowPosition = newPosition;
+        document.getElementById('cropPosition').value = newPosition;
+        const positionDesc = newPosition === 0 ? '(left edge)' : newPosition === 100 ? '(right edge)' : '';
+        document.getElementById('cropPositionValue').textContent = newPosition.toFixed(1) + '% ' + positionDesc;
+
+        updateCropPreview();
+        e.preventDefault();
+      } else {
+        // Update cursor based on hover state
+        let isOverButton = false;
+
+        // Check if hovering over "Next Baseline" button
+        if (window.nextBaselineButton) {
+          const btn = window.nextBaselineButton;
+          if (mouseX >= btn.x && mouseX <= btn.x + btn.width &&
+              mouseY >= btn.y && mouseY <= btn.y + btn.height) {
+            cropCanvas.style.cursor = 'pointer';
+            isOverButton = true;
+          }
+        }
+
+        // Check if hovering over "Accept & Merge" button
+        if (!isOverButton && window.acceptMergeButton) {
+          const btn = window.acceptMergeButton;
+          if (mouseX >= btn.x && mouseX <= btn.x + btn.width &&
+              mouseY >= btn.y && mouseY <= btn.y + btn.height) {
+            cropCanvas.style.cursor = 'pointer';
+            isOverButton = true;
+          }
+        }
+
+        if (!isOverButton) {
+          if (e.shiftKey) {
+            cropCanvas.style.cursor = 'move'; // Show pan cursor when Shift held
+          } else if (window.lastBracketBounds) {
+            const { x, y, width, height } = window.lastBracketBounds;
+            if (mouseX >= x && mouseX <= x + width && mouseY >= y && mouseY <= y + height) {
+              cropCanvas.style.cursor = 'grab';
+            } else {
+              cropCanvas.style.cursor = 'default';
+            }
+          }
+        }
+      }
+    });
+
+    cropCanvas.addEventListener('mouseup', function(e) {
+      if (isDraggingBracket) {
+        isDraggingBracket = false;
+        cropCanvas.style.cursor = 'grab';
+      }
+      if (isDraggingWaveform) {
+        isDraggingWaveform = false;
+        cropCanvas.style.cursor = 'move';
+      }
+    });
+
+    cropCanvas.addEventListener('mouseleave', function(e) {
+      if (isDraggingBracket) {
+        isDraggingBracket = false;
+        cropCanvas.style.cursor = 'default';
+      }
+      if (isDraggingWaveform) {
+        isDraggingWaveform = false;
+        cropCanvas.style.cursor = 'default';
+      }
+    });
+
+    document.getElementById('imageUpload').addEventListener('change', async function(e) {
+      const file = e.target.files[0];
+      if (!file) return;
+
+      // Check if save server is running BEFORE processing the file
+      const serverRunning = await checkServerStatus();
+      if (!serverRunning) {
+        const startServer = confirm('⚠️ Save Server Not Running!\n\nThe ECG save server is not running. You can still work on the waveform, but you won\'t be able to save to the project folder.\n\nTo start the server, run this in a terminal:\nnpm run ecg-save-server\n\nClick OK to continue working anyway, or Cancel to stop and start the server first.');
+        if (!startServer) {
+          // User cancelled - clear the file input
+          e.target.value = '';
+          return;
+        }
+      }
+
+      fileName = file.name.split('.')[0]; // Get filename without extension
+      window.originalImageFilename = file.name; // Store full filename for waveform type detection
+
+      // Auto-detect waveform type and set as working
+      const detectedKey = detectWaveformType(file.name);
+      if (detectedKey) {
+        const waveformInfo = WAVEFORM_LIST.find(w => w.key === detectedKey);
+        if (waveformInfo) {
+          currentWorkingWaveform = detectedKey;
+          document.getElementById('waveformNameInput').value = detectedKey;
+          console.log(`🔍 Auto-detected: ${waveformInfo.label} (${detectedKey})`);
+
+          // Refresh bulletin board to show working status
+          setTimeout(() => refreshBulletinBoard(), 100);
+        }
+      }
+
+      const reader = new FileReader();
+      reader.onload = function(event) {
+        originalImageBase64 = event.target.result; // Store for export
+
+        // Cache the uploaded image to localStorage for quick reuse
+        try {
+          localStorage.setItem('lastUploadedECG', event.target.result);
+          localStorage.setItem('lastUploadedECGName', file.name);
+          console.log(`💾 Cached ${file.name} for quick reload`);
+        } catch (e) {
+          console.warn('⚠️ Could not cache image (too large or localStorage full)');
+        }
+        const img = new Image();
+        img.onload = function() {
+          const canvas = document.getElementById('sourceCanvas');
+          canvas.width = img.width;
+          canvas.height = img.height;
+          const ctx = canvas.getContext('2d');
+          ctx.drawImage(img, 0, 0);
+          imageData = ctx.getImageData(0, 0, img.width, img.height);
+
+          document.getElementById('output').textContent = '✓ Image loaded! Click "Extract Black Line" to trace the waveform.';
+          document.getElementById('extractBtn').disabled = false;
+        };
+        img.src = event.target.result;
+      };
+      reader.readAsDataURL(file);
+    });
+
+    function extractLine() {
+      if (!imageData) return;
+
+      const width = imageData.width;
+      const height = imageData.height;
+      const data = imageData.data;
+      const threshold = parseInt(document.getElementById('threshold').value);
+
+      // 🔄 SAVE TO HISTORY before making changes
+      if (extractedPoints.length > 0) {
+        extractHistory.push({
+          points: [...extractedPoints],
+          threshold: threshold
+        });
+        // Limit history to last 10 actions
+        if (extractHistory.length > 10) extractHistory.shift();
+        document.getElementById('undoExtractBtn').disabled = false;
+      }
+
+      extractedPoints = [];
+
+      // Extract black pixels (waveform centerline)
+      for (let x = 0; x < width; x++) {
+        let minBrightness = 255;
+        let minY = -1;
+
+        // Find darkest pixel in this column
+        for (let y = 0; y < height; y++) {
+          const idx = (y * width + x) * 4;
+          const r = data[idx];
+          const g = data[idx + 1];
+          const b = data[idx + 2];
+          const brightness = (r + g + b) / 3;
+
+          if (brightness < threshold && brightness < minBrightness) {
+            minBrightness = brightness;
+            minY = y;
+          }
+        }
+
+        if (minY !== -1) {
+          extractedPoints.push({ x, y: minY });
+        }
+      }
+
+      // Draw extracted line at EXACT 1:1 pixel size (NO stretching!)
+      const canvas = document.getElementById('extractedCanvas');
+      const ctx = canvas.getContext('2d');
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+      // Center the waveform in canvas (if canvas is larger), but NO SCALING!
+      const offsetX = Math.max(0, (canvas.width - width) / 2);
+      const offsetY = Math.max(0, (canvas.height - height) / 2);
+
+      ctx.strokeStyle = '#fff';
+      ctx.lineWidth = 2;
+      ctx.beginPath();
+
+      extractedPoints.forEach((pt, i) => {
+        // Use EXACT pixel coordinates (1:1) - just center if needed
+        const x = pt.x + offsetX;
+        const y = pt.y + offsetY;
+        if (i === 0) ctx.moveTo(x, y);
+        else ctx.lineTo(x, y);
+      });
+      ctx.stroke();
+
+      document.getElementById('extractStats').textContent = `✓ Extracted ${extractedPoints.length} points at 1:1 pixel size (${width}×${height}px - NO stretching!)`;
+      document.getElementById('convertBtn').disabled = false;
+      document.getElementById('exportBtn').disabled = false;
+      document.getElementById('output').textContent = '✓ Black line extracted at exact original size! Click "Convert to Green SVG" to generate vector graphics.';
+    }
+
+    function smoothPoints(points, windowSize) {
+      if (windowSize === 0 || points.length < windowSize) return points;
+
+      const smoothed = [];
+      for (let i = 0; i < points.length; i++) {
+        const start = Math.max(0, i - Math.floor(windowSize / 2));
+        const end = Math.min(points.length, i + Math.ceil(windowSize / 2));
+        const window = points.slice(start, end);
+
+        const avgX = window.reduce((sum, p) => sum + p.x, 0) / window.length;
+        const avgY = window.reduce((sum, p) => sum + p.y, 0) / window.length;
+
+        smoothed.push({ x: avgX, y: avgY });
+      }
+      return smoothed;
+    }
+
+    // Detect baseline segments (flat regions with low slope/variance)
+    function detectBaselineRegions(points, windowSize = 20, slopeThreshold = 0.5, varianceThreshold = 10) {
+      const baselineRegions = [];
+
+      for (let i = 0; i < points.length - windowSize; i++) {
+        const window = points.slice(i, i + windowSize);
+
+        // Calculate slope (change in Y over change in X)
+        const deltaY = Math.abs(window[window.length - 1].y - window[0].y);
+        const deltaX = window[window.length - 1].x - window[0].x;
+        const slope = deltaX > 0 ? deltaY / deltaX : 0;
+
+        // Calculate variance in Y values
+        const yValues = window.map(p => p.y);
+        const meanY = yValues.reduce((sum, y) => sum + y, 0) / yValues.length;
+        const variance = yValues.reduce((sum, y) => sum + Math.pow(y - meanY, 2), 0) / yValues.length;
+
+        // Mark as baseline if both slope and variance are low
+        if (slope < slopeThreshold && variance < varianceThreshold) {
+          baselineRegions.push(i);
+        }
+      }
+
+      return baselineRegions;
+    }
+
+    // Check if a point index is on baseline (horizontal segment)
+    function isPointOnBaseline(points, index, windowSize = 10, slopeThreshold = 0.3, varianceThreshold = 8) {
+      if (index < 0 || index >= points.length) return false;
+
+      const start = Math.max(0, index - Math.floor(windowSize / 2));
+      const end = Math.min(points.length, index + Math.ceil(windowSize / 2));
+      const window = points.slice(start, end);
+
+      if (window.length < 3) return false;
+
+      // Calculate slope
+      const deltaY = Math.abs(window[window.length - 1].y - window[0].y);
+      const deltaX = window[window.length - 1].x - window[0].x;
+      const slope = deltaX > 0 ? deltaY / deltaX : 0;
+
+      // Calculate variance
+      const yValues = window.map(p => p.y);
+      const meanY = yValues.reduce((sum, y) => sum + y, 0) / yValues.length;
+      const variance = yValues.reduce((sum, y) => sum + Math.pow(y - meanY, 2), 0) / yValues.length;
+
+      return slope < slopeThreshold && variance < varianceThreshold;
+    }
+
+    // Detect QRS complexes (sharp peaks) in waveform
+    function detectQRSComplexes(points) {
+      const qrsComplexes = [];
+      const windowSize = 15; // Look for peaks in local windows
+
+      for (let i = windowSize; i < points.length - windowSize; i++) {
+        const window = points.slice(i - windowSize, i + windowSize);
+        const currentPoint = points[i];
+
+        // Check if this point is a local maximum (R-wave peak)
+        const isLocalMax = window.every(p => currentPoint.y <= p.y || p.x === currentPoint.x);
+
+        if (isLocalMax) {
+          // Skip if too close to previous QRS (avoid double-detection)
+          if (qrsComplexes.length === 0 || (currentPoint.x - qrsComplexes[qrsComplexes.length - 1].x) > 30) {
+            qrsComplexes.push({index: i, x: currentPoint.x, y: currentPoint.y});
+          }
+        }
+      }
+
+      return qrsComplexes;
+    }
+
+    // Find all baseline segments after each QRS complex
+    // PRIORITY: Baseline matching first, R-R interval matching secondary
+    function findBaselineConnectionPoints(points) {
+      const qrsComplexes = detectQRSComplexes(points);
+      const connections = [];
+
+      if (qrsComplexes.length < 1) {
+        console.warn('Need at least 1 QRS complex for baseline connection');
+        return connections;
+      }
+
+      // Calculate R-R interval from LAST TWO R-waves of first EKG (if available, for secondary scoring)
+      let referenceRRInterval = null;
+      if (qrsComplexes.length >= 2) {
+        const lastRWave = qrsComplexes[qrsComplexes.length - 1];
+        const secondLastRWave = qrsComplexes[qrsComplexes.length - 2];
+        referenceRRInterval = lastRWave.x - secondLastRWave.x;
+        console.log(`Reference R-R interval (from last 2 R-waves): ${referenceRRInterval.toFixed(1)}px`);
+      }
+
+      // For each QRS in second EKG copy, find ALL baseline points after it
+      qrsComplexes.forEach((qrs, qrsIndex) => {
+        // Look for baseline segment after this QRS
+        const searchStart = qrs.index + 10; // Start looking after QRS ends
+        const searchEnd = Math.min(points.length, qrs.index + 100); // Search next 100 points
+
+        // Find the baseline region after this QRS
+        let baselineStart = -1;
+        let baselineEnd = -1;
+
+        for (let i = searchStart; i < searchEnd; i++) {
+          if (isPointOnBaseline(points, i)) {
+            if (baselineStart === -1) baselineStart = i;
+            baselineEnd = i;
+          } else if (baselineStart !== -1) {
+            // Baseline region ended
+            break;
+          }
+        }
+
+        if (baselineStart === -1) return; // No baseline found after this QRS
+
+        // PRIORITY 1: Use START of baseline as primary connection point (simplest baseline match)
+        let connectionIndex = baselineStart;
+        let connectionDescription = 'Baseline start';
+
+        // PRIORITY 2 (OPTIONAL): If R-R interval is available, try to find better point
+        let rrMatchScore = null;
+        let actualRR = null;
+
+        if (referenceRRInterval !== null) {
+          const lastRWave = qrsComplexes[qrsComplexes.length - 1];
+          const originalEndX = points[points.length - 1].x;
+          const distanceFromLastRWaveToEnd = originalEndX - lastRWave.x;
+
+          // Calculate target offset for R-R matching
+          const targetOffsetInSecondEKG = referenceRRInterval - distanceFromLastRWaveToEnd;
+
+          // Find closest point on baseline to this target (if it improves R-R match)
+          let bestRRIndex = baselineStart;
+          let bestDistanceDiff = Infinity;
+
+          for (let i = baselineStart; i <= baselineEnd; i++) {
+            const offsetFromQRS = points[i].x - qrs.x;
+            const distanceDiff = Math.abs(offsetFromQRS - targetOffsetInSecondEKG);
+
+            if (distanceDiff < bestDistanceDiff) {
+              bestDistanceDiff = distanceDiff;
+              bestRRIndex = i;
+            }
+          }
+
+          // Calculate R-R match quality for this connection
+          const connectionX = points[bestRRIndex].x;
+          actualRR = distanceFromLastRWaveToEnd + (qrs.x - connectionX);
+          rrMatchScore = Math.abs(actualRR - referenceRRInterval) / referenceRRInterval;
+
+          // Use R-R optimized point if it's on the baseline
+          if (bestRRIndex >= baselineStart && bestRRIndex <= baselineEnd) {
+            connectionIndex = bestRRIndex;
+            connectionDescription = rrMatchScore < 0.1 ? 'R-R ✓ Exact' :
+                                    rrMatchScore < 0.2 ? 'R-R ✓ Good' :
+                                    rrMatchScore < 0.35 ? 'R-R ~ OK' :
+                                    'Baseline match';
+          }
+        }
+
+        connections.push({
+          index: connectionIndex,
+          qrsNumber: qrsIndex + 1,
+          rrMatchScore: rrMatchScore,
+          predictedRR: actualRR,
+          referenceRR: referenceRRInterval,
+          description: `QRS #${qrsIndex + 1} (${connectionDescription}${actualRR ? ', R-R: ' + actualRR.toFixed(0) + 'px' : ''})`
+        });
+      });
+
+      // Sort by QRS order (baseline priority), not by R-R score
+      // This gives user progressive shortening with each click
+      connections.sort((a, b) => a.qrsNumber - b.qrsNumber);
+
+      console.log(`Found ${connections.length} baseline connection options (sorted by QRS order, R-R matching secondary)`);
+      return connections;
+    }
+
+    // Cycle to next baseline connection point
+    function nextBaselineConnection() {
+      if (availableBaselineConnections.length === 0) return;
+      loopConnectionIndex = (loopConnectionIndex + 1) % availableBaselineConnections.length;
+      updateCropPreview(); // Redraw with new connection point
+    }
+
+    // Accept and merge the waveform with loop
+    function acceptAndMergeLoop() {
+      if (availableBaselineConnections.length === 0) return;
+
+      // Merge the waveform with its duplicate starting from connection point
+      const connectionPoint = availableBaselineConnections[loopConnectionIndex];
+
+      // Take ENTIRE second waveform from connection point to end
+      const secondEKGPortion = processedPoints.slice(connectionPoint.index);
+
+      // Adjust X coordinates of second portion to continue from where first ends
+      const firstEKGEndX = Math.max(...processedPoints.map(p => p.x));
+      const secondEKGStartX = secondEKGPortion.length > 0 ? Math.min(...secondEKGPortion.map(p => p.x)) : 0;
+
+      // No Y-offset needed - it's the same waveform duplicated, baselines naturally align
+      const adjustedSecondPortion = secondEKGPortion.map(pt => ({
+        x: pt.x - secondEKGStartX + firstEKGEndX, // Shift X to continue from first
+        y: pt.y // Keep Y unchanged - same waveform
+      }));
+
+      // Combine: original + duplicate from connection point
+      mergedWaveform = [...processedPoints, ...adjustedSecondPortion];
+
+      isMerged = true;
+      processedPoints = mergedWaveform; // Replace with merged version
+
+      // Reset loop state so we don't try to loop again
+      availableBaselineConnections = [];
+      loopConnectionIndex = 0;
+
+      updateCropPreview();
+      alert(`✓ Waveforms merged!\n\nConnection point: ${connectionPoint.description}\nOriginal points: ${processedPoints.length - adjustedSecondPortion.length}\nAdded points: ${adjustedSecondPortion.length}\nTotal points: ${mergedWaveform.length}\n\n✓ Duplicated waveform - baselines naturally aligned!`);
+    }
+
+    // Find baseline regions (flat parts between beats)
+    // Returns array of {start, end, flatness} objects
+    function findBaselineRegions(points) {
+      const regions = [];
+      let inBaseline = false;
+      let regionStart = -1;
+
+      for (let i = 0; i < points.length; i++) {
+        const isBaseline = isPointOnBaseline(points, i);
+
+        if (isBaseline && !inBaseline) {
+          // Starting a new baseline region
+          regionStart = i;
+          inBaseline = true;
+        } else if (!isBaseline && inBaseline) {
+          // Ending a baseline region
+          const regionEnd = i - 1;
+          const regionLength = regionEnd - regionStart + 1;
+
+          // Calculate flatness score (lower variance = flatter)
+          const regionPoints = points.slice(regionStart, regionEnd + 1);
+          const yValues = regionPoints.map(p => p.y);
+          const meanY = yValues.reduce((sum, y) => sum + y, 0) / yValues.length;
+          const variance = yValues.reduce((sum, y) => sum + Math.pow(y - meanY, 2), 0) / yValues.length;
+
+          if (regionLength >= 3) { // Only consider regions with at least 3 points
+            regions.push({
+              start: regionStart,
+              end: regionEnd,
+              length: regionLength,
+              flatness: variance, // Lower = flatter
+              avgY: meanY
+            });
+          }
+
+          inBaseline = false;
+        }
+      }
+
+      // Handle case where waveform ends in baseline
+      if (inBaseline && regionStart !== -1) {
+        const regionEnd = points.length - 1;
+        const regionLength = regionEnd - regionStart + 1;
+        const regionPoints = points.slice(regionStart, regionEnd + 1);
+        const yValues = regionPoints.map(p => p.y);
+        const meanY = yValues.reduce((sum, y) => sum + y, 0) / yValues.length;
+        const variance = yValues.reduce((sum, y) => sum + Math.pow(y - meanY, 2), 0) / yValues.length;
+
+        if (regionLength >= 3) {
+          regions.push({
+            start: regionStart,
+            end: regionEnd,
+            length: regionLength,
+            flatness: variance,
+            avgY: meanY
+          });
+        }
+      }
+
+      return regions;
+    }
+
+    // Insert flat baseline segments (LENGTHENS the EKG)
+    // Adds pixels EQUALLY across ALL baseline regions for uniform spacing
+    function insertBaselineSegments(points, pixelsToAdd) {
+      if (pixelsToAdd <= 0) return points;
+
+      const regions = findBaselineRegions(points);
+      if (regions.length === 0) return points;
+
+      // Distribute pixels EQUALLY across ALL regions (no sorting by flatness)
+      const pixelsPerRegion = Math.floor(pixelsToAdd / regions.length);
+      const remainder = pixelsToAdd % regions.length;
+
+      const result = [];
+      let regionIndex = 0;
+      let totalAdded = 0;
+
+      for (let i = 0; i < points.length; i++) {
+        // Check if we're at the START of a baseline region
+        const currentRegion = regions.find(r => r.start === i);
+
+        if (currentRegion) {
+          // Add equal pixels to each baseline region
+          let pixelsToAddHere = pixelsPerRegion;
+
+          // Distribute remainder pixels to first N regions
+          if (regionIndex < remainder) {
+            pixelsToAddHere++;
+          }
+
+          const insertX = points[i].x + totalAdded;
+          const insertY = currentRegion.avgY;
+
+          // Insert horizontal baseline points
+          for (let p = 0; p < pixelsToAddHere; p++) {
+            result.push({ x: insertX + p, y: insertY });
+          }
+
+          totalAdded += pixelsToAddHere;
+          regionIndex++;
+        }
+
+        // Add original point with X-shift
+        result.push({ x: points[i].x + totalAdded, y: points[i].y });
+      }
+
+      console.log(`✓ Added ${pixelsToAdd}px equally across ${regions.length} baseline regions (${result.length - points.length} new points)`);
+      return result;
+    }
+
+    // Remove baseline points (SHORTENS the EKG)
+    // Removes EQUALLY from ALL baseline regions, narrows gaps uniformly
+    function removeBaselinePoints(points, pixelsToRemove) {
+      if (pixelsToRemove <= 0) return points;
+
+      const regions = findBaselineRegions(points);
+      if (regions.length === 0) return points;
+
+      // Distribute removal EQUALLY across ALL regions
+      const pixelsPerRegion = Math.floor(pixelsToRemove / regions.length);
+      const remainder = pixelsToRemove % regions.length;
+
+      const indicesToRemove = new Set();
+      let regionIndex = 0;
+
+      // Remove equally from each baseline region
+      for (const region of regions) {
+        let pixelsToRemoveHere = pixelsPerRegion;
+
+        // Distribute remainder to first N regions
+        if (regionIndex < remainder) {
+          pixelsToRemoveHere++;
+        }
+
+        // Cap removal to leave at least 2 points in region
+        const maxCanRemove = Math.max(0, region.length - 2);
+        pixelsToRemoveHere = Math.min(pixelsToRemoveHere, maxCanRemove);
+
+        // Remove from middle of baseline region
+        const midpoint = Math.floor((region.start + region.end) / 2);
+        const removeStart = Math.max(region.start, midpoint - Math.floor(pixelsToRemoveHere / 2));
+
+        for (let i = 0; i < pixelsToRemoveHere && removeStart + i <= region.end; i++) {
+          indicesToRemove.add(removeStart + i);
+        }
+
+        regionIndex++;
+      }
+
+      // Remove marked points and shift X-coordinates back
+      const result = [];
+      let xShift = 0;
+
+      for (let i = 0; i < points.length; i++) {
+        if (indicesToRemove.has(i)) {
+          xShift++; // Increment shift for each removed point
+        } else {
+          result.push({
+            x: points[i].x - xShift,
+            y: points[i].y
+          });
+        }
+      }
+
+      console.log(`✓ Removed ${indicesToRemove.size}px equally across ${regions.length} baseline regions (gaps narrowed)`);
+      return result;
+    }
+
+    // Bidirectional baseline adjustment (insert or remove)
+    function adjustBaselinePoints(points, adjustment) {
+      if (adjustment === 0) return points;
+      if (adjustment > 0) {
+        // Positive: insert micro-segments
+        return insertBaselineSegments(points, adjustment);
+      } else {
+        // Negative: remove points
+        return removeBaselinePoints(points, Math.abs(adjustment));
+      }
+    }
+
+    function convertToSVG() {
+      if (extractedPoints.length === 0) return;
+
+      const lineWidth = parseFloat(document.getElementById('lineWidth').value);
+      const smoothing = parseInt(document.getElementById('smoothing').value);
+
+      // 🔄 SAVE TO HISTORY before making changes
+      if (processedPoints.length > 0) {
+        svgHistory.push({
+          points: [...processedPoints],
+          smoothing: parseInt(document.getElementById('smoothing').value)
+        });
+        if (svgHistory.length > 10) svgHistory.shift();
+        document.getElementById('undoSVGBtn').disabled = false;
+      }
+
+      // Apply smoothing only (baseline adjustment happens AFTER cropping in Step 3.75)
+      let points = smoothing > 0 ? smoothPoints(extractedPoints, smoothing) : extractedPoints;
+
+      // CRITICAL FIX: Preserve original pixel dimensions (NO stretching!)
+      // Use actual image dimensions as viewBox - maintains 1:1 pixel spacing
+      const width = imageData.width;
+      const height = imageData.height;
+      const viewBoxWidth = width;  // Use actual width (was: forced to 1000)
+      const viewBoxHeight = height; // Use actual height (was: scaled proportionally)
+
+      // Create SVG path with EXACT original coordinates (no normalization!)
+      let pathData = '';
+      points.forEach((pt, i) => {
+        // NO SCALING - use exact pixel coordinates from extraction
+        const x = pt.x; // Was: (pt.x / width) * viewBoxWidth
+        const y = pt.y; // Was: (pt.y / height) * viewBoxHeight
+        pathData += i === 0 ? `M ${x.toFixed(2)} ${y.toFixed(2)}` : ` L ${x.toFixed(2)} ${y.toFixed(2)}`;
+      });
+
+      svgPath = pathData;
+
+      // Draw green SVG preview on canvas at EXACT 1:1 pixel size (NO stretching!)
+      const canvas = document.getElementById('svgCanvas');
+      const ctx = canvas.getContext('2d');
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+      // Center the waveform in canvas (if canvas is larger), but NO SCALING!
+      const offsetX = Math.max(0, (canvas.width - width) / 2);
+      const offsetY = Math.max(0, (canvas.height - height) / 2);
+
+      ctx.strokeStyle = '#00ff00';
+      ctx.lineWidth = lineWidth;
+      ctx.lineCap = 'round';
+      ctx.lineJoin = 'round';
+      ctx.beginPath();
+
+      points.forEach((pt, i) => {
+        // Use EXACT pixel coordinates (1:1) - just center if needed
+        const x = pt.x + offsetX;
+        const y = pt.y + offsetY;
+        if (i === 0) ctx.moveTo(x, y);
+        else ctx.lineTo(x, y);
+      });
+      ctx.stroke();
+
+      // Generate SVG code
+      const svgCode = `<?xml version="1.0" encoding="UTF-8"?>
+<svg width="${viewBoxWidth}" height="${viewBoxHeight}" viewBox="0 0 ${viewBoxWidth} ${viewBoxHeight}" xmlns="http://www.w3.org/2000/svg">
+  <path
+    d="${pathData}"
+    stroke="#00ff00"
+    stroke-width="${lineWidth}"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    fill="none"
+  />
+</svg>`;
+
+      document.getElementById('svgStats').textContent = `✓ SVG generated: ${viewBoxWidth}×${viewBoxHeight}px (1:1 original dimensions - NO stretching!), ${lineWidth}px stroke, ${points.length} total points`;
+      document.getElementById('output').textContent = svgCode;
+
+      // Store processed points for crop function
+      processedPoints = points;
+
+      // Auto-update crop preview
+      updateCropPreview();
+    }
+
+    function updateCropPreview() {
+      if (processedPoints.length === 0) return;
+
+      const lineWidth = parseFloat(document.getElementById('lineWidth').value);
+      const monitorWidth = parseInt(document.getElementById('monitorWidth').value);
+      const monitorHeight = parseInt(document.getElementById('monitorHeight').value);
+      const svgWidth = parseInt(document.getElementById('svgWidth').value);
+
+      // 🔄 SAVE TO HISTORY before making changes
+      if (croppedPointsBeforeBaseline.length > 0) {
+        cropHistory.push({
+          position: cropWindowPosition,
+          panOffset: waveformPanOffset,
+          points: [...croppedPointsBeforeBaseline],
+          monitorWidth: monitorWidth,
+          monitorHeight: monitorHeight
+        });
+        if (cropHistory.length > 10) cropHistory.shift();
+        document.getElementById('undoCropBtn').disabled = false;
+      }
+
+      // Get canvas and context
+      const canvas = document.getElementById('cropCanvas');
+      const ctx = canvas.getContext('2d');
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+      // Calculate waveform bounds
+      const waveformMinX = Math.min(...processedPoints.map(p => p.x));
+      const waveformMaxX = Math.max(...processedPoints.map(p => p.x));
+      const waveformMinY = Math.min(...processedPoints.map(p => p.y));
+      const waveformMaxY = Math.max(...processedPoints.map(p => p.y));
+      const waveformWidth = waveformMaxX - waveformMinX;
+      const waveformHeight = waveformMaxY - waveformMinY;
+
+      // === INITIALIZE BASELINE CONNECTIONS (only once, not if already merged) ===
+      if (!isMerged && availableBaselineConnections.length === 0) {
+        availableBaselineConnections = findBaselineConnectionPoints(processedPoints);
+        console.log(`✓ Found ${availableBaselineConnections.length} baseline connection points`);
+      }
+
+      // Define editing area within canvas (leave padding for brackets and UI)
+      const editAreaPadding = 60; // pixels on each side
+      const editAreaWidth = canvas.width - (editAreaPadding * 2);
+      const editAreaHeight = canvas.height - (editAreaPadding * 2);
+      const editAreaX = editAreaPadding;
+      const editAreaY = editAreaPadding;
+
+      // CRITICAL FIX: Use 1:1 pixel scaling (NO horizontal stretching!)
+      // Display waveform at exact original pixel size
+      const scaleX = 1.0; // NO SCALING - exact 1:1 pixels!
+      const scaleY = 1.0; // NO SCALING - exact 1:1 pixels!
+
+      // Calculate bracket dimensions to represent EXACT monitor viewport
+      // Bracket maintains monitor aspect ratio but scales to fit editing area
+      const monitorAspectRatio = monitorWidth / monitorHeight;
+
+      // FORCE bracket width to never exceed 75% of editing area width
+      const maxBracketWidth = editAreaWidth * 0.75; // Maximum 3/4 of screen width
+
+      // Calculate initial dimensions based on height
+      let bracketHeightPx = Math.min(editAreaHeight * 0.6, monitorHeight * 1.5);
+      let bracketWidthPx = bracketHeightPx * monitorAspectRatio;
+
+      // If bracket would be too wide, scale down to fit (maintains aspect ratio)
+      if (bracketWidthPx > maxBracketWidth) {
+        bracketWidthPx = maxBracketWidth;
+        bracketHeightPx = bracketWidthPx / monitorAspectRatio; // Recalculate height to maintain exact ratio
+      }
+
+      // Calculate waveform centering offset (at 1:1 pixel scale)
+      const waveformCenterOffsetX = editAreaX + (editAreaWidth - waveformWidth) / 2;
+      const waveformCenterOffsetY = editAreaY + (editAreaHeight - waveformHeight) / 2;
+
+      // ALIGN LEFT BRACKET TO START OF WAVEFORM
+      // Calculate bracket position based on slider (0-100%)
+      // When slider is at 0%, left bracket aligns with waveform start
+      const maxBracketSlide = editAreaWidth - bracketWidthPx;
+      const bracketX = waveformCenterOffsetX + waveformPanOffset + (cropWindowPosition / 100) * Math.max(0, maxBracketSlide);
+
+      // Bracket height EXACTLY represents monitor's EKG waveform display area
+      // Center vertically in editing area to show context above and below
+      const bracketY = editAreaY + (editAreaHeight - bracketHeightPx) / 2;
+
+      // Calculate which portion of waveform is selected by brackets
+      // CRITICAL: Always crop EXACTLY monitorWidth pixels, regardless of bracket screen size
+      // Bracket position determines WHICH portion of waveform, but width is ALWAYS monitorWidth
+      const cropStartX = waveformMinX + (bracketX - waveformCenterOffsetX) - waveformPanOffset;
+      const cropEndX = cropStartX + monitorWidth; // FIXED: Always capture exactly monitorWidth pixels
+
+      // Find all points within the crop window
+      const croppedPoints = processedPoints.filter(p => p.x >= cropStartX && p.x <= cropEndX);
+
+      if (croppedPoints.length === 0) {
+        document.getElementById('cropStats').textContent = '⚠️ Invalid crop region - no points in window';
+        return;
+      }
+
+      // Store as current displayed waveform for merging
+      currentDisplayedWaveform = croppedPoints;
+
+      // Draw editing area border
+      ctx.strokeStyle = '#333';
+      ctx.lineWidth = 2;
+      ctx.strokeRect(editAreaX, editAreaY, editAreaWidth, editAreaHeight);
+
+      // Calculate the actual Y bounds of the cropped waveform for scaling
+      const croppedMinY = Math.min(...croppedPoints.map(p => p.y));
+      const croppedMaxY = Math.max(...croppedPoints.map(p => p.y));
+      const croppedAmplitude = croppedMaxY - croppedMinY;
+
+      // Draw FULL waveform at 1:1 pixel scale (NO stretching!)
+      // (waveformCenterOffsetX and waveformCenterOffsetY already calculated above)
+
+      // This allows dragging any part of the waveform to reposition it
+      processedPoints.forEach((pt, i) => {
+        // Use exact 1:1 pixel coordinates (no scaling!)
+        const x = waveformCenterOffsetX + (pt.x - waveformMinX) + waveformPanOffset;
+
+        // Check if this point is within the cropped region
+        const isInsideBracket = pt.x >= cropStartX && pt.x <= cropEndX;
+
+        if (isInsideBracket) {
+          // INSIDE brackets: Bright green, full line width, scaled to bracket height
+          const yNormalized = (pt.y - croppedMinY) / croppedAmplitude;
+          const y = bracketY + yNormalized * bracketHeightPx;
+
+          if (i === 0 || !processedPoints[i-1] || processedPoints[i-1].x < cropStartX || processedPoints[i-1].x > cropEndX) {
+            // Start new path segment
+            ctx.stroke();
+            ctx.beginPath();
+            ctx.strokeStyle = '#00ff00'; // Bright green
+            ctx.lineWidth = Math.max(2, lineWidth);
+            ctx.moveTo(x, y);
+          } else {
+            ctx.lineTo(x, y);
+          }
+        } else {
+          // OUTSIDE brackets: Dim green, half line width, 1:1 pixel size
+          const y = waveformCenterOffsetY + (pt.y - waveformMinY);
+
+          if (i === 0 || !processedPoints[i-1] || (processedPoints[i-1].x >= cropStartX && processedPoints[i-1].x <= cropEndX)) {
+            // Start new path segment
+            ctx.stroke();
+            ctx.beginPath();
+            ctx.strokeStyle = '#004400'; // Dim green
+            ctx.lineWidth = Math.max(1, lineWidth * 0.5); // Half width
+            ctx.moveTo(x, y);
+          } else {
+            ctx.lineTo(x, y);
+          }
+        }
+      });
+      ctx.stroke(); // Final stroke
+
+      // === INTERACTIVE LOOPING LOGIC: Stitch FULL second EKG starting from connection ===
+      // Draw looped waveform (original + ENTIRE second copy starting from connection point)
+      if (!isMerged && availableBaselineConnections.length > 0 && croppedPoints.length > 0) {
+        const croppedMinX = Math.min(...croppedPoints.map(p => p.x));
+        const croppedMaxX = Math.max(...croppedPoints.map(p => p.x));
+        const croppedWidth = croppedMaxX - croppedMinX;
+
+        // Get current baseline connection point
+        const currentConnection = availableBaselineConnections[loopConnectionIndex];
+
+        // Take ENTIRE second waveform from connection point
+        const loopPoints = processedPoints.slice(currentConnection.index);
+
+        // Calculate where the second EKG portion starts (after original waveform ends)
+        const originalEndX = waveformCenterOffsetX + waveformPanOffset + waveformWidth;
+
+        // Get bounds of second EKG portion
+        const secondEKGMinX = loopPoints.length > 0 ? Math.min(...loopPoints.map(p => p.x)) : 0;
+        const secondEKGMaxX = loopPoints.length > 0 ? Math.max(...loopPoints.map(p => p.x)) : 0;
+
+        // === BASELINE Y-ALIGNMENT FOR PREVIEW ===
+        // NO Y-OFFSET - baselines should naturally match since it's same waveform duplicated
+        const baselineYOffset = 0;
+
+        // Draw the FULL second EKG portion (from connection point to end of waveform)
+        // Use SAME rendering logic as main waveform for consistency
+        loopPoints.forEach((pt, i) => {
+          // Shift X so second EKG continues from where first ends
+          const xInSecondEKG = pt.x - secondEKGMinX;
+          const screenX = originalEndX + xInSecondEKG;
+
+          // Calculate data X coordinate in combined waveform
+          const combinedDataX = waveformMaxX + (pt.x - secondEKGMinX);
+
+          // Check if this point would be inside bracket region
+          const isInsideBracket = combinedDataX >= cropStartX && combinedDataX <= cropEndX;
+
+          if (isInsideBracket) {
+            // INSIDE brackets: Scale Y to match bracket height (same as main waveform)
+            const yNormalized = (pt.y - croppedMinY) / croppedAmplitude;
+            const y = bracketY + yNormalized * bracketHeightPx;
+
+            if (i === 0 || !loopPoints[i-1] || (waveformMaxX + (loopPoints[i-1].x - secondEKGMinX)) < cropStartX || (waveformMaxX + (loopPoints[i-1].x - secondEKGMinX)) > cropEndX) {
+              ctx.stroke();
+              ctx.beginPath();
+              ctx.strokeStyle = '#00ff00';
+              ctx.lineWidth = Math.max(2, lineWidth);
+              ctx.moveTo(screenX, y);
+            } else {
+              ctx.lineTo(screenX, y);
+            }
+          } else {
+            // OUTSIDE brackets: 1:1 pixel size (same as main waveform)
+            const y = waveformCenterOffsetY + (pt.y - waveformMinY);
+
+            if (i === 0 || !loopPoints[i-1] || ((waveformMaxX + (loopPoints[i-1].x - secondEKGMinX)) >= cropStartX && (waveformMaxX + (loopPoints[i-1].x - secondEKGMinX)) <= cropEndX)) {
+              ctx.stroke();
+              ctx.beginPath();
+              ctx.strokeStyle = '#004400';
+              ctx.lineWidth = Math.max(1, lineWidth * 0.5);
+              ctx.moveTo(screenX, y);
+            } else {
+              ctx.lineTo(screenX, y);
+            }
+          }
+        });
+        ctx.stroke();
+
+        // === DRAW INTERACTIVE RED STITCH LINE WITH BUTTONS ===
+        // Calculate stitch line position (between original waveform end and loop start)
+        const stitchX = originalEndX;
+        const stitchY1 = bracketY; // Top of bracket
+        const stitchY2 = bracketY + bracketHeightPx; // Bottom of bracket
+
+        // Draw vertical red dashed line
+        ctx.strokeStyle = 'rgba(255, 50, 50, 0.8)'; // Brighter red for visibility
+        ctx.lineWidth = 3;
+        ctx.setLineDash([8, 4]); // Dashed line
+        ctx.beginPath();
+        ctx.moveTo(stitchX, stitchY1);
+        ctx.lineTo(stitchX, stitchY2);
+        ctx.stroke();
+        ctx.setLineDash([]); // Reset
+
+        // Store stitch line position for click detection
+        stitchLinePosition = {x: stitchX, y1: stitchY1, y2: stitchY2};
+
+        // === DRAW "NEXT BASELINE" BUTTON AT TOP ===
+        const btnWidth = 140;
+        const btnHeight = 30;
+        const topBtnX = stitchX - btnWidth / 2;
+        const topBtnY = stitchY1 - 45; // Above bracket
+
+        // Button background
+        ctx.fillStyle = '#ff3333';
+        ctx.fillRect(topBtnX, topBtnY, btnWidth, btnHeight);
+        ctx.strokeStyle = '#fff';
+        ctx.lineWidth = 2;
+        ctx.strokeRect(topBtnX, topBtnY, btnWidth, btnHeight);
+
+        // Button text
+        ctx.fillStyle = '#fff';
+        ctx.font = 'bold 13px monospace';
+        ctx.textAlign = 'center';
+        ctx.textBaseline = 'middle';
+        ctx.fillText('⟳ NEXT BASELINE', stitchX, topBtnY + btnHeight / 2);
+
+        // Connection info text
+        ctx.fillStyle = '#ff6666';
+        ctx.font = '11px monospace';
+        ctx.fillText(currentConnection.description, stitchX, topBtnY - 10);
+
+        // Store button bounds for click detection
+        window.nextBaselineButton = {x: topBtnX, y: topBtnY, width: btnWidth, height: btnHeight};
+
+        // === DRAW "ACCEPT & MERGE" BUTTON AT BOTTOM ===
+        const bottomBtnY = stitchY2 + 15; // Below bracket
+
+        // Button background
+        ctx.fillStyle = '#33ff33';
+        ctx.fillRect(topBtnX, bottomBtnY, btnWidth, btnHeight);
+        ctx.strokeStyle = '#fff';
+        ctx.lineWidth = 2;
+        ctx.strokeRect(topBtnX, bottomBtnY, btnWidth, btnHeight);
+
+        // Button text
+        ctx.fillStyle = '#000';
+        ctx.font = 'bold 13px monospace';
+        ctx.textAlign = 'center';
+        ctx.textBaseline = 'middle';
+        ctx.fillText('✓ ACCEPT & MERGE', stitchX, bottomBtnY + btnHeight / 2);
+
+        // Store button bounds for click detection
+        window.acceptMergeButton = {x: topBtnX, y: bottomBtnY, width: btnWidth, height: btnHeight};
+      }
+
+      // Draw semi-transparent overlays outside crop region (lighter now)
+      ctx.fillStyle = 'rgba(0, 0, 0, 0.3)'; // Lighter overlay (was 0.7)
+      // Left overlay
+      ctx.fillRect(editAreaX, editAreaY, Math.max(0, bracketX - editAreaX), editAreaHeight);
+      // Right overlay
+      const rightOverlayX = bracketX + bracketWidthPx;
+      ctx.fillRect(rightOverlayX, editAreaY, Math.max(0, editAreaWidth - (rightOverlayX - editAreaX)), editAreaHeight);
+
+      // Draw yellow bracket indicators - FIXED WIDTH
+      ctx.strokeStyle = '#ffff00';
+      ctx.lineWidth = 5;
+      ctx.shadowColor = '#ffff00';
+      ctx.shadowBlur = 10;
+
+      const bracketArmLength = 20;
+
+      // Left bracket [
+      ctx.beginPath();
+      ctx.moveTo(bracketX + bracketArmLength, bracketY);
+      ctx.lineTo(bracketX, bracketY);
+      ctx.lineTo(bracketX, bracketY + bracketHeightPx);
+      ctx.lineTo(bracketX + bracketArmLength, bracketY + bracketHeightPx);
+      ctx.stroke();
+
+      // Right bracket ]
+      const bracketEndX = bracketX + bracketWidthPx;
+      ctx.beginPath();
+      ctx.moveTo(bracketEndX - bracketArmLength, bracketY);
+      ctx.lineTo(bracketEndX, bracketY);
+      ctx.lineTo(bracketEndX, bracketY + bracketHeightPx);
+      ctx.lineTo(bracketEndX - bracketArmLength, bracketY + bracketHeightPx);
+      ctx.stroke();
+
+      // Draw horizontal alignment guides showing monitor EKG area boundaries
+      ctx.shadowBlur = 0;
+      ctx.strokeStyle = '#ff0';
+      ctx.lineWidth = 1;
+      ctx.setLineDash([5, 5]); // Dashed line
+
+      // Top alignment guide
+      ctx.beginPath();
+      ctx.moveTo(editAreaX, bracketY);
+      ctx.lineTo(editAreaX + editAreaWidth, bracketY);
+      ctx.stroke();
+
+      // Bottom alignment guide
+      ctx.beginPath();
+      ctx.moveTo(editAreaX, bracketY + bracketHeightPx);
+      ctx.lineTo(editAreaX + editAreaWidth, bracketY + bracketHeightPx);
+      ctx.stroke();
+
+      ctx.setLineDash([]); // Reset to solid line
+
+      // Store bracket bounds for drag detection
+      window.lastBracketBounds = {
+        x: bracketX,
+        y: bracketY,
+        width: bracketWidthPx,
+        height: bracketHeightPx
+      };
+
+      // Draw dimension labels
+      ctx.font = 'bold 16px monospace';
+      ctx.fillStyle = '#ffff00';
+      ctx.textAlign = 'center';
+      ctx.fillText(`Monitor: ${monitorWidth}×${monitorHeight}px`, bracketX + bracketWidthPx / 2, bracketY - 15);
+
+      // Draw alignment labels
+      ctx.font = '11px monospace';
+      ctx.fillStyle = '#ff0';
+      ctx.textAlign = 'right';
+      ctx.fillText('← Top of monitor EKG area', editAreaX - 10, bracketY - 5);
+      ctx.fillText('← Bottom of monitor EKG area', editAreaX - 10, bracketY + bracketHeightPx + 15);
+
+      // Draw position indicator
+      ctx.font = '12px monospace';
+      ctx.fillStyle = '#0ff';
+      ctx.textAlign = 'center';
+      ctx.fillText(`Position: ${cropWindowPosition.toFixed(1)}%`, bracketX + bracketWidthPx / 2, bracketY + bracketHeightPx + 30);
+
+      // Draw instructions
+      ctx.font = '13px monospace';
+      ctx.fillStyle = '#888';
+      ctx.textAlign = 'left';
+      ctx.fillText('Drag brackets | Hold SHIFT + drag to pan waveform', editAreaX, editAreaY - 25);
+
+      // Draw auto-fit indicator
+      ctx.font = 'bold 12px monospace';
+      ctx.fillStyle = '#0f0';
+      ctx.textAlign = 'right';
+      ctx.fillText('✓ AUTO-FIT', editAreaX + editAreaWidth, editAreaY - 25);
+
+      // Draw pan offset indicator if waveform is panned
+      if (waveformPanOffset !== 0) {
+        ctx.font = '11px monospace';
+        ctx.fillStyle = '#ff0';
+        ctx.textAlign = 'right';
+        ctx.fillText(`Waveform pan: ${waveformPanOffset > 0 ? '+' : ''}${waveformPanOffset.toFixed(0)}px`, editAreaX + editAreaWidth, editAreaY - 10);
+      }
+
+      // AUTO-FIT AMPLITUDE: Scale waveform VERTICALLY ONLY to fill bracket height
+      // CRITICAL: Preserve exact horizontal spacing (NO X-axis stretching!)
+      // Find the actual amplitude (highest peak and lowest trough) of cropped region
+      const cropMinX = Math.min(...croppedPoints.map(p => p.x));
+      const cropMaxX = Math.max(...croppedPoints.map(p => p.x));
+      const cropMinY = Math.min(...croppedPoints.map(p => p.y)); // Lowest Y value (might be top in image coords)
+      const cropMaxY = Math.max(...croppedPoints.map(p => p.y)); // Highest Y value (might be bottom in image coords)
+      const cropAmplitude = cropMaxY - cropMinY; // Actual waveform amplitude
+
+      // SVG dimensions match monitor EXACTLY
+      const svgHeight = monitorHeight;
+
+      // Create SVG path with VERTICAL-ONLY auto-fit amplitude scaling
+      // IMPORTANT: X-axis preserves exact pixel spacing (NO stretching/compression!)
+      // IMPORTANT: Y-axis scales to fit bracket height (auto-fit amplitude)
+
+      // Store normalized points for baseline adjustment in Step 3.75
+      croppedPointsBeforeBaseline = croppedPoints.map(pt => ({
+        // X: Preserve EXACT spacing - just shift to start at 0
+        x: pt.x - cropMinX,
+        // Y: Scale amplitude to fill bracket height
+        // Map cropMinY→svgHeight (bottom), cropMaxY→0 (top)
+        y: ((pt.y - cropMinY) / cropAmplitude) * svgHeight
+      }));
+
+      let croppedPath = '';
+      croppedPointsBeforeBaseline.forEach((pt, i) => {
+        croppedPath += i === 0 ? `M ${pt.x.toFixed(2)} ${pt.y.toFixed(2)}` : ` L ${pt.x.toFixed(2)} ${pt.y.toFixed(2)}`;
+      });
+
+      svgPath = croppedPath; // Update global svgPath for export
+
+      // Trigger final preview update
+      updateFinalPreview();
+
+      // Calculate actual SVG width based on cropped region (preserves exact pixel spacing)
+      const actualSVGWidth = Math.ceil(cropMaxX - cropMinX);
+
+      // Update stats with auto-fit info
+      const cropWidthPercent = ((actualSVGWidth / waveformWidth) * 100).toFixed(1);
+      const amplitudeScaleFactor = (svgHeight / cropAmplitude).toFixed(2);
+
+      // Display loop/merge status
+      let loopInfo = '';
+      if (isMerged) {
+        loopInfo = ` | ✓ MERGED (baseline adjustment applies to full waveform)`;
+      } else if (availableBaselineConnections.length > 0) {
+        const currentConnection = availableBaselineConnections[loopConnectionIndex];
+        loopInfo = ` | 🔄 LOOP: ${currentConnection.description} (${loopConnectionIndex + 1}/${availableBaselineConnections.length} options)`;
+      }
+
+      document.getElementById('cropStats').textContent = `✓ Crop window: ${actualSVGWidth}×${svgHeight}px (exact 1:1 horizontal, ${amplitudeScaleFactor}× vertical) | ${croppedPoints.length} points | No horizontal stretching!${loopInfo}`;
+
+      // Enable export buttons only if crop is valid
+      const cropValid = croppedPoints.length > 10;
+      document.getElementById('downloadBtn').disabled = !cropValid;
+      document.getElementById('copyBtn').disabled = !cropValid;
+      document.getElementById('autoSaveBtn').disabled = !cropValid;
+      document.getElementById('exportBtn').disabled = !cropValid;
+      document.getElementById('saveToProjectBtn').disabled = !cropValid;
+
+      if (cropValid) {
+        document.getElementById('output').textContent = `<?xml version="1.0" encoding="UTF-8"?>
+<svg width="${actualSVGWidth}" height="${svgHeight}" viewBox="0 0 ${actualSVGWidth} ${svgHeight}" xmlns="http://www.w3.org/2000/svg">
+  <path
+    d="${croppedPath}"
+    stroke="#00ff00"
+    stroke-width="${lineWidth}"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    fill="none"
+  />
+</svg>`;
+      }
+
+      // Store actual SVG width for export functions
+      window.lastActualSVGWidth = actualSVGWidth;
+
+      // Calculate and update dynamic baseline adjustment range
+      updateBaselineAdjustmentRange();
+    }
+
+    // Calculate maximum removable pixels based on baseline regions
+    function calculateMaxRemovablePixels(points) {
+      const regions = findBaselineRegions(points);
+      if (regions.length === 0) return 0;
+
+      // Each region must keep at least 2 points
+      // So max removable from each region is (length - 2)
+      let totalRemovable = 0;
+      for (const region of regions) {
+        totalRemovable += Math.max(0, region.length - 2);
+      }
+
+      return totalRemovable;
+    }
+
+    // Update the baseline adjustment slider range based on available baseline points
+    function updateBaselineAdjustmentRange() {
+      if (croppedPointsBeforeBaseline.length === 0) return;
+
+      const maxRemovable = calculateMaxRemovablePixels(croppedPointsBeforeBaseline);
+      const slider = document.getElementById('baselineSegments');
+
+      // Set minimum to negative of max removable (or -200 if less available)
+      const minValue = -Math.min(maxRemovable, 1000); // Cap at -1000 for UI sanity
+      slider.min = minValue;
+
+      console.log(`📊 Baseline range updated: ${minValue} to +400 pixels (${maxRemovable} pixels removable)`);
+    }
+
+    function updateFinalPreview() {
+      if (croppedPointsBeforeBaseline.length === 0) return;
+
+      // 🔄 SAVE TO HISTORY before making changes
+      if (window.lastFinalPoints && window.lastFinalPoints.length > 0) {
+        baselineHistory.push({
+          adjustment: parseInt(document.getElementById('baselineSegments').value),
+          finalPoints: [...window.lastFinalPoints],
+          visiblePoints: window.lastVisiblePoints ? [...window.lastVisiblePoints] : []
+        });
+        if (baselineHistory.length > 10) baselineHistory.shift();
+        document.getElementById('undoBaselineBtn').disabled = false;
+      }
+
+      const baselineAdjustment = parseInt(document.getElementById('baselineSegments').value);
+      const actualSVGWidth = window.lastActualSVGWidth || 1000; // Use actual width (preserves 1:1 horizontal)
+      const monitorWidth = parseInt(document.getElementById('monitorWidth').value); // Get monitor width
+      const monitorHeight = parseInt(document.getElementById('monitorHeight').value);
+      const lineWidth = parseFloat(document.getElementById('lineWidth').value);
+
+      // Apply baseline adjustment to cropped points
+      let finalPoints = adjustBaselinePoints(croppedPointsBeforeBaseline, baselineAdjustment);
+
+      // 🎯 PREVIEW: Show EXACTLY what will appear on monitor (fixed dimensions)
+      // Filter points to only include those within visible monitor width
+      const visiblePoints = finalPoints.filter(pt => pt.x <= monitorWidth);
+
+      console.log(`📐 Preview: ${finalPoints.length} total points → ${visiblePoints.length} visible points (monitor: ${monitorWidth}×${monitorHeight}px)`);
+
+      // Update final canvas size to match FIXED MONITOR dimensions (WYSIWYG preview)
+      const finalCanvas = document.getElementById('finalCanvas');
+      finalCanvas.width = monitorWidth; // FIXED monitor width (matches actual display)
+      finalCanvas.height = monitorHeight;
+
+      const ctx = finalCanvas.getContext('2d');
+      ctx.clearRect(0, 0, finalCanvas.width, finalCanvas.height);
+
+      // Draw black background (like monitor)
+      ctx.fillStyle = '#000';
+      ctx.fillRect(0, 0, finalCanvas.width, finalCanvas.height);
+
+      // Draw waveform in bright green (only visible portion)
+      ctx.strokeStyle = '#00ff00';
+      ctx.lineWidth = lineWidth;
+      ctx.lineCap = 'round';
+      ctx.lineJoin = 'round';
+      ctx.beginPath();
+
+      visiblePoints.forEach((pt, i) => {
+        if (i === 0) ctx.moveTo(pt.x, pt.y);
+        else ctx.lineTo(pt.x, pt.y);
+      });
+      ctx.stroke();
+
+      // Generate final SVG path - CRITICAL: Use VISIBLE points only (clipped to monitor width)
+      // This ensures exported SVG/PNG matches exactly what user sees in preview
+      let finalPath = '';
+      visiblePoints.forEach((pt, i) => {
+        finalPath += i === 0 ? `M ${pt.x.toFixed(2)} ${pt.y.toFixed(2)}` : ` L ${pt.x.toFixed(2)} ${pt.y.toFixed(2)}`;
+      });
+
+      svgPath = finalPath; // Update global for export (using VISIBLE points only!)
+
+      // Calculate VISIBLE width for export stats (actual waveform extent)
+      const visibleMinX = visiblePoints.length > 0 ? Math.min(...visiblePoints.map(p => p.x)) : 0;
+      const visibleMaxX = visiblePoints.length > 0 ? Math.max(...visiblePoints.map(p => p.x)) : monitorWidth;
+      const visibleWidth = Math.ceil(visibleMaxX - visibleMinX);
+
+      // Update stats
+      const pointDelta = finalPoints.length - croppedPointsBeforeBaseline.length;
+      let baselineInfo = '';
+      if (pointDelta > 0) {
+        baselineInfo = ` | +${pointDelta} baseline segments added`;
+      } else if (pointDelta < 0) {
+        baselineInfo = ` | ${Math.abs(pointDelta)} baseline points removed`;
+      }
+
+      // Add clipping info if waveform extends beyond monitor
+      let clippingInfo = '';
+      if (actualSVGWidth > monitorWidth) {
+        const clippedPoints = finalPoints.length - visiblePoints.length;
+        clippingInfo = ` | Clipped to ${monitorWidth}px (${clippedPoints} points removed from export)`;
+      }
+
+      document.getElementById('finalStats').textContent = `✓ Final output: ${visibleWidth}×${monitorHeight}px (1:1 horizontal, no stretching), ${visiblePoints.length} points${baselineInfo}${clippingInfo}`;
+
+      // Store visible points and visible width for export
+      window.lastFinalPoints = visiblePoints; // Export uses VISIBLE points only!
+      window.lastVisiblePoints = visiblePoints; // For R-wave detection
+      window.lastActualSVGWidth = visibleWidth; // Update to visible width for export
+
+      // NEW WORKFLOW: Enable R-wave detection button, but keep save buttons disabled until R-waves confirmed
+      const finalValid = finalPoints.length > 10;
+      document.getElementById('detectRWavesBtn').disabled = !finalValid;
+
+      // Save buttons stay disabled until user confirms R-wave positions in Step 3.9
+      document.getElementById('saveToProjectBtn').disabled = !rWavesConfirmed;
+      document.getElementById('autoSaveBtn').disabled = !rWavesConfirmed;
+
+      // Update SVG output
+      document.getElementById('output').textContent = `<?xml version="1.0" encoding="UTF-8"?>
+<svg width="${actualSVGWidth}" height="${monitorHeight}" viewBox="0 0 ${actualSVGWidth} ${monitorHeight}" xmlns="http://www.w3.org/2000/svg">
+  <path
+    d="${finalPath}"
+    stroke="#00ff00"
+    stroke-width="${lineWidth}"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    fill="none"
+  />
+</svg>`;
+    }
+
+    function downloadSVG() {
+      const actualSVGWidth = window.lastActualSVGWidth || 1000; // Use actual width (preserves 1:1 horizontal)
+      const svgHeight = parseInt(document.getElementById('monitorHeight').value);
+      const lineWidth = parseFloat(document.getElementById('lineWidth').value);
+
+      const svgContent = `<?xml version="1.0" encoding="UTF-8"?>
+<svg width="${actualSVGWidth}" height="${svgHeight}" viewBox="0 0 ${actualSVGWidth} ${svgHeight}" xmlns="http://www.w3.org/2000/svg">
+  <path
+    d="${svgPath}"
+    stroke="#00ff00"
+    stroke-width="${lineWidth}"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    fill="none"
+  />
+</svg>`;
+
+      const blob = new Blob([svgContent], { type: 'image/svg+xml' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = `${fileName}_green_cropped.svg`;
+      a.click();
+      URL.revokeObjectURL(url);
+
+      alert(`✓ Downloaded: ${fileName}_green_cropped.svg (${actualSVGWidth}×${svgHeight}px, 1:1 horizontal)\n\nSave to: /assets/waveforms/${fileName}_green_cropped.svg`);
+    }
+
+    function copyReactCode() {
+      const actualSVGWidth = window.lastActualSVGWidth || 1000; // Use actual width (preserves 1:1 horizontal)
+      const outputText = document.getElementById('output').textContent;
+      const heightMatch = outputText.match(/height="(\d+)"/);
+      const svgHeight = heightMatch ? parseInt(heightMatch[1]) : 60;
+
+      const reactCode = `// React Native SVG Component (Cropped Region - 1:1 horizontal scaling preserved)
+import Svg, { Path } from 'react-native-svg';
+
+export default function ${fileName.charAt(0).toUpperCase() + fileName.slice(1)}Waveform({ width, height, color = '#00ff00' }) {
+  return (
+    <Svg
+      width={width}
+      height={height}
+      viewBox="0 0 ${actualSVGWidth} ${svgHeight}"
+      preserveAspectRatio="none"
+    >
+      <Path
+        d="${svgPath}"
+        stroke={color}
+        strokeWidth="${document.getElementById('lineWidth').value}"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        fill="none"
+      />
+    </Svg>
+  );
+}
+
+// Usage:
+// <${fileName.charAt(0).toUpperCase() + fileName.slice(1)}Waveform width={containerWidth} height={60} color="#00ff00" />
+
+// Or save SVG file and import:
+// import ${fileName.charAt(0).toUpperCase() + fileName.slice(1)}SVG from '../assets/waveforms/${fileName}_green_cropped.svg';
+// <SvgXml xml={${fileName.charAt(0).toUpperCase() + fileName.slice(1)}SVG} width="100%" height={60} />
+
+// NOTE: SVG dimensions are ${actualSVGWidth}×${svgHeight}px (1:1 horizontal scaling - no QRS distortion!)`;
+
+      navigator.clipboard.writeText(reactCode);
+      alert('✓ React Native code copied to clipboard!\n\n1:1 horizontal scaling preserved - no QRS distortion!\n\nPaste into your component file.');
+    }
+
+    function exportForClaude() {
+      const actualSVGWidth = window.lastActualSVGWidth || 1000; // Use actual width (preserves 1:1 horizontal)
+      const monitorHeight = parseInt(document.getElementById('monitorHeight').value);
+      const outputText = document.getElementById('output').textContent;
+      const heightMatch = outputText.match(/height="(\d+)"/);
+      const svgHeight = heightMatch ? parseInt(heightMatch[1]) : monitorHeight;
+
+      const exportData = {
+        fileName: fileName,
+        imageBase64: originalImageBase64.substring(0, 1000) + '...[truncated]', // Preview only
+        imageSize: {
+          width: imageData.width,
+          height: imageData.height
+        },
+        extractedPoints: extractedPoints,
+        monitorDimensions: {
+          width: actualSVGWidth, // Actual cropped width (1:1 horizontal)
+          height: monitorHeight
+        },
+        currentSettings: {
+          threshold: document.getElementById('threshold').value,
+          lineWidth: document.getElementById('lineWidth').value,
+          smoothing: document.getElementById('smoothing').value,
+          baselineAdjustment: document.getElementById('baselineSegments').value,
+          cropWindowPosition: cropWindowPosition,
+          outputSVGWidth: actualSVGWidth, // Use actual width
+          outputSVGHeight: svgHeight,
+          horizontalScaling: '1:1 (no stretching)'
+        },
+        svgPath: svgPath,
+        processedPointCount: processedPoints.length,
+        timestamp: new Date().toISOString()
+      };
+
+      const baselineAdj = parseInt(exportData.currentSettings.baselineAdjustment);
+      const baselineText = baselineAdj === 0 ? 'No adjustment' :
+                          baselineAdj > 0 ? `+${baselineAdj} segments inserted` :
+                          `${Math.abs(baselineAdj)} points removed`;
+
+      const exportText = `🎨 ECG Waveform Export Package for Claude
+
+Filename: ${exportData.fileName}
+Image Size: ${exportData.imageSize.width}x${exportData.imageSize.height}px
+Extracted Points: ${exportData.extractedPoints.length}
+Monitor Dimensions: ${actualSVGWidth}×${monitorHeight}px (fixed crop window)
+Crop Window Position: ${cropWindowPosition.toFixed(1)}% (slider position)
+Output SVG: ${actualSVGWidth}×${svgHeight}px (1:1 horizontal - NO QRS distortion!)
+
+Current Settings:
+  - Threshold: ${exportData.currentSettings.threshold}
+  - Line Width: ${exportData.currentSettings.lineWidth}px
+  - Smoothing: ${exportData.currentSettings.smoothing} points
+  - Baseline Adjustment: ${baselineText}
+  - Crop Window Position: ${exportData.currentSettings.cropWindowPosition}%
+  - SVG Dimensions: ${exportData.currentSettings.outputSVGWidth}×${exportData.currentSettings.outputSVGHeight}px
+
+📦 Full Data Package (paste this to Claude):
+\`\`\`json
+${JSON.stringify(exportData, null, 2)}
+\`\`\`
+
+Instructions for Claude:
+1. Load this data and regenerate the cropped SVG
+2. Fine-tune line width, smoothing, and baseline adjustment to match monitor
+3. Verify crop window captures the correct waveform segment (${actualSVGWidth}×${monitorHeight}px - 1:1 horizontal scaling)
+4. Export final optimized SVG file ready for React Native (NO QRS distortion!)`;
+
+      document.getElementById('claudeExport').style.display = 'block';
+      document.getElementById('claudeExport').textContent = exportText;
+
+      navigator.clipboard.writeText(exportText);
+      alert('✓ Export package copied to clipboard!\n\nPaste this in your message to Claude for fine-tuning.');
+    }
+
+    function autoSaveDualFormats() {
+      // This function automatically saves BOTH formats:
+      // 1. SVG (vector) - for future dynamic sizing
+      // 2. PNG (raster) - for current system compatibility
+
+      const actualSVGWidth = window.lastActualSVGWidth || 1000;
+      const svgHeight = parseInt(document.getElementById('monitorHeight').value);
+      const lineWidth = parseFloat(document.getElementById('lineWidth').value);
+
+      // === PART 1: Save SVG File ===
+      const svgContent = `<?xml version="1.0" encoding="UTF-8"?>
+<svg width="${actualSVGWidth}" height="${svgHeight}" viewBox="0 0 ${actualSVGWidth} ${svgHeight}" xmlns="http://www.w3.org/2000/svg">
+  <path
+    d="${svgPath}"
+    stroke="#00ff00"
+    stroke-width="${lineWidth}"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    fill="none"
+  />
+</svg>`;
+
+      const svgBlob = new Blob([svgContent], { type: 'image/svg+xml' });
+      const svgUrl = URL.createObjectURL(svgBlob);
+      const svgLink = document.createElement('a');
+      svgLink.href = svgUrl;
+      svgLink.download = `${fileName}_green.svg`;
+      svgLink.click();
+      URL.revokeObjectURL(svgUrl);
+
+      // === PART 2: Generate and Save PNG File ===
+      // Create a temporary canvas to render the final waveform as PNG
+      const pngCanvas = document.createElement('canvas');
+      pngCanvas.width = actualSVGWidth;
+      pngCanvas.height = svgHeight;
+      const ctx = pngCanvas.getContext('2d');
+
+      // Draw black background
+      ctx.fillStyle = '#000000';
+      ctx.fillRect(0, 0, pngCanvas.width, pngCanvas.height);
+
+      // Draw green waveform - use EXACT same data as preview (matches "Save to Project Folder")
+      ctx.strokeStyle = '#00ff00';
+      ctx.lineWidth = lineWidth;
+      ctx.lineCap = 'round';
+      ctx.lineJoin = 'round';
+      ctx.beginPath();
+
+      // Use the globally stored finalPoints from preview (same as "Save to Project Folder")
+      const finalPoints = window.lastFinalPoints || [];
+
+      if (finalPoints.length === 0) {
+        alert('⚠️ No waveform data to download!\n\nPlease finalize your waveform first by adjusting the crop or baseline.');
+        return;
+      }
+
+      finalPoints.forEach((pt, i) => {
+        if (i === 0) {
+          ctx.moveTo(pt.x, pt.y);
+        } else {
+          ctx.lineTo(pt.x, pt.y);
+        }
+      });
+      ctx.stroke();
+
+      // Convert canvas to PNG and download
+      pngCanvas.toBlob(function(blob) {
+        const pngUrl = URL.createObjectURL(blob);
+        const pngLink = document.createElement('a');
+        pngLink.href = pngUrl;
+        pngLink.download = `${fileName}_green.png`;
+        pngLink.click();
+        URL.revokeObjectURL(pngUrl);
+
+        // Show success message with instructions
+        alert(`✓ DUAL-FORMAT SAVE COMPLETE!
+
+📁 Saved 2 files:
+  1. ${fileName}_green.svg (${actualSVGWidth}×${svgHeight}px)
+     → Vector format for future dynamic sizing
+
+  2. ${fileName}_green.png (${actualSVGWidth}×${svgHeight}px)
+     → Raster format for current system
+
+📂 Recommended save locations:
+  SVG: /assets/waveforms/svg/${fileName}_green.svg
+  PNG: /assets/waveforms/png/${fileName}_green.png
+
+🔄 Both versions preserve exact 1:1 horizontal scaling!
+   Ready for immediate use or future SVG migration.`);
+      });
+    }
+
+    // === SAVE TO PROJECT FOLDER (via local server) ===
+    const SERVER_URL = 'http://localhost:3456';
+
+    // Track current working waveform
+    let currentWorkingWaveform = null;
+
+    // Check server status and update UI
+    async function checkServerStatus() {
+      const statusDiv = document.getElementById('serverStatus');
+      try {
+        const response = await fetch(`${SERVER_URL}/ping`, { method: 'GET' });
+        if (response.ok) {
+          statusDiv.style.background = '#0a0';
+          statusDiv.style.borderColor = '#0f0';
+          statusDiv.style.color = '#fff';
+          statusDiv.innerHTML = '✅ Server Running';
+          console.log('✅ ECG Save Server is running');
+          return true;
+        } else {
+          throw new Error('Server responded with error');
+        }
+      } catch (error) {
+        statusDiv.style.background = '#a00';
+        statusDiv.style.borderColor = '#f00';
+        statusDiv.style.color = '#fff';
+        statusDiv.innerHTML = '❌ Server Offline';
+        console.error('❌ ECG Save Server is not running');
+        return false;
+      }
+    }
+
+    // Auto-check server status on page load and every 10 seconds
+    checkServerStatus();
+    setInterval(checkServerStatus, 10000);
+
+    // Reload cached ECG from localStorage
+    function reloadCachedECG() {
+      const cachedImage = localStorage.getItem('lastUploadedECG');
+      const cachedName = localStorage.getItem('lastUploadedECGName');
+
+      if (!cachedImage) {
+        alert('⚠️ No cached ECG found!\n\nUpload an ECG first, then you can quickly reload it later.');
+        return;
+      }
+
+      console.log(`🔄 Reloading cached ECG: ${cachedName}`);
+
+      // Reconstruct filename
+      fileName = cachedName.split('.')[0];
+      window.originalImageFilename = cachedName;
+
+      // Auto-detect waveform type
+      const detectedKey = detectWaveformType(cachedName);
+      if (detectedKey) {
+        const waveformInfo = WAVEFORM_LIST.find(w => w.key === detectedKey);
+        if (waveformInfo) {
+          currentWorkingWaveform = detectedKey;
+          document.getElementById('waveformNameInput').value = detectedKey;
+          console.log(`🔍 Auto-detected: ${waveformInfo.label} (${detectedKey})`);
+          setTimeout(() => refreshBulletinBoard(), 100);
+        }
+      }
+
+      // Load the cached image
+      originalImageBase64 = cachedImage;
+      const img = new Image();
+      img.onload = function() {
+        const canvas = document.getElementById('sourceCanvas');
+        canvas.width = img.width;
+        canvas.height = img.height;
+        const ctx = canvas.getContext('2d');
+        ctx.drawImage(img, 0, 0);
+        imageData = ctx.getImageData(0, 0, img.width, img.height);
+
+        document.getElementById('output').textContent = `✓ Reloaded ${cachedName}! Click "Extract Black Line" to process.`;
+        document.getElementById('extractBtn').disabled = false;
+      };
+      img.src = cachedImage;
+    }
+
+    // Check for cached ECG on page load
+    window.addEventListener('load', function() {
+      const cachedName = localStorage.getItem('lastUploadedECGName');
+      if (cachedName) {
+        document.getElementById('reloadLastECG').style.display = 'inline-block';
+        document.getElementById('lastECGName').textContent = `(Last: ${cachedName})`;
+        console.log(`💾 Cached ECG available: ${cachedName}`);
+      }
+    });
+
+    // Canonical waveform list (67 total)
+    const WAVEFORM_LIST = [
+      // Normal and Rate Variants
+      { key: 'sinus_ecg', label: 'Normal Sinus Rhythm', category: 'Normal' },
+      { key: 'sinus_brady_ecg', label: 'Sinus Bradycardia', category: 'Normal' },
+      { key: 'sinus_tachy_ecg', label: 'Sinus Tachycardia', category: 'Normal' },
+
+      // Atrial Arrhythmias
+      { key: 'afib_ecg', label: 'Atrial Fibrillation', category: 'Atrial' },
+      { key: 'aflutter_ecg', label: 'Atrial Flutter', category: 'Atrial' },
+      { key: 'mat_ecg', label: 'Multifocal Atrial Tachycardia', category: 'Atrial' },
+      { key: 'svt_ecg', label: 'Supraventricular Tachycardia', category: 'Atrial' },
+      { key: 'pac_ecg', label: 'Premature Atrial Complexes', category: 'Atrial' },
+
+      // Junctional Rhythms
+      { key: 'junctional_ecg', label: 'Junctional Rhythm', category: 'Junctional' },
+
+      // Ventricular Arrhythmias
+      { key: 'vtach_ecg', label: 'Ventricular Tachycardia', category: 'Ventricular' },
+      { key: 'vfib_ecg', label: 'Ventricular Fibrillation', category: 'Ventricular' },
+      { key: 'torsades_ecg', label: 'Torsades de Pointes', category: 'Ventricular' },
+      { key: 'bigeminy_ecg', label: 'Ventricular Bigeminy', category: 'Ventricular' },
+      { key: 'trigeminy_ecg', label: 'Ventricular Trigeminy', category: 'Ventricular' },
+      { key: 'idioventricular_ecg', label: 'Idioventricular Rhythm', category: 'Ventricular' },
+      { key: 'aivr_ecg', label: 'Accelerated Idioventricular', category: 'Ventricular' },
+
+      // AV Blocks
+      { key: 'avblock1_ecg', label: '1st Degree AV Block', category: 'AV Block' },
+      { key: 'avblock2_type1_ecg', label: '2nd Degree Type I (Wenckebach)', category: 'AV Block' },
+      { key: 'avblock2_type2_ecg', label: '2nd Degree Type II', category: 'AV Block' },
+      { key: 'avblock3_ecg', label: '3rd Degree (Complete)', category: 'AV Block' },
+
+      // Bundle Branch Blocks
+      { key: 'lbbb_ecg', label: 'Left Bundle Branch Block', category: 'Bundle Block' },
+      { key: 'rbbb_ecg', label: 'Right Bundle Branch Block', category: 'Bundle Block' },
+
+      // Pre-excitation
+      { key: 'wpw_ecg', label: 'Wolff-Parkinson-White', category: 'Pre-excitation' },
+
+      // Paced Rhythms
+      { key: 'vpaced_ecg', label: 'Ventricular Paced', category: 'Paced' },
+      { key: 'dual_paced_ecg', label: 'Dual-Chamber Paced', category: 'Paced' },
+
+      // Electrolyte Abnormalities
+      { key: 'hyperkalemia_ecg', label: 'Hyperkalemia', category: 'Electrolyte' },
+      { key: 'hypokalemia_ecg', label: 'Hypokalemia', category: 'Electrolyte' },
+
+      // Temperature
+      { key: 'hypothermia_ecg', label: 'Hypothermia (J-waves)', category: 'Temperature' },
+
+      // Ischemia / MI Patterns
+      { key: 'stemi_ecg', label: 'STEMI (Anterior)', category: 'Ischemia/MI' },
+      { key: 'stemi_inferior_ecg', label: 'STEMI (Inferior)', category: 'Ischemia/MI' },
+      { key: 'nstemi_ecg', label: 'NSTEMI', category: 'Ischemia/MI' },
+      { key: 'lbbb_sgarbossa_ecg', label: 'LBBB with Sgarbossa', category: 'Ischemia/MI' },
+
+      // Other Pathologies
+      { key: 'pericarditis_ecg', label: 'Pericarditis', category: 'Pathology' },
+      { key: 'pulmonary_embolism_ecg', label: 'Pulmonary Embolism', category: 'Pathology' },
+      { key: 'early_repolarization_ecg', label: 'Early Repolarization', category: 'Pathology' },
+      { key: 'electrical_alternans_ecg', label: 'Electrical Alternans', category: 'Pathology' },
+
+      // Cardiac Arrest
+      { key: 'asystole_ecg', label: 'Asystole (Flatline)', category: 'Arrest' },
+      { key: 'pea_ecg', label: 'Pulseless Electrical Activity', category: 'Arrest' },
+
+      // Artifact
+      { key: 'artifact_ecg', label: 'Artifact / Noise', category: 'Artifact' }
+    ];
+
+    // Handle waveform click - either set as working or open research tabs
+    function handleWaveformClick(waveformKey, waveformLabel, isComplete) {
+      // If already complete, ask if user wants to research or select it
+      if (isComplete) {
+        const action = confirm(`✅ ${waveformLabel} is already completed!\n\nClick OK to research this waveform online\nClick Cancel to select it as your current working waveform`);
+
+        if (action) {
+          // Research mode
+          openResearchTabs(waveformKey, waveformLabel);
+        } else {
+          // Select as working
+          setWorkingWaveform(waveformKey, waveformLabel);
+        }
+      } else {
+        // Not complete - show options
+        const hasFile = document.getElementById('imageUpload').files.length > 0;
+
+        if (hasFile) {
+          // User has file uploaded - ask if they want to set this as the working waveform or research
+          const action = confirm(`🔄 Working on: ${waveformLabel}\n\nClick OK to mark this as your current waveform\nClick Cancel to research this waveform online instead`);
+
+          if (action) {
+            setWorkingWaveform(waveformKey, waveformLabel);
+          } else {
+            openResearchTabs(waveformKey, waveformLabel);
+          }
+        } else {
+          // No file - open research tabs
+          openResearchTabs(waveformKey, waveformLabel);
+        }
+      }
+    }
+
+    // Set current working waveform
+    function setWorkingWaveform(waveformKey, waveformLabel) {
+      currentWorkingWaveform = waveformKey;
+      document.getElementById('waveformNameInput').value = waveformKey;
+      refreshBulletinBoard();
+      console.log(`🔄 Now working on: ${waveformLabel} (${waveformKey})`);
+    }
+
+    // Open research tabs for a waveform (cycles through sources on repeated clicks)
+    function openResearchTabs(waveformKey, waveformLabel) {
+      const searchTerm = waveformLabel;
+
+      // Initialize click counter for this waveform if it doesn't exist
+      if (!window.waveformClickCount) {
+        window.waveformClickCount = {};
+      }
+      if (!window.waveformClickCount[waveformKey]) {
+        window.waveformClickCount[waveformKey] = 0;
+      }
+
+      // Cycle through tabs: 0 = LITFL, 1 = WikEM, 2 = Google Images
+      const clickIndex = window.waveformClickCount[waveformKey] % 3;
+
+      let url, tabName;
+      if (clickIndex === 0) {
+        // Tab 1: Life in the Fast Lane
+        url = `https://www.google.com/search?q=${encodeURIComponent(searchTerm + ' site:litfl.com')}`;
+        tabName = 'Life in the Fast Lane';
+      } else if (clickIndex === 1) {
+        // Tab 2: WikEM
+        url = `https://www.google.com/search?q=${encodeURIComponent(searchTerm + ' site:wikem.org')}`;
+        tabName = 'WikEM';
+      } else {
+        // Tab 3: Google Images
+        url = `https://www.google.com/search?q=${encodeURIComponent(searchTerm + ' ECG')}&tbm=isch`;
+        tabName = 'Google Images';
+      }
+
+      window.open(url, '_blank');
+      window.waveformClickCount[waveformKey]++;
+
+      console.log(`🔍 Opened ${tabName} for: ${waveformLabel} (click ${clickIndex + 1}/3)`);
+    }
+
+    // Refresh bulletin board with current status
+    async function refreshBulletinBoard() {
+      const board = document.getElementById('bulletinBoard');
+      board.innerHTML = '<div style="color: #888; text-align: center; padding: 20px;">🔄 Loading waveform status...</div>';
+
+      try {
+        const response = await fetch(`${SERVER_URL}/list-waveforms`);
+        const result = await response.json();
+
+        let completedCount = 0;
+        let html = '';
+
+        // Group by category
+        const categories = {};
+        WAVEFORM_LIST.forEach(wf => {
+          if (!categories[wf.category]) {
+            categories[wf.category] = [];
+          }
+          categories[wf.category].push(wf);
+        });
+
+        // Render each category
+        for (const [category, waveforms] of Object.entries(categories)) {
+          html += `<div style="margin-bottom: 20px;">`;
+          html += `<div style="color: #ffa500; font-weight: bold; margin-bottom: 8px; border-bottom: 1px solid #333; padding-bottom: 4px;">${category}</div>`;
+          html += `<div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 8px;">`;
+
+          waveforms.forEach(wf => {
+            const isComplete = result.completed.includes(wf.key);
+            const isWorking = currentWorkingWaveform === wf.key;
+            if (isComplete) completedCount++;
+
+            let statusIcon, statusColor, bgColor, textColor, borderWidth;
+
+            if (isComplete) {
+              // Completed - Green
+              statusIcon = '✅';
+              statusColor = '#0f0';
+              bgColor = 'rgba(0, 255, 0, 0.1)';
+              textColor = '#0f0';
+              borderWidth = '1px';
+            } else if (isWorking) {
+              // In Progress - Orange/Yellow
+              statusIcon = '🔄';
+              statusColor = '#ffa500';
+              bgColor = 'rgba(255, 165, 0, 0.2)';
+              textColor = '#ffa500';
+              borderWidth = '2px';
+            } else {
+              // Not started - Gray
+              statusIcon = '⬜';
+              statusColor = '#555';
+              bgColor = 'rgba(0, 0, 0, 0.3)';
+              textColor = '#888';
+              borderWidth = '1px';
+            }
+
+            // Button container with checkbox and search icon
+            html += `<div style="display: flex; align-items: center; gap: 8px; padding: 8px; background: ${bgColor}; border: ${borderWidth} solid ${statusColor}; border-radius: 4px; transition: all 0.2s;" onmouseover="this.style.borderColor='#ffa500'" onmouseout="this.style.borderColor='${statusColor}'">`;
+
+            // Main checkbox button (left side - takes most space)
+            html += `<div onclick="setWorkingWaveform('${wf.key}', '${wf.label.replace(/'/g, "\\'")}')" style="flex: 1; display: flex; align-items: center; cursor: pointer;">`;
+            html += `<span style="margin-right: 6px;">${statusIcon}</span>`;
+            html += `<span style="color: ${textColor}; font-size: 12px;">${wf.label}</span>`;
+            html += `</div>`;
+
+            // Minimal search icon (right side)
+            html += `<span onclick="event.stopPropagation(); openResearchTabs('${wf.key}', '${wf.label.replace(/'/g, "\\'")}')" style="color: #888; font-size: 14px; cursor: pointer; opacity: 0.6; transition: all 0.2s;" onmouseover="this.style.opacity='1'; this.style.color='#ffa500'" onmouseout="this.style.opacity='0.6'; this.style.color='#888'" title="Search online">🔍</span>`;
+
+            html += `</div>`;
+          });
+
+          html += `</div></div>`;
+        }
+
+        board.innerHTML = html;
+
+        // Update stats
+        const remainingCount = WAVEFORM_LIST.length - completedCount;
+        const progressPercent = Math.round((completedCount / WAVEFORM_LIST.length) * 100);
+
+        document.getElementById('completedCount').textContent = completedCount;
+        document.getElementById('remainingCount').textContent = remainingCount;
+        document.getElementById('progressPercent').textContent = progressPercent + '%';
+
+        // Update current working display
+        const workingDisplay = document.getElementById('currentWorkingDisplay');
+        if (currentWorkingWaveform) {
+          const waveformInfo = WAVEFORM_LIST.find(w => w.key === currentWorkingWaveform);
+          if (waveformInfo) {
+            workingDisplay.textContent = `🔄 Currently Working On: ${waveformInfo.label}`;
+          }
+        } else {
+          workingDisplay.textContent = '';
+        }
+
+        console.log(`📊 Progress: ${completedCount}/${WAVEFORM_LIST.length} waveforms completed (${progressPercent}%)`);
+
+      } catch (error) {
+        board.innerHTML = `<div style="color: #f00; text-align: center; padding: 20px;">❌ Error loading status<br><small>${error.message}</small><br><br>Make sure server is running: npm run ecg-save-server</div>`;
+      }
+    }
+
+    // Store R-wave markers for manual editing
+    let rWaveMarkers = [];
+    let rWaveSensitivity = 1.5; // Current sensitivity threshold
+    let rWavesConfirmed = false; // Whether user has confirmed R-wave positions
+    let manualAdjustMode = false; // Whether manual click-to-add/remove is enabled
+
+    // NEW WORKFLOW: Detect and show R-waves in dedicated Step 3.9 canvas
+    function detectAndShowRWaves() {
+      // CRITICAL: Use VISIBLE points only (clipped to monitor width)
+      const visiblePoints = window.lastVisiblePoints || [];
+      if (visiblePoints.length === 0) {
+        document.getElementById('rWaveStatus').textContent = '⚠️ Please finalize your waveform first';
+        document.getElementById('rWaveStatus').style.color = '#f00';
+        return;
+      }
+
+      // Show the R-wave controls panel
+      document.getElementById('rWaveControls').style.display = 'block';
+      document.getElementById('rWaveStatus').textContent = '✅ Detection active - adjust sensitivity below';
+      document.getElementById('rWaveStatus').style.color = '#0f0';
+
+      // Run initial detection with current sensitivity
+      runRWaveDetection();
+    }
+
+    // Run R-wave detection with current sensitivity setting
+    function runRWaveDetection() {
+      // CRITICAL: Use VISIBLE points only (clipped to monitor width) - NOT the full waveform!
+      const visiblePoints = window.lastVisiblePoints || [];
+      if (visiblePoints.length === 0) return;
+
+      // 🔄 SAVE TO HISTORY before making changes
+      if (rWaveMarkers.length > 0) {
+        rWaveHistory.push({
+          markers: [...rWaveMarkers],
+          sensitivity: rWaveSensitivity
+        });
+        if (rWaveHistory.length > 10) rWaveHistory.shift();
+        document.getElementById('undoRWaveBtn').disabled = false;
+      }
+
+      // Get current sensitivity from slider
+      rWaveSensitivity = parseFloat(document.getElementById('rWaveSensitivity').value);
+
+      // Auto-detect R-waves with sensitivity parameter on VISIBLE portion only
+      rWaveMarkers = detectRWavePeaksWithSensitivity(visiblePoints, rWaveSensitivity);
+
+      // Update UI
+      updateRWaveCount();
+      drawRWaveCanvas();
+      updateRWavePositionsList();
+    }
+
+    // Update R-wave count display
+    function updateRWaveCount() {
+      document.getElementById('rWaveCount').textContent = rWaveMarkers.length;
+    }
+
+    // Draw waveform with R-wave markers on Step 3.9 canvas
+    function drawRWaveCanvas() {
+      const canvas = document.getElementById('rWaveCanvas');
+      const ctx = canvas.getContext('2d');
+      // CRITICAL: Use VISIBLE points (matches what user sees in Step 3.75 preview)
+      const visiblePoints = window.lastVisiblePoints || [];
+
+      if (visiblePoints.length === 0) return;
+
+      // Clear canvas
+      ctx.fillStyle = '#000';
+      ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+      // Draw waveform (green) - using VISIBLE points only
+      ctx.strokeStyle = '#00ff00';
+      ctx.lineWidth = 2;
+      ctx.beginPath();
+
+      // Get monitor width from visiblePoints range
+      const monitorWidth = parseInt(document.getElementById('monitorWidth').value) || 1000;
+
+      visiblePoints.forEach((pt, i) => {
+        const x = (pt.x / monitorWidth) * canvas.width;
+        const y = (pt.y / 60) * canvas.height;
+        if (i === 0) ctx.moveTo(x, y);
+        else ctx.lineTo(x, y);
+      });
+      ctx.stroke();
+
+      // Draw R-wave markers (red vertical lines with circles)
+      rWaveMarkers.forEach(position => {
+        const x = position * canvas.width;
+
+        // Vertical line
+        ctx.strokeStyle = '#ff0000';
+        ctx.lineWidth = 2;
+        ctx.setLineDash([5, 5]);
+        ctx.beginPath();
+        ctx.moveTo(x, 0);
+        ctx.lineTo(x, canvas.height);
+        ctx.stroke();
+        ctx.setLineDash([]);
+
+        // Circle at peak
+        ctx.fillStyle = '#ff0000';
+        ctx.beginPath();
+        ctx.arc(x, 10, 6, 0, 2 * Math.PI);
+        ctx.fill();
+      });
+    }
+
+    // Update R-wave positions list display
+    function updateRWavePositionsList() {
+      const list = document.getElementById('rWavePositionsList');
+      if (rWaveMarkers.length === 0) {
+        list.innerHTML = '<div style="color: #888; text-align: center;">No R-waves detected</div>';
+        return;
+      }
+
+      let html = `<div style="color: #ff0080; font-weight: bold; margin-bottom: 8px;">Normalized Positions (0.0 - 1.0):</div>`;
+      html += `<div style="color: #0f0;">[${rWaveMarkers.map(p => p.toFixed(2)).join(', ')}]</div>`;
+      list.innerHTML = html;
+    }
+
+    // Enable manual adjustment mode
+    function manualRWaveMode() {
+      manualAdjustMode = true;
+      alert('✏️ Manual mode enabled!\n\nClick on the canvas to:\n• ADD a new R-wave marker\n• REMOVE an existing marker (click near it)');
+    }
+
+    // Save R-wave positions and proceed
+    function saveRWavePositions() {
+      if (rWaveMarkers.length === 0) {
+        alert('⚠️ No R-waves detected! Please adjust sensitivity or add manually.');
+        return;
+      }
+
+      // 🔒 VALIDATION: Check if waveform is selected from library
+      const waveformNameInput = document.getElementById('waveformNameInput').value.trim();
+      if (!currentWorkingWaveform || !waveformNameInput.endsWith('_ecg')) {
+        alert('⚠️ NAMING REQUIRED\n\n' +
+              'Please select a waveform from the library on the right side first!\n\n' +
+              'This ensures consistent naming with the "_ecg" suffix.\n\n' +
+              'Click on any waveform box (e.g., "Sinus Rhythm", "AFib", "VFib") to select it.');
+        return;
+      }
+
+      rWavesConfirmed = true;
+      document.getElementById('rWaveStatus').textContent = `✅ Saved ${rWaveMarkers.length} R-wave positions`;
+      document.getElementById('rWaveStatus').style.color = '#0f0';
+
+      // Enable save buttons in Step 4
+      document.getElementById('saveToProjectBtn').disabled = false;
+      document.getElementById('autoSaveBtn').disabled = false;
+
+      alert(`✅ R-wave positions confirmed!\n\n${rWaveMarkers.length} peaks saved.\n\nYou can now proceed to save your waveform.`);
+    }
+
+    // Clear all R-wave markers
+    function clearRWaves() {
+      rWaveMarkers = [];
+      rWavesConfirmed = false;
+      manualAdjustMode = false;
+      updateRWaveCount();
+      drawRWaveCanvas();
+      updateRWavePositionsList();
+      document.getElementById('rWaveStatus').textContent = 'Click DETECT R-WAVES to start';
+      document.getElementById('rWaveStatus').style.color = '#888';
+    }
+
+    // Legacy function - still used by old finalCanvas click handler
+    function clearRWaveMarkers() {
+      clearRWaves();
+    }
+
+    // ========================================
+    // 🔄 UNDO FUNCTIONS
+    // ========================================
+
+    function undoExtract() {
+      if (extractHistory.length === 0) return;
+
+      const previous = extractHistory.pop();
+      extractedPoints = previous.points;
+      document.getElementById('threshold').value = previous.threshold;
+
+      // Redraw canvas
+      const canvas = document.getElementById('extractedCanvas');
+      const ctx = canvas.getContext('2d');
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+      // Draw extracted points
+      ctx.strokeStyle = '#00ff00';
+      ctx.lineWidth = 2;
+      ctx.beginPath();
+      extractedPoints.forEach((pt, i) => {
+        if (i === 0) ctx.moveTo(pt.x, pt.y);
+        else ctx.lineTo(pt.x, pt.y);
+      });
+      ctx.stroke();
+
+      document.getElementById('extractStats').textContent = `✓ Extracted ${extractedPoints.length} points (UNDONE)`;
+
+      // Disable undo if no more history
+      if (extractHistory.length === 0) {
+        document.getElementById('undoExtractBtn').disabled = true;
+      }
+    }
+
+    function undoSVG() {
+      if (svgHistory.length === 0) return;
+
+      const previous = svgHistory.pop();
+      processedPoints = previous.points;
+      document.getElementById('smoothing').value = previous.smoothing;
+      document.getElementById('smoothingValue').textContent = previous.smoothing + (previous.smoothing === '0' ? ' (none)' : ' points');
+
+      // Trigger SVG redraw
+      convertToSVG();
+
+      // Disable undo if no more history
+      if (svgHistory.length === 0) {
+        document.getElementById('undoSVGBtn').disabled = true;
+      }
+    }
+
+    function undoCrop() {
+      if (cropHistory.length === 0) return;
+
+      const previous = cropHistory.pop();
+      cropWindowPosition = previous.position;
+      waveformPanOffset = previous.panOffset;
+      document.getElementById('monitorWidth').value = previous.monitorWidth;
+      document.getElementById('monitorHeight').value = previous.monitorHeight;
+
+      // Trigger crop redraw
+      updateCropPreview();
+
+      // Disable undo if no more history
+      if (cropHistory.length === 0) {
+        document.getElementById('undoCropBtn').disabled = true;
+      }
+    }
+
+    function undoBaseline() {
+      if (baselineHistory.length === 0) return;
+
+      const previous = baselineHistory.pop();
+      document.getElementById('baselineSegments').value = previous.adjustment;
+      document.getElementById('baselineSegmentsValue').textContent = previous.adjustment + ' pixels';
+
+      // Trigger baseline redraw
+      updateFinalPreview();
+
+      // Disable undo if no more history
+      if (baselineHistory.length === 0) {
+        document.getElementById('undoBaselineBtn').disabled = true;
+      }
+    }
+
+    function undoRWave() {
+      if (rWaveHistory.length === 0) return;
+
+      const previous = rWaveHistory.pop();
+      rWaveMarkers = previous.markers;
+      rWaveSensitivity = previous.sensitivity;
+      document.getElementById('rWaveSensitivity').value = previous.sensitivity;
+      document.getElementById('sensitivityValue').textContent = previous.sensitivity;
+
+      // Redraw
+      updateRWaveCount();
+      drawRWaveCanvas();
+      updateRWavePositionsList();
+
+      // Disable undo if no more history
+      if (rWaveHistory.length === 0) {
+        document.getElementById('undoRWaveBtn').disabled = true;
+      }
+    }
+
+    // Update R-wave info display
+    function updateRWaveDisplay() {
+      const infoDiv = document.getElementById('rWaveInfo');
+      const countSpan = document.getElementById('rWaveCount');
+      const posDiv = document.getElementById('rWavePositions');
+
+      if (rWaveMarkers.length === 0) {
+        infoDiv.style.display = 'none';
+      } else {
+        infoDiv.style.display = 'block';
+        countSpan.textContent = `${rWaveMarkers.length} R-waves detected`;
+        posDiv.textContent = `Positions: [${rWaveMarkers.map(p => p.toFixed(2)).join(', ')}]`;
+      }
+    }
+
+    // Draw R-wave markers on the final preview canvas
+    function drawRWaveMarkers() {
+      const finalPoints = window.lastFinalPoints || [];
+      if (finalPoints.length === 0) return;
+
+      // Redraw the waveform first
+      updateFinalPreview();
+
+      // Now draw R-wave markers on top
+      const canvas = document.getElementById('finalCanvas');
+      const ctx = canvas.getContext('2d');
+      const totalWidth = finalPoints[finalPoints.length - 1].x - finalPoints[0].x;
+
+      rWaveMarkers.forEach(position => {
+        const x = finalPoints[0].x + (position * totalWidth);
+
+        // Draw vertical line marker
+        ctx.strokeStyle = '#ff0000';
+        ctx.lineWidth = 2;
+        ctx.setLineDash([5, 5]);
+        ctx.beginPath();
+        ctx.moveTo(x, 0);
+        ctx.lineTo(x, canvas.height);
+        ctx.stroke();
+        ctx.setLineDash([]);
+
+        // Draw circle at top
+        ctx.fillStyle = '#ff0000';
+        ctx.beginPath();
+        ctx.arc(x, 10, 5, 0, 2 * Math.PI);
+        ctx.fill();
+      });
+    }
+
+    // Click handler for final canvas to add/remove R-wave markers
+    document.getElementById('finalCanvas').addEventListener('click', function(e) {
+      if (rWaveMarkers.length === 0 && window.lastFinalPoints && window.lastFinalPoints.length > 0) {
+        // First click - auto-detect
+        detectAndShowRWaves();
+        return;
+      }
+
+      const rect = this.getBoundingClientRect();
+      const x = e.clientX - rect.left;
+      const finalPoints = window.lastFinalPoints || [];
+      if (finalPoints.length === 0) return;
+
+      const totalWidth = finalPoints[finalPoints.length - 1].x - finalPoints[0].x;
+      const position = (x - finalPoints[0].x) / totalWidth;
+
+      // Check if clicking near an existing marker (within 2%)
+      const threshold = 0.02;
+      const nearbyIndex = rWaveMarkers.findIndex(p => Math.abs(p - position) < threshold);
+
+      if (nearbyIndex >= 0) {
+        // Remove marker
+        rWaveMarkers.splice(nearbyIndex, 1);
+      } else {
+        // Add new marker
+        rWaveMarkers.push(position);
+        rWaveMarkers.sort((a, b) => a - b);
+      }
+
+      updateRWaveDisplay();
+      drawRWaveMarkers();
+    });
+
+    // Detect R-wave peaks in the extracted waveform
+    // Returns array of positions [0.0 - 1.0] for beep timing
+    function detectRWavePeaks(points) {
+      if (!points || points.length === 0) return [];
+
+      // Find all local maxima (peaks)
+      const peaks = [];
+      const windowSize = 20; // Look at nearby points to determine if this is a peak
+
+      for (let i = windowSize; i < points.length - windowSize; i++) {
+        const currentY = points[i].y;
+        let isPeak = true;
+
+        // Check if this point is higher than surrounding points
+        for (let j = i - windowSize; j <= i + windowSize; j++) {
+          if (j !== i && points[j].y < currentY) {
+            isPeak = false;
+            break;
+          }
+        }
+
+        if (isPeak) {
+          // Calculate position as percentage of total width
+          const totalWidth = points[points.length - 1].x - points[0].x;
+          const position = (points[i].x - points[0].x) / totalWidth;
+
+          peaks.push({
+            index: i,
+            x: points[i].x,
+            y: points[i].y,
+            position: position
+          });
+
+          // Skip ahead to avoid detecting same peak multiple times
+          i += windowSize;
+        }
+      }
+
+      // Filter peaks by prominence (must be significantly taller than baseline)
+      const yValues = points.map(p => p.y);
+      const meanY = yValues.reduce((sum, y) => sum + y, 0) / yValues.length;
+      const stdY = Math.sqrt(yValues.reduce((sum, y) => sum + Math.pow(y - meanY, 2), 0) / yValues.length);
+
+      // Keep peaks that are at least 1.5 standard deviations above mean (likely R-waves)
+      const significantPeaks = peaks.filter(peak => {
+        return (meanY - peak.y) > (1.5 * stdY); // Note: Y is inverted (lower Y = higher on screen)
+      });
+
+      console.log(`🔍 R-wave detection: Found ${significantPeaks.length} peaks`);
+      significantPeaks.forEach((peak, i) => {
+        console.log(`  Peak ${i + 1}: x=${peak.x.toFixed(0)}px, position=${peak.position.toFixed(2)}`);
+      });
+
+      return significantPeaks.map(p => parseFloat(p.position.toFixed(2)));
+    }
+
+    // NEW: Detect R-wave peaks with adjustable sensitivity threshold
+    function detectRWavePeaksWithSensitivity(points, sensitivity = 1.5) {
+      if (!points || points.length === 0) return [];
+
+      // Find all local maxima (peaks)
+      const peaks = [];
+      const windowSize = 20; // Look at nearby points to determine if this is a peak
+
+      for (let i = windowSize; i < points.length - windowSize; i++) {
+        const currentY = points[i].y;
+        let isPeak = true;
+
+        // Check if this point is higher than surrounding points
+        for (let j = i - windowSize; j <= i + windowSize; j++) {
+          if (j !== i && points[j].y < currentY) {
+            isPeak = false;
+            break;
+          }
+        }
+
+        if (isPeak) {
+          // Calculate position as percentage of total width
+          const totalWidth = points[points.length - 1].x - points[0].x;
+          const position = (points[i].x - points[0].x) / totalWidth;
+
+          peaks.push({
+            index: i,
+            x: points[i].x,
+            y: points[i].y,
+            position: position
+          });
+
+          // Skip ahead to avoid detecting same peak multiple times
+          i += windowSize;
+        }
+      }
+
+      // Filter peaks by prominence using adjustable sensitivity
+      const yValues = points.map(p => p.y);
+      const meanY = yValues.reduce((sum, y) => sum + y, 0) / yValues.length;
+      const stdY = Math.sqrt(yValues.reduce((sum, y) => sum + Math.pow(y - meanY, 2), 0) / yValues.length);
+
+      // Use adjustable sensitivity threshold (lower = more sensitive, higher = less sensitive)
+      const significantPeaks = peaks.filter(peak => {
+        return (meanY - peak.y) > (sensitivity * stdY); // Note: Y is inverted (lower Y = higher on screen)
+      });
+
+      console.log(`🔍 R-wave detection (sensitivity ${sensitivity}): Found ${significantPeaks.length} peaks`);
+
+      return significantPeaks.map(p => parseFloat(p.position.toFixed(2)));
+    }
+
+    // Display R-wave positions in UI
+    function displayRWavePositions(positions, waveformKey) {
+      const rWaveInfo = document.getElementById('rWaveInfo');
+      const rWavePositions = document.getElementById('rWavePositions');
+
+      if (positions.length === 0) {
+        rWaveInfo.style.display = 'none';
+        return;
+      }
+
+      rWaveInfo.style.display = 'block';
+
+      // Format as code for WaveformConfig.js
+      const positionsArray = `[${positions.join(', ')}]`;
+      rWavePositions.innerHTML = `
+        <div style="margin-bottom: 4px;">Count: ${positions.length} R-waves detected</div>
+        <div style="color: #0ff;">  ${waveformKey}: ${positionsArray},</div>
+      `;
+    }
+
+    // Auto-detect waveform type from input filename
+    function detectWaveformType(inputFilename) {
+      const lower = inputFilename.toLowerCase();
+
+      // Map common patterns to internal names
+      const patterns = {
+        'afib': 'afib_ecg',
+        'a-fib': 'afib_ecg',
+        'atrial_fib': 'afib_ecg',
+        'aflutter': 'aflutter_ecg',
+        'flutter': 'aflutter_ecg',
+        'vtach': 'vtach_ecg',
+        'v-tach': 'vtach_ecg',
+        'vfib': 'vfib_ecg',
+        'v-fib': 'vfib_ecg',
+        'asystole': 'asystole_ecg',
+        'flatline': 'asystole_ecg',
+        'sinus': 'sinus_ecg',
+        'nsr': 'sinus_ecg',
+        'normal': 'sinus_ecg',
+        'brady': 'sinus_brady_ecg',
+        'tachy': 'sinus_tachy_ecg',
+        'svt': 'svt_ecg',
+        'mat': 'mat_ecg',
+        'pac': 'pac_ecg',
+        'pvc': 'bigeminy_ecg',
+        'junctional': 'junctional_ecg',
+        'torsades': 'torsades_ecg',
+        'bigeminy': 'bigeminy_ecg',
+        'trigeminy': 'trigeminy_ecg',
+        'stemi': 'stemi_ecg',
+        'nstemi': 'nstemi_ecg',
+        'lbbb': 'lbbb_ecg',
+        'rbbb': 'rbbb_ecg',
+        'wpw': 'wpw_ecg',
+        'paced': 'vpaced_ecg',
+        'artifact': 'artifact_ecg',
+        'pea': 'pea_ecg'
+      };
+
+      for (const [pattern, internalName] of Object.entries(patterns)) {
+        if (lower.includes(pattern)) {
+          return internalName;
+        }
+      }
+
+      return null; // No match found
+    }
+
+    async function saveToProjectFolder() {
+      // Check if server is running
+      try {
+        const healthCheck = await fetch(`${SERVER_URL}/status`);
+        if (!healthCheck.ok) {
+          throw new Error('Server not responding');
+        }
+      } catch (error) {
+        alert('❌ Save Server Not Running!\n\nTo save directly to project folder:\n\n1. Open a terminal\n2. Navigate to project directory\n3. Run: npm run ecg-save-server\n4. Keep the server running\n5. Try saving again\n\nOr use the regular download buttons below.');
+        return;
+      }
+
+      // Get waveform name (user override or auto-detected)
+      let waveformName = document.getElementById('waveformNameInput').value.trim();
+
+      if (!waveformName) {
+        // Try to auto-detect from original filename
+        const detectedName = window.originalImageFilename ? detectWaveformType(window.originalImageFilename) : null;
+        if (detectedName) {
+          waveformName = detectedName;
+          document.getElementById('waveformNameInput').value = waveformName;
+          console.log(`🔍 Auto-detected waveform type: ${waveformName}`);
+        } else {
+          alert('⚠️ Please specify a waveform name!\n\nEither:\n1. Type the internal name (e.g., afib_ecg, vtach_ecg)\n2. Or rename your image file to include the type (e.g., "afib.png")');
+          return;
+        }
+      }
+
+      // Validate waveform name format
+      if (!waveformName.endsWith('_ecg')) {
+        waveformName += '_ecg';
+        document.getElementById('waveformNameInput').value = waveformName;
+      }
+
+      // Check if waveform already exists
+      try {
+        const checkResponse = await fetch(`${SERVER_URL}/check-exists/${waveformName}`);
+        const checkResult = await checkResponse.json();
+
+        if (checkResult.exists) {
+          const confirmOverride = confirm(`⚠️ WAVEFORM ALREADY EXISTS!
+
+🏷️  Waveform: ${waveformName}
+
+Existing files:
+${checkResult.pngExists ? '  ✓ PNG file exists in assets/waveforms/png/' : ''}
+${checkResult.svgExists ? '  ✓ SVG file exists in future-upgrades/svg/' : ''}
+
+Do you want to OVERRIDE the existing ${waveformName} with this new version?
+
+Click OK to replace with better version
+Click Cancel to keep the existing version`);
+
+          if (!confirmOverride) {
+            console.log('❌ User cancelled - keeping existing waveform');
+            return; // User chose not to override
+          }
+
+          console.log('✅ User confirmed override - replacing existing waveform');
+        }
+      } catch (error) {
+        console.error('⚠️ Could not check if file exists:', error);
+        // Continue anyway - if check fails, we'll try to save
+      }
+
+      const actualSVGWidth = window.lastActualSVGWidth || 1000;
+      const svgHeight = parseInt(document.getElementById('monitorHeight').value);
+      const lineWidth = parseFloat(document.getElementById('lineWidth').value);
+
+      // === PART 1: Save SVG File ===
+      const svgContent = `<?xml version="1.0" encoding="UTF-8"?>
+<svg width="${actualSVGWidth}" height="${svgHeight}" viewBox="0 0 ${actualSVGWidth} ${svgHeight}" xmlns="http://www.w3.org/2000/svg">
+  <path
+    d="${svgPath}"
+    stroke="#00ff00"
+    stroke-width="${lineWidth}"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    fill="none"
+  />
+</svg>`;
+
+      try {
+        const svgResponse = await fetch(`${SERVER_URL}/save`, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            filename: `${waveformName}.svg`,
+            content: svgContent,
+            type: 'text',
+            waveformKey: waveformName
+          })
+        });
+
+        const svgResult = await svgResponse.json();
+        if (!svgResult.success) {
+          throw new Error(svgResult.error);
+        }
+
+        console.log('✅ SVG saved:', svgResult.filename);
+
+        // === PART 2: Generate and Save PNG File ===
+        const pngCanvas = document.createElement('canvas');
+        pngCanvas.width = actualSVGWidth;
+        pngCanvas.height = svgHeight;
+        const ctx = pngCanvas.getContext('2d');
+
+        // Draw black background
+        ctx.fillStyle = '#000000';
+        ctx.fillRect(0, 0, pngCanvas.width, pngCanvas.height);
+
+        // Draw green waveform - use the EXACT same data shown in preview
+        ctx.strokeStyle = '#00ff00';
+        ctx.lineWidth = lineWidth;
+        ctx.lineCap = 'round';
+        ctx.lineJoin = 'round';
+        ctx.beginPath();
+
+        // CRITICAL FIX: Use the globally stored finalPoints from the last preview render
+        // This ensures PNG matches exactly what user sees in the preview
+        const finalPoints = window.lastFinalPoints || [];
+
+        if (finalPoints.length === 0) {
+          throw new Error('No waveform data to save! Please finalize your waveform first by adjusting the crop or baseline.');
+        }
+
+        // *** AUTO-DETECT R-WAVES from final preview data ***
+        const rWavePositions = detectRWavePeaks(finalPoints);
+        console.log(`🔊 R-wave auto-detection: Found ${rWavePositions.length} peaks`);
+        console.log(`   Positions: ${JSON.stringify(rWavePositions)}`);
+
+        // Display R-wave info to user
+        displayRWavePositions(rWavePositions, waveformName);
+
+        finalPoints.forEach((pt, i) => {
+          if (i === 0) {
+            ctx.moveTo(pt.x, pt.y);
+          } else {
+            ctx.lineTo(pt.x, pt.y);
+          }
+        });
+        ctx.stroke();
+
+        // Convert canvas to base64 PNG
+        const pngDataUrl = pngCanvas.toDataURL('image/png');
+
+        const pngResponse = await fetch(`${SERVER_URL}/save`, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            filename: `${waveformName}.png`,
+            content: pngDataUrl,
+            type: 'base64',
+            waveformKey: waveformName,
+            rWavePositions: rWavePositions  // Use the R-waves we just detected from finalPoints
+          })
+        });
+
+        const pngResult = await pngResponse.json();
+        if (!pngResult.success) {
+          throw new Error(pngResult.error);
+        }
+
+        console.log('✅ PNG saved:', pngResult.filename);
+
+        // Build detailed save locations message
+        const svgLocations = svgResult.savedFiles.map(f => `   • ${f.location}`).join('\n');
+        const pngLocations = pngResult.savedFiles.map(f => `   • ${f.location}`).join('\n');
+
+        // Success message
+        alert(`✅ WAVEFORM UPLOADED - CLAUDE NOTIFIED!
+
+🏷️  WAVEFORM: ${waveformName}
+
+📄 SVG: ${waveformName}.svg
+${svgLocations}
+   → PRODUCTION (lightweight, responsive, ready for all devices)
+
+📷 PNG: ${waveformName}.png
+${pngLocations}
+   → LEGACY backup (deprecated)
+
+🎉 FILES ORGANIZED:
+   ✓ SVG → assets/waveforms/svg/ (PRODUCTION - optimized for monitor)
+   ✓ PNG → assets/waveforms/png/ (LEGACY - backward compatibility)
+   ✓ Backups → /exports/
+   ✓ R-waves detected: ${rWavePositions.length} peaks
+
+🤖 CLAUDE IS INTEGRATING & OPENING SIMULATOR...
+   Stand by for test confirmation!`);
+
+        // Auto-refresh bulletin board after successful save
+        setTimeout(() => {
+          refreshBulletinBoard();
+        }, 500);
+
+      } catch (error) {
+        console.error('❌ Save error:', error);
+        alert(`❌ Error saving files:\n\n${error.message}\n\nMake sure the save server is running:\nnode ecg-save-server.js`);
+      }
+    }
+  </script>
+</body>
+</html>

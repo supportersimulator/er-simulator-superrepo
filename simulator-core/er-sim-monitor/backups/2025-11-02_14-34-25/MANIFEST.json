@@ -1,0 +1,24 @@
+{
+  "timestamp": "2025-11-02_14-34-25",
+  "createdAt": "2025-11-02T21:34:25.355Z",
+  "files": [
+    {
+      "filename": "AI_ENHANCED_CASE_ID_MAPPING.json",
+      "size": 242790,
+      "sizeKB": "237.1"
+    },
+    {
+      "filename": "AI_ENHANCED_PATHWAY_METADATA.json",
+      "size": 54428,
+      "sizeKB": "53.2"
+    },
+    {
+      "filename": "AI_CASE_OVERVIEWS.json",
+      "size": 700265,
+      "sizeKB": "683.9"
+    }
+  ],
+  "totalSize": 997483,
+  "totalSizeKB": "974.1",
+  "totalSizeMB": "0.95"
+}
