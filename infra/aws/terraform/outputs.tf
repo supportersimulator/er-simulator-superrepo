@@ -19,8 +19,13 @@ output "redis_url" {
 }
 
 output "assets_bucket_name" {
-  description = "S3 bucket name for core assets"
+  description = "Primary S3 bucket name for core assets"
   value       = aws_s3_bucket.assets.bucket
+}
+
+output "assets_bucket_name_2" {
+  description = "Secondary S3 bucket name"
+  value       = aws_s3_bucket.assets_2.bucket
 }
 
 output "assets_bucket_region" {
@@ -28,24 +33,24 @@ output "assets_bucket_region" {
   value       = var.aws_region
 }
 
-output "beanstalk_environment_url" {
-  description = "Elastic Beanstalk environment CNAME URL"
-  value       = aws_elastic_beanstalk_environment.prod.endpoint_url
+output "alb_dns_name" {
+  description = "Application Load Balancer DNS name"
+  value       = aws_lb.app.dns_name
 }
 
-output "beanstalk_alb_dns" {
-  description = "Application Load Balancer DNS name for the Beanstalk environment"
-  value       = data.aws_lb.eb.dns_name
+output "ec2_public_ip" {
+  description = "Public IP address of the app EC2 instance (via Elastic IP)"
+  value       = aws_eip.app.public_ip
 }
 
-output "beanstalk_bucket" {
-  description = "Elastic Beanstalk S3 bucket name (region/account-specific convention)"
-  value       = local.eb_bucket_name
+output "ssh_command" {
+  description = "SSH command to connect to the EC2 instance"
+  value       = "ssh -i ~/.ssh/id_rsa ec2-user@${aws_eip.app.public_ip}"
 }
 
-output "backend_role_arn" {
-  description = "IAM role ARN for backend compute instances"
-  value       = aws_iam_role.backend.arn
+output "ec2_instance_role_arn" {
+  description = "IAM role ARN for EC2 app instances"
+  value       = aws_iam_role.ec2_instance_role.arn
 }
 
 output "deploy_role_arn" {

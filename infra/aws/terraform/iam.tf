@@ -1,6 +1,9 @@
-# Backend compute role (for Elastic Beanstalk EC2 instances)
-resource "aws_iam_role" "backend" {
-  name = "${var.project_name}-backend-role"
+############################################
+# EC2 INSTANCE ROLE + INSTANCE PROFILE
+############################################
+
+resource "aws_iam_role" "ec2_instance_role" {
+  name = "${var.project_name}-${var.environment}-ec2-instance-role"
 
   assume_role_policy = jsonencode({
     Version = "2012-10-17"
@@ -8,7 +11,7 @@ resource "aws_iam_role" "backend" {
       {
         Effect = "Allow"
         Principal = {
-          Service = ["ec2.amazonaws.com", "elasticbeanstalk.amazonaws.com"]
+          Service = ["ec2.amazonaws.com"]
         }
         Action = "sts:AssumeRole"
       }
@@ -16,9 +19,14 @@ resource "aws_iam_role" "backend" {
   })
 }
 
-resource "aws_iam_role_policy" "backend_policy" {
-  name = "${var.project_name}-backend-policy"
-  role = aws_iam_role.backend.id
+resource "aws_iam_instance_profile" "ec2_instance_profile" {
+  name = "${var.project_name}-${var.environment}-ec2-instance-profile"
+  role = aws_iam_role.ec2_instance_role.name
+}
+
+resource "aws_iam_role_policy" "ec2_instance_policy" {
+  name = "${var.project_name}-${var.environment}-ec2-instance-policy"
+  role = aws_iam_role.ec2_instance_role.id
 
   policy = jsonencode({
     Version = "2012-10-17"
@@ -35,6 +43,8 @@ resource "aws_iam_role_policy" "backend_policy" {
         Resource = [
           aws_s3_bucket.assets.arn,
           "${aws_s3_bucket.assets.arn}/*",
+          aws_s3_bucket.assets_2.arn,
+          "${aws_s3_bucket.assets_2.arn}/*",
         ]
       },
       {
@@ -51,35 +61,21 @@ resource "aws_iam_role_policy" "backend_policy" {
   })
 }
 
-# Security group for app instances / Beanstalk
-resource "aws_security_group" "app" {
-  name        = "${var.project_name}-app-sg"
-  description = "App/Beanstalk instances"
-  vpc_id      = aws_vpc.main.id
+############################################
+# SSM PERMISSIONS FOR EC2 INSTANCE
+############################################
 
-  # Inbound HTTP from anywhere (you can later restrict via ALB/WAF)
-  ingress {
-    from_port   = 80
-    to_port     = 80
-    protocol    = "tcp"
-    cidr_blocks = ["0.0.0.0/0"]
-  }
-
-  egress {
-    from_port   = 0
-    to_port     = 0
-    protocol    = "-1"
-    cidr_blocks = ["0.0.0.0/0"]
-  }
-
-  tags = {
-    Name = "${var.project_name}-app-sg"
-  }
+resource "aws_iam_role_policy_attachment" "ec2_ssm_core" {
+  role       = aws_iam_role.ec2_instance_role.name
+  policy_arn = "arn:aws:iam::aws:policy/AmazonSSMManagedInstanceCore"
 }
 
-# CI/CD deploy role (for EB deploy + ECR push)
+############################################
+# CI/CD DEPLOY ROLE (OPTIONAL, ECS/CI READY)
+############################################
+
 resource "aws_iam_role" "deploy" {
-  name = "${var.project_name}-deploy-role"
+  name = "${var.project_name}-${var.environment}-deploy-role"
 
   assume_role_policy = jsonencode({
     Version = "2012-10-17"
@@ -96,23 +92,22 @@ resource "aws_iam_role" "deploy" {
 }
 
 resource "aws_iam_role_policy" "deploy_policy" {
-  name = "${var.project_name}-deploy-policy"
+  name = "${var.project_name}-${var.environment}-deploy-policy"
   role = aws_iam_role.deploy.id
 
   policy = jsonencode({
     Version = "2012-10-17"
     Statement = [
       {
-        Sid    = "ElasticBeanstalkDeploy"
+        Sid    = "InfraDeploy"
         Effect = "Allow"
         Action = [
-          "elasticbeanstalk:*",
-          "autoscaling:*",
-          "elasticloadbalancing:*",
-          "cloudformation:*",
           "ec2:*",
-          "s3:*",
+          "elasticloadbalancing:*",
+          "autoscaling:*",
+          "cloudformation:*",
           "cloudwatch:*",
+          "s3:*",
         ]
         Resource = "*"
       },

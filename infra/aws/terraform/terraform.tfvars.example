@@ -1,9 +1,13 @@
-aws_region       = "us-west-2"
-project_name     = "ersim"
+aws_region   = "us-west-2"
+project_name = "ersim"
 
 vpc_cidr             = "10.0.0.0/16"
 public_subnet_cidrs  = ["10.0.1.0/24", "10.0.2.0/24"]
 private_subnet_cidrs = ["10.0.11.0/24", "10.0.12.0/24"]
+
+# Optional: override AZs (defaults are us-west-2a/us-west-2b)
+# public_subnet_azs  = ["us-west-2a", "us-west-2b"]
+# private_subnet_azs = ["us-west-2a", "us-west-2b"]
 
 # RDS configuration
 db_name     = "ersim_prod"
@@ -11,5 +15,12 @@ db_username = "ersim_app"
 # IMPORTANT: set a strong password in your own terraform.tfvars (do not commit it)
 db_password = "CHANGE_ME_STRONG_PASSWORD"
 
-app_instance_type      = "t3.small"
-s3_assets_bucket_name  = "ersimulator-core-assets" # must be globally unique
+# EC2 instance type
+ec2_instance_type = "t3.medium"
+
+# S3 assets buckets (must be globally unique)
+assets_bucket_name   = "ersimulator-core-assets-YOURUNIQUEID"
+assets_bucket_name_2 = "ersimulator-core-assets-logs-YOURUNIQUEID"
+
+# SSH public key (do NOT commit real keys; use terraform.tfvars.local instead)
+# public_ssh_key = "ssh-rsa AAAA... your-key ..."

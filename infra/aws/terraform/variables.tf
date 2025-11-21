@@ -10,6 +10,12 @@ variable "project_name" {
   default     = "ersim"
 }
 
+variable "environment" {
+  description = "Deployment environment (e.g., dev, staging, prod)"
+  type        = string
+  default     = "prod"
+}
+
 variable "vpc_cidr" {
   description = "CIDR block for the VPC"
   type        = string
@@ -22,10 +28,22 @@ variable "public_subnet_cidrs" {
   default     = ["10.0.1.0/24", "10.0.2.0/24"]
 }
 
+variable "public_subnet_azs" {
+  description = "Availability zones for public subnets"
+  type        = list(string)
+  default     = ["us-west-2a", "us-west-2b"]
+}
+
 variable "private_subnet_cidrs" {
   description = "CIDR blocks for private subnets"
   type        = list(string)
   default     = ["10.0.11.0/24", "10.0.12.0/24"]
+}
+
+variable "private_subnet_azs" {
+  description = "Availability zones for private subnets"
+  type        = list(string)
+  default     = ["us-west-2a", "us-west-2b"]
 }
 
 variable "db_name" {
@@ -46,14 +64,23 @@ variable "db_password" {
   sensitive   = true
 }
 
-variable "app_instance_type" {
-  description = "EC2 instance type for Elastic Beanstalk"
+variable "ec2_instance_type" {
+  description = "EC2 instance type for app server"
   type        = string
-  default     = "t3.small"
+  default     = "t3.medium"
 }
 
-variable "s3_assets_bucket_name" {
-  description = "Name of the S3 bucket for core app assets"
+variable "assets_bucket_name" {
+  description = "Primary S3 bucket name for core app assets"
   type        = string
-  default     = "ersimulator-core-assets"
+}
+
+variable "assets_bucket_name_2" {
+  description = "Secondary S3 bucket name (e.g., logs or backups)"
+  type        = string
+}
+
+variable "public_ssh_key" {
+  description = "SSH public key content for ersim-keypair"
+  type        = string
 }
