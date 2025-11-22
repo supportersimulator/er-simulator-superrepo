@@ -139,3 +139,8 @@ ERSIM_ASSETS_BUCKET_LOGS = env("ERSIM_ASSETS_BUCKET_LOGS", default="")
 
 # CORS placeholders (to be wired with django-cors-headers if we add it later)
 CORS_ALLOWED_ORIGINS = env.list("CORS_ALLOWED_ORIGINS", default=[])
+
+# Supabase settings
+SUPABASE_URL = env("SUPABASE_URL", default="")
+SUPABASE_ANON_KEY = env("SUPABASE_ANON_KEY", default="")
+SUPABASE_JWT_SECRET = env("SUPABASE_JWT_SECRET", default="")
