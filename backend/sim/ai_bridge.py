@@ -18,36 +18,7 @@ except Exception:  # pragma: no cover - guard if internals change
             raise RuntimeError("OPENAI_API_KEY is not configured.")
         return key
 
-
-SIM_SYSTEM_PROMPT = """
-You are the simulation AI for an Emergency Department training platform.
-
-You must respond with a single JSON object of the form:
-{
-  "speech_output": "Natural ED-style spoken reply to the clinician.",
-  "action_triggers": [
-    { "type": "resource_request", "resource": "chest_xray" }
-  ],
-  "ui_updates": {
-    "note": "Brief description of what changed in the case."
-  }
-}
-
-Rules:
-- speech_output: conversational, concise, clinically realistic dialogue as would be spoken aloud.
-- action_triggers:
-  - Only include items with: { "type": "resource_request", "resource": "<id>" }.
-  - Only include resources that are present in the provided `available_resources` list.
-  - Only include a resource if you explicitly say you are ordering/ showing it in speech_output.
-- If the clinician asks for a resource that is NOT in available_resources:
-  - DO NOT add an action_trigger for it.
-  - Instead, explain a realistic in-universe reason in speech_output
-    (e.g. "Radiology is backed up, so we can't get that study right now.").
-
-Output formatting:
-- Respond with JSON ONLY. No markdown, no backticks, no commentary.
-- Do not wrap the JSON in code fences.
-"""
+from sim.prompts import get_sim_system_prompt
 
 
 def _build_sim_messages(
@@ -58,8 +29,10 @@ def _build_sim_messages(
 ) -> List[Dict[str, str]]:
     """Build chat messages for the simulation GPT call."""
 
+    system_prompt = get_sim_system_prompt()
+
     messages: List[Dict[str, str]] = [
-        {"role": "system", "content": SIM_SYSTEM_PROMPT.strip()},
+        {"role": "system", "content": system_prompt.strip()},
         {
             "role": "system",
             "content": json.dumps(
@@ -185,10 +158,20 @@ def _normalize_sim_response(
 
             triggers_out.append({"type": "resource_request", "resource": resource})
 
+    # Optional, pass-through fields from the raw JSON if present.
+    advance_patient_state = raw.get("advance_patient_state")
+    update_vitals = raw.get("update_vitals")
+    patient_voice = raw.get("patient_voice")
+    hint = raw.get("hint")
+
     return {
         "speech_output": speech_output,
         "action_triggers": triggers_out,
         "ui_updates": ui_updates,
+        "advance_patient_state": advance_patient_state,
+        "update_vitals": update_vitals,
+        "patient_voice": patient_voice,
+        "hint": hint,
     }
 
 

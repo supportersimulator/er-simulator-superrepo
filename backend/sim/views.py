@@ -82,6 +82,10 @@ def sim_respond_view(request: Request) -> Response:
             "speech_output": sim_result.get("speech_output", ""),
             "action_triggers": sim_result.get("action_triggers", []),
             "ui_updates": sim_result.get("ui_updates", {}),
+            "advance_patient_state": sim_result.get("advance_patient_state"),
+            "update_vitals": sim_result.get("update_vitals"),
+            "patient_voice": sim_result.get("patient_voice"),
+            "hint": sim_result.get("hint"),
         }
     )
 
