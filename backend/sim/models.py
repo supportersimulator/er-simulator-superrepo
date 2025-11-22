@@ -58,3 +58,47 @@ class SimCase(models.Model):
 
     def __str__(self) -> str:  # pragma: no cover - simple repr
         return f"SimCase<{self.case_id}>"
+
+
+class SimResource(models.Model):
+    """Media resource associated with a simulation case.
+
+    Resources are external media (images, PDFs, audio) that have been
+    downloaded from their original URLs and mirrored into our S3 bucket
+    for reliable, fast delivery.
+    """
+
+    case = models.ForeignKey(
+        SimCase,
+        on_delete=models.CASCADE,
+        related_name="resources",
+    )
+
+    # The resource identifier used in action_triggers, e.g. "chest_xray", "ekg_1"
+    resource_id = models.CharField(max_length=128)
+
+    # Original external URL from the CSV
+    original_url = models.URLField(max_length=1024, blank=True)
+
+    # S3 key where the resource is stored (e.g. "cases/GAST0001/chest_xray.jpg")
+    s3_key = models.CharField(max_length=512, blank=True)
+
+    # Resource type inferred from file extension or content
+    resource_type = models.CharField(
+        max_length=32,
+        blank=True,
+        help_text="e.g. 'image', 'pdf', 'audio', 'video'",
+    )
+
+    # Whether the resource has been successfully fetched and uploaded to S3
+    is_synced = models.BooleanField(default=False)
+
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
+
+    class Meta:
+        ordering = ["case", "resource_id"]
+        unique_together = [["case", "resource_id"]]
+
+    def __str__(self) -> str:
+        return f"SimResource<{self.case.case_id}:{self.resource_id}>"
