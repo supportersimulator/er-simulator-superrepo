@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     # Third-party
+    "corsheaders",
     "rest_framework",
     "drf_yasg",
     # Project apps
@@ -53,6 +54,7 @@ INSTALLED_APPS = [
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
     "whitenoise.middleware.WhiteNoiseMiddleware",
+    "corsheaders.middleware.CorsMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
     "django.middleware.common.CommonMiddleware",
     "django.middleware.csrf.CsrfViewMiddleware",
@@ -137,8 +139,20 @@ REDIS_URL = env("REDIS_URL", default="redis://localhost:6379/0")
 ERSIM_ASSETS_BUCKET = env("ERSIM_ASSETS_BUCKET", default="")
 ERSIM_ASSETS_BUCKET_LOGS = env("ERSIM_ASSETS_BUCKET_LOGS", default="")
 
-# CORS placeholders (to be wired with django-cors-headers if we add it later)
+# CORS settings
 CORS_ALLOWED_ORIGINS = env.list("CORS_ALLOWED_ORIGINS", default=[])
+CORS_ALLOW_CREDENTIALS = True
+CORS_ALLOW_HEADERS = [
+    "accept",
+    "accept-encoding",
+    "authorization",
+    "content-type",
+    "dnt",
+    "origin",
+    "user-agent",
+    "x-csrftoken",
+    "x-requested-with",
+]
 
 # Supabase settings
 SUPABASE_URL = env("SUPABASE_URL", default="")
