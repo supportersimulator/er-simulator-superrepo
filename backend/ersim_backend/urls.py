@@ -25,6 +25,7 @@ urlpatterns = [
     path("admin/", admin.site.urls),
     path("api/health/", healthcheck_view, name="healthcheck"),
     path("api/voice/", include("voice.urls")),
+    path("api/sim/", include("sim.urls")),
     path(
         "docs/",
         schema_view.with_ui("swagger", cache_timeout=0),

@@ -47,6 +47,7 @@ INSTALLED_APPS = [
     "voice",
     "ai",
     "sessions",
+    "sim",
 ]
 
 MIDDLEWARE = [
@@ -131,6 +132,10 @@ REST_FRAMEWORK = {
 
 
 REDIS_URL = env("REDIS_URL", default="redis://localhost:6379/0")
+
+# S3 buckets provisioned by Terraform
+ERSIM_ASSETS_BUCKET = env("ERSIM_ASSETS_BUCKET", default="")
+ERSIM_ASSETS_BUCKET_LOGS = env("ERSIM_ASSETS_BUCKET_LOGS", default="")
 
 # CORS placeholders (to be wired with django-cors-headers if we add it later)
 CORS_ALLOWED_ORIGINS = env.list("CORS_ALLOWED_ORIGINS", default=[])
