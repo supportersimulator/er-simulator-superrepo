@@ -127,4 +127,50 @@ With the Terraform stack deployed and these variables set, the simulation flow i
 4. Frontend speaks `speech_output` via ElevenLabs and, for each resource trigger, calls `/api/trigger-resource`.
 5. Backend returns presigned S3 URLs to case assets, gated by Redis so each is only unlocked once per session.
 
+---
+
+## Case Import
+
+Cases are stored in `SimCase` models and can be imported from Google Sheets or CSV files.
+
+### Import from Google Sheets
+
+```bash
+# Dry run (preview what would be imported)
+python manage.py import_cases_from_gsheet \
+  "https://docs.google.com/spreadsheets/d/SHEET_ID/edit?gid=0#gid=0" \
+  --dry-run
+
+# Full import
+python manage.py import_cases_from_gsheet \
+  "https://docs.google.com/spreadsheets/d/SHEET_ID/edit?gid=0#gid=0"
+
+# Import with S3 resource sync (downloads media and uploads to S3)
+python manage.py import_cases_from_gsheet \
+  "https://docs.google.com/spreadsheets/d/SHEET_ID/edit?gid=0#gid=0" \
+  --fetch-resources
+
+# Specific sheet tab (default is gid=0)
+python manage.py import_cases_from_gsheet \
+  "https://docs.google.com/spreadsheets/d/SHEET_ID/edit" \
+  --gid=123456789
+```
+
+### Import from local CSV
+
+```bash
+python manage.py import_cases_from_csv /path/to/cases.csv --dry-run
+python manage.py import_cases_from_csv /path/to/cases.csv
+python manage.py import_cases_from_csv /path/to/cases.csv --fetch-resources
+```
+
+### Reference test case
+
+**GAST0001** (Cholangitis & Sepsis) from the test sheet is the canonical end-to-end reference case:
+
+- **Sheet**: `https://docs.google.com/spreadsheets/d/1wtFxBA31NsirzNngc0Gn2xzqjVx_bEIoqOeXC4bcX8c/`
+- **Case ID**: `GAST0001`
+- **Vitals States**: Initial_Vitals, State1_Vitals, State2_Vitals, State3_Vitals
+
+This case validates the full pipeline: Google Sheet → SimCase → vitals roadmap → `/api/sim/respond/` with structured `update_vitals.next_state_id`.
 
